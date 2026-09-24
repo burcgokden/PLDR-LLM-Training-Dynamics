@@ -1,0 +1,34 @@
+{
+  "analyzer_sha256": "a49311e1631b75a5c044f75bfd59a515c9d6a6f3ad1a822d5bad895d8d4b7b19",
+  "decision_source": "live-producer sufficient tensors and complete v3 states recomputed by the bound analyzer; caller arrays forbidden",
+  "dependencies": [
+    "N"
+  ],
+  "fresh_execution": "One matched anchor and 32 paired low-rate and high-rate continuations",
+  "gpu_hour_cap": 0.5,
+  "purpose": "Use the live Adam denominator and realized decay coefficient to test the full lifted Jury and common-metric ordering.",
+  "raw_schema": "pldr-i-raw-observations-v3",
+  "required_artifact_roles": [
+    "stage_protocol",
+    "raw_observations",
+    "source_complete_state",
+    "target_complete_state",
+    "partition_manifest",
+    "resource_metadata"
+  ],
+  "required_checks": [
+    "live_producer_bound",
+    "matched_source_states",
+    "branch_only_changes_rate",
+    "jury_margins_recomputed",
+    "corridor_bracketed",
+    "damping_order_observed",
+    "oscillation_onset_order_observed"
+  ],
+  "schema_version": "pldr-collapse-stage-protocol-v3",
+  "stage": "I",
+  "time_semantics": [
+    "FINITE_IMPLEMENTED_SCHEDULE"
+  ],
+  "title": "Decay-aware corridor intervention"
+}

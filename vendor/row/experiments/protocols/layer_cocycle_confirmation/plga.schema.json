@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "arrays": {
+      "allOf": [
+        {
+          "contains": {
+            "const": "row_preservation_residuals"
+          }
+        },
+        {
+          "contains": {
+            "const": "row_constant_defect_norm"
+          }
+        },
+        {
+          "contains": {
+            "const": "triangle_signed_slack"
+          }
+        }
+      ],
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "campaign_id": {
+      "const": "pldr-layer-resolved-cocycle-confirmation-v1"
+    },
+    "schema_version": {
+      "const": "pldr-layer-cocycle-plga-defect-v1"
+    },
+    "step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "step",
+    "arrays"
+  ],
+  "title": "PLGA quotient defect replay",
+  "type": "object"
+}

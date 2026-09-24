@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "stage",
+    "trajectory",
+    "seed",
+    "block_start",
+    "block_end",
+    "source_checkpoint_path",
+    "source_checkpoint_sha256",
+    "prediction_created_at_ns",
+    "native_endpoint_opened_at_ns",
+    "technical_valid",
+    "source_values_only",
+    "gains",
+    "quadratic_coefficients",
+    "forces",
+    "radii",
+    "initial_normal_upper",
+    "prefix_products",
+    "force_contributions",
+    "normal_envelope",
+    "comparisons"
+  ],
+  "title": "Source-frozen block-normal prediction and native comparison",
+  "type": "object"
+}

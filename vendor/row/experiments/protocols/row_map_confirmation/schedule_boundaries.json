@@ -1,0 +1,50 @@
+{
+  "beta1": 0.9,
+  "boundaries": [
+    {
+      "adam_bias_exponent": 1,
+      "adam_first_moment_bias_denominator": 0.09999999999999998,
+      "applied_factor": 0.0,
+      "global_optimizer_update": 1,
+      "name": "first_update",
+      "scheduler_index_applied": 0
+    },
+    {
+      "adam_bias_exponent": 8,
+      "adam_first_moment_bias_denominator": 0.5695327899999999,
+      "applied_factor": 0.875,
+      "global_optimizer_update": 8,
+      "name": "last_subpeak_warmup_update",
+      "scheduler_index_applied": 7
+    },
+    {
+      "adam_bias_exponent": 9,
+      "adam_first_moment_bias_denominator": 0.6125795109999999,
+      "applied_factor": 1.0,
+      "global_optimizer_update": 9,
+      "name": "peak_update",
+      "scheduler_index_applied": 8
+    },
+    {
+      "adam_bias_exponent": 10,
+      "adam_first_moment_bias_denominator": 0.6513215599,
+      "applied_factor": 0.9978331270024886,
+      "global_optimizer_update": 10,
+      "name": "first_decay_update",
+      "scheduler_index_applied": 9
+    },
+    {
+      "adam_bias_exponent": 40,
+      "adam_first_moment_bias_denominator": 0.9852191170585654,
+      "applied_factor": 0.10216687299751144,
+      "global_optimizer_update": 40,
+      "name": "terminal_update",
+      "scheduler_index_applied": 39
+    }
+  ],
+  "convention": "applied update s uses scheduler index s-1",
+  "floor": 0.1,
+  "schema_version": "pldr-applied-schedule-boundaries-v1",
+  "total_updates": 40,
+  "warmup_updates": 8
+}

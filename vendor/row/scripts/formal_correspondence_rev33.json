@@ -1,0 +1,205 @@
+[
+  {
+    "label": "thm:chordal-cover",
+    "paper": "Physical chordal row cover",
+    "module": "ChordalRowCover",
+    "declarations": [
+      "segment_endpoint_perturbation",
+      "chordal_net_radius",
+      "chordal_derivative_transfer"
+    ],
+    "scope": "Endpoint transport, chord radius, and derivative transfer on finite-dimensional segments.",
+    "excluded": "Checkpoint row capture and interval evaluation."
+  },
+  {
+    "label": "cor:stacked-regularity",
+    "paper": "Stacked-Jacobian regularity",
+    "module": "StackedJacobian",
+    "declarations": [
+      "column_energy_sum_le",
+      "scalar_identity_energy"
+    ],
+    "scope": "The square-root dimension conversion and its sharp identity-matrix case.",
+    "excluded": "Automatic differentiation of the PLDR implementation."
+  },
+  {
+    "label": "thm:normal-energy-equivalence",
+    "paper": "Intrinsic normal energy equivalence",
+    "module": "NormalGeometry",
+    "declarations": [
+      "squared_normal_energy_equivalence",
+      "zero_energy_forces_zero_normal",
+      "chart_lower_edge"
+    ],
+    "scope": "Two-sided chart bounds imply squared normal-energy equivalence and a positive finite-radius edge.",
+    "excluded": "Existence and numerical construction of the PLDR constant-rank chart."
+  },
+  {
+    "label": "thm:causal-score-quotient",
+    "paper": "Exact causal score quotient",
+    "module": "CausalScoreQuotient",
+    "declarations": [
+      "causalQuotientDimension",
+      "causal_predecessor_count",
+      "causal_score_quotient_count"
+    ],
+    "scope": "Triangular causal-row counting with batch and head multiplicities.",
+    "excluded": "Runtime mask extraction and tensor layout."
+  },
+  {
+    "label": "thm:softmax-quotient-edge",
+    "paper": "Softmax quotient curvature",
+    "module": "LogitQuotient",
+    "declarations": [
+      "project_sum_zero",
+      "project_eq_self",
+      "common_shift_covariance_zero",
+      "probability_floor_centered_curvature"
+    ],
+    "scope": "Gauge annihilation and the probability-floor lower edge on centered representatives.",
+    "excluded": "Vocabulary-scale logits and numerical eigensolvers."
+  },
+  {
+    "label": "thm:composite-fisher-frame",
+    "paper": "Composite Fisher common-kernel frame",
+    "module": "CompositeFisherFrame",
+    "declarations": [
+      "nonnegative_sum_eq_zero_iff",
+      "weighted_square_common_kernel",
+      "composite_frame_nonnegative"
+    ],
+    "scope": "Positive weighted observation energies have exactly the intersection of their component kernels.",
+    "excluded": "Construction of PLGA observation Jacobians and finite-sample spectral charges."
+  },
+  {
+    "label": "thm:observability-obstructions",
+    "paper": "Row, score, value, and composite capacity obstructions",
+    "module": "ObservabilityObstruction",
+    "declarations": [
+      "row_capacity_obstruction",
+      "composite_capacity_obstruction",
+      "visible_null_partition"
+    ],
+    "scope": "Rank-capacity inequalities force nullity and partition normal dimension into visible and null sectors.",
+    "excluded": "Measured ranks and numerical rank thresholds."
+  },
+  {
+    "label": "thm:plga-visibility-witness",
+    "paper": "Causal PLGA visibility witness",
+    "module": "CausalScoreQuotient",
+    "declarations": [
+      "plga_score_difference"
+    ],
+    "scope": "A causal score difference factors through the key difference exactly.",
+    "excluded": "Genericity of checkpoint-specific query, key, and metric tensors."
+  },
+  {
+    "label": "thm:lifted-adamw-normal",
+    "paper": "Operation-ordered AdamW lift",
+    "module": "LiftedOptimizer",
+    "declarations": [
+      "liftedHomogeneous",
+      "lifted_optimizer_recurrence",
+      "biasCorrectedCoefficient",
+      "lifted_optimizer_bias_corrected",
+      "lifted_forced_norm_step"
+    ],
+    "scope": "Moment-first recurrence, forcing terms, bias-corrected step, and forced norm comparison.",
+    "excluded": "Live clipping masks, second moments, and chart construction."
+  },
+  {
+    "label": "prop:adamw-jury-corridor",
+    "paper": "Decay-aware Jury corridor",
+    "module": "LiftedOptimizer",
+    "declarations": [
+      "liftedTraceWithDecay",
+      "lifted_determinant_with_decay",
+      "lifted_jury_margins_with_decay"
+    ],
+    "scope": "Trace, determinant, and all strict scalar Jury margins with decoupled decay.",
+    "excluded": "Numerical common-metric construction."
+  },
+  {
+    "label": "thm:common-lifted-metric",
+    "paper": "Common metric for changing operators",
+    "module": "CommonMetric",
+    "declarations": [
+      "endpoint_common_gain",
+      "changing_operator_two_step"
+    ],
+    "scope": "Endpoint gains extend by convexity and compose for changing operators in one norm.",
+    "excluded": "Positive-metric factorization and correlated vertex enumeration."
+  },
+  {
+    "label": "thm:normal-sector-contraction",
+    "paper": "Visible-null sector comparison",
+    "module": "OptimalComparison",
+    "declarations": [
+      "two_source_positive_witness",
+      "squared_witness"
+    ],
+    "scope": "A positive two-sector witness yields amplitude and squared-energy contraction.",
+    "excluded": "Checkpoint-specific sector block norms."
+  },
+  {
+    "label": "thm:optimal-comparison",
+    "paper": "Perron-adapted amplitude comparison",
+    "module": "OptimalComparison",
+    "declarations": [
+      "two_source_positive_witness",
+      "squared_witness"
+    ],
+    "scope": "A positive witness controls a comparison row in weighted amplitude and energy norms.",
+    "excluded": "Runtime enumeration of the dependency graph."
+  },
+  {
+    "label": "thm:nonautonomous-attraction",
+    "paper": "Nonautonomous invariant tube",
+    "module": "NonautonomousAttraction",
+    "declarations": [
+      "orderedEnvelope",
+      "ordered_product_convolution",
+      "nonautonomous_invariant_tube"
+    ],
+    "scope": "Chronological product-convolution and a common invariant radius for time-dependent quadratic recurrences.",
+    "excluded": "Measured force and operator intervals."
+  },
+  {
+    "label": "cor:stationary-attraction",
+    "paper": "Stationary nonlinear attraction",
+    "module": "NonlinearAttraction",
+    "declarations": [
+      "step",
+      "root_factorization",
+      "invariant_upper_root",
+      "zero_force_geometric"
+    ],
+    "scope": "Fixed-root factorization, invariant interval, and geometric zero-force domination.",
+    "excluded": "Floating-point root evaluation and entry-time estimation."
+  },
+  {
+    "label": "thm:same-source-bridge",
+    "paper": "Same-source application and sharp margin bridge",
+    "module": "SameSourceBridge",
+    "declarations": [
+      "defectEnvelope",
+      "stagewise_defect_telescoping",
+      "absolute_cache_error",
+      "normalized_bridge_of_abs_mean_floor",
+      "row_map_applied_once"
+    ],
+    "scope": "Ordered stage transport, absolute budgets, mean floors, and one row-map application.",
+    "excluded": "Semantic pairing and checkpoint-specific PLGA gains."
+  },
+  {
+    "label": "eq:sharp-logit-margin",
+    "paper": "Sharp same-source logit margin",
+    "module": "ApplicationMargin",
+    "declarations": [
+      "paired_logit_margin",
+      "sharp_sqrt_two_margin"
+    ],
+    "scope": "The square-root-two paired logit budget preserves every strictly qualified reference winner.",
+    "excluded": "Extraction of logits and greedy decisions from model tensors."
+  }
+]

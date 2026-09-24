@@ -1,0 +1,33 @@
+{
+  "analyzer": "experiments/analysis/analyze_observable_margin.py",
+  "campaign_id": "observable-margin-confirmation-rev37",
+  "evidence": "compact-npz-no-raw-parameter-nodes",
+  "executor": "scripts/execute_observable_margin_plan.py",
+  "native_producer": "experiments/confirm/observable_margin_live.py",
+  "planner": "experiments/confirm/run_observable_margin_confirmation.py",
+  "robustness_scientific_gate": null,
+  "schema_version": "pldr-observable-margin-protocol-v1",
+  "stage": {
+    "attempt_rule": "append-only-positive-integer-attempts",
+    "dependencies": [
+      "H",
+      "ROB"
+    ],
+    "gpu_hour_cap": 10.0,
+    "hard_gate": true,
+    "id": "M",
+    "record_key": "STAGE:job_id",
+    "required_checks": [
+      "construction_lock_precedes_opening",
+      "both_heldout_seeds",
+      "unchanged_candidate_cell",
+      "fixed_probe_at_every_node",
+      "positive_charged_margin",
+      "endpoint_contraction",
+      "graph_enclosure",
+      "positive_base_real_exponent_plga"
+    ],
+    "title": "Held-out observable margin"
+  },
+  "status": "WAITING_FOR_FRESH_CHECKPOINTS"
+}

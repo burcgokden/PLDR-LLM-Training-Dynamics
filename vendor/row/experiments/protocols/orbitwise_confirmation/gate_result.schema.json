@@ -1,0 +1,114 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-orbitwise-row-map-collapse-v2"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "all_values_finite": {
+          "type": "boolean"
+        },
+        "endpoint_present": {
+          "type": "boolean"
+        },
+        "map_population_complete": {
+          "type": "boolean"
+        },
+        "prediction_precedes_branches": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "prediction_precedes_branches",
+        "endpoint_present",
+        "map_population_complete",
+        "all_values_finite"
+      ],
+      "title": "Derived checks",
+      "type": "object"
+    },
+    "control_log_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "endpoint_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "frozen_log_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "horizon": {
+      "const": 64
+    },
+    "map_records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "control_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "frozen_gate_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "frozen_minus_control_energy": {
+            "type": "number"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "supports_registered_direction": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "map_id",
+          "control_energy",
+          "frozen_gate_energy",
+          "frozen_minus_control_energy",
+          "supports_registered_direction"
+        ],
+        "title": "Paired final-gate intervention result for one map",
+        "type": "object"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "prediction_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-orbitwise-gate-result-v2"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "source_step",
+    "endpoint_step",
+    "horizon",
+    "prediction_sha256",
+    "control_log_sha256",
+    "frozen_log_sha256",
+    "map_records",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Paired final-gate intervention result",
+  "type": "object"
+}

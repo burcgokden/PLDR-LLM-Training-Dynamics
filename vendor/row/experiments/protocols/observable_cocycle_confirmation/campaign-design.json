@@ -1,0 +1,119 @@
+{
+  "architecture": {
+    "continuous_state_dimension": 61868742,
+    "decoder_layers": 3,
+    "head_width": 64,
+    "heads_per_layer": 4,
+    "parameter_count": 20622914,
+    "registered_contexts": 24,
+    "registered_maps_per_layer": 96
+  },
+  "campaign_id": "pldr-observable-full-state-cocycle-v1",
+  "decision_policy": {
+    "absolute_effect_floor": 1e-08,
+    "finite_horizon_implies_asymptotic_collapse": false,
+    "heldout_amplitude": "smaller-construction-amplitude",
+    "horizon_selection": "longest-jointly-qualified-else-one",
+    "maximum_centered_response_relative_residual": 0.25,
+    "maximum_placebo_fraction": 0.1,
+    "minimum_halving_improvement_factor": 1.05,
+    "operator_contraction_from_sampled_directions": false,
+    "sampled_direction_implies_operator_norm": false
+  },
+  "design_sha256": "fbb83afb4b88fba45694d813befac7a69e9a677507d81061bece0eb0ccf6d2c6",
+  "direction_classes": [
+    "row_adjoint",
+    "optimizer_displacement",
+    "balanced_full_state"
+  ],
+  "direction_policy": {
+    "balanced_full_state_amplitudes": [
+      7.62939453125e-06,
+      3.814697265625e-06
+    ],
+    "balanced_seed": 49211,
+    "block_balance": "equal-relative-euclidean-norm-across-nonzero-state-blocks",
+    "optimizer_displacement_amplitudes": [
+      0.0009765625,
+      0.00048828125
+    ],
+    "random_distribution": "seeded-rademacher",
+    "row_adjoint_amplitudes": [
+      1.52587890625e-05,
+      7.62939453125e-06
+    ],
+    "row_adjoint_seed": 49101,
+    "second_moment_boundary_policy": "zero-tangent-on-exact-zero-face"
+  },
+  "execution_policy": {
+    "all_adverse_outcomes_are_retained": true,
+    "all_registered_units_execute_independent_of_outcome": true,
+    "analysis_nodes_are_excluded_from_gpu_resource_totals": true,
+    "construction_lock_precedes_heldout_prediction": true,
+    "development_qualification_precedes_confirmation": true,
+    "prediction_and_validation_are_distinct_nodes": true,
+    "same_device_signed_comparisons": true,
+    "source_snapshot_must_match_committed_launch": true,
+    "validation_cannot_write_prediction_fields": true
+  },
+  "horizon_grid": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "numerical_policy": {
+    "adamw_replay_relative_tolerance": 2e-06,
+    "clipping_boundary_tolerance": 1e-07,
+    "deterministic_algorithms": true,
+    "dtype": "float32-native-successor",
+    "observation_storage_dtype": "float32",
+    "zero_second_moment_tangent_tolerance": 1e-20
+  },
+  "resource_budget": {
+    "hard_aggregate_reserved_device_hours": 3.0,
+    "persistent_output_cap_bytes": 2147483648,
+    "process_reserved_memory_cap_bytes": 21474836480,
+    "working_aggregate_reserved_device_hours": 2.0
+  },
+  "schema_version": "pldr-observable-cocycle-design-v1",
+  "source_steps": [
+    4096,
+    8192,
+    16384
+  ],
+  "stratum_policy": {
+    "construction": "set-selected-final-layernorm-gate-and-first-moment-to-zero",
+    "horizon_updates": 1,
+    "observed_force_zero_tolerance": 1e-10,
+    "other_state": "retain-checkpoint-value",
+    "second_moment": "retain-checkpoint-value"
+  },
+  "trajectories": [
+    {
+      "device": "cuda:0",
+      "label": "A",
+      "name": "construction-seed10444",
+      "order": "construction-chunk-order.npy",
+      "role": "construction",
+      "seed": 10444
+    },
+    {
+      "device": "cuda:0",
+      "label": "B",
+      "name": "transfer-seed11444",
+      "order": "transfer11444-chunk-order.npy",
+      "role": "heldout",
+      "seed": 11444
+    },
+    {
+      "device": "cuda:1",
+      "label": "C",
+      "name": "transfer-seed12444",
+      "order": "transfer12444-chunk-order.npy",
+      "role": "heldout",
+      "seed": 12444
+    }
+  ]
+}

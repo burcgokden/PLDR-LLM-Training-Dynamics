@@ -1,0 +1,49 @@
+{
+  "schema_version": "pldr-row-rg-energy-closure-probe-config-v3",
+  "probe_id": "pldr-fiber-coordinate-energy-closure-v10",
+  "source_run": {
+    "anchor": "data_root",
+    "path": "executed/stage-a-runner-smoke-v7-20260903/run"
+  },
+  "predecessor_closure": {
+    "anchor": "data_root",
+    "path": "executed/energy-closure-v8-20260903"
+  },
+  "block_sizes": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "baseline_replicates": 2,
+  "branches": [
+    "baseline-a",
+    "baseline-b",
+    "first-moment-0.999",
+    "first-moment-0.9",
+    "zero-first-moment",
+    "second-moment-0.999",
+    "second-moment-0.5",
+    "second-moment-2",
+    "zero-second-moment",
+    "first-moment-one-ulp",
+    "layernorm-bias-shift",
+    "sign-gauge-consistent",
+    "sign-gauge-params-only",
+    "sign-gauge-moments-only",
+    "sign-gauge-layer0-consistent",
+    "sign-gauge-layer0-params-only"
+  ],
+  "trajectories": [
+    {
+      "trajectory_id": "stage-a-smoke-t0",
+      "device": 0,
+      "source_step": 16
+    },
+    {
+      "trajectory_id": "stage-a-smoke-t1",
+      "device": 1,
+      "source_step": 16
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "analyzer": "experiments/analysis/comprehensive_confirmation_analysis.py",
+  "producer": "experiments/confirm/comprehensive_live_producers.py",
+  "raw_required": [
+    "intervention",
+    "prediction_lock",
+    "source_checkpoints",
+    "low_checkpoints",
+    "high_checkpoints",
+    "tokens",
+    "registry",
+    "normal_metadata",
+    "normal_left_basis",
+    "singular_values",
+    "low_event_ledger",
+    "high_event_ledger"
+  ],
+  "schema_version": "pldr-comprehensive-collapse-protocol-v4",
+  "stage": {
+    "decision_source": "The analyzer resolves the sealed request, checkpoints, raw archive, producer and analyzer code, partition, resource record, challenge seed, and prediction lock, then recomputes the decision.",
+    "dependencies": [
+      "D"
+    ],
+    "gpu_hour_cap": 0.4,
+    "id": "I",
+    "placement": "matched 16-snapshot continuations on both rate sides",
+    "primary_outputs": [
+      "two locked-rate continuation paths",
+      "finite-stencil SVD normal amplitudes",
+      "damping order",
+      "phase order",
+      "oscillation-onset order"
+    ],
+    "required_checks": [
+      "branches_share_source_state",
+      "only_registered_rate_changes",
+      "full_second_moment_successor_used",
+      "sealed_ordering_observed"
+    ],
+    "title": "Rate interventions"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifact_root": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "artifacts": {
+      "minProperties": 1,
+      "type": "object"
+    },
+    "campaign_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "protocol": {
+      "type": "object"
+    },
+    "request_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-gate-shape-request-v1"
+    },
+    "stage": {
+      "enum": [
+        "Q",
+        "T",
+        "TR",
+        "G",
+        "C",
+        "I",
+        "A",
+        "R"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "stage",
+    "artifact_root",
+    "protocol",
+    "artifacts",
+    "request_sha256"
+  ],
+  "title": "Checkpoint-bound gate-shape evidence request",
+  "type": "object"
+}

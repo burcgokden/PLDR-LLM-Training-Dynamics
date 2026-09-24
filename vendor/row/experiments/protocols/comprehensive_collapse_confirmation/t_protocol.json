@@ -1,0 +1,40 @@
+{
+  "analyzer": "experiments/analysis/comprehensive_confirmation_analysis.py",
+  "producer": "experiments/confirm/comprehensive_live_producers.py",
+  "raw_required": [
+    "primary_checkpoints",
+    "replication_checkpoints",
+    "primary_direct_trajectory",
+    "replication_direct_trajectory",
+    "tokens",
+    "registry",
+    "primary_event_ledger",
+    "replication_event_ledger"
+  ],
+  "schema_version": "pldr-comprehensive-collapse-protocol-v4",
+  "stage": {
+    "decision_source": "The analyzer resolves the sealed request, checkpoints, raw archive, producer and analyzer code, partition, resource record, challenge seed, and prediction lock, then recomputes the decision.",
+    "dependencies": [
+      "Q"
+    ],
+    "gpu_hour_cap": 0.5,
+    "id": "T",
+    "placement": "seed 3401 on cuda:0 and seed 3402 on cuda:1",
+    "primary_outputs": [
+      "two 6144-update trajectories",
+      "complete landmarks",
+      "dense early and late window snapshots",
+      "full Z_h vector and direct seminorm",
+      "independent first and last endpoint replay"
+    ],
+    "required_checks": [
+      "run_identities_unique",
+      "lineage_is_from_scratch",
+      "checkpoint_components_complete",
+      "scheduler_uses_trainer_formula",
+      "direct_observables_at_every_snapshot",
+      "environment_fields_complete"
+    ],
+    "title": "Complete-state trajectories"
+  }
+}

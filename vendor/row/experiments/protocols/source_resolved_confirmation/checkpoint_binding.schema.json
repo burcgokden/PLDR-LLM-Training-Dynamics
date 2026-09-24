@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "batch_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checkpoint_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "checkpoint_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "batch_bound": {
+          "type": "boolean"
+        },
+        "checkpoint_is_mapping": {
+          "type": "boolean"
+        },
+        "content_digest_replays": {
+          "type": "boolean"
+        },
+        "cursor_bound": {
+          "type": "boolean"
+        },
+        "lineage_bound": {
+          "type": "boolean"
+        },
+        "model_tensors_nonempty": {
+          "type": "boolean"
+        },
+        "optimizer_bound": {
+          "type": "boolean"
+        },
+        "required_keys_present": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "checkpoint_is_mapping",
+        "required_keys_present",
+        "model_tensors_nonempty",
+        "optimizer_bound",
+        "batch_bound",
+        "cursor_bound",
+        "lineage_bound",
+        "content_digest_replays"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "code_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "content_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "created_at_ns": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "cursor": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "dataset_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "operation_order_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "optimizer_state_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "order_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-checkpoint-binding-v1"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "tensor_inventory": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "dtype": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "shape": {
+            "items": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "minItems": 0,
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "shape",
+          "dtype",
+          "sha256"
+        ],
+        "title": "Checkpoint tensor binding",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "tokenizer_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "seed",
+    "step",
+    "checkpoint_path",
+    "checkpoint_sha256",
+    "content_sha256",
+    "tensor_inventory",
+    "optimizer_state_sha256",
+    "batch_sha256",
+    "cursor",
+    "code_sha256",
+    "tokenizer_sha256",
+    "dataset_sha256",
+    "order_sha256",
+    "operation_order_sha256",
+    "created_at_ns",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Complete checkpoint content binding",
+  "type": "object"
+}

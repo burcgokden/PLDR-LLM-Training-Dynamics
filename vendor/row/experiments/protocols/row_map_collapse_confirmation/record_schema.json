@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "checks": {
+      "type": "object"
+    },
+    "inputs": {
+      "type": "array"
+    },
+    "outputs": {
+      "type": "array"
+    },
+    "record_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "resources": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "pldr-row-map-stage-record-v1"
+    },
+    "stage": {
+      "enum": [
+        "Q",
+        "G",
+        "H",
+        "D",
+        "I",
+        "A",
+        "R"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "stage",
+    "status",
+    "inputs",
+    "outputs",
+    "checks",
+    "resources",
+    "record_sha256"
+  ],
+  "title": "PLDR row-map confirmation stage record",
+  "type": "object"
+}

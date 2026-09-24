@@ -1,0 +1,249 @@
+{
+  "architecture": {
+    "head_width": 64,
+    "heads": 4,
+    "layers": 3,
+    "parameter_count": 20622914,
+    "row_map_residual_units": 8
+  },
+  "campaign_id": "pldr-chronological-collapse-confirmation-v1",
+  "decision_rules": {
+    "construction": {
+      "constant_enlargement_after_lock": false,
+      "extremal_cell_selection": false,
+      "primary_block_rule": "smallest registered block with simultaneous shape and numerical coverage in the development window class",
+      "report_every_registered_cell": true
+    },
+    "development_gate": {
+      "minimum_positive_windows": 1,
+      "requires_diameter_contraction": true,
+      "requires_pair_envelope_coverage": true,
+      "requires_pre_update_margin": true,
+      "requires_shape_remainder_coverage": true
+    },
+    "heldout": {
+      "all_registered_layer_anchor_cells_reported": true,
+      "all_trajectories_must_cover": true,
+      "data_offsets_must_be_distinct": true,
+      "required_trajectory_count": 4
+    },
+    "intervention": {
+      "direction_from_source_removal_theorem": true,
+      "fair_sign_probability_per_seed": 0.019287109375,
+      "future_update_start_rule": "four-times-ordinal",
+      "magnitude_lower_bound_required": true,
+      "positive_sites_required": 10,
+      "seed_clustered_continuous_effect_bound": true,
+      "sites_per_seed": 12,
+      "source_anchor_step": 8000
+    },
+    "plga": {
+      "construction_owned_directional_bound": true,
+      "float64_identity_replay": true,
+      "positive_occupied_bases": true,
+      "rectangular_query_key": true
+    }
+  },
+  "numerical_policies": {
+    "float32_model_tensor": {
+      "dtype": "float32",
+      "promote_before_algebra": true,
+      "safety_factor": 32.0
+    },
+    "float64_algebra": {
+      "dtype": "float64",
+      "operation_count_recorded": true,
+      "safety_factor": 16.0
+    },
+    "microbatch_reduction": {
+      "condition_scale_recorded": true,
+      "residual_enters_numerical_charge": true,
+      "safety_factor": 64.0,
+      "source_dtype": "float32"
+    }
+  },
+  "optimizer": {
+    "batch_size": 32,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "constant_rate_after_warmup": true,
+    "context_length": 256,
+    "dtype": "float32",
+    "epsilon": 1e-05,
+    "gradient_clip_kind": "value",
+    "gradient_clip_value": 1.0,
+    "learning_rate": 0.00075,
+    "name": "AdamW",
+    "warmup_updates": 250,
+    "weight_decay": 0.1
+  },
+  "ownership": {
+    "construction": "locks block selection and every numerical, shape, intervention, and PLGA constant",
+    "development": "mechanism discovery only",
+    "heldout": "evaluates the immutable construction lock on every registered layer-anchor cell"
+  },
+  "registry": {
+    "anchor_steps": [
+      2000,
+      4000,
+      8000,
+      16000,
+      24000
+    ],
+    "complete_rows_per_context": 64,
+    "construction_block_lengths": [
+      16,
+      64,
+      256
+    ],
+    "context_count": 24,
+    "context_length": 256,
+    "development_anchor_steps": [
+      2000,
+      4000,
+      8000
+    ],
+    "history_length": 48,
+    "intervention_anchor_step": 8000,
+    "intervention_context_rule": "ordinal-modulo-sixteen",
+    "intervention_head_rule": "context-modulo-four",
+    "intervention_layer_rule": "ordinal-modulo-three",
+    "intervention_pair": [
+      0,
+      63
+    ],
+    "intervention_positive_sites_required": 10,
+    "intervention_sites_per_seed": 12,
+    "intervention_steps": 4,
+    "pair_chunk_size": 32768,
+    "pair_count": 1178880,
+    "vertex_count": 1536
+  },
+  "resource_budget": {
+    "aggregate_gpu_hours_cap": 10.0,
+    "aggregate_output_gib": 8.0,
+    "estimated_gpu_hours": {
+      "construction": 1.95,
+      "development": 0.65,
+      "heldout_capture": 0.9,
+      "heldout_training": 3.85,
+      "interventions": 0.6,
+      "plga_and_finalization": 0.2,
+      "qualification": 0.25
+    },
+    "peak_gpu_gib_per_job": 22.0,
+    "wall_hours_cap": 6.5
+  },
+  "schema_version": "pldr-chronological-confirmation-design-v1",
+  "stage_order": [
+    "Q",
+    "D",
+    "C",
+    "H",
+    "I",
+    "P",
+    "F"
+  ],
+  "stages": [
+    {
+      "id": "Q",
+      "requires": [],
+      "stop_on_failure": true,
+      "title": "code and algebra qualification"
+    },
+    {
+      "id": "D",
+      "requires": [
+        "Q"
+      ],
+      "stop_on_failure": true,
+      "title": "positive-branch development pilot"
+    },
+    {
+      "id": "C",
+      "requires": [
+        "D"
+      ],
+      "stop_on_failure": true,
+      "title": "construction and immutable lock"
+    },
+    {
+      "id": "H",
+      "requires": [
+        "C"
+      ],
+      "stop_on_failure": true,
+      "title": "four held-out trajectories"
+    },
+    {
+      "id": "I",
+      "requires": [
+        "H"
+      ],
+      "stop_on_failure": true,
+      "title": "theorem-directed isolated interventions"
+    },
+    {
+      "id": "P",
+      "requires": [
+        "H"
+      ],
+      "stop_on_failure": true,
+      "title": "occupied-segment PLGA transfer"
+    },
+    {
+      "id": "F",
+      "requires": [
+        "I",
+        "P"
+      ],
+      "stop_on_failure": true,
+      "title": "independent analysis and release"
+    }
+  ],
+  "status": "prospective-registered",
+  "trajectories": [
+    {
+      "data_offset_chunks": 0,
+      "name": "chron-development-s7444-o0",
+      "role": "development",
+      "seed": 7444,
+      "updates": 9001
+    },
+    {
+      "data_offset_chunks": 8192,
+      "name": "chron-construction-s8444-o8192",
+      "role": "construction",
+      "seed": 8444,
+      "updates": 24001
+    },
+    {
+      "data_offset_chunks": 24576,
+      "name": "chron-heldout-s9444-o24576",
+      "role": "heldout",
+      "seed": 9444,
+      "updates": 24001
+    },
+    {
+      "data_offset_chunks": 40960,
+      "name": "chron-heldout-s10444-o40960",
+      "role": "heldout",
+      "seed": 10444,
+      "updates": 24001
+    },
+    {
+      "data_offset_chunks": 57344,
+      "name": "chron-heldout-s11444-o57344",
+      "role": "heldout",
+      "seed": 11444,
+      "updates": 24001
+    },
+    {
+      "data_offset_chunks": 73728,
+      "name": "chron-heldout-s12444-o73728",
+      "role": "heldout",
+      "seed": 12444,
+      "updates": 24001
+    }
+  ]
+}

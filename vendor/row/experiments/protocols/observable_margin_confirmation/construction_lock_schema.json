@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "diameter_nonvacuity_fields": [
+    "construction_source_vertex_diameter",
+    "endpoint_usefulness_target",
+    "endpoint_fraction_of_construction_source",
+    "bound_to_observed_ratio_max"
+  ],
+  "enlargement_allowed": false,
+  "exact_union_graph_fields": [
+    "rule",
+    "neighbors",
+    "mapping",
+    "union_graph_sha256",
+    "vertex_count",
+    "edges",
+    "weights",
+    "effective_resistance",
+    "source_physical_sha256"
+  ],
+  "frozen_arrays": [
+    "affine_factor_upper_by_step",
+    "affine_forcing_upper_by_step",
+    "roundoff_charge_upper_by_step",
+    "effective_resistance_upper"
+  ],
+  "frozen_scalars": [
+    "effective_resistance_upper",
+    "source_energy_upper",
+    "source_diameter_bound_upper"
+  ],
+  "intervention_comparison_order": [
+    "aggregate_adaptive_gate_displacement_suppression",
+    "decay_source_removal",
+    "fixed_source_normalized_shape_activation_clamp"
+  ],
+  "intervention_criterion_fields": [
+    "sites_per_comparison",
+    "heldout_seed_site_count",
+    "lower_effect_order_statistic_per_seed",
+    "positive_sites_required_per_seed",
+    "criterion"
+  ],
+  "intervention_operator_contracts": [
+    {
+      "application_point": "after-native-optimizer-and-scheduler-step-v1",
+      "name": "aggregate_adaptive_gate_displacement_suppression",
+      "normalized_shape_reference_semantics": "not-applicable",
+      "operator_identity": "post-native-selected-gate-aggregate-adaptive-displacement-suppression-v1",
+      "post_update_probe_semantics": "unclamped-fixed-registry-probe-v1",
+      "selected_gate_moment_semantics": "retain-native-selected-gate-adam-moments-and-evolve-on-modified-trajectory-v1"
+    },
+    {
+      "application_point": "after-native-optimizer-and-scheduler-step-v1",
+      "name": "decay_source_removal",
+      "normalized_shape_reference_semantics": "not-applicable",
+      "operator_identity": "post-native-selected-gate-decay-removal-v1",
+      "post_update_probe_semantics": "unclamped-fixed-registry-probe-v1",
+      "selected_gate_moment_semantics": "retain-native-selected-gate-adam-moments-and-evolve-on-modified-trajectory-v1"
+    },
+    {
+      "application_point": "inside-loss-forward-and-backward-before-native-step-v1",
+      "name": "fixed_source_normalized_shape_activation_clamp",
+      "normalized_shape_reference_semantics": "unadvanced-digest-bound-checkpoint-source-model-training-mode-same-minibatch-arm-rng-replay-detached-v1",
+      "operator_identity": "selected-final-metric-layernorm-loss-forward-backward-activation-clamp-v1",
+      "post_update_probe_semantics": "unclamped-fixed-registry-probe-v1",
+      "selected_gate_moment_semantics": "native-adam-moments-advance-from-clamped-loss-gradient-v1"
+    }
+  ],
+  "no_heldout_artifacts": true,
+  "numerical_nonvacuity_fields": [
+    "relative_margin_floor",
+    "rule"
+  ],
+  "plga_endpoint_ownership": "registry-binds-context-head-row-order-anchor-rule;construction-lock-binds-selected-layer-and-node",
+  "plga_identity_fields": [
+    "selected_layer",
+    "selected_node",
+    "anchor_row",
+    "ordinal_context_head_binding",
+    "construction_comparison_id_by_ordinal"
+  ],
+  "required": [
+    "selected",
+    "lower_bound_rule",
+    "safety_multiplier",
+    "numerical_nonvacuity",
+    "diameter_nonvacuity",
+    "graph",
+    "intervention",
+    "plga",
+    "frozen_envelopes",
+    "bindings",
+    "source_report",
+    "lock_sha256"
+  ],
+  "schema_version": "pldr-observable-margin-construction-lock-v1",
+  "title": "Construction-owned observable envelope lock"
+}

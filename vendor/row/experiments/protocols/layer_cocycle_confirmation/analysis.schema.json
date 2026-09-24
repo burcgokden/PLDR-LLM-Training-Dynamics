@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-layer-resolved-cocycle-confirmation-v1"
+    },
+    "schema_version": {
+      "const": "pldr-layer-cocycle-analysis-v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id"
+  ],
+  "title": "Layer-resolved cocycle analysis",
+  "type": "object"
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "label": "thm:chordal-cover",
+    "paper": "Physical chordal row cover",
+    "module": "ChordalRowCover",
+    "declarations": [
+      "segment_endpoint_perturbation",
+      "chordal_net_radius",
+      "chordal_derivative_transfer"
+    ],
+    "scope": "Endpoint transport, chord radius, and derivative transfer on finite-dimensional segments.",
+    "excluded": "Checkpoint row capture and interval evaluation."
+  },
+  {
+    "label": "cor:stacked-regularity",
+    "paper": "Stacked-Jacobian regularity",
+    "module": "StackedJacobian",
+    "declarations": [
+      "column_energy_sum_le",
+      "scalar_identity_energy"
+    ],
+    "scope": "The square-root dimension conversion and its sharp identity-matrix case.",
+    "excluded": "Automatic differentiation of the PLDR implementation."
+  },
+  {
+    "label": "thm:normal-energy-equivalence",
+    "paper": "Normal energy equivalence",
+    "module": "NormalGeometry",
+    "declarations": [
+      "squared_normal_energy_equivalence",
+      "zero_energy_forces_zero_normal",
+      "chart_lower_edge"
+    ],
+    "scope": "Two-sided chart bounds imply squared energy equivalence and a positive finite-radius edge.",
+    "excluded": "Existence of the PLDR constant-rank chart."
+  },
+  {
+    "label": "thm:softmax-quotient-edge",
+    "paper": "Softmax quotient curvature",
+    "module": "LogitQuotient",
+    "declarations": [
+      "project_sum_zero",
+      "project_eq_self",
+      "common_shift_covariance_zero",
+      "probability_floor_centered_curvature"
+    ],
+    "scope": "Uniform projection, gauge annihilation, and the probability-floor lower edge on centered representatives.",
+    "excluded": "Vocabulary-scale logits and numerical eigensolvers."
+  },
+  {
+    "label": "thm:normal-response-edge",
+    "paper": "Factorized Fisher-normal edge",
+    "module": "PldrStageGain",
+    "declarations": [
+      "restricted_conorm_comp",
+      "upper_gain_comp",
+      "tube_conorm_lower"
+    ],
+    "scope": "Ordered restricted conorms, upper gains, and tube perturbation compose algebraically.",
+    "excluded": "Extraction of PLGA derivative subspaces and statistical charges."
+  },
+  {
+    "label": "thm:lifted-adamw-normal",
+    "paper": "Operation-ordered AdamW lift",
+    "module": "LiftedOptimizer",
+    "declarations": [
+      "liftedHomogeneous",
+      "lifted_optimizer_recurrence",
+      "biasCorrectedCoefficient",
+      "lifted_optimizer_bias_corrected"
+    ],
+    "scope": "The moment-first scalar recurrence, forcing terms, and bias-corrected step.",
+    "excluded": "Live clipping masks, second-moment tensors, and chart construction."
+  },
+  {
+    "label": "prop:adamw-jury-corridor",
+    "paper": "Decay-aware Jury corridor",
+    "module": "LiftedOptimizer",
+    "declarations": [
+      "liftedTraceWithDecay",
+      "lifted_determinant_with_decay",
+      "lifted_jury_margins_with_decay"
+    ],
+    "scope": "Trace, determinant, and all three strict scalar Jury margins with decoupled decay.",
+    "excluded": "A numerical common-metric search."
+  },
+  {
+    "label": "thm:common-lifted-metric",
+    "paper": "Common operator metric",
+    "module": "CommonMetric",
+    "declarations": [
+      "endpoint_common_gain",
+      "changing_operator_two_step"
+    ],
+    "scope": "Endpoint gains extend by convexity and compose for changing operators in one norm.",
+    "excluded": "Positive-metric conjugation and rational vertex factorization."
+  },
+  {
+    "label": "thm:optimal-comparison",
+    "paper": "Perron-adapted comparison",
+    "module": "OptimalComparison",
+    "declarations": [
+      "two_source_positive_witness",
+      "squared_witness"
+    ],
+    "scope": "A positive witness controls a row in weighted sup norm and squares to an energy witness.",
+    "excluded": "Runtime enumeration of the full dependency graph."
+  },
+  {
+    "label": "thm:nonlinear-attraction",
+    "paper": "Nonlinear attracting tube",
+    "module": "NonlinearAttraction",
+    "declarations": [
+      "step",
+      "root_factorization",
+      "invariant_upper_root",
+      "zero_force_geometric"
+    ],
+    "scope": "Root factorization, invariant upper interval, and geometric zero-force domination.",
+    "excluded": "Floating-point root evaluation and force estimation."
+  },
+  {
+    "label": "thm:same-source-bridge",
+    "paper": "Same-source application bridge",
+    "module": "SameSourceBridge",
+    "declarations": [
+      "defectEnvelope",
+      "stagewise_defect_telescoping",
+      "absolute_cache_error",
+      "normalized_bridge_of_abs_mean_floor",
+      "row_map_applied_once"
+    ],
+    "scope": "Ordered product-sum transport, absolute budgets, mean floors, and one row-map application.",
+    "excluded": "Semantic identity and checkpoint-specific PLGA gains."
+  }
+]

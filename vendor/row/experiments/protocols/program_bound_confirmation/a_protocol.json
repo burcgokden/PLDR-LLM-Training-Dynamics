@@ -1,0 +1,35 @@
+{
+  "analyzer_sha256": "a49311e1631b75a5c044f75bfd59a515c9d6a6f3ad1a822d5bad895d8d4b7b19",
+  "decision_source": "live-producer sufficient tensors and complete v3 states recomputed by the bound analyzer; caller arrays forbidden",
+  "dependencies": [
+    "N"
+  ],
+  "fresh_execution": "Early and late checkpoints, all layers, 32 immutable held-out pairs",
+  "gpu_hour_cap": 0.25,
+  "purpose": "Propagate the row defect once through actual PLGA stage tensors and recompute the sharp logit margin and greedy decision from logits.",
+  "raw_schema": "pldr-a-raw-observations-v3",
+  "required_artifact_roles": [
+    "stage_protocol",
+    "raw_observations",
+    "source_complete_state",
+    "target_complete_state",
+    "partition_manifest",
+    "resource_metadata"
+  ],
+  "required_checks": [
+    "partition_and_producer_bound",
+    "heldout_pairs_immutable",
+    "all_layers_registered",
+    "row_factor_applied_once",
+    "stage_envelopes_recomputed",
+    "absolute_differences_enclosed",
+    "layernorm_floors_measured",
+    "registered_margins_preserved"
+  ],
+  "schema_version": "pldr-collapse-stage-protocol-v3",
+  "stage": "A",
+  "time_semantics": [
+    "FROZEN_CHECKPOINT"
+  ],
+  "title": "Same-source application bridge"
+}

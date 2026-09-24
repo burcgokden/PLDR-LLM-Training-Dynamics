@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "all_values_finite": {
+          "type": "boolean"
+        },
+        "checkpoint_chronology": {
+          "type": "boolean"
+        },
+        "energy_ledger_closed": {
+          "type": "boolean"
+        },
+        "finite_transport_closed": {
+          "type": "boolean"
+        },
+        "map_population_complete": {
+          "type": "boolean"
+        },
+        "native_link_closed": {
+          "type": "boolean"
+        },
+        "shapley_efficiency_closed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "checkpoint_chronology",
+        "map_population_complete",
+        "finite_transport_closed",
+        "energy_ledger_closed",
+        "shapley_efficiency_closed",
+        "native_link_closed",
+        "all_values_finite"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "endpoint_checkpoint_binding_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "endpoint_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "map_records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "charge_gram": {
+            "items": {
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "context": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "endpoint_diameter": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "endpoint_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "energy_ledger_relative_residual": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "gain_defined": {
+            "type": "boolean"
+          },
+          "gate_charge": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "gate_shape_interaction": {
+            "type": "number"
+          },
+          "gate_work": {
+            "type": "number"
+          },
+          "head": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "layer": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "native_energy_upper": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "native_radius": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "radial_dissipation": {
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "shape_charge": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "shape_work": {
+            "type": "number"
+          },
+          "shapley_efficiency_relative_residual": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_diameter": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_gain": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_names": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "transport_relative_residual": {
+            "minimum": 0.0,
+            "type": "number"
+          }
+        },
+        "required": [
+          "map_id",
+          "context",
+          "layer",
+          "head",
+          "source_energy",
+          "endpoint_energy",
+          "source_diameter",
+          "endpoint_diameter",
+          "source_gain",
+          "gain_defined",
+          "source_names",
+          "radial_dissipation",
+          "charge_gram",
+          "gate_work",
+          "shape_work",
+          "gate_charge",
+          "shape_charge",
+          "gate_shape_interaction",
+          "native_radius",
+          "native_energy_upper",
+          "transport_relative_residual",
+          "energy_ledger_relative_residual",
+          "shapley_efficiency_relative_residual"
+        ],
+        "title": "One map on one native edge",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "producer_command_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-edge-v1"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "source_checkpoint_binding_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "seed",
+    "source_step",
+    "endpoint_step",
+    "source_checkpoint_binding_sha256",
+    "endpoint_checkpoint_binding_sha256",
+    "producer_command_sha256",
+    "map_records",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Complete source transport edge",
+  "type": "object"
+}

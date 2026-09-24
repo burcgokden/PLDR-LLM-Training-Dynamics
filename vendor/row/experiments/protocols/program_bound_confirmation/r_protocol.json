@@ -1,0 +1,35 @@
+{
+  "analyzer_sha256": "a49311e1631b75a5c044f75bfd59a515c9d6a6f3ad1a822d5bad895d8d4b7b19",
+  "decision_source": "live-producer sufficient tensors and complete v3 states recomputed by the bound analyzer; caller arrays forbidden",
+  "dependencies": [
+    "I",
+    "A"
+  ],
+  "fresh_execution": "Fresh CPU process with deterministic analyzers and report build",
+  "gpu_hour_cap": 0,
+  "purpose": "Rehash every artifact and regenerate scientific records, tables, figures, protocols, and manuscript outputs byte stably.",
+  "raw_schema": "pldr-r-raw-observations-v2",
+  "required_artifact_roles": [
+    "stage_protocol",
+    "raw_observations",
+    "source_complete_state",
+    "target_complete_state",
+    "partition_manifest",
+    "resource_metadata"
+  ],
+  "required_checks": [
+    "all_artifacts_resolve",
+    "scientific_digests_replay",
+    "records_recompute_byte_stably",
+    "tables_recompute_byte_stably",
+    "figures_recompute_byte_stably",
+    "resource_metadata_unsigned"
+  ],
+  "schema_version": "pldr-collapse-stage-protocol-v3",
+  "stage": "R",
+  "time_semantics": [
+    "FINITE_IMPLEMENTED_SCHEDULE",
+    "FROZEN_CHECKPOINT"
+  ],
+  "title": "Independent replay and report"
+}

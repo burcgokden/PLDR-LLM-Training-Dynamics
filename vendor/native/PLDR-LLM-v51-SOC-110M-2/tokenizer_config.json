@@ -1,0 +1,54 @@
+{
+  "add_bos_token": false,
+  "add_eos_token": false,
+  "add_prefix_space": null,
+  "added_tokens_decoder": {
+    "0": {
+      "content": "[PAD]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "1": {
+      "content": "[UNK]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "2": {
+      "content": "[START]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "3": {
+      "content": "[END]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    }
+  },
+  "bos_token": "[START]",
+  "bos_token_id": 2,
+  "clean_up_tokenization_spaces": false,
+  "eos_token": "[END]",
+  "eos_token_id": 3,
+  "extra_special_tokens": {},
+  "legacy": false,
+  "model_max_length": 1000000000000000019884624838656,
+  "pad_token": "[PAD]",
+  "pad_token_id": 0,
+  "padding_side": "left",
+  "tokenizer_class": "LlamaTokenizerFast",
+  "unk_token": "[UNK]",
+  "unk_token_id": 1,
+  "use_default_system_prompt": false
+}

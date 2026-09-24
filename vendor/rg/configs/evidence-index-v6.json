@@ -1,0 +1,204 @@
+{
+  "schema_version": "pldr-row-rg-evidence-index-spec-v1",
+  "entries": [
+    {
+      "id": "selected-analysis",
+      "status": "current",
+      "role": "registered analysis used by the manuscript",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0002/result.json"
+    },
+    {
+      "id": "selected-analysis-manifest",
+      "status": "current",
+      "role": "analysis manifest",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0002/manifest.json"
+    },
+    {
+      "id": "selected-root-manifest",
+      "status": "current",
+      "role": "root manifest",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/manifests/manifest-0002.json"
+    },
+    {
+      "id": "observer-record",
+      "status": "current",
+      "role": "source-bound full-trace observer analysis",
+      "path": "executed/observer-regime-v6-20260903/result.json"
+    },
+    {
+      "id": "stage-record",
+      "status": "current",
+      "role": "source-bound stage-resolved replay with exact represented-array energy",
+      "path": "executed/stage-resolved-observer-v6-20260903/result.json"
+    },
+    {
+      "id": "stage-a-smoke-result",
+      "status": "diagnostic",
+      "role": "executed production-runner state-machine smoke result",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/analyses/analysis-0001/result.json"
+    },
+    {
+      "id": "stage-a-smoke-manifest",
+      "status": "diagnostic",
+      "role": "executed production-runner state-machine smoke root manifest",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/manifests/manifest-0001.json"
+    },
+    {
+      "id": "stage-a-smoke-protocol",
+      "status": "diagnostic",
+      "role": "executed production-runner smoke protocol with derived seeds",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/inputs/protocol.json"
+    },
+    {
+      "id": "stage-a-smoke-qualification",
+      "status": "diagnostic",
+      "role": "source-bound production-runner smoke qualification",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/inputs/qualification.json"
+    },
+    {
+      "id": "stage-a-smoke-observer",
+      "status": "diagnostic",
+      "role": "executed zero-safe observer analysis of the runner smoke",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/observer/result.json"
+    },
+    {
+      "id": "stage-a-smoke-stage",
+      "status": "diagnostic",
+      "role": "executed zero-safe three-device stage replay of the runner smoke",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/stage/result.json"
+    },
+    {
+      "id": "stage-a-smoke-verification",
+      "status": "diagnostic",
+      "role": "sealed independent verification report for the runner smoke archive",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/verification.json"
+    },
+    {
+      "id": "excluded-disposition",
+      "status": "current",
+      "role": "source-bound excluded-run disposition",
+      "path": "executed/execution-disposition-v5-20260902/excluded-run.json"
+    },
+    {
+      "id": "selected-qualification",
+      "status": "current",
+      "role": "qualification consumed by the evidence launch",
+      "path": "protocol-v3/qualification-v3-04.json"
+    },
+    {
+      "id": "executed-protocol",
+      "status": "current",
+      "role": "byte-identical protocol archive",
+      "path": "protocol-v3/confirmation-protocol-v3-executed-166dc22c.json"
+    },
+    {
+      "id": "retained-analysis",
+      "status": "current",
+      "role": "descriptive retained-trajectory reduction",
+      "path": "executed/retained-scale-flow-v3.json"
+    },
+    {
+      "id": "synthetic-analysis",
+      "status": "current",
+      "role": "synthetic algebra and law qualification",
+      "path": "executed/synthetic-rg-qualification.json"
+    },
+    {
+      "id": "selected-combined-energy",
+      "status": "current",
+      "role": "combined dense energy tensor",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/raw/combined-energies.npz"
+    },
+    {
+      "id": "initial-analysis",
+      "status": "retained",
+      "role": "immutable initial analysis",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0001/result.json"
+    },
+    {
+      "id": "initial-root-manifest",
+      "status": "retained",
+      "role": "immutable initial root manifest",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/manifests/manifest-0001.json"
+    },
+    {
+      "id": "observer-predecessor",
+      "status": "retained",
+      "role": "prior source-bound observer analysis",
+      "path": "executed/observer-regime-v5-20260902/result.json"
+    },
+    {
+      "id": "stage-predecessor",
+      "status": "retained",
+      "role": "stage replay before exact represented-array energy classification",
+      "path": "executed/stage-resolved-observer-v5b-20260902/result.json"
+    },
+    {
+      "id": "disposition-predecessor",
+      "status": "retained",
+      "role": "excluded-run disposition predecessor",
+      "path": "executed/execution-disposition-v4-20260902/first-campaign.json"
+    },
+    {
+      "id": "precision-predecessor",
+      "status": "retained",
+      "role": "checkpoint precision diagnostic replaced by the stage replay",
+      "path": "executed/observer-precision-v4-20260902/result.json"
+    },
+    {
+      "id": "qualification-01",
+      "status": "retained",
+      "role": "passing qualification not consumed by a launch",
+      "path": "protocol-v3/qualification-v3.json"
+    },
+    {
+      "id": "qualification-02",
+      "status": "retained",
+      "role": "passing qualification consumed by the excluded launch",
+      "path": "protocol-v3/qualification-v3-02.json"
+    },
+    {
+      "id": "qualification-03",
+      "status": "unavailable-dependency",
+      "role": "passing qualification whose exact protocol copy is unavailable",
+      "path": "protocol-v3/qualification-v3-03.json",
+      "unavailable_dependency_sha256": "93d54a04fff21e2ec7bb1ba1a0184a83e2900f2356fe365a99d7a429c3a65212"
+    },
+    {
+      "id": "pilot-result",
+      "status": "diagnostic",
+      "role": "descriptive 4096-update pilot",
+      "path": "executed/pldr-refinedweb-byte-4096/confirmation-result.json"
+    },
+    {
+      "id": "planning-record-0",
+      "status": "diagnostic",
+      "role": "descriptive 16384-update planning record",
+      "path": "exploratory/rebuttal-rev2-16384/row_rg_rebuttal_rev2_16384_d0.json"
+    },
+    {
+      "id": "planning-record-1",
+      "status": "diagnostic",
+      "role": "descriptive 16384-update planning record",
+      "path": "exploratory/rebuttal-rev2-16384/row_rg_rebuttal_rev2_16384_d1.json"
+    }
+  ],
+  "support_inputs": {
+    "qualification": "selected-qualification",
+    "qualification_history": [
+      "qualification-01",
+      "qualification-02",
+      "qualification-03",
+      "selected-qualification"
+    ],
+    "observer_record": "observer-record",
+    "stage_record": "stage-record",
+    "excluded_disposition": "excluded-disposition",
+    "retained_record": "retained-analysis",
+    "pilot_result": "pilot-result",
+    "planning_records": [
+      "planning-record-0",
+      "planning-record-1"
+    ]
+  }
+}

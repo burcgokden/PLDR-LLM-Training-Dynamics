@@ -1,0 +1,40 @@
+{
+  "A_dff": 170,
+  "architectures": [
+    "PldrllmForCausalLM"
+  ],
+  "attention_bias": true,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "configuration_pldrllm.PldrllmConfig",
+    "AutoModelForCausalLM": "modeling_pldrllm.PldrllmForCausalLM"
+  },
+  "bos_token_id": 2,
+  "cache_first_G": false,
+  "custom_G_type": null,
+  "dtype": "float32",
+  "eos_token_id": 3,
+  "final_bias": true,
+  "glu_bias": true,
+  "head_dim": 64,
+  "hidden_act": "silu",
+  "hidden_size": 896,
+  "initializer_range": 0.02,
+  "intermediate_size": 2389,
+  "layer_norm_eps": 1e-06,
+  "max_position_embeddings": 1024,
+  "model_type": "pldrllm",
+  "num_attention_heads": 14,
+  "num_denseA": 2,
+  "num_hidden_layers": 5,
+  "num_reslayerA": 8,
+  "output_pldr_attentions": false,
+  "pad_token_id": 0,
+  "reference_rope": true,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "transformers_version": "4.56.1",
+  "use_cache": true,
+  "vocab_size": 32000
+}

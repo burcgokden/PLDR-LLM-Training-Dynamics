@@ -1,0 +1,2044 @@
+{
+  "schema_version": "row-rgmap-formal-correspondence-v10",
+  "boundary": "Every manuscript proof is standalone. Lean checks only the classified kernels and is never a premise of a manuscript result.",
+  "modules": [
+    {
+      "module": "RowRGMap.AffineCocycle",
+      "helpers": [
+        "Edge",
+        "compose",
+        "identity",
+        "act",
+        "Nonnegative",
+        "Canonical",
+        "compose_gain",
+        "compose_source",
+        "act_identity",
+        "act_nonnegative",
+        "block",
+        "block_nil",
+        "block_cons",
+        "normalize"
+      ]
+    },
+    {
+      "module": "RowRGMap.CollapseCriterion",
+      "helpers": [
+        "orbit",
+        "homogeneous",
+        "transported",
+        "homogeneous_nonnegative",
+        "transported_nonnegative",
+        "orbit_nonnegative",
+        "homogeneous_le_orbit",
+        "transported_le_orbit",
+        "recurrentRestart",
+        "recurrent_restart_positive",
+        "recurrent_restart_tendsto_zero",
+        "recurrentFaceEnergy",
+        "recurrent_face_energy_zero",
+        "recurrent_face_energy_restart",
+        "recurrent_face_energy_excursion",
+        "recurrent_face_canonical_edges",
+        "recurrent_face_edges_replay",
+        "recurrent_face_energy_not_tendsto_zero"
+      ]
+    },
+    {
+      "module": "RowRGMap.FiniteComparison",
+      "helpers": [
+        "finite_comparison_bound"
+      ]
+    },
+    {
+      "module": "RowRGMap.CriticalFlow",
+      "helpers": [
+        "binaryRG",
+        "binary_gain",
+        "binary_source",
+        "stationaryEnergy"
+      ]
+    },
+    {
+      "module": "RowRGMap.CriticalSource",
+      "helpers": []
+    },
+    {
+      "module": "RowRGMap.IntervalAffine",
+      "helpers": []
+    },
+    {
+      "module": "RowRGMap.ObserverEnvelope",
+      "helpers": []
+    },
+    {
+      "module": "RowRGMap.PositiveTail",
+      "helpers": []
+    },
+    {
+      "module": "RowRGMap.RadialEnergy",
+      "helpers": [
+        "gain"
+      ]
+    },
+    {
+      "module": "RowRGMap.RecurrentFaces",
+      "helpers": []
+    },
+    {
+      "module": "RowRGMap.ResponseDefect",
+      "helpers": []
+    },
+    {
+      "module": "RowRGMap.GaugeFiber",
+      "helpers": [
+        "DeterministicClosesAt"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "manuscript_label": "lem:quotient-diameter",
+      "coverage": "not-formalized",
+      "boundary_note": "The finite-dimensional row-centering proof is supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "a11f2dc7911b0e3d55a5f63201fdfa319f39eed316076775f473f80532c7436f"
+    },
+    {
+      "manuscript_label": "thm:mixed-gate-shape",
+      "coverage": "not-formalized",
+      "boundary_note": "The coordinatewise finite-sum argument is supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "e4b9d48d1c6d5aa23d22b8111f3c5f595484c1ef059f62c2d221ebc8a5104e98"
+    },
+    {
+      "manuscript_label": "thm:observer-energy-enclosure",
+      "coverage": "faithful",
+      "boundary_note": "Lean checks the nonnegative enclosure, exact zero and positivity decisions, the unresolved stratum, upper-envelope convergence, and the fixed-tolerance counterexample.",
+      "clauses": [
+        {
+          "clause_id": "energy-enclosure",
+          "status": "lean-checked",
+          "module": "RowRGMap.ObserverEnvelope",
+          "declarations": [
+            "lowerEnergy",
+            "upperEnergy",
+            "energy_enclosed"
+          ]
+        },
+        {
+          "clause_id": "exact-decisions",
+          "status": "lean-checked",
+          "module": "RowRGMap.ObserverEnvelope",
+          "declarations": [
+            "positive_of_positive_lower",
+            "exact_face_of_zero_upper",
+            "unresolved_interval_has_zero_and_positive"
+          ]
+        },
+        {
+          "clause_id": "asymptotic-boundary",
+          "status": "lean-checked",
+          "module": "RowRGMap.ObserverEnvelope",
+          "declarations": [
+            "convergence_from_upper_envelope",
+            "fixed_tolerance_only_bounds",
+            "fixed_tolerance_does_not_imply_convergence"
+          ]
+        }
+      ],
+      "manuscript_statement_sha256": "12977297ff2e55780a6bfa07fddb08f6a0ffcbf8f37d31fd71460bc8e018abde"
+    },
+    {
+      "manuscript_label": "thm:radial-closing",
+      "coverage": "kernel",
+      "boundary_note": "Lean checks the scalar algebra after orthogonality; projection and uniqueness remain in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "checked-kernel",
+          "status": "lean-checked",
+          "module": "RowRGMap.RadialEnergy",
+          "declarations": [
+            "gain_nonnegative",
+            "relative_increment",
+            "strict_closing_iff"
+          ]
+        },
+        {
+          "clause_id": "remaining-manuscript-argument",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "d9842557f6ef6db67f019ad0e3fc71ec36bb713c0096694dc5e3f70438901be0"
+    },
+    {
+      "manuscript_label": "def:canonical-edge",
+      "coverage": "faithful",
+      "boundary_note": "Lean checks the exact positive and face branches, their action, and nonnegativity.",
+      "clauses": [
+        {
+          "clause_id": "checked-kernel",
+          "status": "lean-checked",
+          "module": "RowRGMap.AffineCocycle",
+          "declarations": [
+            "canonical",
+            "canonical_act",
+            "canonical_nonnegative"
+          ]
+        }
+      ],
+      "manuscript_statement_sha256": "4ff478ab46dbee17d4db75f0156713ad2d1923e715d778d0d52c51470726d2cb"
+    },
+    {
+      "manuscript_label": "thm:canonical-cone-closure",
+      "coverage": "faithful",
+      "boundary_note": "Lean checks branch membership, identity membership, and closure under arbitrary finite chronological blocking.",
+      "clauses": [
+        {
+          "clause_id": "checked-kernel",
+          "status": "lean-checked",
+          "module": "RowRGMap.AffineCocycle",
+          "declarations": [
+            "canonical_iff_gain_zero_or_source_zero",
+            "compose_canonical",
+            "identity_canonical",
+            "block_canonical",
+            "canonical_is_canonical"
+          ]
+        }
+      ],
+      "manuscript_statement_sha256": "85f274e0a63359f245df0d32e09321f387aece51ba4a723894235972386bd074"
+    },
+    {
+      "manuscript_label": "thm:affine-rg-semigroup",
+      "coverage": "kernel",
+      "boundary_note": "Lean checks the semigroup, action, positivity, and ordered list blocking. The indexed product-convolution is the manuscript induction.",
+      "clauses": [
+        {
+          "clause_id": "checked-kernel",
+          "status": "lean-checked",
+          "module": "RowRGMap.AffineCocycle",
+          "declarations": [
+            "compose_identity_left",
+            "compose_identity_right",
+            "compose_assoc",
+            "act_compose",
+            "compose_nonnegative",
+            "block_append",
+            "block_act",
+            "block_nonnegative"
+          ]
+        },
+        {
+          "clause_id": "remaining-manuscript-argument",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "e456a678b779a6e0b80c3bec2c47f1b197b16043a41a78e660845a64eee41141"
+    },
+    {
+      "manuscript_label": "thm:interval-affine-rg",
+      "coverage": "faithful",
+      "boundary_note": "Lean checks exact nonnegative endpoint arithmetic, identities, inclusion monotonicity, finite chronological blocking, action enclosure, the positive gain bracket, and both zero-endpoint cases. Directed floating-point rounding remains an implementation obligation and is only claimed to preserve enclosure under a left fold.",
+      "clauses": [
+        {
+          "clause_id": "objects-and-validity",
+          "status": "lean-checked",
+          "module": "RowRGMap.IntervalAffine",
+          "declarations": [
+            "Interval",
+            "Valid",
+            "Contains",
+            "singleton",
+            "Edge",
+            "EdgeValid",
+            "ExactEdge",
+            "identity",
+            "singleton_valid",
+            "identity_valid"
+          ]
+        },
+        {
+          "clause_id": "endpoint-arithmetic",
+          "status": "lean-checked",
+          "module": "RowRGMap.IntervalAffine",
+          "declarations": [
+            "multiply",
+            "add",
+            "multiply_lower",
+            "multiply_upper",
+            "add_lower",
+            "add_upper",
+            "multiply_valid",
+            "add_valid",
+            "contains_nonnegative",
+            "multiply_contains",
+            "add_contains"
+          ]
+        },
+        {
+          "clause_id": "exact-semigroup",
+          "status": "lean-checked",
+          "module": "RowRGMap.IntervalAffine",
+          "declarations": [
+            "compose",
+            "act",
+            "compose_assoc",
+            "compose_identity_left",
+            "compose_identity_right",
+            "compose_valid",
+            "compose_exact",
+            "act_exact"
+          ]
+        },
+        {
+          "clause_id": "monotone-enclosure",
+          "status": "lean-checked",
+          "module": "RowRGMap.IntervalAffine",
+          "declarations": [
+            "Includes",
+            "includes_refl",
+            "multiply_includes",
+            "add_includes",
+            "compose_includes",
+            "Encloses",
+            "intervalBlock",
+            "exactBlock",
+            "intervalBlock_valid",
+            "intervalBlock_encloses_exact",
+            "compose_contains_exact",
+            "act_contains_exact"
+          ]
+        },
+        {
+          "clause_id": "zero-endpoint-branch",
+          "status": "lean-checked",
+          "module": "RowRGMap.IntervalAffine",
+          "declarations": [
+            "gain_bracket",
+            "no_finite_gain_bound_with_positive_successor",
+            "zero_successor_iff_zero_gain"
+          ]
+        }
+      ],
+      "manuscript_statement_sha256": "66c22793f51ee042c99c1b46c6c736191cae259c36d168513c76ef3286d08b9f"
+    },
+    {
+      "manuscript_label": "thm:gauge-covariance",
+      "coverage": "faithful",
+      "boundary_note": "Lean checks both the two-edge identity and its arbitrary finite-block consequence for nonzero intermediate and target gauges.",
+      "clauses": [
+        {
+          "clause_id": "two-edge-covariance",
+          "status": "lean-checked",
+          "module": "RowRGMap.AffineCocycle",
+          "declarations": [
+            "normalize_compose"
+          ]
+        },
+        {
+          "clause_id": "finite-block-covariance",
+          "status": "lean-checked",
+          "module": "RowRGMap.AffineCocycle",
+          "declarations": [
+            "normalizeChain",
+            "block_normalizeChain"
+          ]
+        }
+      ],
+      "manuscript_statement_sha256": "a5801af6b6f1319337a00d071d566400832c74d3d9c1c924cfb45360e05cc88c"
+    },
+    {
+      "manuscript_label": "prop:matrix-comparison-rg",
+      "coverage": "not-formalized",
+      "boundary_note": "The componentwise matrix comparison and associativity proof is supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "8d54222849aba2fe4e3363bd2677e7e36dd83016836e3ccf63d452c0bf4a0ca4"
+    },
+    {
+      "manuscript_label": "thm:two-sector-collapse",
+      "coverage": "kernel",
+      "boundary_note": "Lean checks the scalar nonnegative limit equivalence and pointwise zero criterion. The finite registry and diameter transfer remain in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "checked-kernel",
+          "status": "lean-checked",
+          "module": "RowRGMap.CollapseCriterion",
+          "declarations": [
+            "orbit_decomposition",
+            "sectors_suffice",
+            "sectors_necessary",
+            "orbit_tendsto_zero_iff_sectors",
+            "source_le_successor",
+            "zero_orbit_iff_zero_sectors"
+          ]
+        },
+        {
+          "clause_id": "remaining-manuscript-argument",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "2ddc3e781f378a8f662fc9d57a981d369dcfdedccc42d51ac2552b6f13d43d1c"
+    },
+    {
+      "manuscript_label": "thm:clean-fixed-points",
+      "coverage": "kernel",
+      "boundary_note": "Lean checks the complete fixed set for binary blocking. The manuscript proves the arbitrary integer block-factor extension.",
+      "clauses": [
+        {
+          "clause_id": "checked-kernel",
+          "status": "lean-checked",
+          "module": "RowRGMap.CriticalFlow",
+          "declarations": [
+            "binary_gain_fixed_iff",
+            "nonnegative_binary_fixed_points",
+            "binary_fixed_iff",
+            "critical_edge_fixed",
+            "absorbing_edge_fixed"
+          ]
+        },
+        {
+          "clause_id": "remaining-manuscript-argument",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "4e011a417aae3b18bab00c269d237b506c9937b1d381b4fc13970d2aec0703ce"
+    },
+    {
+      "manuscript_label": "thm:clean-critical-scaling",
+      "coverage": "kernel",
+      "boundary_note": "Lean checks exact binary scaling, arbitrary integer block-factor source iteration, source relevance, and the stationary forced value. Real-log asymptotics and differentiation remain in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "binary-scaling",
+          "status": "lean-checked",
+          "module": "RowRGMap.CriticalFlow",
+          "declarations": [
+            "gain_perturbation_scaling",
+            "critical_source_scaling",
+            "subcritical_distance_scaling",
+            "stationary_energy_fixed",
+            "stationary_energy_nonnegative"
+          ]
+        },
+        {
+          "clause_id": "arbitrary-block-source",
+          "status": "lean-checked",
+          "module": "RowRGMap.CriticalSource",
+          "declarations": [
+            "blockRG",
+            "blockRG_zero",
+            "blockRG_succ",
+            "blockRG_critical",
+            "blockIterate",
+            "blockIterate_critical",
+            "critical_source_tendsto_atTop_arbitrary",
+            "binaryIterate",
+            "binaryIterate_critical",
+            "critical_source_tendsto_atTop"
+          ]
+        },
+        {
+          "clause_id": "real-log-asymptotics",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "b1080435d342e81521129690b5d43f62dd88e763fe7cda1463d74ea449ff549a"
+    },
+    {
+      "manuscript_label": "lem:cumulative-log-criterion",
+      "coverage": "kernel",
+      "boundary_note": "Lean checks the exact exponential representation, one-step recurrence, log identity, and collapse equivalence. Divergence and finite-positive-limit branches remain in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "checked-kernel",
+          "status": "lean-checked",
+          "module": "RowRGMap.PositiveTail",
+          "declarations": [
+            "cumulativeLog",
+            "energy",
+            "cumulativeLog_zero",
+            "cumulativeLog_succ",
+            "energy_zero",
+            "energy_succ",
+            "log_energy_ratio",
+            "energy_tendsto_zero_iff"
+          ]
+        },
+        {
+          "clause_id": "remaining-manuscript-argument",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "eb1999b3ec92d6d81c251fa7cdac191b5d243a8c441a24dbc7ad3175a2df0381"
+    },
+    {
+      "manuscript_label": "prop:regular-nonautonomous-drift",
+      "coverage": "not-formalized",
+      "boundary_note": "The comparison of cumulative asymptotic scales is supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "0933eaa3926154bc76a57483bf4f28893fcb717541c9f4551537e25151699cde"
+    },
+    {
+      "manuscript_label": "thm:positive-excursion-phase",
+      "coverage": "not-formalized",
+      "boundary_note": "The nonzero mean-rate specialization is supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "a3aa8d215e57fe3557807f61037ffc171f7876e315ed185211e255d6790bf4d4"
+    },
+    {
+      "manuscript_label": "thm:recurrent-face-collapse",
+      "coverage": "faithful",
+      "boundary_note": "Lean constructs and covers finite excursions, proves the peak criterion and restart-amplification consequence, and instantiates a nonnegative obstruction showing that vanishing restarts alone do not imply collapse.",
+      "clauses": [
+        {
+          "clause_id": "checked-kernel",
+          "status": "lean-checked",
+          "module": "RowRGMap.RecurrentFaces",
+          "declarations": [
+            "RecurrentFaceSchedule",
+            "excursionInterval",
+            "excursionInterval_nonempty",
+            "excursionPeak",
+            "excursionRestart",
+            "excursionAmplification",
+            "face_times_unbounded",
+            "interval_cover",
+            "energy_le_excursionPeak",
+            "excursionPeak_nonnegative",
+            "peak_zero_of_restart_zero",
+            "peak_eq_restart_mul_amplification",
+            "energy_tendsto_zero_iff_excursionPeak",
+            "restart_mem_excursionInterval",
+            "excursionRestart_nonnegative",
+            "excursionRestart_le_peak",
+            "excursionRestart_tendsto_zero_of_collapse",
+            "restart_times_amplification_tendsto_zero_of_collapse"
+          ]
+        },
+        {
+          "clause_id": "restart-only-obstruction",
+          "status": "lean-checked",
+          "module": "RowRGMap.CollapseCriterion",
+          "declarations": [
+            "recurrent_face_energy_nonnegative",
+            "obstructionSchedule",
+            "obstruction_restart",
+            "obstruction_restart_tendsto_zero",
+            "restart_tendsto_zero_not_sufficient"
+          ]
+        }
+      ],
+      "manuscript_statement_sha256": "88f88cbf6be6ea9b6ddff156803b76f3e46f48a1238699144be092c83c238ffa"
+    },
+    {
+      "manuscript_label": "prop:restart-amplification-criticality",
+      "coverage": "not-formalized",
+      "boundary_note": "The logarithmic ratio comparison is supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "073e61f5ce67f90fb349f512bd735268b9cc7ce01e454efffd606dc00c7b785b"
+    },
+    {
+      "manuscript_label": "thm:uniform-block-closure",
+      "coverage": "not-formalized",
+      "boundary_note": "The geometric-convolution recurrence estimate is supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "9ea8658a6528aae5cfdf53cd83f35d62b9169af86f52b77de745d8728f733826"
+    },
+    {
+      "manuscript_label": "cor:block-cover-closure",
+      "coverage": "not-formalized",
+      "boundary_note": "The independent unbounded-anchor cover argument is supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "71bf42c9014e122b5bccdd276b09d97f69b050013fa22cc9a1943a25e217d48b"
+    },
+    {
+      "manuscript_label": "thm:complete-state-kernel-rg",
+      "coverage": "not-formalized",
+      "boundary_note": "The standard Markov-kernel associativity and blocking semigroup, scale-indexed lumpability theorem, propagation to scale multiples, deterministic characterization, and three-cycle non-descent counterexample are supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "0b8d19b3e9ed528b9941604ecf960b77fad8c345d17a802dcd7c011f05864cc5"
+    },
+    {
+      "manuscript_label": "def:multiplicative-universality",
+      "coverage": "not-formalized",
+      "boundary_note": "The equivalence relation on centered and scaled limiting laws is defined only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "a97ed108234c1ea7ef1e26c1d345542d3b3888f02fd1b6f63a751e1a7638aa6e"
+    },
+    {
+      "manuscript_label": "thm:gaussian-log-gain-fixed-point",
+      "coverage": "not-formalized",
+      "boundary_note": "The manuscript invokes the classical Lindeberg-Levy theorem under explicit hypotheses; no Lean probability formalization is claimed.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "bb0a9988565092b92152b9e988f9fc39f53c5e5ff00657ded774078297de9eef"
+    },
+    {
+      "manuscript_label": "prop:universality-taxonomy",
+      "coverage": "not-formalized",
+      "boundary_note": "The inherited RowRGMap namespace contains no crossover probability theorem. The combined companion checks the scalar log identity, sequence limit, bounded-factor inequalities and stable-index arithmetic; see combined_coverage and the additional formal correspondence.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "6d5cccf9b159a67933836e39ec2512040750d7a3ba6e306bd0d40e278cd2f15a",
+      "combined_coverage": "partial",
+      "combined_correspondence": "provenance/additional-formal-correspondence.json (combined repository root)",
+      "combined_boundary_note": "Positive scalar log-balance identity; bounded log-ratio squeeze; real-sequence reciprocal limit under diverging crossover, exact balance and subpower along the sequence; positive real-power inequalities with explicit constants; stable-index arithmetic. No probability theorem, stable-attraction criterion, slowly-varying-to-subpower theorem, asymptotic inverse, empirical dependence law, or full probabilistic tail example. Sequence hypotheses are stated pointwise after any needed finite tail restriction. Power bounds use the equivalent quotient form (a*r/delta)^(1/(1-H))."
+    },
+    {
+      "manuscript_label": "prop:plga-face-preservation",
+      "coverage": "not-formalized",
+      "boundary_note": "The exact functional criterion, five jointly sufficient conditions, conditional necessity of the final two conditions, and cancellation witnesses are proved only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "442f32b5a7ed9ba81c6445f0c5b39c2f36e9cdb550205f823b7da0f374e9376a"
+    },
+    {
+      "manuscript_label": "thm:plga-rg-transfer",
+      "coverage": "kernel",
+      "boundary_note": "Lean checks the norm inequality and nonzero-defect obstruction. The Frechet segment integral remains in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "checked-kernel",
+          "status": "lean-checked",
+          "module": "RowRGMap.ResponseDefect",
+          "declarations": [
+            "response_plus_defect_bound",
+            "nonzero_defect_obstructs_zero_output"
+          ]
+        },
+        {
+          "clause_id": "remaining-manuscript-argument",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "b8b1756850710383203413fb9bfceaf3329dadb313722ae12a754bd646092e7a"
+    },
+    {
+      "manuscript_label": "cor:plga-sequential-collapse",
+      "coverage": "not-formalized",
+      "boundary_note": "The sequential two-term limit proof is supplied only in the manuscript.",
+      "clauses": [
+        {
+          "clause_id": "manuscript-proof",
+          "status": "manuscript-only",
+          "module": null,
+          "declarations": []
+        }
+      ],
+      "manuscript_statement_sha256": "5bbbf0b0faf94d6031aade21ee6a940e2c7bb74b87dd2b3258dfbb10863f9cc1"
+    },
+    {
+      "manuscript_label": "prop:gauge-orbit-null",
+      "coverage": "faithful",
+      "boundary_note": "Lean checks finite-iterate equivariance and invariant-observable equality in the same abstract deterministic setting; the concrete PLDR sign action is validated experimentally.",
+      "clauses": [
+        {
+          "clause_id": "finite-equivariant-orbit",
+          "status": "lean-checked",
+          "module": "RowRGMap.GaugeFiber",
+          "declarations": [
+            "iterate_equivariant",
+            "gauge_orbit_successor_equal"
+          ]
+        }
+      ],
+      "manuscript_statement_sha256": "8960a7a0309b8bc2097706a35e89a383c462fde3afc0a90b5e1b8c9c84e39835"
+    },
+    {
+      "manuscript_label": "cor:paired-gauge-successor",
+      "coverage": "faithful",
+      "boundary_note": "Lean checks closure of equivariance and invariance under composition and the finite-scale paired-orbit identity in the same abstract deterministic setting.",
+      "clauses": [
+        {
+          "clause_id": "paired-orbit-identity",
+          "status": "lean-checked",
+          "module": "RowRGMap.GaugeFiber",
+          "declarations": [
+            "compose_equivariant",
+            "compose_invariant",
+            "paired_gauge_successor_equal"
+          ]
+        }
+      ],
+      "manuscript_statement_sha256": "4f7d8cdc9405d2d63c5c9daa3a2c2237af0abc6151860295314d07208cf777de"
+    },
+    {
+      "manuscript_label": "lem:augmented-fiber-witness",
+      "coverage": "faithful",
+      "boundary_note": "Lean checks the contradiction from one equal augmented-state pair with unequal successor-energy readouts.",
+      "clauses": [
+        {
+          "clause_id": "equal-source-unequal-successor",
+          "status": "lean-checked",
+          "module": "RowRGMap.GaugeFiber",
+          "declarations": [
+            "augmented_fiber_witness_not_closed"
+          ]
+        }
+      ],
+      "manuscript_statement_sha256": "acf79859134e4f90b305099c1d10f8b8c12169f50aa7479e2566367d51cf3910"
+    }
+  ],
+  "lean_type_fingerprint": {
+    "toolchain": "leanprover/lean4:v4.33.0-rc1",
+    "format": "pinned Lean #check @Fully.Qualified.Name with pp.universes=true, pp.explicit=true, pp.unicode=false; declaration prefix removed and whitespace collapsed",
+    "declarations": [
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "Canonical",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.Canonical",
+        "kind": "def",
+        "elaborated_type_sha256": "fd54d45ffb8eb1690f0ceb406ca2e35f561c728343729fb7af90a6acbb9ce81a"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "Edge",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.Edge",
+        "kind": "structure",
+        "elaborated_type_sha256": "baaddf70fb5d432b8bd948ef91d6f910124a6d138edae4d5f000c4610ddc8eae"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "Nonnegative",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.Nonnegative",
+        "kind": "def",
+        "elaborated_type_sha256": "fd54d45ffb8eb1690f0ceb406ca2e35f561c728343729fb7af90a6acbb9ce81a"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "act",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.act",
+        "kind": "def",
+        "elaborated_type_sha256": "66265b3f2397ad2472a18dd5fd67831b9b2a7bc9b846fff2748e4fa2e5d612a4"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "act_compose",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.act_compose",
+        "kind": "theorem",
+        "elaborated_type_sha256": "55d6173e24aaca9e84d8b6a1e025033e01664e69cf344c15e3c709c0bbca579d"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "act_identity",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.act_identity",
+        "kind": "theorem",
+        "elaborated_type_sha256": "20065af96d5d00490298e996fb05f1679c70267ae57997c17af071125a5b64d0"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "act_nonnegative",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.act_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "4b9e1f6676a4d10a58664c43758f0a8de0c27f697a72801e124711bd7ab57411"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "block",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.block",
+        "kind": "def",
+        "elaborated_type_sha256": "84e261d5963e3aa33b32176ba400a7ddf68562b4af80fb59aae4d497ccc21390"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "block_act",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.block_act",
+        "kind": "theorem",
+        "elaborated_type_sha256": "435d3a789b5b053937c6a2b9199e2c537a0f49cbbbc21f94316f8213e95c8ad8"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "block_append",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.block_append",
+        "kind": "theorem",
+        "elaborated_type_sha256": "edf6098dff33c1472eb7401dce4f076b9027a841c21ea76240f59edc1a767e9e"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "block_canonical",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.block_canonical",
+        "kind": "theorem",
+        "elaborated_type_sha256": "10731530f8ed0d974bff8b35d77c49bf446e877a98cd3dbab56dd61a43f58e5e"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "block_cons",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.block_cons",
+        "kind": "theorem",
+        "elaborated_type_sha256": "a9d78189252fcccd75c743b68d9b9681c94615fd05ad76a9ff5220b0314cdbee"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "block_nil",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.block_nil",
+        "kind": "theorem",
+        "elaborated_type_sha256": "9db73e1cd872e37f3d159f5610b99e291de9635de1d3b312ec8f78e0868060fd"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "block_nonnegative",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.block_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "fb87598c3c444461b6dd7f7d0b610c85a24a17e544e9f253957059e8bfc670a1"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "block_normalizeChain",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.block_normalizeChain",
+        "kind": "theorem",
+        "elaborated_type_sha256": "5388aa88c264c645c86c720c16e1bd83bd5c6dd553d05168a672dc6df206a9a9"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "canonical",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.canonical",
+        "kind": "def",
+        "elaborated_type_sha256": "0a56beedac5c9fb65fe4fb033ce86341a2767419b4af9eb654fd1b5f9587bc3d"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "canonical_act",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.canonical_act",
+        "kind": "theorem",
+        "elaborated_type_sha256": "02bf343ae349d3cb2d27ce785a07a9847c2378dec959d481694342fa765306bf"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "canonical_iff_gain_zero_or_source_zero",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.canonical_iff_gain_zero_or_source_zero",
+        "kind": "theorem",
+        "elaborated_type_sha256": "0ecac19ae1173c499f3e373a31ba993a101f55e2c5935cec3d395cbc945312be"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "canonical_is_canonical",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.canonical_is_canonical",
+        "kind": "theorem",
+        "elaborated_type_sha256": "f76e40be456033537bc0bc68270cdd306e5685ad5f2021a418769d784ece03c4"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "canonical_nonnegative",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.canonical_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "62be3db12244793213ea43069878db6cc68b9d03e05efea844bd50d74f434f01"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "compose",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.compose",
+        "kind": "def",
+        "elaborated_type_sha256": "1e60f82c66a8069fd71f7e0d6aef476b496ea31610886faa96930210ca87f890"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "compose_assoc",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.compose_assoc",
+        "kind": "theorem",
+        "elaborated_type_sha256": "9e2d8483c68786a48495153f1bf57f1cfd75075c7e860a7f5ec60d4a943892f9"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "compose_canonical",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.compose_canonical",
+        "kind": "theorem",
+        "elaborated_type_sha256": "5b08b69e55f729bcea571a2c5d665bdfb4613810f9a03c2122ec37f440855091"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "compose_gain",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.compose_gain",
+        "kind": "theorem",
+        "elaborated_type_sha256": "0765618c4a322f43fdc29faa0db36f83947d66c8cd0ca27adff420f3dc001fa3"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "compose_identity_left",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.compose_identity_left",
+        "kind": "theorem",
+        "elaborated_type_sha256": "95c0077e67806b7cb67a8a8538c33318b902a6ee4cb58ee5247f75266efc238c"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "compose_identity_right",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.compose_identity_right",
+        "kind": "theorem",
+        "elaborated_type_sha256": "d2a6886a25c5cf873153d2e553f4e0489a91766c66d78112a5bb09a4f216bd9b"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "compose_nonnegative",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.compose_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "774708e9be16d0dd3e790806c7395491121fd959d49ab26a14cf47f61d06c825"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "compose_source",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.compose_source",
+        "kind": "theorem",
+        "elaborated_type_sha256": "66737fbf44cd41fa98bbcee342491d3a9e2ecea752e407a96f5cc41cf8a52b97"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "identity",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.identity",
+        "kind": "def",
+        "elaborated_type_sha256": "dbba303964d88abaca93eff57d9fe7d1d9f228ef4869d0a3327426d249561869"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "identity_canonical",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.identity_canonical",
+        "kind": "theorem",
+        "elaborated_type_sha256": "7b56ccbf79cc1a0957f69643f7421083991f37dc76db1388a90851d7064bbb2e"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "normalize",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.normalize",
+        "kind": "def",
+        "elaborated_type_sha256": "eb8d28e4eaed4eb109a729aac149f51e32636ea6693ecb83c55a8710677994d7"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "normalizeChain",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.normalizeChain",
+        "kind": "def",
+        "elaborated_type_sha256": "2c25ad633050e371fba5e0a1c75dbc44f16314cf6a3d58c0a1b2f10d87411885"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "declaration": "normalize_compose",
+        "fully_qualified_name": "RowRGMap.AffineCocycle.normalize_compose",
+        "kind": "theorem",
+        "elaborated_type_sha256": "aed76276544585225aa993f42748ed14760fa14e410732f40058e775bf6dcf33"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "homogeneous",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.homogeneous",
+        "kind": "def",
+        "elaborated_type_sha256": "00f90071ba2febbbdf142e81248b3932430947fec649273cd95152a8d0ca65b9"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "homogeneous_le_orbit",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.homogeneous_le_orbit",
+        "kind": "theorem",
+        "elaborated_type_sha256": "3c1cfc32b7646b084bca7e89699da61ad78b292c224ea45a618defc5d011ece4"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "homogeneous_nonnegative",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.homogeneous_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "dbb224b4396789bba9eefde198fc440dd47da871d43581b3fd49cac916e1a0c2"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "obstructionSchedule",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.obstructionSchedule",
+        "kind": "def",
+        "elaborated_type_sha256": "b2c6d776c33b7da28f534e05d95c6d4a041e57323e1a795c5d9fbbff317560ca"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "obstruction_restart",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.obstruction_restart",
+        "kind": "theorem",
+        "elaborated_type_sha256": "c69499f59937b27a02706fc1f2a013d6eec12478a7edb97b61d069c717a54dc8"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "obstruction_restart_tendsto_zero",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.obstruction_restart_tendsto_zero",
+        "kind": "theorem",
+        "elaborated_type_sha256": "fdb76a54364740540a56574b2643c30c5ec1b921799e0b792c437d183de8a9fe"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "orbit",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.orbit",
+        "kind": "def",
+        "elaborated_type_sha256": "51f52fd0696bafbf028b261932b2f8b2aeca84f759bbc5c95c388e0f92717ef6"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "orbit_decomposition",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.orbit_decomposition",
+        "kind": "theorem",
+        "elaborated_type_sha256": "f2676c425189da84328cf1ed48bd2488bc3488fb5b5c9fb54598a6462c0f2009"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "orbit_nonnegative",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.orbit_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "5991c32cb1eb529e39ed0db932adf39503fba49dac5c08587278d501a8170717"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "orbit_tendsto_zero_iff_sectors",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.orbit_tendsto_zero_iff_sectors",
+        "kind": "theorem",
+        "elaborated_type_sha256": "3d2d284b1405842736e9a3082d0f359a56e6b69172a3d945c2d8377e3ca9578d"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrentFaceEnergy",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrentFaceEnergy",
+        "kind": "def",
+        "elaborated_type_sha256": "81011e0f306b4dba73b53d3bf1e3472f1f43093fcdd875302829ea14e8da1538"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrentRestart",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrentRestart",
+        "kind": "def",
+        "elaborated_type_sha256": "81011e0f306b4dba73b53d3bf1e3472f1f43093fcdd875302829ea14e8da1538"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrent_face_canonical_edges",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrent_face_canonical_edges",
+        "kind": "theorem",
+        "elaborated_type_sha256": "6b04e7e3cf21a50611a5ca3093183fad228c7d0eb39d1435310d2c536a15245d"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrent_face_edges_replay",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrent_face_edges_replay",
+        "kind": "theorem",
+        "elaborated_type_sha256": "ba90042dc41d6ff8a954dca26c2b3f1cd139e917c08d61a640dcd321863e0367"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrent_face_energy_excursion",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrent_face_energy_excursion",
+        "kind": "theorem",
+        "elaborated_type_sha256": "453637f78285bd9c83e06829b6b259661e361e448762c22cc678986d885e6853"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrent_face_energy_nonnegative",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrent_face_energy_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "a400aa9dfd7fa88bface2578dd6385fe2e3ef5a27625bf88737b5cb90e4a1d66"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrent_face_energy_not_tendsto_zero",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrent_face_energy_not_tendsto_zero",
+        "kind": "theorem",
+        "elaborated_type_sha256": "184fd78df56b7fd92b5cad7370b9775716c38a6ef030e54396d03b5ec847fcc1"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrent_face_energy_restart",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrent_face_energy_restart",
+        "kind": "theorem",
+        "elaborated_type_sha256": "2aa2490d718ed601ddfb63d916bd1981d2960d90d3cf39556f5a95f4ea23bbf3"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrent_face_energy_zero",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrent_face_energy_zero",
+        "kind": "theorem",
+        "elaborated_type_sha256": "c18bbfd4ae6e088accadb7e7218e09b8c572330a6ad690e06cca5c5f0e754bf8"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrent_restart_positive",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrent_restart_positive",
+        "kind": "theorem",
+        "elaborated_type_sha256": "a6a7fdae9878744af68bf28817be252de69a7ce83b165a77703afe48492be7ae"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "recurrent_restart_tendsto_zero",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.recurrent_restart_tendsto_zero",
+        "kind": "theorem",
+        "elaborated_type_sha256": "d8fe68a535b11a4c7012a1c8373881e3249b27589ddedd30d1f7e6d11aa5b6ee"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "restart_tendsto_zero_not_sufficient",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.restart_tendsto_zero_not_sufficient",
+        "kind": "theorem",
+        "elaborated_type_sha256": "0f6b71833ef48771f7ecd1ac84a23844c69b82a4a803abe360c57168e0f6df34"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "sectors_necessary",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.sectors_necessary",
+        "kind": "theorem",
+        "elaborated_type_sha256": "b00e0ae540c4c2fec58cebb9f06574d9a8a0d9f7651957ee1e1fde0f99fb544a"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "sectors_suffice",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.sectors_suffice",
+        "kind": "theorem",
+        "elaborated_type_sha256": "fdfa1fc3fb83ba00357761dea97d717b6898cb954b87d798356622ccd6e816a8"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "source_le_successor",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.source_le_successor",
+        "kind": "theorem",
+        "elaborated_type_sha256": "bbf9fb3c4bf8e45d9ce1b57a944602912b28820332f292877ba0f1ed76b10912"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "transported",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.transported",
+        "kind": "def",
+        "elaborated_type_sha256": "060482c5c1122f3c5a7bc87c9dff5f3651378a5a62f914d60eeef3210f7da5d1"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "transported_le_orbit",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.transported_le_orbit",
+        "kind": "theorem",
+        "elaborated_type_sha256": "693991d17d6c571ad494a89140ceb569563483d123a40d0cc3e2667808a443e4"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "transported_nonnegative",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.transported_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "4d97b4d105d3ff9130b239ddf53f6075ec73fc5ca373bda950686b7eaf79ecfb"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "declaration": "zero_orbit_iff_zero_sectors",
+        "fully_qualified_name": "RowRGMap.CollapseCriterion.zero_orbit_iff_zero_sectors",
+        "kind": "theorem",
+        "elaborated_type_sha256": "4dbc48718fd6aa0e5e10e6385b313c254f51d1c31ec40fd9a69365c09944d350"
+      },
+      {
+        "module": "RowRGMap.FiniteComparison",
+        "declaration": "finite_comparison_bound",
+        "fully_qualified_name": "RowRGMap.FiniteComparison.finite_comparison_bound",
+        "kind": "theorem",
+        "elaborated_type_sha256": "415c316049314f438206a479d49a40d862c2a9d9ba5cfed6e76799b0f8588f95"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "absorbing_edge_fixed",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.absorbing_edge_fixed",
+        "kind": "theorem",
+        "elaborated_type_sha256": "eec15a78ad724d8d14919d74aa40e4e1cd776626213e8eca90a488e17b9c92f2"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "binaryRG",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.binaryRG",
+        "kind": "def",
+        "elaborated_type_sha256": "6c00a0d545cfbac2d802fb7a6b15f5693f5ae540fef26313457f15a501965437"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "binary_fixed_iff",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.binary_fixed_iff",
+        "kind": "theorem",
+        "elaborated_type_sha256": "08abcae882ede469be6b3d90b715ac8d5972fbceb7fd5145eac5634f9b06656f"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "binary_gain",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.binary_gain",
+        "kind": "theorem",
+        "elaborated_type_sha256": "4ce5e842a4aa15cd69e5dcb7a6b9362f58122d9af72553e4c9638eb466534a80"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "binary_gain_fixed_iff",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.binary_gain_fixed_iff",
+        "kind": "theorem",
+        "elaborated_type_sha256": "f537305c272604fa0a963bb58e07508103e7d93d74986b45d8af8b9871b9845d"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "binary_source",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.binary_source",
+        "kind": "theorem",
+        "elaborated_type_sha256": "d1b7dbc5a64acedd69b7bc00cdd82d3f6831e3b2edbac3b0a0d145f8a5f33285"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "critical_edge_fixed",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.critical_edge_fixed",
+        "kind": "theorem",
+        "elaborated_type_sha256": "ae2ef922f4287d67e9d723b5d5f8aca54f6d7e0983887c97bf68157b73d6e129"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "critical_source_scaling",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.critical_source_scaling",
+        "kind": "theorem",
+        "elaborated_type_sha256": "2a573a73632c7bfd56d1c3668b246deed9169fdb640b2fdb1468ac43ee1d3d3f"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "gain_perturbation_scaling",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.gain_perturbation_scaling",
+        "kind": "theorem",
+        "elaborated_type_sha256": "c0ae3184eeac706b1af194e5ebb075e17500af0964d3115047541fc809feefe3"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "nonnegative_binary_fixed_points",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.nonnegative_binary_fixed_points",
+        "kind": "theorem",
+        "elaborated_type_sha256": "6c9d50ca48b02710240090c059b92bb00bd7566ad3f35c96087d88bf98090a32"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "stationaryEnergy",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.stationaryEnergy",
+        "kind": "def",
+        "elaborated_type_sha256": "00ab6789ba7069321d29c166a348beaddffcceb0e2d8f310218a76a68514f254"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "stationary_energy_fixed",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.stationary_energy_fixed",
+        "kind": "theorem",
+        "elaborated_type_sha256": "72e075be58735464cccb9eb161435d2b9f80140a11e0773109065669657d1199"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "stationary_energy_nonnegative",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.stationary_energy_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "cac8787b2260950d91abe3ce69a559bcecdf45004652a7e506dc513f55661017"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "declaration": "subcritical_distance_scaling",
+        "fully_qualified_name": "RowRGMap.CriticalFlow.subcritical_distance_scaling",
+        "kind": "theorem",
+        "elaborated_type_sha256": "2f7a2316ec1da966696d6768d9416bab2b1976468d47885cba227bd199bc13d2"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "binaryIterate",
+        "fully_qualified_name": "RowRGMap.CriticalSource.binaryIterate",
+        "kind": "def",
+        "elaborated_type_sha256": "52854394e7795b98e21a0f61097de6e5e110c520886c97d08dc8d1f31f14c503"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "binaryIterate_critical",
+        "fully_qualified_name": "RowRGMap.CriticalSource.binaryIterate_critical",
+        "kind": "theorem",
+        "elaborated_type_sha256": "8a3772dbe982ee850c43d61c9c5f69694d8d2e60f6b89a99a6d6db24b388bb9b"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "blockIterate",
+        "fully_qualified_name": "RowRGMap.CriticalSource.blockIterate",
+        "kind": "def",
+        "elaborated_type_sha256": "20fbd992a2ec11ddd4813332a389515c1e22cbafccee7257cde313978e1ae213"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "blockIterate_critical",
+        "fully_qualified_name": "RowRGMap.CriticalSource.blockIterate_critical",
+        "kind": "theorem",
+        "elaborated_type_sha256": "c255887cdfbc0ae8578a45749ff21c8ec18ce92dcfcc6ddc0cfe997c9643bdf9"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "blockRG",
+        "fully_qualified_name": "RowRGMap.CriticalSource.blockRG",
+        "kind": "def",
+        "elaborated_type_sha256": "52854394e7795b98e21a0f61097de6e5e110c520886c97d08dc8d1f31f14c503"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "blockRG_critical",
+        "fully_qualified_name": "RowRGMap.CriticalSource.blockRG_critical",
+        "kind": "theorem",
+        "elaborated_type_sha256": "14beebac4a953e3e170208093a883ec5006df8fef6b3ea7a58f8e73d9e468671"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "blockRG_succ",
+        "fully_qualified_name": "RowRGMap.CriticalSource.blockRG_succ",
+        "kind": "theorem",
+        "elaborated_type_sha256": "013a03095e4d76e14e86eff2a6aed2d1226d7f1fcf70bd7cf3a9144a13ec5bb0"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "blockRG_zero",
+        "fully_qualified_name": "RowRGMap.CriticalSource.blockRG_zero",
+        "kind": "theorem",
+        "elaborated_type_sha256": "13bac57e08869d05b7b71135e44a382ae38a7bbb2c3cf4b636da373cfdb134a9"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "critical_source_tendsto_atTop",
+        "fully_qualified_name": "RowRGMap.CriticalSource.critical_source_tendsto_atTop",
+        "kind": "theorem",
+        "elaborated_type_sha256": "f01ae5463e0702c9d91e5efc854843316042f55fb01965ab0f3f6fe5c539c033"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "declaration": "critical_source_tendsto_atTop_arbitrary",
+        "fully_qualified_name": "RowRGMap.CriticalSource.critical_source_tendsto_atTop_arbitrary",
+        "kind": "theorem",
+        "elaborated_type_sha256": "7897f11f25a3f3ba0b3bbd212ae360a6403a4277534f18f2272e53c47122cfec"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "Contains",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.Contains",
+        "kind": "def",
+        "elaborated_type_sha256": "d4f2d0b1c032aea76979a232e2dbce968f05e6afa1d1b181fbd67d6518ad3f21"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "Edge",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.Edge",
+        "kind": "structure",
+        "elaborated_type_sha256": "baaddf70fb5d432b8bd948ef91d6f910124a6d138edae4d5f000c4610ddc8eae"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "EdgeValid",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.EdgeValid",
+        "kind": "def",
+        "elaborated_type_sha256": "4bb9b546a0950e29fe06768b30611db755681da468ecf294866509799f93d1b6"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "Encloses",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.Encloses",
+        "kind": "def",
+        "elaborated_type_sha256": "27771d30b8374fbe25d48ac74d3cad030620995e313d3587f10e2d8c9e86c214"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "ExactEdge",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.ExactEdge",
+        "kind": "def",
+        "elaborated_type_sha256": "be7fde6ca3c9087e4ca1fcf8c056e73238bf36c03bcc21db4e4e3d7d7d1ff4be"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "Includes",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.Includes",
+        "kind": "def",
+        "elaborated_type_sha256": "4d40d661bd77fc9d26e5f09dd93c0ded9674b5385fc26afa7eda665da734553e"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "Interval",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.Interval",
+        "kind": "structure",
+        "elaborated_type_sha256": "baaddf70fb5d432b8bd948ef91d6f910124a6d138edae4d5f000c4610ddc8eae"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "Valid",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.Valid",
+        "kind": "def",
+        "elaborated_type_sha256": "90bd64c50569abc2024be57543e14fdd284554575256947ea3026be2fa75a0be"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "act",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.act",
+        "kind": "def",
+        "elaborated_type_sha256": "cbfa80f95bdd84201277449d89278d462168bb51afaa05dea76bb938d57310e7"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "act_contains_exact",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.act_contains_exact",
+        "kind": "theorem",
+        "elaborated_type_sha256": "49b2a1920d0a5b3fb8ca4a7e755de70bdeb4e5af405fdb6ceeff931dc5532e00"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "act_exact",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.act_exact",
+        "kind": "theorem",
+        "elaborated_type_sha256": "5111d879871c2d62e58be88e5d1a04fb0c87d4f9e3ddbbeb8b0372bcd02096cf"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "add",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.add",
+        "kind": "def",
+        "elaborated_type_sha256": "06be362be312617b0c9af330908be424bfcbb11bdb86e2b055d7ceea2db3e1f8"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "add_contains",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.add_contains",
+        "kind": "theorem",
+        "elaborated_type_sha256": "eaca2871bcc4731b98dc87747095b1ae72c0c873c47011f7d73d140fdacc0a89"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "add_includes",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.add_includes",
+        "kind": "theorem",
+        "elaborated_type_sha256": "69734224705243d6cbeaafc11ef6617c8e7d23d11070511f6186747ececa4deb"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "add_lower",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.add_lower",
+        "kind": "theorem",
+        "elaborated_type_sha256": "aaef1321e2c2b47b0956ef20f62d3e6605a5eb52d1c090ffa7130b4786dce24c"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "add_upper",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.add_upper",
+        "kind": "theorem",
+        "elaborated_type_sha256": "50d45a4fcf1d60fada181021b3639f4c89e777a7e37241d2e9455980f4587b8e"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "add_valid",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.add_valid",
+        "kind": "theorem",
+        "elaborated_type_sha256": "9813fd88b81a860f77130286181ce9d19c1385a7e884274baf970932af44727f"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "compose",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.compose",
+        "kind": "def",
+        "elaborated_type_sha256": "31a3fcec0d1bf7c432ca0b10261742bea17a7cf709e8bbacd062bdec9b56e2b0"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "compose_assoc",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.compose_assoc",
+        "kind": "theorem",
+        "elaborated_type_sha256": "af35100fdb86d827ce6b50e6826fdfe280024063c8391249c1a81029943de165"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "compose_contains_exact",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.compose_contains_exact",
+        "kind": "theorem",
+        "elaborated_type_sha256": "df79d020f4d2974635e85c8a9e85f2f43b3b14aecfd6d23cd3b88c2353a49cd5"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "compose_exact",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.compose_exact",
+        "kind": "theorem",
+        "elaborated_type_sha256": "22d0a3f24cab241922e9a914fd265fbef00b59500bda95ad798730921069d33c"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "compose_identity_left",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.compose_identity_left",
+        "kind": "theorem",
+        "elaborated_type_sha256": "8bd5eea3c2a7938df7f20820aa1af7d013e6a76a313472f0df318cd369aba8d4"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "compose_identity_right",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.compose_identity_right",
+        "kind": "theorem",
+        "elaborated_type_sha256": "60c54afe0fd69d2d937f7881d53e6aae21fd9eaa278556ec4aefc6ba50f17ec2"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "compose_includes",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.compose_includes",
+        "kind": "theorem",
+        "elaborated_type_sha256": "0aeea454c528d5a4172daab057f8beaee59faccc7a625d42230165f6bcbd127c"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "compose_valid",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.compose_valid",
+        "kind": "theorem",
+        "elaborated_type_sha256": "fa19a0df81cb4bea1539c71428f8be0e7c6702e4f8441125508cd482346b02ac"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "contains_nonnegative",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.contains_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "7ccda0d55337269f7993d9864e178e6fdd05b05dfd760fc0acde3e12ea986947"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "exactBlock",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.exactBlock",
+        "kind": "def",
+        "elaborated_type_sha256": "6e888ef3a747dc9420dfe9020048cca36d95a5d332a7965c773ee3a3f460209e"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "gain_bracket",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.gain_bracket",
+        "kind": "theorem",
+        "elaborated_type_sha256": "29a0168610fd982517ea46f19d1435da5b26b85e4735884544fbd1d06f10d083"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "identity",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.identity",
+        "kind": "def",
+        "elaborated_type_sha256": "840e8de2b3a8751938afdfab8635964b2b20fa97d9cfcd773053d0a0499614c7"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "identity_valid",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.identity_valid",
+        "kind": "theorem",
+        "elaborated_type_sha256": "c129e3ecef3d9341caa5b7143d2360a431ca7212b83ff2d65b2d3968d67db3fb"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "includes_refl",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.includes_refl",
+        "kind": "theorem",
+        "elaborated_type_sha256": "010bb3f22d7e545d47dce1c1b2a007891f3d008e75a6b6106169cc30e4d05434"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "intervalBlock",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.intervalBlock",
+        "kind": "def",
+        "elaborated_type_sha256": "2cbfe546497b7df94a370c66cd6bfcddcc3e2082e5037160bf715f6d19f8f762"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "intervalBlock_encloses_exact",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.intervalBlock_encloses_exact",
+        "kind": "theorem",
+        "elaborated_type_sha256": "4d1dc654dfac68320ccdd51f1bc7da4ea81ba396331bc1896814e4f48c83afd4"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "intervalBlock_valid",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.intervalBlock_valid",
+        "kind": "theorem",
+        "elaborated_type_sha256": "dec4ba59824b0c5d68253ff84105e277b4e68fa966c2f95a42b056acc2b6a34f"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "multiply",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.multiply",
+        "kind": "def",
+        "elaborated_type_sha256": "06be362be312617b0c9af330908be424bfcbb11bdb86e2b055d7ceea2db3e1f8"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "multiply_contains",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.multiply_contains",
+        "kind": "theorem",
+        "elaborated_type_sha256": "e294d28400c040ffc729b50c2756fee5827802cf0d8d253df1562fe5856209ce"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "multiply_includes",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.multiply_includes",
+        "kind": "theorem",
+        "elaborated_type_sha256": "e2a47b2245f00b40d986a6d9749f82563f28ab59298bf3172093ad5713711840"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "multiply_lower",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.multiply_lower",
+        "kind": "theorem",
+        "elaborated_type_sha256": "cee0601dc036fd1117f293f1e62a1823b170528bac49c4c418424e37973b9928"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "multiply_upper",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.multiply_upper",
+        "kind": "theorem",
+        "elaborated_type_sha256": "a588c5e2595443d208ca0c9181c8bdf4258b89ab58390cda4cadf592adedeb17"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "multiply_valid",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.multiply_valid",
+        "kind": "theorem",
+        "elaborated_type_sha256": "beac59592dceb3fc29c3fa3461202daa55609eacc5d010bf362371757364a425"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "no_finite_gain_bound_with_positive_successor",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.no_finite_gain_bound_with_positive_successor",
+        "kind": "theorem",
+        "elaborated_type_sha256": "9a51580b0e6c2d374b1a5c80177515a74a904a9731db351a7eda27713aff6d43"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "singleton",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.singleton",
+        "kind": "def",
+        "elaborated_type_sha256": "7c677a59e00c41c2ccfacddbdd17e78cb8dd78734733b253d3e2f09688569e98"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "singleton_valid",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.singleton_valid",
+        "kind": "theorem",
+        "elaborated_type_sha256": "a653a3d30658c00ef710fe8e529fe2459aef80b9149d23dd745fd2fde329a9cd"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "declaration": "zero_successor_iff_zero_gain",
+        "fully_qualified_name": "RowRGMap.IntervalAffine.zero_successor_iff_zero_gain",
+        "kind": "theorem",
+        "elaborated_type_sha256": "87cfabb030601182cee90fa6f47da07031234a579421198d5d5a694275bb2d2f"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "declaration": "convergence_from_upper_envelope",
+        "fully_qualified_name": "RowRGMap.ObserverEnvelope.convergence_from_upper_envelope",
+        "kind": "theorem",
+        "elaborated_type_sha256": "8c9d1806900df3baca2e5945a54730e27d66746bc66542b477c3243c01ecab55"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "declaration": "energy_enclosed",
+        "fully_qualified_name": "RowRGMap.ObserverEnvelope.energy_enclosed",
+        "kind": "theorem",
+        "elaborated_type_sha256": "b028dde377108db0974211813d10ba10032011120258474d92fffbd6ccb20776"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "declaration": "exact_face_of_zero_upper",
+        "fully_qualified_name": "RowRGMap.ObserverEnvelope.exact_face_of_zero_upper",
+        "kind": "theorem",
+        "elaborated_type_sha256": "4f0dd6de8ab06da6b171ec937fd25bcf5dac3afab50f6654e430c778d32ef95b"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "declaration": "fixed_tolerance_does_not_imply_convergence",
+        "fully_qualified_name": "RowRGMap.ObserverEnvelope.fixed_tolerance_does_not_imply_convergence",
+        "kind": "theorem",
+        "elaborated_type_sha256": "338ba4f7e8fe0c74358aa189b121e5fbb7a6c389677222c1bfa6f9146591f2e9"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "declaration": "fixed_tolerance_only_bounds",
+        "fully_qualified_name": "RowRGMap.ObserverEnvelope.fixed_tolerance_only_bounds",
+        "kind": "theorem",
+        "elaborated_type_sha256": "b8b7a4a36d45d3724d017bdf4f5bf0a9700edeec33d78df48194ccba4451bddc"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "declaration": "lowerEnergy",
+        "fully_qualified_name": "RowRGMap.ObserverEnvelope.lowerEnergy",
+        "kind": "def",
+        "elaborated_type_sha256": "00ab6789ba7069321d29c166a348beaddffcceb0e2d8f310218a76a68514f254"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "declaration": "positive_of_positive_lower",
+        "fully_qualified_name": "RowRGMap.ObserverEnvelope.positive_of_positive_lower",
+        "kind": "theorem",
+        "elaborated_type_sha256": "958042fc121404d72f3263f769560369f0dcb8f77a7b5f882d695978a3d8e1c8"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "declaration": "unresolved_interval_has_zero_and_positive",
+        "fully_qualified_name": "RowRGMap.ObserverEnvelope.unresolved_interval_has_zero_and_positive",
+        "kind": "theorem",
+        "elaborated_type_sha256": "4331225d37d00e3811896de013c434b89621509c5cd5968226fa2c1c780c6edb"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "declaration": "upperEnergy",
+        "fully_qualified_name": "RowRGMap.ObserverEnvelope.upperEnergy",
+        "kind": "def",
+        "elaborated_type_sha256": "00ab6789ba7069321d29c166a348beaddffcceb0e2d8f310218a76a68514f254"
+      },
+      {
+        "module": "RowRGMap.PositiveTail",
+        "declaration": "cumulativeLog",
+        "fully_qualified_name": "RowRGMap.PositiveTail.cumulativeLog",
+        "kind": "def",
+        "elaborated_type_sha256": "f0d1a9077c6bc6a5ee0d2c16817460b4636da882fc8485e7f62515e09b2ed15c"
+      },
+      {
+        "module": "RowRGMap.PositiveTail",
+        "declaration": "cumulativeLog_succ",
+        "fully_qualified_name": "RowRGMap.PositiveTail.cumulativeLog_succ",
+        "kind": "theorem",
+        "elaborated_type_sha256": "730ddd84d1d970b00a97d629edda46c6a50d9494167eb49892692d79648307ca"
+      },
+      {
+        "module": "RowRGMap.PositiveTail",
+        "declaration": "cumulativeLog_zero",
+        "fully_qualified_name": "RowRGMap.PositiveTail.cumulativeLog_zero",
+        "kind": "theorem",
+        "elaborated_type_sha256": "db5ce6088498b5d9e31778ccf7445264129be6bcf82b876801acbf7aaa4dfd2f"
+      },
+      {
+        "module": "RowRGMap.PositiveTail",
+        "declaration": "energy",
+        "fully_qualified_name": "RowRGMap.PositiveTail.energy",
+        "kind": "def",
+        "elaborated_type_sha256": "d11dc8c05b1c1bad73f4c07a1af66c431020242e36e03369fd0ce00b3380a889"
+      },
+      {
+        "module": "RowRGMap.PositiveTail",
+        "declaration": "energy_succ",
+        "fully_qualified_name": "RowRGMap.PositiveTail.energy_succ",
+        "kind": "theorem",
+        "elaborated_type_sha256": "a5deec36be69f2650e81f1ac10abb4e448b17a24178107dcf88d31b7581c16d3"
+      },
+      {
+        "module": "RowRGMap.PositiveTail",
+        "declaration": "energy_tendsto_zero_iff",
+        "fully_qualified_name": "RowRGMap.PositiveTail.energy_tendsto_zero_iff",
+        "kind": "theorem",
+        "elaborated_type_sha256": "ce9c8bfd9df73d0faf1e84a4fb898cfcbae1a5e6b64697750d1c178ba0042887"
+      },
+      {
+        "module": "RowRGMap.PositiveTail",
+        "declaration": "energy_zero",
+        "fully_qualified_name": "RowRGMap.PositiveTail.energy_zero",
+        "kind": "theorem",
+        "elaborated_type_sha256": "cc6f07d4049397552ca3d9cb4b88054b7f86e41a3d6d0f4bdd72a511a889173a"
+      },
+      {
+        "module": "RowRGMap.PositiveTail",
+        "declaration": "log_energy_ratio",
+        "fully_qualified_name": "RowRGMap.PositiveTail.log_energy_ratio",
+        "kind": "theorem",
+        "elaborated_type_sha256": "f2ffcf9a0409be026882e8ce378366e95c738e55557e092bee864b4434dcb7b4"
+      },
+      {
+        "module": "RowRGMap.RadialEnergy",
+        "declaration": "gain",
+        "fully_qualified_name": "RowRGMap.RadialEnergy.gain",
+        "kind": "def",
+        "elaborated_type_sha256": "00ab6789ba7069321d29c166a348beaddffcceb0e2d8f310218a76a68514f254"
+      },
+      {
+        "module": "RowRGMap.RadialEnergy",
+        "declaration": "gain_nonnegative",
+        "fully_qualified_name": "RowRGMap.RadialEnergy.gain_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "e9423e701e851d8730e3a90413ddaa486676ab08f52c5b5a4d859062abecfbd6"
+      },
+      {
+        "module": "RowRGMap.RadialEnergy",
+        "declaration": "relative_increment",
+        "fully_qualified_name": "RowRGMap.RadialEnergy.relative_increment",
+        "kind": "theorem",
+        "elaborated_type_sha256": "59ce54bd2635809e681a15323929b5f934641de28c8151af2351b0a92f723fba"
+      },
+      {
+        "module": "RowRGMap.RadialEnergy",
+        "declaration": "strict_closing_iff",
+        "fully_qualified_name": "RowRGMap.RadialEnergy.strict_closing_iff",
+        "kind": "theorem",
+        "elaborated_type_sha256": "9955b8f92b7c276f9fdb51bead439982afc620f711892daea3307bd23736b665"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "RecurrentFaceSchedule",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.RecurrentFaceSchedule",
+        "kind": "structure",
+        "elaborated_type_sha256": "dbf4aa20b64bf188275e289245e905f97263ef884b5c5ce437bb281847b98ac9"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "energy_le_excursionPeak",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.energy_le_excursionPeak",
+        "kind": "theorem",
+        "elaborated_type_sha256": "cc419a655ed8cf0d93d94c139c86aff2ca1b102642d351fa94286cb969b76f36"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "energy_tendsto_zero_iff_excursionPeak",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.energy_tendsto_zero_iff_excursionPeak",
+        "kind": "theorem",
+        "elaborated_type_sha256": "2d020d7aa9f5ee46bf0c5809b0c6de9a974cabfa735aa509f59c1f20602999d1"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "excursionAmplification",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.excursionAmplification",
+        "kind": "def",
+        "elaborated_type_sha256": "01556cb4a2b4734f666a975e8be42a2c376e11d158657553bf15847bf09e9486"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "excursionInterval",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.excursionInterval",
+        "kind": "def",
+        "elaborated_type_sha256": "5626ac9577a88babef05c8b85761271e7aa918d247e166af60246cdd37b00376"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "excursionInterval_nonempty",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.excursionInterval_nonempty",
+        "kind": "theorem",
+        "elaborated_type_sha256": "f1cf41a6bc855d335871c4147a6b50feadbe4103e03d592905b075886ff569dd"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "excursionPeak",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.excursionPeak",
+        "kind": "def",
+        "elaborated_type_sha256": "01556cb4a2b4734f666a975e8be42a2c376e11d158657553bf15847bf09e9486"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "excursionPeak_nonnegative",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.excursionPeak_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "47fa35f77d1997882871c218268e6adba6f64a4997ff9bedd3bf52fa3e9cf847"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "excursionRestart",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.excursionRestart",
+        "kind": "def",
+        "elaborated_type_sha256": "01556cb4a2b4734f666a975e8be42a2c376e11d158657553bf15847bf09e9486"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "excursionRestart_le_peak",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.excursionRestart_le_peak",
+        "kind": "theorem",
+        "elaborated_type_sha256": "733d24719c1d0d47cce24d38a1e24c4a6b4762cb5d2e01eeec71ce2166d83dd2"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "excursionRestart_nonnegative",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.excursionRestart_nonnegative",
+        "kind": "theorem",
+        "elaborated_type_sha256": "405a432b342b3eb476047e0c5b197d5d595d67303ee9b0e3dbfa2fece88a1a83"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "excursionRestart_tendsto_zero_of_collapse",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.excursionRestart_tendsto_zero_of_collapse",
+        "kind": "theorem",
+        "elaborated_type_sha256": "ffd5bfcef70a8428013f5cf4a407c96db670114f96a15cdce72258ffb2bd0cb4"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "face_times_unbounded",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.face_times_unbounded",
+        "kind": "theorem",
+        "elaborated_type_sha256": "3f884cff1effeb50175f54bf7e2758fee11ebd530a11553aeab98fb6f14cbb82"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "interval_cover",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.interval_cover",
+        "kind": "theorem",
+        "elaborated_type_sha256": "a6630f59511ec2429b1dc0fe5f61e5edbb5f3832d3fd0d8e6a039cbb073c7853"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "peak_eq_restart_mul_amplification",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.peak_eq_restart_mul_amplification",
+        "kind": "theorem",
+        "elaborated_type_sha256": "5a363b3efc00e13c127187793121a97df26c72d7260af9093dd919f72e9d20ba"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "peak_zero_of_restart_zero",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.peak_zero_of_restart_zero",
+        "kind": "theorem",
+        "elaborated_type_sha256": "a0849427d4949d485416e71846712bc8ad1cfd72235aaae66a7c832e31d8f731"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "restart_mem_excursionInterval",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.restart_mem_excursionInterval",
+        "kind": "theorem",
+        "elaborated_type_sha256": "9322eeec3e40f9570edfc34ca4b0ca3addf64153d34d8c36285f94d05dea9c81"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "declaration": "restart_times_amplification_tendsto_zero_of_collapse",
+        "fully_qualified_name": "RowRGMap.RecurrentFaces.restart_times_amplification_tendsto_zero_of_collapse",
+        "kind": "theorem",
+        "elaborated_type_sha256": "f52ad6b8a14f82d89df6591ae05841fd616bae6448becedef154d68969c1fe3e"
+      },
+      {
+        "module": "RowRGMap.ResponseDefect",
+        "declaration": "nonzero_defect_obstructs_zero_output",
+        "fully_qualified_name": "RowRGMap.ResponseDefect.nonzero_defect_obstructs_zero_output",
+        "kind": "theorem",
+        "elaborated_type_sha256": "b12ab299fc518d79e6114813f9f1d670cf17260c407c6bc6a678e21833a88db4"
+      },
+      {
+        "module": "RowRGMap.ResponseDefect",
+        "declaration": "response_plus_defect_bound",
+        "fully_qualified_name": "RowRGMap.ResponseDefect.response_plus_defect_bound",
+        "kind": "theorem",
+        "elaborated_type_sha256": "9ab00ae2788bb472cdbc641b6e30a65335ca9cc9ae40fdd8dd9edbe4c972d142"
+      },
+      {
+        "module": "RowRGMap.GaugeFiber",
+        "declaration": "DeterministicClosesAt",
+        "fully_qualified_name": "RowRGMap.GaugeFiber.DeterministicClosesAt",
+        "kind": "def",
+        "elaborated_type_sha256": "40db3b0ac35ee166b39ba5646265321cb6200becc732b60bba3b5630f72759db"
+      },
+      {
+        "module": "RowRGMap.GaugeFiber",
+        "declaration": "augmented_fiber_witness_not_closed",
+        "fully_qualified_name": "RowRGMap.GaugeFiber.augmented_fiber_witness_not_closed",
+        "kind": "theorem",
+        "elaborated_type_sha256": "c40a0322690b918d90f8d2bc61e4cac36064922b1171f5f0110ab582a47bb275"
+      },
+      {
+        "module": "RowRGMap.GaugeFiber",
+        "declaration": "compose_equivariant",
+        "fully_qualified_name": "RowRGMap.GaugeFiber.compose_equivariant",
+        "kind": "theorem",
+        "elaborated_type_sha256": "81cca984a031fdc153ea2cfd8642aee01303a8e44a7f905e4edee13bd3caed37"
+      },
+      {
+        "module": "RowRGMap.GaugeFiber",
+        "declaration": "compose_invariant",
+        "fully_qualified_name": "RowRGMap.GaugeFiber.compose_invariant",
+        "kind": "theorem",
+        "elaborated_type_sha256": "b013d20e49593f95f34439ad577d1a395868ea49b014851ec0b4bf7143a4a0b0"
+      },
+      {
+        "module": "RowRGMap.GaugeFiber",
+        "declaration": "gauge_orbit_successor_equal",
+        "fully_qualified_name": "RowRGMap.GaugeFiber.gauge_orbit_successor_equal",
+        "kind": "theorem",
+        "elaborated_type_sha256": "909453c7cac08554411f5ace2b3839de84d5dd2ceff886ecd5e19161c522f868"
+      },
+      {
+        "module": "RowRGMap.GaugeFiber",
+        "declaration": "iterate_equivariant",
+        "fully_qualified_name": "RowRGMap.GaugeFiber.iterate_equivariant",
+        "kind": "theorem",
+        "elaborated_type_sha256": "cc56bfaced5c6a83f0db2aab616f207995af1fe1edaf060fe6645612ee6c896c"
+      },
+      {
+        "module": "RowRGMap.GaugeFiber",
+        "declaration": "paired_gauge_successor_equal",
+        "fully_qualified_name": "RowRGMap.GaugeFiber.paired_gauge_successor_equal",
+        "kind": "theorem",
+        "elaborated_type_sha256": "1475608d5a17f75da81a7e913ffd4cc8619e3fdd833a68f59aaaabcab761e2af"
+      }
+    ]
+  }
+}

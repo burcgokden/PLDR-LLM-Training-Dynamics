@@ -1,0 +1,51 @@
+{
+  "anchor_labels": {
+    "semantics": "complete source-state anchor owner",
+    "shape": "replicas"
+  },
+  "container": "numpy_npz_allow_pickle_false",
+  "exact_keys": [
+    "normal_paths",
+    "hidden_labels",
+    "model_width",
+    "model_depth",
+    "anchor_labels",
+    "seed",
+    "source_state_sha256"
+  ],
+  "hidden_labels": {
+    "semantics": "frozen joint stratum of tangent state, data partition, optimizer cell, and branch",
+    "shape": "replicas_by_updates_plus_one"
+  },
+  "minimum_scientific_shape": {
+    "block_sizes": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "measured_updates_after_burn_in": 128,
+    "replicas_per_anchor": {
+      "R1": 128,
+      "R2": 256
+    },
+    "retained_normal_dimension": 16
+  },
+  "normal_paths": {
+    "dtype": "finite_real",
+    "semantics": "centered lifted normal coordinate recorded at every successor including the source",
+    "shape": "replicas_by_updates_plus_one_by_normal_dimension"
+  },
+  "scalar_fields": [
+    "model_width",
+    "model_depth",
+    "seed"
+  ],
+  "schema_version": "pldr-rg-trajectory-artifact-schema-v1",
+  "source_state_sha256": {
+    "semantics": "ordered complete source-state digests",
+    "shape": "unique_anchors"
+  }
+}

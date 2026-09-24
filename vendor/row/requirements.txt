@@ -1,0 +1,24 @@
+# Pinned environment of the archived training / instrumentation / analysis
+# artifact (the versions the paper's runs and figures were produced with).
+# Python 3.14; the CUDA build used for training was torch 2.12.1+cu132,
+# resolved from the PyTorch wheel index:
+#   pip install torch==2.12.1 --extra-index-url https://download.pytorch.org/whl/cu132
+# (CPU audits used the +cu130 wheel; both import surfaces match).
+# See requirements.lock for the complete transitive freeze; the direct
+# pins here and the freeze are generated from the same environment and
+# must not disagree.
+torch==2.12.1
+numpy==2.4.4
+sentencepiece==0.2.1
+datasets==5.0.0
+torchtune==0.6.1
+# torchao is REQUIRED by torchtune 0.6.1 at import time and must be
+# pinned: 0.17.0 is the audited environment's version and its import
+# surface is verified compatible (torchtune imports and the
+# pretokenization path runs); 0.18.0 lacks the import surface
+# torchtune 0.6.1 expects and does NOT work.
+torchao==0.17.0
+matplotlib==3.11.1
+
+# development / test
+pytest==9.1.1

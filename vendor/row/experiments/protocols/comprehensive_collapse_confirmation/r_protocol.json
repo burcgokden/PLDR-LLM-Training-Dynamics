@@ -1,0 +1,33 @@
+{
+  "analyzer": "experiments/analysis/comprehensive_confirmation_analysis.py",
+  "producer": "experiments/confirm/comprehensive_live_producers.py",
+  "raw_required": [
+    "rebuild_manifest"
+  ],
+  "schema_version": "pldr-comprehensive-collapse-protocol-v4",
+  "stage": {
+    "decision_source": "The analyzer resolves the sealed request, checkpoints, raw archive, producer and analyzer code, partition, resource record, challenge seed, and prediction lock, then recomputes the decision.",
+    "dependencies": [
+      "D",
+      "I",
+      "A",
+      "S2N"
+    ],
+    "gpu_hour_cap": 0.0,
+    "id": "R",
+    "placement": "fresh CPU process",
+    "primary_outputs": [
+      "recomputed stage records",
+      "campaign decision",
+      "resource total"
+    ],
+    "required_checks": [
+      "all_artifacts_resolve",
+      "every_stage_recomputed_from_evidence",
+      "empty_or_typed_campaign_rejected",
+      "records_rebuild_byte_stably",
+      "resource_total_below_hard_cap"
+    ],
+    "title": "Independent evidence replay"
+  }
+}

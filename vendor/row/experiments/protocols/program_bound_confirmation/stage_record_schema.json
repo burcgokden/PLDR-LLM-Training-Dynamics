@@ -1,0 +1,20 @@
+{
+  "decision_rule": "CONFIRMED exactly when every recomputed stage check and every recomputed resource cap passes",
+  "required_fields": [
+    "schema_version",
+    "campaign_id",
+    "stage",
+    "time_semantics",
+    "request_sha256",
+    "resolved_artifacts",
+    "derived_measurements",
+    "resource_metadata",
+    "decision",
+    "scientific_record_sha256",
+    "record_sha256"
+  ],
+  "schema_version": "pldr-composite-observability-stage-record-v3",
+  "scientific_digest_excludes": [
+    "resource_metadata"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "projected_reference",
+    "primal_residual_norm",
+    "kkt_stationarity_residual_norm",
+    "rank",
+    "condition_estimate",
+    "metric_eigenvalue_min",
+    "metric_eigenvalue_max",
+    "frozen_coordinate_residual",
+    "tube_membership",
+    "iteration_trace"
+  ],
+  "title": "Constrained normal projection",
+  "type": "object"
+}

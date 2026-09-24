@@ -1,0 +1,436 @@
+{
+  "schema": "modelrg-release-routes-v1",
+  "routes": [
+    {
+      "id": "law",
+      "claim": "Finite consuming-source covariance and physical-clock controls",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/check_consuming_bridge.py",
+          "--output",
+          "{output}/consuming.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/check_physical_clock.py",
+          "--output",
+          "{output}/clock.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/check_matched_memory_bound.py",
+          "--output",
+          "{output}/memory.json"
+        ]
+      ],
+      "protocols": [],
+      "documentation": [
+        "CURRENT_EXECUTION.md"
+      ],
+      "qualification": "Finite CPU controls executed; analytic law proofs remain written mathematics.",
+      "resources": "CPU",
+      "availability": "All required finite-control code bundled; no native data needed."
+    },
+    {
+      "id": "clock",
+      "claim": "Complete matched-clock native field and cache census",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/analyze_matched_clock.py",
+          "--study",
+          "{data}/matched-clock-onepass-20260916",
+          "--output",
+          "{output}/analysis.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/verify_matched_clock.py",
+          "--study",
+          "{data}/matched-clock-onepass-20260916",
+          "--analysis",
+          "{output}/analysis.json",
+          "--output",
+          "{output}/verification.json"
+        ]
+      ],
+      "protocols": [
+        "matched-clock-onepass-20260916/protocol.json"
+      ],
+      "documentation": [
+        "MATCHED_CLOCK_REPRODUCTION.md"
+      ],
+      "qualification": "Completed 48-path acquisition, native qualification, strict CPU reconstruction and complete census.",
+      "resources": "CPU",
+      "availability": "External local observations; no public retrieval endpoint."
+    },
+    {
+      "id": "row",
+      "claim": "Finite chronological row transport",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/analyze_row_path_confirmation.py",
+          "--study",
+          "{data}/row-path-confirmation-20260917",
+          "--output",
+          "{output}/analysis.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/verify_row_path_confirmation.py",
+          "--study",
+          "{data}/row-path-confirmation-20260917",
+          "--analysis",
+          "{output}/analysis.json",
+          "--output",
+          "{output}/verification.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/render_row_path_confirmation.py",
+          "--analysis",
+          "{output}/analysis.json",
+          "--verification",
+          "{output}/verification.json",
+          "--output",
+          "{output}/tables"
+        ]
+      ],
+      "protocols": [
+        "row-path-confirmation-20260917/protocol.json"
+      ],
+      "documentation": [
+        "ROW_PATH_REPRODUCTION.md",
+        "FINITE_ROW_REPRODUCTION.md"
+      ],
+      "qualification": "All sixteen eight-update paths executed; largest workload qualified; independent full reconstruction passed.",
+      "resources": "CPU",
+      "availability": "External local observations; no public retrieval endpoint."
+    },
+    {
+      "id": "equal-time",
+      "claim": "Equal-duration finite row transport and complete signed temporal energy",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/analyze_equal_time_flux.py",
+          "--study",
+          "{data}/equal-time-flux-20260917",
+          "--output",
+          "{output}/analysis.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/verify_equal_time_flux.py",
+          "--study",
+          "{data}/equal-time-flux-20260917",
+          "--analysis",
+          "{output}/analysis.json",
+          "--output",
+          "{output}/verification.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/render_equal_time_flux.py",
+          "--analysis",
+          "{output}/analysis.json",
+          "--verification",
+          "{output}/verification.json",
+          "--output",
+          "{output}/tables"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/check_equal_time_outcomes.py",
+          "--analysis",
+          "{output}/analysis.json",
+          "--protocol",
+          "{data}/equal-time-flux-20260917/protocol.json",
+          "--rendered",
+          "{output}/tables",
+          "--output",
+          "{output}/outcome-completeness.json"
+        ]
+      ],
+      "protocols": [
+        "equal-time-flux-20260917/protocol.json"
+      ],
+      "documentation": [
+        "EQUAL_TIME_FLUX_REPRODUCTION.md"
+      ],
+      "qualification": "Complete 16-path acquisition, all declared outcomes, independent common-row and ordered pair-product reconstructions; normalization made explicit post-acquisition.",
+      "resources": "CPU; native replay uses two RTX 4090 GPUs, one worker each.",
+      "availability": "External local raw matrices and full parent states; no public retrieval endpoint."
+    },
+    {
+      "id": "row-single",
+      "claim": "Eight finite cross/matrix/parameter diagnostics",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/analyze_row_derivative_metrics.py",
+          "--study",
+          "{data}/collective-row-clock-20260916",
+          "--output",
+          "{output}/matrix-errors.json",
+          "--tables",
+          "{output}/tables"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/analyze_collective_row_quadrature.py",
+          "--study",
+          "{data}/collective-row-quadrature-20260916",
+          "--output",
+          "{output}/quadrature.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/verify_collective_row_quadrature.py",
+          "--study",
+          "{data}/collective-row-quadrature-20260916",
+          "--analysis",
+          "{output}/quadrature.json",
+          "--output",
+          "{output}/verification.json"
+        ]
+      ],
+      "protocols": [
+        "collective-row-clock-20260916/protocol.json",
+        "collective-row-quadrature-20260916/protocol.json"
+      ],
+      "documentation": [
+        "FINITE_ROW_REPRODUCTION.md"
+      ],
+      "qualification": "All eight states and 48 quadrature levels reconstructed. Numerical accuracy targets are separate from reconstruction success.",
+      "resources": "CPU",
+      "availability": "External local observations; no public retrieval endpoint."
+    },
+    {
+      "id": "cache",
+      "claim": "Complete state-conditioned cache confirmation and controls",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/analyze_cache_state_transfer.py",
+          "--study",
+          "{data}/cache-state-confirmation-20260916",
+          "--output",
+          "{output}/analysis.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/verify_cache_state_transfer.py",
+          "--study",
+          "{data}/cache-state-confirmation-20260916",
+          "--analysis",
+          "{output}/analysis.json",
+          "--output",
+          "{output}/verification.json"
+        ]
+      ],
+      "protocols": [
+        "cache-state-confirmation-20260916/protocol.json"
+      ],
+      "documentation": [
+        "STATE_CONFIRMATION.md",
+        "CACHE_STATE_TRANSFER.md",
+        "CACHE_RISK_REPRODUCTION.md"
+      ],
+      "qualification": "Completed native state/context acquisition and independent complete-policy reconstruction.",
+      "resources": "CPU",
+      "availability": "External local observations; no public retrieval endpoint."
+    },
+    {
+      "id": "singlepass",
+      "claim": "Independent single-pass kinetic width family",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/analyze_critical_onepass.py",
+          "--study",
+          "{data}/critical-onepass-refinement-20260914",
+          "--output",
+          "{output}/analysis.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/prepare_observation_source_root.py",
+          "--protocol",
+          "{data}/critical-onepass-refinement-20260914/protocol.json",
+          "--analysis",
+          "{output}/analysis.json",
+          "--snapshot",
+          "{data}/critical-onepass-refinement-20260914/executed-source",
+          "--output",
+          "{output}/source"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/verify_critical_onepass.py",
+          "--study",
+          "{data}/critical-onepass-refinement-20260914",
+          "--analysis",
+          "{output}/analysis.json",
+          "--output",
+          "{output}/verification.json",
+          "--source-root",
+          "{output}/source",
+          "--observations-only"
+        ]
+      ],
+      "protocols": [
+        "critical-onepass-refinement-20260914/protocol.json"
+      ],
+      "documentation": [
+        "CRITICAL_ONEPASS_REPRODUCTION.md"
+      ],
+      "qualification": "Completed 216-path independent refinement. CPU reconstruction binds immutable producer bytes and current reducer bytes separately, verifies every scalar observation and qualification replay, and retains scientific checkpoint identities as metadata. Not a native criticality certificate.",
+      "resources": "CPU",
+      "availability": "External local observations; no public retrieval endpoint."
+    },
+    {
+      "id": "closure",
+      "claim": "Conditional law and state-memory evidence",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/verify_law_observations.py",
+          "--root",
+          "{data}",
+          "--study",
+          "{data}/law-closure-20260910",
+          "--output",
+          "{output}/law-verification.json"
+        ]
+      ],
+      "protocols": [
+        "law-closure-20260910/protocol.json"
+      ],
+      "documentation": [
+        "CURRENT_EXECUTION.md"
+      ],
+      "qualification": "Complete saved conditional-law observation reconstruction; original producer/fit/source identities checked. Historical software qualification and native replay remain separately retained records, not revalidated against current checker files. Current Python/Lean qualification is reported separately.",
+      "resources": "CPU",
+      "availability": "External local observations; no public retrieval endpoint."
+    },
+    {
+      "id": "moments",
+      "claim": "Finite conditional moment adaptation",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/verify_moment_transport.py",
+          "--root",
+          "{data}",
+          "--study",
+          "{data}/moment-transport-20260911",
+          "--output",
+          "{output}/moment-verification.json"
+        ]
+      ],
+      "protocols": [
+        "moment-transport-20260911/protocol.json"
+      ],
+      "documentation": [
+        "CURRENT_EXECUTION.md"
+      ],
+      "qualification": "Retained full conditional moment reconstruction and replay; acquisition costs remain part of the scientific claim.",
+      "resources": "CPU",
+      "availability": "External local observations; no public retrieval endpoint."
+    },
+    {
+      "id": "critical",
+      "claim": "Physical-clock controls underlying conditional critical interpretation",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/check_physical_clock.py",
+          "--output",
+          "{output}/physical-clock.json"
+        ]
+      ],
+      "protocols": [],
+      "documentation": [
+        "CRITICAL_ONEPASS_REPRODUCTION.md"
+      ],
+      "qualification": "Finite mathematical control only. Native criticality and exponents remain unestablished.",
+      "resources": "CPU",
+      "availability": "Bundled finite control; native kinetic evidence is route singlepass."
+    },
+    {
+      "id": "visibility",
+      "claim": "Selected finite visibility and inference-error proof checks",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/check_formal.py",
+          "--output",
+          "{output}/formal"
+        ]
+      ],
+      "protocols": [],
+      "documentation": [
+        "ASSET_ACCESS.md"
+      ],
+      "qualification": "Selected finite proof components only. Empirical visibility and task tables retain external archive access.",
+      "resources": "CPU with pinned Lean/mathlib",
+      "availability": "Lean sources bundled; pinned dependency cache is external. See asset inventory for empirical inputs."
+    },
+    {
+      "id": "P2",
+      "claim": "Deferred native acquisition design",
+      "commands": [],
+      "protocols": [],
+      "documentation": [
+        "CURRENT_EXECUTION.md"
+      ],
+      "qualification": "Unqualified; execution refused.",
+      "resources": "No authorized scientific dispatch from this index",
+      "availability": "Design only",
+      "executable": false
+    },
+    {
+      "id": "P4",
+      "claim": "Deferred native acquisition design",
+      "commands": [],
+      "protocols": [],
+      "documentation": [
+        "CURRENT_EXECUTION.md"
+      ],
+      "qualification": "Unqualified; execution refused.",
+      "resources": "No authorized scientific dispatch from this index",
+      "availability": "Design only",
+      "executable": false
+    },
+    {
+      "id": "accounting",
+      "claim": "Common scoped study inventory and trajectory interval union",
+      "commands": [
+        [
+          "{python}",
+          "{repo}/scripts/check_study_registry.py",
+          "--output",
+          "{output}/verification.json"
+        ],
+        [
+          "{python}",
+          "{repo}/scripts/render_execution_ledger.py",
+          "--output",
+          "{output}/tables"
+        ]
+      ],
+      "protocols": [
+        "equal-time-flux-20260917/protocol.json"
+      ],
+      "documentation": [
+        "STUDY_REGISTRY.md"
+      ],
+      "qualification": "Bound completed manifests, retained scoped aggregates, and complete replay interval identities.",
+      "resources": "CPU; no model calls.",
+      "availability": "Compact registry plus external local acquisition manifests."
+    }
+  ]
+}

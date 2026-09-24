@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "stage",
+    "trajectory",
+    "seed",
+    "block_start",
+    "block_end",
+    "source_checkpoint_path",
+    "source_checkpoint_sha256",
+    "created_at_ns",
+    "operators",
+    "quadratic_coefficients",
+    "forces",
+    "radii",
+    "initial_normal_upper",
+    "comparison_bounds"
+  ],
+  "title": "Sealed source-only block prediction",
+  "type": "object"
+}

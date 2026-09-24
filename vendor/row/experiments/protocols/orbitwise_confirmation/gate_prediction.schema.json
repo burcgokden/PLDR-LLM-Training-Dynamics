@@ -1,0 +1,53 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-orbitwise-row-map-collapse-v2"
+    },
+    "created_at_ns": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "horizon": {
+      "const": 64
+    },
+    "prediction": {
+      "const": "freeze-retains-more-physical-energy"
+    },
+    "schema_version": {
+      "const": "pldr-orbitwise-gate-prediction-v2"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "source_checkpoint_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "technical_valid": {
+      "const": true
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "seed",
+    "source_step",
+    "horizon",
+    "source_checkpoint_sha256",
+    "prediction",
+    "created_at_ns",
+    "technical_valid"
+  ],
+  "title": "Sealed final-gate intervention direction",
+  "type": "object"
+}

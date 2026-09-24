@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "registry_sha256",
+    "trajectories",
+    "spec_sha256"
+  ],
+  "title": "Content-addressed native training campaign",
+  "type": "object"
+}

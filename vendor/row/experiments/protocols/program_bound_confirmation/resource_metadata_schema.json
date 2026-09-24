@@ -1,0 +1,14 @@
+{
+  "exact_fields": [
+    "schema_version",
+    "work_units",
+    "gpu_device_seconds",
+    "peak_gpu_bytes_each",
+    "peak_host_bytes",
+    "retained_artifact_bytes",
+    "wall_clock_seconds"
+  ],
+  "gpu_hours": "RECOMPUTED_AS_SUM_GPU_DEVICE_SECONDS_OVER_3600",
+  "schema_version": "pldr-resource-metadata-v2",
+  "wall_clock_in_scientific_digest": false
+}

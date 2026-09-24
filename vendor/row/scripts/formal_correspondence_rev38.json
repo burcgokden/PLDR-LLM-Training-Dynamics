@@ -1,0 +1,327 @@
+[
+  {
+    "label": "lem:chr-shape-radius",
+    "paper": "Strict regularized shape radius",
+    "module": "LayerNormFactorization",
+    "declarations": [
+      "strict_regularized_radius"
+    ],
+    "scope": "The scalar regularized radius identity and strict bound for positive regularization.",
+    "excluded": "Centered-vector construction and the full finite-dimensional norm calculation.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:chr-gate-factorization",
+    "paper": "Gate-shape factorization",
+    "module": "LayerNormFactorization",
+    "declarations": [
+      "rowOutput",
+      "row_contrast",
+      "zero_gate_row_independent"
+    ],
+    "scope": "The exact coordinatewise product factorization, pair contrast, and zero-gate constant-map branch.",
+    "excluded": "The physical PLDR identification and the global operator-norm diameter estimate.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:chr-layernorm-jacobian",
+    "paper": "LayerNorm shape Jacobian",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The projection formula, kernel statement, and operator-norm bound remain in the stand-alone written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "thm:chr-coordinate-routes",
+    "paper": "Exact coordinate routes",
+    "module": "LayerNormFactorization",
+    "declarations": [
+      "row_contrast",
+      "zero_gate_row_independent"
+    ],
+    "scope": "The product route and zero-gate row-independence kernel.",
+    "excluded": "The nonzero-coordinate equivalence and logarithmic route decomposition.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:chr-pair-geometry",
+    "paper": "Complete pair geometry",
+    "module": "PairwiseDiameterCollapse",
+    "declarations": [
+      "all_pairs_to_diameter"
+    ],
+    "scope": "Transfer of simultaneous pair bounds to a diameter-attaining registered pair.",
+    "excluded": "The exact PLDR pair-energy identity and equality between the finite maximum and diameter.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:chr-graph-order-parameter",
+    "paper": "Graph diagnostic order parameter",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The Laplacian comparison and effective-resistance inequalities remain in the stand-alone written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "cor:chr-physical-cover",
+    "paper": "Physical cover tube",
+    "module": "PredictiveCollapseMaster",
+    "declarations": [
+      "physical_resolution_tube"
+    ],
+    "scope": "The final additive registry-diameter plus Lipschitz cover-radius inequality.",
+    "excluded": "Construction of the nearest registry points and the two triangle-inequality applications.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:chr-executed-adamw-balance",
+    "paper": "Executed fixed-shape AdamW balance",
+    "module": "ExecutedAdamWEnergy",
+    "declarations": [
+      "energy",
+      "pairing",
+      "decayDissipation",
+      "executed_adamw_balance",
+      "decay_dissipation_nonnegative"
+    ],
+    "scope": "The complete finite diagonal-metric balance and nonnegative decay condition for coordinate multipliers in the unit interval.",
+    "excluded": "Runtime binding of abstract vectors to checkpoint tensors and native floating-point enclosure.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:chr-moment-unroll",
+    "paper": "Chronological moment unrolling",
+    "module": "ChronologicalAdamW",
+    "declarations": [
+      "chronologicalMoment",
+      "historyContribution",
+      "chronological_moment_split",
+      "common_preconditioner_split",
+      "first_update_index"
+    ],
+    "scope": "The exact newest-first signed history, geometric tail, common preconditioner split, and first-update indexing.",
+    "excluded": "Checkpoint serialization and reconstruction of the second-moment preconditioner.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "lem:chr-tail-bound",
+    "paper": "Signed tail lower bound",
+    "module": "ChronologicalMargin",
+    "declarations": [
+      "signed_tail_lower"
+    ],
+    "scope": "The scalar signed absolute-value lower kernel with a nonnegative learning rate.",
+    "excluded": "The diagonal-seminorm Cauchy-Schwarz lift used in the written lemma.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:chr-shape-enclosure",
+    "paper": "Directional shape-work enclosure",
+    "module": "ShapeDirEnclosure",
+    "declarations": [
+      "scalar_directional_shape_identity",
+      "scalar_directional_shape_enclosure"
+    ],
+    "scope": "The exact scalar quadratic shape increment and remainder enclosure.",
+    "excluded": "The vector diagonal-operator lift and construction of a valid full-model second-order radius.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:chr-lower-certificate",
+    "paper": "Chronological lower certificate",
+    "module": "ChronologicalMargin",
+    "declarations": [
+      "executedMargin",
+      "lowerCertificate",
+      "lower_certificate_le_executed",
+      "positive_certificate_contracts"
+    ],
+    "scope": "The signed lower-term and upper-charge comparison and the strict-contraction consequence.",
+    "excluded": "Assembly of gate balance, chronological history, JVP work, and native numerical provenance.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:chr-positive-attraction",
+    "paper": "Positive chronological attraction",
+    "module": "ChronologicalMargin",
+    "declarations": [
+      "positive_certificate_contracts",
+      "clipped_affine_coefficient"
+    ],
+    "scope": "The positive-certificate contraction implication and safe clipping of a negative affine coefficient.",
+    "excluded": "The displayed collection of alignment constants and the Young-inequality forcing calculation.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:chr-source-removal",
+    "paper": "Fixed-shape source removal",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The exact source-removal square expansion remains in the stand-alone written proof and executable kernel.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:pair-affine-step",
+    "paper": "Certificate-induced affine step",
+    "module": "ChronologicalMargin",
+    "declarations": [
+      "clipped_affine_coefficient"
+    ],
+    "scope": "The positive-state coefficient-clipping branch of the affine comparison.",
+    "excluded": "The separate zero-energy branch and its forcing definition.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:pairwise-envelope",
+    "paper": "All-pairs chronological envelope",
+    "module": "PairwiseDiameterCollapse",
+    "declarations": [
+      "pairEnvelope",
+      "pairwise_envelope_comparison",
+      "all_pairs_to_diameter"
+    ],
+    "scope": "Chronological pairwise comparison and transfer of simultaneous envelopes to squared diameter.",
+    "excluded": "The explicit ordered product and forcing-convolution closed form.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:pair-block-attraction",
+    "paper": "Uniform block attraction",
+    "module": "ObservableEnergyDissipation",
+    "declarations": [
+      "orderedEnvelope",
+      "ordered_affine_recursion",
+      "zero_block_forcing_geometric",
+      "uniform_block_forcing_convolution",
+      "uniform_block_forcing_bound"
+    ],
+    "scope": "Ordered affine iteration, zero-forcing geometric decay, and the finite bounded-forcing convolution.",
+    "excluded": "Vanishing nonuniform forcing, the limsup statement, and intrablock extension.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:predictive-collapse-master",
+    "paper": "Predictive finite-registry collapse",
+    "module": "PredictiveCollapseMaster",
+    "declarations": [
+      "predictive_finite_registry_collapse"
+    ],
+    "scope": "Uniform vanishing of supplied pair envelopes implies finite-registry squared-diameter collapse.",
+    "excluded": "Derivation of the envelopes from architecture, optimizer, shape, and block-attraction hypotheses, plus the bounded-forcing tube.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:predictive-physical-collapse",
+    "paper": "Physical-domain collapse",
+    "module": "PredictiveCollapseMaster",
+    "declarations": [
+      "physical_resolution_tube"
+    ],
+    "scope": "The additive resolution tube used after finite-registry collapse.",
+    "excluded": "The limiting argument for time-dependent cover radius and Lipschitz constant.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "pred:chronological-source-removal",
+    "paper": "Chronological source-removal prediction",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed for an empirical prediction.",
+    "excluded": "Intervention execution, locked magnitude charges, and observed sign evaluation.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "pred:gate-shape-route",
+    "paper": "Gate-shape route prediction",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed for an empirical prediction.",
+    "excluded": "Positive-segment logarithmic attribution and route classification on live trajectories.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "thm:plga-signed-secant",
+    "paper": "Occupied positive-base power secant",
+    "module": "PLGASignedSecant",
+    "declarations": [
+      "positivePower",
+      "signedSecant",
+      "signed_secant_exact",
+      "signed_secant_diagonal",
+      "occupied_segment_bound"
+    ],
+    "scope": "The real-power definition, exact signed secant reconstruction, diagonal branch, and a supplied secant bound.",
+    "excluded": "The endpoint derivative maximum obtained from positivity, monotonicity, and the mean value theorem.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:plga-row-diameter",
+    "paper": "Row-diameter matrix bound",
+    "module": "ObservableEnergyDissipation",
+    "declarations": [
+      "stackedDeviationSq",
+      "stacked_generator_sq_bound"
+    ],
+    "scope": "The squared Frobenius stack identity and cardinality bound from uniform row-to-anchor control.",
+    "excluded": "The square-root reformulation and binding to a complete PLGA row block.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:plga-curvature-transfer",
+    "paper": "Row diameter to PLGA curvature",
+    "module": "PLGASignedSecant",
+    "declarations": [
+      "occupied_segment_bound"
+    ],
+    "scope": "The occupied-power Lipschitz step when a valid secant bound is supplied.",
+    "excluded": "Positive activation, matrix operator-norm chaining, learned affine curvature map, and complete constant collection.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:plga-rectangular-score",
+    "paper": "Rectangular score identity",
+    "module": "PLGAScoreTransfer",
+    "declarations": [
+      "rectangular_three_factor",
+      "fixed_query_key"
+    ],
+    "scope": "The exact rectangular three-factor telescope and its fixed-query, fixed-key specialization.",
+    "excluded": "The Frobenius and operator-norm estimate for the three terms.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:centered-logit-differences",
+    "paper": "Centering preserves decisions",
+    "module": "CenteredLogitMargin",
+    "declarations": [
+      "center",
+      "centered_pair_difference"
+    ],
+    "scope": "The finite-vocabulary centering definition and exact preservation of every pairwise logit difference.",
+    "excluded": "The nonzero orthogonal-projection operator-norm calculation.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:centered-logit-margin",
+    "paper": "Sharp centered winner margin",
+    "module": "CenteredLogitMargin",
+    "declarations": [
+      "sharp_centered_margin"
+    ],
+    "scope": "The sharp scalar pair-perturbation condition that preserves a reference winner.",
+    "excluded": "The full-vector centering projection and square-root-two Cauchy-Schwarz reduction for all competitors.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "pred:plga-centered-transfer",
+    "paper": "PLGA centered-logit prediction",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed for an empirical prediction.",
+    "excluded": "Live occupied-segment coverage, directional logit remainder, and held-out winner preservation.",
+    "faithfulness": "not-formalized"
+  }
+]

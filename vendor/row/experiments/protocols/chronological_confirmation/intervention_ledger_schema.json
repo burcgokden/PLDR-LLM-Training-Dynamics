@@ -1,0 +1,28 @@
+{
+  "arms": [
+    "baseline",
+    "adaptive-source-removal",
+    "decay-removal",
+    "shape-direction-removal"
+  ],
+  "container": "npz-without-pickle",
+  "context_rule": "ordinal-modulo-sixteen",
+  "head_rule": "context-modulo-four",
+  "layer_rule": "ordinal-modulo-three",
+  "required_provenance": [
+    "initial-model-digests",
+    "initial-optimizer-digests",
+    "per-arm-minibatch-digests",
+    "optimizer-step-counters",
+    "checkpoint-registry-lock-digests"
+  ],
+  "row_pair": [
+    0,
+    63
+  ],
+  "schema_version": "pldr-chronological-intervention-ledger-v1",
+  "source_anchor": 8000,
+  "units": 48,
+  "units_per_seed": 12,
+  "updates_per_arm": 4
+}

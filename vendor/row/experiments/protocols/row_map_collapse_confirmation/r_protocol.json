@@ -1,0 +1,45 @@
+{
+  "analyzer": "experiments/analysis/analyze_row_map_confirmation.py",
+  "fixed_constants": {
+    "absolute_zero_tolerance": 1e-12,
+    "adjust_factors_after_validation": false,
+    "clipping_boundary_tolerance": 1e-10,
+    "construction_contexts": 8,
+    "construction_to_validation_factor": 2.0,
+    "continuation_updates": 16,
+    "empty_qualified_set_supports_margin": false,
+    "material_energy_factor": 3.0,
+    "plga_margin_rule": "sqrt(2)*B < Delta",
+    "relative_identity_tolerance": 1e-08,
+    "route_dominance_fraction": 0.625,
+    "trajectory_gradient_replay_tolerance": 1e-05,
+    "validation_contexts": 16
+  },
+  "producer": "experiments/confirm/row_map_live.py",
+  "schema_version": "pldr-row-map-collapse-protocol-v1",
+  "scientific_arrays": "npz_without_pickle",
+  "stage": {
+    "dependencies": [
+      "D",
+      "I",
+      "A"
+    ],
+    "evidence_rule": "Deciding arrays are recomputed from digest-bound checkpoint tensors and registered contexts; log summaries are cross-checks.",
+    "gpu_hour_cap": 0.0,
+    "id": "R",
+    "required_checks": [
+      "fresh_process_recomputation",
+      "schema_validation",
+      "mutation_suite",
+      "resource_caps",
+      "deterministic_records",
+      "checksum_verification",
+      "python_tests",
+      "lean_build",
+      "axiom_check",
+      "tex_build"
+    ],
+    "title": "Fresh reconstruction and release gate"
+  },
+  "status": "REGISTERED_PENDING_EXECUTION"
+}

@@ -1,0 +1,7188 @@
+{
+  "schema": "optimizer-transport-results-v1",
+  "stage": "assessment",
+  "rows": [
+    {
+      "case": "h4-c0-i0",
+      "heads": 4,
+      "mode": "native32",
+      "source": 0,
+      "family": "first",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0013943741980885862,
+      "first_even_rms": 4.2714008836410036e-05,
+      "endpoint_odd_rms": 0.009680005514036343,
+      "endpoint_even_rms": 0.018757123717866687,
+      "path_odd_rms": 0.004816503832387028,
+      "path_even_rms": 0.008435939787353654,
+      "half_signal": 0.002233714487832412,
+      "halving_discrepancy": 0.7867792274494754,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.006681556723011184,
+        0.0265653325717361,
+        -0.019011838384028756,
+        0.0040882328547775515
+      ]
+    },
+    {
+      "case": "h4-c0-i0",
+      "heads": 4,
+      "mode": "native32",
+      "source": 0,
+      "family": "logsecond",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.001851968478947004,
+      "first_even_rms": 4.944607039685717e-05,
+      "endpoint_odd_rms": 0.009207175076614234,
+      "endpoint_even_rms": 0.007419236914851348,
+      "path_odd_rms": 0.004399860781006335,
+      "path_even_rms": 0.00408235509116201,
+      "half_signal": 0.003666893640114756,
+      "halving_discrepancy": 1.5147977584684351,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.005010341831325427,
+        -0.006694855646270703,
+        0.02121945838799366,
+        0.012729308065650535
+      ]
+    },
+    {
+      "case": "h4-c0-i0",
+      "heads": 4,
+      "mode": "native32",
+      "source": 1,
+      "family": "first",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.001220710755472348,
+      "first_even_rms": 0.0001586089936149759,
+      "endpoint_odd_rms": 0.01629206068452,
+      "endpoint_even_rms": 0.012832306659949944,
+      "path_odd_rms": 0.007716449848928096,
+      "path_even_rms": 0.005813224562603091,
+      "half_signal": 0.003169919212289503,
+      "halving_discrepancy": 2.0934869865634402,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.019920542627124505,
+        0.028823835706139,
+        0.003942762065314298,
+        0.016747599141405445
+      ]
+    },
+    {
+      "case": "h4-c0-i0",
+      "heads": 4,
+      "mode": "native32",
+      "source": 1,
+      "family": "logsecond",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0005991957057425321,
+      "first_even_rms": 8.99218831918741e-05,
+      "endpoint_odd_rms": 0.0076813376652109305,
+      "endpoint_even_rms": 0.021792084302973528,
+      "path_odd_rms": 0.003553833655906669,
+      "path_even_rms": 0.010150166090568584,
+      "half_signal": 0.0011436062197317765,
+      "halving_discrepancy": 1.7841519763263385,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.023844949161301976,
+        -0.0048282550404392666,
+        -0.00103145341876143,
+        0.009048227129708764
+      ]
+    },
+    {
+      "case": "h4-c0-i0",
+      "heads": 4,
+      "mode": "arithmetic64",
+      "source": 0,
+      "family": "first",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0013978305943209972,
+      "first_even_rms": 4.591486246899349e-05,
+      "endpoint_odd_rms": 0.005347726931703059,
+      "endpoint_even_rms": 0.02397670926412821,
+      "path_odd_rms": 0.0027401147628596215,
+      "path_even_rms": 0.01077856861830493,
+      "half_signal": 0.002237945147451356,
+      "halving_discrepancy": 0.5341253342725145,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        -7.397784379836736e-05,
+        0.001132968841932147,
+        0.011817384247048146,
+        0.0051050052831689285
+      ]
+    },
+    {
+      "case": "h4-c0-i0",
+      "heads": 4,
+      "mode": "arithmetic64",
+      "source": 0,
+      "family": "logsecond",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0018510172300977184,
+      "first_even_rms": 4.5813358577974445e-05,
+      "endpoint_odd_rms": 0.01568929010136415,
+      "endpoint_even_rms": 0.038482331248026025,
+      "path_odd_rms": 0.007224857292884576,
+      "path_even_rms": 0.01765689163825096,
+      "half_signal": 0.004714807637157067,
+      "halving_discrepancy": 1.7295687644333322,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        -0.0005006998386329897,
+        0.032342918390239284,
+        0.01686634591606495,
+        -0.01719218840615433
+      ]
+    },
+    {
+      "case": "h4-c0-i0",
+      "heads": 4,
+      "mode": "arithmetic64",
+      "source": 1,
+      "family": "first",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0012227263502553327,
+      "first_even_rms": 0.00015374054234271333,
+      "endpoint_odd_rms": 0.013147711645040899,
+      "endpoint_even_rms": 0.03457652214907954,
+      "path_odd_rms": 0.0062828992827138885,
+      "path_even_rms": 0.0156519967876193,
+      "half_signal": 0.002413461146622374,
+      "halving_discrepancy": 1.8638266555115741,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.03899030691401606,
+        -0.010611425890934889,
+        -0.023316429757725743,
+        -0.003887120086817575
+      ]
+    },
+    {
+      "case": "h4-c0-i0",
+      "heads": 4,
+      "mode": "arithmetic64",
+      "source": 1,
+      "family": "logsecond",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0005989557978126336,
+      "first_even_rms": 9.094694349572607e-05,
+      "endpoint_odd_rms": 0.010341022908221607,
+      "endpoint_even_rms": 0.03605020203719755,
+      "path_odd_rms": 0.005234323598534881,
+      "path_even_rms": 0.016171279591248307,
+      "half_signal": 0.003178653728239411,
+      "halving_discrepancy": 0.8440378038569138,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.0013612345843903029,
+        0.03079055634479566,
+        -0.018837498730611024,
+        0.007178083727449547
+      ]
+    },
+    {
+      "case": "h14-c0-i0",
+      "heads": 14,
+      "mode": "native32",
+      "source": 0,
+      "family": "first",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.002120922793649798,
+      "first_even_rms": 0.0001852067723226672,
+      "endpoint_odd_rms": 0.0014689056851580429,
+      "endpoint_even_rms": 0.023109451006007066,
+      "path_odd_rms": 0.0031280054072244322,
+      "path_even_rms": 0.013030699125456388,
+      "half_signal": 0.004930862740649135,
+      "halving_discrepancy": 1.0963215847972478,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        -0.01707127006009479,
+        -0.008189995607809308,
+        -0.02221252659759898,
+        -0.01146926605206744
+      ]
+    },
+    {
+      "case": "h14-c0-i0",
+      "heads": 14,
+      "mode": "native32",
+      "source": 0,
+      "family": "logsecond",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0012921057099948357,
+      "first_even_rms": 6.135403479851988e-05,
+      "endpoint_odd_rms": 0.015285853070327196,
+      "endpoint_even_rms": 0.012970022871702446,
+      "path_odd_rms": 0.006969914297020912,
+      "path_even_rms": 0.006801611703962384,
+      "half_signal": 0.0014240404074561445,
+      "halving_discrepancy": 3.0223936261512065,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        -0.00614456499530025,
+        -0.0038668133454411446,
+        0.010907695946935192,
+        -1.6120749339876284e-05
+      ]
+    },
+    {
+      "case": "h14-c0-i0",
+      "heads": 14,
+      "mode": "native32",
+      "source": 1,
+      "family": "first",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0022564267932083737,
+      "first_even_rms": 0.00015651793212238972,
+      "endpoint_odd_rms": 0.003408087051890306,
+      "endpoint_even_rms": 0.010826763396675562,
+      "path_odd_rms": 0.0024388410099161714,
+      "path_even_rms": 0.005353642452522287,
+      "half_signal": 0.003397124568655114,
+      "halving_discrepancy": 0.9694529760644925,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        -0.014402515978691355,
+        -0.01251408965119083,
+        -0.008162902506266612,
+        -0.017300322880664964
+      ]
+    },
+    {
+      "case": "h14-c0-i0",
+      "heads": 14,
+      "mode": "native32",
+      "source": 1,
+      "family": "logsecond",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0013014547368995347,
+      "first_even_rms": 2.5524365015860167e-05,
+      "endpoint_odd_rms": 0.013738018846547323,
+      "endpoint_even_rms": 0.0036519650857988846,
+      "path_odd_rms": 0.009547667964622027,
+      "path_even_rms": 0.003528238570462761,
+      "half_signal": 0.0026411736125935333,
+      "halving_discrepancy": 1.0495375540238998,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        -0.011631556780985264,
+        -0.01091889504194743,
+        -0.009374002790253577,
+        0.0034112247344548763
+      ]
+    },
+    {
+      "case": "h14-c0-i0",
+      "heads": 14,
+      "mode": "arithmetic64",
+      "source": 0,
+      "family": "first",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0021342245270857024,
+      "first_even_rms": 0.00021593812096258196,
+      "endpoint_odd_rms": 0.0003761279402725707,
+      "endpoint_even_rms": 0.015240779683970331,
+      "path_odd_rms": 0.005240967908047108,
+      "path_even_rms": 0.0075418852955682235,
+      "half_signal": 0.0023304914549557533,
+      "halving_discrepancy": 1.0516138021560983,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.011571233671563874,
+        0.010546793858821069,
+        0.005548017035003738,
+        0.017494507933637493
+      ]
+    },
+    {
+      "case": "h14-c0-i0",
+      "heads": 14,
+      "mode": "arithmetic64",
+      "source": 0,
+      "family": "logsecond",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0012951313224595033,
+      "first_even_rms": 9.631438335418154e-05,
+      "endpoint_odd_rms": 0.0033675227468816862,
+      "endpoint_even_rms": 0.008400861642080981,
+      "path_odd_rms": 0.002020729094803725,
+      "path_even_rms": 0.004322296646520893,
+      "half_signal": 0.00318825217899751,
+      "halving_discrepancy": 0.7960128360187901,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.017562274534565603,
+        0.016700914390344046,
+        0.024473984596001586,
+        0.03692304515104894
+      ]
+    },
+    {
+      "case": "h14-c0-i0",
+      "heads": 14,
+      "mode": "arithmetic64",
+      "source": 1,
+      "family": "first",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0022666642579344566,
+      "first_even_rms": 0.00015503907480005161,
+      "endpoint_odd_rms": 0.00898532966922121,
+      "endpoint_even_rms": 0.007247822155129979,
+      "path_odd_rms": 0.004413828644231097,
+      "path_even_rms": 0.00518312576697625,
+      "half_signal": 0.004325908868636201,
+      "halving_discrepancy": 0.737942078345311,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.01845754499468466,
+        -0.00265621488046186,
+        0.02334253235057293,
+        0.015612368658453946
+      ]
+    },
+    {
+      "case": "h14-c0-i0",
+      "heads": 14,
+      "mode": "arithmetic64",
+      "source": 1,
+      "family": "logsecond",
+      "incoming_odd_rms": 0.0,
+      "incoming_even_rms": 0.0,
+      "first_odd_rms": 0.0012904081763762496,
+      "first_even_rms": 2.433206478103679e-05,
+      "endpoint_odd_rms": 0.01240885471963236,
+      "endpoint_even_rms": 0.005551608535354282,
+      "path_odd_rms": 0.007462654804019,
+      "path_even_rms": 0.0031204604400599427,
+      "half_signal": 0.007092498568694636,
+      "halving_discrepancy": 0.5287632399526071,
+      "resolved": true,
+      "signed_endpoint_risk": [
+        0.019968489240571152,
+        0.008595743504926645,
+        0.018848525908077285,
+        0.03768532553629367
+      ]
+    }
+  ],
+  "predictions": [
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "zero",
+      "max_roundoff_units": [
+        2.0076355681052585,
+        1.0074544747540253,
+        1.0961097160053734
+      ],
+      "error_l2": [
+        9.645397869354997e-05,
+        6.578272551814356e-09,
+        4.347149571791327e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "first-plus",
+      "max_roundoff_units": [
+        1.942768867654838,
+        1.0028731721554032,
+        1.0961097160053734
+      ],
+      "error_l2": [
+        9.661410717587325e-05,
+        6.931344509571262e-09,
+        4.347149571791327e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "first-minus",
+      "max_roundoff_units": [
+        1.8385989843815858,
+        1.0112789149968426,
+        1.0961097160053734
+      ],
+      "error_l2": [
+        9.640314686663781e-05,
+        5.973816337110704e-09,
+        4.347149571791327e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "first-halfplus",
+      "max_roundoff_units": [
+        1.7600625256023692,
+        1.0086208183392684,
+        1.0961097160053734
+      ],
+      "error_l2": [
+        9.63762226034858e-05,
+        6.839250700520965e-09,
+        4.347149571791327e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "first-halfminus",
+      "max_roundoff_units": [
+        1.7436726657985133,
+        1.0092824409987833,
+        1.0961097160053734
+      ],
+      "error_l2": [
+        9.649852842722319e-05,
+        6.3937482944611656e-09,
+        4.347149571791327e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "logsecond-plus",
+      "max_roundoff_units": [
+        1.9452736414326632,
+        1.0074544747540253,
+        1.0978344162476075
+      ],
+      "error_l2": [
+        9.656874094545616e-05,
+        6.578272551814356e-09,
+        4.943470706390526e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "logsecond-minus",
+      "max_roundoff_units": [
+        1.9416593894060854,
+        1.0074544747540253,
+        1.094884722813849
+      ],
+      "error_l2": [
+        9.642092067202678e-05,
+        6.578272551814356e-09,
+        4.1380457405031106e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "logsecond-halfplus",
+      "max_roundoff_units": [
+        1.8363785296907909,
+        1.0074544747540253,
+        1.0944678091692184
+      ],
+      "error_l2": [
+        9.6450465716006e-05,
+        6.578272551814356e-09,
+        4.4461266213780775e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "logsecond-halfminus",
+      "max_roundoff_units": [
+        2.100594355404376,
+        1.0074544747540253,
+        1.0950619122174112
+      ],
+      "error_l2": [
+        9.652198003475916e-05,
+        6.578272551814356e-09,
+        3.718724179167387e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "zero",
+      "max_roundoff_units": [
+        2.0334525432010913,
+        0.9988014793317376,
+        1.097792218188661
+      ],
+      "error_l2": [
+        9.647323998363726e-05,
+        6.604028620119802e-09,
+        6.851258930394826e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "first-plus",
+      "max_roundoff_units": [
+        1.8763431888712947,
+        1.012677357728487,
+        1.097792218188661
+      ],
+      "error_l2": [
+        9.663645831392692e-05,
+        6.955161626088328e-09,
+        6.851258930394826e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "first-minus",
+      "max_roundoff_units": [
+        1.9276582700922877,
+        0.9983359455285945,
+        1.097792218188661
+      ],
+      "error_l2": [
+        9.640962018562264e-05,
+        5.9234024367168405e-09,
+        6.851258930394826e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "first-halfplus",
+      "max_roundoff_units": [
+        1.8102909161267504,
+        0.9925465036835622,
+        1.097792218188661
+      ],
+      "error_l2": [
+        9.640580846097211e-05,
+        7.0407589859653375e-09,
+        6.851258930394826e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "first-halfminus",
+      "max_roundoff_units": [
+        1.922939043057366,
+        0.9995898517793629,
+        1.097792218188661
+      ],
+      "error_l2": [
+        9.655021604693775e-05,
+        6.393656714497343e-09,
+        6.851258930394826e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "logsecond-plus",
+      "max_roundoff_units": [
+        1.9059938965515193,
+        0.9988014793317376,
+        1.0983895971692619
+      ],
+      "error_l2": [
+        9.657722583594559e-05,
+        6.604028620119802e-09,
+        5.760417635849349e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "logsecond-minus",
+      "max_roundoff_units": [
+        2.0401799498843936,
+        0.9988014793317376,
+        1.0965951113335197
+      ],
+      "error_l2": [
+        9.64371084598131e-05,
+        6.604028620119802e-09,
+        4.755579967255862e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "logsecond-halfplus",
+      "max_roundoff_units": [
+        1.8794909283275976,
+        0.9988014793317376,
+        1.0994990805059546
+      ],
+      "error_l2": [
+        9.649024021410145e-05,
+        6.604028620119802e-09,
+        5.734802172360207e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "logsecond-halfminus",
+      "max_roundoff_units": [
+        1.9541030906456665,
+        0.9988014793317376,
+        1.0961645029669453
+      ],
+      "error_l2": [
+        9.654240442871985e-05,
+        6.604028620119802e-09,
+        4.155116565111998e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "zero-replay",
+      "max_roundoff_units": [
+        2.0076355681052585,
+        1.0074544747540253,
+        1.0961097160053734
+      ],
+      "error_l2": [
+        9.645397869354997e-05,
+        6.578272551814356e-09,
+        4.347149571791327e-10
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "zero",
+      "max_roundoff_units": [
+        1.9639312520450931,
+        1.2496136591441003,
+        1.9600996092248741
+      ],
+      "error_l2": [
+        1.3708232393211231e-15,
+        1.8807385359433388e-17,
+        1.9730632029448835e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "first-plus",
+      "max_roundoff_units": [
+        1.9745158742761977,
+        1.2176367241072175,
+        1.9600996092248741
+      ],
+      "error_l2": [
+        1.4490620199208746e-15,
+        2.1041278742572243e-17,
+        1.9730632029448835e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "first-minus",
+      "max_roundoff_units": [
+        2.339696194342865,
+        1.239427152479893,
+        1.9600996092248741
+      ],
+      "error_l2": [
+        1.3443442372236408e-15,
+        1.802181668071638e-17,
+        1.9730632029448835e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "first-halfplus",
+      "max_roundoff_units": [
+        2.4339881343518277,
+        1.246106035322248,
+        1.9600996092248741
+      ],
+      "error_l2": [
+        1.4610596638065726e-15,
+        1.969033755781034e-17,
+        1.9730632029448835e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "first-halfminus",
+      "max_roundoff_units": [
+        2.346332839721393,
+        1.2376492449936272,
+        1.9600996092248741
+      ],
+      "error_l2": [
+        1.4207614856187992e-15,
+        1.814261234053517e-17,
+        1.9730632029448835e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "logsecond-plus",
+      "max_roundoff_units": [
+        2.1534227544720275,
+        1.2496136591441003,
+        1.9277152787847418
+      ],
+      "error_l2": [
+        1.3941058808770266e-15,
+        1.8807385359433388e-17,
+        2.059591838936241e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "logsecond-minus",
+      "max_roundoff_units": [
+        2.3811720275885633,
+        1.2496136591441003,
+        1.9870587791494763
+      ],
+      "error_l2": [
+        1.5437014197374323e-15,
+        1.8807385359433388e-17,
+        2.64184332219992e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "logsecond-halfplus",
+      "max_roundoff_units": [
+        2.5032267824521086,
+        1.2496136591441003,
+        1.9870553194082952
+      ],
+      "error_l2": [
+        1.3615508868197753e-15,
+        1.8807385359433388e-17,
+        4.933104853034996e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "logsecond-halfminus",
+      "max_roundoff_units": [
+        2.107147909344743,
+        1.2496136591441003,
+        1.9870576830592328
+      ],
+      "error_l2": [
+        1.5272649244026944e-15,
+        1.8807385359433388e-17,
+        4.9806650351924115e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "zero",
+      "max_roundoff_units": [
+        2.230679336738766,
+        1.2300958798505217,
+        1.9554378870952247
+      ],
+      "error_l2": [
+        1.3206826797134728e-15,
+        1.9500153569174006e-17,
+        9.408469677729582e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "first-plus",
+      "max_roundoff_units": [
+        1.9702891878858133,
+        1.1965211293159286,
+        1.9554378870952247
+      ],
+      "error_l2": [
+        1.431707388343375e-15,
+        2.062941235921131e-17,
+        9.408469677729582e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "first-minus",
+      "max_roundoff_units": [
+        1.9561119325450878,
+        1.2457021277814866,
+        1.9554378870952247
+      ],
+      "error_l2": [
+        1.3061444969003895e-15,
+        1.8831535154288525e-17,
+        9.408469677729582e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "first-halfplus",
+      "max_roundoff_units": [
+        2.0310571975430456,
+        1.2259879727741434,
+        1.9554378870952247
+      ],
+      "error_l2": [
+        1.441719173777627e-15,
+        1.9358767114382965e-17,
+        9.408469677729582e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "first-halfminus",
+      "max_roundoff_units": [
+        1.8446602069889435,
+        1.2289874711886488,
+        1.9554378870952247
+      ],
+      "error_l2": [
+        1.3673354623551841e-15,
+        1.847504872049927e-17,
+        9.408469677729582e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "logsecond-plus",
+      "max_roundoff_units": [
+        1.7964120176102853,
+        1.2300958798505217,
+        1.9554378734329876
+      ],
+      "error_l2": [
+        1.4549984996957695e-15,
+        1.9500153569174006e-17,
+        2.3041019187192408e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "logsecond-minus",
+      "max_roundoff_units": [
+        2.08525308733071,
+        1.2300958798505217,
+        1.8686428842749827
+      ],
+      "error_l2": [
+        1.4627669734862204e-15,
+        1.9500153569174006e-17,
+        9.295592184986423e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "logsecond-halfplus",
+      "max_roundoff_units": [
+        1.945488556003722,
+        1.2300958798505217,
+        1.9642835786067974
+      ],
+      "error_l2": [
+        1.3210511311288558e-15,
+        1.9500153569174006e-17,
+        3.3946001896376663e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "logsecond-halfminus",
+      "max_roundoff_units": [
+        1.9868272272186396,
+        1.2300958798505217,
+        1.7932458322405789
+      ],
+      "error_l2": [
+        1.4922289326703547e-15,
+        1.9500153569174006e-17,
+        3.1630362695338236e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h4-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "zero-replay",
+      "max_roundoff_units": [
+        1.9639312520450931,
+        1.2496136591441003,
+        1.9600996092248741
+      ],
+      "error_l2": [
+        1.3708232393211231e-15,
+        1.8807385359433388e-17,
+        1.9730632029448835e-19
+      ],
+      "coordinates": 23423332
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "zero",
+      "max_roundoff_units": [
+        1.7830837771658523,
+        1.0086122078065562,
+        1.0974119701095573
+      ],
+      "error_l2": [
+        0.0001749347805494437,
+        6.4868222070185365e-09,
+        2.3420515264098216e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "first-plus",
+      "max_roundoff_units": [
+        1.8577095401384036,
+        1.0148929951584782,
+        1.0974119701095573
+      ],
+      "error_l2": [
+        0.0001748851669390626,
+        6.950108803861348e-09,
+        2.3420515264098216e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "first-minus",
+      "max_roundoff_units": [
+        1.973236343600846,
+        1.0129044259680873,
+        1.0974119701095573
+      ],
+      "error_l2": [
+        0.00017465092034029317,
+        6.13321664491062e-09,
+        2.3420515264098216e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "first-halfplus",
+      "max_roundoff_units": [
+        1.8171365630701566,
+        1.0053817069061954,
+        1.0974119701095573
+      ],
+      "error_l2": [
+        0.0001748178143012056,
+        6.745866567939567e-09,
+        2.3420515264098216e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "first-halfminus",
+      "max_roundoff_units": [
+        1.930857154032279,
+        1.0069861487512388,
+        1.0974119701095573
+      ],
+      "error_l2": [
+        0.00017457033955922926,
+        6.361762830037182e-09,
+        2.3420515264098216e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "logsecond-plus",
+      "max_roundoff_units": [
+        1.9773165770725019,
+        1.0086122078065562,
+        1.0989964375813202
+      ],
+      "error_l2": [
+        0.00017463078757771038,
+        6.4868222070185365e-09,
+        2.0444950798493e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "logsecond-minus",
+      "max_roundoff_units": [
+        1.9221180567379588,
+        1.0086122078065562,
+        1.0989140726829585
+      ],
+      "error_l2": [
+        0.00017482738902029898,
+        6.4868222070185365e-09,
+        1.9818064959031048e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "logsecond-halfplus",
+      "max_roundoff_units": [
+        1.944718611757468,
+        1.0086122078065562,
+        1.0969826290743854
+      ],
+      "error_l2": [
+        0.0001749859860192231,
+        6.4868222070185365e-09,
+        2.5649384091764657e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "logsecond-halfminus",
+      "max_roundoff_units": [
+        1.9869334061495367,
+        1.0086122078065562,
+        1.0991707451644908
+      ],
+      "error_l2": [
+        0.0001745469066916247,
+        6.4868222070185365e-09,
+        2.1164981541676212e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "zero",
+      "max_roundoff_units": [
+        2.1840886540338706,
+        1.0131829772362295,
+        1.0986828457605955
+      ],
+      "error_l2": [
+        0.0001749042710677071,
+        6.5688118734348584e-09,
+        2.1570862527136443e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "first-plus",
+      "max_roundoff_units": [
+        2.074777305407687,
+        1.0053213474981206,
+        1.0986828457605955
+      ],
+      "error_l2": [
+        0.00017487149362308333,
+        6.973422736385923e-09,
+        2.1570862527136443e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "first-minus",
+      "max_roundoff_units": [
+        1.8445099451849332,
+        1.0099492405242032,
+        1.0986828457605955
+      ],
+      "error_l2": [
+        0.00017463241406026774,
+        6.162049808772131e-09,
+        2.1570862527136443e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "first-halfplus",
+      "max_roundoff_units": [
+        2.1233110438694682,
+        1.0134748801275946,
+        1.0986828457605955
+      ],
+      "error_l2": [
+        0.00017478957481985527,
+        6.81915088187897e-09,
+        2.1570862527136443e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "first-halfminus",
+      "max_roundoff_units": [
+        2.1401880250014553,
+        1.0112794612811542,
+        1.0986828457605955
+      ],
+      "error_l2": [
+        0.00017452936752174978,
+        6.403476211373441e-09,
+        2.1570862527136443e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "logsecond-plus",
+      "max_roundoff_units": [
+        2.045325465815215,
+        1.0131829772362295,
+        1.0972500009279746
+      ],
+      "error_l2": [
+        0.00017459548605978676,
+        6.5688118734348584e-09,
+        1.9752509944270077e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "logsecond-minus",
+      "max_roundoff_units": [
+        1.9862579242196328,
+        1.0131829772362295,
+        1.0990234968328754
+      ],
+      "error_l2": [
+        0.00017480069254193276,
+        6.5688118734348584e-09,
+        1.7578258894806363e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "logsecond-halfplus",
+      "max_roundoff_units": [
+        1.87770537214505,
+        1.0131829772362295,
+        1.0978731386280949
+      ],
+      "error_l2": [
+        0.00017496015884136098,
+        6.5688118734348584e-09,
+        2.1960873186250805e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 1,
+      "arm": "logsecond-halfminus",
+      "max_roundoff_units": [
+        1.7830760942740587,
+        1.0131829772362295,
+        1.0972365232399217
+      ],
+      "error_l2": [
+        0.00017452032671156883,
+        6.5688118734348584e-09,
+        1.7109395050434566e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "native32",
+      "source": 0,
+      "arm": "zero-replay",
+      "max_roundoff_units": [
+        1.7830837771658523,
+        1.0086122078065562,
+        1.0974119701095573
+      ],
+      "error_l2": [
+        0.0001749347805494437,
+        6.4868222070185365e-09,
+        2.3420515264098216e-10
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "zero",
+      "max_roundoff_units": [
+        2.4735284081685864,
+        1.2491320773408292,
+        1.967837186015566
+      ],
+      "error_l2": [
+        1.1983216326663672e-15,
+        1.901321113240854e-17,
+        1.420018137041301e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "first-plus",
+      "max_roundoff_units": [
+        2.2674043936358723,
+        1.2488832258180722,
+        1.967837186015566
+      ],
+      "error_l2": [
+        1.2716593042321506e-15,
+        2.097587562960098e-17,
+        1.420018137041301e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "first-minus",
+      "max_roundoff_units": [
+        1.9910414732257296,
+        1.2498331055618803,
+        1.967837186015566
+      ],
+      "error_l2": [
+        1.3386953278222934e-15,
+        1.7683231468402054e-17,
+        1.420018137041301e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "first-halfplus",
+      "max_roundoff_units": [
+        2.01068568715486,
+        1.2498138510821866,
+        1.967837186015566
+      ],
+      "error_l2": [
+        1.1313792594544214e-15,
+        1.9841507786802876e-17,
+        1.420018137041301e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "first-halfminus",
+      "max_roundoff_units": [
+        2.4364162311138853,
+        1.2419532283782448,
+        1.967837186015566
+      ],
+      "error_l2": [
+        1.0211760959860149e-15,
+        1.8321688817775683e-17,
+        1.420018137041301e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "logsecond-plus",
+      "max_roundoff_units": [
+        2.5800441706309107,
+        1.2491320773408292,
+        1.9813522955892
+      ],
+      "error_l2": [
+        1.1120632467488303e-15,
+        1.901321113240854e-17,
+        8.346616224735619e-20
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "logsecond-minus",
+      "max_roundoff_units": [
+        1.9659750312720443,
+        1.2491320773408292,
+        1.9445835144925456
+      ],
+      "error_l2": [
+        1.17823689124274e-15,
+        1.901321113240854e-17,
+        5.966877948998132e-20
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "logsecond-halfplus",
+      "max_roundoff_units": [
+        2.095496339829272,
+        1.2491320773408292,
+        1.9465816805789793
+      ],
+      "error_l2": [
+        1.3599691089523476e-15,
+        1.901321113240854e-17,
+        1.4043863260809404e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "logsecond-halfminus",
+      "max_roundoff_units": [
+        2.041016790334627,
+        1.2491320773408292,
+        1.9569235658496986
+      ],
+      "error_l2": [
+        1.2737284484537013e-15,
+        1.901321113240854e-17,
+        9.071034959917264e-20
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "zero",
+      "max_roundoff_units": [
+        2.029609654094252,
+        1.2488525346591552,
+        1.974405618766049
+      ],
+      "error_l2": [
+        1.2038060505374319e-15,
+        1.862686417419121e-17,
+        1.4502147751787878e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "first-plus",
+      "max_roundoff_units": [
+        2.2794113200764383,
+        1.2404163321396213,
+        1.974405618766049
+      ],
+      "error_l2": [
+        1.2731296990948696e-15,
+        2.0808838808771196e-17,
+        1.4502147751787878e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "first-minus",
+      "max_roundoff_units": [
+        2.09231314306839,
+        1.2455968628328018,
+        1.974405618766049
+      ],
+      "error_l2": [
+        1.4301965037767778e-15,
+        1.7872952105441194e-17,
+        1.4502147751787878e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "first-halfplus",
+      "max_roundoff_units": [
+        2.012251311285806,
+        1.2465553890434085,
+        1.974405618766049
+      ],
+      "error_l2": [
+        1.1004445347514455e-15,
+        1.981094923134816e-17,
+        1.4502147751787878e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "first-halfminus",
+      "max_roundoff_units": [
+        1.9984668472094385,
+        1.2445039180083135,
+        1.974405618766049
+      ],
+      "error_l2": [
+        9.970129721869448e-16,
+        1.8526604234496897e-17,
+        1.4502147751787878e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "logsecond-plus",
+      "max_roundoff_units": [
+        2.069349690448849,
+        1.2488525346591552,
+        1.974398905505015
+      ],
+      "error_l2": [
+        1.022814323422883e-15,
+        1.862686417419121e-17,
+        1.4860225465604983e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "logsecond-minus",
+      "max_roundoff_units": [
+        1.944932388199064,
+        1.2488525346591552,
+        1.9929581834827512
+      ],
+      "error_l2": [
+        1.2599605426805838e-15,
+        1.862686417419121e-17,
+        7.474614032497519e-20
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "logsecond-halfplus",
+      "max_roundoff_units": [
+        2.254781566577858,
+        1.2488525346591552,
+        1.9868481205364013
+      ],
+      "error_l2": [
+        1.3395694121088517e-15,
+        1.862686417419121e-17,
+        1.4278103494257616e-19
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 1,
+      "arm": "logsecond-halfminus",
+      "max_roundoff_units": [
+        2.345361868472585,
+        1.2488525346591552,
+        1.9875631697288334
+      ],
+      "error_l2": [
+        1.2228716797092663e-15,
+        1.862686417419121e-17,
+        7.633545829475946e-20
+      ],
+      "coordinates": 109689362
+    },
+    {
+      "case": "h14-c0-i0",
+      "mode": "arithmetic64",
+      "source": 0,
+      "arm": "zero-replay",
+      "max_roundoff_units": [
+        2.4735284081685864,
+        1.2491320773408292,
+        1.967837186015566
+      ],
+      "error_l2": [
+        1.1983216326663672e-15,
+        1.901321113240854e-17,
+        1.420018137041301e-19
+      ],
+      "coordinates": 109689362
+    }
+  ],
+  "costs": [
+    {
+      "case": "h4-c0-i0",
+      "seconds": 188.09574719518423
+    },
+    {
+      "case": "h14-c0-i0",
+      "seconds": 611.5494953771122
+    }
+  ],
+  "native_paths": 36,
+  "native_updates": 288,
+  "arithmetic_paths": 36,
+  "arithmetic_updates": 288,
+  "replay_updates": 32,
+  "max_full_prediction_units": [
+    2.5800441706309107,
+    1.2498331055618803,
+    1.9929581834827512
+  ],
+  "compact": {
+    "times": [
+      0,
+      1,
+      2,
+      4,
+      8
+    ],
+    "paths": {
+      "h4-c0-i0/native32/0/zero": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.603116787594465,
+          7.620107443311274,
+          0.26616344907212247,
+          0.2417809228528249,
+          0.2731100284450293,
+          0.31851712944246446,
+          0.3255440379921583,
+          0.6687284885171249,
+          0.6735435928316594,
+          0.6665236790778293,
+          0.654431085514186,
+          0.6518279344858819
+        ],
+        [
+          7.586898981114393,
+          7.51964897152275,
+          0.26615979538051937,
+          0.2417244342934562,
+          0.27338822651031924,
+          0.3188552514509267,
+          0.32565950778967956,
+          0.6687246672270022,
+          0.6735534523035733,
+          0.6664636752027359,
+          0.6543461041001721,
+          0.6517959235339855
+        ],
+        [
+          7.5688965326377575,
+          7.403284229003033,
+          0.26624274311523394,
+          0.24168765416193733,
+          0.27400992566100196,
+          0.31928809396322605,
+          0.3253598364776776,
+          0.6686962516849638,
+          0.6735601162276704,
+          0.666318417075884,
+          0.6542492174229391,
+          0.6519012740600738
+        ],
+        [
+          7.57010667412404,
+          7.357398250956145,
+          0.266320112809138,
+          0.24195185591978452,
+          0.27433030516859097,
+          0.32093568001672756,
+          0.3237688164685522,
+          0.6686705372730687,
+          0.6735127738635776,
+          0.6662344120820731,
+          0.6538089058043133,
+          0.6524082439519736
+        ]
+      ],
+      "h4-c0-i0/native32/0/first-plus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.6024272111027855,
+          7.615249962321998,
+          0.26616681022170885,
+          0.24176578442328,
+          0.2731212168771977,
+          0.31856511928611997,
+          0.3255360102710618,
+          0.6687274254275868,
+          0.6735464739830693,
+          0.6665216315705186,
+          0.6544179353975655,
+          0.6518308221916198
+        ],
+        [
+          7.586711704585656,
+          7.511915068517732,
+          0.2660939753158048,
+          0.24178650444551553,
+          0.27344551344183854,
+          0.31887695413631206,
+          0.32560415897057016,
+          0.6687353143405927,
+          0.6735448603102601,
+          0.6664495160692226,
+          0.6543352541030739,
+          0.651814273062677
+        ],
+        [
+          7.565162596276621,
+          7.3886205875123,
+          0.2658469922406776,
+          0.24190877849137982,
+          0.2740236898135108,
+          0.31933240894280646,
+          0.32362636000160677,
+          0.668773912360602,
+          0.6735293028309011,
+          0.6663231128658514,
+          0.6542140326446519,
+          0.6524171881057276
+        ],
+        [
+          7.576788230847051,
+          7.3265601682835,
+          0.2648735036014923,
+          0.24210169584825905,
+          0.2753760767654389,
+          0.3205396425265455,
+          0.31994773219412825,
+          0.6689539082419493,
+          0.6734995150824111,
+          0.6660197055883422,
+          0.6538882831926034,
+          0.6535295876299287
+        ]
+      ],
+      "h4-c0-i0/native32/0/first-minus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.604032505901309,
+          7.624775552039945,
+          0.2661601423711378,
+          0.24179632729825984,
+          0.27309848673844217,
+          0.31846875317748446,
+          0.3255290820771014,
+          0.6687295451170322,
+          0.6735406860110658,
+          0.6665258516021918,
+          0.654444307504224,
+          0.651831737363794
+        ],
+        [
+          7.592440982514166,
+          7.52015365481662,
+          0.26608283856819304,
+          0.2417405075739306,
+          0.27337282531807355,
+          0.3185856957277663,
+          0.32548894748318113,
+          0.6687401195291822,
+          0.6735528964767565,
+          0.6664685412068119,
+          0.6544162262303023,
+          0.6518520086354107
+        ],
+        [
+          7.5814474379791985,
+          7.413315256787417,
+          0.26592334639033427,
+          0.24188369039524032,
+          0.274239975372784,
+          0.3186024520782965,
+          0.3240298819489552,
+          0.6687613828532812,
+          0.673537073747708,
+          0.6662777676501455,
+          0.6544232963215413,
+          0.6522999454965409
+        ],
+        [
+          7.596672006695776,
+          7.2627021360360455,
+          0.26531016530007223,
+          0.24216864197361768,
+          0.2757597892111551,
+          0.3201700490723638,
+          0.32464517008336613,
+          0.668874291431022,
+          0.673490407320028,
+          0.6659365475612693,
+          0.654026592240903,
+          0.652140299819805
+        ]
+      ],
+      "h4-c0-i0/native32/0/first-halfplus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.602711700030348,
+          7.61773414675214,
+          0.26616512663835845,
+          0.24177331805467692,
+          0.27311622943297414,
+          0.3185422975936942,
+          0.32553890240312705,
+          0.6687279578717144,
+          0.6735450372081004,
+          0.6665225113339429,
+          0.6544241794602594,
+          0.6518297279918773
+        ],
+        [
+          7.588773525342274,
+          7.512897127727612,
+          0.26621722632354755,
+          0.24179647004307192,
+          0.2732946076870289,
+          0.3189400180942586,
+          0.32557142319932836,
+          0.6687118695893389,
+          0.6735440089078293,
+          0.666485758364098,
+          0.6543230661086872,
+          0.6518208983476316
+        ],
+        [
+          7.570130674140513,
+          7.375703453311459,
+          0.26613253463164116,
+          0.24180675328639956,
+          0.2735775119497318,
+          0.31899174327263413,
+          0.3252075193075862,
+          0.668727028728216,
+          0.6735455441244741,
+          0.6664284441671245,
+          0.6543342855183305,
+          0.651937376818083
+        ],
+        [
+          7.551094835740011,
+          7.3289806818194645,
+          0.2664053664830521,
+          0.24181909159929185,
+          0.27416755316386043,
+          0.3187836557794262,
+          0.32527476603511685,
+          0.6686752059301214,
+          0.6735432033493687,
+          0.6663087664179416,
+          0.6544428894749856,
+          0.6519114774404399
+        ]
+      ],
+      "h4-c0-i0/native32/0/first-halfminus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.6033992743584005,
+          7.6224060392845745,
+          0.2661617914189521,
+          0.24178868273791582,
+          0.2731043004364683,
+          0.3184933042585449,
+          0.32554076655611575,
+          0.6687290178063487,
+          0.6735421329984428,
+          0.6665247574843701,
+          0.6544375525811374,
+          0.6518286730651932
+        ],
+        [
+          7.590004390952276,
+          7.516153918149036,
+          0.26608427170803234,
+          0.24178476580284863,
+          0.27339290820571766,
+          0.31883665252688537,
+          0.3254695200995135,
+          0.668737635123367,
+          0.6735433215243463,
+          0.6664619475210272,
+          0.6543471141542017,
+          0.6518540671565649
+        ],
+        [
+          7.55879241816905,
+          7.384775184725621,
+          0.26589208527442304,
+          0.2415642334809672,
+          0.27427213656805827,
+          0.31950452585672107,
+          0.3243851994150951,
+          0.6687597848314305,
+          0.6735900503571168,
+          0.6662776505140572,
+          0.6541634970888144,
+          0.6521878309625637
+        ],
+        [
+          7.574194906978818,
+          7.308870036960176,
+          0.2658022988282698,
+          0.2411778043452185,
+          0.2755384151937674,
+          0.3202191579143347,
+          0.32266807204506726,
+          0.6687458349633627,
+          0.6736613282080204,
+          0.6660187187142533,
+          0.65399238117705,
+          0.6527016590236037
+        ]
+      ],
+      "h4-c0-i0/native32/0/logsecond-plus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.603611919489419,
+          7.626354284496337,
+          0.2661654711468792,
+          0.2417833243976542,
+          0.2730964100953597,
+          0.31849450233507254,
+          0.3255346638910561,
+          0.6687282972016163,
+          0.6735430801101395,
+          0.6665266122740843,
+          0.6544371350102178,
+          0.651830737625398
+        ],
+        [
+          7.58957680661742,
+          7.524362595197927,
+          0.2661300744744103,
+          0.2417795089588456,
+          0.27331455674243404,
+          0.31880171424385184,
+          0.3255228672355923,
+          0.668730763432047,
+          0.6735422605569616,
+          0.6664782575996561,
+          0.6543579129612732,
+          0.6518362909501516
+        ],
+        [
+          7.568037250294456,
+          7.387418404145471,
+          0.26624335672139254,
+          0.24176882820583848,
+          0.2738050839878308,
+          0.31912534987847785,
+          0.32492208033486886,
+          0.6686994775334307,
+          0.6735461059526552,
+          0.6663763326810394,
+          0.6542808828258199,
+          0.6520319587836632
+        ],
+        [
+          7.575117015955366,
+          7.300464614397607,
+          0.2663755614819498,
+          0.2419248482270949,
+          0.2744393548273567,
+          0.3203119905026795,
+          0.32331657021962623,
+          0.6686683949939908,
+          0.6735049433715139,
+          0.6662295010562971,
+          0.6539627448812758,
+          0.6525230119453754
+        ]
+      ],
+      "h4-c0-i0/native32/0/logsecond-minus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.602427798469295,
+          7.6135783550901195,
+          0.26616128477656603,
+          0.2417784945516496,
+          0.2731246583385061,
+          0.31854094884916045,
+          0.32554339433205887,
+          0.6687287025527412,
+          0.6735441272545178,
+          0.6665205391725768,
+          0.6544246576622459,
+          0.651828105046041
+        ],
+        [
+          7.589367999774839,
+          7.5061834181153015,
+          0.2662165813977387,
+          0.24182958550995337,
+          0.2732647709947861,
+          0.31885829722394454,
+          0.32553080529921313,
+          0.6687127439781414,
+          0.6735365276776114,
+          0.666491359656515,
+          0.654346044947175,
+          0.6518334692900215
+        ],
+        [
+          7.57649151986905,
+          7.3844576651552085,
+          0.2667000106058812,
+          0.2421087163790469,
+          0.27340528462345215,
+          0.3186963104925499,
+          0.32400112417761795,
+          0.6686067877558054,
+          0.6734904755483562,
+          0.6664757491916011,
+          0.6544285535762447,
+          0.6523040584460216
+        ],
+        [
+          7.563411818477769,
+          7.363115155108365,
+          0.2677795897663151,
+          0.24227940322158115,
+          0.2738645649939677,
+          0.318861509193035,
+          0.32192652477996214,
+          0.6683734171590128,
+          0.6734494042817573,
+          0.6663810223681816,
+          0.6544400094091373,
+          0.652914486623456
+        ]
+      ],
+      "h4-c0-i0/native32/0/logsecond-halfplus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.6032499919214045,
+          7.623346129220947,
+          0.2661644782569791,
+          0.2417821344540649,
+          0.2731030846125915,
+          0.3185059132018554,
+          0.3255386824561911,
+          0.668728392048596,
+          0.673543335228691,
+          0.6665251755205658,
+          0.6544340739406189,
+          0.6518295883373214
+        ],
+        [
+          7.5920822372637975,
+          7.520604608932247,
+          0.26614378323000437,
+          0.2418187915779306,
+          0.273345608672405,
+          0.3189434633852504,
+          0.32547686723627567,
+          0.6687275059725557,
+          0.6735361880362979,
+          0.6664745058723458,
+          0.6543187300147226,
+          0.6518493947741049
+        ],
+        [
+          7.578686740021581,
+          7.400501525797298,
+          0.26607256623435716,
+          0.24189230542158377,
+          0.27388993061935457,
+          0.3191791165235742,
+          0.3247976003466364,
+          0.6687276970789819,
+          0.6735314944973829,
+          0.6663597648199592,
+          0.654276981846317,
+          0.6520620183800935
+        ],
+        [
+          7.591326132512034,
+          7.405499678477827,
+          0.2655134515628494,
+          0.24226586682419432,
+          0.2745615598920053,
+          0.32019742607178114,
+          0.32344520462277543,
+          0.6688057767390804,
+          0.6734748863168066,
+          0.666221624487596,
+          0.6540298059375652,
+          0.652462174416609
+        ]
+      ],
+      "h4-c0-i0/native32/0/logsecond-halfminus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.602658430935129,
+          7.616724716639291,
+          0.2661623873012119,
+          0.241779729617097,
+          0.2731175857228957,
+          0.3185290182886439,
+          0.32554631078525026,
+          0.6687285925302121,
+          0.6735438538015048,
+          0.666522047589691,
+          0.6544278882736154,
+          0.6518272819724377
+        ],
+        [
+          7.584837622528664,
+          7.511607060416169,
+          0.26620513820044095,
+          0.24175897695776472,
+          0.27337692926337287,
+          0.3188883355502791,
+          0.32564287148961246,
+          0.6687164267829927,
+          0.6735481633174247,
+          0.666465127916969,
+          0.6543335793801419,
+          0.6517986130431902
+        ],
+        [
+          7.573188309275357,
+          7.391342214395085,
+          0.2665479944701383,
+          0.24179566943032405,
+          0.2739409805431032,
+          0.3190791977646997,
+          0.3245699399980769,
+          0.6686348266933028,
+          0.6735509360873458,
+          0.6663424972500311,
+          0.6542949413746254,
+          0.6521288354783402
+        ],
+        [
+          7.582835982189691,
+          7.352032788514848,
+          0.2671463519530679,
+          0.24164363972202835,
+          0.27446534243342763,
+          0.31940978120469454,
+          0.32398995253146046,
+          0.6684969636469196,
+          0.6735946882222259,
+          0.6662058077260634,
+          0.6542321003541116,
+          0.6522935044308222
+        ]
+      ],
+      "h4-c0-i0/native32/1/zero": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.6072612816886505,
+          7.725083687147546,
+          0.26614284131435134,
+          0.2416283594325459,
+          0.2729999151089931,
+          0.3185981792904867,
+          0.325383956686867,
+          0.6687339406737056,
+          0.6735702426915795,
+          0.6665499814700918,
+          0.6544016388593752,
+          0.6518821551636967
+        ],
+        [
+          7.589101706764518,
+          7.660145246576768,
+          0.2661083401330967,
+          0.24137263635806622,
+          0.2731528155390621,
+          0.31917476738051004,
+          0.3254610182817901,
+          0.6687369063695086,
+          0.6736146083502865,
+          0.6665169455995866,
+          0.6542396496001786,
+          0.6518570772287229
+        ],
+        [
+          7.58310624243641,
+          7.657235934868052,
+          0.2657940168727631,
+          0.24093533027078085,
+          0.27343316344644597,
+          0.31951956627475603,
+          0.32407149024531307,
+          0.6688012338252236,
+          0.6736907447691997,
+          0.6664556473211392,
+          0.6541428241048047,
+          0.6522831923872868
+        ],
+        [
+          7.5569022093136,
+          7.33914992727931,
+          0.2641740581934971,
+          0.24119085827784162,
+          0.27349436163920615,
+          0.32271892603109253,
+          0.32464507689900385,
+          0.6691468195881163,
+          0.6736370611824768,
+          0.6664466043501472,
+          0.6532287872790715,
+          0.6521014960052128
+        ]
+      ],
+      "h4-c0-i0/native32/1/first-plus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.606361050979139,
+          7.720718363838358,
+          0.2661482088853266,
+          0.24161307601169288,
+          0.27301135453326586,
+          0.3186418231712551,
+          0.32538991765775144,
+          0.6687324908465243,
+          0.6735731475634725,
+          0.6665478184596871,
+          0.6543898237133529,
+          0.6518810640502484
+        ],
+        [
+          7.580384743686765,
+          7.656097113034812,
+          0.26615765137023306,
+          0.24132811135174048,
+          0.2731545735590664,
+          0.31935157411494014,
+          0.32549786513205076,
+          0.6687229389560229,
+          0.6736222875920772,
+          0.6665172375231448,
+          0.654190848906065,
+          0.6518535380767374
+        ],
+        [
+          7.574862325806036,
+          7.678377627750456,
+          0.2662364000138152,
+          0.24077171786767915,
+          0.2733588321948219,
+          0.3201251875801319,
+          0.32478611266277263,
+          0.6686974622477905,
+          0.6737236271553362,
+          0.66647855746172,
+          0.653979687498827,
+          0.6520771073357204
+        ],
+        [
+          7.576822751940725,
+          7.245852769443994,
+          0.26582546273376195,
+          0.2397066935011255,
+          0.2737184089685095,
+          0.32205145976459437,
+          0.3260456679522368,
+          0.6687867904070827,
+          0.6739345797771221,
+          0.6664140603215806,
+          0.6534741786706115,
+          0.6516476302965811
+        ]
+      ],
+      "h4-c0-i0/native32/1/first-minus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.607106349636291,
+          7.729142235403858,
+          0.2661375231678503,
+          0.24164301465609106,
+          0.272985939981085,
+          0.31855754246252316,
+          0.32538335079361824,
+          0.6687353770910492,
+          0.6735674662016509,
+          0.6665527255563046,
+          0.6544125749620994,
+          0.6518818474051528
+        ],
+        [
+          7.589727992719248,
+          7.667635947596796,
+          0.2661813825577045,
+          0.24143179115313762,
+          0.27317421478859616,
+          0.3192106678491635,
+          0.3253302613936032,
+          0.6687215243489528,
+          0.6736054956258107,
+          0.666509321857497,
+          0.6542287028602802,
+          0.651899207231359
+        ],
+        [
+          7.583563210488775,
+          7.64400950260901,
+          0.26663154426840047,
+          0.24114969010696116,
+          0.2736169587299107,
+          0.31946184707884295,
+          0.32486421844861857,
+          0.668627291160626,
+          0.6736527768924636,
+          0.6664023965466246,
+          0.6541580539061991,
+          0.6520601846738179
+        ],
+        [
+          7.585726045019739,
+          7.3583472753371195,
+          0.26732982866182464,
+          0.24064135360874772,
+          0.2743214385161496,
+          0.32119183732794115,
+          0.3247195445772293,
+          0.6684914639037379,
+          0.673728419400449,
+          0.6662270761862644,
+          0.6536799229435307,
+          0.6521082628665633
+        ]
+      ],
+      "h4-c0-i0/native32/1/first-halfplus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.6070219104024925,
+          7.7230995461665355,
+          0.2661455196810366,
+          0.24162086420067463,
+          0.2730050206857226,
+          0.3186193754882873,
+          0.3253853406350336,
+          0.6687332186690829,
+          0.6735716673289628,
+          0.6665490457402066,
+          0.6543959041799863,
+          0.6518820289144371
+        ],
+        [
+          7.582405010647751,
+          7.651153504264114,
+          0.2661623716500313,
+          0.24136706571272037,
+          0.2730925123242252,
+          0.3194497230293679,
+          0.3254532777917376,
+          0.6687240915865137,
+          0.6736153542435076,
+          0.6665314116111714,
+          0.6541613273595734,
+          0.6518623061972292
+        ],
+        [
+          7.575008980566548,
+          7.6282079366752065,
+          0.26630301948148455,
+          0.2413935823927602,
+          0.27337929565647806,
+          0.3203093666784341,
+          0.32423784153954405,
+          0.6686820085138526,
+          0.6736036552809204,
+          0.666473496279269,
+          0.6539179578461126,
+          0.6522416431234718
+        ],
+        [
+          7.5608449713789145,
+          7.323757460324146,
+          0.2665681571932461,
+          0.2416482049911028,
+          0.27419667616029436,
+          0.3232625046514424,
+          0.32342784098448396,
+          0.6686017680630113,
+          0.673541453920009,
+          0.6663004755072347,
+          0.6530665810932592,
+          0.6524587935535954
+        ]
+      ],
+      "h4-c0-i0/native32/1/first-halfminus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.606763359126784,
+          7.727171502657001,
+          0.2661401776720564,
+          0.2416357187219203,
+          0.2729929101366845,
+          0.31857761752229946,
+          0.32538681464103336,
+          0.6687346582844709,
+          0.6735688484359156,
+          0.6665513843589869,
+          0.6544071735748324,
+          0.651881030463455
+        ],
+        [
+          7.589982609480887,
+          7.661195017489918,
+          0.2660658200022258,
+          0.24134728695301186,
+          0.2731542144146534,
+          0.31942253295179274,
+          0.32544408365680183,
+          0.6687468258350316,
+          0.6736201319782223,
+          0.6665163873953235,
+          0.6541639168385517,
+          0.651866491874606
+        ],
+        [
+          7.58418076892163,
+          7.62801286161425,
+          0.26607642483740784,
+          0.24083019220094093,
+          0.2732733161799842,
+          0.31996788218504957,
+          0.32497083288189393,
+          0.6687383286273542,
+          0.6737092666465919,
+          0.6664930742820745,
+          0.6539912430241933,
+          0.652020789583446
+        ],
+        [
+          7.573649808455006,
+          7.279279363697414,
+          0.265374653261397,
+          0.24032915280268166,
+          0.27292232309595177,
+          0.32133434636675934,
+          0.32385167971162465,
+          0.6688608020272502,
+          0.6737927743816635,
+          0.6665612221859535,
+          0.6535850670387934,
+          0.6523333689501207
+        ]
+      ],
+      "h4-c0-i0/native32/1/logsecond-plus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.606978523605141,
+          7.727169054774052,
+          0.266143094482027,
+          0.24163708709373477,
+          0.2729903403901449,
+          0.3185746338555224,
+          0.3253833793087079,
+          0.668734005340591,
+          0.6735686282299439,
+          0.6665520126091719,
+          0.654408099022478,
+          0.651882058287114
+        ],
+        [
+          7.588100846495131,
+          7.668122912483045,
+          0.26612972433627397,
+          0.24142190872265334,
+          0.2732183827715585,
+          0.319337662758625,
+          0.3252484133630026,
+          0.6687339035870851,
+          0.6736060826631565,
+          0.6665034777649234,
+          0.6541897300908144,
+          0.6519240533989378
+        ],
+        [
+          7.570458220075391,
+          7.6360760172155135,
+          0.2662544267179486,
+          0.24106916379876445,
+          0.2737384356615968,
+          0.32051364514181824,
+          0.3241404595640403,
+          0.6687057880957584,
+          0.6736715898921525,
+          0.6663940914613361,
+          0.6538527539784156,
+          0.6522720721124342
+        ],
+        [
+          7.580747158474902,
+          7.241911680768359,
+          0.2665503998889413,
+          0.24074071935479047,
+          0.2743443656225887,
+          0.3230954206851858,
+          0.3234089108846723,
+          0.6686380920073467,
+          0.6737394821851596,
+          0.6662590886232357,
+          0.6531028427095966,
+          0.6524853413372999
+        ]
+      ],
+      "h4-c0-i0/native32/1/logsecond-minus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.606921383128809,
+          7.723018470808112,
+          0.2661427327412736,
+          0.24161912017050086,
+          0.2730075257220258,
+          0.31862213403364614,
+          0.3253880512251537,
+          0.6687338428880316,
+          0.6735719581840789,
+          0.6665484378123049,
+          0.6543950431654315,
+          0.6518812282282184
+        ],
+        [
+          7.585303402520925,
+          7.656394741056452,
+          0.2661447674225845,
+          0.24138022902995437,
+          0.2731646677514328,
+          0.3195861298941148,
+          0.3254288311922204,
+          0.6687270580030488,
+          0.6736135601977221,
+          0.6665151961247588,
+          0.6541195110694066,
+          0.6518714255149423
+        ],
+        [
+          7.572594756581593,
+          7.641651157167744,
+          0.26625987973846454,
+          0.2409430490327292,
+          0.27353910843514195,
+          0.3198394638249825,
+          0.32387068830185917,
+          0.668703024300095,
+          0.6736879745805109,
+          0.6664367551200504,
+          0.6540467430264199,
+          0.6523638063102621
+        ],
+        [
+          7.552073954273161,
+          7.286699734379745,
+          0.2661931350527824,
+          0.24040343317499568,
+          0.2733485014472033,
+          0.3216269286114323,
+          0.324008757151382,
+          0.668727334607086,
+          0.673759338423347,
+          0.666468447263329,
+          0.6535366204815062,
+          0.6523140188446588
+        ]
+      ],
+      "h4-c0-i0/native32/1/logsecond-halfplus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.6070031195168815,
+          7.726159477094812,
+          0.26614295061208204,
+          0.24163276104463416,
+          0.2729953919536934,
+          0.3185869043108299,
+          0.32538456890436396,
+          0.6687339766346652,
+          0.6735694230569808,
+          0.6665509359631349,
+          0.6544047168670063,
+          0.651881863945506
+        ],
+        [
+          7.58737124111803,
+          7.665447709261857,
+          0.2661367686951181,
+          0.2413321212546459,
+          0.27318601486170163,
+          0.3193442798871648,
+          0.32542739690415257,
+          0.6687319918991356,
+          0.6736207186217227,
+          0.6665087398794537,
+          0.6541900886362939,
+          0.6518696975699864
+        ],
+        [
+          7.567158048955896,
+          7.659253285312628,
+          0.266200427541055,
+          0.24116369048861305,
+          0.2735728234273055,
+          0.3203640862614655,
+          0.32500313428018146,
+          0.6687191338654338,
+          0.6736431386345276,
+          0.666421123746625,
+          0.6538969549004497,
+          0.6520135991393278
+        ],
+        [
+          7.555870755894839,
+          7.325168955943058,
+          0.2661520583705884,
+          0.24125662449728286,
+          0.27527652924361784,
+          0.32413668886393,
+          0.3250993174921829,
+          0.6687485134105943,
+          0.6736109308624538,
+          0.6660334995532684,
+          0.6528098482275198,
+          0.6519859504989916
+        ]
+      ],
+      "h4-c0-i0/native32/1/logsecond-halfminus": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.6070157846412965,
+          7.723935061710348,
+          0.2661427687856297,
+          0.24162380475473338,
+          0.2730037802064108,
+          0.31860896150644025,
+          0.3253850997065087,
+          0.6687338973793386,
+          0.6735710875934656,
+          0.6665491907032132,
+          0.6543986801853018,
+          0.6518819654266135
+        ],
+        [
+          7.587593784661186,
+          7.660038311059452,
+          0.2661605863992038,
+          0.24137934609058725,
+          0.27319097376575263,
+          0.3194528249186356,
+          0.32537486982358316,
+          0.6687257009804105,
+          0.6736112043660575,
+          0.6665089103935122,
+          0.6541586988999286,
+          0.6518837016984698
+        ],
+        [
+          7.577881085385005,
+          7.663287955406999,
+          0.2661491461528718,
+          0.24105023675832804,
+          0.27387025488335526,
+          0.3194424843736466,
+          0.32491926275667915,
+          0.6687198601374337,
+          0.6736648941131501,
+          0.6663578592735049,
+          0.6541645504898107,
+          0.652037551425222
+        ],
+        [
+          7.565950436443309,
+          7.330460671776535,
+          0.266419387125201,
+          0.24066905530698052,
+          0.2751380288707174,
+          0.3201613198587136,
+          0.3248193225481919,
+          0.6686598104243563,
+          0.6737296932033561,
+          0.6660735023469537,
+          0.6539738758329372,
+          0.6520501338073074
+        ]
+      ],
+      "h4-c0-i0/native32/0/zero-replay": [
+        [
+          7.620474876331047,
+          7.7774555153656575,
+          0.266184366528226,
+          0.24182792120530913,
+          0.272817576544344,
+          0.3181339327837792,
+          0.32507374658014687,
+          0.6687304777099367,
+          0.6735347672955903,
+          0.6665889404989287,
+          0.654529775961707,
+          0.6519725890303933
+        ],
+        [
+          7.603116787594465,
+          7.620107443311274,
+          0.26616344907212247,
+          0.2417809228528249,
+          0.2731100284450293,
+          0.31851712944246446,
+          0.3255440379921583,
+          0.6687284885171249,
+          0.6735435928316594,
+          0.6665236790778293,
+          0.654431085514186,
+          0.6518279344858819
+        ],
+        [
+          7.586898981114393,
+          7.51964897152275,
+          0.26615979538051937,
+          0.2417244342934562,
+          0.27338822651031924,
+          0.3188552514509267,
+          0.32565950778967956,
+          0.6687246672270022,
+          0.6735534523035733,
+          0.6664636752027359,
+          0.6543461041001721,
+          0.6517959235339855
+        ],
+        [
+          7.5688965326377575,
+          7.403284229003033,
+          0.26624274311523394,
+          0.24168765416193733,
+          0.27400992566100196,
+          0.31928809396322605,
+          0.3253598364776776,
+          0.6686962516849638,
+          0.6735601162276704,
+          0.666318417075884,
+          0.6542492174229391,
+          0.6519012740600738
+        ],
+        [
+          7.57010667412404,
+          7.357398250956145,
+          0.266320112809138,
+          0.24195185591978452,
+          0.27433030516859097,
+          0.32093568001672756,
+          0.3237688164685522,
+          0.6686705372730687,
+          0.6735127738635776,
+          0.6662344120820731,
+          0.6538089058043133,
+          0.6524082439519736
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/zero": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.603115351697637,
+          7.6201945691436315,
+          0.2661625357569781,
+          0.24178099948261791,
+          0.27310990979446764,
+          0.318516648319547,
+          0.325543811039178,
+          0.6687286469471372,
+          0.6735435658165054,
+          0.6665236826770085,
+          0.6544312075299135,
+          0.6518280056028599
+        ],
+        [
+          7.58813656528254,
+          7.517796641890486,
+          0.266162476594288,
+          0.241720670537517,
+          0.27338834202109186,
+          0.3188887020083698,
+          0.3257193842086309,
+          0.668723790633749,
+          0.6735534130429054,
+          0.6664639547005413,
+          0.6543351168108268,
+          0.6517775418775072
+        ],
+        [
+          7.570057629925252,
+          7.4066882003203265,
+          0.2662633605170815,
+          0.24164204162045155,
+          0.2739527650951603,
+          0.3197363201184395,
+          0.3248825294761185,
+          0.6686960590125509,
+          0.673570630069054,
+          0.6663438066523748,
+          0.6541029508856979,
+          0.6520388265756827
+        ],
+        [
+          7.56681699974872,
+          7.4466833044852905,
+          0.26633334114208346,
+          0.24170953004996248,
+          0.27469305383742376,
+          0.3211925698505585,
+          0.32406881349273,
+          0.6686752102012091,
+          0.6735631447952409,
+          0.6661715637736921,
+          0.6537300006461946,
+          0.6522741884684583
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/first-plus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.602425221609609,
+          7.615312843923366,
+          0.26616588781022166,
+          0.2417658634997461,
+          0.2731210558081204,
+          0.3185646086071424,
+          0.3255353541457599,
+          0.6687275849012349,
+          0.6735464442007711,
+          0.6665216480022579,
+          0.6544180684854226,
+          0.6518310211935846
+        ],
+        [
+          7.586432818481507,
+          7.511815958440892,
+          0.2661270298615037,
+          0.24178788302571433,
+          0.2734715738551453,
+          0.31885716313088597,
+          0.32561461238375944,
+          0.6687287860728943,
+          0.6735449722694624,
+          0.6664438380875338,
+          0.6543413578900837,
+          0.6518111119966736
+        ],
+        [
+          7.572555301964337,
+          7.391150794099241,
+          0.26588388371209204,
+          0.24178193403263248,
+          0.2745921322375152,
+          0.3186368425200403,
+          0.3245813059444343,
+          0.668773993363001,
+          0.6735489841680513,
+          0.6661954633430252,
+          0.654415163176682,
+          0.6521248846068305
+        ],
+        [
+          7.566743021904921,
+          7.382168053180948,
+          0.26559943968018845,
+          0.24242832860064414,
+          0.2766729335920617,
+          0.3191944242657038,
+          0.32103015444437555,
+          0.6688279556129386,
+          0.6734415579961288,
+          0.6657237866091269,
+          0.6542815855102879,
+          0.6531415643251064
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/first-minus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.604038709918479,
+          7.624861339443242,
+          0.26615923316616297,
+          0.24179642645258076,
+          0.2730983355049887,
+          0.318468374337689,
+          0.3255289282181032,
+          0.6687296991439541,
+          0.6735406549839986,
+          0.6665258625230941,
+          0.6544443991785527,
+          0.6518317918154467
+        ],
+        [
+          7.591217102722656,
+          7.520281115894239,
+          0.26610603506302577,
+          0.2417498843826885,
+          0.2733682555203133,
+          0.318552995192341,
+          0.3254959749671883,
+          0.6687364970397536,
+          0.6735515670802129,
+          0.6664694886239959,
+          0.654425413022088,
+          0.6518494198675779
+        ],
+        [
+          7.5714104409391005,
+          7.4065660283159485,
+          0.2657886121543987,
+          0.24152895650370462,
+          0.2740171882566934,
+          0.3176865093407179,
+          0.3239369409247783,
+          0.6687904571781388,
+          0.6735978462203359,
+          0.6663315335592345,
+          0.6546829110122266,
+          0.6523292846238694
+        ],
+        [
+          7.567949968590652,
+          7.345284887442864,
+          0.2653056641956663,
+          0.24137308097106083,
+          0.27501508700399063,
+          0.317375484420703,
+          0.32276318388690217,
+          0.6688784094351871,
+          0.6736332870782695,
+          0.6661181415126032,
+          0.654781733189718,
+          0.6527138310758361
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/first-halfplus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.602724358304009,
+          7.617843680122189,
+          0.2661642056008444,
+          0.24177339536712483,
+          0.27311606357540763,
+          0.31854197031075476,
+          0.3255382374364688,
+          0.6687281171553595,
+          0.6735450107965218,
+          0.6665225248453713,
+          0.6544242584389437,
+          0.6518299336778353
+        ],
+        [
+          7.588254560668215,
+          7.513677283053039,
+          0.2662207220622369,
+          0.24179207105637296,
+          0.2732929230291292,
+          0.31892914254451393,
+          0.3255666449020155,
+          0.6687111541567016,
+          0.673544817542337,
+          0.6664859456669235,
+          0.6543261996760957,
+          0.6518221989042225
+        ],
+        [
+          7.565349274220201,
+          7.380113463084708,
+          0.26631591986288183,
+          0.24194085652929898,
+          0.2734091882188375,
+          0.31914212209749654,
+          0.32525836749892345,
+          0.668684174837443,
+          0.6735214541046077,
+          0.6664649729027665,
+          0.6542899178502604,
+          0.6519148889333397
+        ],
+        [
+          7.578634383995768,
+          7.370781417951296,
+          0.26639144463423114,
+          0.24180209953580709,
+          0.2737017005719198,
+          0.32053337436720347,
+          0.3239467162639744,
+          0.6686616775396341,
+          0.6735564811465409,
+          0.6664070500452439,
+          0.6539363353019766,
+          0.6523088645955633
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/first-halfminus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.603413697306492,
+          7.622507238191875,
+          0.2661608782787194,
+          0.24178877183419653,
+          0.2731041749638642,
+          0.31849296287340867,
+          0.325540548942044,
+          0.6687291742766435,
+          0.6735421017855002,
+          0.6665247671682889,
+          0.6544376334975728,
+          0.6518287501454769
+        ],
+        [
+          7.5906701238926955,
+          7.516874755244204,
+          0.2660848654257839,
+          0.241783625665758,
+          0.27339892102249463,
+          0.3188689779246486,
+          0.32548181015478356,
+          0.6687375567370644,
+          0.6735433091869024,
+          0.6664608421733442,
+          0.6543384386647908,
+          0.6518500279458667
+        ],
+        [
+          7.5718720592570286,
+          7.4013803523750905,
+          0.2660259174490159,
+          0.24170472798960715,
+          0.2741587199845921,
+          0.31905130679797894,
+          0.32472888567384256,
+          0.6687259215286024,
+          0.6735612268518649,
+          0.6662977931467977,
+          0.6542998438973359,
+          0.6520761943620869
+        ],
+        [
+          7.5719220050318885,
+          7.345899877097352,
+          0.26631912784885,
+          0.24145398945893906,
+          0.2749796161424236,
+          0.3208378782413195,
+          0.3226898501442095,
+          0.6686367515967382,
+          0.6736142743034912,
+          0.666114810617566,
+          0.6538145356233636,
+          0.6526678952401581
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/logsecond-plus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.603618016539632,
+          7.6264450639636365,
+          0.26616458652297503,
+          0.2417833975435341,
+          0.27309627060048586,
+          0.3184942212187202,
+          0.325534027183166,
+          0.668728448603889,
+          0.6735430546424234,
+          0.6665266191088618,
+          0.6544371975185391,
+          0.6518309323397373
+        ],
+        [
+          7.589601166308631,
+          7.523442466997442,
+          0.2661325045077528,
+          0.2417795789115232,
+          0.27331046611374943,
+          0.3188127542423213,
+          0.3255266113347343,
+          0.6687303560947225,
+          0.6735423938616982,
+          0.6664793810529475,
+          0.6543549512893952,
+          0.6518354086174425
+        ],
+        [
+          7.5687703089422165,
+          7.3787316415708535,
+          0.2660977551868426,
+          0.24186102494605777,
+          0.2736687053464113,
+          0.31904872483055474,
+          0.32522155127145486,
+          0.6687342730694402,
+          0.6735303490523056,
+          0.6664079430438234,
+          0.6543066899513698,
+          0.6519381823234653
+        ],
+        [
+          7.566316299910087,
+          7.262558145769813,
+          0.26586619574363746,
+          0.2419502275598977,
+          0.27440747919090397,
+          0.31981425529514146,
+          0.32427350323224313,
+          0.6687748225168796,
+          0.6735132652679379,
+          0.6662547068605192,
+          0.6541465136349328,
+          0.6522246398307318
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/logsecond-minus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.602445167907413,
+          7.613674712783514,
+          0.2661603342387002,
+          0.24177857671998818,
+          0.2731244883651497,
+          0.3185405851871083,
+          0.32554292989297945,
+          0.6687288665260213,
+          0.6735440967605577,
+          0.6665205585888657,
+          0.6544247508062289,
+          0.6518282482385365
+        ],
+        [
+          7.589627109594976,
+          7.505996545830708,
+          0.2662172570730366,
+          0.24182474256636133,
+          0.2732588428297843,
+          0.318822969258052,
+          0.3255511205459111,
+          0.6687120966602614,
+          0.6735375652996174,
+          0.6664924905199079,
+          0.6543558113435419,
+          0.6518275606797314
+        ],
+        [
+          7.583923720512169,
+          7.375212001954562,
+          0.2664120817808184,
+          0.24213726047963188,
+          0.27415339909806846,
+          0.318743152931134,
+          0.32431224321221375,
+          0.6686709763949216,
+          0.6734875585289118,
+          0.6663083185663851,
+          0.654396209844375,
+          0.6522009485679431
+        ],
+        [
+          7.599159918138959,
+          7.366134785343828,
+          0.26701602918745704,
+          0.24323563899689182,
+          0.27571046552049994,
+          0.3194368295745715,
+          0.32245879001660355,
+          0.668541991981784,
+          0.67331133704881,
+          0.6659686122544917,
+          0.6542333499455459,
+          0.6527421722564352
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/logsecond-halfplus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.603266652472058,
+          7.623439327814923,
+          0.2661635796470064,
+          0.24178221298656086,
+          0.2731029516605008,
+          0.3185054877383159,
+          0.3255382707746604,
+          0.6687285451656922,
+          0.6735433068829386,
+          0.6665251830531718,
+          0.6544341818173932,
+          0.6518297157531785
+        ],
+        [
+          7.591838355009195,
+          7.520572886076145,
+          0.2661423609255762,
+          0.24181586540343386,
+          0.27334328841761596,
+          0.31895562233973124,
+          0.3255260977402415,
+          0.6687277916071097,
+          0.6735365124045904,
+          0.6664749220904502,
+          0.6543152564577966,
+          0.6518351910772372
+        ],
+        [
+          7.575174906545184,
+          7.398399986025089,
+          0.2660416566522194,
+          0.24205281213534358,
+          0.27400867632312326,
+          0.3193685257950321,
+          0.3242775678659853,
+          0.6687309963341717,
+          0.6734955906311141,
+          0.6663359197723396,
+          0.6542258525948558,
+          0.6522172712288775
+        ],
+        [
+          7.5836833456647845,
+          7.434500600618922,
+          0.26569160414072235,
+          0.24247253547225123,
+          0.27442930846526786,
+          0.32055919734609173,
+          0.3213408147395978,
+          0.6687655125558246,
+          0.6733991375370935,
+          0.6662492121225417,
+          0.6539155263916119,
+          0.653094750431231
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/logsecond-halfminus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.602669475486434,
+          7.616824456944306,
+          0.266161454180334,
+          0.24177981037726912,
+          0.2731174686879938,
+          0.31852874680164633,
+          0.32554547793255456,
+          0.6687287540378654,
+          0.6735438256268571,
+          0.6665220530721753,
+          0.6544279526981552,
+          0.6518275367204789
+        ],
+        [
+          7.5846787913718074,
+          7.5125569506922565,
+          0.26618031366702183,
+          0.2417674634613226,
+          0.27338324501294686,
+          0.31888903373758104,
+          0.32565939528679416,
+          0.6687213406666921,
+          0.673546931937658,
+          0.6664642100690318,
+          0.6543334291956872,
+          0.6517934409420711
+        ],
+        [
+          7.568976349888603,
+          7.405331990978521,
+          0.26646769321705593,
+          0.24179240083780515,
+          0.2737766946703413,
+          0.3190467032386781,
+          0.32469665524839686,
+          0.6686574689597337,
+          0.6735511207468721,
+          0.6663745259694835,
+          0.6543028847747352,
+          0.652093699628488
+        ],
+        [
+          7.549624811342565,
+          7.371955841608194,
+          0.2670185337519898,
+          0.24211391540094399,
+          0.2739466988480358,
+          0.3173765119945999,
+          0.32309059264741147,
+          0.6685286953410012,
+          0.6735140544206454,
+          0.666320121162879,
+          0.6548049995132191,
+          0.652544982598117
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/1/zero": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.6072533529525055,
+          7.725042913212743,
+          0.2661429136599847,
+          0.2416283279850956,
+          0.27300053517343137,
+          0.3185990759941617,
+          0.32538381578572567,
+          0.6687339117685802,
+          0.6735702329751392,
+          0.6665498253623207,
+          0.6544013434001376,
+          0.6518821804260465
+        ],
+        [
+          7.588799912439933,
+          7.66011761933367,
+          0.2661167525188694,
+          0.24137955177585801,
+          0.27315460379267764,
+          0.319198620484372,
+          0.32545153081512274,
+          0.6687353049899174,
+          0.6736137241651746,
+          0.6665164691234275,
+          0.6542329296207787,
+          0.6518592786878649
+        ],
+        [
+          7.580633479917854,
+          7.656063156337156,
+          0.26610476536960054,
+          0.24090786518454246,
+          0.2733665160508012,
+          0.3192424581336221,
+          0.32483394671412913,
+          0.668732734324805,
+          0.6737025700886407,
+          0.6664728921351476,
+          0.6542247090519411,
+          0.6520434112926341
+        ],
+        [
+          7.566851743532494,
+          7.415083424551906,
+          0.2663875638518415,
+          0.23993592573749215,
+          0.2739708267963847,
+          0.3209065664471296,
+          0.32458357370612034,
+          0.6686610729781723,
+          0.6738859486220039,
+          0.6663429435782131,
+          0.6537395774152371,
+          0.6520839054183745
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/1/first-plus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.606357204228098,
+          7.720709916019416,
+          0.2661482854404541,
+          0.24161304981125872,
+          0.27301199381377655,
+          0.31864315000074905,
+          0.32539017641299467,
+          0.6687324627533094,
+          0.6735731357491778,
+          0.6665476557162099,
+          0.654389407564574,
+          0.6518809738731287
+        ],
+        [
+          7.58043534657146,
+          7.656835925939007,
+          0.266162034139218,
+          0.2413306446810836,
+          0.27315440753511916,
+          0.3193691488159598,
+          0.3254827851483882,
+          0.6687223483940651,
+          0.6736219200555364,
+          0.666517207572156,
+          0.6541859050001451,
+          0.6518582645277106
+        ],
+        [
+          7.586436551994114,
+          7.68851384710254,
+          0.2663254543832221,
+          0.2409793049775908,
+          0.2733879812337392,
+          0.31919872392784154,
+          0.32430710069494495,
+          0.6686819114735396,
+          0.673687050095305,
+          0.666470631449556,
+          0.654237812395333,
+          0.6522335494173928
+        ],
+        [
+          7.60584205044651,
+          7.334342300362636,
+          0.266830630551886,
+          0.2403611015098383,
+          0.27356357001571896,
+          0.3212598166165563,
+          0.3244252854365261,
+          0.6685717674007959,
+          0.6738022531841111,
+          0.6664190075974139,
+          0.6536604278497359,
+          0.6522035052481907
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/1/first-minus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.607109222828985,
+          7.729147206018239,
+          0.26613759209680216,
+          0.24164299740336215,
+          0.272986520220154,
+          0.31855848645956775,
+          0.3253826836988152,
+          0.6687353507511927,
+          0.6735674539168844,
+          0.666552573987351,
+          0.6544122624188314,
+          0.6518820234356116
+        ],
+        [
+          7.590703391565273,
+          7.6683704948397775,
+          0.2661805465367837,
+          0.2414297275810483,
+          0.2731451233746902,
+          0.31926638165932375,
+          0.3253174616378111,
+          0.6687222481873651,
+          0.6736058220294638,
+          0.6665158889392389,
+          0.654213071678186,
+          0.6519029430664937
+        ],
+        [
+          7.58327404381344,
+          7.6592623969706235,
+          0.2663875888349523,
+          0.24129533225681726,
+          0.2736416300992423,
+          0.31930749267908654,
+          0.3249357949262982,
+          0.6686807035364747,
+          0.6736329436609904,
+          0.6664073616619246,
+          0.6542121860412663,
+          0.6520295547367625
+        ],
+        [
+          7.556240317641559,
+          7.25797426794235,
+          0.2665595833707635,
+          0.24131204816733687,
+          0.274050540952955,
+          0.3217585831536056,
+          0.3261833160854873,
+          0.6686473412521398,
+          0.6736341221358162,
+          0.6662958824471505,
+          0.6535169843726258,
+          0.6516042581117432
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/1/first-halfplus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.607049306847729,
+          7.723082379208038,
+          0.2661455932732089,
+          0.24162082951149805,
+          0.27300565562005524,
+          0.3186205025894393,
+          0.3253849276499398,
+          0.668733188515068,
+          0.6735716578910603,
+          0.6665488815704588,
+          0.6543955391706955,
+          0.6518821351234729
+        ],
+        [
+          7.58403073912643,
+          7.651661261934882,
+          0.2661604666611803,
+          0.2413760423662123,
+          0.27309207726956186,
+          0.3194643019710648,
+          0.3254467735989224,
+          0.6687244519930114,
+          0.6736134991563364,
+          0.6665311265155858,
+          0.654156887836474,
+          0.6518649236151645
+        ],
+        [
+          7.579991661338636,
+          7.629433667580848,
+          0.2663864827784988,
+          0.24094118370545986,
+          0.27339477026891457,
+          0.31982678026317285,
+          0.32384898963335085,
+          0.6686674795555548,
+          0.6736858915422625,
+          0.6664681896556583,
+          0.6540675932460596,
+          0.6523585056062534
+        ],
+        [
+          7.543535313774768,
+          7.242083550629173,
+          0.2665392271274678,
+          0.24013866246980695,
+          0.2746493100012022,
+          0.3228782848538589,
+          0.32282892919963274,
+          0.6686030446893519,
+          0.6738057812196397,
+          0.666183188530755,
+          0.6532238164341222,
+          0.6526298799452643
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/1/first-halfminus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.60677320881771,
+          7.727144368234308,
+          0.2661402466010828,
+          0.24163569576620092,
+          0.272993497868728,
+          0.318578571843388,
+          0.32538660305313966,
+          0.6687346325139278,
+          0.6735688382742991,
+          0.6665512327094656,
+          0.6544068583372435,
+          0.6518810797252307
+        ],
+        [
+          7.58684035972914,
+          7.664918575718686,
+          0.2660598614369072,
+          0.24136557636191674,
+          0.27314402739357363,
+          0.3192028307321524,
+          0.3253171590168271,
+          0.6687479812774223,
+          0.6736163018613434,
+          0.6665183618876943,
+          0.6542279587143442,
+          0.6519058162976009
+        ],
+        [
+          7.5802334867110455,
+          7.657268734361123,
+          0.26618190638379624,
+          0.24103315391132132,
+          0.27368282426876317,
+          0.3195981969771106,
+          0.3243601000442711,
+          0.6687142171230397,
+          0.673670846424418,
+          0.6664081439388183,
+          0.654109135961421,
+          0.6522038723389995
+        ],
+        [
+          7.562964623445676,
+          7.23595515132468,
+          0.26688853114165173,
+          0.24143052857785394,
+          0.2754548325691472,
+          0.3218519544319369,
+          0.32465271659026806,
+          0.6685515029015414,
+          0.6735913141050486,
+          0.6660042392150278,
+          0.6534556092078853,
+          0.6521011013784787
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/1/logsecond-plus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.606971790772089,
+          7.7271672136192375,
+          0.26614315703900837,
+          0.24163706223627443,
+          0.27299094033034127,
+          0.31857528720917333,
+          0.3253831023387223,
+          0.6687339762585086,
+          0.673568615426967,
+          0.6665518577763299,
+          0.6544078741906091,
+          0.6518821165634514
+        ],
+        [
+          7.587771484526606,
+          7.668572752728455,
+          0.2661134506069939,
+          0.24145064940498306,
+          0.2732381108707545,
+          0.3193685875637331,
+          0.32544853480782665,
+          0.6687369968736826,
+          0.6736014021423117,
+          0.666498331007188,
+          0.6541807046572776,
+          0.6518649080041853
+        ],
+        [
+          7.577064372910525,
+          7.631960851434785,
+          0.2662878356003535,
+          0.24127052650024833,
+          0.2737734754743017,
+          0.3202383500022277,
+          0.32515516614453305,
+          0.6686959541961258,
+          0.6736337880710255,
+          0.6663845744427976,
+          0.6539259008636845,
+          0.6519742632024692
+        ],
+        [
+          7.568212978116884,
+          7.258630825640653,
+          0.26601472589248537,
+          0.24104060036107838,
+          0.27496163524257955,
+          0.3226414153187023,
+          0.32676291644477345,
+          0.6687519422904652,
+          0.6736733291361228,
+          0.6661265521633367,
+          0.6532158138217673,
+          0.6514736650993198
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/1/logsecond-minus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.606912773942806,
+          7.7230183317406835,
+          0.2661428113223092,
+          0.2416190868137111,
+          0.27300820022846145,
+          0.3186237707131449,
+          0.3253883673588862,
+          0.6687338150637023,
+          0.673571949622374,
+          0.6665482663186804,
+          0.6543945348645456,
+          0.6518811297380069
+        ],
+        [
+          7.5864364886050915,
+          7.656586249603032,
+          0.2661405039430584,
+          0.24138502729333128,
+          0.2731932078564844,
+          0.3196419941051731,
+          0.3254407172410176,
+          0.6687278388808513,
+          0.6736127425673175,
+          0.6665089253277083,
+          0.6541035509364121,
+          0.6518675245493835
+        ],
+        [
+          7.593057842598068,
+          7.663934130931549,
+          0.26582667553919087,
+          0.24097851836451464,
+          0.27365276262863886,
+          0.3194725184477522,
+          0.32430737025448675,
+          0.6687876655238425,
+          0.6736776242136399,
+          0.6664099557065534,
+          0.6541565972365294,
+          0.6522193204221585
+        ],
+        [
+          7.59764229987729,
+          7.323881521379759,
+          0.2653814095755241,
+          0.24031047152463875,
+          0.27428970994549323,
+          0.3209359184758293,
+          0.3247120559470697,
+          0.6688714124231202,
+          0.6737934769380559,
+          0.6662692860113013,
+          0.6537569466182335,
+          0.6520930521534676
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/1/logsecond-halfplus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.606997261681334,
+          7.726190253712327,
+          0.2661430188123233,
+          0.2416327336303242,
+          0.272996008880168,
+          0.31858782352498977,
+          0.32538451773709187,
+          0.6687339478028456,
+          0.6735694165470459,
+          0.6665507779222932,
+          0.6544044177670206,
+          0.6518818636152897
+        ],
+        [
+          7.587042302918547,
+          7.66566818575927,
+          0.2661455298691032,
+          0.24133282589046415,
+          0.27318094077092697,
+          0.3193575480196556,
+          0.32543378933667766,
+          0.6687299380161881,
+          0.6736208328647506,
+          0.6665102436228213,
+          0.6541859362228019,
+          0.6518668091307148
+        ],
+        [
+          7.573790439449514,
+          7.641797055449034,
+          0.2660540389752905,
+          0.24101588835729434,
+          0.2734369180622445,
+          0.3205329643436142,
+          0.32443743717751844,
+          0.6687421902284678,
+          0.6736696149795494,
+          0.6664535049656463,
+          0.6538435666576867,
+          0.6521778005065892
+        ],
+        [
+          7.548014244801883,
+          7.308480840826765,
+          0.2658642081537925,
+          0.24008186594657188,
+          0.27459747908622134,
+          0.3232226578152699,
+          0.3234702735040094,
+          0.6687722986994422,
+          0.6738216674209756,
+          0.666204995064181,
+          0.6530574306539231,
+          0.6524306624556176
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/1/logsecond-halfminus": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.607014837274827,
+          7.723901700289364,
+          0.2661428437455579,
+          0.24162377240281052,
+          0.27300442879509235,
+          0.3186100868450848,
+          0.3253849737780571,
+          0.6687338676855272,
+          0.6735710780732189,
+          0.6665490244648691,
+          0.6543983158196394,
+          0.6518819888437012
+        ],
+        [
+          7.587524872980332,
+          7.6609205930840725,
+          0.2661650364303927,
+          0.24138549429958567,
+          0.27318324243115044,
+          0.31945884930305035,
+          0.32538436002342314,
+          0.6687250841458433,
+          0.6736101481400776,
+          0.6665106798073901,
+          0.6541568956705923,
+          0.651881958344762
+        ],
+        [
+          7.570290741333157,
+          7.6828013960001,
+          0.2661906216588342,
+          0.24126337062476044,
+          0.273266035564116,
+          0.3195815410256572,
+          0.3241568038594968,
+          0.6687127570124952,
+          0.6736277061968295,
+          0.6664953878248242,
+          0.6541243952398635,
+          0.6522585086785815
+        ],
+        [
+          7.574029827259944,
+          7.312301826615858,
+          0.2656746135919547,
+          0.2416389231804346,
+          0.273358005357362,
+          0.3207656169758258,
+          0.32340402629886217,
+          0.6687986915828266,
+          0.6735800118157766,
+          0.6664597197812927,
+          0.6537878793166643,
+          0.6524565372843445
+        ]
+      ],
+      "h4-c0-i0/arithmetic64/0/zero-replay": [
+        [
+          7.620475057407461,
+          7.777456054724891,
+          0.26618436374947757,
+          0.24182791884903823,
+          0.27281757645318094,
+          0.3181339283793741,
+          0.325073713287077,
+          0.6687304721903811,
+          0.6735347620052062,
+          0.6665889346346333,
+          0.6545297717871109,
+          0.6519725933249427
+        ],
+        [
+          7.603115351697637,
+          7.6201945691436315,
+          0.2661625357569781,
+          0.24178099948261791,
+          0.27310990979446764,
+          0.318516648319547,
+          0.325543811039178,
+          0.6687286469471372,
+          0.6735435658165054,
+          0.6665236826770085,
+          0.6544312075299135,
+          0.6518280056028599
+        ],
+        [
+          7.58813656528254,
+          7.517796641890486,
+          0.266162476594288,
+          0.241720670537517,
+          0.27338834202109186,
+          0.3188887020083698,
+          0.3257193842086309,
+          0.668723790633749,
+          0.6735534130429054,
+          0.6664639547005413,
+          0.6543351168108268,
+          0.6517775418775072
+        ],
+        [
+          7.570057629925252,
+          7.4066882003203265,
+          0.2662633605170815,
+          0.24164204162045155,
+          0.2739527650951603,
+          0.3197363201184395,
+          0.3248825294761185,
+          0.6686960590125509,
+          0.673570630069054,
+          0.6663438066523748,
+          0.6541029508856979,
+          0.6520388265756827
+        ],
+        [
+          7.56681699974872,
+          7.4466833044852905,
+          0.26633334114208346,
+          0.24170953004996248,
+          0.27469305383742376,
+          0.3211925698505585,
+          0.32406881349273,
+          0.6686752102012091,
+          0.6735631447952409,
+          0.6661715637736921,
+          0.6537300006461946,
+          0.6522741884684583
+        ]
+      ],
+      "h14-c0-i0/native32/0/zero": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.469187150179218,
+          7.788315883065508,
+          0.25829283994116664,
+          0.288755922832704,
+          0.292914659529755,
+          0.2687997318887668,
+          0.2509741987719588,
+          0.6701483571644878,
+          0.662123533173163,
+          0.6612252302981335,
+          0.6654348412185385,
+          0.6688005194405838
+        ],
+        [
+          7.458933112069877,
+          7.5957768487988595,
+          0.2582949353300287,
+          0.2889385678195653,
+          0.2930947496737238,
+          0.2685794019757161,
+          0.2510624852561333,
+          0.670148926113889,
+          0.6620771806420096,
+          0.6611778158444593,
+          0.665477143641915,
+          0.6687884973978889
+        ],
+        [
+          7.463749213155046,
+          7.3907888546089495,
+          0.2583108996540816,
+          0.2892745982058931,
+          0.29352350941332084,
+          0.26834711197233296,
+          0.2509231608124073,
+          0.6701419962631886,
+          0.6619862319019363,
+          0.6610627318064897,
+          0.6655206159932829,
+          0.668813345886645
+        ],
+        [
+          7.46250147043148,
+          7.2152197064419745,
+          0.25826452520417803,
+          0.29049223791586437,
+          0.2941582246510619,
+          0.2681703740975279,
+          0.25031310020146574,
+          0.6701315930628415,
+          0.6616872260971345,
+          0.6608816009768548,
+          0.6655286505033453,
+          0.6689269415745189
+        ]
+      ],
+      "h14-c0-i0/native32/0/first-plus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.468598270046607,
+          7.780351784493654,
+          0.25829557049847296,
+          0.2887688768665606,
+          0.29293087182137123,
+          0.268775996456454,
+          0.2509803674114579,
+          0.6701478436704955,
+          0.662120521194751,
+          0.6612208995663165,
+          0.6654393667563768,
+          0.6687996623256938
+        ],
+        [
+          7.455898515788527,
+          7.558164238712635,
+          0.2583272895956815,
+          0.2890976947700141,
+          0.2930291691226202,
+          0.26839975328109666,
+          0.2511453938354079,
+          0.6701449642229979,
+          0.6620388554597119,
+          0.6611920470691169,
+          0.6655177570821588,
+          0.6687736098340474
+        ],
+        [
+          7.456271499567678,
+          7.318904941726081,
+          0.25840419539730936,
+          0.2894836302295659,
+          0.2930993665533505,
+          0.26809980021266877,
+          0.2511035838908464,
+          0.670135902137082,
+          0.6619409971537649,
+          0.6611672567982095,
+          0.6655837906090514,
+          0.6687858177001569
+        ],
+        [
+          7.445430200371385,
+          7.138544863755923,
+          0.258729875221717,
+          0.29058335717482703,
+          0.29336132902612416,
+          0.2680249221078038,
+          0.25063273052234,
+          0.6701044535861381,
+          0.6616725414198522,
+          0.6611057546553403,
+          0.6655846580557674,
+          0.668889938560378
+        ]
+      ],
+      "h14-c0-i0/native32/0/first-minus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.469794840441166,
+          7.794996997832333,
+          0.25829017110613667,
+          0.2887427982028133,
+          0.29289834110427615,
+          0.26882708316557324,
+          0.25096050437997186,
+          0.6701488653267279,
+          0.6621266025947712,
+          0.6612296008985047,
+          0.6654295446875419,
+          0.6688030224407632
+        ],
+        [
+          7.456547376163387,
+          7.592773779898653,
+          0.2581982155092329,
+          0.28888832038327034,
+          0.293007577977743,
+          0.2683832649626155,
+          0.2510923449522317,
+          0.6701681277456383,
+          0.6620932434836412,
+          0.6612020851245469,
+          0.6655233145436843,
+          0.6687815407682405
+        ],
+        [
+          7.456363925763979,
+          7.34771861772391,
+          0.2580564816547193,
+          0.2893023171459335,
+          0.2932452048135771,
+          0.26791781984390173,
+          0.2512034754836914,
+          0.6701890971031347,
+          0.6619963632556298,
+          0.661143888904724,
+          0.6656259663099063,
+          0.6687640768704222
+        ],
+        [
+          7.454311474823671,
+          7.133798964854803,
+          0.25742937900258905,
+          0.29035695008745316,
+          0.2938148503214468,
+          0.2684181603407292,
+          0.25053128846826694,
+          0.670299762410592,
+          0.6617453236825882,
+          0.6610173356541674,
+          0.665522950127719,
+          0.6688927603925602
+        ]
+      ],
+      "h14-c0-i0/native32/0/first-halfplus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.4688840285210025,
+          7.784559169944257,
+          0.2582941967513045,
+          0.2887624188385803,
+          0.2929228167419415,
+          0.26878829372750374,
+          0.25097858987260135,
+          0.6701481004676085,
+          0.6621220199522977,
+          0.6612230491918218,
+          0.665436980289587,
+          0.6687998043530703
+        ],
+        [
+          7.458543161963261,
+          7.587681964614241,
+          0.25834385486148426,
+          0.2889725758286098,
+          0.2930663461189037,
+          0.2684105124003359,
+          0.2511013604306328,
+          0.6701392903124278,
+          0.6620677982155291,
+          0.661187942523221,
+          0.665514062263601,
+          0.6687787140713102
+        ],
+        [
+          7.459221923833683,
+          7.3630631689454695,
+          0.258391068785052,
+          0.2894730708027075,
+          0.29345849459680773,
+          0.2679471435905819,
+          0.25111537198203143,
+          0.6701288901360813,
+          0.6619441597945578,
+          0.6610917181276516,
+          0.6656023278970286,
+          0.6687712900823294
+        ],
+        [
+          7.440288943833881,
+          7.161429798224056,
+          0.25872252966096626,
+          0.290016486623661,
+          0.29401787752479336,
+          0.26791483968739604,
+          0.25087719585627194,
+          0.6700596094503946,
+          0.6617866296986563,
+          0.6609497947338535,
+          0.6655643838491306,
+          0.6688155277970216
+        ]
+      ],
+      "h14-c0-i0/native32/0/first-halfminus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.469588241503925,
+          7.7918401764654694,
+          0.258291498174885,
+          0.28874936177011384,
+          0.29290660892207604,
+          0.26881365649108513,
+          0.25096792870518414,
+          0.6701486127989285,
+          0.662125070371202,
+          0.6612273840569954,
+          0.6654321587186864,
+          0.6688016383072609
+        ],
+        [
+          7.455482542289674,
+          7.577382742404579,
+          0.25828463611723473,
+          0.2889131781335561,
+          0.2931173672479539,
+          0.26846676023595173,
+          0.2510399209015945,
+          0.6701521681447863,
+          0.6620875611669922,
+          0.6611755548818774,
+          0.6655058537986352,
+          0.6687942445132611
+        ],
+        [
+          7.452027511834149,
+          7.3365878432908,
+          0.2584761385370935,
+          0.28924847053924085,
+          0.2933177346433737,
+          0.2677916178232209,
+          0.25110980766187574,
+          0.6701116563411035,
+          0.6620138949517277,
+          0.6611253596388299,
+          0.6656501161013011,
+          0.6687845895333397
+        ],
+        [
+          7.451032204379413,
+          7.092172367800192,
+          0.2589198106062398,
+          0.28971708109991623,
+          0.2933238698634697,
+          0.26720387637472987,
+          0.25134819029240146,
+          0.670013503720311,
+          0.6619053123634432,
+          0.661128166843029,
+          0.6657534568237425,
+          0.668744317370525
+        ]
+      ],
+      "h14-c0-i0/native32/0/logsecond-plus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.46968216770491,
+          7.792550807005217,
+          0.25829517761174825,
+          0.2887460780571696,
+          0.2929068641526255,
+          0.26881864362059843,
+          0.25096324787121155,
+          0.6701477622515468,
+          0.6621259465067784,
+          0.6612272181274224,
+          0.665431017566014,
+          0.6688026048815677
+        ],
+        [
+          7.458670692868913,
+          7.594818741433613,
+          0.2583205179498903,
+          0.2887889492677768,
+          0.29315216572504466,
+          0.26843467002775606,
+          0.25108783741708074,
+          0.6701442176020219,
+          0.6621140117716257,
+          0.6611644344090261,
+          0.6655097933944231,
+          0.6687809649108268
+        ],
+        [
+          7.453323165835074,
+          7.360112141507635,
+          0.25842083108034,
+          0.28893740645214233,
+          0.2935867110586343,
+          0.26788145242699246,
+          0.25123454065417067,
+          0.6701227191164986,
+          0.6620783766022517,
+          0.6610522070398422,
+          0.6656232726348505,
+          0.6687614796344857
+        ],
+        [
+          7.45635690543618,
+          7.117666291022797,
+          0.25802651055180986,
+          0.2893728491141565,
+          0.2940745035228133,
+          0.26728813464083373,
+          0.25095364314610963,
+          0.6701868175906378,
+          0.661968397216622,
+          0.6609222398873678,
+          0.6657393209100321,
+          0.6688192935719101
+        ]
+      ],
+      "h14-c0-i0/native32/0/logsecond-minus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.46866843114433,
+          7.783656557625962,
+          0.25829040992374236,
+          0.2887660734098805,
+          0.2929226702779353,
+          0.2687835192061935,
+          0.2509841644503621,
+          0.6701489762457452,
+          0.6621210573385949,
+          0.6612231815419488,
+          0.6654380567566712,
+          0.6687986939343206
+        ],
+        [
+          7.460966007067211,
+          7.583942353385178,
+          0.2583538442364438,
+          0.28895618461467093,
+          0.293127475349621,
+          0.26835855157679983,
+          0.2512731686438672,
+          0.6701416329333347,
+          0.6620736410836043,
+          0.6611724627830311,
+          0.6655279755142627,
+          0.6687462258602417
+        ],
+        [
+          7.466280464724083,
+          7.368583479998113,
+          0.258473644521874,
+          0.2891835550692322,
+          0.2934473709201368,
+          0.26765710407689114,
+          0.25131130965075177,
+          0.6701229490588683,
+          0.6620197527830012,
+          0.6610928353953998,
+          0.6656845095849917,
+          0.6687388068417635
+        ],
+        [
+          7.458634657086039,
+          7.223542938933628,
+          0.25853233466748493,
+          0.2892029785062241,
+          0.29404764355588564,
+          0.2668917194713198,
+          0.25076409538896116,
+          0.6701124721873485,
+          0.662005451233887,
+          0.6609377648393181,
+          0.6658431921509518,
+          0.6688571279431799
+        ]
+      ],
+      "h14-c0-i0/native32/0/logsecond-halfplus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.469423791908175,
+          7.7904075752505,
+          0.2582940203344015,
+          0.2887509491148163,
+          0.2929107196243447,
+          0.2688089166580506,
+          0.250968120780543,
+          0.6701480548861761,
+          0.6621247528105171,
+          0.6612262352206755,
+          0.6654329883504299,
+          0.6688016746819776
+        ],
+        [
+          7.458968744709468,
+          7.583319209251972,
+          0.2583330301647384,
+          0.28889930660804725,
+          0.2930641210446358,
+          0.2684694716283527,
+          0.25100899292619105,
+          0.6701424227734206,
+          0.6620896784681285,
+          0.6611880319163318,
+          0.6655000843292963,
+          0.6687982528757831
+        ],
+        [
+          7.45836978428933,
+          7.347919463442384,
+          0.2581647542980384,
+          0.2890302924826212,
+          0.29345796821356085,
+          0.26821152751766225,
+          0.2510910269906631,
+          0.670176999445564,
+          0.6620530420731034,
+          0.6610937298227223,
+          0.6655555966137255,
+          0.6687855728570166
+        ],
+        [
+          7.473409166378415,
+          7.205199906324857,
+          0.2575501759421698,
+          0.2890605541068269,
+          0.29445722466659346,
+          0.26836892186824374,
+          0.25009232848631874,
+          0.6702984261678799,
+          0.6620273305476978,
+          0.6608410506052615,
+          0.6655345652623165,
+          0.6689903985533587
+        ]
+      ],
+      "h14-c0-i0/native32/0/logsecond-halfminus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.468970714214427,
+          7.786107131197497,
+          0.25829164019381334,
+          0.2887609455253114,
+          0.2929186128604476,
+          0.2687914451218388,
+          0.2509792598454082,
+          0.6701486646657572,
+          0.6621223098985362,
+          0.6612242204336584,
+          0.6654364776807752,
+          0.6687995755953403
+        ],
+        [
+          7.458025416146401,
+          7.585172202691044,
+          0.25831151602416585,
+          0.2890676575642466,
+          0.2930548360074693,
+          0.26833198158885957,
+          0.25115755782540283,
+          0.6701464169239956,
+          0.6620474021281205,
+          0.661187530224421,
+          0.6655320683328568,
+          0.6687678001317695
+        ],
+        [
+          7.457436720424538,
+          7.362529070398898,
+          0.25820213455629654,
+          0.2896421296735161,
+          0.29315552452063354,
+          0.26787032085077744,
+          0.2512771617000521,
+          0.6701726201917654,
+          0.66191434365388,
+          0.661155125686038,
+          0.6656242920235345,
+          0.6687415841142104
+        ],
+        [
+          7.46248534968214,
+          7.1943593274580255,
+          0.2577777087168331,
+          0.29095388615756523,
+          0.29259518923580474,
+          0.2675521294909969,
+          0.2519627712069072,
+          0.6702783253857494,
+          0.6616077358685489,
+          0.6612779142842106,
+          0.665675274980286,
+          0.6686250434507365
+        ]
+      ],
+      "h14-c0-i0/native32/1/zero": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.471884400170511,
+          7.790126185805279,
+          0.25822129845191133,
+          0.28866235037860266,
+          0.2928539108441286,
+          0.2688509325881683,
+          0.2508517468552498,
+          0.6701610437277736,
+          0.6621461150145718,
+          0.6612367752185807,
+          0.6654206840996567,
+          0.668821486454507
+        ],
+        [
+          7.464696922459909,
+          7.619735051705993,
+          0.2581169539029669,
+          0.2887502580418735,
+          0.29298180869063345,
+          0.2685681184646081,
+          0.2509544669349506,
+          0.6701821399561853,
+          0.6621195780892659,
+          0.6611991886329998,
+          0.6654719085599415,
+          0.6687999496352444
+        ],
+        [
+          7.470687424759687,
+          7.35275692208652,
+          0.25783621099433524,
+          0.2892187455034051,
+          0.29313860281675863,
+          0.26819621915124786,
+          0.2512961082262955,
+          0.6702394939610863,
+          0.6619915479467559,
+          0.6611467270251367,
+          0.6655310914711055,
+          0.6687326158710678
+        ],
+        [
+          7.507760161312403,
+          7.077384296881487,
+          0.25778068289096223,
+          0.2897452855067586,
+          0.2930726383982884,
+          0.26803447068540387,
+          0.25150733489733135,
+          0.6702587895026457,
+          0.6618212039439391,
+          0.6611215920787279,
+          0.6655415132328512,
+          0.6686742615026586
+        ]
+      ],
+      "h14-c0-i0/native32/1/first-plus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.471745687689109,
+          7.782852955031564,
+          0.2582240704837779,
+          0.2886754193602354,
+          0.2928705189718307,
+          0.26882816550427296,
+          0.2508609891525746,
+          0.6701605230607481,
+          0.6621430526567795,
+          0.661232317511973,
+          0.6654249734988823,
+          0.6688200466412823
+        ],
+        [
+          7.464752178504537,
+          7.596287390222949,
+          0.25818488972778875,
+          0.28892835881176443,
+          0.2929989406532808,
+          0.2686200353192739,
+          0.25081998531354277,
+          0.6701679415559963,
+          0.662082528046186,
+          0.6611965417395572,
+          0.6654638767070602,
+          0.6688310601316654
+        ],
+        [
+          7.476430654285641,
+          7.338698910186302,
+          0.25792085284140276,
+          0.2894266420503241,
+          0.2933427875897425,
+          0.26851266490301906,
+          0.250501627418606,
+          0.6702269787041705,
+          0.6619616429632372,
+          0.6611004681266118,
+          0.6654716686126271,
+          0.6688929134024538
+        ],
+        [
+          7.493357645333711,
+          7.054190261961535,
+          0.25763155175613134,
+          0.2904372276784988,
+          0.2934253196259567,
+          0.26822893162284056,
+          0.24915797331710582,
+          0.6702980882799052,
+          0.6617148706257903,
+          0.6610640218717955,
+          0.6655177939975685,
+          0.6691338478217459
+        ]
+      ],
+      "h14-c0-i0/native32/1/first-minus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.472082859265274,
+          7.798482153170657,
+          0.25821857464672715,
+          0.28864906300700444,
+          0.2928377005640926,
+          0.268875016053292,
+          0.2508398952503501,
+          0.6701615468903029,
+          0.6621492315287792,
+          0.661241146032714,
+          0.6654160497785083,
+          0.6688235291737937
+        ],
+        [
+          7.460971777494955,
+          7.620381338139814,
+          0.25815185684508357,
+          0.2886297647140772,
+          0.2928524924154603,
+          0.26867476034209514,
+          0.2507501329327972,
+          0.6701769724882314,
+          0.6621500578297368,
+          0.6612317465713444,
+          0.665454705891241,
+          0.6688416268838124
+        ],
+        [
+          7.4714128361732035,
+          7.34088114917543,
+          0.25814897168973167,
+          0.2887553891028329,
+          0.29297916691089226,
+          0.2682978463880073,
+          0.25047661129017773,
+          0.6701775573183734,
+          0.6621129035847811,
+          0.6611903060700238,
+          0.6655253595749892,
+          0.6688985261532799
+        ],
+        [
+          7.495246071661212,
+          7.030700087036662,
+          0.258394824302724,
+          0.28939026906392035,
+          0.29327503553217094,
+          0.26786789371412,
+          0.24965328928369707,
+          0.6701303710885564,
+          0.6619416318440419,
+          0.6610948513889933,
+          0.6655860676450458,
+          0.6690554858639268
+        ]
+      ],
+      "h14-c0-i0/native32/1/first-halfplus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.471838768462227,
+          7.786303849263614,
+          0.2582226799044492,
+          0.288668713779419,
+          0.2928621653687848,
+          0.2688401869715179,
+          0.25085434289602054,
+          0.6701607876880536,
+          0.6621446194289973,
+          0.6612345601818028,
+          0.665422703513659,
+          0.6688211633814316
+        ],
+        [
+          7.463097947850914,
+          7.5850334654096025,
+          0.2581783246023953,
+          0.2887908718427349,
+          0.29296251885466473,
+          0.2686960500903684,
+          0.2508887938996387,
+          0.6701667892050719,
+          0.6621101235990763,
+          0.661207888058626,
+          0.665445161868636,
+          0.6688138345650355
+        ],
+        [
+          7.474252974568137,
+          7.316332436619286,
+          0.25781229715537096,
+          0.2890227892988481,
+          0.29331670241417374,
+          0.2684473353046356,
+          0.2508867550578896,
+          0.6702344717142075,
+          0.6620455871103781,
+          0.6611165911969304,
+          0.6654768520166107,
+          0.6688182384163031
+        ],
+        [
+          7.499597258806136,
+          7.1189030675342195,
+          0.2574347206887703,
+          0.28964731059344984,
+          0.2939406716409549,
+          0.2682600819775478,
+          0.2501942228757771,
+          0.6703115896915512,
+          0.6618764584721247,
+          0.6609488009166736,
+          0.6654968576200521,
+          0.6689544552965175
+        ]
+      ],
+      "h14-c0-i0/native32/1/first-halfminus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.472084720115957,
+          7.7942712590482435,
+          0.2582199283540733,
+          0.28865574680912126,
+          0.292845835149416,
+          0.26886262325839205,
+          0.25084709978586595,
+          0.6701612946889641,
+          0.6621476637456009,
+          0.6612389504890678,
+          0.6654184466011852,
+          0.6688222748578616
+        ],
+        [
+          7.463542416643308,
+          7.615741335031887,
+          0.25816425534928916,
+          0.2886932605906301,
+          0.29287824047762795,
+          0.2685684718550801,
+          0.25088363579354994,
+          0.670174487497206,
+          0.6621338273871963,
+          0.6612248454726296,
+          0.665471211556241,
+          0.6688148166994006
+        ],
+        [
+          7.470001291591726,
+          7.352687377795758,
+          0.25806650645527934,
+          0.2886681224149126,
+          0.29263905410589275,
+          0.2681238454338248,
+          0.251232438353983,
+          0.6702012068782905,
+          0.6621280090024632,
+          0.6612683596670537,
+          0.66554809940324,
+          0.6687455604021296
+        ],
+        [
+          7.490459838431738,
+          7.137042053705074,
+          0.2575215869229141,
+          0.288687605938542,
+          0.2918218293708598,
+          0.2670134251833311,
+          0.25173124396186874,
+          0.6703107745256968,
+          0.6620815385909403,
+          0.6614340529694263,
+          0.6657465378746958,
+          0.6686395136246163
+        ]
+      ],
+      "h14-c0-i0/native32/1/logsecond-plus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.472163673093464,
+          7.794646798817163,
+          0.2582266943595117,
+          0.2886567605320717,
+          0.2928487777219248,
+          0.2688626550919848,
+          0.25084850097742184,
+          0.6701599137498702,
+          0.6621475208168918,
+          0.6612382364688636,
+          0.6654184927857658,
+          0.6688220981555089
+        ],
+        [
+          7.463732711035098,
+          7.6218519341745745,
+          0.2580896161496504,
+          0.2887716619739952,
+          0.2928559638689394,
+          0.2686284863055425,
+          0.2508303881276287,
+          0.6701893672497177,
+          0.6621132112125806,
+          0.6612337663784402,
+          0.66545959574728,
+          0.6688232553686078
+        ],
+        [
+          7.471390388745449,
+          7.389418691710878,
+          0.2575950758379637,
+          0.2890738868640872,
+          0.2931233895083235,
+          0.26833100999898113,
+          0.2508395178247063,
+          0.6702939558472021,
+          0.6620234379515176,
+          0.6611581519313126,
+          0.6655116262322985,
+          0.6688244083903776
+        ],
+        [
+          7.4961286045314175,
+          7.119483176944719,
+          0.25696198787922364,
+          0.2901711150762038,
+          0.293268932154837,
+          0.26719420568750546,
+          0.25005946993125483,
+          0.6704413565893266,
+          0.6617497224741465,
+          0.6611043005444525,
+          0.6657317518930094,
+          0.6689745337806288
+        ]
+      ],
+      "h14-c0-i0/native32/1/logsecond-minus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.471778892877703,
+          7.785638325082537,
+          0.2582157272148041,
+          0.28866799646209873,
+          0.29286004888453554,
+          0.2688390106975095,
+          0.25085321360007007,
+          0.6701622041738428,
+          0.6621446870820057,
+          0.661235066049297,
+          0.6654228584124788,
+          0.6688212689447961
+        ],
+        [
+          7.464378337922948,
+          7.581918825284015,
+          0.258131403768889,
+          0.28879709904132794,
+          0.29294539794709024,
+          0.26867878220896796,
+          0.25086431944522347,
+          0.6701758827627236,
+          0.662107450112381,
+          0.6612105052861691,
+          0.6654498434067389,
+          0.6688186421537771
+        ],
+        [
+          7.476137961981733,
+          7.28396901492248,
+          0.2579095945459824,
+          0.2891710590887178,
+          0.29296377775956406,
+          0.2682850140310355,
+          0.2507151006606816,
+          0.670222250382597,
+          0.6620053779578731,
+          0.6611998976775342,
+          0.6655206633846965,
+          0.6688432589159335
+        ],
+        [
+          7.496841266270455,
+          7.024311111607608,
+          0.25770520076255443,
+          0.28981993321618854,
+          0.29316009777787494,
+          0.26766948431645204,
+          0.2500985271524241,
+          0.6702769270840365,
+          0.661834714555275,
+          0.6611470535692477,
+          0.6656284563994586,
+          0.6689623800001692
+        ]
+      ],
+      "h14-c0-i0/native32/1/logsecond-halfplus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.4720733928557665,
+          7.792297282962303,
+          0.2582240142850955,
+          0.28865955278266103,
+          0.2928513698769279,
+          0.2688567247019995,
+          0.25085042899947424,
+          0.6701604736296655,
+          0.6621468193391127,
+          0.661237497592619,
+          0.66541959581393,
+          0.6688217149573623
+        ],
+        [
+          7.462966809878471,
+          7.6113449595443186,
+          0.25816280004827213,
+          0.2887510520886497,
+          0.29295467021208854,
+          0.26864809769579606,
+          0.25079319448456955,
+          0.6701744901164214,
+          0.6621187398980906,
+          0.6612084420354718,
+          0.6654568274325925,
+          0.6688294220475339
+        ],
+        [
+          7.474119597518348,
+          7.328091818082129,
+          0.2579331290409067,
+          0.2889814127559269,
+          0.29309152376100966,
+          0.2683609370656341,
+          0.25101197761746186,
+          0.6702184704617857,
+          0.6620438940700801,
+          0.6611710397798652,
+          0.665498157171057,
+          0.6687817186414002
+        ],
+        [
+          7.498386158522149,
+          7.053004464805193,
+          0.2572885402403018,
+          0.28946664157975455,
+          0.29252407608744074,
+          0.26818820635982143,
+          0.25111639383329576,
+          0.6703498155699715,
+          0.6618963757313645,
+          0.6612972225502659,
+          0.6655017150249332,
+          0.6687458297428222
+        ]
+      ],
+      "h14-c0-i0/native32/1/logsecond-halfminus": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.471876270658946,
+          7.787849407504226,
+          0.2582185334042974,
+          0.28866517276176584,
+          0.2928567989676198,
+          0.2688453019162022,
+          0.25085043754433717,
+          0.6701616192318645,
+          0.662145399464673,
+          0.6612359702192713,
+          0.6654216951329384,
+          0.6688217785555716
+        ],
+        [
+          7.464799788180915,
+          7.591783498062382,
+          0.25809166065885514,
+          0.28872269432870246,
+          0.29293447199651906,
+          0.26860519131264393,
+          0.2509391664895864,
+          0.6701874059968161,
+          0.6621255105696268,
+          0.6612153601631514,
+          0.6654651045362485,
+          0.6688028472142863
+        ],
+        [
+          7.479515677227145,
+          7.298328942551399,
+          0.25769018527926,
+          0.28888568651595115,
+          0.2929943988923617,
+          0.26820869564915134,
+          0.25102609200258613,
+          0.6702622516675298,
+          0.6620703360879039,
+          0.6611998812384475,
+          0.6655367977782356,
+          0.6687807946921651
+        ],
+        [
+          7.511171386046858,
+          7.039305600477345,
+          0.2574063415182232,
+          0.2885672520149813,
+          0.2931781929891548,
+          0.26780454401532305,
+          0.25030755316040604,
+          0.670302615851482,
+          0.6621098743804076,
+          0.6611501323345343,
+          0.6656003553770821,
+          0.6688983535828036
+        ]
+      ],
+      "h14-c0-i0/native32/0/zero-replay": [
+        [
+          7.476258150795131,
+          7.8802437625118165,
+          0.25835208942026566,
+          0.2885550611363135,
+          0.2927587039700182,
+          0.26916039409939646,
+          0.25084651808963615,
+          0.6701351818225214,
+          0.6621747534110745,
+          0.6612656772724617,
+          0.6653631134657645,
+          0.6688252630317718
+        ],
+        [
+          7.469187150179218,
+          7.788315883065508,
+          0.25829283994116664,
+          0.288755922832704,
+          0.292914659529755,
+          0.2687997318887668,
+          0.2509741987719588,
+          0.6701483571644878,
+          0.662123533173163,
+          0.6612252302981335,
+          0.6654348412185385,
+          0.6688005194405838
+        ],
+        [
+          7.458933112069877,
+          7.5957768487988595,
+          0.2582949353300287,
+          0.2889385678195653,
+          0.2930947496737238,
+          0.2685794019757161,
+          0.2510624852561333,
+          0.670148926113889,
+          0.6620771806420096,
+          0.6611778158444593,
+          0.665477143641915,
+          0.6687884973978889
+        ],
+        [
+          7.463749213155046,
+          7.3907888546089495,
+          0.2583108996540816,
+          0.2892745982058931,
+          0.29352350941332084,
+          0.26834711197233296,
+          0.2509231608124073,
+          0.6701419962631886,
+          0.6619862319019363,
+          0.6610627318064897,
+          0.6655206159932829,
+          0.668813345886645
+        ],
+        [
+          7.46250147043148,
+          7.2152197064419745,
+          0.25826452520417803,
+          0.29049223791586437,
+          0.2941582246510619,
+          0.2681703740975279,
+          0.25031310020146574,
+          0.6701315930628415,
+          0.6616872260971345,
+          0.6608816009768548,
+          0.6655286505033453,
+          0.6689269415745189
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/zero": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.469213721740818,
+          7.788460774890403,
+          0.25829259947130706,
+          0.2887573453121379,
+          0.2929134129879106,
+          0.26880019692854284,
+          0.2509736215573591,
+          0.670148366756712,
+          0.6621231616566167,
+          0.6612255159150481,
+          0.665434702885181,
+          0.6688006833607509
+        ],
+        [
+          7.45797942425038,
+          7.59545592078542,
+          0.2582568313880686,
+          0.2889582712076074,
+          0.29304500038421866,
+          0.2685462941918264,
+          0.25106785124476794,
+          0.670157431522178,
+          0.6620731120513288,
+          0.6611907105668539,
+          0.6654842535957489,
+          0.6687883084654364
+        ],
+        [
+          7.454708975474146,
+          7.37318184887522,
+          0.2582310366589448,
+          0.28918730687525407,
+          0.2934771125255311,
+          0.2680476799706243,
+          0.2511515700531438,
+          0.6701648351134839,
+          0.6620222106090349,
+          0.6610850080009576,
+          0.6655790603972632,
+          0.668777556134868
+        ],
+        [
+          7.436128551147423,
+          7.1299848594484185,
+          0.2579643524554785,
+          0.28995380316863184,
+          0.2947659419600249,
+          0.2671227509618143,
+          0.25107524038155715,
+          0.6701921961410054,
+          0.6618522847202248,
+          0.6607641374835512,
+          0.6657651650070927,
+          0.6688066371048196
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/first-plus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.46857903861228,
+          7.780347864476564,
+          0.25829532728462024,
+          0.2887702748426149,
+          0.2929295946075402,
+          0.2687765317097077,
+          0.2509798462038916,
+          0.6701478502372135,
+          0.6621201485479568,
+          0.661221197656937,
+          0.6654392185142654,
+          0.6687998155249449
+        ],
+        [
+          7.456914769530668,
+          7.564645797575583,
+          0.25832348730546495,
+          0.28906201755983446,
+          0.2930033876046745,
+          0.26844151913400116,
+          0.251235253330299,
+          0.6701449183476414,
+          0.6620471116241998,
+          0.6611992411542043,
+          0.6655091683713052,
+          0.6687579720419361
+        ],
+        [
+          7.458085794668318,
+          7.317004419416218,
+          0.25858520400691454,
+          0.28945106555168476,
+          0.2931141899803112,
+          0.2681136384390026,
+          0.25169032161100346,
+          0.6700942110218818,
+          0.6619484362437793,
+          0.6611665755750735,
+          0.6655743976625186,
+          0.6686749707482454
+        ],
+        [
+          7.447699784818987,
+          7.182019815181732,
+          0.25884769376361594,
+          0.2900503167669331,
+          0.2929299335176255,
+          0.26822096078514307,
+          0.2522505353741038,
+          0.6700344215527273,
+          0.6617921744950382,
+          0.6612113448980188,
+          0.6655464542576375,
+          0.6685828998178476
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/first-minus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.469867685306968,
+          7.795077774932265,
+          0.2582899291870501,
+          0.28874421228456093,
+          0.2928970582392333,
+          0.26882749271433415,
+          0.2509591211735722,
+          0.6701488726291736,
+          0.662126225523423,
+          0.661229900443329,
+          0.6654294199729186,
+          0.6688033244609572
+        ],
+        [
+          7.456928990976998,
+          7.596129889190855,
+          0.2581995602827614,
+          0.2889104577143934,
+          0.29307186424246034,
+          0.26835185802281203,
+          0.25109522744731394,
+          0.6701679592059587,
+          0.6620867873175379,
+          0.6611853445730096,
+          0.6655305006105888,
+          0.6687810941744433
+        ],
+        [
+          7.448263359723429,
+          7.389656089555394,
+          0.25808887521382845,
+          0.2893692322553799,
+          0.2934648350916599,
+          0.2677119182511365,
+          0.25124712634990065,
+          0.6701905182974021,
+          0.6619764219920744,
+          0.6610885139479576,
+          0.6656636368146905,
+          0.668756602617277
+        ],
+        [
+          7.446675345006244,
+          7.18115031860345,
+          0.2581763908525963,
+          0.29015152000149913,
+          0.2945909459686458,
+          0.2676372422072933,
+          0.2511556716055657,
+          0.6701771528494057,
+          0.6617852301082658,
+          0.660818650227185,
+          0.6656642394640978,
+          0.6687761785699632
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/first-halfplus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.468853011158092,
+          7.784540654719744,
+          0.25829395618661355,
+          0.2887638284674272,
+          0.292921564595415,
+          0.26878849227210466,
+          0.2509778711003475,
+          0.6701481098279146,
+          0.6621216499026216,
+          0.6612233383585001,
+          0.6654369073604793,
+          0.6687999929408165
+        ],
+        [
+          7.458751470700773,
+          7.5801468361758335,
+          0.25833661320456347,
+          0.28895121882524366,
+          0.29305299399634044,
+          0.268468283965612,
+          0.2511556883613145,
+          0.6701434126090787,
+          0.6620763934181807,
+          0.661192882582497,
+          0.6655024220991999,
+          0.6687698542739912
+        ],
+        [
+          7.46081869192048,
+          7.332205384100215,
+          0.2583393730771146,
+          0.28932617851957215,
+          0.2932298250311577,
+          0.2680161289702185,
+          0.25134358802617346,
+          0.6701450397637646,
+          0.6619962365483371,
+          0.6611477509625426,
+          0.6655927276266237,
+          0.6687347530904401
+        ],
+        [
+          7.441676568182427,
+          7.12829064974752,
+          0.2577712251220136,
+          0.2901330110879832,
+          0.2933472113910732,
+          0.2677376227813792,
+          0.250754816285374,
+          0.6702533208022479,
+          0.661812910153435,
+          0.6611122335973828,
+          0.665621827417467,
+          0.6688565187965209
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/first-halfminus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.469613486041281,
+          7.79186861967654,
+          0.25829125713826534,
+          0.2887507777819101,
+          0.29290529770093787,
+          0.2688142994832349,
+          0.2509672781226108,
+          0.67014862102375,
+          0.6621246959257348,
+          0.6612276855605527,
+          0.665431987439694,
+          0.6688018107313448
+        ],
+        [
+          7.456249864069038,
+          7.584674834949352,
+          0.2583296396732622,
+          0.28888068237304376,
+          0.2930747688048049,
+          0.2684572303022118,
+          0.2511267328008664,
+          0.6701424733344137,
+          0.6620956488396142,
+          0.6611871582880597,
+          0.6655067982027271,
+          0.6687771917224943
+        ],
+        [
+          7.454283031092338,
+          7.348472942877171,
+          0.2583869155041062,
+          0.28924016503810573,
+          0.29325335062651864,
+          0.2678578635774433,
+          0.2510950577551704,
+          0.6701277218692304,
+          0.6620171354561127,
+          0.6611520409312461,
+          0.6656251622702236,
+          0.6687881367030811
+        ],
+        [
+          7.45362305908106,
+          7.1005526703688,
+          0.259064840494354,
+          0.2898380810638021,
+          0.29355609591417114,
+          0.2668862012583717,
+          0.25029012745296364,
+          0.6699648309800299,
+          0.661887200619782,
+          0.6610959181370374,
+          0.6658041247919101,
+          0.6689458050281212
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/logsecond-plus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.469714149975089,
+          7.792583899450709,
+          0.25829494572362494,
+          0.2887474341715493,
+          0.2929056269507783,
+          0.2688192753285936,
+          0.25096254155531617,
+          0.6701477711215039,
+          0.6621255866421633,
+          0.6612275041942226,
+          0.6654308441681477,
+          0.6688027894887032
+        ],
+        [
+          7.458374306373509,
+          7.600550327005672,
+          0.2583512265979738,
+          0.2888886611127186,
+          0.2931320404866846,
+          0.26851693906122676,
+          0.25106162090506934,
+          0.6701381878330773,
+          0.6620896032286346,
+          0.6611710865530551,
+          0.6654918344389767,
+          0.6687845858893241
+        ],
+        [
+          7.4532176943330395,
+          7.359702725328807,
+          0.25851226198413646,
+          0.2892205018725148,
+          0.29361927088015377,
+          0.26805462024562093,
+          0.25094443662818783,
+          0.6701089250060915,
+          0.6620039651160551,
+          0.6610553132956679,
+          0.6655830890483183,
+          0.6688043298962382
+        ],
+        [
+          7.4536908256819885,
+          7.141881021442785,
+          0.25878803444167886,
+          0.28904680507941555,
+          0.29427966438550923,
+          0.2681839188699376,
+          0.2507444100201864,
+          0.6700483850151814,
+          0.6620331832312798,
+          0.6608928560718111,
+          0.6655558490379518,
+          0.6688675232712527
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/logsecond-minus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.468675131837855,
+          7.783671464342995,
+          0.25829016670917154,
+          0.2887675522641201,
+          0.2929213594708425,
+          0.26878385098793794,
+          0.250983308413469,
+          0.6701489842051326,
+          0.6621206691513906,
+          0.6612234847209051,
+          0.6654379526160854,
+          0.6687989135847427
+        ],
+        [
+          7.457546042948469,
+          7.583404422044809,
+          0.25833818226016564,
+          0.2889555188073148,
+          0.2931785688538564,
+          0.26837120366179645,
+          0.25107621951309983,
+          0.6701407187414982,
+          0.6620716004248015,
+          0.6611603553702549,
+          0.6655217310396914,
+          0.6687845647511858
+        ],
+        [
+          7.4589164695468195,
+          7.3544246736159185,
+          0.2584659791607974,
+          0.28923711523294743,
+          0.29363599037923993,
+          0.2677114114389964,
+          0.25099863644879966,
+          0.6701106196429427,
+          0.6620016941324911,
+          0.6610488712151298,
+          0.6656490720570912,
+          0.6687941245983632
+        ],
+        [
+          7.452829465537767,
+          7.165102908533505,
+          0.25854088419826965,
+          0.2901032675729911,
+          0.29475967092292304,
+          0.2666808497909848,
+          0.2514387204382261,
+          0.6700909160888253,
+          0.6617997874719872,
+          0.6607567717911509,
+          0.6658406193458134,
+          0.6687023245413735
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/logsecond-halfplus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.469434875988048,
+          7.790496977302179,
+          0.2582937832079377,
+          0.2887523397069615,
+          0.2929094623280188,
+          0.2688094578445444,
+          0.2509671471008333,
+          0.6701480662557149,
+          0.6621243861543094,
+          0.6612265267490465,
+          0.665432836352432,
+          0.6688019130289348
+        ],
+        [
+          7.4595368550419,
+          7.589822673765104,
+          0.25833822427824704,
+          0.288849025647903,
+          0.29300153363506376,
+          0.2684406539092565,
+          0.250995589465206,
+          0.6701425713352176,
+          0.6621013632378708,
+          0.6612005264402997,
+          0.6655054588386027,
+          0.6688006099668513
+        ],
+        [
+          7.459329854689848,
+          7.3672905927870564,
+          0.25822767973266375,
+          0.28893399735313896,
+          0.2933893121470674,
+          0.26804945560708615,
+          0.25095237811835697,
+          0.6701647095091717,
+          0.6620820019933403,
+          0.6611044636315233,
+          0.6655816300684909,
+          0.6688125691025268
+        ],
+        [
+          7.4606025357434245,
+          7.15055685270732,
+          0.25787802612037986,
+          0.28888359550999076,
+          0.29354312348120376,
+          0.2687626761313957,
+          0.2505498252696012,
+          0.6702229035725955,
+          0.6620998661458488,
+          0.6610499410445376,
+          0.6654043744725505,
+          0.6689083443860846
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/logsecond-halfminus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.46896134710955,
+          7.786179812414786,
+          0.2582913941111589,
+          0.2887624001280643,
+          0.2929173248351782,
+          0.2687919580211526,
+          0.2509786410942528,
+          0.6701486727103648,
+          0.6621219268026554,
+          0.6612245158337612,
+          0.6654363312387938,
+          0.6687997437700803
+        ],
+        [
+          7.457600561550049,
+          7.5869692443762915,
+          0.25831227300259435,
+          0.2890601871120221,
+          0.2931303680476539,
+          0.2683809324156574,
+          0.2511061604154731,
+          0.6701464319882582,
+          0.6620480387684935,
+          0.6611688721339087,
+          0.6655214195013631,
+          0.6687762304098551
+        ],
+        [
+          7.460244526866785,
+          7.374451896961249,
+          0.2584664309091155,
+          0.28971029129932735,
+          0.2935468467156153,
+          0.2674749600129424,
+          0.2510574604481129,
+          0.6701055455288449,
+          0.6618925885431789,
+          0.6610552231093705,
+          0.6656974181499205,
+          0.6687835113326485
+        ],
+        [
+          7.473051596298472,
+          7.197340817514069,
+          0.2586688845260657,
+          0.2909867254647713,
+          0.29430516455165834,
+          0.2664158177654911,
+          0.25017801787426663,
+          0.6700397465949723,
+          0.6615815766816747,
+          0.6608704171986666,
+          0.6658735387800601,
+          0.6689437339396841
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/1/zero": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.471869279715511,
+          7.790099879315272,
+          0.25822054578726367,
+          0.2886631929099704,
+          0.2928541356014222,
+          0.26885076465576646,
+          0.2508514156796929,
+          0.6701611567646143,
+          0.6621458805042164,
+          0.6612366857858819,
+          0.6654206962784882,
+          0.6688214868508938
+        ],
+        [
+          7.46441356275786,
+          7.612538334071662,
+          0.25811794024871815,
+          0.28874905363084014,
+          0.29300817858481376,
+          0.2686049591608505,
+          0.25098987171796805,
+          0.6701804617810957,
+          0.6621201739956054,
+          0.6611918253978479,
+          0.6654634097583967,
+          0.6687931798538382
+        ],
+        [
+          7.470499887351092,
+          7.312481516147545,
+          0.2577340806856566,
+          0.2888044822041959,
+          0.29317720323970997,
+          0.2682726318699152,
+          0.25115759764232376,
+          0.6702551854944924,
+          0.6620944168287481,
+          0.6611401551696066,
+          0.6655161298126967,
+          0.6687523495146872
+        ],
+        [
+          7.480600556546702,
+          7.074039375894547,
+          0.2574179616505408,
+          0.28874495198895805,
+          0.29320758311988115,
+          0.2681187282601093,
+          0.25124687464080975,
+          0.6703173513425078,
+          0.662098002718519,
+          0.6611257439551242,
+          0.6655206635361393,
+          0.6687155222547749
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/1/first-plus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.47176052759229,
+          7.782784731320237,
+          0.25822332459543357,
+          0.28867627233660115,
+          0.29287072847182544,
+          0.26882789672997043,
+          0.2508604871561803,
+          0.6701606397807843,
+          0.6621428171815875,
+          0.6612322334078948,
+          0.665425009109109,
+          0.6688200773086524
+        ],
+        [
+          7.464445978792303,
+          7.5987387975850025,
+          0.2581805575634206,
+          0.28893598150861166,
+          0.2929887763515428,
+          0.26863487353529536,
+          0.2508318994580495,
+          0.6701689010096047,
+          0.6620811059028661,
+          0.661198768018649,
+          0.6654601241909219,
+          0.6688274308731047
+        ],
+        [
+          7.476439206463023,
+          7.347622826213132,
+          0.25802865890555216,
+          0.2891392494737501,
+          0.2932456481181992,
+          0.2682927750544281,
+          0.2508203758597768,
+          0.6702044552600686,
+          0.6620395894572293,
+          0.6611285434253394,
+          0.665516424415417,
+          0.6688345729241156
+        ],
+        [
+          7.499058101541387,
+          7.127083827101772,
+          0.2585690091594129,
+          0.2892949270120493,
+          0.29354878075821167,
+          0.2672351361070482,
+          0.25104293862394667,
+          0.6700968312520972,
+          0.6620209935603373,
+          0.6610374933336131,
+          0.6657246631006389,
+          0.6687876765865458
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/1/first-minus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.472066544549877,
+          7.7984855122268755,
+          0.2582178246288232,
+          0.2886498978186093,
+          0.292837899200023,
+          0.26887476096997304,
+          0.2508396756849517,
+          0.6701616630856265,
+          0.6621490024388055,
+          0.661241061266585,
+          0.665416080965624,
+          0.6688235108550453
+        ],
+        [
+          7.461394074877712,
+          7.618872807769771,
+          0.2581381464073619,
+          0.2886552713686973,
+          0.2928984202323199,
+          0.2686818848487796,
+          0.2507153225016007,
+          0.6701783876385505,
+          0.6621438705882225,
+          0.6612220106611395,
+          0.6654523917873824,
+          0.6688471413086571
+        ],
+        [
+          7.468084041120929,
+          7.339352989072088,
+          0.25776326657574944,
+          0.2888558683944301,
+          0.29287899836150044,
+          0.26856531621475227,
+          0.250257724037156,
+          0.6702534400723118,
+          0.6620897008368544,
+          0.6612209584490606,
+          0.6654706478683333,
+          0.6689412907891937
+        ],
+        [
+          7.47794434166624,
+          7.068615588529416,
+          0.2566341624667221,
+          0.2890378497588944,
+          0.29271300765994557,
+          0.26932390815746726,
+          0.24974327813606223,
+          0.6704786578748329,
+          0.6620336462884373,
+          0.6612592152150701,
+          0.665290909515479,
+          0.6690442097845829
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/1/first-halfplus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.4718438305527535,
+          7.786272422594079,
+          0.2582219279849039,
+          0.28866956206093636,
+          0.29286236933581733,
+          0.26883988929063735,
+          0.25085419932126723,
+          0.6701608996056266,
+          0.662144386275856,
+          0.661234474768137,
+          0.665422744250239,
+          0.6688211268519353
+        ],
+        [
+          7.462056834164433,
+          7.586347885892424,
+          0.258174693241924,
+          0.2887727723790316,
+          0.2929918347647438,
+          0.26871019884040576,
+          0.25088962229546813,
+          0.6701682694332314,
+          0.6621126689969179,
+          0.6612000407157772,
+          0.6654420535247044,
+          0.6688140082974714
+        ],
+        [
+          7.479256669379309,
+          7.292013197597939,
+          0.25805072358381465,
+          0.28897378861410583,
+          0.2932603977889649,
+          0.26842066203657766,
+          0.251138978564742,
+          0.670191735515181,
+          0.6620511995049683,
+          0.6611346822857338,
+          0.6654856752150882,
+          0.6687629480388807
+        ],
+        [
+          7.503943088897275,
+          7.049661327306412,
+          0.25761672838478356,
+          0.2895635217700784,
+          0.29388640643605934,
+          0.2685192635669972,
+          0.25117710880343536,
+          0.6702872989449934,
+          0.6618917833651643,
+          0.6609834039908578,
+          0.6654389326441403,
+          0.6687374370939052
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/1/first-halfminus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.472047172327427,
+          7.794242449418029,
+          0.2582191780020566,
+          0.28865658392540766,
+          0.29284600938321514,
+          0.2688624619432718,
+          0.250847019130507,
+          0.6701614112578975,
+          0.6621474337230098,
+          0.6612388726226324,
+          0.6654184552754611,
+          0.6688222255129613
+        ],
+        [
+          7.463544186795885,
+          7.611982058147783,
+          0.2581953925111606,
+          0.28870879380038733,
+          0.2929070914027935,
+          0.2685775842783836,
+          0.25081701583494276,
+          0.6701676909403779,
+          0.6621302817062797,
+          0.6612180172943165,
+          0.6654697198742754,
+          0.6688278351241189
+        ],
+        [
+          7.467226564515424,
+          7.331049857363025,
+          0.2582585802874804,
+          0.2887757353409988,
+          0.2931428621043508,
+          0.2681577685329583,
+          0.25070828902224807,
+          0.6701577972041821,
+          0.6621116515819041,
+          0.6611467713850142,
+          0.6655454078001106,
+          0.668846092549888
+        ],
+        [
+          7.496212925205156,
+          7.004538395138461,
+          0.2586001662972687,
+          0.28919539358019447,
+          0.29351731151336263,
+          0.26767636322840027,
+          0.2499789744606768,
+          0.6701047164898846,
+          0.6620209018529585,
+          0.6610445909754459,
+          0.6656295291056892,
+          0.6689702202008917
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/1/logsecond-plus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.4721247067782635,
+          7.794567080305035,
+          0.25822597776258865,
+          0.28865757067794157,
+          0.29284892673531454,
+          0.2688622632406587,
+          0.25084890133492777,
+          0.6701600233865519,
+          0.6621472967620212,
+          0.6612381653132363,
+          0.665418552581922,
+          0.6688219595549079
+        ],
+        [
+          7.464300131100238,
+          7.6208595352799415,
+          0.25812069900050616,
+          0.28877224391323175,
+          0.292852718821481,
+          0.2685982299576487,
+          0.25083767934621726,
+          0.6701834883072048,
+          0.6621148872558364,
+          0.6612336413749268,
+          0.6654665704256301,
+          0.6688225182076923
+        ],
+        [
+          7.471384137192423,
+          7.357225479198036,
+          0.2579575912816413,
+          0.28916159624741083,
+          0.29295367666465527,
+          0.2680773491759903,
+          0.2506935982013066,
+          0.6702225567277865,
+          0.6620126203353037,
+          0.6611986750268585,
+          0.6655668476568963,
+          0.668851627534363
+        ],
+        [
+          7.500569045787273,
+          7.103850847782494,
+          0.25749767431784565,
+          0.2899681484152008,
+          0.2933783066860038,
+          0.26710316752356755,
+          0.250588470867393,
+          0.6703243594263996,
+          0.6617908643183352,
+          0.6610586636140259,
+          0.6657671855566705,
+          0.6688620542043373
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/1/logsecond-minus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.471782419600813,
+          7.785633480238181,
+          0.25821494503822184,
+          0.2886688831990147,
+          0.2928602511126355,
+          0.268838783865913,
+          0.25085263406982033,
+          0.6701623249878688,
+          0.6621444465076465,
+          0.6612349793141905,
+          0.665422883014206,
+          0.6688213124842578
+        ],
+        [
+          7.462848609356852,
+          7.584819728705034,
+          0.25818357650075613,
+          0.2888466448423295,
+          0.2929495399881497,
+          0.2687240425719994,
+          0.25101463675123825,
+          0.6701652489605546,
+          0.6620973899660416,
+          0.6612083869524747,
+          0.6654393466263875,
+          0.6687869654157654
+        ],
+        [
+          7.471976754506753,
+          7.289455756642797,
+          0.25796681692296536,
+          0.2893045466791921,
+          0.2932253960001395,
+          0.26856669099609154,
+          0.25135804380749344,
+          0.6701965609238884,
+          0.6619759952843076,
+          0.6611337189148595,
+          0.6654559729723399,
+          0.6687249021076304
+        ],
+        [
+          7.489196300051629,
+          7.018656490100264,
+          0.2574523108136753,
+          0.29042221752940445,
+          0.2934118180207367,
+          0.26848878879616417,
+          0.25173961557866714,
+          0.6702889135252422,
+          0.6616977433213689,
+          0.661072348250969,
+          0.6654456018743576,
+          0.6686657790277379
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/1/logsecond-halfplus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.472031691907587,
+          7.792278453078906,
+          0.2582232830311645,
+          0.28866037621531065,
+          0.29285151812691396,
+          0.26885653399947185,
+          0.25085039027255995,
+          0.6701605856856329,
+          0.6621465907389708,
+          0.6612374244722402,
+          0.6654196112884113,
+          0.6688216558777861
+        ],
+        [
+          7.4629206063768025,
+          7.6133511207776365,
+          0.2581516283897427,
+          0.28875069328210623,
+          0.29291530861108034,
+          0.26872044088722924,
+          0.25077226643673073,
+          0.6701765863884398,
+          0.6621180700283983,
+          0.6612175178892589,
+          0.6654427051952715,
+          0.6688328021832127
+        ],
+        [
+          7.469976739618872,
+          7.36253130526024,
+          0.25779225973852093,
+          0.2889947009460683,
+          0.2930219227420601,
+          0.2685330629232054,
+          0.2506455510037024,
+          0.6702475457831762,
+          0.6620533882638395,
+          0.6611897561622149,
+          0.6654724004415378,
+          0.6688523122948927
+        ],
+        [
+          7.499449082454779,
+          7.071925930700894,
+          0.25735044597033563,
+          0.2895844582506113,
+          0.29358655747237333,
+          0.26775322990469413,
+          0.24999912175692207,
+          0.6703345330438698,
+          0.6618981002634919,
+          0.6610419528638758,
+          0.6656223362010332,
+          0.668966188564214
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/1/logsecond-halfminus": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.4718774687197085,
+          7.787852470539858,
+          0.25821776633259846,
+          0.28866602988513657,
+          0.292857006457166,
+          0.268845220722832,
+          0.2508505524648533,
+          0.6701617365585458,
+          0.6621451646780488,
+          0.6612358842760931,
+          0.6654216917841455,
+          0.6688216913991774
+        ],
+        [
+          7.463535734449504,
+          7.591337157427183,
+          0.2580849539870148,
+          0.2887466246450384,
+          0.2929492302098713,
+          0.26864501301424426,
+          0.2510468518845878,
+          0.6701879389656186,
+          0.6621207906341154,
+          0.6612098373046591,
+          0.6654569972903822,
+          0.6687821612284875
+        ],
+        [
+          7.480805064066066,
+          7.289586344100014,
+          0.25776796990255474,
+          0.28881935023776983,
+          0.29306249820007846,
+          0.2681406914527289,
+          0.251467796823604,
+          0.6702553092127821,
+          0.6620900494224378,
+          0.6611680999291597,
+          0.6655495885216742,
+          0.6687071513164072
+        ],
+        [
+          7.518285882082996,
+          6.995991973402706,
+          0.25706896126886897,
+          0.2885250723089075,
+          0.2926477844097844,
+          0.26727514198573876,
+          0.2523742663558655,
+          0.6703913060468311,
+          0.6621327851867229,
+          0.6612523822887666,
+          0.6657218545123994,
+          0.6685364449291322
+        ]
+      ],
+      "h14-c0-i0/arithmetic64/0/zero-replay": [
+        [
+          7.476257749915712,
+          7.880242887104776,
+          0.2583520858947027,
+          0.2885550570097535,
+          0.2927586999093706,
+          0.26916038814623083,
+          0.2508465101051581,
+          0.6701351771208953,
+          0.6621747475856814,
+          0.6612656706718986,
+          0.6653631095357032,
+          0.6688252605190723
+        ],
+        [
+          7.469213721740818,
+          7.788460774890403,
+          0.25829259947130706,
+          0.2887573453121379,
+          0.2929134129879106,
+          0.26880019692854284,
+          0.2509736215573591,
+          0.670148366756712,
+          0.6621231616566167,
+          0.6612255159150481,
+          0.665434702885181,
+          0.6688006833607509
+        ],
+        [
+          7.45797942425038,
+          7.59545592078542,
+          0.2582568313880686,
+          0.2889582712076074,
+          0.29304500038421866,
+          0.2685462941918264,
+          0.25106785124476794,
+          0.670157431522178,
+          0.6620731120513288,
+          0.6611907105668539,
+          0.6654842535957489,
+          0.6687883084654364
+        ],
+        [
+          7.454708975474146,
+          7.37318184887522,
+          0.2582310366589448,
+          0.28918730687525407,
+          0.2934771125255311,
+          0.2680476799706243,
+          0.2511515700531438,
+          0.6701648351134839,
+          0.6620222106090349,
+          0.6610850080009576,
+          0.6655790603972632,
+          0.668777556134868
+        ],
+        [
+          7.436128551147423,
+          7.1299848594484185,
+          0.2579643524554785,
+          0.28995380316863184,
+          0.2947659419600249,
+          0.2671227509618143,
+          0.25107524038155715,
+          0.6701921961410054,
+          0.6618522847202248,
+          0.6607641374835512,
+          0.6657651650070927,
+          0.6688066371048196
+        ]
+      ]
+    }
+  },
+  "scope": "Two paired widths at one corpus/full-initialization identity; conditional source sequences, coupled signs and arithmetic controls. Full prediction residuals are producer reductions; independent saved-coordinate checks are separately recorded."
+}

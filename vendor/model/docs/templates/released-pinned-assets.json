@@ -1,0 +1,52 @@
+{
+  "PLDR-LLM-v51-SOC-110M-1": {
+    "files": {
+      "README.md": "fa75aa0d1d6e3b6df99df1bc92b5783913fb4cacddcaf32274e972bc6f99b803",
+      "config.json": "0896185036d5010f41cab56b6cff66479251e6517d12b7d72169138114102284",
+      "configuration_pldrllm.py": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e",
+      "generation_config.json": "e5131a14d35ccee01f957470696240455e400250d4c5f53d159b3adb1bd348e9",
+      "model.safetensors": "7a1987a214f418831e6981c8cdf873101144820db845694f2f2d1231188a891d",
+      "modeling_pldrllm.py": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0",
+      "requirements.txt": "b124a27c6226373858eb4f6428e5f56a19d417673b5dfce7d031b8b6f5a3c7e1",
+      "special_tokens_map.json": "9068aeaa96eace489c182ce17328d008d344fe36eee0f3dc2d14e61162394680",
+      "tokenizer.json": "3bf58672c12be6bf8c4e326da46ffde1414bbac376a6e5d3cdb6747436fd09aa",
+      "tokenizer.model": "51f4369714712232bfc746188f347e550790d1d75e5e35bfa4399b784d2a666f",
+      "tokenizer_config.json": "42934f44b9a72e64c56554608812c54523df036d480af39b9e7b0c96998dac58",
+      "paper_saved_model_files/PLDRv51_SOC_110M_1_hyperparameters.py": "d14ac648b6cf0723e3b6a4aa26cd29cf2923b8a71d09e99728c451f457c2fb5f"
+    },
+    "repository": "fromthesky/PLDR-LLM-v51-SOC-110M-1",
+    "revision": "7a34e2ca9aa78038683677cfda17fe3a9fe6da8a"
+  },
+  "PLDR-LLM-v51-SOC-110M-4": {
+    "repository": "fromthesky/PLDR-LLM-v51-SOC-110M-4",
+    "revision": "c377be06f2294aeccb56d19ea5f52640b1850daf",
+    "files": {
+      "config.json": "0896185036d5010f41cab56b6cff66479251e6517d12b7d72169138114102284",
+      "configuration_pldrllm.py": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e",
+      "generation_config.json": "e5131a14d35ccee01f957470696240455e400250d4c5f53d159b3adb1bd348e9",
+      "model.safetensors": "b1c0bbdd6d2e26b52e774780fb0ad690d44734dd00dc55912fb0af32dfd72097",
+      "modeling_pldrllm.py": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0",
+      "README.md": "e546b08c786849cb11615d3a60b08eb5dcbb539520ed4f1fa310192c04d932c8",
+      "special_tokens_map.json": "9068aeaa96eace489c182ce17328d008d344fe36eee0f3dc2d14e61162394680",
+      "tokenizer.model": "51f4369714712232bfc746188f347e550790d1d75e5e35bfa4399b784d2a666f",
+      "tokenizer_config.json": "42934f44b9a72e64c56554608812c54523df036d480af39b9e7b0c96998dac58",
+      "paper_saved_model_files/PLDRv51_SOC_110M_4_hyperparameters.py": "f54059ec3a08dbe50e5fc3e704fcc4fec221cdec888e31e16a0a846050d659ac"
+    }
+  },
+  "PLDR-LLM-v51-SOC-110M-5": {
+    "repository": "fromthesky/PLDR-LLM-v51-SOC-110M-5",
+    "revision": "de8e539c0ba1829072f4b8c2c5fae3bde0a3a2d2",
+    "files": {
+      "config.json": "0896185036d5010f41cab56b6cff66479251e6517d12b7d72169138114102284",
+      "configuration_pldrllm.py": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e",
+      "generation_config.json": "e5131a14d35ccee01f957470696240455e400250d4c5f53d159b3adb1bd348e9",
+      "model.safetensors": "cda94017b69e22ad920d3f9be75767a2e5494d7435f9eabcfb3430fe19b53d55",
+      "modeling_pldrllm.py": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0",
+      "README.md": "4e85c7f03e8a8159d48d70c774fb5d0338742f6e8d2b427875501d821633f075",
+      "special_tokens_map.json": "9068aeaa96eace489c182ce17328d008d344fe36eee0f3dc2d14e61162394680",
+      "tokenizer.model": "51f4369714712232bfc746188f347e550790d1d75e5e35bfa4399b784d2a666f",
+      "tokenizer_config.json": "42934f44b9a72e64c56554608812c54523df036d480af39b9e7b0c96998dac58",
+      "paper_saved_model_files/PLDRv51_SOC_110M_5_hyperparameters.py": "9b43821e6de887f1f765fec973e8147d06bd9ad8e2fee8fbb0e4323482108ce4"
+    }
+  }
+}

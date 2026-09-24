@@ -1,0 +1,790 @@
+{
+  "boundaries": [
+    "Three archived raw-input fixtures are explicitly skipped.",
+    "Large raw arrays, checkpoints and corpus tokens remain separate inputs.",
+    "The thirty-cell cache reconstruction is retained evidence, not a new execution.",
+    "Public working trees are uncommitted; publication is controlled by the author."
+  ],
+  "illustrative_math": {
+    "exact_rational_values": {
+      "alternative_successor_energy": "9/2",
+      "exact_gain": "1/4",
+      "finite_step_charge": "1/2",
+      "illustrative_kl_bound": "1/8",
+      "incoming_energy": "2",
+      "radial_coefficient": "1/2",
+      "successor_energy": "1/2",
+      "work": "-2"
+    },
+    "fixed_and_adapted_steps_checked": 5,
+    "new_experiments": 0,
+    "scope": "Illustrative exact arithmetic and explicit slice counterexample. The Lipschitz and logit sensitivity constants are hypotheses, not estimates for a trained model.",
+    "status": "passed"
+  },
+  "lean": {
+    "axiom_gate": "AXIOM_GATE_PASS declarations=1999 theorem_declarations=1461",
+    "fresh_owned_modules": 170,
+    "mapped_declarations": 485,
+    "negative_controls_rejected": true,
+    "scope": "Fresh compilation of all owned sources; exported Lean files are byte-identical. Selected kernels are not a complete formalization of the written theory.",
+    "source_bindings": [
+      {
+        "module": "ModelRG",
+        "source_sha256": "b1931ba6edcc5cf57a5f7e042786384e0730ee61b912be0d34d3c7fa4cac3211"
+      },
+      {
+        "module": "ModelRG.AdamTangent",
+        "source_sha256": "48d6bd6884c6660555eab3148541aaa6cc9973748413cbd29e3bb131af69fe07"
+      },
+      {
+        "module": "ModelRG.Adaptation",
+        "source_sha256": "847248cf4fad1bfdf7b45acb3f344b2611222f507e9a76c0c71fd789504d73f1"
+      },
+      {
+        "module": "ModelRG.AffineJet",
+        "source_sha256": "445f869753d44b7f11d265579f1ef5c778e38eed376534bc3122b5ae2c7e4f7f"
+      },
+      {
+        "module": "ModelRG.Blocking",
+        "source_sha256": "a41b912c7b6871b1b0aebc5c0122cc421a44b0ad88d4d5c42e46df3e517fee82"
+      },
+      {
+        "module": "ModelRG.CacheRisk",
+        "source_sha256": "f5239d54f0f8ed24899ed93eb1b912c89d1ccbc9d48cdab8de9853970916d3ff"
+      },
+      {
+        "module": "ModelRG.CategoricalScale",
+        "source_sha256": "e542f63c00007cf3fec1b8f910c122bcf8c4a5f930cdf2f0f014383f4956e3b2"
+      },
+      {
+        "module": "ModelRG.ContextRisk",
+        "source_sha256": "747e0edae5e9e891a264102c4f9ee9b96bfa0bbcfad7a0a76e73bf28686d0710"
+      },
+      {
+        "module": "ModelRG.Covariance",
+        "source_sha256": "d87744db93cd9b75913ceb0613425ff1aee930433d88a89e608e15f27c7309e8"
+      },
+      {
+        "module": "ModelRG.EndpointCovariance",
+        "source_sha256": "44abfe5d2c5a898a2a5d7899e55dadfcf3c3a8358d9235963b6eb710afa41261"
+      },
+      {
+        "module": "ModelRG.FineTuning",
+        "source_sha256": "03062a3ec0ea2c22eadf4ab76bd22f81ca8af4b1f7d9baf46e348d4395ea39ef"
+      },
+      {
+        "module": "ModelRG.FiniteEmission",
+        "source_sha256": "f08e7587232f546ee2b2ee1613d63d4a7742fc79410a857232866ba4138f853c"
+      },
+      {
+        "module": "ModelRG.FinitePopulation",
+        "source_sha256": "8fc0d720b95a0588e09e6f0890fcbd2a23d41d7afd23340568213f6bad996864"
+      },
+      {
+        "module": "ModelRG.FiniteTransport",
+        "source_sha256": "9202744dd1fbe4e1bcddc5ad59b4325a03a76112c0523762478b19c0e980902a"
+      },
+      {
+        "module": "ModelRG.FluxForecast",
+        "source_sha256": "6108d366e86455a2d2d1e142f5f1d2ac3c8ca537e5390d1063a64b5a017ccec9"
+      },
+      {
+        "module": "ModelRG.Heads",
+        "source_sha256": "c6b57308f9b96ae3c2604e4c7597e167664415ed3b20d885c3f5584e6d15d88b"
+      },
+      {
+        "module": "ModelRG.Inference",
+        "source_sha256": "0bf8b02bb67363bc49ade04078ed24b1f260d4d6570cc6cbce8512bbc5c11682"
+      },
+      {
+        "module": "ModelRG.LatentCovariance",
+        "source_sha256": "508bcfb5997aeb1c8497ff1bd36ffb48302186da5364eab135c4f7b8a9c87483"
+      },
+      {
+        "module": "ModelRG.MomentMaps",
+        "source_sha256": "684ec9724aa7a24bda98e8dab9f857c69d2cef71702242ec301cf0690c935648"
+      },
+      {
+        "module": "ModelRG.NoiseCovariance",
+        "source_sha256": "927fa9c9b2ccc1904eddfb48feb9fdfa49d170fa20648d50046305e3c805aaaf"
+      },
+      {
+        "module": "ModelRG.Observation",
+        "source_sha256": "59d9b596a017e0d19d93d9177f9f038d51b7c4b1495610d931ce6b150c7b2fee"
+      },
+      {
+        "module": "ModelRG.OptimizerMemory",
+        "source_sha256": "0c3ea08818ea1ccb2950a3474b5408b588ccdc49090947bfc415d27b7820a6fe"
+      },
+      {
+        "module": "ModelRG.PhysicalCalibration",
+        "source_sha256": "5fd7a1f2580acbc9d8cf79f54b0709539b8c55f4f9e29ef9eb2039c1ccd5c3c8"
+      },
+      {
+        "module": "ModelRG.PotentialActivity",
+        "source_sha256": "d094c455b53e214afbe46eacfeb59434c8bbe1746fcc905d25e700fa9932e023"
+      },
+      {
+        "module": "ModelRG.PotentialArea",
+        "source_sha256": "575f74a23660d59fa204bc844d7283d4aa96229bdba5e14d006dcda3bf33ac4d"
+      },
+      {
+        "module": "ModelRG.PrecisionBounds",
+        "source_sha256": "2ef6b50290fe030b7af3ccc65075d2b13281c2bbfb372cdd4cd9e85b1b5d1dad"
+      },
+      {
+        "module": "ModelRG.ProjectionTransport",
+        "source_sha256": "03026f2779849893c3fc6133cab2415f53c65fc87bad8452af25860b8358101f"
+      },
+      {
+        "module": "ModelRG.ReadoutBudget",
+        "source_sha256": "c31d4c7260744c43468226261791686374a7d1729942395068564fe112c2b91d"
+      },
+      {
+        "module": "ModelRG.Reduction",
+        "source_sha256": "4d724bb7368f0f52b74e8fb21caae440d32c9cad4865f4e6d0e820b81a249fb3"
+      },
+      {
+        "module": "ModelRG.ReplicaBootstrap",
+        "source_sha256": "c1a8f6f2d6a4fc665600e69548ae1b7c238273e84abb080e50c6bb45604fffbe"
+      },
+      {
+        "module": "ModelRG.ReplicaStatistics",
+        "source_sha256": "cc1e7c1bf974caa423d09d125da8f28c3f58a02bbc958b900e5c8732cb1cfeed"
+      },
+      {
+        "module": "ModelRG.Response",
+        "source_sha256": "c6cff7d6e526e2be35925f96d850fddb0ec857c6ea068fb3b4da2f183fb75eef"
+      },
+      {
+        "module": "ModelRG.RowFlux",
+        "source_sha256": "ad4ed3a3704dde88831561ad0714b8be1884bebe6ad4e57825a64e2755d8bd31"
+      },
+      {
+        "module": "ModelRG.Scaling",
+        "source_sha256": "260d7c524bc0b6ec32e64f6231d1bc90101c606104e8682d3c726fe48c7d9931"
+      },
+      {
+        "module": "ModelRG.ScoreCentering",
+        "source_sha256": "7ae287bcbee4c5e323663a6b3b570d678a3b4a53c261a268b5663c7989d62e8c"
+      },
+      {
+        "module": "ModelRG.SpatialCentering",
+        "source_sha256": "1218fa348deb75032f8806d0c2729d53adb2402df85c37d9408c3815da6a8b38"
+      },
+      {
+        "module": "ModelRG.TemporalEnergy",
+        "source_sha256": "4cfee43c4a1a0f960ebeadbfcdddda3be667e50aa0a12fe748749c82b0f19168"
+      },
+      {
+        "module": "ModelRG.Training",
+        "source_sha256": "6ec72683ad7e9f81ffb2686332b1a7de80887fcd230f48d300096e725f80dd76"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile",
+        "source_sha256": "89458a875252e38fa45daa1ea5cd5b0c81908d9488ae61af639648de972ee339"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.AdamWBlockMatrix",
+        "source_sha256": "a8bf9ca6398499cafa7dcf75edf1b361f898854886184d2e488bf1c50611ec9b"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.AdamWGateDissipation",
+        "source_sha256": "462e0275cc0f6fe80d0d9f6987da3ed0f8181e6e99d5606ef24a1fe696ca16b7"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.AdamWGateForcing",
+        "source_sha256": "889c0f4fec913c47f291436b47fcfcb32fb69d314f38cae5af93ca7dd18b184c"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.AdamWInactiveCoordinates",
+        "source_sha256": "93f8bbe58f01019bf1148fd0e41739b5193b895eeb36849eec4e9bc533d44ce9"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.AdaptiveTube",
+        "source_sha256": "ba76d42dcbeacf60b2c539ad2b9a6877862adbd5f7015806f4c8b5c68cfd24d0"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ApplicationMargin",
+        "source_sha256": "be7a5b49437adc06458c8cd735bd79e1a7c92a0cd0fb55602ed9969c40d705c6"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.BlockAdamWGate",
+        "source_sha256": "e46d0b349e383b1421c4ce7b93c658e5cd5bd5af2ca2cc17e7a20122e58d7ed0"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.BlockEnergyComparison",
+        "source_sha256": "bb67b71fd0deaa9555e7fd26737747f1bf687318800a8f6817ab7ebd881d6909"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.BlockExcursion",
+        "source_sha256": "680615d01a35bf685d0f09e165ac83bc0206c5608c45b057a605e891f78f3f77"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.BranchResolvedState",
+        "source_sha256": "78b0bbb2350176cdbb599a69bf81a04aa1a4c886003329913a4d83c23303730d"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.CausalScoreQuotient",
+        "source_sha256": "50f77b9a71618e7cbe87453f48870ce4d4ed79fd8f5f267eb77777d0a6d820a7"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.CenteredLogitMargin",
+        "source_sha256": "9969f02ade35f8e4d539ec323583e50c4dc813c780c28c85c10414bd8e0540dd"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.CenteredRowGeometry",
+        "source_sha256": "86795cfad04fe72eedacc3cb94407a1431e78d366a8340330aec662b0f4571f4"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ChordalRowCover",
+        "source_sha256": "5560dc699d1f272e85b24d9ba413c49e4b5582eece8971f875ebc076670a7549"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ChronologicalAdamW",
+        "source_sha256": "34f80809dac6955936d20dd206c68a2233e39737af08001f8059909ad880ca15"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ChronologicalMargin",
+        "source_sha256": "ed3a53e2622ae01af1bdbbdf4651d7761a3b432ba64270ffebada4beb1b12779"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.CollapseMaster",
+        "source_sha256": "976878a9a522769aab7bcfe05bf54cd23687eb48263834c488bee8af6b8bc2ef"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.CommonMetric",
+        "source_sha256": "8a5d64ff505f4aa652df8de7d60650ccdc028e37cef631fe20edcb36e59ad8a3"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.CompleteStateCocycle",
+        "source_sha256": "4b73c0635b60a4dac911d585b33f1d150c9687c1b3511c8b945fdac6505705ab"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.CompositeFisherFrame",
+        "source_sha256": "d20123488fc1bff380e2455657c2eaf9e4e803b3b046fed6cc2e7a3e9a449b83"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ComprehensiveRadiusClosure",
+        "source_sha256": "8bbdc6c2e979b75f760febc236301f56e0a8cd8348ce55503dc1b59dc72def52"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ComprehensiveRowMapCollapse",
+        "source_sha256": "4da07e1318c5fc1f42e9b0e6fd060ec98b7b8c6a722f132a3d0867cd7a88b3a5"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ConstructiveComparison",
+        "source_sha256": "97219f859fb53f0205f876ecb17a2879a6f0ed8451a46755f9bfa0cf3fec2bf5"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ContrastGraphCover",
+        "source_sha256": "2acd7665da36b874c1e97f021fb6078cb6ef357a3030ddb37f4e48603105655f"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.CoordinateOscillation",
+        "source_sha256": "007b8bc26681701daa13c6866cd86caf12b5ec3bf0151f099e41753157208b02"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.CounterfactualShapeResponse",
+        "source_sha256": "c7321564417a5ab7997aafec3d5c02aed094db8de963004469ead8a3c78382ad"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.DiameterCocycle",
+        "source_sha256": "0788cec4e00e2246973d26eb52f990393422b5fab023ed0d11f847060c2f8f67"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.DiameterSlack",
+        "source_sha256": "e2b21bd55a24e06a3581b8fe17eef3e702b587a6ea816efd3ae71259ca23ed66"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.DirectEnergyCumulative",
+        "source_sha256": "69914325857378cd35d7a76620c23f1e711b0cb640b71e9c1173cb0dbe7896ba"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.DirectObservableEnergy",
+        "source_sha256": "c0df68d0bf7e8ef24584f9f59730ebb4890c86f5eeffe8f360822d134796b13a"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.EffectiveGateShape",
+        "source_sha256": "5b29e0b6421003acbd543285127a3c18cbff264d8698fd1d5e229d0ed01743c8"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.EndpointGateShape",
+        "source_sha256": "0f6ff2246509d15ca423749f2e051ac14e643318f19b8ce205dfb58da6f969f8"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.EnergyToDirect",
+        "source_sha256": "9dfeb279e253c661c7e4fc4fc0c9e891fe59f7725899a6bbf956d66cf76bee67"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ExecutedAdamWEnergy",
+        "source_sha256": "7ab6294f33e2f7d93a3f520e8483bb427ce1fe0caadb46f42c4a36d10487d2e7"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.FiniteIncrementObservableBalance",
+        "source_sha256": "6021d352921989b9ef0de3d1102cfcf2f872cd80b075fe3c608d388cd68c4a6c"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.FiniteRegistryPrediction",
+        "source_sha256": "d9be20f0b98c21e63e8e8b43209234d1e7fd92b036aa42b86d2a92ef30b7d277"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.FiniteSourceShapley",
+        "source_sha256": "b097a89e2187b474035ce3d06bd475c8cf753a9df99eb9829febae5cbdcabfd1"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.FiniteSourceTransport",
+        "source_sha256": "b0776ec040c65ee04998d53a38526b2f27ee3318c4df3ceb7c64d2e401744453"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.FullLossCurvature",
+        "source_sha256": "203a0b74949bf061342e2e4509569674e137e0ef4ee414e3313a2dac65e061c6"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.GateCollapseMaster",
+        "source_sha256": "34f869c4730893f2e914257c4947883ab4424c6abddf591ce66a017d1a549a52"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.GateContrastEnergy",
+        "source_sha256": "8003a0cbabb97221fe635f1c594df5ea6236fbf5187f193c1479f5ee6e0aa17a"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.GateShapeFactorization",
+        "source_sha256": "97d16795ee92da04e773546192c7c0e3e42be1bab4cf007a22f1a651d26ec615"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.GateZeroStratum",
+        "source_sha256": "5348be02bcd334475034a20682b6a5c69e13c67bfb3670ee081308f2f350c4d6"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.GeneralSoftmaxPairwise",
+        "source_sha256": "55b33dfa774fcbcf1691c172bd33ea8557cdaeb5b96f0b273c2125d1c03e63a2"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ImplementedFiniteTransport",
+        "source_sha256": "e12715085874a949ffe4e160f83482a115ca1d46b07a3b5244ba9c2215a8adc1"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.LayerNormFactorization",
+        "source_sha256": "abfc99d338d4f46009d5242173091d1f114c3e2e1dd0e9294c07533591738705"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.LayerNormGate",
+        "source_sha256": "0a42414415df6989cca967bb87e101ac39517d9a09184f6f6a2f778410f9a678"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.LayerNormGeometry",
+        "source_sha256": "296fe203975795fb7203331681666c28b40b0e77040bbbe9a8d02bd626ec7999"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.LiftedAdamWMatrix",
+        "source_sha256": "a895c33b7bfbca2488ca1e7b9f9390f58b712b52ec05b8b46f10289c6c9aaef4"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.LiftedOptimizer",
+        "source_sha256": "202cf953db44215df99d944958aaaabd2192d40153e11af6ff06ddb46466d91e"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.LogRouteCollapse",
+        "source_sha256": "95c7413c0f74cea76b1c52360e8ddcd5e863197c76e1507fb952b62671e78f7d"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.LogitQuotient",
+        "source_sha256": "17eb261c585778c97c4148806ea6f44548935a44ed14bc2384b9e6dfa2daf8d5"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.LyapunovContraction",
+        "source_sha256": "3793258c6d33c602e337a0a5419ff90c4e28cf8a2ac95366c6b7a9938a9bd59b"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.MixedCollapseMaster",
+        "source_sha256": "095773d399309afa29fbd132081f838c53740fccd043ba741356d1dcc997b281"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.NonautonomousAttraction",
+        "source_sha256": "39706dc0c1a90452c5b3406998d6faf2314580bb0003d79eb0604ee880ec2f94"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.NonlinearAttraction",
+        "source_sha256": "0f295b684375b1e41e93fcb6187bc4f23489b66f3695ee11a14fcb93f7685674"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.NormalGeometry",
+        "source_sha256": "44e70b1d2cf069dd0d7c26993967739138b7cb3de78acb06e80b69e33547cdc8"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.NormalSelection",
+        "source_sha256": "bcf454ba38863c4afcab5f32f3267577c149b0f465dc7c45381c033047e181f0"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.NormalToDirect",
+        "source_sha256": "1a7eaed0f5dcdb1a8a2f53f124d310b46ad1c64f3a4d259240be7fe7d03fc8ee"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ObservabilityObstruction",
+        "source_sha256": "9caa729437eeabecaaf06b5c831bceb458de0269141acde3fef505cbd04d1cc1"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ObservableCapture",
+        "source_sha256": "02874f08710c6cd14e81c7dbe8764fa7783cac1f77f01932ee61bf3d99c87a8e"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ObservableCompleteStateCocycle",
+        "source_sha256": "48d4168108f8333c4957017fc447ca2b0488b8cb06ada6418b5ec19ee6155739"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ObservableEnergyDissipation",
+        "source_sha256": "3966fd866df97ad36e33c39c8ce3a430b9ee1a7ad03183ee750b6b4e6c659f28"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ObservationZeroFiber",
+        "source_sha256": "95606b3f9c61c9032c8056ed910583cf4cdc5a069850ff76ef90e5fc6511e8e3"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ObserverResolvedEnergy",
+        "source_sha256": "f1b0c3531553407274513b59fb124eb255b1268ee04ea7bc6b9d10cc9b4dcd62"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.OptimalComparison",
+        "source_sha256": "ca164b5f637a29254b260773b6e9974a43b457060af5e513755b31bd8e019ef2"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.OrientedIntegral",
+        "source_sha256": "08020e32da7d604d423631f97fbb488b672298906c74347d4e1c22c167fd22a3"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PLGADividedDifference",
+        "source_sha256": "a2e893159825ab28cf1ea195c930a01e11a7d7a2e52aa5bbe54bfb9fc987a51c"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PLGAImplementedDerivatives",
+        "source_sha256": "e337110d1dc817dc09a2cecb2cd8237945cdf5737413ce12f51716328815c652"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PLGAImplementedPower",
+        "source_sha256": "20dcff5ccac758bf442f5a6a0a86d581214655e42d497b3ab9d05c1ae2321fc0"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PLGAQuotientTransfer",
+        "source_sha256": "75af2a9c91b6aa3a426b356232d55ecdf5080e351971ecb138da133b4e207c8c"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PLGARowConstantDefect",
+        "source_sha256": "80e46c8375497fd1eb6b75e6db66c1951e9d262faf2aaaf1f3d41eae39936729"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PLGAScoreTransfer",
+        "source_sha256": "7f90301e07d556aae80ae573bdf93149a5e56584b92815eef16b3159d61db198"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PLGASignedSecant",
+        "source_sha256": "0bafd652283d64ff0555b383875870583610c909c8a0cf05430fb6e0809734f4"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PLGATwoVariableSecant",
+        "source_sha256": "3a3d58848f5d62762c4babaac2612515fa9f21a4aaa1a0b5cf5738f4f430ec9a"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PairwiseDiameterCollapse",
+        "source_sha256": "04dd049aabe11f24dda40da2f9e061717d9df7cad42849f280ff19fae46c384c"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PathMetricChain",
+        "source_sha256": "adbc0f8761e6027f7f115c63b22e2420b365089a69e23ef214dddd27a0b8b513"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PathMetricContraction",
+        "source_sha256": "720ce65617f543d85c28af23f305c9f1e84283c9a21d41c8278ee8b0cc35ee19"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PldrStageGain",
+        "source_sha256": "e20c27713e9aab5103a5f3557ee9fffbb90ddf4e62e48cd2afdd1143766cac1e"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PostNormChain",
+        "source_sha256": "558f90c1ca66a1a310751645a86a3c437d887a9be2909ae14e7f08d820af00e0"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PostNormParameterSource",
+        "source_sha256": "056a64a679f4725c3197643ecd964582ebfbd21e0634dfe78aa9201961a5a91b"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PredictiveCollapseMaster",
+        "source_sha256": "3dfcf0c57f39dc14a991c440a39a09884374cd7740a17e1775e9cdba7fefd45e"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PredictiveContrastEnergy",
+        "source_sha256": "8521c16551b557facb81c8c01f9b81c198fc9b0a9466240cd2405b89c26654cc"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.PredictiveEnergyStep",
+        "source_sha256": "6aa756960a8ec06f66796b43fc3412f08af87ec80b6aa8a231c26e209f9c9bd4"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ProgramBoundCollapse",
+        "source_sha256": "8bd7459e81dff4cd02c3ae0cb1a19adb079acfa061d2fae5238793cf5d8e1b24"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ProgramEnergyRG",
+        "source_sha256": "91ff9b2b34f4a836e52b1f5dd3b0f3ff246d1d83ec63e5ce995c4d9d4256b18c"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ProgramEnergyStep",
+        "source_sha256": "1e60c675d627a3ad7ddf28e33c5055f82d2c49ebbad2cbe90090507804ab854f"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.RadialFaceBlockClosure",
+        "source_sha256": "b1e6880f1c61ddf71443c5a532f11da2b6b171663d3e02581d179a79c08bf3a3"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.RadialTangentialEnergy",
+        "source_sha256": "bbd1ea01fad9756fdbc6c93d92afa9a17abf6a16fd570ae19ff53abf41d2ccf2"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.RankObstruction",
+        "source_sha256": "21a21199e911045901fb1f5e1ba828a3a07dc7de410140f4d1d7e568ff852a6f"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ReopeningBudget",
+        "source_sha256": "5b48005ed62301c1eb2678574c529524660d1cb095cae64df1c2e2661cbdfb17"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ResidualShapeContraction",
+        "source_sha256": "f19ebc0aba1a979c1262b3bef0cad745c0890d0b6df294f80ff819f8b1b84cb0"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.RowJacobianEnergy",
+        "source_sha256": "a3d0c59e17a633f32403725dfa626628a5cc49cf2d74d3fee05940eb027160e7"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.SameSourceBridge",
+        "source_sha256": "d92767d60730ba245557e89b2c6d3622feb7fb1d6fcfccccc1d2ffde482142d1"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ScaledChronologicalProduct",
+        "source_sha256": "75dd956d83e6b5d4f3e2681dd0c9fa07722ddc46f609f079bb8f1d00afe742e4"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.SegmentTube",
+        "source_sha256": "40d6308265e270ffaf2e4661e9aa2a2051087d58ecf778d0789a9caebfd359a2"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ShapeDirEnclosure",
+        "source_sha256": "adec872c234dd730273114643031c1f2247ecf0b1896e3572f705f64e16af16c"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.ShapeFluxContraction",
+        "source_sha256": "16693c8582502812ae7148279f2f34269f5a578a01f6a4ca631c03286d05bc9c"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.SourceMultiplierCocycle",
+        "source_sha256": "a5d4906d08a2946e20b7495429ab9d18e99a16717e38c17ed8c86bb9edf4431a"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.SourceNativeEnergy",
+        "source_sha256": "85a95a566e2585c5975c776cc4dbf3d526eb6ab5ca28dd9610b38cc54b9cffa3"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.SourcePredictiveEnergy",
+        "source_sha256": "89debefd66d7da26106cec40c78f9f21c9f0f8ba603afb3f74d2b86b16f9b5bb"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.SourceResolvedEnergyCollapse",
+        "source_sha256": "6f6bd4bcaaa36f1475036a604db80b73e1ed14e83f3185c8c457b361132c17c1"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.SourceStateCollapse",
+        "source_sha256": "14ad400ae97df7754c5e6feb88b5da820b91a85b29b302f9f35f1ad88f07caf5"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.SpatialRowMapCollapse",
+        "source_sha256": "7d7d54bc3f80e0dcc39155282720f94b840459a50f3f6cfbd6726be5fd92b0cb"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.StackedJacobian",
+        "source_sha256": "08868dcef65478837ab35419ca3ba979c59768b0a8cf4eddcdb1f3bf92f9ecda"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.SymmetricEndpointTransport",
+        "source_sha256": "7153667e18c432417a7c4fb5b79e1f3059ba5d281fca91a99c8e61164ef33fb6"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.TransitionKernelRG",
+        "source_sha256": "bd92382d390b0a2eb17830417aa671dd95cb8ebf4f6f6514f8fb0191aee4dfc7"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.VectorCenteredRowGeometry",
+        "source_sha256": "68a51e4762953bf8b5ceedf9d218687eb9c27abd1ea15e15a3ad3e744706c2a4"
+      },
+      {
+        "module": "PldrLlmCurvatureSandpile.WeightedSoftmaxFrame",
+        "source_sha256": "d1bf71632ca8e102b494a9852f73524c290f86a077d88f3f3f2089a2a154c3c8"
+      },
+      {
+        "module": "PldrTrainingDynamics",
+        "source_sha256": "34c15d5a1c10af91492e26695f863f7096f37447cb41494556d659d699c6a677"
+      },
+      {
+        "module": "PldrTrainingDynamics.CancellationExamples",
+        "source_sha256": "2b3fb4d20185e09c106d0660813478e142878294237da253f0408698b55f6c50"
+      },
+      {
+        "module": "PldrTrainingDynamics.LimitCriteria",
+        "source_sha256": "2d9137a1c14d6d53094abe06ceeef38231ffa1012ec903070e0f59f9cf6d2fbd"
+      },
+      {
+        "module": "PldrTrainingDynamics.PathErrorBudget",
+        "source_sha256": "3612f7166384b5d80638e43acdb5296c3825ee72540ecfc65f853f024899ef27"
+      },
+      {
+        "module": "PldrTrainingDynamics.RowFraction",
+        "source_sha256": "8a720a3a9cf132e9868dae5fc4f7bb9c37018b1335ca3b4672f68bfb8fc1bdb1"
+      },
+      {
+        "module": "PldrTrainingDynamics.ScalarFaceMemory",
+        "source_sha256": "4267f69f77835dcc22dc2e8500f8eca1a11777cb0fa2ae63092c49aa7c8039d7"
+      },
+      {
+        "module": "PldrTrainingDynamics.ScalingBalance",
+        "source_sha256": "a8b2aaad8dfb7505059a3904da3e6608ab651f8509d9eb06e172ee2a96011b2b"
+      },
+      {
+        "module": "PldrTrainingDynamics.StochasticTransport",
+        "source_sha256": "a3a60197d76b88fea474cf2b7f2fe19765a2fd69519eadd1f030ab744c09444d"
+      },
+      {
+        "module": "PldrTrainingDynamics.TrajectoryChart",
+        "source_sha256": "46f77c01a230e3290f6b7c7f2449765fd137c4b38d8c80fea57f176eb0c1939b"
+      },
+      {
+        "module": "RowRGMap",
+        "source_sha256": "9223367794436ee3ad7f212f298843ef2bbed677caa9bf33831dbc5a3e355314"
+      },
+      {
+        "module": "RowRGMap.AffineCocycle",
+        "source_sha256": "d8ad5996c710443fa9a451647c0ec2a2465e734bd9b81f5dc7eb355319104a11"
+      },
+      {
+        "module": "RowRGMap.CollapseCriterion",
+        "source_sha256": "f82edff3c081a97482366b68b13ac961552a5206e9350087ace49c5188809801"
+      },
+      {
+        "module": "RowRGMap.CriticalFlow",
+        "source_sha256": "8dab716cdb4bba6a945417ca7b5c9d0a99e10f2139eac459e4ac63eea4588d79"
+      },
+      {
+        "module": "RowRGMap.CriticalSource",
+        "source_sha256": "05ffd581a1a995831d8aa2fbf464f94c44179182f226245a0a0476692c61bef0"
+      },
+      {
+        "module": "RowRGMap.FiniteComparison",
+        "source_sha256": "f685a936cbf2ea98bc0c2599fdd40a95820fbcd6571ca40aa60ee5137ebbe310"
+      },
+      {
+        "module": "RowRGMap.GaugeFiber",
+        "source_sha256": "652b4f94796ae79760645bf02e558a5d4cf9071326072f752e3b9089657b716d"
+      },
+      {
+        "module": "RowRGMap.IntervalAffine",
+        "source_sha256": "6994dedc709dd3adab054083ea25571f5cea3a1bbd7db16d64db1769b370ab03"
+      },
+      {
+        "module": "RowRGMap.ObserverEnvelope",
+        "source_sha256": "28b39662353fe368a0ef010ce6a9a2182a177475bb1fbed39232178b19f16c20"
+      },
+      {
+        "module": "RowRGMap.PositiveTail",
+        "source_sha256": "c1fa6bc3ac215908918bef33bba6994dbdf82d4f00d7c05ceba609b2542761c4"
+      },
+      {
+        "module": "RowRGMap.RadialEnergy",
+        "source_sha256": "ce5a622ca3f411681bfcfc4f31502237aaa03d9fc2d0a9c9127140f9e22491a6"
+      },
+      {
+        "module": "RowRGMap.RecurrentFaces",
+        "source_sha256": "a560d6c195bd700869cabef4192fc48a752f834a142d999c0cbfc9de48384546"
+      },
+      {
+        "module": "RowRGMap.ResponseDefect",
+        "source_sha256": "41f85ac3a2b88b316a040d705dc199cb81b0f9546fb063bb365375f76a92305c"
+      }
+    ]
+  },
+  "mathematical_statements": 263,
+  "native_maintenance": {
+    "documentation_import_checks_passed": true,
+    "remaining_diagnostics": "See docs/COMPATIBILITY.md in the code companion.",
+    "scope": "Only the shared cache_position documentation constant changes; configuration and all other parsed program nodes are unchanged."
+  },
+  "new_scientific_acquisitions": 0,
+  "numerical_evidence": {
+    "exact_numeric_boolean_fields": 5873448,
+    "figures": 76,
+    "records": 2081,
+    "scientific_values_equal": true,
+    "tables": 323
+  },
+  "privacy": {
+    "scope": "Prepared files and decompressed numerical objects; public author identities retained, container paths and acquisition device identifiers omitted.",
+    "violations": []
+  },
+  "schema": "pldr-chart-companion-validation-v1",
+  "scientific_suites": {
+    "model": {
+      "passed": 596,
+      "skipped": 0,
+      "skips": [],
+      "subtests_passed": 0
+    },
+    "rg": {
+      "passed": 117,
+      "skipped": 2,
+      "skips": [
+        {
+          "reason": "Separate observed stage-resolved predecessor record is a raw acquisition input.",
+          "test": {
+            "classname": "tests.test_stage_resolved_renderer.StageResolvedRendererTests",
+            "name": "test_predecessor_schema_and_producing_route_preflight",
+            "time": "0.000"
+          }
+        },
+        {
+          "reason": "Separate observed stage-A runner configuration is a raw acquisition input.",
+          "test": {
+            "classname": "tests.test_stage_resolved_renderer.StageResolvedRendererTests",
+            "name": "test_route_preflight_completes_before_any_torch_import",
+            "time": "0.000"
+          }
+        }
+      ],
+      "subtests_passed": 78
+    },
+    "root": {
+      "passed": 32,
+      "skipped": 0,
+      "skips": [],
+      "subtests_passed": 4
+    },
+    "row": {
+      "passed": 885,
+      "skipped": 1,
+      "skips": [
+        {
+          "reason": "archived wave-5 runs not present",
+          "test": {
+            "classname": "experiments.tests.test_gates_w6",
+            "name": "test_corrected_wave5_report_matches_manual_application",
+            "time": "0.000"
+          }
+        }
+      ],
+      "subtests_passed": 0
+    }
+  },
+  "standalone": {
+    "checks": 8,
+    "original_reads": "blocked with successful negative control",
+    "scope": "Relocated manifest, evidence, formal-map, finite numerical and real worker-dispatch checks; no native acquisition."
+  },
+  "status": "passed"
+}

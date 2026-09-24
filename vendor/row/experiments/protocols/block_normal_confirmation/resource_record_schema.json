@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "command",
+    "command_sha256",
+    "device",
+    "wall_seconds",
+    "peak_host_rss_bytes",
+    "peak_gpu_allocated_bytes",
+    "peak_gpu_reserved_bytes",
+    "peak_output_bytes",
+    "caps",
+    "cap_status",
+    "exit_code",
+    "technical_valid",
+    "executor_contract",
+    "completion_observed_seconds",
+    "total_supervisor_seconds",
+    "final_output_bytes",
+    "deadline_outcome",
+    "cleanup_complete",
+    "measurement_error",
+    "surviving_descendants",
+    "detached_descendants"
+  ],
+  "title": "Resource observation record with v2 execution admission",
+  "type": "object",
+  "properties": {
+    "executor_contract": {
+      "const": "pldr-resource-execution-v2"
+    }
+  }
+}

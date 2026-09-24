@@ -1,0 +1,23 @@
+{
+  "analyzers": [
+    "experiments/analysis/analyze_chronological_confirmation.py",
+    "experiments/analysis/analyze_chronological_plga.py",
+    "experiments/analysis/analyze_chronological_intervention.py"
+  ],
+  "campaign_id": "pldr-chronological-collapse-confirmation-v1",
+  "compact_evidence_only": true,
+  "producers": [
+    "experiments/train_run.py",
+    "experiments/confirm/capture_chronological_confirmation.py",
+    "experiments/confirm/capture_chronological_plga.py",
+    "experiments/confirm/run_chronological_intervention.py"
+  ],
+  "schema_version": "pldr-chronological-confirmation-design-v1",
+  "stage": {
+    "id": "Q",
+    "requires": [],
+    "stop_on_failure": true,
+    "title": "code and algebra qualification"
+  },
+  "stop_on_failure": true
+}

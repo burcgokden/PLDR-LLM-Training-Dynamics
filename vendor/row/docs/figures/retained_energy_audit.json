@@ -1,0 +1,876 @@
+{
+  "analysis_role": "cpu-only-retained-record-audit",
+  "cancellation_concentration": {
+    "by_layer": {
+      "0": 1,
+      "1": 1,
+      "2": 4
+    },
+    "by_trajectory": {
+      "transfer-seed11444": 1,
+      "transfer-seed12444": 5
+    },
+    "cancellation_dominant_total": 6,
+    "interpretation": "descriptive-finite-concentration-only",
+    "largest_trajectory_count": 5,
+    "layer_two_count": 4
+  },
+  "conclusions": {
+    "asymptotic_collapse_is_not_inferred": true,
+    "dense_reopening_is_observed": true,
+    "full_map_work_charge_identity_replays": true,
+    "missing_arrays_are_not_reconstructed": true
+  },
+  "dense_scalar_energy_archive": {
+    "campaign_id": "pldr-mixed-row-map-collapse-v1",
+    "captured_update_edges": 1056,
+    "energy_and_reopening_status": "evaluable-from-retained-scalar-energy",
+    "gate_shape_reason": "final-gates-and-squared-coordinate-shape-energies-do-not-determine-signed-centered-normalized-shape-secants",
+    "gate_shape_status": "not-evaluable-from-retained-records",
+    "independent_replay": {
+      "all_within_fixed_float64_tolerance": true,
+      "recorded_summary_statistics_checked_per_window": 16,
+      "windows_checked": 18
+    },
+    "layer_rows": [
+      {
+        "layer": 0,
+        "map_increments": 101376,
+        "positive_energy_increments": 42918,
+        "positive_fraction": 0.42335464015151514
+      },
+      {
+        "layer": 1,
+        "map_increments": 101376,
+        "positive_energy_increments": 43790,
+        "positive_fraction": 0.4319562815656566
+      },
+      {
+        "layer": 2,
+        "map_increments": 101376,
+        "positive_energy_increments": 45040,
+        "positive_fraction": 0.4442866161616162
+      }
+    ],
+    "log_sha256": {
+      "A": "38bfb6f730d1892787a54e65718fa96a20dfb4000857a0000aef4c1cdc42914a",
+      "B": "7f4329bb6f69187913465134cafb32a27e783aa4f7b2e7a945ac81fb023b1e58",
+      "C": "b888d5dd90c6052a3e036d5163c9cc661dd2829aaa573634db63b2ec13c549bd"
+    },
+    "manifest_sha256": "fd6e12ee8f21856019aeb2719ef8e4757f22b141b21027e0774e99dab0cdb861",
+    "map_increments": 304128,
+    "maximum_one_step_reopening": 112.65652082125979,
+    "nonpositive_energy_increments": 172380,
+    "positive_energy_increments": 131748,
+    "positive_fraction": 0.4331991792929293,
+    "positive_reopening_charge": {
+      "maximum": 112.65652082125979,
+      "median": 0.0,
+      "minimum": 0.0,
+      "p90": 1.631477097661452
+    },
+    "recorded_analysis_sha256": "f68656675ca0b147384f420fd4f28b15c57c77372be6dd9505bbb9a0a95a5f6e",
+    "retained_array_availability": {
+      "centered_normalized_shape": false,
+      "final_gate": true,
+      "normalized_shape_coordinate_energy": true,
+      "physical_row_maps": false
+    },
+    "specification_sha256": "af6534dad5316d4dd81c0cf822060c6b4ac2e0ae65ac0d07bd05b979a75c316b",
+    "trajectory_count": 3,
+    "trajectory_rows": [
+      {
+        "captured_update_edges": 352,
+        "label": "A",
+        "map_increments": 101376,
+        "maps_with_any_reopening": 288,
+        "maximum_one_step_reopening": 93.3489821372707,
+        "nonpositive_energy_increments": 55158,
+        "positive_energy_increments": 46218,
+        "positive_fraction": 0.4559067234848485,
+        "positive_variation": {
+          "maximum": 1038.1966081913586,
+          "median": 64.08563387263786,
+          "minimum": 8.260732247276794,
+          "p90": 536.191892894183
+        },
+        "trajectory": "construction-seed10444",
+        "windows": [
+          {
+            "center": 1024,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 298.50923818440606,
+              "median": 17.193694709267447,
+              "minimum": 0.0,
+              "p90": 193.2221086193743
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 0.15545979866355367,
+              "median": 0.005869878247891045,
+              "minimum": 0.0,
+              "p90": 0.0815678678827073
+            },
+            "exact_positive_variation": {
+              "maximum": 338.6822679893553,
+              "median": 55.93941296441244,
+              "minimum": 7.1706280362104735,
+              "p90": 241.19845900731252
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 0.17638139949295337,
+              "median": 0.019136409775744035,
+              "minimum": 0.0023888333149465614,
+              "p90": 0.11077483104228579
+            },
+            "left": 992,
+            "maps_with_reopening": 288,
+            "right": 1056
+          },
+          {
+            "center": 4096,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 291.68974440462114,
+              "median": 0.6847979376061497,
+              "minimum": 0.0,
+              "p90": 65.49288846731366
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 2.30906972855704,
+              "median": 0.046250568801379635,
+              "minimum": 0.0,
+              "p90": 0.19866383668182588
+            },
+            "exact_positive_variation": {
+              "maximum": 835.4465221181573,
+              "median": 1.5310661296522117,
+              "minimum": 0.004678782485595834,
+              "p90": 178.69202201967084
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 4.064787196267907,
+              "median": 0.12094301397246596,
+              "minimum": 0.0028702698170312724,
+              "p90": 0.6496232650800574
+            },
+            "left": 4064,
+            "maps_with_reopening": 288,
+            "right": 4128
+          },
+          {
+            "center": 8192,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 90.63250707256202,
+              "median": 4.673481875677746,
+              "minimum": 0.0,
+              "p90": 56.96365269628579
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 3.6240473303227168,
+              "median": 0.07195622966784644,
+              "minimum": 0.0,
+              "p90": 2.050103596121142
+            },
+            "exact_positive_variation": {
+              "maximum": 90.64484031341526,
+              "median": 15.527466211947939,
+              "minimum": 0.2964008743049006,
+              "p90": 61.80403010080638
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 3.917264851735772,
+              "median": 0.12590392728712918,
+              "minimum": 0.004870732438160374,
+              "p90": 2.42182716191005
+            },
+            "left": 8160,
+            "maps_with_reopening": 288,
+            "right": 8224
+          },
+          {
+            "center": 16384,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 66.00666077972653,
+              "median": 4.71197127450408,
+              "minimum": 0.0,
+              "p90": 21.28710621972787
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 0.2775125875678065,
+              "median": 0.031152170579074212,
+              "minimum": 0.0,
+              "p90": 0.10469170089208117
+            },
+            "exact_positive_variation": {
+              "maximum": 72.36948912917896,
+              "median": 9.566640604660819,
+              "minimum": 0.04688430525851606,
+              "p90": 31.684334773242178
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 0.30426390233888606,
+              "median": 0.06536651921904693,
+              "minimum": 0.0065064649862207,
+              "p90": 0.15343598190112195
+            },
+            "left": 16352,
+            "maps_with_reopening": 288,
+            "right": 16416
+          },
+          {
+            "center": 32768,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 15.980457340815576,
+              "median": 0.2619826068987356,
+              "minimum": 3.549591552675334e-05,
+              "p90": 11.580824186671798
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 0.6686047009751724,
+              "median": 0.11771224267276952,
+              "minimum": 0.032395790954792475,
+              "p90": 0.39019348174056545
+            },
+            "exact_positive_variation": {
+              "maximum": 25.16776448168912,
+              "median": 0.3463792746908344,
+              "minimum": 9.45081746513776e-05,
+              "p90": 20.475764116530478
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 0.6996854902955914,
+              "median": 0.238286405793716,
+              "minimum": 0.10467437293957961,
+              "p90": 0.49021663068491994
+            },
+            "left": 32736,
+            "maps_with_reopening": 288,
+            "right": 32800
+          },
+          {
+            "center": 65536,
+            "edge_count": 32,
+            "exact_excursion": {
+              "maximum": 10.43454611111759,
+              "median": 1.9855863150552422e-15,
+              "minimum": 0.0,
+              "p90": 0.7639772266008068
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 7.114211744537689,
+              "median": 0.11549626677514262,
+              "minimum": 0.0,
+              "p90": 4.546944785041944
+            },
+            "exact_positive_variation": {
+              "maximum": 16.249209994876942,
+              "median": 1.1630393043941574e-14,
+              "minimum": 7.366543183985128e-15,
+              "p90": 11.033454618697187
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 30.049862972151935,
+              "median": 0.7994375528254587,
+              "minimum": 0.04439312226200751,
+              "p90": 18.16823980886005
+            },
+            "left": 65504,
+            "maps_with_reopening": 288,
+            "right": 65536
+          }
+        ]
+      },
+      {
+        "captured_update_edges": 352,
+        "label": "B",
+        "map_increments": 101376,
+        "maps_with_any_reopening": 288,
+        "maximum_one_step_reopening": 37.77774470152465,
+        "nonpositive_energy_increments": 64348,
+        "positive_energy_increments": 37028,
+        "positive_fraction": 0.36525410353535354,
+        "positive_variation": {
+          "maximum": 391.73278795496753,
+          "median": 48.96761074671987,
+          "minimum": 0.0004124539732269318,
+          "p90": 301.65524097963726
+        },
+        "trajectory": "transfer-seed11444",
+        "windows": [
+          {
+            "center": 1024,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 145.6425038321263,
+              "median": 0.0,
+              "minimum": 0.0,
+              "p90": 27.662708221753253
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 0.05489374236898038,
+              "median": 0.0,
+              "minimum": 0.0,
+              "p90": 0.009159214571077136
+            },
+            "exact_positive_variation": {
+              "maximum": 166.41171598742858,
+              "median": 16.56134502629243,
+              "minimum": 0.0,
+              "p90": 57.19769989572579
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 0.06272181282411336,
+              "median": 0.005465994444579953,
+              "minimum": 0.0,
+              "p90": 0.022825389508267426
+            },
+            "left": 992,
+            "maps_with_reopening": 261,
+            "right": 1056
+          },
+          {
+            "center": 4096,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 162.37048192226644,
+              "median": 10.919442057805554,
+              "minimum": 0.0,
+              "p90": 66.71745573414177
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 12945.298177485038,
+              "median": 0.01830859510832069,
+              "minimum": 0.0,
+              "p90": 3.647280694312552
+            },
+            "exact_positive_variation": {
+              "maximum": 221.82350706636885,
+              "median": 26.208565862463722,
+              "minimum": 0.0002582392537301836,
+              "p90": 164.3156545670515
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 12945.385648481673,
+              "median": 0.06132879565963381,
+              "minimum": 0.0004635999311147195,
+              "p90": 4.096763188061039
+            },
+            "left": 4064,
+            "maps_with_reopening": 288,
+            "right": 4128
+          },
+          {
+            "center": 8192,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 10.414240904273242,
+              "median": 0.0,
+              "minimum": 0.0,
+              "p90": 4.3059154873964404e-05
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 13.574416075719682,
+              "median": 0.0,
+              "minimum": 0.0,
+              "p90": 0.26923763570299214
+            },
+            "exact_positive_variation": {
+              "maximum": 70.12101573504708,
+              "median": 0.6689357807935075,
+              "minimum": 2.421487659671138e-07,
+              "p90": 43.256806403105756
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 13.574416075719682,
+              "median": 0.04403135110339412,
+              "minimum": 0.016699372325187006,
+              "p90": 0.3871060683642068
+            },
+            "left": 8160,
+            "maps_with_reopening": 288,
+            "right": 8224
+          },
+          {
+            "center": 16384,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 21.349272263075136,
+              "median": 0.0,
+              "minimum": 0.0,
+              "p90": 13.564600480180953
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 0.06478905293468809,
+              "median": 0.0,
+              "minimum": 0.0,
+              "p90": 0.03880885040567259
+            },
+            "exact_positive_variation": {
+              "maximum": 39.95600646619869,
+              "median": 0.00024240477249156019,
+              "minimum": 9.76080929590739e-07,
+              "p90": 30.310830620858013
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 0.11601038158737358,
+              "median": 0.02250654347747026,
+              "minimum": 0.005819684925238875,
+              "p90": 0.0887384332238436
+            },
+            "left": 16352,
+            "maps_with_reopening": 288,
+            "right": 16416
+          },
+          {
+            "center": 32768,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 11.092816182818186,
+              "median": 8.88507842158108e-05,
+              "minimum": 0.0,
+              "p90": 3.0109377173218133
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 13.47737894280797,
+              "median": 0.04608221255841989,
+              "minimum": 0.0,
+              "p90": 0.5313656277301974
+            },
+            "exact_positive_variation": {
+              "maximum": 42.85694184194767,
+              "median": 0.00013342108238458038,
+              "minimum": 1.2072521708014738e-08,
+              "p90": 10.264946207793628
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 45.459765910255584,
+              "median": 0.0710790805405821,
+              "minimum": 0.025406019715901892,
+              "p90": 1.4998043501920997
+            },
+            "left": 32736,
+            "maps_with_reopening": 288,
+            "right": 32800
+          },
+          {
+            "center": 65536,
+            "edge_count": 32,
+            "exact_excursion": {
+              "maximum": 4.395271309708755e-05,
+              "median": 8.742131596743018e-12,
+              "minimum": 0.0,
+              "p90": 9.465218634549465e-07
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 1.2137982599749388,
+              "median": 0.004956722988677265,
+              "minimum": 0.0,
+              "p90": 0.930053620527007
+            },
+            "exact_positive_variation": {
+              "maximum": 0.00011962363930519493,
+              "median": 9.133824108690171e-12,
+              "minimum": 2.894778211632823e-13,
+              "p90": 1.48534432732936e-05
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 1.2229510459155222,
+              "median": 0.18946699412465756,
+              "minimum": 0.03795806985703567,
+              "p90": 0.9456560728227605
+            },
+            "left": 65504,
+            "maps_with_reopening": 288,
+            "right": 65536
+          }
+        ]
+      },
+      {
+        "captured_update_edges": 352,
+        "label": "C",
+        "map_increments": 101376,
+        "maps_with_any_reopening": 288,
+        "maximum_one_step_reopening": 112.65652082125979,
+        "nonpositive_energy_increments": 52874,
+        "positive_energy_increments": 48502,
+        "positive_fraction": 0.47843671085858586,
+        "positive_variation": {
+          "maximum": 1024.1073925270439,
+          "median": 456.69675139430547,
+          "minimum": 38.56439294022258,
+          "p90": 721.7135337804938
+        },
+        "trajectory": "transfer-seed12444",
+        "windows": [
+          {
+            "center": 1024,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 327.71735468137877,
+              "median": 34.04731315773188,
+              "minimum": 13.691166961763884,
+              "p90": 196.21927999714083
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 0.20518896459905442,
+              "median": 0.011563921625893661,
+              "minimum": 0.004312356685607186,
+              "p90": 0.10587516311390376
+            },
+            "exact_positive_variation": {
+              "maximum": 399.82439587192744,
+              "median": 50.369130945862935,
+              "minimum": 26.9291871950536,
+              "p90": 297.0136038054921
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 0.2503363115760705,
+              "median": 0.0173975063065965,
+              "minimum": 0.008481984096963756,
+              "p90": 0.1622690417028005
+            },
+            "left": 992,
+            "maps_with_reopening": 288,
+            "right": 1056
+          },
+          {
+            "center": 4096,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 353.70332015070335,
+              "median": 51.95681534517669,
+              "minimum": 0.0,
+              "p90": 222.05296724392588
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 1.0395995586018654,
+              "median": 0.12790892120997382,
+              "minimum": 0.0,
+              "p90": 0.4408165743977439
+            },
+            "exact_positive_variation": {
+              "maximum": 590.6670571079189,
+              "median": 149.59779100205543,
+              "minimum": 6.709615540688446,
+              "p90": 339.18866250237227
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 1.744453541819657,
+              "median": 0.3094240125833806,
+              "minimum": 0.0051783023361352334,
+              "p90": 0.7982519588060453
+            },
+            "left": 4064,
+            "maps_with_reopening": 288,
+            "right": 4128
+          },
+          {
+            "center": 8192,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 234.99743701434295,
+              "median": 0.0,
+              "minimum": 0.0,
+              "p90": 136.46871642259705
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 0.34519955236267635,
+              "median": 0.0,
+              "minimum": 0.0,
+              "p90": 0.17541368728820614
+            },
+            "exact_positive_variation": {
+              "maximum": 240.18229386420194,
+              "median": 19.382851774084884,
+              "minimum": 0.016576089496410873,
+              "p90": 145.0103231309173
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 0.34985602009534933,
+              "median": 0.04679738348983166,
+              "minimum": 0.00023076148403859136,
+              "p90": 0.18484914856871384
+            },
+            "left": 8160,
+            "maps_with_reopening": 288,
+            "right": 8224
+          },
+          {
+            "center": 16384,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 54.48020146624833,
+              "median": 3.9542570663300296,
+              "minimum": 0.0,
+              "p90": 36.933073267026515
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 6.5103503215339344,
+              "median": 0.07758007653403004,
+              "minimum": 0.0,
+              "p90": 0.3340611845196774
+            },
+            "exact_positive_variation": {
+              "maximum": 63.25398818320167,
+              "median": 28.156839583954365,
+              "minimum": 0.029156951242529178,
+              "p90": 52.19649194678694
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 16.89709556990726,
+              "median": 0.12200544888869344,
+              "minimum": 0.016984438834663215,
+              "p90": 0.837762563108093
+            },
+            "left": 16352,
+            "maps_with_reopening": 288,
+            "right": 16416
+          },
+          {
+            "center": 32768,
+            "edge_count": 64,
+            "exact_excursion": {
+              "maximum": 54.032186291339144,
+              "median": 1.392791808372607,
+              "minimum": 0.0,
+              "p90": 39.435298349580215
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 0.18950249865568125,
+              "median": 0.010021059105669595,
+              "minimum": 0.0,
+              "p90": 0.1470162507936661
+            },
+            "exact_positive_variation": {
+              "maximum": 112.69473717023584,
+              "median": 15.699092955768805,
+              "minimum": 2.0706131161124274e-08,
+              "p90": 88.34178428434083
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 0.4081513285834807,
+              "median": 0.0983503270112584,
+              "minimum": 0.004970488680905914,
+              "p90": 0.33889873332856796
+            },
+            "left": 32736,
+            "maps_with_reopening": 288,
+            "right": 32800
+          },
+          {
+            "center": 65536,
+            "edge_count": 32,
+            "exact_excursion": {
+              "maximum": 70.53635937572557,
+              "median": 1.819440570165943,
+              "minimum": 0.0,
+              "p90": 41.53457018482282
+            },
+            "exact_excursion_over_anchor": {
+              "maximum": 1.1577972451577332,
+              "median": 0.0826126446453196,
+              "minimum": 0.0,
+              "p90": 0.3282463978634676
+            },
+            "exact_positive_variation": {
+              "maximum": 102.1071805370683,
+              "median": 9.837328442279459,
+              "minimum": 1.1305058416443835e-14,
+              "p90": 81.72139006736683
+            },
+            "exact_positive_variation_over_anchor": {
+              "maximum": 7.185897119264865,
+              "median": 0.42617860452866296,
+              "minimum": 0.0783880729507713,
+              "p90": 3.943688582524183
+            },
+            "left": 65504,
+            "maps_with_reopening": 288,
+            "right": 65536
+          }
+        ]
+      }
+    ],
+    "work_charge_reason": "successive-physical-row-map-arrays-are-absent",
+    "work_charge_status": "not-evaluable-from-retained-records"
+  },
+  "float64_tolerance": {
+    "absolute": 2e-10,
+    "fixed_by": "direct-work-qualification-numerical-policy",
+    "relative": 2e-05
+  },
+  "release_id": "rev55",
+  "schema_version": "pldr-retained-energy-audit-v1",
+  "successive_physical_map_archive": {
+    "all_increments_within_fixed_float64_tolerance": true,
+    "campaign_id": "pldr-finite-increment-observable-balance-v1",
+    "energy_change": {
+      "maximum": 2.540901429218053,
+      "median": 0.02250453837611488,
+      "minimum": -125.37606712158492,
+      "p90": 0.9910228935463409
+    },
+    "gate_shape_reason": "successive-physical-maps-are-retained-without-matching-final-gate-and-centered-normalized-shape-arrays",
+    "gate_shape_status": "not-evaluable-from-retained-records",
+    "independent_values_compared": 3544992,
+    "map_increments": 864,
+    "maximum_identity_residual": 1.5019097077129118e-12,
+    "maximum_independent_implementation_disagreement": 1.9326762412674725e-12,
+    "maximum_stored_row_mean_absolute_value": 1.8998980522155762e-07,
+    "non_evaluable_families": {
+      "prediction": "one-physical-endpoint-only",
+      "qualification": "one-physical-endpoint-only",
+      "stratum_control": "row-quotients-without-physical-map-arrays",
+      "validation": "response-secants-without-base-physical-endpoints"
+    },
+    "nonpositive_energy_increments": 390,
+    "physical_pair_records": 9,
+    "positive_energy_increments": 474,
+    "positive_fraction": 0.5486111111111112,
+    "positive_reopening_charge": {
+      "maximum": 2.540901429218053,
+      "median": 0.02250453837611488,
+      "minimum": 0.0,
+      "p90": 0.9910228935463409
+    },
+    "provenance": {
+      "evidence_manifest_sha256": "a9c5c0e21cb81cd69282ec6e45ce52c880ead070d424bc81288bce9fa8a20497",
+      "runtime_manifest_sha256": "2b58f26a290542d64b0238f4fe21400538d92876d1ae6064090f26f97356f933",
+      "science_source_commit": "eab18471d1f1cfba22bdc4023347530c52ab891d",
+      "static_manifest_sha256": "309781c1df65484973caf04d1a6b66847ee40decb1656a9fa51ae1c69d43e72e"
+    },
+    "record_inventory": {
+      "construction": 9,
+      "prediction": 18,
+      "qualification": 1,
+      "stratum_control": 9,
+      "validation": 18
+    },
+    "records_total": 55,
+    "records_without_successive_physical_maps": 46,
+    "successive_horizon_pairs": 9,
+    "unit_rows": [
+      {
+        "endpoint_horizon": 2,
+        "layer": 0,
+        "map_increments": 96,
+        "maximum_reopening": 0.38289335377032785,
+        "nonpositive_energy_increments": 0,
+        "positive_energy_increments": 96,
+        "positive_fraction": 1.0,
+        "record": "construction-A-L0-S16384.npz",
+        "source_horizon": 1,
+        "source_step": 16384,
+        "trajectory": "construction-seed10444"
+      },
+      {
+        "endpoint_horizon": 2,
+        "layer": 0,
+        "map_increments": 96,
+        "maximum_reopening": 0.07181787361560055,
+        "nonpositive_energy_increments": 30,
+        "positive_energy_increments": 66,
+        "positive_fraction": 0.6875,
+        "record": "construction-A-L0-S4096.npz",
+        "source_horizon": 1,
+        "source_step": 4096,
+        "trajectory": "construction-seed10444"
+      },
+      {
+        "endpoint_horizon": 2,
+        "layer": 0,
+        "map_increments": 96,
+        "maximum_reopening": 1.195063871617208,
+        "nonpositive_energy_increments": 0,
+        "positive_energy_increments": 96,
+        "positive_fraction": 1.0,
+        "record": "construction-A-L0-S8192.npz",
+        "source_horizon": 1,
+        "source_step": 8192,
+        "trajectory": "construction-seed10444"
+      },
+      {
+        "endpoint_horizon": 2,
+        "layer": 1,
+        "map_increments": 96,
+        "maximum_reopening": 0.0,
+        "nonpositive_energy_increments": 96,
+        "positive_energy_increments": 0,
+        "positive_fraction": 0.0,
+        "record": "construction-A-L1-S16384.npz",
+        "source_horizon": 1,
+        "source_step": 16384,
+        "trajectory": "construction-seed10444"
+      },
+      {
+        "endpoint_horizon": 2,
+        "layer": 1,
+        "map_increments": 96,
+        "maximum_reopening": 0.0,
+        "nonpositive_energy_increments": 96,
+        "positive_energy_increments": 0,
+        "positive_fraction": 0.0,
+        "record": "construction-A-L1-S4096.npz",
+        "source_horizon": 1,
+        "source_step": 4096,
+        "trajectory": "construction-seed10444"
+      },
+      {
+        "endpoint_horizon": 2,
+        "layer": 1,
+        "map_increments": 96,
+        "maximum_reopening": 0.47366833949947384,
+        "nonpositive_energy_increments": 0,
+        "positive_energy_increments": 96,
+        "positive_fraction": 1.0,
+        "record": "construction-A-L1-S8192.npz",
+        "source_horizon": 1,
+        "source_step": 8192,
+        "trajectory": "construction-seed10444"
+      },
+      {
+        "endpoint_horizon": 2,
+        "layer": 2,
+        "map_increments": 96,
+        "maximum_reopening": 1.3729390018166896,
+        "nonpositive_energy_increments": 21,
+        "positive_energy_increments": 75,
+        "positive_fraction": 0.78125,
+        "record": "construction-A-L2-S16384.npz",
+        "source_horizon": 1,
+        "source_step": 16384,
+        "trajectory": "construction-seed10444"
+      },
+      {
+        "endpoint_horizon": 2,
+        "layer": 2,
+        "map_increments": 96,
+        "maximum_reopening": 2.540901429218053,
+        "nonpositive_energy_increments": 92,
+        "positive_energy_increments": 4,
+        "positive_fraction": 0.041666666666666664,
+        "record": "construction-A-L2-S4096.npz",
+        "source_horizon": 1,
+        "source_step": 4096,
+        "trajectory": "construction-seed10444"
+      },
+      {
+        "endpoint_horizon": 2,
+        "layer": 2,
+        "map_increments": 96,
+        "maximum_reopening": 2.460736041991254,
+        "nonpositive_energy_increments": 55,
+        "positive_energy_increments": 41,
+        "positive_fraction": 0.4270833333333333,
+        "record": "construction-A-L2-S8192.npz",
+        "source_horizon": 1,
+        "source_step": 8192,
+        "trajectory": "construction-seed10444"
+      }
+    ]
+  }
+}

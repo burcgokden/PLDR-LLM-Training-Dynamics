@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "parent_source_sha256",
+    "source_parameter_sha256",
+    "successor_values_used",
+    "validation_method",
+    "remainder_lower",
+    "remainder_upper",
+    "endpoint_contrast_norm_upper",
+    "native_contrast_radius",
+    "metadata_json"
+  ],
+  "title": "Validated source-segment remainder enclosure",
+  "type": "object"
+}

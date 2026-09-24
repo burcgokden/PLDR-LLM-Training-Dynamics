@@ -1,0 +1,247 @@
+{
+  "schema": "modelrg-claim-index-v1",
+  "claims": [
+    {
+      "id": "C1",
+      "title": "Compatible complete laws",
+      "primary": true,
+      "assumptions": "One conditioned law; full parameters, optimizer memory, remaining identities, clocks and shared observation measure.",
+      "proof_labels": [
+        "sec:maps",
+        "sec:data-resource"
+      ],
+      "evidence": "Recorded single-pass histories and native replay.",
+      "evidence_labels": [
+        "sec:matched-clock-results"
+      ],
+      "replication_unit": "A complete initialization, conditional on the corpus and order.",
+      "cost": "Native path acquisition; exact composition itself requires no fitted coefficients.",
+      "open_obligation": "An economical retained state needs an additional successor law.",
+      "route": "law"
+    },
+    {
+      "id": "C2",
+      "title": "Native signed class",
+      "primary": true,
+      "assumptions": "Head-sign invariant initialization and optimizer, uniformly bounded signed operators, convergent orbit-covariance law.",
+      "proof_labels": [
+        "prop:native-head-sign-symmetry",
+        "thm:native-sign-gaussian-mixture"
+      ],
+      "evidence": "Complete operator observations distinguish signed and invariant fluctuations.",
+      "evidence_labels": [
+        "sec:critical-independent-results"
+      ],
+      "replication_unit": "Whole initialization; heads and decoders are inner observations.",
+      "cost": "Retained all-head fields from the completed single-pass family.",
+      "open_obligation": "Trained covariance convergence; deterministic Gaussian behavior additionally needs covariance concentration.",
+      "route": "singlepass"
+    },
+    {
+      "id": "C3",
+      "title": "Conditional training reduction",
+      "primary": true,
+      "assumptions": "Evolving-law successor defect, coarse stability, initial-law discrepancy and emission error.",
+      "proof_labels": [
+        "prop:law-closure",
+        "prop:finite-optimizer"
+      ],
+      "evidence": "Moment-only interventions and source-return observations retain memory and representation errors.",
+      "evidence_labels": [
+        "app:finite-native-transport"
+      ],
+      "replication_unit": "Paired continuations conditional on complete incoming states.",
+      "cost": "Native continuation and coefficient acquisition are included in the study-specific budgets.",
+      "open_obligation": "Held-out multistep successor accuracy and total cost advantage for an autonomous reduction.",
+      "route": "closure"
+    },
+    {
+      "id": "C4",
+      "title": "Finite collective row flow",
+      "primary": true,
+      "assumptions": "Nonzero endpoint energies, fixed averaging, actual chronological increments; derivative bounds additionally need small relative increments.",
+      "proof_labels": [
+        "prop:collective-clock",
+        "lem:finite-defect",
+        "cor:row-path-error",
+        "prop:finite-flux-forecast",
+        "prop:energy-cocycle",
+        "prop:temporal-energy"
+      ],
+      "evidence": "Eight single updates, sixteen fixed-count continuations and sixteen equal-duration continuations resolve finite transport and energy-coordinate blocking. Every derivative diagnostic is retained. Complete signed temporal energy is reconstructed independently by ordered pair products on all 64 equal-duration cells.",
+      "evidence_labels": [
+        "sec:collective-flux-results",
+        "sec:row-path-results",
+        "app:row-quadrature",
+        "sec:equal-time-flux"
+      ],
+      "replication_unit": "One initialization for single updates; two other initialization identities reused by both continuation studies.",
+      "cost": "8 single-update steps and 40 forwards; fixed-count paths: 128 steps and 272 forwards. Equal-duration paths: 1,600 executed updates (128 prefix replays and 1,472 additional updates), 3,216 forwards. Separate quadrature: 8 replays and 272 forwards.",
+      "open_obligation": "A flux successor law and uniform accumulated generator-remainder control.",
+      "route": "row / equal-time"
+    },
+    {
+      "id": "C5",
+      "title": "Source and physical clocks",
+      "primary": true,
+      "assumptions": "Specified width, resource and time family and matched Adam memory; reference covariance uses a frozen population and deterministic transports.",
+      "proof_labels": [
+        "prop:matched-memory-force",
+        "prop:consuming-bridge",
+        "cor:consuming-clock"
+      ],
+      "evidence": "48 paths at four widths and four controls; complete 64 field and 26 cache cells.",
+      "evidence_labels": [
+        "sec:matched-clock-results"
+      ],
+      "replication_unit": "Three whole initialization identities, paired across width/control/age; one fixed corpus/order.",
+      "cost": "76,800 scientific updates, 3.391 aggregate GPU worker-hours; qualification and replay separate.",
+      "open_obligation": "A trained limit and native reference-remainder estimates; independent corpus variability.",
+      "route": "clock"
+    },
+    {
+      "id": "C6",
+      "title": "Predictive and cache reduction",
+      "primary": true,
+      "assumptions": "Common reference for nested observation; state-specific calibration, complete context-risk and operator-displacement budgets.",
+      "proof_labels": [
+        "prop:finite-density",
+        "prop:tail-risk"
+      ],
+      "evidence": "All stated state-calibrated aggregate targets pass on the two disjoint state panels; unchanged-initial-cache controls and context exceptions remain visible.",
+      "evidence_labels": [
+        "sec:cache-state-results",
+        "app:cache-state-details"
+      ],
+      "replication_unit": "Whole initialization with paired contexts; context counts do not add trained models.",
+      "cost": "Inference-only acquisition, calibration and timing costs remain separated in the complete study records.",
+      "open_obligation": "Population guarantees and justified downstream sensitivity; workload-specific timing does not establish general throughput.",
+      "route": "cache"
+    },
+    {
+      "id": "C7",
+      "title": "Conditional critical scaling",
+      "primary": true,
+      "assumptions": "Declared resource limit, physical response and forcing scales, and nonvanishing predictive coupling.",
+      "proof_labels": [
+        "cor:colored-exponents",
+        "prop:selection-window"
+      ],
+      "evidence": "Finite kinetic observations and covariance/response controls delimit the applicable conditional theory.",
+      "evidence_labels": [
+        "sec:critical-independent-results"
+      ],
+      "replication_unit": "Whole paths and initialization identities at fixed corpus law.",
+      "cost": "Completed native measurements and finite reference controls only.",
+      "open_obligation": "Native critical exponents, a critical surface, restoring feedback and inference persistence remain unestablished.",
+      "route": "critical"
+    },
+    {
+      "id": "S1",
+      "title": "Moment precision and acquisition",
+      "primary": false,
+      "assumptions": "Deterministic linear blocking, finite moments, fixed regularization, relative mean and covariance control.",
+      "proof_labels": [
+        "prop:moment-blocking",
+        "prop:moment-precision",
+        "prop:correlation-transfer"
+      ],
+      "evidence": "Primary outer risk favors local prediction in 4/8 states and transfer in 6/8; both secondary joint scores favor 8/8 at all three scales.",
+      "evidence_labels": [
+        "app:evidence-scope"
+      ],
+      "replication_unit": "Incoming state; the local conditional paths are its inner sample.",
+      "cost": "16 paths of 64 updates acquire each local mean/scale (1,024 updates); 32 assessment paths add 2,048 updates. Zero-adaptation means miss the 0.01-nat maximum target in all eight states.",
+      "open_obligation": "Population-relative precision and an autonomous moment successor.",
+      "route": "moments"
+    },
+    {
+      "id": "S2",
+      "title": "Calibration and state adaptation",
+      "primary": false,
+      "assumptions": "Conditional exchangeability; adaptation-fixed center/scales and explicit source-edit coupling.",
+      "proof_labels": [
+        "prop:calibrated-scale-images",
+        "prop:state-moment-reuse",
+        "prop:resource-edit-coupling"
+      ],
+      "evidence": "16 parent/successor states, two fit cohorts and 512 assessment paths; refitting lowers primary scores in all 16 successor/fit cells per candidate.",
+      "evidence_labels": [
+        "app:evidence-scope"
+      ],
+      "replication_unit": "Conditional path at its declared incoming state.",
+      "cost": "Eight further calibration paths add 512 updates per state; 237/256 assessment paths are covered, with endpoint half-widths 0.120--0.275 nats.",
+      "open_obligation": "Uniform mean accuracy, population drift control and economical reuse.",
+      "route": "moments"
+    },
+    {
+      "id": "S3",
+      "title": "Finite pulses and optimizer memory",
+      "primary": false,
+      "assumptions": "Complete-state coupling and symmetric/antisymmetric response; fixed-gradient finite moment identities.",
+      "proof_labels": [
+        "prop:finite-pulse",
+        "prop:finite-optimizer"
+      ],
+      "evidence": "288 long and 144 short paired continuations retain all amplitudes, arithmetic controls and signed covariance sectors.",
+      "evidence_labels": [
+        "app:finite-native-transport"
+      ],
+      "replication_unit": "Paired continuation from a complete incoming state.",
+      "cost": "All branch, replay and qualification roles are retained in the execution ledger.",
+      "open_obligation": "Uniform derivative control, native gap/forcing law and naturally sampled memory generalization.",
+      "route": "closure"
+    },
+    {
+      "id": "S4",
+      "title": "Inference-null mode",
+      "primary": false,
+      "assumptions": "Excluded input support and untied input embeddings.",
+      "proof_labels": [
+        "prop:invisible-decay"
+      ],
+      "evidence": "Four fresh paired comparisons match row decay while preserving every saved logit.",
+      "evidence_labels": [
+        "prop:invisible-decay"
+      ],
+      "replication_unit": "Fixed incoming state and paired intervention.",
+      "cost": "Four recorded paired comparisons; no new pretraining sample.",
+      "open_obligation": "Visibility under a changed input law.",
+      "route": "visibility"
+    },
+    {
+      "id": "S5",
+      "title": "Finite training selection",
+      "primary": false,
+      "assumptions": "Matched objectives, ordered distinct blocks, initialization and complete optimizer/schedule.",
+      "proof_labels": [
+        "sec:training-selection-main"
+      ],
+      "evidence": "A four-width, three-seed matched family favors cosine risk in all twelve pairs; row-contrast changes have both signs.",
+      "evidence_labels": [
+        "sec:training-selection-main"
+      ],
+      "replication_unit": "Three whole initializations paired across conditions.",
+      "cost": "24 paths and 24,576 scientific updates; 64 qualification replay updates counted separately.",
+      "open_obligation": "Corpus-law replication and a selection mechanism; row suppression alone does not establish lower target NLL.",
+      "route": "singlepass"
+    },
+    {
+      "id": "S6",
+      "title": "Inference task fidelity",
+      "primary": false,
+      "assumptions": "Proper-prefix observations, intervention bounds and adequate correct-answer margins.",
+      "proof_labels": [
+        "prop:task-margin"
+      ],
+      "evidence": "Full-vocabulary interventions and premise-pair evaluations.",
+      "evidence_labels": [
+        "prop:task-margin"
+      ],
+      "replication_unit": "Checkpoint and paired proper-prefix task context.",
+      "cost": "Native evaluation and intervention calls, with retained task-level outcomes.",
+      "open_obligation": "Acquisition of premise-sensitive competence and broader task transfer.",
+      "route": "visibility"
+    }
+  ]
+}

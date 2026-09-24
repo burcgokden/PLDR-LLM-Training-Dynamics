@@ -1,0 +1,34 @@
+{
+  "analyzer": "experiments/analysis/analyze_observable_margin.py",
+  "campaign_id": "observable-margin-confirmation-rev37",
+  "evidence": "compact-npz-no-raw-parameter-nodes",
+  "executor": "scripts/execute_observable_margin_plan.py",
+  "native_producer": "experiments/confirm/observable_margin_live.py",
+  "planner": "experiments/confirm/run_observable_margin_confirmation.py",
+  "robustness_scientific_gate": null,
+  "schema_version": "pldr-observable-margin-protocol-v1",
+  "stage": {
+    "attempt_rule": "append-only-positive-integer-attempts",
+    "dependencies": [
+      "B"
+    ],
+    "gpu_hour_cap": 8.0,
+    "hard_gate": true,
+    "id": "H",
+    "record_key": "STAGE:job_id",
+    "required_checks": [
+      "fisher",
+      "signed_jet",
+      "force",
+      "nonlinear",
+      "clip",
+      "preconditioner",
+      "lag",
+      "sector_vector_sum",
+      "actual_adaptive_direction_replay",
+      "float64_shadow"
+    ],
+    "title": "Executed loss-bridge sectors"
+  },
+  "status": "WAITING_FOR_FRESH_CHECKPOINTS"
+}

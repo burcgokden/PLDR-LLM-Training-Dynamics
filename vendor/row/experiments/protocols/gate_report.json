@@ -1,0 +1,259 @@
+{
+ "order": "gate 0 (theory, units, box, constants) runs and must pass BEFORE any power computation",
+ "b_gap_display": "c_- \\ge \\frac{d_0^{\\sup}}{\\mu_b} + \\frac{A_{\\max}}{\\eta_-\\,\\mu_b} + \\delta_b",
+ "classes": {
+  "[thm]": "theorem hypothesis or theorem constant at the planning constants (available planning-instance gates)",
+  "[orbit]": "property of one selected planning trajectory (realized path, not a box-quantified certificate)",
+  "[unit]": "declared unit or convention consistency",
+  "[box]": "certificate box or certified band",
+  "[stack]": "calibration vs training stack",
+  "deferred": "E0-measured registry hypotheses are NOT checked here; protocols carry them as typed deferred values (listed in the deferred block below)"
+ },
+ "counts": {
+  "[thm]": {
+   "passed": 16,
+   "failed": 0
+  },
+  "[unit]": {
+   "passed": 6,
+   "failed": 0
+  },
+  "[orbit]": {
+   "passed": 9,
+   "failed": 0
+  },
+  "[box]": {
+   "passed": 4,
+   "failed": 0
+  },
+  "[stack]": {
+   "passed": 3,
+   "failed": 0
+  }
+ },
+ "checks": [
+  {
+   "name": "[thm] invariant power cap and clamp margin (S+)",
+   "ok": true,
+   "detail": "Z_cap = 0.0251, u_max = 0.0018 <= 1 (the clamp never binds on the box)"
+  },
+  {
+   "name": "[thm] strict global margin: u_max <= 1 - delta_u",
+   "ok": true,
+   "detail": "u_max = 0.0018 <= 0.95 (slack delta_u = 0.05: the logarithmic drain law and the positive lower reset factor hold with explicit constants on the whole box, never at the boundary u_max = 1)"
+  },
+  {
+   "name": "[thm] event termination bound and licensed reset interval",
+   "ok": true,
+   "detail": "N <= 932 steps; retained fraction in [0.2832, 1.0000]"
+  },
+  {
+   "name": "[thm] entry gap (B-gap, per-step arrival envelope) and gap-domain resolver fuel",
+   "ok": true,
+   "detail": "delta_b = 0.150, slack = 0.1500 >= 0 (the normative inequality c_- >= d0_sup/mu_b + A_max/(eta_-*mu_b) + delta_b of Lem. bgap, serialized from theory.b_gap_slack / B_GAP_LATEX; A_max = 0.0 at beta = 0); (T-sep) corollary-tier slack 0.1495, reported, never gated; granted gap-domain fuel (bound + 1, strict indexing) 1710 <= the instantiated whole-box fuel 11485.  This inequality is also the (R-gap) hypothesis of the recurrent clause of the closure: every recurrent-cycle event enters on the gap domain and exits cold"
+  },
+  {
+   "name": "[thm] uniform whole-box fuel (no-rejection self-map of the settled step; fuel is data, single-sourced)",
+   "ok": true,
+   "detail": "granted fuel N* + 1 = 11485 = the instantiated fuel of every executable step and event the generator runs (no hidden default) (N* = max of the b <= c middle-region bound 11484 and the b > c overloaded bound; overloaded region EMPTY at this box (b_max = 0.1 <= c_min = 0.4; its constituent is zero by region emptiness, never by silence); +1 is the strict-indexing convention: the resolver checks the exit at the top of each iteration; the resolver's Exhausted branch is unreachable from the box at or above this granted fuel, with th_J >= theta_- > 0, y_floor > 0, and tau_z > y_floor/b_sat, and every ended event emits through the terminal settlement E-settle)"
+  },
+  {
+   "name": "[thm] two-phase retention floor verified against run_event on an entry grid",
+   "ok": true,
+   "detail": "floor 0.5168 <= worst realized retention 0.7277 over 18 grid events (uniform over gap-domain entries, independent of event length; Lem. retention)"
+  },
+  {
+   "name": "[thm] B-gap formula divergence control (normative gate fails where the per-cycle form passes)",
+   "ok": true,
+   "detail": "at (c, d0, mu_b, A, eta, delta_b) = (0.5, 0.02, 0.1, 0.05, 0.05, 0.1): normative slack -9.8 < 0, per-cycle slack 0.149 > 0; the generator gates on the normative inequality only"
+  },
+  {
+   "name": "[thm] coupled B-gap instance (nonzero arrivals through the per-step envelope)",
+   "ok": true,
+   "detail": "A_max = 3.75e-04 (column-sum ceiling b_c <= 7.50e-04 at pi_max = 0.50), amplified term A_max/(eta_-*mu_b) = 0.075, slack = 0.0750 >= 0: the coupled envelope is exercised at generation, not only at beta = 0"
+  },
+  {
+   "name": "[thm] carrier post-arrival stress ceiling (eta* X'_max <= 1)",
+   "ok": true,
+   "detail": "X'_max = B_max + A_max + kappa*u_max^2 = 1.100, eta* X'_max = 0.0550 <= 1 (the multiplier the smooth carrier update actually reads is bounded at the post-arrival, pre-reversion base)"
+  },
+  {
+   "name": "[thm] single-clock identity (exact log-drain law, enclosure, exit margin, and bounds, on a planning event through run_event)",
+   "ok": true,
+   "detail": "N = 237, identity residual 4.44e-16, exact drain 0.4121 in [0.4119, 0.4126]"
+  },
+  {
+   "name": "[unit] terminal settlement identity on the gap domain (E-settle; cold exits untouched)",
+   "ok": true,
+   "detail": "planning event: exit_type = cold, d_set = 0.0, w_end == w_exit bit-equal (settlement is the identity on every cold exit)"
+  },
+  {
+   "name": "[thm] settled ended-event carrier floor on a hot-exit entry (|w+| <= sqrt(z_floor))",
+   "ok": true,
+   "detail": "overloaded entry b = c + 0.2: ended in 213 steps, exit_type = hot, pre-settlement |w_exit| = 0.3266, settled |w_end| = 0.0447 <= sqrt(z_floor) = 0.0447, settled power d_set = 0.1047 ledgered (E-settle: the exit applies the same truncation discipline as the seeded entry)"
+  },
+  {
+   "name": "[orbit] captured/gate-held planning instances (capture collapses the jet within the printed bound; the constant schedule maintains it)",
+   "ok": true,
+   "detail": "captured: entry 3582 <= bound 3583, topples 0; gate-held: topples 715, min J 0.483 > J_crit 0.1 (a realized-path check; the certificate check is the maintenance gate below)"
+  },
+  {
+   "name": "[orbit] separated burst-reload cycles (the two-phase (R-sep) maintenance arm: COMPLETED reloads, certified by the classifier)",
+   "ok": true,
+   "detail": "phenotype sep-window with 0 unseparated of 199 pairs, gate-closure fraction 1.00, max run 1, post-burn-in min J 0.484 > J_crit 0.1: every written reload expires strictly inside its gap and the gate closes between bursts"
+  },
+  {
+   "name": "[orbit] gate-held intermittent maintenance (the constant arm: overhanging reloads, certified by the classifier and the written-duration evidence)",
+   "ok": true,
+   "detail": "phenotype unsep-window with unseparated fraction 1.00, max run 1, min inter-event gap 7, every written reload at least its following gap: the constant schedule maintains the jet with the gate held open (event fast-clock length is a diagnostic, not a duration)"
+  },
+  {
+   "name": "[orbit] gate labels equal classifier phenotypes (captured, separated, gate-held planning orbits)",
+   "ok": true,
+   "detail": "captured: quiet-tail; separated: sep-window; gate-held: unsep-window: each planning orbit is located by the same classifier the decision rules consume"
+  },
+  {
+   "name": "[orbit] driven planning cell (the classification's third regime, executable)",
+   "ok": true,
+   "detail": "(O-reb) margin kappa*(a g)^2 - c = 0.500 > 0 at saturation eta*deltaJ0 = 2; the witness orbit topples at all 300 bounded global steps with the reload renewed while the base relaxes to 0.049 below c = 0.5: driven persistence, with base relaxation irrelevant to the guard"
+  },
+  {
+   "name": "[orbit] intermittent planning cell (the classification's fourth regime, executable)",
+   "ok": true,
+   "detail": "topple word (01)^20 at run length 1, unseparated pair fraction 1.00 with counter floor 99, hot-exit jet at or under 0.1 and rebuild band top 0.299 at or under 0.3: bounded bursts with incomplete reloads, the intermittent class inhabited"
+  },
+  {
+   "name": "[orbit] separated planning cell (the classification's second regime, executable)",
+   "ok": true,
+   "detail": "topple word (0001)^12 at run length 1, 0 unseparated of 11 pairs with gate-closure fraction 1.00, hot-exit jet at or under 0.1, base at its exact fixed point: every written reload completes strictly inside its gap, the separated class inhabited"
+  },
+  {
+   "name": "[orbit] window-phenotype classifier (five phenotypes, executable; finite windows never assign an asymptotic class)",
+   "ok": true,
+   "detail": "assigned (quiet-tail, long-run, sep-window, unsep-window, censored) on the five representative words: cessation, unit density, completed-reload cycles, the intermittent witness, and a short-window censoring"
+  },
+  {
+   "name": "[thm] overload resolution under headroom (O-head)",
+   "ok": true,
+   "detail": "last topple at global step 82 <= printed count N_res = 161; quiet through the checked margin (the guard is closed at the saturated-jet ceiling under the relaxed base)"
+  },
+  {
+   "name": "[thm] clipped floor ceiling and all-prefix nonsaturation certificate (J_floor <= 1 and (N-sat) <= 1, both tiers)",
+   "ok": true,
+   "detail": "theorem tier: J_floor = 0.143 <= 1 (the clipped floor comparison licenses (M-end) for the saturated transition with no envelope hypothesis), (N-sat) envelope max 0.143 <= 1 (the affine prefix envelope minorizes the clipped orbit; hypothesis of (M-prefix)/(M-avg-c)); orbit tier: J_floor = 0.539, (N-sat) 0.539.  These are the saturation certificates of the recurrent clause; an early oversized injection fails (N-sat) and refuses certification (the clipped-envelope witness is pinned by a test)"
+  },
+  {
+   "name": "[thm] maintenance certificates at the box worst case (M-end endpoint floor and M-avg-c computable cycle average vs J_crit; two-phase retention floor)",
+   "ok": true,
+   "detail": "r_min = 0.517 (two-phase retention floor, uniform over gap-domain entries), floor = 0.143 (M-end), cycle avg = 0.108 (M-avg-c) vs J_crit 0.1; prefix min = 0.074 (M-prefix), licensure: time-average; minimal running window 67 steps.  The theorem-tier instance passes the stroboscopic and time-average certificates (the measured phase criterion reads the time average); the pointwise clause holds at the orbit tier only and is stated at that strength"
+  },
+  {
+   "name": "[orbit] maintenance certificates at the measured cycle constants (endpoint floor, all-prefix minimum, cycle average vs J_crit)",
+   "ok": true,
+   "detail": "r_min = 0.877 (realized), n_act = 7 (gate indicator, never gap length), floor = 0.539, prefix min = 0.472, cycle avg = 0.505 vs J_crit 0.1; licensure: pointwise; minimal running window 8 steps (the measured criterion is a time average; pointwise additionally needs the all-prefix inequality); E5 reports all three quantities at both tiers and gates on the E0-measured tier"
+  },
+  {
+   "name": "[thm] capture envelope balance (b_sup + kappa*(a_sup*g*J)^2 <= c)",
+   "ok": true,
+   "detail": "a_sup = 1.000, b_sup = 0.100, slack = 0.540"
+  },
+  {
+   "name": "[thm] drive ceiling D_max dominates the loading rate",
+   "ok": true,
+   "detail": "D_max = 0.4100 (closed-form box supremum: d0_sup + 2*kappa*u_sup*(v_loss)_+ + defect, every sign-indefinite term bounded in the capture direction); planning loading rate 0.0000 <= eta*D_max = 0.0205; the anneal condition c(t+1) - c(t) >= eta_t*(D_max + C_D*eta_t) is computable from this value"
+  },
+  {
+   "name": "[unit] carrier unit identity (amplitude factor = sqrt(rho_w), relative to the SEEDED entry amplitude)",
+   "ok": true,
+   "detail": "rho_w = 0.200 (power), amplitude factor 0.4472; the reference value is |w_entry| of theory.seeded_entry (z_0 = w_entry^2 exactly), never the stored pre-event amplitude when the seed floor binds"
+  },
+  {
+   "name": "[unit] sharpness unit (flip (2-d)(1+beta1); eta*lambda = flip/(1-beta1))",
+   "ok": true,
+   "detail": "flip sigma 3.8, eta*lambda 38.0"
+  },
+  {
+   "name": "[unit] rate unit declared",
+   "ok": true,
+   "detail": "per-step log multiplier -log(1 - eta*theta)"
+  },
+  {
+   "name": "[unit] event-end convention declared (generalized exit; two-condition on the entry-gap domain)",
+   "ok": true,
+   "detail": "generalized exit (E-end): the event ends at the first step with (eps <= 0 OR y <= y_floor) AND z below the power gate (z_floor at nonpositive margin, eps/b_sat + tau_z at positive margin); on the entry-gap domain (B-gap) this reduces bit-exactly to the two-condition convention (first step with z < z_floor AND eps <= 0, exit margin in [b - c, 0]); the resolver is fuel-indexed and total, its Exhausted branch rejected by the map (one convention across map, theorems, Lean, generator, and measurement code)"
+  },
+  {
+   "name": "[unit] activity unit declared (reload duration, global steps)",
+   "ok": true,
+   "detail": "the activity counter is the RELOAD DURATION ceil((J_pre - J_post)/(eta*delta_J0)) in GLOBAL steps; the fast-clock iteration count is a diagnostic only"
+  },
+  {
+   "name": "[box] certificate box Jury margins",
+   "ok": true,
+   "detail": "gamma1 = 0.05, gamma2 = 0.3, K_s = 2.612e+06, K_q = 1.266e+08"
+  },
+  {
+   "name": "[box] schedule-implied decay parameters inside the box d-range",
+   "ok": true,
+   "detail": "d values [7.500000000000001e-05, 0.0001, 2.9999999999999997e-05] in [0.0, 0.0002]"
+  },
+  {
+   "name": "[box] finite-difference sanity statistic below the certified constant",
+   "ok": true,
+   "detail": "grid 3.396e+04 <= C_P 1.292e+08"
+  },
+  {
+   "name": "[box] certified band nonempty at the planning drift budget (edges reported; downward closure checked, never assumed)",
+   "ok": true,
+   "detail": "band [0.05, 3.4] at budget 0.00113; at_lo_edge = True, at_hi_edge = True, downward_closed = True; all stability language reads INSIDE the band (a scalar upper edge is a component edge, not a threshold)"
+  },
+  {
+   "name": "[stack] calibration optimizer eps equals train_run.py",
+   "ok": true,
+   "detail": "stack 1e-05, calibration 1e-05"
+  },
+  {
+   "name": "[stack] measure_fidelity.py eps equals the calibration",
+   "ok": true,
+   "detail": "fidelity 1e-05"
+  },
+  {
+   "name": "[stack] betas equal the calibration",
+   "ok": true,
+   "detail": "stack betas (0.9, 0.95)"
+  }
+ ],
+ "deferred": [
+  "C_phi",
+  "K_s_K_q_on_path_box",
+  "SC_constants",
+  "complete_source_increment_simultaneous_interval",
+  "decay_shares_per_factor",
+  "defect_window_stats",
+  "e6_pilot_cell_effect",
+  "e6_pilot_match_mean",
+  "e6_pilot_seed_weight",
+  "edge_state_increment_simultaneous_interval",
+  "f_max",
+  "gate_regression_deltaJ0",
+  "h_max",
+  "kappa_i",
+  "kappa_phi",
+  "loading_slope_se",
+  "path_box_containment",
+  "sigma_g2",
+  "stationary_threshold_regression",
+  "threshold_quotient_edge_state",
+  "z_min_seed"
+ ],
+ "tsep": {
+  "event_fast_steps": 237,
+  "sum_z": 1.7492520604745048,
+  "retained_fraction_sim": 0.8294698592642165,
+  "rec_min_gap": 7,
+  "rec_topple_frac": 0.143,
+  "sep_n_pairs": 199,
+  "sep_gate_closure": 1.0,
+  "sep_J_min": 0.48369998060669306
+ }
+}

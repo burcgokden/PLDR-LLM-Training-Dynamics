@@ -1,0 +1,62 @@
+{
+  "fixtures": {
+    "V5_scalar_order_sensitive_forcing": {
+      "endpoint": 0.25,
+      "factors": [
+        0.5,
+        0.25
+      ],
+      "forcing": [
+        1.0,
+        0.0
+      ],
+      "initial_energy": 0.0,
+      "permuted_endpoint": 1.0,
+      "permuted_forcing": [
+        0.0,
+        1.0
+      ],
+      "purpose": "Detect replacement of the chronological scalar forcing convolution by an order-insensitive sum or mean."
+    },
+    "V7_lifted_noncommuting": {
+      "forcing": [
+        [
+          0.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "initial": [
+        1.0,
+        -1.0
+      ],
+      "operators": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      ],
+      "purpose": "Test chronological products in the lifted recursion. Noncommutativity is not a scalar V5 claim."
+    }
+  },
+  "schema_version": "pldr-observable-margin-fixtures-v1"
+}

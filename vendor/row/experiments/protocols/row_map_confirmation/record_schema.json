@@ -1,0 +1,590 @@
+{
+  "$id": "pldr-row-map-direct-certificate-v8",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "media_type": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$",
+            "type": "string"
+          },
+          "path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "path",
+          "sha256",
+          "media_type"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "bindings": {
+      "additionalProperties": false,
+      "properties": {
+        "data_order": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "estimator_manifest": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "model": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "protocol": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "registration": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "schema": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "source": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "tokenizer": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "protocol",
+        "schema",
+        "registration",
+        "estimator_manifest",
+        "source",
+        "model",
+        "data_order",
+        "tokenizer"
+      ],
+      "type": "object"
+    },
+    "campaign_id": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$",
+      "type": "string"
+    },
+    "clocks": {
+      "additionalProperties": false,
+      "properties": {
+        "checkpoint_global_step": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "global_optimizer_step": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "segment_global_offset": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "segment_index": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "segment_local_step": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "global_optimizer_step",
+        "segment_index",
+        "segment_local_step",
+        "segment_global_offset",
+        "checkpoint_global_step"
+      ],
+      "type": "object"
+    },
+    "environment": {
+      "additionalProperties": false,
+      "properties": {
+        "device": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "dtype": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "git_commit": {
+          "pattern": "^[0-9a-f]{40}$",
+          "type": "string"
+        },
+        "numpy": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "python": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_tree_clean": {
+          "type": "boolean"
+        },
+        "torch": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "python",
+        "torch",
+        "numpy",
+        "device",
+        "dtype",
+        "git_commit",
+        "source_tree_clean"
+      ],
+      "type": "object"
+    },
+    "intervention": {
+      "additionalProperties": false,
+      "properties": {
+        "applied_after_optimizer": {
+          "type": "boolean"
+        },
+        "arm": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$",
+          "type": "string"
+        },
+        "assigned_dose": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "description": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "arm",
+        "assigned_dose",
+        "applied_after_optimizer",
+        "description"
+      ],
+      "type": "object"
+    },
+    "measurements": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "method": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "enum": [
+              "adamw_ledger_residual",
+              "anneal_floor",
+              "applied_learning_rate",
+              "auxiliary_budget_slack_min",
+              "avalanche_event_rate",
+              "avalanche_mean_duration",
+              "avalanche_mean_size",
+              "avalanche_mean_support",
+              "avalanche_tail_comparison",
+              "baseline_indicator",
+              "bias_corrected_step",
+              "block_lifted_budget_slack",
+              "block_product_convolution_upper",
+              "complete_defect_norm",
+              "complete_disturbance_envelope",
+              "complete_disturbance_norm",
+              "coordinate_motion_enclosure_ratio",
+              "cover_identity_error",
+              "cover_remainder",
+              "cover_utility_margin",
+              "criterion",
+              "decay_coefficient",
+              "defect_recomposition_residual",
+              "direct_row_map_upper",
+              "disturbance_envelope",
+              "downstream_lipschitz",
+              "entry_error",
+              "envelope_ratio",
+              "family_box_enclosure_ratio",
+              "finite_size_scaling_error",
+              "forcing_norm",
+              "geometric_rate",
+              "grid_jacobian_upper",
+              "heldout_cover_radius_ratio",
+              "heldout_image_margin",
+              "heldout_jacobian_ratio",
+              "heldout_loss",
+              "initial_membership_margin",
+              "intervention_boundary_residual",
+              "intervention_dose",
+              "jury_lower_margin",
+              "jury_margin_min",
+              "jury_upper_margin",
+              "lifted_budget_slack",
+              "lifted_recurrence_residual",
+              "lower_normal_edge",
+              "maximum_corner_h_gain",
+              "maximum_learning_rate",
+              "metric_eigenvalue_min",
+              "mixed_derivative_enclosure_ratio",
+              "model_depth",
+              "model_score",
+              "model_width",
+              "multiaffine_reconstruction_residual",
+              "nominal_lyapunov_residual",
+              "nominal_q",
+              "nonlinear_residual_enclosure_ratio",
+              "normal_linearization_residual_ratio",
+              "normal_operator_identity_residual",
+              "normal_operator_self_adjoint_residual",
+              "numerical_error",
+              "observed_entry_step",
+              "observed_h_gain",
+              "one_step_escape_count",
+              "optimizer_state_step",
+              "order_parameter_bridge_ratio",
+              "order_parameter_upper",
+              "path_window_gain",
+              "path_window_length",
+              "persistent_disturbance_floor",
+              "positive_comparison_witness_ratio",
+              "predicted_entry_step",
+              "prefix_budget_slack_min",
+              "primitive_box_enclosure_ratio",
+              "residual_floor",
+              "rg_block_size",
+              "rg_deductive_closure_ratio",
+              "rg_deductive_closure_upper",
+              "rg_density_identity_residual",
+              "rg_full_layer_closure_ratio",
+              "rg_full_layer_closure_upper",
+              "rg_layernorm_scale_residual",
+              "rg_repeated_block_semigroup_residual",
+              "rg_softmax_aggregation_residual",
+              "rg_within_covariance_trace",
+              "robust_q",
+              "row_input_spread",
+              "schedule_increment",
+              "schedule_predicted_entry_step",
+              "schedule_product_convolution_upper",
+              "source_order_parameter",
+              "source_rmse",
+              "spectral_loading",
+              "structured_family_q",
+              "structured_family_slack",
+              "sustained_entry_indicator",
+              "taylor_remainder_enclosure_ratio",
+              "tensor_mean_abs",
+              "theorem_bound_ratio",
+              "third_derivative_enclosure_ratio",
+              "upper_normal_edge",
+              "validation_domain_membership_indicator",
+              "warmup_steps"
+            ]
+          },
+          "reason_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "OBSERVED",
+              "MISSING",
+              "NOT_APPLICABLE",
+              "ERROR"
+            ]
+          },
+          "unit": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "value",
+          "unit",
+          "method",
+          "status",
+          "reason_code"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "protocol_id": {
+      "enum": [
+        "E0",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8"
+      ]
+    },
+    "run_id": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-row-map-direct-certificate-v8"
+    },
+    "seed": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "tensor_groups": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$",
+            "type": "string"
+          },
+          "parameters": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "parameters"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "unit_key": {
+      "additionalProperties": false,
+      "properties": {
+        "architecture_cell": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "arm": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "block_size": {
+          "minimum": 1,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "certificate_box": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "checkpoint": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "layer_bundle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "schedule_cell": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "seed": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "tensor_group": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "seed",
+        "checkpoint",
+        "layer_bundle",
+        "tensor_group",
+        "certificate_box",
+        "schedule_cell",
+        "architecture_cell",
+        "block_size",
+        "arm"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "protocol_id",
+    "run_id",
+    "seed",
+    "unit_key",
+    "clocks",
+    "bindings",
+    "tensor_groups",
+    "intervention",
+    "measurements",
+    "artifacts",
+    "environment"
+  ],
+  "type": "object"
+}

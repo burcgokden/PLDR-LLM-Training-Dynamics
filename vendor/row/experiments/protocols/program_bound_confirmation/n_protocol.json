@@ -1,0 +1,37 @@
+{
+  "analyzer_sha256": "a49311e1631b75a5c044f75bfd59a515c9d6a6f3ad1a822d5bad895d8d4b7b19",
+  "decision_source": "live-producer sufficient tensors and complete v3 states recomputed by the bound analyzer; caller arrays forbidden",
+  "dependencies": [
+    "T"
+  ],
+  "fresh_execution": "First layer, post-warmup and late anchors, disjoint 32 by 256 rows",
+  "gpu_hour_cap": 2.0,
+  "purpose": "Resolve row, causal-score, value and composite capacities; construct visible/null frames, charge the full edge, and test the normal tube.",
+  "raw_schema": "pldr-n-raw-observations-v3",
+  "required_artifact_roles": [
+    "stage_protocol",
+    "raw_observations",
+    "source_complete_state",
+    "target_complete_state",
+    "partition_manifest",
+    "resource_metadata"
+  ],
+  "required_checks": [
+    "partition_and_producer_bound",
+    "capacity_obstructions_accounted",
+    "backward_frame_recomputed",
+    "composite_kernel_resolved",
+    "charged_full_edge_positive",
+    "sector_comparison_contracts",
+    "common_metric_contracts",
+    "ordered_windows_contract",
+    "nonlinear_recurrence_encloses",
+    "direct_validation_contracts"
+  ],
+  "schema_version": "pldr-collapse-stage-protocol-v3",
+  "stage": "N",
+  "time_semantics": [
+    "FINITE_IMPLEMENTED_SCHEDULE"
+  ],
+  "title": "Composite normal windows"
+}

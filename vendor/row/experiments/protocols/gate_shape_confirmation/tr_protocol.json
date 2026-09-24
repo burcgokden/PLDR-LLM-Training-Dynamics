@@ -1,0 +1,29 @@
+{
+  "analyzer": "experiments/analysis/analyze_gate_shape_confirmation.py",
+  "producer": "experiments/confirm/gate_shape_live.py",
+  "raw_required": [
+    "primary_checkpoints",
+    "replay_checkpoints",
+    "primary_event_ledger",
+    "replay_event_ledger"
+  ],
+  "schema_version": "pldr-gate-shape-protocol-v1",
+  "scientific_arrays": "npz_without_pickle",
+  "stage": {
+    "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+    "dependencies": [
+      "T"
+    ],
+    "gpu_hour_cap": 0.15,
+    "id": "TR",
+    "purpose": "Repeat the registered primary trajectory from scratch.",
+    "required_checks": [
+      "distinct_run_and_lineage_identity",
+      "scientific_checkpoint_components_equal",
+      "aliased_primary_rejected",
+      "registered_update_count_and_windows_equal"
+    ],
+    "title": "Independent same-device replay"
+  },
+  "status": "DRAFT_PENDING_TWO_DEVICE_QUALIFICATION"
+}

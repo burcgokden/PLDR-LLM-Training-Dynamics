@@ -1,0 +1,31 @@
+{
+  "analyzer": "experiments/analysis/comprehensive_confirmation_analysis.py",
+  "producer": "experiments/confirm/comprehensive_live_producers.py",
+  "raw_required": [
+    "application",
+    "prediction_lock"
+  ],
+  "schema_version": "pldr-comprehensive-collapse-protocol-v4",
+  "stage": {
+    "decision_source": "The analyzer resolves the sealed request, checkpoints, raw archive, producer and analyzer code, partition, resource record, challenge seed, and prediction lock, then recomputes the decision.",
+    "dependencies": [
+      "N"
+    ],
+    "gpu_hour_cap": 0.1,
+    "id": "A",
+    "placement": "32 immutable pairs split by checkpoint",
+    "primary_outputs": [
+      "oriented end-to-end integral",
+      "qualified greedy margins",
+      "construction-locked cell-residual ratios"
+    ],
+    "required_checks": [
+      "heldout_pairs_match_partition",
+      "subdivision_fixed_by_lock",
+      "no_fitted_additive_envelope",
+      "all_logit_differences_enclosed",
+      "every_margin_qualified_decision_preserved"
+    ],
+    "title": "Oriented same-source application"
+  }
+}

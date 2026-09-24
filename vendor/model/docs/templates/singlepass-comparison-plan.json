@@ -1,0 +1,24 @@
+{
+  "schema": "singlepass-coordinate-comparison-v1",
+  "status": "frozen-before-execution",
+  "runs": [
+    {
+      "name": "technical-once-full",
+      "branch": "full",
+      "lr": 1e-05
+    },
+    {
+      "name": "technical-once-factor",
+      "branch": "factor",
+      "lr": 0.0001
+    }
+  ],
+  "task": "technical",
+  "epochs": 1,
+  "updates": 1024,
+  "batch": 32,
+  "seed": 220020,
+  "selection": "minimum validation NLL including incoming base",
+  "assessment": "All 3 test domains, both offsets and all 3 prefixes; paired document intervals",
+  "scope": "Two fixed finite optimizer-coordinate paths conditioned on one released base and one technical corpus. Learning rates are fixed from retained validation; not an isolated causal parameterization comparison or independent corpus replication."
+}

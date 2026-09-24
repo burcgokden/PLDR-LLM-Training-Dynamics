@@ -1,0 +1,52 @@
+{
+  "e7_dependencies": [
+    "E0-prime",
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "e8_primary_inputs": {
+    "E5": 9,
+    "E6": 40
+  },
+  "e8_triggered_sensitivity_inputs": {
+    "E5": 18,
+    "E6": 48
+  },
+  "families": [
+    "direct_tail_contraction",
+    "guard_tube_closure",
+    "capture_quench_contrast"
+  ],
+  "gate_branches": {
+    "interval_contains_zero": "SIGN_UNRESOLVED",
+    "lower_positive": "POSITIVE_CAPTURE_RESOLVED",
+    "upper_nonpositive": "NONPOSITIVE_COLLAPSE_RESOLVED"
+  },
+  "planning": {
+    "capture_probability": 0.75,
+    "family_wise_alpha": 0.05,
+    "guard_surplus_mean": 0.08,
+    "guard_surplus_sd": 0.25,
+    "joint_power": 0.84,
+    "joint_power_raw": 0.846665,
+    "monte_carlo_trials": 200000,
+    "quiet_log_ratio_mean": -0.08,
+    "quiet_log_ratio_sd": 0.15,
+    "release_probability": 0.35,
+    "seed": 2301
+  },
+  "registered_minimums": {
+    "capture_quench_contrast": 32,
+    "direct_tail_contraction": 80,
+    "guard_tube_closure": 80
+  },
+  "sample_sizes": {
+    "checkpoint_replays_per_cell": 24,
+    "extension_block_steps": 8000,
+    "matched_seeds_per_quench_arm": 32,
+    "maximum_extension_blocks": 4,
+    "minimum_effective_tail_and_guard_windows": 80
+  },
+  "schema_version": "pldr-e0-prime-design-v1"
+}

@@ -1,0 +1,57 @@
+{
+  "block_sizes": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "caller_boolean_evidence": "FORBIDDEN",
+  "caller_fitted_rg_flow": "FORBIDDEN",
+  "continuous_flow_rule": "reported only after a real reconstructing principal embedding with positive stability and diffusion edges",
+  "decision_source": "hashed raw trajectory ensembles and deterministic analyzers",
+  "dependencies": [
+    "R1"
+  ],
+  "fresh_execution": "Two width-64 depth-4 seeds; eight anchors; 256 continuations with 32 burn-in and 128 measured updates per anchor",
+  "owner_sha256": {
+    "experiments/analysis/analyze_rg_universality.py": "b3ac765d37832e77656d2fa3eabc60b4209dc354e699fbfbbcad18c873cd1e93",
+    "experiments/confirm/qualification_transition_kernel_rg.py": "2aa480f340e835862b135ce885b8c0d384b35f2f83ca1b7fe39325c922e6315c",
+    "experiments/confirm/rg_universality_protocol_specs.py": "bc6ff8409cdd26788cc7b31ae5f1a5174beafb2b7e174da05a19d3d815c16216",
+    "experiments/confirm/run_rg_universality_campaign.py": "22eeea83a677a436e12257f7f96848d72d6ce1c9edd24ae632056ac2c1317daf",
+    "experiments/confirm/transition_kernel_rg.py": "926ab632545e1ada5f85656555ecc160167c8ecf2fd0200b8f8ec4d166e7a1ec"
+  },
+  "required_checks": [
+    "direct_and_iterated_kernels",
+    "empirical_semigroup_defect_bounded",
+    "projection_prediction_defect_bounded",
+    "innovation_distribution_defect_bounded",
+    "innovation_mixing_diagnostics_bounded",
+    "stationarity_split_bounded",
+    "anchor_kernel_heterogeneity_bounded",
+    "heldout_anchor_replay"
+  ],
+  "resource_cap": "24 GPU-hours total",
+  "schema_version": "pldr-rg-universality-stage-protocol-v1",
+  "stage": "R2",
+  "target": "Estimate direct block kernels, compare them with iterated one-step kernels, and test dependence on tangent, data, optimizer, and branch strata.",
+  "thresholds": {
+    "anchor_kernel_relative_defect": 0.4,
+    "cross_system_final_sliced_wasserstein": 0.25,
+    "embedding_reconstruction_relative": 1e-06,
+    "empirical_kernel_semigroup_relative": 0.35,
+    "exact_semigroup_relative": 1e-12,
+    "final_maximum_absolute_excess_kurtosis": 0.8,
+    "final_maximum_absolute_skewness": 0.4,
+    "final_sliced_wasserstein_to_gaussian": 0.25,
+    "innovation_conditional_sliced_wasserstein": 0.2,
+    "innovation_cross_covariance_frobenius": 0.2,
+    "projection_innovation_sliced_wasserstein": 0.25,
+    "projection_prediction_defect": 0.25,
+    "stationarity_relative_covariance_defect": 0.3,
+    "stationarity_standardized_mean_defect": 0.2
+  },
+  "tier": "kernel_flow",
+  "title": "Projected kernel and closure"
+}

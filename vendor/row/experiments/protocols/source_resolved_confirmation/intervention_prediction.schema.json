@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "all_values_finite": {
+          "type": "boolean"
+        },
+        "control_and_arm_functionally_derived": {
+          "type": "boolean"
+        },
+        "map_population_complete": {
+          "type": "boolean"
+        },
+        "source_checkpoint_opened": {
+          "type": "boolean"
+        },
+        "source_step_matches_frozen_window": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source_checkpoint_opened",
+        "source_step_matches_frozen_window",
+        "control_and_arm_functionally_derived",
+        "map_population_complete",
+        "all_values_finite"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "created_at_ns": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "intervention": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "context": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "head": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "layer": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_predicted_energy_change": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "map_id",
+          "context",
+          "layer",
+          "head",
+          "source_predicted_energy_change"
+        ],
+        "title": "One source-only intervention prediction",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-intervention-prediction-v1"
+    },
+    "source_checkpoint_binding_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "source_checkpoint_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "window": {
+      "enum": [
+        "pre-onset",
+        "onset",
+        "late"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "source_checkpoint_binding_sha256",
+    "source_checkpoint_sha256",
+    "source_step",
+    "window",
+    "intervention",
+    "created_at_ns",
+    "records",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Prediction frozen before native intervention endpoints",
+  "type": "object"
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "anchors": {
+      "const": [
+        768,
+        3072,
+        5632
+      ]
+    },
+    "application_pairs": {
+      "minItems": 32,
+      "type": "array"
+    },
+    "construction": {
+      "minItems": 4,
+      "type": "array"
+    },
+    "context_length": {
+      "const": 256
+    },
+    "dataset_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "pair_rule": {
+      "const": "adjacent-flattened-row-pairs-v1"
+    },
+    "registry_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-gate-shape-registry-v1"
+    },
+    "tokenizer_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "validation": {
+      "minItems": 4,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "context_length",
+    "anchors",
+    "construction",
+    "validation",
+    "application_pairs",
+    "pair_rule",
+    "dataset_sha256",
+    "tokenizer_sha256",
+    "registry_sha256"
+  ],
+  "title": "Prospective PLDR gate-shape measurement registry",
+  "type": "object"
+}

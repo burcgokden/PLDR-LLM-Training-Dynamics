@@ -1,0 +1,236 @@
+{
+  "architecture_runs": [
+    {
+      "architecture": "w032_d02",
+      "depth": 2,
+      "seeds": [
+        4101,
+        4102
+      ],
+      "updates": 4096,
+      "width": 32
+    },
+    {
+      "architecture": "w064_d04",
+      "depth": 4,
+      "seeds": [
+        4201,
+        4202
+      ],
+      "updates": 4096,
+      "width": 64
+    },
+    {
+      "architecture": "w128_d06",
+      "depth": 6,
+      "seeds": [
+        4301,
+        4302
+      ],
+      "updates": 4096,
+      "width": 128
+    }
+  ],
+  "block_sizes": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "kernel_analyzer": "experiments/analysis/analyze_rg_universality.py",
+  "owner_sha256": {
+    "experiments/analysis/analyze_rg_universality.py": "b3ac765d37832e77656d2fa3eabc60b4209dc354e699fbfbbcad18c873cd1e93",
+    "experiments/confirm/qualification_transition_kernel_rg.py": "2aa480f340e835862b135ce885b8c0d384b35f2f83ca1b7fe39325c922e6315c",
+    "experiments/confirm/rg_universality_protocol_specs.py": "bc6ff8409cdd26788cc7b31ae5f1a5174beafb2b7e174da05a19d3d815c16216",
+    "experiments/confirm/run_rg_universality_campaign.py": "22eeea83a677a436e12257f7f96848d72d6ce1c9edd24ae632056ac2c1317daf",
+    "experiments/confirm/transition_kernel_rg.py": "926ab632545e1ada5f85656555ecc160167c8ecf2fd0200b8f8ec4d166e7a1ec"
+  },
+  "program_separation": "This campaign is not on the critical path of the bounded normal-stability confirmation program.",
+  "qualification": "experiments/confirm/qualification_transition_kernel_rg.py",
+  "resource_caps": {
+    "campaign_is_separate_from_normal_stability_confirmation": true,
+    "complement_requirement": "the common-metric contraction edge of the omitted normal complement is strictly stronger than the retained slow edge",
+    "concurrent_gpu_jobs": 2,
+    "estimated_gpu_hours_lower": 78,
+    "estimated_gpu_hours_upper": 106,
+    "gpu_allocation_cap_bytes_each": 21474836480,
+    "gpu_count": 2,
+    "gpu_model_observed": "NVIDIA GeForce RTX 4090",
+    "gpu_physical_bytes_each": 25757220864,
+    "hard_gpu_hours": 128,
+    "hard_wall_clock_hours": 96,
+    "host_bytes_total": 103079215104,
+    "minimum_free_workspace_bytes": 171798691840,
+    "retained_artifact_bytes": 128849018880,
+    "retained_basis": "sixteen slow lifted normal modes frozen on construction data; orthogonal alignment fixed before validation",
+    "retained_normal_dimension": 16,
+    "stop_rule": "Stop before U2 if R2 projection closure or R3 embeddability fails; do not spend universality-tier resources on an unclosed kernel."
+  },
+  "schema_version": "pldr-rg-universality-campaign-design-v1",
+  "stage_order": [
+    "R0",
+    "R1",
+    "R2",
+    "R3",
+    "U1",
+    "U2",
+    "U3"
+  ],
+  "stages": [
+    {
+      "decision": "The analyzer derives every check from hashed trajectory ensembles and frozen thresholds.",
+      "dependencies": [],
+      "fresh_execution": "Exact two-dimensional fixtures and a seeded CPU ensemble",
+      "id": "R0",
+      "required_checks": [
+        "exact_affine_innovation_semigroup",
+        "stationary_whitening_identity",
+        "embedding_accept_and_reject",
+        "hidden_stratum_kill",
+        "cumulant_gaussianization_kill"
+      ],
+      "resource_cap": "1 CPU-hour",
+      "target": "Qualify affine innovation blocking, covariance transport, stationary whitening, embedding rejection, flow beta functions, hidden-stratum sensitivity, and fluctuation statistics.",
+      "tier": "kernel_flow",
+      "title": "Kernel-RG semantic qualification"
+    },
+    {
+      "decision": "The analyzer derives every check from hashed trajectory ensembles and frozen thresholds.",
+      "dependencies": [
+        "R0"
+      ],
+      "fresh_execution": "Two width-32 depth-2 seeds, one per GPU; four anchors; 128 continuations with 16 burn-in and 64 measured updates per anchor",
+      "id": "R1",
+      "required_checks": [
+        "two_distinct_gpu_runs",
+        "complete_anchor_states",
+        "retained_slow_basis_16_frozen",
+        "normal_complement_gap_positive",
+        "normal_paths_and_hidden_labels",
+        "all_block_sizes_populated",
+        "resource_projection_below_cap"
+      ],
+      "resource_cap": "8 GPU-hours total",
+      "target": "Profile complete-state reload, controlled normal perturbations, hidden-stratum labels, trajectory storage, and block factors 1 through 32 before fixing the larger allocation.",
+      "tier": "kernel_flow",
+      "title": "Two-GPU trajectory micro-pilot"
+    },
+    {
+      "decision": "The analyzer derives every check from hashed trajectory ensembles and frozen thresholds.",
+      "dependencies": [
+        "R1"
+      ],
+      "fresh_execution": "Two width-64 depth-4 seeds; eight anchors; 256 continuations with 32 burn-in and 128 measured updates per anchor",
+      "id": "R2",
+      "required_checks": [
+        "direct_and_iterated_kernels",
+        "empirical_semigroup_defect_bounded",
+        "projection_prediction_defect_bounded",
+        "innovation_distribution_defect_bounded",
+        "innovation_mixing_diagnostics_bounded",
+        "stationarity_split_bounded",
+        "anchor_kernel_heterogeneity_bounded",
+        "heldout_anchor_replay"
+      ],
+      "resource_cap": "24 GPU-hours total",
+      "target": "Estimate direct block kernels, compare them with iterated one-step kernels, and test dependence on tangent, data, optimizer, and branch strata.",
+      "tier": "kernel_flow",
+      "title": "Projected kernel and closure"
+    },
+    {
+      "decision": "The analyzer derives every check from hashed trajectory ensembles and frozen thresholds.",
+      "dependencies": [
+        "R2"
+      ],
+      "fresh_execution": "Offline reduction of the R2 ensembles at block factors 1, 2, 4, 8, 16, and 32",
+      "id": "R3",
+      "required_checks": [
+        "memory_decreases_under_blocking",
+        "principal_generator_reconstructs",
+        "generator_stability_edge_positive",
+        "stationary_diffusion_nonnegative",
+        "continuous_integer_flow_agrees"
+      ],
+      "resource_cap": "8 wall-clock hours, mainly CPU",
+      "target": "Confirm monotone memory loss, a real principal generator, positive stability and diffusion edges, and agreement of the continuous flow with direct integer blocks.",
+      "tier": "kernel_flow",
+      "title": "Discrete flow and embeddability"
+    },
+    {
+      "decision": "The analyzer derives every check from hashed trajectory ensembles and frozen thresholds.",
+      "dependencies": [
+        "R3"
+      ],
+      "fresh_execution": "Covariance-whitened nonoverlapping block sums from R2",
+      "id": "U1",
+      "required_checks": [
+        "stationary_centering_owned",
+        "long_run_covariance_positive",
+        "higher_cumulants_decrease",
+        "gaussian_distance_bounded_at_scale_32"
+      ],
+      "resource_cap": "8 wall-clock hours, CPU",
+      "target": "Test decay of standardized skewness, excess kurtosis, and sliced distance to the standard Gaussian across registered block scales.",
+      "tier": "universality",
+      "title": "Gaussian fixed-point approach"
+    },
+    {
+      "decision": "The analyzer derives every check from hashed trajectory ensembles and frozen thresholds.",
+      "dependencies": [
+        "U1"
+      ],
+      "fresh_execution": "Widths 32, 64, and 128 at depths 2, 4, and 6; two seeds per architecture; 4,096 updates and six burst anchors",
+      "id": "U2",
+      "required_checks": [
+        "three_architecture_cells",
+        "two_seeds_per_cell",
+        "all_systems_kernel_qualified",
+        "all_systems_flow_qualified",
+        "cross_system_distance_contracts",
+        "shared_fixed_point_threshold"
+      ],
+      "resource_cap": "78 to 106 GPU-hours total",
+      "target": "After centering, covariance whitening, and correlation-time registration, compare RG flows and scale-32 fluctuation laws across architectures and seeds.",
+      "tier": "universality",
+      "title": "Universality transfer"
+    },
+    {
+      "decision": "The analyzer derives every check from hashed trajectory ensembles and frozen thresholds.",
+      "dependencies": [
+        "U2"
+      ],
+      "fresh_execution": "Hash and numerical replay of every R0 through U2 artifact",
+      "id": "U3",
+      "required_checks": [
+        "all_manifests_resolve",
+        "all_trajectory_hashes_replay",
+        "all_kernel_reductions_replay",
+        "all_flow_reductions_replay",
+        "all_class_distances_replay",
+        "resource_caps_replay"
+      ],
+      "resource_cap": "16 wall-clock hours, CPU",
+      "target": "Recompute kernels, closure defects, embeddings, flow levels, cumulants, cross-system distances, resources, and the final registered-domain class decision.",
+      "tier": "universality",
+      "title": "Independent universality replay"
+    }
+  ],
+  "thresholds": {
+    "anchor_kernel_relative_defect": 0.4,
+    "cross_system_final_sliced_wasserstein": 0.25,
+    "embedding_reconstruction_relative": 1e-06,
+    "empirical_kernel_semigroup_relative": 0.35,
+    "exact_semigroup_relative": 1e-12,
+    "final_maximum_absolute_excess_kurtosis": 0.8,
+    "final_maximum_absolute_skewness": 0.4,
+    "final_sliced_wasserstein_to_gaussian": 0.25,
+    "innovation_conditional_sliced_wasserstein": 0.2,
+    "innovation_cross_covariance_frobenius": 0.2,
+    "projection_innovation_sliced_wasserstein": 0.25,
+    "projection_prediction_defect": 0.25,
+    "stationarity_relative_covariance_defect": 0.3,
+    "stationarity_standardized_mean_defect": 0.2
+  }
+}

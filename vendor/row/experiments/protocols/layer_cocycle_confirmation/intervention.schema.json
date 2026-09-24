@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "arrays": {
+      "allOf": [
+        {
+          "contains": {
+            "const": "arm_names"
+          }
+        },
+        {
+          "contains": {
+            "const": "arm_energy"
+          }
+        },
+        {
+          "contains": {
+            "const": "arm_physical_response_from_native"
+          }
+        }
+      ],
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "campaign_id": {
+      "const": "pldr-layer-resolved-cocycle-confirmation-v1"
+    },
+    "schema_version": {
+      "const": "pldr-layer-cocycle-intervention-v1"
+    },
+    "step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "step",
+    "arrays"
+  ],
+  "title": "Selected-layer one-step intervention",
+  "type": "object"
+}

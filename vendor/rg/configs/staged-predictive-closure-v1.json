@@ -1,0 +1,79 @@
+{
+  "schema_version": "pldr-row-rg-staged-closure-config-v1",
+  "stage_id": "predictive-closure-stage1-v1",
+  "source_run": {
+    "anchor": "data_root",
+    "path": "executed/stage-a-runner-smoke-v7-20260903/run"
+  },
+  "predecessor_closure": {
+    "anchor": "data_root",
+    "path": "executed/energy-closure-v10-20260904"
+  },
+  "source_step": 16,
+  "block_sizes": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "semigroup_split": 8,
+  "gpu_hour_cap": 0.5,
+  "embedding_shift": {
+    "model_key": "decoder.embedding.weight",
+    "coordinate": 0,
+    "offset": 0.125,
+    "token_selection_rule": "smallest token in immediate next-batch inputs and absent from fixed-probe inputs"
+  },
+  "branch_ids": [
+    "baseline-direct",
+    "gauge-consistent",
+    "gauge-params-only",
+    "probe-null-embedding-shift"
+  ],
+  "candidate_states": [
+    {
+      "candidate_id": "energy-vector",
+      "challenge_branch": "gauge-params-only",
+      "description": "complete 48-map row-energy vector"
+    },
+    {
+      "candidate_id": "energy-raw-adamw-phase",
+      "challenge_branch": "gauge-params-only",
+      "description": "row-energy vector, complete raw AdamW state, and exogenous phase"
+    },
+    {
+      "candidate_id": "row-map-gauge-adamw-phase",
+      "challenge_branch": "probe-null-embedding-shift",
+      "description": "complete observed row maps, gauge-canonicalized AdamW state, and exogenous phase"
+    }
+  ],
+  "splits": {
+    "design": [
+      "stage-a-smoke-t0",
+      "stage-a-smoke-t1"
+    ],
+    "holdout": [
+      "stage-a-smoke-t2",
+      "stage-a-smoke-t3"
+    ]
+  },
+  "trajectories": [
+    {
+      "trajectory_id": "stage-a-smoke-t0",
+      "device": 0
+    },
+    {
+      "trajectory_id": "stage-a-smoke-t1",
+      "device": 1
+    },
+    {
+      "trajectory_id": "stage-a-smoke-t2",
+      "device": 0
+    },
+    {
+      "trajectory_id": "stage-a-smoke-t3",
+      "device": 1
+    }
+  ]
+}

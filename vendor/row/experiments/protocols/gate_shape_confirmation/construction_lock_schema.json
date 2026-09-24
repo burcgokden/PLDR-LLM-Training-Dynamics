@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "application_bounds": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "campaign_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "capture_blocks": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "code_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "empty_margin_decision": {
+      "type": "null"
+    },
+    "energy_charges": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "forcing_charges": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "intervention_arms": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "lock_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "mechanism_labels": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "protocol_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "registry_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "safety_factor": {
+      "minimum": 1.0,
+      "type": "number"
+    },
+    "schema_version": {
+      "const": "pldr-gate-shape-lock-v2"
+    },
+    "source_archive_sha256": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "source_owned": {
+      "const": true
+    },
+    "source_requests": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "spectral_threshold_rule": {
+      "const": "max(reconstruction_residual,100eps*max(opnorm,1))"
+    },
+    "target_energy_read": {
+      "const": false
+    },
+    "validation_artifacts": {
+      "const": []
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "code_sha256",
+    "protocol_sha256",
+    "registry_sha256",
+    "source_requests",
+    "capture_blocks",
+    "spectral_threshold_rule",
+    "energy_charges",
+    "forcing_charges",
+    "mechanism_labels",
+    "intervention_arms",
+    "application_bounds",
+    "source_archive_sha256",
+    "source_owned",
+    "validation_artifacts",
+    "target_energy_read",
+    "empty_margin_decision",
+    "safety_factor",
+    "lock_sha256"
+  ],
+  "title": "Source-owned gate-shape prediction lock",
+  "type": "object"
+}

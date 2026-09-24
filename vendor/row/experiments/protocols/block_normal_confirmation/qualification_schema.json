@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "qualification_mode",
+    "checkpoint_backed",
+    "scientific_confirmation",
+    "status",
+    "technical_valid",
+    "device",
+    "conditions",
+    "fixture_outcome_counts",
+    "maximum_residuals",
+    "block",
+    "retention",
+    "resource_executor",
+    "resources"
+  ],
+  "title": "Block-normal Q0 deterministic fixture qualification",
+  "type": "object"
+}

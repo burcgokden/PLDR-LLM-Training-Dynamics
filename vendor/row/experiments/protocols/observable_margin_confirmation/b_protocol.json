@@ -1,0 +1,32 @@
+{
+  "analyzer": "experiments/analysis/analyze_observable_margin.py",
+  "campaign_id": "observable-margin-confirmation-rev37",
+  "evidence": "compact-npz-no-raw-parameter-nodes",
+  "executor": "scripts/execute_observable_margin_plan.py",
+  "native_producer": "experiments/confirm/observable_margin_live.py",
+  "planner": "experiments/confirm/run_observable_margin_confirmation.py",
+  "robustness_scientific_gate": null,
+  "schema_version": "pldr-observable-margin-protocol-v1",
+  "stage": {
+    "attempt_rule": "append-only-positive-integer-attempts",
+    "dependencies": [
+      "T"
+    ],
+    "gpu_hour_cap": 10.0,
+    "hard_gate": true,
+    "id": "B",
+    "record_key": "STAGE:job_id",
+    "required_checks": [
+      "construction_only",
+      "fixed_probe_at_every_node",
+      "symmetric_8nn_mst_union_graph",
+      "effective_resistance_enclosure",
+      "exact_gate_shape_secants",
+      "native_roundoff_charge",
+      "ordered_affine_convolution",
+      "one_locked_candidate_cell"
+    ],
+    "title": "Construction baseline and candidate lock"
+  },
+  "status": "WAITING_FOR_FRESH_CHECKPOINTS"
+}

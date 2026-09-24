@@ -1,0 +1,34 @@
+{
+  "analyzer": "experiments/analysis/analyze_gate_shape_confirmation.py",
+  "producer": "experiments/confirm/gate_shape_live.py",
+  "raw_required": [
+    "checkpoints",
+    "tokens",
+    "registry",
+    "gate_shape_raw_archives",
+    "producer_source"
+  ],
+  "schema_version": "pldr-gate-shape-protocol-v1",
+  "scientific_arrays": "npz_without_pickle",
+  "stage": {
+    "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+    "dependencies": [
+      "T",
+      "TR"
+    ],
+    "gpu_hour_cap": 1.15,
+    "id": "G",
+    "purpose": "Measure every 16-dimensional layer gate on disjoint contexts.",
+    "required_checks": [
+      "row_outputs_recomputed_from_final_layernorm_preactivations",
+      "q_and_energy_recomputed_from_fixed_pairs",
+      "fisher_plus_signed_jet_reconstructs_true_hessian",
+      "all_dense_spectra_recomputed",
+      "spectral_sign_uses_residual_scaled_threshold",
+      "gate_force_at_zero_recomputed",
+      "no_parameter_jacobian_svd_or_lanczos_basis"
+    ],
+    "title": "Gate-shape geometry and true-loss response"
+  },
+  "status": "DRAFT_PENDING_TWO_DEVICE_QUALIFICATION"
+}

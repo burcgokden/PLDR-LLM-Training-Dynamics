@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "construction_only": {
+          "type": "boolean"
+        },
+        "edge_population_nonempty": {
+          "type": "boolean"
+        },
+        "plga_cap_from_frozen_menu": {
+          "type": "boolean"
+        },
+        "policy_digest_inputs_bound": {
+          "type": "boolean"
+        },
+        "windows_derived_deterministically": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "construction_only",
+        "windows_derived_deterministically",
+        "plga_cap_from_frozen_menu",
+        "edge_population_nonempty",
+        "policy_digest_inputs_bound"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "coarse_certificate": {
+      "additionalProperties": false,
+      "properties": {
+        "native_charge_upper": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "radial_dissipation_lower": {
+          "items": {
+            "type": "number"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "selection_quantile": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "signed_gram_sum_upper": {
+          "type": "number"
+        },
+        "source_names": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "source_names",
+        "radial_dissipation_lower",
+        "signed_gram_sum_upper",
+        "native_charge_upper",
+        "selection_quantile"
+      ],
+      "title": "Construction-selected coarse source certificate",
+      "type": "object"
+    },
+    "construction_edge_sha256": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "construction_timecourse_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "created_at_ns": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "design_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "plga_selected_cap": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-construction-policy-v1"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "window_updates": {
+      "additionalProperties": false,
+      "properties": {
+        "late": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "onset": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "pre-onset": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "pre-onset",
+        "onset",
+        "late"
+      ],
+      "title": "Frozen intervention windows",
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "design_sha256",
+    "construction_timecourse_sha256",
+    "construction_edge_sha256",
+    "created_at_ns",
+    "plga_selected_cap",
+    "window_updates",
+    "coarse_certificate",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Policy sealed after construction and before heldout launch",
+  "type": "object"
+}

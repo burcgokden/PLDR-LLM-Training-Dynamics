@@ -1,0 +1,191 @@
+[
+  {
+    "label": "lem:layernorm-differential",
+    "paper": "Exact LayerNorm differential",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The matrix differential, eigenspaces, and eigenvalues remain in the written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:layernorm-chord",
+    "paper": "Stable LayerNorm chord",
+    "module": "LayerNormFactorization",
+    "declarations": ["row_contrast", "strict_regularized_radius"],
+    "scope": "Affine-bias cancellation and positivity of the regularized radius used in the chord identity.",
+    "excluded": "The stable reciprocal-difference matrix formula remains in the written proof.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:postnorm-chord-chain",
+    "paper": "Implemented postnorm chord chain",
+    "module": "PostNormChain",
+    "declarations": ["full_chain_append", "eight_unit_execution_order", "eight_unit_shape_execution_order"],
+    "scope": "Exact matrix order for the pre-chain factor, eight residual and postnorm factors, and final shape replacement.",
+    "excluded": "Construction of nonlinear chord integrals and binding to runtime tensors.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:parameter-source-chain",
+    "paper": "Complete postnorm parameter-source chain",
+    "module": "PostNormParameterSource",
+    "declarations": ["applyLinear", "affineFold", "transportedSources", "applyLinear_add", "affine_source_unroll", "three_unit_source_order"],
+    "scope": "The affine source recurrence, its ordered suffix unrolling, and a concrete execution-order check.",
+    "excluded": "Analytic construction of each implemented Jacobian and parameter source tensor.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:executed-adamw-displacement",
+    "paper": "Executed AdamW parameter displacement",
+    "module": "LiftedAdamWMatrix",
+    "declarations": ["fullLinearStep", "full_adamw_block_expansion"],
+    "scope": "The complete abstract parameter, first-moment, and second-moment block expansion.",
+    "excluded": "Bias correction, value-clipping branch binding, and square-root denominator binding to runtime tensors.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:executed-gate-balance",
+    "paper": "Native executed gate-energy balance",
+    "module": "ExecutedAdamWEnergy",
+    "declarations": ["energy", "pairing", "decayDissipation", "executed_adamw_balance", "decay_dissipation_nonnegative"],
+    "scope": "The exact diagonal quadratic balance into decay, signed adaptive alignment, and innovation energy.",
+    "excluded": "Runtime identification of the abstract innovation with bias-corrected AdamW moment tensors.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "prop:gate-shape-linear-work",
+    "paper": "Physical gate-shape linear work",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The vector product rule, pair JVP, and signed linear-work identity remain in the written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:contrast-energy-derivatives",
+    "paper": "Direct contrast-energy derivatives",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The first and second derivatives of the parameterized squared row contrast remain in the written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:cell-modulus-enclosure",
+    "paper": "Cellwise signed second-derivative enclosure",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The nearest-endpoint modulus argument remains in the written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "thm:certified-contrast-energy",
+    "paper": "Certified direct contrast-energy step",
+    "module": "PredictiveContrastEnergy",
+    "declarations": ["weightedSum", "weighted_sum_mono", "cellWeight", "cellWeight_nonnegative", "certified_contrast_energy_step"],
+    "scope": "Monotone nonnegative cell weighting and simultaneous lower and upper source-energy accumulation.",
+    "excluded": "The integral Taylor identity and runtime construction of signed derivative enclosures.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:finite-registry-prediction",
+    "paper": "Finite-registry two-sided diameter prediction",
+    "module": "FiniteRegistryPrediction",
+    "declarations": ["finiteMaximum", "le_finiteMaximum", "finiteMaximum_mono", "predictive_diameter_upper", "predictive_diameter_lower", "predictive_diameter_two_sided", "predictive_strict_contraction", "predictive_one_pair_expansion"],
+    "scope": "The finite maximum, two-sided diameter enclosure, strict contraction, and one-pair re-expansion implications.",
+    "excluded": "Outward floating-point charges and streaming enumeration.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:diameter-cocycle",
+    "paper": "Certified nonautonomous diameter cocycle",
+    "module": "DiameterCocycle",
+    "declarations": ["orderedProduct", "diameter_product_bound", "diameter_product_lower_bound"],
+    "scope": "Chronological upper and lower products of supplied nonnegative source multipliers.",
+    "excluded": "Extraction of each multiplier from outward numerical diameter intervals.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:product-collapse",
+    "paper": "Ordered-product collapse criterion",
+    "module": "DiameterCocycle",
+    "declarations": ["diameter_tendsto_zero"],
+    "scope": "A nonnegative diameter sequence below a source-scaled product converges to zero when that product does.",
+    "excluded": "Conversion from squared diameter to diameter by continuity of square root.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "cor:log-cocycle-collapse",
+    "paper": "Cumulative-log collapse and exponential rate",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The logarithm-to-product conversion and explicit exponential diameter rate remain in the written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "prop:zero-gate-invariance",
+    "paper": "Zero-gate invariant face",
+    "module": "LayerNormFactorization",
+    "declarations": ["zero_gate_row_independent"],
+    "scope": "A zero shared affine gain makes every abstract row output identical.",
+    "excluded": "The optimizer-side condition preserving the zero gain at the next update.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:composite-signed-secant",
+    "paper": "Composite signed secant",
+    "module": "PLGADividedDifference",
+    "declarations": ["divided_difference_exact", "divided_difference_diagonal", "divided_difference_chain"],
+    "scope": "Exact off-diagonal, diagonal, and two-stage divided-difference composition identities.",
+    "excluded": "Analytic differentiation of implemented iSwiGLU and positive real power.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:composite-plga-transfer",
+    "paper": "Exact composite PLGA transfer",
+    "module": "PLGADividedDifference",
+    "declarations": ["divided_difference_chain", "affine_secant_transfer"],
+    "scope": "Entrywise composite secants followed by an affine coupling transfer.",
+    "excluded": "Matrix Frobenius and operator-norm bounds and runtime PLGA binding.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:row-centering-identity",
+    "paper": "Pairwise variance and row diameter",
+    "module": "ObservableEnergyDissipation",
+    "declarations": ["stackedDeviationSq", "stacked_generator_sq_bound"],
+    "scope": "Stacked squared deviations and a cardinality-times-diameter bound.",
+    "excluded": "The exact all-unordered-pairs variance identity and sharp square-root coefficient.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:occupied-plga-transfer",
+    "paper": "Occupied PLGA row-collapse transfer",
+    "module": "PLGASignedSecant",
+    "declarations": ["positivePower", "signedSecant", "occupied_segment_bound"],
+    "scope": "Transfer through a positive real-power secant under a supplied occupied-segment bound.",
+    "excluded": "iSwiGLU composition, row centering, matrix coupling, and the restricted runtime coefficient.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:occupied-causal-score",
+    "paper": "Occupied causal-score transfer",
+    "module": "PLGAScoreTransfer",
+    "declarations": ["rectangular_three_factor"],
+    "scope": "The exact moving three-factor score telescope.",
+    "excluded": "Causal-prefix occupancy, row centering, and restricted operator suprema.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:causal-softmax-stability",
+    "paper": "Causal softmax and winner stability",
+    "module": "CenteredLogitMargin",
+    "declarations": ["centered_pair_difference", "sharp_centered_margin", "sqrt_two_attained"],
+    "scope": "Centering preserves pair differences and yields the sharp square-root-two winner-margin implication.",
+    "excluded": "The one-half softmax Lipschitz bound on each causal prefix.",
+    "faithfulness": "partial"
+  }
+]

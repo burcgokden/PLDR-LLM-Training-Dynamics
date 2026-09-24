@@ -1,0 +1,283 @@
+{
+  "architecture": {
+    "gated_blocks_per_residual_unit": 2,
+    "head_width": 64,
+    "heads": 4,
+    "layernorm_epsilon": 1e-06,
+    "layers": 3,
+    "parameter_count": 20622914,
+    "plga_adjustment_epsilon": 1e-09,
+    "row_map_residual_units": 8,
+    "rows_per_map": 64
+  },
+  "campaign_id": "pldr-source-restoring-collapse-confirmation-v1",
+  "certificate_policy": {
+    "exhaustive_pairs": true,
+    "native_charge": "source-program-outward-arithmetic-v1",
+    "plga_crossing": "multiplied-two-coordinate-contributions-v1",
+    "remainder": "source-segment-validated-taylor-or-finite-telescope-v1",
+    "scientific_outcomes": [
+      "confirmed",
+      "not_confirmed",
+      "unresolved"
+    ],
+    "scientific_outcomes_halt_descendants": false,
+    "source_direction": "complete-clipped-adamw-state-v1",
+    "successor_values_forbidden": true,
+    "technical_invalidity_halts": true,
+    "work_split": [
+      "final-postnorm-gain",
+      "nonfinal-row-map-shape",
+      "upstream-query-plga-input"
+    ]
+  },
+  "construction_edges": [
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023
+  ],
+  "heldout_anchors": [
+    1000,
+    3000,
+    5000,
+    7000,
+    9000
+  ],
+  "mask_contract": {
+    "causal_mask": "strict-upper-triangle-negative-infinity-v1",
+    "combination_rule": "logical-or-before-additive-conversion-v1",
+    "digest_required": true,
+    "dtype": "model-native",
+    "padding_id": 0,
+    "padding_mask": "token-equals-padding-id-v1",
+    "shape": "batch-head-query-key-broadcast-v1"
+  },
+  "optimizer": {
+    "batch_size": 32,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "certificate_dtype": "float64-outward",
+    "constant_rate_after_warmup": true,
+    "context_length": 256,
+    "epsilon": 1e-05,
+    "gradient_clip_kind": "value",
+    "gradient_clip_value": 1.0,
+    "learning_rate": 0.00075,
+    "name": "AdamW",
+    "native_dtype": "float32",
+    "warmup_updates": 250,
+    "weight_decay": 0.1
+  },
+  "pilot_edges": [
+    1000,
+    1001,
+    1002,
+    1003
+  ],
+  "policy_lock": {
+    "construction_precedes_heldout": true,
+    "scientific_outcome_does_not_prune": true,
+    "source_certificate_precedes_successor_open": true,
+    "technical_invalidity_halts_descendants": true
+  },
+  "registry": {
+    "construction_context_count": 8,
+    "context_count": 24,
+    "heads": 4,
+    "heldout_context_count": 16,
+    "layers": [
+      0,
+      1,
+      2
+    ],
+    "maps_per_full_registry": 288,
+    "pair_rule": "within-context-layer-head-all-unordered-pairs-v1",
+    "pairs_per_full_registry": 580608,
+    "pairs_per_map": 2016,
+    "rows_per_map": 64
+  },
+  "resource_budget": {
+    "aggregate_gpu_hours_cap": 4.0,
+    "checkpoint_retention": "preserve-complete-until-descendants-close",
+    "device_memory_mib_each": 24564,
+    "devices": [
+      "cuda:0",
+      "cuda:1"
+    ],
+    "live_wall_and_memory_checked_per_node": true,
+    "model_only_copy_path_must_differ": true,
+    "native_peak_memory_required_for_cuda": true,
+    "peak_reserved_gib_each": 20.0,
+    "persistent_output_gib_cap": 8.0,
+    "projected_storage_checked_before_launch": true
+  },
+  "schema_version": "pldr-source-restoring-design-v1",
+  "stages": [
+    {
+      "budget_gpu_hours": 0.05,
+      "id": "P0",
+      "purpose": "analytic fixtures, source closure, and real-path qualification"
+    },
+    {
+      "budget_gpu_hours": 0.35,
+      "id": "P1",
+      "purpose": "four consecutive all-layer development edges"
+    },
+    {
+      "budget_gpu_hours": 1.2,
+      "id": "P2",
+      "purpose": "twenty-edge source-cocycle construction block"
+    },
+    {
+      "budget_gpu_hours": 0.4,
+      "id": "P3",
+      "purpose": "construction spatial-mechanism time course"
+    },
+    {
+      "budget_gpu_hours": 0.4,
+      "id": "P4",
+      "purpose": "locked held-out spatial and temporal confirmation"
+    },
+    {
+      "budget_gpu_hours": 0.8,
+      "id": "P5",
+      "purpose": "independent locked confirmation after policy freeze"
+    }
+  ],
+  "timecourse_anchors": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1800,
+    1900,
+    2000,
+    2100,
+    2200,
+    2300,
+    2400,
+    2500,
+    2600,
+    2700,
+    2800,
+    2900,
+    3000,
+    3100,
+    3200,
+    3300,
+    3400,
+    3500,
+    3600,
+    3700,
+    3800,
+    3900,
+    4000,
+    4100,
+    4200,
+    4300,
+    4400,
+    4500,
+    4600,
+    4700,
+    4800,
+    4900,
+    5000,
+    5100,
+    5200,
+    5300,
+    5400,
+    5500,
+    5600,
+    5700,
+    5800,
+    5900,
+    6000,
+    6100,
+    6200,
+    6300,
+    6400,
+    6500,
+    6600,
+    6700,
+    6800,
+    6900,
+    7000,
+    7100,
+    7200,
+    7300,
+    7400,
+    7500,
+    7600,
+    7700,
+    7800,
+    7900,
+    8000,
+    8100,
+    8200,
+    8300,
+    8400,
+    8500,
+    8600,
+    8700,
+    8800,
+    8900,
+    9000
+  ],
+  "training_campaign_schema": "pldr-source-restoring-training-campaign-v1",
+  "trajectories": [
+    {
+      "name": "source-construction-s7444",
+      "role": "construction",
+      "seed": 7444,
+      "updates": 9001
+    },
+    {
+      "name": "source-heldout-s8444",
+      "role": "heldout",
+      "seed": 8444,
+      "updates": 9001
+    },
+    {
+      "name": "source-heldout-s9444",
+      "role": "heldout",
+      "seed": 9444,
+      "updates": 9001
+    },
+    {
+      "name": "source-independent-s10444",
+      "role": "independent",
+      "seed": 10444,
+      "updates": 9001
+    }
+  ]
+}

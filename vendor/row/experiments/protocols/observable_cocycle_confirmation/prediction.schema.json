@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "arrays": {
+      "allOf": [
+        {
+          "contains": {
+            "const": "lock_sha256"
+          }
+        },
+        {
+          "contains": {
+            "const": "endpoint_actions"
+          }
+        },
+        {
+          "contains": {
+            "const": "predicted_centered_responses"
+          }
+        }
+      ],
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "campaign_id": {
+      "const": "pldr-observable-full-state-cocycle-v1"
+    },
+    "schema_version": {
+      "const": "pldr-observable-cocycle-prediction-v1"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "source_step",
+    "arrays"
+  ],
+  "title": "Held-out source-only cocycle prediction",
+  "type": "object"
+}

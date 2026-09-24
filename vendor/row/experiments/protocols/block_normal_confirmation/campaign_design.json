@@ -1,0 +1,219 @@
+{
+  "action_ledger": {
+    "lyapunov": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "normal": [
+      "N1",
+      "N2",
+      "N3",
+      "N4"
+    ],
+    "source": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "architecture": {
+    "decoder_layers": 3,
+    "gated_blocks_per_unit": 2,
+    "head_width": 64,
+    "heads_per_layer": 4,
+    "row_map_residual_units": 8,
+    "trainable_parameters": 20622914
+  },
+  "campaign_id": "pldr-block-normal-collapse-confirmation-v1",
+  "mask_contract": {
+    "broadcast_order": [
+      "batch",
+      "head",
+      "query",
+      "key"
+    ],
+    "causal_exclusion": "strict-upper-triangular",
+    "combination": "logical-or-before-dtype-conversion",
+    "padding_token": 0
+  },
+  "optimizer": {
+    "batch_size": 32,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "constant_learning_rate": 0.00075,
+    "context_length": 256,
+    "epsilon": 1e-05,
+    "gradient_clip": 1.0,
+    "model_dtype": "float32",
+    "name": "AdamW",
+    "reduction_dtype": "float64",
+    "warmup_updates": 250,
+    "weight_decay": 0.1
+  },
+  "policy_lock": {
+    "complete_checkpoint_never_overwritten": true,
+    "construction_precedes_heldout": true,
+    "native_and_conversion_radii_separate": true,
+    "scientific_outcome_does_not_prune": true,
+    "source_prediction_precedes_native_endpoint": true,
+    "source_side_quantities_only": true,
+    "technical_invalidity_blocks_only_descendants": true
+  },
+  "registry": {
+    "construction_context_count": 8,
+    "context_count": 24,
+    "cross_map_pairs_forbidden": true,
+    "features_per_row": 64,
+    "heads": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "heldout_context_count": 16,
+    "layers": [
+      0,
+      1,
+      2
+    ],
+    "map_count": 288,
+    "pair_rule": "within-context-layer-head-all-unordered-pairs-v1",
+    "pairs_per_map": 2016,
+    "rows_per_map": 64,
+    "within_map_pair_count": 580608
+  },
+  "resource_budget": {
+    "gpu_native_capacity_mib": 24564,
+    "hard_aggregate_gpu_hours": 10.0,
+    "maximum_complete_checkpoints_per_active_lineage": 2,
+    "persistent_output_cap_bytes": 12884901888,
+    "poll_seconds": 1.0,
+    "process_reserved_memory_cap_bytes": 21474836480,
+    "working_aggregate_gpu_hours": 8.0
+  },
+  "schema_version": "pldr-block-normal-design-v1",
+  "scientific_outcomes": [
+    "confirmed",
+    "not_confirmed",
+    "unresolved"
+  ],
+  "selection_policy": {
+    "amplitude_menu": [
+      0.03125,
+      0.015625,
+      0.0078125,
+      0.00390625
+    ],
+    "candidate_block_lengths": [
+      16,
+      32,
+      64
+    ],
+    "candidate_normal_ranks": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "lyapunov_relative_tolerance": 1e-09,
+    "objective": [
+      {
+        "term": "lyapunov_residual",
+        "weight": 1.0
+      },
+      {
+        "term": "log_metric_condition",
+        "weight": 0.05
+      },
+      {
+        "term": "normal_rank",
+        "weight": 0.0001
+      }
+    ],
+    "outcome_absolute_tolerance": 1e-12,
+    "projection_relative_tolerance": 1e-10,
+    "rank_relative_tolerance": 1e-10,
+    "sign_pair_fractions": [
+      1.0,
+      0.5,
+      0.25
+    ],
+    "tie_rule": "minimum-objective-then-shorter-block-then-lower-rank",
+    "tube_relative_tolerance": 1e-08
+  },
+  "stages": [
+    {
+      "aggregate_gpu_hours_target": 0.1,
+      "depends_on": [],
+      "id": "Q0",
+      "purpose": "deterministic-kernel-schema-executor-recovery-fixtures"
+    },
+    {
+      "aggregate_gpu_hours_target": 0.3,
+      "depends_on": [
+        "Q0"
+      ],
+      "id": "Q1",
+      "purpose": "four-consecutive-development-edges-1000-through-1003"
+    },
+    {
+      "aggregate_gpu_hours_target": 0.8,
+      "depends_on": [
+        "Q1"
+      ],
+      "id": "Q2",
+      "purpose": "construction-timecourse-through-update-9000"
+    },
+    {
+      "aggregate_gpu_hours_target": 2.5,
+      "depends_on": [
+        "Q2"
+      ],
+      "id": "Q3",
+      "purpose": "normal-response-and-lyapunov-construction"
+    },
+    {
+      "aggregate_gpu_hours_target": 1.8,
+      "depends_on": [
+        "Q3"
+      ],
+      "id": "Q4",
+      "purpose": "normal-perturbations-and-optimizer-interventions"
+    },
+    {
+      "aggregate_gpu_hours_target": 2.5,
+      "depends_on": [
+        "Q3",
+        "Q4"
+      ],
+      "id": "Q5",
+      "purpose": "two-locked-heldout-trajectories"
+    }
+  ],
+  "trajectories": [
+    {
+      "device": "cuda:0",
+      "heldout": false,
+      "name": "construction-seed7444",
+      "role": "construction",
+      "seed": 7444
+    },
+    {
+      "device": "cuda:0",
+      "heldout": true,
+      "name": "heldout-seed8444",
+      "role": "heldout",
+      "seed": 8444
+    },
+    {
+      "device": "cuda:1",
+      "heldout": true,
+      "name": "heldout-seed9444",
+      "role": "heldout",
+      "seed": 9444
+    }
+  ]
+}

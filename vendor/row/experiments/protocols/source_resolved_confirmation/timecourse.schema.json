@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checkpoint_binding_sha256": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "all_values_finite": {
+          "type": "boolean"
+        },
+        "cadence_exact": {
+          "type": "boolean"
+        },
+        "coordinate_factorization_closed": {
+          "type": "boolean"
+        },
+        "cumulative_gain_replays": {
+          "type": "boolean"
+        },
+        "map_population_complete": {
+          "type": "boolean"
+        },
+        "no_omitted_gain_factor": {
+          "type": "boolean"
+        },
+        "policy_precedes_heldout": {
+          "type": "boolean"
+        },
+        "terminal_present": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "cadence_exact",
+        "terminal_present",
+        "map_population_complete",
+        "no_omitted_gain_factor",
+        "cumulative_gain_replays",
+        "coordinate_factorization_closed",
+        "policy_precedes_heldout",
+        "all_values_finite"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "gate_records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "coordinate_factorization_relative_residual": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "layer_final_gate": {
+            "items": {
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 64,
+              "minItems": 64,
+              "type": "array"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+          },
+          "update": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "update",
+          "layer_final_gate",
+          "coordinate_factorization_relative_residual"
+        ],
+        "title": "Final gates at one scheduled update",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "map_records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "context": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cumulative_gain": {
+            "minimum": 0.0,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "cumulative_log_gain": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "diameter": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "gain_defined": {
+            "type": "boolean"
+          },
+          "gate_shape_coordinate_energy": {
+            "items": {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "head": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "layer": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "normalized_shape_coordinate_energy": {
+            "items": {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "plga_force": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "plga_quotient_ratio": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_gain_from_previous": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "update": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "map_id",
+          "context",
+          "layer",
+          "head",
+          "update",
+          "energy",
+          "diameter",
+          "gate_shape_coordinate_energy",
+          "normalized_shape_coordinate_energy",
+          "source_gain_from_previous",
+          "gain_defined",
+          "cumulative_gain",
+          "cumulative_log_gain",
+          "plga_quotient_ratio",
+          "plga_force"
+        ],
+        "title": "One map at one scheduled update",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "plga_selected_cap": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "policy_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "role": {
+      "enum": [
+        "construction",
+        "heldout"
+      ]
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-timecourse-v1"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "updates": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "seed",
+    "role",
+    "policy_sha256",
+    "updates",
+    "checkpoint_binding_sha256",
+    "map_records",
+    "gate_records",
+    "plga_selected_cap",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Complete finite row-energy time course",
+  "type": "object"
+}

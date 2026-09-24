@@ -1,0 +1,488 @@
+{
+  "schema_version": "pldr-row-rg-evidence-index-spec-v2",
+  "entries": [
+    {
+      "id": "selected-analysis",
+      "status": "current",
+      "role": "registered analysis used by the manuscript",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0002/result.json"
+    },
+    {
+      "id": "selected-analysis-manifest",
+      "status": "current",
+      "role": "analysis manifest",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0002/manifest.json"
+    },
+    {
+      "id": "selected-root-manifest",
+      "status": "current",
+      "role": "root manifest",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/manifests/manifest-0002.json"
+    },
+    {
+      "id": "observer-record",
+      "status": "current",
+      "role": "source-bound full-trace observer analysis",
+      "path": "executed/observer-regime-v6-20260903/result.json"
+    },
+    {
+      "id": "stage-record",
+      "status": "current",
+      "role": "source-bound stage-resolved replay with exact represented-array energy",
+      "path": "executed/stage-resolved-observer-v7-20260903/result.json"
+    },
+    {
+      "id": "stage-a-smoke-result",
+      "status": "diagnostic",
+      "role": "executed production-runner state-machine smoke result",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/analyses/analysis-0001/result.json"
+    },
+    {
+      "id": "stage-a-smoke-manifest",
+      "status": "diagnostic",
+      "role": "executed production-runner state-machine smoke root manifest",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/manifests/manifest-0001.json"
+    },
+    {
+      "id": "stage-a-smoke-protocol",
+      "status": "diagnostic",
+      "role": "executed production-runner smoke protocol with derived seeds",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/inputs/protocol.json"
+    },
+    {
+      "id": "stage-a-smoke-qualification",
+      "status": "diagnostic",
+      "role": "source-bound production-runner smoke qualification",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/inputs/qualification.json"
+    },
+    {
+      "id": "stage-a-smoke-observer",
+      "status": "diagnostic",
+      "role": "executed zero-safe observer analysis of the runner smoke",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/observer/result.json"
+    },
+    {
+      "id": "stage-a-smoke-stage",
+      "status": "diagnostic",
+      "role": "executed zero-safe three-device stage replay of the runner smoke",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/stage/result.json"
+    },
+    {
+      "id": "stage-a-smoke-verification",
+      "status": "diagnostic",
+      "role": "sealed independent verification report for the runner smoke archive",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/verification.json"
+    },
+    {
+      "id": "corrected-smoke-root",
+      "status": "diagnostic",
+      "role": "root record for the corrected historical production-runner smoke",
+      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/run-root.json"
+    },
+    {
+      "id": "failed-smoke-root",
+      "status": "diagnostic",
+      "role": "root record for the retained failed 63-bit-seed smoke launch",
+      "path": "executed/stage-a-runner-smoke-v6-20260903/run/run-root.json"
+    },
+    {
+      "id": "failed-smoke-protocol",
+      "status": "diagnostic",
+      "role": "resolved protocol carrying the rejected 63-bit training seeds",
+      "path": "executed/stage-a-runner-smoke-v6-20260903/run/protocol-resolved.json"
+    },
+    {
+      "id": "failed-smoke-events",
+      "status": "diagnostic",
+      "role": "parent-chained initialization, launch, and failure event record",
+      "path": "executed/stage-a-runner-smoke-v6-20260903/run/events.jsonl"
+    },
+    {
+      "id": "failed-smoke-attempt-0",
+      "status": "diagnostic",
+      "role": "first failed producer attempt log",
+      "path": "executed/stage-a-runner-smoke-v6-20260903/run/trajectories/stage-a-smoke-t0/producer-attempt-001.log"
+    },
+    {
+      "id": "failed-smoke-attempt-1",
+      "status": "diagnostic",
+      "role": "second failed producer attempt log",
+      "path": "executed/stage-a-runner-smoke-v6-20260903/run/trajectories/stage-a-smoke-t1/producer-attempt-001.log"
+    },
+    {
+      "id": "final-smoke-root",
+      "status": "diagnostic",
+      "role": "root record for the final source-bound production-runner smoke",
+      "path": "executed/stage-a-runner-smoke-v7-20260903/run/run-root.json"
+    },
+    {
+      "id": "final-smoke-result",
+      "status": "diagnostic",
+      "role": "final production-runner smoke analysis",
+      "path": "executed/stage-a-runner-smoke-v7-20260903/run/analyses/analysis-0001/result.json"
+    },
+    {
+      "id": "final-smoke-manifest",
+      "status": "diagnostic",
+      "role": "final production-runner smoke root manifest",
+      "path": "executed/stage-a-runner-smoke-v7-20260903/run/manifests/manifest-0001.json"
+    },
+    {
+      "id": "final-smoke-protocol",
+      "status": "diagnostic",
+      "role": "final production-runner smoke protocol",
+      "path": "executed/stage-a-runner-smoke-v7-20260903/inputs/protocol.json"
+    },
+    {
+      "id": "final-smoke-qualification",
+      "status": "diagnostic",
+      "role": "final source-bound production-runner smoke qualification",
+      "path": "executed/stage-a-runner-smoke-v7-20260903/inputs/qualification.json"
+    },
+    {
+      "id": "final-smoke-observer",
+      "status": "diagnostic",
+      "role": "final zero-safe observer analysis of the production-runner smoke",
+      "path": "executed/stage-a-runner-smoke-v7-20260903/observer/result.json"
+    },
+    {
+      "id": "final-smoke-stage",
+      "status": "diagnostic",
+      "role": "final three-device stage replay of the production-runner smoke",
+      "path": "executed/stage-a-runner-smoke-v7-20260903/stage/result.json"
+    },
+    {
+      "id": "final-smoke-verification",
+      "status": "diagnostic",
+      "role": "sealed verification report for the final production-runner smoke",
+      "path": "executed/stage-a-runner-smoke-v7-20260903/verification.json"
+    },
+    {
+      "id": "closure-v7-run-manifest",
+      "status": "retained",
+      "role": "retained predecessor manifest for the matched first-moment continuation",
+      "path": "executed/energy-closure-v7-20260903/run-manifest.json"
+    },
+    {
+      "id": "closure-v7-record",
+      "status": "retained",
+      "role": "retained predecessor analysis for the matched first-moment continuation",
+      "path": "executed/energy-closure-v7-20260903/result.json"
+    },
+    {
+      "id": "closure-run-manifest",
+      "status": "current",
+      "role": "source-remeasured multi-coordinate closure execution manifest",
+      "path": "executed/energy-closure-v8-20260903/run-manifest.json"
+    },
+    {
+      "id": "closure-record",
+      "status": "current",
+      "role": "source-remeasured scale-indexed fiber-coordinate closure analysis",
+      "path": "executed/energy-closure-v8-20260903/result.json"
+    },
+    {
+      "id": "closure-relocation-record",
+      "status": "current",
+      "role": "relocated-data-root reanalysis validation",
+      "path": "executed/energy-closure-v8-20260903/relocation-validation.json"
+    },
+    {
+      "id": "excluded-disposition",
+      "status": "current",
+      "role": "source-bound excluded-run disposition",
+      "path": "executed/execution-disposition-v5-20260902/excluded-run.json"
+    },
+    {
+      "id": "selected-qualification",
+      "status": "current",
+      "role": "qualification consumed by the evidence launch",
+      "path": "protocol-v3/qualification-v3-04.json"
+    },
+    {
+      "id": "executed-protocol",
+      "status": "current",
+      "role": "byte-identical protocol archive",
+      "path": "protocol-v3/confirmation-protocol-v3-executed-166dc22c.json"
+    },
+    {
+      "id": "retained-analysis",
+      "status": "current",
+      "role": "descriptive retained-trajectory reduction",
+      "path": "executed/retained-scale-flow-v3.json"
+    },
+    {
+      "id": "synthetic-analysis",
+      "status": "current",
+      "role": "synthetic algebra and law qualification",
+      "path": "executed/synthetic-rg-qualification.json"
+    },
+    {
+      "id": "selected-combined-energy",
+      "status": "current",
+      "role": "combined dense energy tensor",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/raw/combined-energies.npz"
+    },
+    {
+      "id": "initial-analysis",
+      "status": "retained",
+      "role": "immutable initial analysis",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0001/result.json"
+    },
+    {
+      "id": "initial-root-manifest",
+      "status": "retained",
+      "role": "immutable initial root manifest",
+      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/manifests/manifest-0001.json"
+    },
+    {
+      "id": "observer-predecessor",
+      "status": "retained",
+      "role": "prior source-bound observer analysis",
+      "path": "executed/observer-regime-v5-20260902/result.json"
+    },
+    {
+      "id": "stage-predecessor",
+      "status": "retained",
+      "role": "stage replay before rounded all-map extrema were renamed",
+      "path": "executed/stage-resolved-observer-v6-20260903/result.json"
+    },
+    {
+      "id": "stage-legacy-predecessor",
+      "status": "retained",
+      "role": "stage replay before exact represented-array energy classification",
+      "path": "executed/stage-resolved-observer-v5b-20260902/result.json"
+    },
+    {
+      "id": "disposition-predecessor",
+      "status": "retained",
+      "role": "excluded-run disposition predecessor",
+      "path": "executed/execution-disposition-v4-20260902/first-campaign.json"
+    },
+    {
+      "id": "precision-predecessor",
+      "status": "retained",
+      "role": "checkpoint precision diagnostic replaced by the stage replay",
+      "path": "executed/observer-precision-v4-20260902/result.json"
+    },
+    {
+      "id": "qualification-01",
+      "status": "retained",
+      "role": "passing qualification not consumed by a launch",
+      "path": "protocol-v3/qualification-v3.json"
+    },
+    {
+      "id": "qualification-02",
+      "status": "retained",
+      "role": "passing qualification consumed by the excluded launch",
+      "path": "protocol-v3/qualification-v3-02.json"
+    },
+    {
+      "id": "qualification-03",
+      "status": "unavailable-dependency",
+      "role": "passing qualification whose exact protocol copy is unavailable",
+      "path": "protocol-v3/qualification-v3-03.json",
+      "unavailable_dependency_sha256": "93d54a04fff21e2ec7bb1ba1a0184a83e2900f2356fe365a99d7a429c3a65212"
+    },
+    {
+      "id": "pilot-result",
+      "status": "diagnostic",
+      "role": "descriptive 4096-update pilot",
+      "path": "executed/pldr-refinedweb-byte-4096/confirmation-result.json"
+    },
+    {
+      "id": "planning-record-0",
+      "status": "diagnostic",
+      "role": "descriptive 16384-update planning record",
+      "path": "exploratory/rebuttal-rev2-16384/row_rg_rebuttal_rev2_16384_d0.json"
+    },
+    {
+      "id": "planning-record-1",
+      "status": "diagnostic",
+      "role": "descriptive 16384-update planning record",
+      "path": "exploratory/rebuttal-rev2-16384/row_rg_rebuttal_rev2_16384_d1.json"
+    }
+  ],
+  "executed_inventory": [
+    {
+      "name": "energy-closure-v7-20260903",
+      "classification": "retained-evidence",
+      "role": "retained predecessor matched first-moment closure experiment",
+      "representative_entry_ids": ["closure-v7-run-manifest", "closure-v7-record"]
+    },
+    {
+      "name": "energy-closure-v8-20260903",
+      "classification": "current-evidence",
+      "role": "source-remeasured multi-coordinate fiber-closure experiment",
+      "representative_entry_ids": ["closure-run-manifest", "closure-record", "closure-relocation-record"],
+      "sealed_chain_verification": true
+    },
+    {
+      "name": "execution-disposition-v4-20260902",
+      "classification": "retained-evidence",
+      "role": "predecessor excluded-run disposition",
+      "representative_entry_ids": ["disposition-predecessor"]
+    },
+    {
+      "name": "execution-disposition-v5-20260902",
+      "classification": "current-evidence",
+      "role": "source-bound excluded-run disposition",
+      "representative_entry_ids": ["excluded-disposition"]
+    },
+    {
+      "name": "observer-precision-v4-20260902",
+      "classification": "retained-evidence",
+      "role": "retained checkpoint precision diagnostic",
+      "representative_entry_ids": ["precision-predecessor"]
+    },
+    {
+      "name": "observer-regime-v4-20260902",
+      "classification": "superseded-artifact",
+      "role": "earlier observer reduction",
+      "reason": "replaced by source-bound observer records with explicit predecessor checks"
+    },
+    {
+      "name": "observer-regime-v5-20260902",
+      "classification": "retained-evidence",
+      "role": "observer predecessor",
+      "representative_entry_ids": ["observer-predecessor"]
+    },
+    {
+      "name": "observer-regime-v6-20260903",
+      "classification": "current-evidence",
+      "role": "source-bound full-trace observer analysis",
+      "representative_entry_ids": ["observer-record"]
+    },
+    {
+      "name": "pldr-refinedweb-byte-4096",
+      "classification": "diagnostic",
+      "role": "descriptive 4096-update pilot",
+      "representative_entry_ids": ["pilot-result"]
+    },
+    {
+      "name": "pldr-refinedweb-byte-rgmap-v3-20260902",
+      "classification": "excluded",
+      "role": "retained launch excluded from scientific flow inference",
+      "reason": "prelaunch numerical identity gate failed and no bound smoke existed"
+    },
+    {
+      "name": "pldr-refinedweb-byte-rgmap-v3-conditioned-20260902",
+      "classification": "current-evidence",
+      "role": "registered four-trajectory training and analysis lineage",
+      "representative_entry_ids": ["selected-analysis", "selected-root-manifest", "selected-combined-energy"],
+      "sealed_chain_verification": true
+    },
+    {
+      "name": "retained-scale-flow-v3.json",
+      "classification": "current-evidence",
+      "role": "content-addressed retained-trajectory reduction",
+      "representative_entry_ids": ["retained-analysis"]
+    },
+    {
+      "name": "retained-scale-flow-v3.tex",
+      "classification": "diagnostic",
+      "role": "derived rendering of the retained-trajectory reduction"
+    },
+    {
+      "name": "retained-scale-flow.json",
+      "classification": "superseded-artifact",
+      "role": "earlier retained-trajectory reduction",
+      "reason": "replaced by the content-addressed v3 reduction"
+    },
+    {
+      "name": "retained-scale-flow.tex",
+      "classification": "superseded-artifact",
+      "role": "earlier retained-trajectory rendering",
+      "reason": "replaced by the v3 rendering"
+    },
+    {
+      "name": "stage-a-runner-smoke-v6-20260903",
+      "classification": "failed-launch",
+      "role": "retained operational failure from 63-bit NumPy seeds",
+      "reason": "both wave-0 producers rejected seeds outside the NumPy uint32 range",
+      "representative_entry_ids": ["failed-smoke-root", "failed-smoke-protocol", "failed-smoke-events", "failed-smoke-attempt-0", "failed-smoke-attempt-1"],
+      "tree_census": true
+    },
+    {
+      "name": "stage-a-runner-smoke-v6-20260903-r2",
+      "classification": "diagnostic",
+      "role": "corrected historical production-runner smoke",
+      "representative_entry_ids": ["corrected-smoke-root", "stage-a-smoke-result", "stage-a-smoke-verification"],
+      "sealed_chain_verification": true
+    },
+    {
+      "name": "stage-a-runner-smoke-v7-20260903",
+      "classification": "diagnostic",
+      "role": "final source-bound production-runner smoke",
+      "representative_entry_ids": ["final-smoke-root", "final-smoke-result", "final-smoke-verification"],
+      "sealed_chain_verification": true
+    },
+    {
+      "name": "stage-resolved-observer-v5-20260902",
+      "classification": "superseded-artifact",
+      "role": "earlier stage-resolved record",
+      "reason": "replaced by exact represented-array classifications"
+    },
+    {
+      "name": "stage-resolved-observer-v5b-20260902",
+      "classification": "retained-evidence",
+      "role": "pre-exact-energy stage predecessor",
+      "representative_entry_ids": ["stage-legacy-predecessor"]
+    },
+    {
+      "name": "stage-resolved-observer-v6-20260903",
+      "classification": "retained-evidence",
+      "role": "stage predecessor with exact represented-array energy",
+      "representative_entry_ids": ["stage-predecessor"]
+    },
+    {
+      "name": "stage-resolved-observer-v7-20260903",
+      "classification": "current-evidence",
+      "role": "stage replay with unambiguous rounded all-map extrema",
+      "representative_entry_ids": ["stage-record"],
+      "sealed_chain_verification": true
+    },
+    {
+      "name": "synthetic-rg-qualification.json",
+      "classification": "current-evidence",
+      "role": "synthetic algebra and fixed-law qualification",
+      "representative_entry_ids": ["synthetic-analysis"]
+    },
+    {
+      "name": "synthetic-rg-results.tex",
+      "classification": "diagnostic",
+      "role": "derived rendering of synthetic qualification"
+    }
+  ],
+  "support_inputs": {
+    "qualification": "selected-qualification",
+    "qualification_history": [
+      "qualification-01",
+      "qualification-02",
+      "qualification-03",
+      "selected-qualification"
+    ],
+    "observer_record": "observer-record",
+    "stage_record": "stage-record",
+    "stage_predecessor": "stage-predecessor",
+    "closure_record": "closure-record",
+    "closure_relocation_record": "closure-relocation-record",
+    "failed_smoke_root": "failed-smoke-root",
+    "failed_smoke_protocol": "failed-smoke-protocol",
+    "failed_smoke_events": "failed-smoke-events",
+    "failed_smoke_attempt_0": "failed-smoke-attempt-0",
+    "failed_smoke_attempt_1": "failed-smoke-attempt-1",
+    "corrected_smoke_root": "corrected-smoke-root",
+    "corrected_smoke_result": "stage-a-smoke-result",
+    "final_smoke_root": "final-smoke-root",
+    "final_smoke_result": "final-smoke-result",
+    "final_smoke_verification": "final-smoke-verification",
+    "excluded_disposition": "excluded-disposition",
+    "retained_record": "retained-analysis",
+    "pilot_result": "pilot-result",
+    "planning_records": [
+      "planning-record-0",
+      "planning-record-1"
+    ]
+  }
+}

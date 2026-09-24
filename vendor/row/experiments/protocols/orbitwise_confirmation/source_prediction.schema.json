@@ -1,0 +1,157 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-orbitwise-row-map-collapse-v2"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "functional_step_finite": {
+          "type": "boolean"
+        },
+        "map_population_complete": {
+          "type": "boolean"
+        },
+        "prediction_has_no_native_successor_input": {
+          "type": "boolean"
+        },
+        "source_checkpoint_opened": {
+          "type": "boolean"
+        },
+        "source_ledger_closed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source_checkpoint_opened",
+        "map_population_complete",
+        "functional_step_finite",
+        "source_ledger_closed",
+        "prediction_has_no_native_successor_input"
+      ],
+      "title": "Derived checks",
+      "type": "object"
+    },
+    "created_at_ns": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "endpoint_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "map_records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "charge_gram": {
+            "items": {
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+          },
+          "gain_defined": {
+            "type": "boolean"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "predicted_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "predicted_native_parameter_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "predicted_reopening": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "radial_dissipation": {
+            "items": {
+              "type": "number"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+          },
+          "source_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_gain": {
+            "minimum": 0.0,
+            "type": "number"
+          }
+        },
+        "required": [
+          "map_id",
+          "source_energy",
+          "predicted_energy",
+          "predicted_reopening",
+          "gain_defined",
+          "source_gain",
+          "radial_dissipation",
+          "charge_gram",
+          "predicted_native_parameter_sha256"
+        ],
+        "title": "Prospective source prediction for one map",
+        "type": "object"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "producer_command_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-orbitwise-source-prediction-v2"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "source_binding_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "seed",
+    "source_step",
+    "endpoint_step",
+    "source_binding_sha256",
+    "producer_command_sha256",
+    "created_at_ns",
+    "map_records",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Source-only reopening prediction",
+  "type": "object"
+}

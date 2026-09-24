@@ -1,0 +1,38 @@
+{
+  "analyzer": "experiments/analysis/comprehensive_confirmation_analysis.py",
+  "producer": "experiments/confirm/comprehensive_live_producers.py",
+  "raw_required": [
+    "checkpoint",
+    "tokens",
+    "registry",
+    "normal_metadata",
+    "finite_stencil_jacobian",
+    "normal_basis",
+    "normal_left_basis",
+    "singular_values",
+    "normal_actions",
+    "prediction_lock"
+  ],
+  "schema_version": "pldr-comprehensive-collapse-protocol-v4",
+  "stage": {
+    "decision_source": "The analyzer resolves the sealed request, checkpoints, raw archive, producer and analyzer code, partition, resource record, challenge seed, and prediction lock, then recomputes the decision.",
+    "dependencies": [
+      "N"
+    ],
+    "gpu_hour_cap": 0.4,
+    "id": "S2N",
+    "placement": "late anchor of seed 3402 on its registered device",
+    "primary_outputs": [
+      "replicated frame",
+      "replicated balance",
+      "unchanged intervals"
+    ],
+    "required_checks": [
+      "prediction_lock_unchanged",
+      "pair_frame_interval_replicates",
+      "full_loss_interval_replicates",
+      "balance_interval_replicates"
+    ],
+    "title": "Matched normal replication"
+  }
+}

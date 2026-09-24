@@ -1,0 +1,113 @@
+{
+  "analyzer": "experiments/analysis/analyze_observable_margin.py",
+  "campaign_id": "observable-margin-confirmation-rev37",
+  "evidence": "compact-npz-no-raw-parameter-nodes",
+  "executor": "scripts/execute_observable_margin_plan.py",
+  "final_release_provenance": {
+    "canonical_command": [
+      "make",
+      "release-check-current"
+    ],
+    "independent_verification": {
+      "phases": [
+        "before",
+        "after"
+      ],
+      "rule": "Independently recompute pass booleans, counts, manifest digests, staged-seal equality, and all-target aggregate digests before and after the canonical release command, then require exact stability.",
+      "top_level_report_fields": [
+        "release_plan_paths_pass",
+        "repository_release_command_exact",
+        "repository_release_verification",
+        "manuscript_export_verification"
+      ]
+    },
+    "manuscript_export": {
+      "nonself_manifest_entry_count": 17,
+      "required_container_fields": [
+        "root_path",
+        "live_manifest_path",
+        "staged_manifest_path",
+        "before",
+        "after",
+        "stable_across_release_command"
+      ],
+      "required_snapshot_fields": [
+        "pass",
+        "file_count",
+        "manifest_entry_count",
+        "manifest_sha256",
+        "staged_manifest_sha256",
+        "staged_manifest_equal",
+        "target_aggregate_sha256",
+        "error"
+      ],
+      "revision": "rev37",
+      "rule": "Require exactly 18 regular files and the 17-entry nonself MANIFEST, reject missing, extra, symbolic-link, and nonregular nodes, and require the staged export seal to equal the live manifest byte for byte.",
+      "strict_file_count": 18
+    },
+    "realized_environment": {
+      "required_attestation_fields": [
+        "python.import_root",
+        "installed_distributions.count",
+        "installed_distributions.sha256"
+      ],
+      "required_report_fields": [
+        "environment_attestation_path",
+        "environment_attestation_sha256",
+        "environment_import_root",
+        "environment_package_inventory_count",
+        "environment_package_inventory_sha256",
+        "environment_replay_pass",
+        "environment_replay_error"
+      ],
+      "rule": "The digest-bound realized attestation supplies the one resolved Python import root and the normalized installed-package inventory count and digest used by every child process."
+    },
+    "repository": {
+      "live_manifest": "MANIFEST.sha256",
+      "required_container_fields": [
+        "live_manifest_path",
+        "staged_manifest_path",
+        "before",
+        "after",
+        "stable_across_release_command"
+      ],
+      "required_snapshot_fields": [
+        "pass",
+        "target_count",
+        "manifest_sha256",
+        "staged_manifest_sha256",
+        "staged_manifest_equal",
+        "target_aggregate_sha256",
+        "error"
+      ],
+      "rule": "Freshly enumerate the exact current regular-file release closure, verify every MANIFEST target without expanding historical CHECKSUMS targets, and require the staged manifest seal to equal the live manifest byte for byte.",
+      "staged_manifest": "preflight/repository-MANIFEST.sha256"
+    }
+  },
+  "native_producer": "experiments/confirm/observable_margin_controls.py",
+  "planner": "experiments/confirm/run_observable_margin_confirmation.py",
+  "robustness_scientific_gate": null,
+  "schema_version": "pldr-observable-margin-protocol-v1",
+  "stage": {
+    "attempt_rule": "append-only-positive-integer-attempts",
+    "dependencies": [
+      "I"
+    ],
+    "gpu_hour_cap": 0.2,
+    "hard_gate": true,
+    "id": "F",
+    "record_key": "STAGE:job_id",
+    "required_checks": [
+      "fresh_process_reanalysis",
+      "unique_stage_job_record_keys",
+      "append_only_attempts",
+      "schema_and_digest_replay",
+      "resource_caps",
+      "mutation_tests",
+      "no_raw_nodes",
+      "final_checksum_manifest"
+    ],
+    "title": "Fresh-process reconstruction and release"
+  },
+  "status": "WAITING_FOR_FRESH_CHECKPOINTS"
+}

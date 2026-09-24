@@ -1,0 +1,21 @@
+{
+  "decision": "CONFIRMED_ON_REGISTERED_DOMAIN only when every mode-specific condition is derived and true",
+  "modes": [
+    "kernel-flow",
+    "universality"
+  ],
+  "required_fields": [
+    "schema_version",
+    "mode",
+    "block_sizes",
+    "thresholds",
+    "systems",
+    "cross_system_distances",
+    "kernel_flow_conditions",
+    "universality_conditions",
+    "required_conditions",
+    "decision",
+    "record_sha256"
+  ],
+  "schema_version": "pldr-rg-universality-analysis-record-schema-v1"
+}

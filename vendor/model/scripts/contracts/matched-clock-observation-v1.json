@@ -1,0 +1,607 @@
+{
+  "ages": [
+    0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "cache_conditions": [
+    [
+      8,
+      0.0
+    ],
+    [
+      8,
+      1.5
+    ],
+    [
+      24,
+      0.0
+    ],
+    [
+      24,
+      1.5
+    ]
+  ],
+  "calibration_contexts": 16,
+  "context_rows": [
+    1648,
+    1649,
+    1650,
+    1651,
+    1652,
+    1653,
+    1654,
+    1655,
+    1656,
+    1657,
+    1658,
+    1659,
+    1660,
+    1661,
+    1662,
+    1663,
+    1664,
+    1665,
+    1666,
+    1667,
+    1668,
+    1669,
+    1670,
+    1671,
+    1672,
+    1673,
+    1674,
+    1675,
+    1676,
+    1677,
+    1678,
+    1679,
+    1680,
+    1681,
+    1682,
+    1683,
+    1684,
+    1685,
+    1686,
+    1687,
+    1688,
+    1689,
+    1690,
+    1691,
+    1692,
+    1693,
+    1694,
+    1695,
+    1696,
+    1697,
+    1698,
+    1699,
+    1700,
+    1701,
+    1702,
+    1703,
+    1704,
+    1705,
+    1706,
+    1707,
+    1708,
+    1709,
+    1710,
+    1711,
+    1712,
+    1713,
+    1714,
+    1715,
+    1716,
+    1717,
+    1718,
+    1719,
+    1720,
+    1721,
+    1722,
+    1723,
+    1724,
+    1725,
+    1726,
+    1727
+  ],
+  "contexts": 64,
+  "disk_budget_bytes": 214748364800,
+  "document_hashes": [
+    "36f16ac5758f116a5e06d0b40332b726722f2b89e3f00d097b8425b476dd54bd",
+    "8b837954ad48032f3f359fb5d1d3926618fccc045283cfe7731a4f5863bd7f80",
+    "4a6673150e1aa025a13ff949ec90362c7a365d4beda9de96df4281d2c29b4ddc",
+    "9f9ac209b94e19872c327ecda9ddb29753f3fe5342c3249491dd74734e876363",
+    "64f617170823d610e39c7b5305b99a81e33755fc93395f5240588e5b49cd98f9",
+    "0f215c70f87e0500015e9967514976710030f8c77478996b6dadc81529530dde",
+    "49a91186c4194b8084b7929658eb248335fafacc539bd5cb7d8119b4f3e89104",
+    "5bcc38bda27c323305bea69a6a8ffafd053ca378b23619406669d2f40a9607e0",
+    "bde71ac38cbd863825a7cc16ed2b0b6724bda341c598849b65e218c4710abfad",
+    "716483d06d460f3dc2706dd9f26f818637ab605ff14039d9b691ca8a5d125d2b",
+    "ebd459a7faedadbe3341277c0f63a775b3ff5107c47009afc267ae0ea600027e",
+    "0d915a14478ed342e410936c081e4ea181aa43c7764b5d5257895307862e957a",
+    "3d201377981a5f36a7d7710ddc5907874ebea6cb944017b5e72629d3c20008c4",
+    "61326be7e267f8c8c97cc80e9cdd613e68a761ef161f0a93cac1f15487720142",
+    "35033e42c3d588c0f5cfd0056a99663efd972653786cffed39e69d1dfaccbb52",
+    "b6fcacfcf292b93b1468058db44ef2be716c7a2a27d82cf0235857ac996b9d24",
+    "02dd0b9e65c3ac31303c75c05434761e0310cf54fe71f591c2a9a1316e16844b",
+    "8db7798681c84ad70633c46170ef3af1a910bf6e9ad86810258edb241b80acff",
+    "17ff5c4e4dec8fc58c180fab5177250bb0478f8c400c794a0b8b84e26a681e44",
+    "5ee8f99f80f9088589860878a1325b2c5fd551983731fc5493073e4e475ae2b8",
+    "69b2567c47a9c52117249e467afe157c7d0890b588ff97d315d6112c9d952757",
+    "6df64d62e90105f1646f56aa262316a4f767be9f382638afdf6264e7ea9a45b1",
+    "64afcb72d8169dee1598522da5274bf1f2153c6b72303a0762968429d9bc48d1",
+    "5ba05ef38bba54eccb8dab08cca3894dd9077319a276316461d950cf3da2f214",
+    "d38f4c4f2dbd61b72e28130e8b574f56a72e71b711a8323b6c85a0f2df87bfde",
+    "ea934f8cf0e1dbdad25c15c12777d9422536633aac337e4316f528576dae407e",
+    "3cd0e6fd2fe169c29059208523239d0f19e8e82b669bd93b91f80d54bb4b5fa1",
+    "46371f5671ce9d44d0c81c0495d84458c1f9dd3d91d540e30e96f6e0ad25d458",
+    "55cffa326a4e70e1da6fc07ca42cfc7a485f76a1c0a7c0d13f740513688bf91e",
+    "d1cf2d957a3882b864ced1d69d1d8bf67a71b613f51038a22791839f2081ce57",
+    "ac4af7d27208de1df3ff5f3406c351dce21dbcaa89cb41189c4b33180c87f5f1",
+    "e764f2b35ed36d467b07d7f82b5bbb711d9d92a8a16d62ab356f084b4ae18de5",
+    "cb146fcc70f97886ae478ce4ed10e6a51d5ee42d7663c2cd8c23f7d0ad61b77e",
+    "fc73bfec5f3002a5ba3de866dc8f7b3b27dbb1a89da0b5cb32fe72d18db3891e",
+    "11087f6ae443121cc2ef7012bd065da31ef263886bc501fb7518047c5118d904",
+    "1e5046c1384e1798bfeee7c2e5b11c85f174f2cff661313650fb8ff4ba36c0c5",
+    "5592f49c859899a6686d9f056d80bb72eb2e4236336c2c1371ac145cb0ef8fb7",
+    "1869baf521d898504eb54c0166ceab76d595dd1198a866e4eee314c7e70419d5",
+    "bc1cb2131f1a357a5efecbaeb15ce6be615309dad660b861b6a3801cfe2a958a",
+    "dba87b5af587eb3cd15d1fa99397f4b2bc258a2621ea2dfd9016c56201327f87",
+    "919e0a5a8e353c3238a9019eccc387ec0d9faa9e87f1e434e8f5cc08c61f1575",
+    "bce8094f93521e7f0e1d426734eb96dd181e3d7061e65a2483d2277887d7b6b0",
+    "8c6f0f1cd98e963d1475c222e20918e0cfc6166e1e1d299ea12ac1e3f07c8829",
+    "27fc9a08fcac47576f9c4753bc4afc70deb7f0ce512f486566de95dbfb149e57",
+    "e8524ed30460a3b19747466353a8d77259b8fbe400c32648111435d3f6a1ec25",
+    "320e09eb3eb4a5a76d631e0e8a540526f7b825c1bb714387236e44778cf0148a",
+    "84a9736d57d1f74c25a95c39b2bf02789b3298d268d9aa151dc12baf73b11260",
+    "8fa05a2ba070f70c1794dff272519f66c68a57d798b2ceacf9ad48113d226fde",
+    "04ce1a3bcefcf4b544b52fe9814ff7acbacadb87ddad16585e0a88ec858feaf8",
+    "3632b8b24670779bc2ed7067cbc7b6c835fa85a07df74781b597b805a55facc8",
+    "1e3d4837344561e3c0d6ae5cc148d2363f442a3d372bbf4e50ec95cc877e20a6",
+    "1f425b6ef1c99630368cb25dbefe90fbf2d55757d4cd04af7de4afbd518396f2",
+    "388c89e8412bac10ab7a19ee94f75205312a0b2cb0f35d735f176ab5c54e3ae7",
+    "f138055d6bb563f091f167598e874655412f1dd3621e03d8165aca49a5d55507",
+    "a605dae2cc96a78ef8ec2999bf93f76daa0e3ab34b8d3a1ec43ddf2b940fedc1",
+    "8fd5f8694db47a839efd5aba73f1e5294c05f88c0664620c2d04078100b8e810",
+    "4e19a17a7124563ece25e5dab8f16096536713e5a7d1b72fc2212098db9fcccd",
+    "6b3d0496364fbebff4a48431c9ab1609de46779a749f1ff184a0a26d1fc7c099",
+    "5f2be14ebbd627eedcbfa148a7d75bc9d1601fa64ec25cbdf1334d591b41beed",
+    "9f76795be888267b53a1f10c3619f372eb0a46bc3ec2b6abc1e159ce4f633673",
+    "53929369b119602bcd84b8d1181a28b21e5d33f57d35722db1b465b341993c2a",
+    "f646a27725afa92d17367d3378e76a8d25e9a43a40964ed38e31fba8e01dbfa2",
+    "6e5ae45d9bbd065fb1765f5c13dd0f797517a9c016748173b0fe361593823612",
+    "c1c5cc47e794e1d6f5a56a59c9954cffc083457f80cce6f257ea6454d9bf87c4",
+    "494f32944c11112766e8a6a489d82c23d3dd598231401d995c38337d9569634c",
+    "8e3fddd9004b4dca76af371fb69ebf8350d2e33da764d154f5e3c5d9c807e125",
+    "7fdee6ba8b29675e654cfab294ccd4cf47b30be0de3913f06e6f4b7276ad37f5",
+    "b915db8aeb32301d17d91efdd509700f8ce8e6add45aac1fe18e27d35bec5f1d",
+    "4318e730bb06795e65e6c7cdc37dea80183ca9bfc2f0378040dbcf2558416c34",
+    "c935e6121477213a6f9e15bd482a1d54eed01dcc7e6e5e38990835393db48e0e",
+    "6e02ae4d466fdb6744c0012380bbf8b16023d0f51299d5686f7f58a64a62f284",
+    "6f0001abfc850fe9bf40bde2f4215ba04b780fd8a9e29f6fc55e9677b781ca7a",
+    "eb60b345d5ea8c3b735619e2f5244f2ed8446eaa5749bfd42f3f01de11fd106c",
+    "30c75b62951335045224347ddca376663f58c9fb6aa63582f0ec70494eda65a8",
+    "4baafdcfb230e9da03cfa80c285a88bc3153f9a243a39426f5432d7074de01a7",
+    "d4b4ad41f2434dcf7a422695ba9fc97440b3f3687c99949341ea90cd1cca1f51",
+    "cc3b9ccabd8528cf33c6ae71c84828519e5f2a114762e5039e455bede232d5a0",
+    "ae1a3f115de1a954312cf075f7dc623d0506997c64d6d1d8980d280eba0726b4",
+    "3a3a60d3f680259352364dfc5f6337e58eca0b007b1f117676e43fd67a60a83f",
+    "a1b0a3a49416b302758f05ede3baa8033f49dd4af586d358fab0269b630e547c"
+  ],
+  "family": {
+    "batch": 32,
+    "betas": "(0.9**(14/N),0.95**(14/N))",
+    "clip_norm": 1.0,
+    "consumed_fraction": 0.25,
+    "controls": [
+      0.0,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "depth": 5,
+    "epsilon": 1e-08,
+    "generator_lr": "0.0003*g*14/N",
+    "head_dimension": 64,
+    "heads": [
+      4,
+      8,
+      14,
+      24
+    ],
+    "horizon": "128*N",
+    "other_lr": "0.0006/N",
+    "physical_step": "1/(128*N)",
+    "resource_documents": "16384*N",
+    "seeds": [
+      9163401,
+      9163402,
+      9163403
+    ],
+    "source": "Nested prefix of a frozen permutation of the master; first 65 tokens per document, token 64 is the sole training target; distinct documents within every trajectory.",
+    "weight_decay": 0.01
+  },
+  "hypotheses": [
+    "Matched bias-corrected adaptive forces obey their finite-history envelope.",
+    "A finite consuming source requires age-conditioned row, common-operator and predictive laws.",
+    "State-specific operator calibration is tested at all four ages; initial-cache transport is retained as a separate policy."
+  ],
+  "input_sha256": {
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/configuration_pldrllm.py": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e",
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/modeling_pldrllm.py": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0",
+    "/pldr-data/model/controlled-study-20260905/data/short/records.json": "b45abc493309b3fb80d891d255de857bc5fff7f61c226192b39398d98cce4a60",
+    "/pldr-data/model/controlled-study-20260905/data/short/tokens.npy": "2e7e2c751e90b7c8d3aab4af86e9d9f5e554b908a1942ea8d30d5f54c766a472",
+    "/pldr-data/model/data/refinedweb-onepass-524288/manifest.json": "ec5445c6f08d183e5453330259b75b78cb86af3696e5e6b09c9275b3d636a9d2",
+    "/pldr-data/model/data/refinedweb-onepass-524288/records.json": "eaac0616a2025727b0b73fc7f8b7d9211f531b59d3a17c062bbc9bd04c8170ed",
+    "/pldr-data/model/data/refinedweb-onepass-524288/tokens.npy": "63eee605320cd77f8e4d1cc34ecf5ee02131f94727a6083ea7150f12894f37ef"
+  },
+  "interpretation": "Three new wide initialization identities conditional on fixed corpus/order and shared generator; controls, ages and contexts are paired, not extra independent training replicas. No critical exponent or stationarity assumption.",
+  "jobs": [
+    {
+      "control": 0.0,
+      "heads": 4,
+      "run_id": "h4-g0-s9163401",
+      "seed": 9163401,
+      "steps": 512
+    },
+    {
+      "control": 0.0,
+      "heads": 4,
+      "run_id": "h4-g0-s9163402",
+      "seed": 9163402,
+      "steps": 512
+    },
+    {
+      "control": 0.0,
+      "heads": 4,
+      "run_id": "h4-g0-s9163403",
+      "seed": 9163403,
+      "steps": 512
+    },
+    {
+      "control": 1.0,
+      "heads": 4,
+      "run_id": "h4-g1-s9163401",
+      "seed": 9163401,
+      "steps": 512
+    },
+    {
+      "control": 1.0,
+      "heads": 4,
+      "run_id": "h4-g1-s9163402",
+      "seed": 9163402,
+      "steps": 512
+    },
+    {
+      "control": 1.0,
+      "heads": 4,
+      "run_id": "h4-g1-s9163403",
+      "seed": 9163403,
+      "steps": 512
+    },
+    {
+      "control": 1.5,
+      "heads": 4,
+      "run_id": "h4-g1.5-s9163401",
+      "seed": 9163401,
+      "steps": 512
+    },
+    {
+      "control": 1.5,
+      "heads": 4,
+      "run_id": "h4-g1.5-s9163402",
+      "seed": 9163402,
+      "steps": 512
+    },
+    {
+      "control": 1.5,
+      "heads": 4,
+      "run_id": "h4-g1.5-s9163403",
+      "seed": 9163403,
+      "steps": 512
+    },
+    {
+      "control": 2.0,
+      "heads": 4,
+      "run_id": "h4-g2-s9163401",
+      "seed": 9163401,
+      "steps": 512
+    },
+    {
+      "control": 2.0,
+      "heads": 4,
+      "run_id": "h4-g2-s9163402",
+      "seed": 9163402,
+      "steps": 512
+    },
+    {
+      "control": 2.0,
+      "heads": 4,
+      "run_id": "h4-g2-s9163403",
+      "seed": 9163403,
+      "steps": 512
+    },
+    {
+      "control": 0.0,
+      "heads": 8,
+      "run_id": "h8-g0-s9163401",
+      "seed": 9163401,
+      "steps": 1024
+    },
+    {
+      "control": 0.0,
+      "heads": 8,
+      "run_id": "h8-g0-s9163402",
+      "seed": 9163402,
+      "steps": 1024
+    },
+    {
+      "control": 0.0,
+      "heads": 8,
+      "run_id": "h8-g0-s9163403",
+      "seed": 9163403,
+      "steps": 1024
+    },
+    {
+      "control": 1.0,
+      "heads": 8,
+      "run_id": "h8-g1-s9163401",
+      "seed": 9163401,
+      "steps": 1024
+    },
+    {
+      "control": 1.0,
+      "heads": 8,
+      "run_id": "h8-g1-s9163402",
+      "seed": 9163402,
+      "steps": 1024
+    },
+    {
+      "control": 1.0,
+      "heads": 8,
+      "run_id": "h8-g1-s9163403",
+      "seed": 9163403,
+      "steps": 1024
+    },
+    {
+      "control": 1.5,
+      "heads": 8,
+      "run_id": "h8-g1.5-s9163401",
+      "seed": 9163401,
+      "steps": 1024
+    },
+    {
+      "control": 1.5,
+      "heads": 8,
+      "run_id": "h8-g1.5-s9163402",
+      "seed": 9163402,
+      "steps": 1024
+    },
+    {
+      "control": 1.5,
+      "heads": 8,
+      "run_id": "h8-g1.5-s9163403",
+      "seed": 9163403,
+      "steps": 1024
+    },
+    {
+      "control": 2.0,
+      "heads": 8,
+      "run_id": "h8-g2-s9163401",
+      "seed": 9163401,
+      "steps": 1024
+    },
+    {
+      "control": 2.0,
+      "heads": 8,
+      "run_id": "h8-g2-s9163402",
+      "seed": 9163402,
+      "steps": 1024
+    },
+    {
+      "control": 2.0,
+      "heads": 8,
+      "run_id": "h8-g2-s9163403",
+      "seed": 9163403,
+      "steps": 1024
+    },
+    {
+      "control": 0.0,
+      "heads": 14,
+      "run_id": "h14-g0-s9163401",
+      "seed": 9163401,
+      "steps": 1792
+    },
+    {
+      "control": 0.0,
+      "heads": 14,
+      "run_id": "h14-g0-s9163402",
+      "seed": 9163402,
+      "steps": 1792
+    },
+    {
+      "control": 0.0,
+      "heads": 14,
+      "run_id": "h14-g0-s9163403",
+      "seed": 9163403,
+      "steps": 1792
+    },
+    {
+      "control": 1.0,
+      "heads": 14,
+      "run_id": "h14-g1-s9163401",
+      "seed": 9163401,
+      "steps": 1792
+    },
+    {
+      "control": 1.0,
+      "heads": 14,
+      "run_id": "h14-g1-s9163402",
+      "seed": 9163402,
+      "steps": 1792
+    },
+    {
+      "control": 1.0,
+      "heads": 14,
+      "run_id": "h14-g1-s9163403",
+      "seed": 9163403,
+      "steps": 1792
+    },
+    {
+      "control": 1.5,
+      "heads": 14,
+      "run_id": "h14-g1.5-s9163401",
+      "seed": 9163401,
+      "steps": 1792
+    },
+    {
+      "control": 1.5,
+      "heads": 14,
+      "run_id": "h14-g1.5-s9163402",
+      "seed": 9163402,
+      "steps": 1792
+    },
+    {
+      "control": 1.5,
+      "heads": 14,
+      "run_id": "h14-g1.5-s9163403",
+      "seed": 9163403,
+      "steps": 1792
+    },
+    {
+      "control": 2.0,
+      "heads": 14,
+      "run_id": "h14-g2-s9163401",
+      "seed": 9163401,
+      "steps": 1792
+    },
+    {
+      "control": 2.0,
+      "heads": 14,
+      "run_id": "h14-g2-s9163402",
+      "seed": 9163402,
+      "steps": 1792
+    },
+    {
+      "control": 2.0,
+      "heads": 14,
+      "run_id": "h14-g2-s9163403",
+      "seed": 9163403,
+      "steps": 1792
+    },
+    {
+      "control": 0.0,
+      "heads": 24,
+      "run_id": "h24-g0-s9163401",
+      "seed": 9163401,
+      "steps": 3072
+    },
+    {
+      "control": 0.0,
+      "heads": 24,
+      "run_id": "h24-g0-s9163402",
+      "seed": 9163402,
+      "steps": 3072
+    },
+    {
+      "control": 0.0,
+      "heads": 24,
+      "run_id": "h24-g0-s9163403",
+      "seed": 9163403,
+      "steps": 3072
+    },
+    {
+      "control": 1.0,
+      "heads": 24,
+      "run_id": "h24-g1-s9163401",
+      "seed": 9163401,
+      "steps": 3072
+    },
+    {
+      "control": 1.0,
+      "heads": 24,
+      "run_id": "h24-g1-s9163402",
+      "seed": 9163402,
+      "steps": 3072
+    },
+    {
+      "control": 1.0,
+      "heads": 24,
+      "run_id": "h24-g1-s9163403",
+      "seed": 9163403,
+      "steps": 3072
+    },
+    {
+      "control": 1.5,
+      "heads": 24,
+      "run_id": "h24-g1.5-s9163401",
+      "seed": 9163401,
+      "steps": 3072
+    },
+    {
+      "control": 1.5,
+      "heads": 24,
+      "run_id": "h24-g1.5-s9163402",
+      "seed": 9163402,
+      "steps": 3072
+    },
+    {
+      "control": 1.5,
+      "heads": 24,
+      "run_id": "h24-g1.5-s9163403",
+      "seed": 9163403,
+      "steps": 3072
+    },
+    {
+      "control": 2.0,
+      "heads": 24,
+      "run_id": "h24-g2-s9163401",
+      "seed": 9163401,
+      "steps": 3072
+    },
+    {
+      "control": 2.0,
+      "heads": 24,
+      "run_id": "h24-g2-s9163402",
+      "seed": 9163402,
+      "steps": 3072
+    },
+    {
+      "control": 2.0,
+      "heads": 24,
+      "run_id": "h24-g2-s9163403",
+      "seed": 9163403,
+      "steps": 3072
+    }
+  ],
+  "memory_ceiling_bytes": 23622320128,
+  "output_policy": "Keep all finite outcomes and failed runs; no replacement seeds; final full states retained outside the manuscript bundle.",
+  "prefix_length": 64,
+  "qualification_updates": 3,
+  "reservation_sha256": "4d896e26bdaee968c56cd53a93a0994e47da529bdf7da42ba0c9fa920b7e5727",
+  "schema": "matched-clock-onepass-v1",
+  "scientific_updates": 76800,
+  "selection_sha256": "428dc295c9281d6cf95879069629fb680b2d2bbb5f16e416e8ec5aea68dd5b9c",
+  "shared_seed": 9163499,
+  "source_sha256": {
+    "scripts/context_reservations.py": "488a257ffca271ac82a93156d549038a9caebd08783fd98a830de147dec1c78a",
+    "scripts/numerical_validation.py": "7cbd61910f8e525421e59201fe1ce23fa232dc9fcd9dc79144d13ab1d516fabe",
+    "scripts/run_matched_clock.py": "10fca5c1e95ca56f07377a2ffbaf7a2702ccf68359f93eec3313e405acd21d4b",
+    "src/model_rg/controlled.py": "183977ae378b09714f7f160048b4c3ba3628210ba6fdf83f90736e1715a078a0",
+    "src/model_rg/criticality.py": "eb14cef4185c5c707d6f1e95c2018cd9d0334e108e52b0a44c7170cd2597d4ed",
+    "src/model_rg/inference_interventions.py": "2035f165abd115432b4c6321f7e143eb4b3670e020fd3b008557d7c719a2f01e",
+    "src/model_rg/native.py": "2b468292b0e823303c88affb88c2f8f895fa7c1835e8ee57e3f448b40c2162d0",
+    "src/model_rg/provenance.py": "a80e758af37e833825f5a8bd0b19d33c943192959a5a1c4160e9f3f33216a362",
+    "src/model_rg/training.py": "04157d038de4febc1aafdfa2593532dd4cb6b0d04ceee939b42b41fcba0e4922",
+    "src/model_rg/variance_family.py": "c9f4a5b4140138de670a26fccf104e3d656ccc2187570f0bc6a41f3dacf77cbf"
+  },
+  "status": "frozen_before_acquisition",
+  "targets": {
+    "centered_rms": 0.25,
+    "mean_kl": 0.03
+  },
+  "vocabulary": 32000,
+  "worker_hour_cap": 6
+}

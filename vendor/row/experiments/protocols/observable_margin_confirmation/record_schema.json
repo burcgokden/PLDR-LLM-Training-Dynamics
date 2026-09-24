@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "attempt": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "campaign_id": {
+      "const": "observable-margin-confirmation-rev37"
+    },
+    "checks": {
+      "minProperties": 1,
+      "type": "object"
+    },
+    "command": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "deciding_arithmetic": {
+      "type": "string"
+    },
+    "failure": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "inputs": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "job_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "native_arithmetic": {
+      "type": "string"
+    },
+    "outputs": {
+      "type": "array"
+    },
+    "record_key": {
+      "pattern": "^[A-Z]+:.+$",
+      "type": "string"
+    },
+    "record_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "resources": {
+      "type": "object"
+    },
+    "role": {
+      "enum": [
+        "construction",
+        "heldout",
+        "shared",
+        "control"
+      ]
+    },
+    "schema_version": {
+      "const": "pldr-observable-margin-stage-record-v1"
+    },
+    "stage": {
+      "enum": [
+        "R",
+        "T",
+        "B",
+        "H",
+        "ROB",
+        "M",
+        "I",
+        "F"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "stage",
+    "job_id",
+    "record_key",
+    "attempt",
+    "status",
+    "role",
+    "command",
+    "native_arithmetic",
+    "deciding_arithmetic",
+    "inputs",
+    "outputs",
+    "checks",
+    "resources",
+    "failure",
+    "record_sha256"
+  ],
+  "title": "Observable-margin stage/job attempt record",
+  "type": "object"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "technical_valid",
+    "record_count",
+    "comparison_count",
+    "outcome_counts",
+    "comparisons",
+    "prefix_products",
+    "force_contributions",
+    "invariant_radius_residuals"
+  ],
+  "title": "Independent block-normal analysis",
+  "type": "object"
+}

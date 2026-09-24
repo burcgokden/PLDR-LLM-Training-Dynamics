@@ -1,0 +1,159 @@
+{
+ "rule": "a failed identification or hypothesis marks every dependent rendered claim inactive; the claims listed per entry are the manuscript anchors that consume it",
+ "entries": {
+  "I1": {
+   "consumers": [
+    "closure",
+    "capture boundary",
+    "E-series"
+   ],
+   "tests": [
+    "E0",
+    "E1"
+   ],
+   "dependent_claims": [
+    "thm:closure",
+    "eq:captureboundary"
+   ]
+  },
+  "I2": {
+   "consumers": [
+    "guard",
+    "capture boundary"
+   ],
+   "tests": [
+    "E0",
+    "E2"
+   ],
+   "dependent_claims": [
+    "thm:closure",
+    "def:margin"
+   ]
+  },
+  "I3": {
+   "consumers": [
+    "event layer",
+    "E3-E7"
+   ],
+   "tests": [
+    "E2"
+   ],
+   "dependent_claims": [
+    "thm:eventclock",
+    "thm:eventterm"
+   ]
+  },
+  "I-J": {
+   "consumers": [
+    "maintenance clauses",
+    "driven verdict",
+    "phase criteria"
+   ],
+   "tests": [
+    "E0",
+    "E5"
+   ],
+   "dependent_claims": [
+    "thm:closure",
+    "cor:drivenverdict",
+    "lem:aggbridge"
+   ]
+  },
+  "I-edge": {
+   "consumers": [
+    "exact threshold quotient",
+    "capture and release classification",
+    "boundary-class width"
+   ],
+   "tests": [
+    "E0",
+    "E6"
+   ],
+   "dependent_claims": [
+    "prop:thresholdquotient",
+    "thm:schedulecertificate",
+    "lem:geomsep",
+    "thm:mastercollapse"
+   ]
+  },
+  "H-gate": {
+   "consumers": [
+    "closure clauses",
+    "selector"
+   ],
+   "tests": [
+    "E0",
+    "E5",
+    "E6"
+   ],
+   "dependent_claims": [
+    "thm:closure",
+    "thm:overloadclass"
+   ]
+  },
+  "H-dec": {
+   "consumers": [
+    "curvature law",
+    "capture boundary"
+   ],
+   "tests": [
+    "E0"
+   ],
+   "dependent_claims": [
+    "thm:curvlaw"
+   ]
+  },
+  "H-band": {
+   "consumers": [
+    "curvature law",
+    "drive"
+   ],
+   "tests": [
+    "E0"
+   ],
+   "dependent_claims": [
+    "thm:driveequality"
+   ]
+  },
+  "H-SC": {
+   "consumers": [
+    "averaged model",
+    "loading",
+    "capture",
+    "closure horizons"
+   ],
+   "tests": [
+    "E0"
+   ],
+   "dependent_claims": [
+    "thm:loading",
+    "thm:closure"
+   ]
+  },
+  "K-dom": {
+   "consumers": [
+    "cascade law"
+   ],
+   "tests": [
+    "E3"
+   ],
+   "dependent_claims": [
+    "thm:gwdomination"
+   ]
+  },
+  "O-certs": {
+   "consumers": [
+    "driven clauses",
+    "overload resolution"
+   ],
+   "tests": [
+    "E5"
+   ],
+   "dependent_claims": [
+    "thm:overloadclass",
+    "cor:drivenverdict"
+   ],
+   "note": "(G-ret), (O-reb), (O-load), (O-head) are checkable model-parameter certificates; their live evaluation uses E0-measured constants"
+  }
+ }
+}

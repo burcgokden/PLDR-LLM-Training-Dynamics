@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "schema_version": {
+      "const": "pldr-observable-cocycle-lock-v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "lock_sha256",
+    "layers"
+  ],
+  "title": "Construction horizon lock",
+  "type": "object"
+}

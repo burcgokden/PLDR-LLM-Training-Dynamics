@@ -1,0 +1,58 @@
+[
+  {
+    "label": "thm:gate-classification",
+    "paper": "Gate-shape classification",
+    "module": "LayerNormGate",
+    "declarations": ["gate_difference", "coordinate_constant_iff", "zero_gate_constant", "coordinate_oscillation_bound"],
+    "scope": "Exact diagonal-gate difference algebra, coordinatewise constant-map classification, zero-gate collapse, and a coordinate oscillation bound.",
+    "excluded": "Evaluation of the upstream residual network and the strict LayerNorm radius."
+  },
+  {
+    "label": "thm:contrast-energy",
+    "paper": "Diagonal contrast energy",
+    "module": "GateContrastEnergy",
+    "declarations": ["exact_gate_shape_increment", "shape_metric_nonnegative", "zero_gate_zero_energy"],
+    "scope": "Exact finite gate-work plus shape-work expansion, nonnegativity of the registered shape metric, and zero-gate energy.",
+    "excluded": "Checkpoint pair extraction and directional differentiation of the live normalized shape."
+  },
+  {
+    "label": "thm:softmax-pairwise",
+    "paper": "General-vocabulary softmax identity",
+    "module": "GeneralSoftmaxPairwise",
+    "declarations": ["general_vocabulary_pairwise_identity", "ordered_pair_nonnegative"],
+    "scope": "The full finite-vocabulary covariance identity and nonnegativity of its ordered-pair energy.",
+    "excluded": "Automatic differentiation of checkpoint logits and construction of the signed second jet."
+  },
+  {
+    "label": "thm:adamw-gate-block",
+    "paper": "Full smooth-cell AdamW gate block",
+    "module": "BlockAdamWGate",
+    "declarations": ["full_gate_block_expansion", "decay_multiplier", "clipping_cell_derivative"],
+    "scope": "The scalar three-state block expansion, decoupled decay multiplier, and fixed clipping-cell derivative used coordinatewise.",
+    "excluded": "Checkpoint Hessian extraction, bias-clock recovery, and numerical block reconstruction."
+  },
+  {
+    "label": "thm:ordered-capture",
+    "paper": "Chronological capture and forcing",
+    "module": "ObservableCapture",
+    "declarations": ["zero_force_exact_product", "ordered_capture_envelope", "forced_fixed_point"],
+    "scope": "Exact chronological products, finite product-convolution enclosure, and the constant-gain forced radius.",
+    "excluded": "Measured norms, construction-owned remainder radii, and clipping-branch certification."
+  },
+  {
+    "label": "thm:gate-shape-master",
+    "paper": "Comprehensive gate-shape collapse",
+    "module": "GateCollapseMaster",
+    "declarations": ["gate_route", "shape_route", "mixed_route_identity", "exact_coordinate_collapse"],
+    "scope": "Gate-led, shape-led, mixed, and exact coordinatewise collapse implications once their quantitative hypotheses are supplied.",
+    "excluded": "Architecture hooks, optimizer premise construction, and held-out energy validation."
+  },
+  {
+    "label": "thm:plga-secant",
+    "paper": "Exact PLGA secant transfer",
+    "module": "PLGADividedDifference",
+    "declarations": ["divided_difference_exact", "divided_difference_diagonal", "divided_difference_chain", "affine_secant_transfer"],
+    "scope": "Endpoint divided-difference exactness, equal-endpoint convention, compositional transfer, and the final affine secant.",
+    "excluded": "Checkpoint interval evaluation and the same-source downstream logit bound."
+  }
+]

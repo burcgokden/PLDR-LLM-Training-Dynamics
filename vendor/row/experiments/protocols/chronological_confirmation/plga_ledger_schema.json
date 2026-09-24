@@ -1,0 +1,18 @@
+{
+  "construction_cells": 15,
+  "construction_contexts_per_cell": 8,
+  "construction_lock_forbidden": true,
+  "container": "npz-without-pickle",
+  "heldout_cells": 60,
+  "heldout_contexts_per_cell": 16,
+  "heldout_lock_required": true,
+  "required_raw_families": [
+    "generator-and-collapsed-anchor",
+    "PLGA-parameters",
+    "occupied-curvature-endpoints",
+    "rectangular-query-key-score",
+    "centered-logits",
+    "checkpoint-registry-lock-digests"
+  ],
+  "schema_version": "pldr-chronological-plga-ledger-v1"
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "pldr-row-rg-confirmation-protocol-v3",
+  "protocol_id": "rgmap-refinedweb-byte-four-trajectory-conditioned-20260902",
+  "expected_updates": 196608,
+  "segments": {
+    "burn_in_updates": 32768,
+    "design_updates": 32768,
+    "holdout_updates": 131072
+  },
+  "holdout_selection": {
+    "candidate_updates": [65536, 131072],
+    "selected_updates": 131072,
+    "selection_time": "before any trajectory data were generated",
+    "rule": "maximum resource-capped candidate; adequacy is tested from design variance only"
+  },
+  "block_sizes": [1, 2, 4, 8, 16, 32, 64, 128, 256, 512],
+  "retained_block_sizes": [1, 2, 4, 8, 16, 32],
+  "observer_effect_floor": 1e-12,
+  "identity_tolerances": {
+    "float64_affine_replay_relative": 5e-12,
+    "float32_gate_shape_map_backward_relative": 2e-6,
+    "plga_decomposition_relative": 5e-12,
+    "constrained_plga_defect_norm": 1e-9
+  },
+  "analysis": {
+    "familywise_alpha": 0.05,
+    "familywise_cell_count": 12,
+    "time_batch_length": 512,
+    "window_length": 8192,
+    "target_mde_per_update": 0.0001,
+    "design_long_run_variance_estimator": "batch length times the sample variance of nonoverlapping batch means",
+    "design_variance_upper_rule": "chi-square upper bound with lower-tail probability familywise alpha divided by cell count",
+    "law_block_sizes": [128, 256, 512],
+    "variance_block_sizes": [32, 64, 128, 256, 512],
+    "excursion_events": {
+      "layer": 1,
+      "absolute_log_gain_threshold": 1.0,
+      "cluster_gap_updates": 128
+    },
+    "stationarity": {
+      "maximum_split_t": 3.5,
+      "maximum_trend_t": 3.5,
+      "minimum_variance_ratio": 0.25,
+      "maximum_variance_ratio": 4.0,
+      "maximum_design_holdout_shift_t": 3.5,
+      "minimum_design_holdout_variance_ratio": 0.25,
+      "maximum_design_holdout_variance_ratio": 4.0
+    },
+    "gaussian_fixed_law": {
+      "seed": 2026090201,
+      "bootstrap_replicates": 4999,
+      "minimum_blocks": 128,
+      "diagnostic_band_alpha": 0.05,
+      "multiple_comparison_rule": "Holm over all trajectory-layer and registered law-scale tests"
+    },
+    "variance_scaling": {
+      "minimum_variance_exponent": 0.8,
+      "maximum_variance_exponent": 1.2,
+      "maximum_design_holdout_exponent_shift": 0.25
+    },
+    "regular_drift_prediction": {
+      "minimum_design_r_squared": 0.8,
+      "minimum_gamma": 0.0,
+      "maximum_gamma": 1.0,
+      "maximum_cumulative_relative_error": 0.25
+    }
+  },
+  "plga_analysis": {
+    "checkpoint_steps": [0, 32768, 65536, 196608],
+    "segment_grid": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "operator_power_iterations": 12,
+    "operator_start_count": 3,
+    "structural_residual_tolerance": 1e-9,
+    "direct_defect_tolerance": 1e-6
+  },
+  "qualification": {
+    "null_campaigns": 1000,
+    "alternative_effect_multiple_of_target_mde": 2.0,
+    "alternative_resource_mde_fraction": 0.75,
+    "minimum_acceptable_directional_detection_probability": 0.98,
+    "maximum_acceptable_flow_familywise_error": 0.07,
+    "minimum_acceptable_gaussian_familywise_nonrejection": 0.93,
+    "minimum_stationary_domain_pass_probability": 0.9
+  },
+  "interpretation": {
+    "flow": "A stationary phase label requires adequate design-only power, a stable registered temporal domain, and a direction selected on design and confirmed on holdout.",
+    "law": "No Holm rejection and finite-variance scaling support finite-scale consistency only.",
+    "universality": "Asymptotic universality is not identified by this single-architecture campaign.",
+    "faces": "Only native exact zeros activate the affine source branch.",
+    "numerical_integrity": "The LayerNorm gate-shape check uses full-map Frobenius backward error because quotient-relative energy error is ill-conditioned at the exact face; the symmetric quotient-energy residual remains descriptive.",
+    "plga": "The direct defect is pointwise definitive; five structural residuals are sufficient-condition diagnostics; the sampled operator estimate is a lower bound."
+  }
+}

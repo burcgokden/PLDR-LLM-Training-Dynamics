@@ -1,0 +1,232 @@
+[
+  {
+    "label": "lem:bias-radius",
+    "paper": "Bias cancellation and strict shape radius",
+    "module": "LayerNormFactorization",
+    "declarations": ["row_contrast", "strict_regularized_radius"],
+    "scope": "Exact affine-bias cancellation and the regularized scalar radius bound.",
+    "excluded": "The centered-vector norm calculation and pair triangle bound.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:layernorm-jacobian",
+    "paper": "Exact LayerNorm shape Jacobian",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The projection Jacobian, eigenspace calculation, and operator-norm bound remain in the written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "thm:coordinate-sandwich",
+    "paper": "Coordinate carrier-diameter sandwich",
+    "module": "CoordinateOscillation",
+    "declarations": [
+      "carrier",
+      "coordinate_oscillation_le_diameter",
+      "diameter_le_l2_oscillation"
+    ],
+    "scope": "The coordinate-attaining lower bound and exhaustive-pair transfer to the l2 carrier envelope.",
+    "excluded": "Construction of coordinate extrema and the final finite-dimensional l2 to linfinity inequality.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:finite-collapse-criterion",
+    "paper": "Exact finite-registry collapse criterion",
+    "module": "CoordinateOscillation",
+    "declarations": ["finite_registry_collapse_iff"],
+    "scope": "Coordinatewise product extinction is equivalent to the exhaustive gate-or-shape alternative.",
+    "excluded": "The asymptotic norm equivalence, which follows from the written sandwich theorem.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:chronological-first-moment",
+    "paper": "Chronological first moment",
+    "module": "ChronologicalAdamW",
+    "declarations": ["chronologicalMoment", "chronological_moment_split"],
+    "scope": "Exact geometric chronological unrolling and history split.",
+    "excluded": "The normalized weight-sum calculation and runtime clipping binding.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:adamw-duhamel",
+    "paper": "Nonautonomous gate Duhamel formula",
+    "module": "AdamWGateForcing",
+    "declarations": ["adamw_gate_duhamel"],
+    "scope": "The first nontrivial ordered-product and forcing-convolution identity for two gate steps.",
+    "excluded": "The arbitrary finite-horizon induction and absolute-value bound remain in the written proof.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:gate-tube",
+    "paper": "Gate collapse and forced gate tube",
+    "module": "AdamWGateForcing",
+    "declarations": [
+      "gate_forcing_step",
+      "persistent_innovation_gate_tube",
+      "vanishing_innovation_gate_collapse"
+    ],
+    "scope": "One-step stable forcing, invariant tube, and tolerance-level collapse kernels.",
+    "excluded": "The full nonautonomous limsup formulation.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:ordered-residual-jacobian",
+    "paper": "Correctly ordered residual Jacobian",
+    "module": "ResidualShapeContraction",
+    "declarations": ["layernorm_residual_chain", "shape_oscillation_bound"],
+    "scope": "Physical ordering of residual gains and transfer of a derivative gain to shape oscillation.",
+    "excluded": "Matrix chain-rule construction and operator-norm submultiplicativity.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:gate-shape-product",
+    "paper": "Gate-shape product recurrence",
+    "module": "ComprehensiveRowMapCollapse",
+    "declarations": ["gate_shape_product_step"],
+    "scope": "The complete nonnegative mixed product recurrence, including all three forcing terms.",
+    "excluded": "Binding abstract gains and forces to endpoint AdamW and residual-network tensors.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:forced-carrier-collapse",
+    "paper": "Forced carrier tube and row-map collapse",
+    "module": "ComprehensiveRowMapCollapse",
+    "declarations": [
+      "coordinate_block_collapse",
+      "gate_shape_master",
+      "forced_row_map_tube"
+    ],
+    "scope": "Geometric coordinate iteration and transfer of a carrier envelope or tube to row diameter.",
+    "excluded": "The nonuniform forcing convolution and componentwise limsup collection.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:diameter-slack-identity",
+    "paper": "Exact diameter-slack identity",
+    "module": "DiameterSlack",
+    "declarations": ["pairDecrement", "diameterSlack", "diameter_slack_identity"],
+    "scope": "For each pair, successor energy equals source diameter squared minus its exact slack.",
+    "excluded": "Taking the finite minimum and identifying it with the successor maximum.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:changing-maximizer",
+    "paper": "Changing maximizer and expanding pairs",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The attaining successor-pair substitution remains in the stand-alone written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:exact-gate-shape-decomposition",
+    "paper": "Exact gate-shape pair decomposition",
+    "module": "CounterfactualShapeResponse",
+    "declarations": ["two_arm_energy_identity"],
+    "scope": "The add-and-subtract intermediate-energy algebra for fixed and shape-work components.",
+    "excluded": "Binding the four abstract energies to one PLDR pair at consecutive endpoints.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:chronological-gate-balance",
+    "paper": "Exact chronological gate balance",
+    "module": "ExecutedAdamWEnergy",
+    "declarations": [
+      "energy",
+      "pairing",
+      "decayDissipation",
+      "executed_adamw_balance"
+    ],
+    "scope": "The full diagonal pair-metric balance into decay, signed alignment, and finite innovation charge.",
+    "excluded": "Runtime identification of the innovation with checkpoint moment tensors.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:comprehensive-collapse-law",
+    "paper": "Comprehensive one-step collapse law",
+    "module": "DiameterSlack",
+    "declarations": ["diameter_slack_identity", "lower_slack_diameter_step"],
+    "scope": "Exact pair slack and transfer from simultaneous lower slacks to a successor diameter bound.",
+    "excluded": "Assembly with the separate executed-AdamW and endpoint-shape identities and exact finite minimum equality.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:finite-block-law",
+    "paper": "Finite-block law",
+    "module": "DiameterSlack",
+    "declarations": ["diameter_affine_blocks"],
+    "scope": "A one-block lower-slack estimate implies the displayed affine diameter recurrence.",
+    "excluded": "Exact telescoping of arbitrary executed minimum slacks and the asymptotic equivalence.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:two-arm-response",
+    "paper": "Two-arm live-response identity",
+    "module": "CounterfactualShapeResponse",
+    "declarations": ["two_arm_energy_identity"],
+    "scope": "The live response equals the fixed-source response plus removal shape work minus baseline shape work.",
+    "excluded": "Construction of the two native intervention arms and their row-pair energies.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:occupied-secants",
+    "paper": "Exact occupied-segment secants",
+    "module": "PLGASignedSecant",
+    "declarations": [
+      "positivePower",
+      "signedSecant",
+      "signed_secant_exact",
+      "signed_secant_diagonal",
+      "occupied_segment_bound"
+    ],
+    "scope": "Exact real-power secant reconstruction, diagonal branch, and transfer under a supplied occupied bound.",
+    "excluded": "The iSwiGLU secant and mean-value endpoint maximum.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:row-diameter-matrix",
+    "paper": "Row-diameter matrix bound",
+    "module": "ObservableEnergyDissipation",
+    "declarations": ["stackedDeviationSq", "stacked_generator_sq_bound"],
+    "scope": "The stacked squared-deviation identity and cardinality-times-diameter bound.",
+    "excluded": "Square-root reformulation and physical block binding.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:plga-curvature-transfer",
+    "paper": "Row-collapse transfer to PLGA curvature",
+    "module": "PLGASignedSecant",
+    "declarations": ["occupied_segment_bound"],
+    "scope": "The exact occupied power-secant Lipschitz step.",
+    "excluded": "iSwiGLU, matrix operator norms, curvature-map composition, and asymptotic bounded-constant argument.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:rectangular-score",
+    "paper": "Rectangular score telescope",
+    "module": "PLGAScoreTransfer",
+    "declarations": ["rectangular_three_factor", "fixed_query_key"],
+    "scope": "The exact rectangular three-factor telescope and fixed-query, fixed-key specialization.",
+    "excluded": "The Frobenius and operator-norm estimate.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:sharp-centered-constant",
+    "paper": "Sharp centered pair-difference constant",
+    "module": "CenteredLogitMargin",
+    "declarations": ["centered_pair_difference", "sqrt_two_attained"],
+    "scope": "Centering preserves pair differences and an explicit two-coordinate witness attains the square-root-two factor.",
+    "excluded": "The general Cauchy-Schwarz inequality in the centered subspace.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:optional-winner",
+    "paper": "Optional winner preservation",
+    "module": "CenteredLogitMargin",
+    "declarations": ["sharp_centered_margin"],
+    "scope": "A strict square-root-two centered perturbation bound preserves every positive reference pair margin.",
+    "excluded": "Runtime construction of logits, margins, and response bounds.",
+    "faithfulness": "faithful"
+  }
+]

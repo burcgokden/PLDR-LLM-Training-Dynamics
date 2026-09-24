@@ -1,0 +1,157 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-orbitwise-row-map-collapse-v2"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "all_values_finite": {
+          "type": "boolean"
+        },
+        "checkpoint_chronology": {
+          "type": "boolean"
+        },
+        "map_population_complete": {
+          "type": "boolean"
+        },
+        "native_parameter_link_closed": {
+          "type": "boolean"
+        },
+        "prediction_precedes_successor_binding": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "prediction_precedes_successor_binding",
+        "checkpoint_chronology",
+        "native_parameter_link_closed",
+        "map_population_complete",
+        "all_values_finite"
+      ],
+      "title": "Derived checks",
+      "type": "object"
+    },
+    "created_at_ns": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "endpoint_binding_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "endpoint_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "map_records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bound_slack": {
+            "type": "number"
+          },
+          "endpoint_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "native_charge": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "native_radius": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "realized_reopening": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_reopening_upper": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "zero_source_energy": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "map_id",
+          "source_energy",
+          "endpoint_energy",
+          "realized_reopening",
+          "source_reopening_upper",
+          "native_radius",
+          "native_charge",
+          "bound_slack",
+          "zero_source_energy"
+        ],
+        "title": "Native linkage of one prospective reopening prediction",
+        "type": "object"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "prediction_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-orbitwise-source-link-v2"
+    },
+    "scientific_checks": {
+      "additionalProperties": false,
+      "properties": {
+        "source_reopening_bound_closed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source_reopening_bound_closed"
+      ],
+      "title": "Derived checks",
+      "type": "object"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "seed",
+    "source_step",
+    "endpoint_step",
+    "prediction_sha256",
+    "endpoint_binding_sha256",
+    "created_at_ns",
+    "map_records",
+    "checks",
+    "scientific_checks",
+    "technical_valid"
+  ],
+  "title": "Prospective source-to-native reopening link",
+  "type": "object"
+}

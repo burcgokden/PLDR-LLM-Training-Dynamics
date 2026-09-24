@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "application_pairs": {
+      "maxItems": 24,
+      "minItems": 24,
+      "type": "array"
+    },
+    "checkpoint_steps": {
+      "const": [
+        1000,
+        2000,
+        4000,
+        8000,
+        16000,
+        24000
+      ]
+    },
+    "construction_chunks": {
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "construction_seed": {
+      "const": 1234
+    },
+    "context_length": {
+      "const": 256
+    },
+    "graph_rule": {
+      "const": "unit-weight-chain-on-flattened-registered-rows-v1"
+    },
+    "registry_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-row-map-registry-v1"
+    },
+    "tokenizer_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "tokens_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "validation_chunks": {
+      "maxItems": 16,
+      "minItems": 16,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "validation_seeds": {
+      "const": [
+        2222,
+        3333
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "context_length",
+    "construction_chunks",
+    "validation_chunks",
+    "application_pairs",
+    "graph_rule",
+    "checkpoint_steps",
+    "construction_seed",
+    "validation_seeds",
+    "tokens_sha256",
+    "tokenizer_sha256",
+    "registry_sha256"
+  ],
+  "title": "PLDR row-map context registry",
+  "type": "object"
+}

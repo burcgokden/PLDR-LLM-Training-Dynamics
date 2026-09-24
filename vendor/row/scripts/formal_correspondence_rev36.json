@@ -1,0 +1,98 @@
+[
+  {
+    "label": "lem:shape-radius",
+    "paper": "Normalized-shape radius",
+    "module": "LayerNormGeometry",
+    "declarations": ["normalizedShapeSq", "normalized_shape_sq_lt", "gate_diameter_bound"],
+    "scope": "The epsilon-regularized radius inequality and the scalar norm algebra behind the global gate diameter bound.",
+    "excluded": "The implemented LayerNorm hook and the vector Jacobian evaluation."
+  },
+  {
+    "label": "thm:gate-classification",
+    "paper": "Exact coordinate routes",
+    "module": "LayerNormGate",
+    "declarations": ["gate_difference", "coordinate_constant_iff", "zero_gate_constant", "coordinate_oscillation_bound"],
+    "scope": "Exact diagonal-gate differences, coordinatewise constant-map classification, zero-gate collapse, and coordinate oscillation.",
+    "excluded": "Evaluation of the upstream residual network and numerical LayerNorm tensors."
+  },
+  {
+    "label": "thm:graph-cover",
+    "paper": "Graph energy and physical cover",
+    "module": "ContrastGraphCover",
+    "declarations": ["weightedPathEnergy", "path_difference_bound", "physical_cover_bound"],
+    "scope": "The weighted path Cauchy--Schwarz kernel and the two-endpoint Lipschitz cover addition.",
+    "excluded": "Checkpoint graph construction and vector-valued row extraction."
+  },
+  {
+    "label": "thm:gate-shape-work",
+    "paper": "Gate-shape work identity",
+    "module": "GateContrastEnergy",
+    "declarations": ["exact_gate_shape_increment", "shape_metric_nonnegative", "zero_gate_zero_energy"],
+    "scope": "Exact finite gate-work plus shape-work expansion, nonnegative shape metrics, and zero-gate energy.",
+    "excluded": "Live shape JVPs and empirical remainder enclosures."
+  },
+  {
+    "label": "thm:log-route",
+    "paper": "Logarithmic route decomposition",
+    "module": "LogRouteCollapse",
+    "declarations": ["coordinateEnergy", "coordinate_ratio_product", "logDecrement", "log_route_telescopes", "zero_factor_energy"],
+    "scope": "Coordinate product energy, factorized ratios, telescoping log decrements, and exact zero-factor handling.",
+    "excluded": "Floating-point zero thresholds and trajectory mechanism labels."
+  },
+  {
+    "label": "thm:adamw-gate-dissipation",
+    "paper": "Fixed-shape gate dissipation",
+    "module": "AdamWGateDissipation",
+    "declarations": ["gateEnergy", "gate_energy_step", "decay_loss_step", "decay_dominated_step"],
+    "scope": "Exact finite diagonal energy change, decay plus adaptive direction, and a decay-dominated scalar contraction bound.",
+    "excluded": "Checkpoint moment loading, bias correction, and measured adaptive directions."
+  },
+  {
+    "label": "thm:shape-flux",
+    "paper": "First-order shape flux",
+    "module": "ShapeFluxContraction",
+    "declarations": ["normSq", "dot", "shape_norm_increment", "shape_flux_contracts"],
+    "scope": "Exact squared-shape increment with a finite remainder and a sufficient flux contraction inequality.",
+    "excluded": "Automatic differentiation through the implemented residual row map."
+  },
+  {
+    "label": "thm:softmax-pairwise",
+    "paper": "Full-vocabulary pairwise covariance",
+    "module": "GeneralSoftmaxPairwise",
+    "declarations": ["general_vocabulary_pairwise_identity", "ordered_pair_nonnegative"],
+    "scope": "The finite-vocabulary covariance identity and nonnegativity of its ordered-pair energy.",
+    "excluded": "Checkpoint logit differentiation and construction of the signed second jet."
+  },
+  {
+    "label": "thm:adamw-gate-block",
+    "paper": "Full 3d-state AdamW block",
+    "module": "AdamWBlockMatrix",
+    "declarations": ["threeBlockMatrix", "fullBlockFin", "full_block_fin_entry", "full_block_fin_rows"],
+    "scope": "A genuine Fin (3*d) square matrix, exact block-entry reindexing, and its advertised dimension.",
+    "excluded": "The architecture-specific Hessian and complete-successor automatic-differentiation comparison."
+  },
+  {
+    "label": "thm:scaled-chronological",
+    "paper": "Scaled chronological conjugacy",
+    "module": "ScaledChronologicalProduct",
+    "declarations": ["scaledStep", "scaled_two_step_conjugacy"],
+    "scope": "Endpoint-scaled successors and cancellation of intermediate scales in a chronological product.",
+    "excluded": "Numerical scale selection, singular values, and resource-bound product evaluation."
+  },
+  {
+    "label": "thm:gate-shape-master",
+    "paper": "Comprehensive PLDR row-map collapse",
+    "module": "MixedCollapseMaster",
+    "declarations": ["coordinate_decay_energy", "graph_energy_collapse", "mixed_route_decay"],
+    "scope": "Finite coordinate aggregation, graph-energy-to-diameter implication, and additive mixed log decrement.",
+    "excluded": "Architecture hooks, premise measurement, optimizer forcing, and physical-cover registration."
+  },
+  {
+    "label": "thm:plga-secant",
+    "paper": "Exact signed-power PLGA secant",
+    "module": "PLGADividedDifference",
+    "declarations": ["divided_difference_exact", "divided_difference_diagonal", "divided_difference_chain", "affine_secant_transfer"],
+    "scope": "Endpoint divided-difference exactness, the equal-endpoint convention, composition, and affine transfer for an arbitrary scalar nonlinearity.",
+    "excluded": "Positive-base interval measurement, signed exponent bounds, and downstream logit margins."
+  }
+]

@@ -1,0 +1,1554 @@
+{
+  "campaign_id": "pldr-chronological-collapse-confirmation-v1",
+  "final_gate": "make release-check-current",
+  "intervention_analysis_command": [
+    "python3",
+    "experiments/analysis/analyze_chronological_intervention.py",
+    "{intervention_ledgers}",
+    "--lock",
+    "{construction_lock}",
+    "--output",
+    "{intervention_report}",
+    "--require-pass"
+  ],
+  "pair_analysis_command_heldout": [
+    "python3",
+    "experiments/analysis/analyze_chronological_confirmation.py",
+    "{ledger}",
+    "--lock",
+    "{construction_lock}",
+    "--output",
+    "{report}",
+    "--require-pass"
+  ],
+  "pair_analysis_command_prelock": [
+    "python3",
+    "experiments/analysis/analyze_chronological_confirmation.py",
+    "{ledger}",
+    "--output",
+    "{report}",
+    "--require-pass"
+  ],
+  "placeholders": [
+    "device",
+    "tokens",
+    "tokenizer",
+    "registry",
+    "run_root",
+    "evidence_root",
+    "construction_lock"
+  ],
+  "plga_analysis_commands": {
+    "construction": [
+      "python3",
+      "experiments/analysis/analyze_chronological_plga.py",
+      "{construction_plga_ledgers}",
+      "--output",
+      "{construction_plga_report}",
+      "--require-pass"
+    ],
+    "heldout": [
+      "python3",
+      "experiments/analysis/analyze_chronological_plga.py",
+      "{heldout_plga_ledgers}",
+      "--lock",
+      "{construction_lock}",
+      "--output",
+      "{heldout_plga_report}",
+      "--require-pass"
+    ]
+  },
+  "qualification_command": [
+    "python3",
+    "scripts/run_chronological_qualification.py",
+    "--output-dir",
+    "{campaign_root}/qualification",
+    "--require-pass"
+  ],
+  "schema_version": "pldr-chronological-execution-plan-v1",
+  "trajectories": [
+    {
+      "capture_cells": [
+        {
+          "anchor": 2000,
+          "block_length": 16,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": 64,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": 256,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": 16,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": 64,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": 256,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": 16,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": 64,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": 256,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": 16,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": 64,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": 256,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": 16,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": 64,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": 256,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": 16,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": 64,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": 256,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": 16,
+          "layer": 2
+        },
+        {
+          "anchor": 2000,
+          "block_length": 64,
+          "layer": 2
+        },
+        {
+          "anchor": 2000,
+          "block_length": 256,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": 16,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": 64,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": 256,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": 16,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": 64,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": 256,
+          "layer": 2
+        }
+      ],
+      "checkpoint_steps": [
+        2000,
+        4000,
+        8000,
+        9001
+      ],
+      "data_offset_chunks": 0,
+      "distinct_data_order_required": true,
+      "history_sidecar_required": true,
+      "intervention_units": [],
+      "name": "chron-development-s7444-o0",
+      "plga_cells": [],
+      "role": "development",
+      "seed": 7444,
+      "training_command": [
+        "python3",
+        "experiments/train_run.py",
+        "--name",
+        "chron-development-s7444-o0",
+        "--run-id",
+        "chron-development-s7444-o0",
+        "--lr",
+        "0.00075",
+        "--warmup",
+        "250",
+        "--const_lr",
+        "--steps",
+        "9001",
+        "--batch",
+        "32",
+        "--ctx",
+        "256",
+        "--layers",
+        "3",
+        "--heads",
+        "4",
+        "--dk",
+        "64",
+        "--adff",
+        "170",
+        "--seed",
+        "7444",
+        "--device",
+        "{device}",
+        "--tokens",
+        "{tokens}",
+        "--tok_model",
+        "{tokenizer}",
+        "--outdir",
+        "{run_root}",
+        "--data_offset",
+        "0",
+        "--confirmation_registry",
+        "{registry}",
+        "--probe_region",
+        "global",
+        "--optimizer",
+        "adamw",
+        "--wd",
+        "0.1",
+        "--clip",
+        "1.0",
+        "--chronological_history_length",
+        "48",
+        "--ckpt_steps",
+        "2000,4000,8000,9001",
+        "--optimizer_ckpt_steps",
+        "2000,4000,8000,9001",
+        "--skip_generation",
+        "--terminal_validation"
+      ],
+      "updates": 9001
+    },
+    {
+      "capture_cells": [
+        {
+          "anchor": 2000,
+          "block_length": 16,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": 64,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": 256,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": 16,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": 64,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": 256,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": 16,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": 64,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": 256,
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "block_length": 16,
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "block_length": 64,
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "block_length": 256,
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "block_length": 16,
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "block_length": 64,
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "block_length": 256,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": 16,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": 64,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": 256,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": 16,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": 64,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": 256,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": 16,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": 64,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": 256,
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "block_length": 16,
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "block_length": 64,
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "block_length": 256,
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "block_length": 16,
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "block_length": 64,
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "block_length": 256,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": 16,
+          "layer": 2
+        },
+        {
+          "anchor": 2000,
+          "block_length": 64,
+          "layer": 2
+        },
+        {
+          "anchor": 2000,
+          "block_length": 256,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": 16,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": 64,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": 256,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": 16,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": 64,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": 256,
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "block_length": 16,
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "block_length": 64,
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "block_length": 256,
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "block_length": 16,
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "block_length": 64,
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "block_length": 256,
+          "layer": 2
+        }
+      ],
+      "checkpoint_steps": [
+        2000,
+        4000,
+        8000,
+        16000,
+        24000,
+        24001
+      ],
+      "data_offset_chunks": 8192,
+      "distinct_data_order_required": true,
+      "history_sidecar_required": true,
+      "intervention_units": [],
+      "name": "chron-construction-s8444-o8192",
+      "plga_cells": [
+        {
+          "anchor": 2000,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "layer": 2
+        }
+      ],
+      "role": "construction",
+      "seed": 8444,
+      "training_command": [
+        "python3",
+        "experiments/train_run.py",
+        "--name",
+        "chron-construction-s8444-o8192",
+        "--run-id",
+        "chron-construction-s8444-o8192",
+        "--lr",
+        "0.00075",
+        "--warmup",
+        "250",
+        "--const_lr",
+        "--steps",
+        "24001",
+        "--batch",
+        "32",
+        "--ctx",
+        "256",
+        "--layers",
+        "3",
+        "--heads",
+        "4",
+        "--dk",
+        "64",
+        "--adff",
+        "170",
+        "--seed",
+        "8444",
+        "--device",
+        "{device}",
+        "--tokens",
+        "{tokens}",
+        "--tok_model",
+        "{tokenizer}",
+        "--outdir",
+        "{run_root}",
+        "--data_offset",
+        "8192",
+        "--confirmation_registry",
+        "{registry}",
+        "--probe_region",
+        "global",
+        "--optimizer",
+        "adamw",
+        "--wd",
+        "0.1",
+        "--clip",
+        "1.0",
+        "--chronological_history_length",
+        "48",
+        "--ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--optimizer_ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--skip_generation",
+        "--terminal_validation"
+      ],
+      "updates": 24001
+    },
+    {
+      "capture_cells": [
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        }
+      ],
+      "checkpoint_steps": [
+        2000,
+        4000,
+        8000,
+        16000,
+        24000,
+        24001
+      ],
+      "data_offset_chunks": 24576,
+      "distinct_data_order_required": true,
+      "history_sidecar_required": true,
+      "intervention_units": [
+        "cci-s9444-00",
+        "cci-s9444-01",
+        "cci-s9444-02",
+        "cci-s9444-03",
+        "cci-s9444-04",
+        "cci-s9444-05",
+        "cci-s9444-06",
+        "cci-s9444-07",
+        "cci-s9444-08",
+        "cci-s9444-09",
+        "cci-s9444-10",
+        "cci-s9444-11"
+      ],
+      "name": "chron-heldout-s9444-o24576",
+      "plga_cells": [
+        {
+          "anchor": 2000,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "layer": 2
+        }
+      ],
+      "role": "heldout",
+      "seed": 9444,
+      "training_command": [
+        "python3",
+        "experiments/train_run.py",
+        "--name",
+        "chron-heldout-s9444-o24576",
+        "--run-id",
+        "chron-heldout-s9444-o24576",
+        "--lr",
+        "0.00075",
+        "--warmup",
+        "250",
+        "--const_lr",
+        "--steps",
+        "24001",
+        "--batch",
+        "32",
+        "--ctx",
+        "256",
+        "--layers",
+        "3",
+        "--heads",
+        "4",
+        "--dk",
+        "64",
+        "--adff",
+        "170",
+        "--seed",
+        "9444",
+        "--device",
+        "{device}",
+        "--tokens",
+        "{tokens}",
+        "--tok_model",
+        "{tokenizer}",
+        "--outdir",
+        "{run_root}",
+        "--data_offset",
+        "24576",
+        "--confirmation_registry",
+        "{registry}",
+        "--probe_region",
+        "global",
+        "--optimizer",
+        "adamw",
+        "--wd",
+        "0.1",
+        "--clip",
+        "1.0",
+        "--chronological_history_length",
+        "48",
+        "--ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--optimizer_ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--skip_generation",
+        "--terminal_validation"
+      ],
+      "updates": 24001
+    },
+    {
+      "capture_cells": [
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        }
+      ],
+      "checkpoint_steps": [
+        2000,
+        4000,
+        8000,
+        16000,
+        24000,
+        24001
+      ],
+      "data_offset_chunks": 40960,
+      "distinct_data_order_required": true,
+      "history_sidecar_required": true,
+      "intervention_units": [
+        "cci-s10444-00",
+        "cci-s10444-01",
+        "cci-s10444-02",
+        "cci-s10444-03",
+        "cci-s10444-04",
+        "cci-s10444-05",
+        "cci-s10444-06",
+        "cci-s10444-07",
+        "cci-s10444-08",
+        "cci-s10444-09",
+        "cci-s10444-10",
+        "cci-s10444-11"
+      ],
+      "name": "chron-heldout-s10444-o40960",
+      "plga_cells": [
+        {
+          "anchor": 2000,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "layer": 2
+        }
+      ],
+      "role": "heldout",
+      "seed": 10444,
+      "training_command": [
+        "python3",
+        "experiments/train_run.py",
+        "--name",
+        "chron-heldout-s10444-o40960",
+        "--run-id",
+        "chron-heldout-s10444-o40960",
+        "--lr",
+        "0.00075",
+        "--warmup",
+        "250",
+        "--const_lr",
+        "--steps",
+        "24001",
+        "--batch",
+        "32",
+        "--ctx",
+        "256",
+        "--layers",
+        "3",
+        "--heads",
+        "4",
+        "--dk",
+        "64",
+        "--adff",
+        "170",
+        "--seed",
+        "10444",
+        "--device",
+        "{device}",
+        "--tokens",
+        "{tokens}",
+        "--tok_model",
+        "{tokenizer}",
+        "--outdir",
+        "{run_root}",
+        "--data_offset",
+        "40960",
+        "--confirmation_registry",
+        "{registry}",
+        "--probe_region",
+        "global",
+        "--optimizer",
+        "adamw",
+        "--wd",
+        "0.1",
+        "--clip",
+        "1.0",
+        "--chronological_history_length",
+        "48",
+        "--ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--optimizer_ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--skip_generation",
+        "--terminal_validation"
+      ],
+      "updates": 24001
+    },
+    {
+      "capture_cells": [
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        }
+      ],
+      "checkpoint_steps": [
+        2000,
+        4000,
+        8000,
+        16000,
+        24000,
+        24001
+      ],
+      "data_offset_chunks": 57344,
+      "distinct_data_order_required": true,
+      "history_sidecar_required": true,
+      "intervention_units": [
+        "cci-s11444-00",
+        "cci-s11444-01",
+        "cci-s11444-02",
+        "cci-s11444-03",
+        "cci-s11444-04",
+        "cci-s11444-05",
+        "cci-s11444-06",
+        "cci-s11444-07",
+        "cci-s11444-08",
+        "cci-s11444-09",
+        "cci-s11444-10",
+        "cci-s11444-11"
+      ],
+      "name": "chron-heldout-s11444-o57344",
+      "plga_cells": [
+        {
+          "anchor": 2000,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "layer": 2
+        }
+      ],
+      "role": "heldout",
+      "seed": 11444,
+      "training_command": [
+        "python3",
+        "experiments/train_run.py",
+        "--name",
+        "chron-heldout-s11444-o57344",
+        "--run-id",
+        "chron-heldout-s11444-o57344",
+        "--lr",
+        "0.00075",
+        "--warmup",
+        "250",
+        "--const_lr",
+        "--steps",
+        "24001",
+        "--batch",
+        "32",
+        "--ctx",
+        "256",
+        "--layers",
+        "3",
+        "--heads",
+        "4",
+        "--dk",
+        "64",
+        "--adff",
+        "170",
+        "--seed",
+        "11444",
+        "--device",
+        "{device}",
+        "--tokens",
+        "{tokens}",
+        "--tok_model",
+        "{tokenizer}",
+        "--outdir",
+        "{run_root}",
+        "--data_offset",
+        "57344",
+        "--confirmation_registry",
+        "{registry}",
+        "--probe_region",
+        "global",
+        "--optimizer",
+        "adamw",
+        "--wd",
+        "0.1",
+        "--clip",
+        "1.0",
+        "--chronological_history_length",
+        "48",
+        "--ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--optimizer_ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--skip_generation",
+        "--terminal_validation"
+      ],
+      "updates": 24001
+    },
+    {
+      "capture_cells": [
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "block_length": "construction_locked_primary",
+          "layer": 2
+        }
+      ],
+      "checkpoint_steps": [
+        2000,
+        4000,
+        8000,
+        16000,
+        24000,
+        24001
+      ],
+      "data_offset_chunks": 73728,
+      "distinct_data_order_required": true,
+      "history_sidecar_required": true,
+      "intervention_units": [
+        "cci-s12444-00",
+        "cci-s12444-01",
+        "cci-s12444-02",
+        "cci-s12444-03",
+        "cci-s12444-04",
+        "cci-s12444-05",
+        "cci-s12444-06",
+        "cci-s12444-07",
+        "cci-s12444-08",
+        "cci-s12444-09",
+        "cci-s12444-10",
+        "cci-s12444-11"
+      ],
+      "name": "chron-heldout-s12444-o73728",
+      "plga_cells": [
+        {
+          "anchor": 2000,
+          "layer": 0
+        },
+        {
+          "anchor": 4000,
+          "layer": 0
+        },
+        {
+          "anchor": 8000,
+          "layer": 0
+        },
+        {
+          "anchor": 16000,
+          "layer": 0
+        },
+        {
+          "anchor": 24000,
+          "layer": 0
+        },
+        {
+          "anchor": 2000,
+          "layer": 1
+        },
+        {
+          "anchor": 4000,
+          "layer": 1
+        },
+        {
+          "anchor": 8000,
+          "layer": 1
+        },
+        {
+          "anchor": 16000,
+          "layer": 1
+        },
+        {
+          "anchor": 24000,
+          "layer": 1
+        },
+        {
+          "anchor": 2000,
+          "layer": 2
+        },
+        {
+          "anchor": 4000,
+          "layer": 2
+        },
+        {
+          "anchor": 8000,
+          "layer": 2
+        },
+        {
+          "anchor": 16000,
+          "layer": 2
+        },
+        {
+          "anchor": 24000,
+          "layer": 2
+        }
+      ],
+      "role": "heldout",
+      "seed": 12444,
+      "training_command": [
+        "python3",
+        "experiments/train_run.py",
+        "--name",
+        "chron-heldout-s12444-o73728",
+        "--run-id",
+        "chron-heldout-s12444-o73728",
+        "--lr",
+        "0.00075",
+        "--warmup",
+        "250",
+        "--const_lr",
+        "--steps",
+        "24001",
+        "--batch",
+        "32",
+        "--ctx",
+        "256",
+        "--layers",
+        "3",
+        "--heads",
+        "4",
+        "--dk",
+        "64",
+        "--adff",
+        "170",
+        "--seed",
+        "12444",
+        "--device",
+        "{device}",
+        "--tokens",
+        "{tokens}",
+        "--tok_model",
+        "{tokenizer}",
+        "--outdir",
+        "{run_root}",
+        "--data_offset",
+        "73728",
+        "--confirmation_registry",
+        "{registry}",
+        "--probe_region",
+        "global",
+        "--optimizer",
+        "adamw",
+        "--wd",
+        "0.1",
+        "--clip",
+        "1.0",
+        "--chronological_history_length",
+        "48",
+        "--ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--optimizer_ckpt_steps",
+        "2000,4000,8000,16000,24000,24001",
+        "--skip_generation",
+        "--terminal_validation"
+      ],
+      "updates": 24001
+    }
+  ]
+}

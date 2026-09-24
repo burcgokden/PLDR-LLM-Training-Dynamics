@@ -1,0 +1,283 @@
+{
+  "architecture": {
+    "anchor_source_steps": [
+      768,
+      3072,
+      5632
+    ],
+    "batch_size": 32,
+    "capture_update_blocks": [
+      [
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776
+      ],
+      [
+        3073,
+        3074,
+        3075,
+        3076,
+        3077,
+        3078,
+        3079,
+        3080
+      ],
+      [
+        5633,
+        5634,
+        5635,
+        5636,
+        5637,
+        5638,
+        5639,
+        5640
+      ]
+    ],
+    "construction_application_pairs": 16,
+    "construction_contexts_per_anchor": 4,
+    "context_length": 256,
+    "gate_sector_dimension_per_layer": 16,
+    "glu_blocks_per_residual_unit": 2,
+    "glu_hidden_width": 48,
+    "head_width": 16,
+    "heads": 4,
+    "intervention_arms": [
+      "baseline",
+      "rate_0.75",
+      "rate_1.25",
+      "freeze_final_gate",
+      "freeze_upstream_shape"
+    ],
+    "intervention_updates": 8,
+    "layers": 4,
+    "lifted_gate_dimension_per_layer": 48,
+    "row_map_residual_units": 8,
+    "trajectory_seeds": [
+      3401,
+      3402
+    ],
+    "updates": 6144,
+    "validation_application_pairs": 16,
+    "validation_contexts_per_anchor": 4,
+    "width": 64
+  },
+  "construction_validation_rule": "No validation checkpoint, energy, spectrum, continuation, or application value may set a source charge, gain, mechanism label, spectral threshold, downstream bound, or remainder radius.",
+  "evidence_order": [
+    "realize one CPU fixture",
+    "complete Q on both registered devices",
+    "record measured unit costs",
+    "freeze code, registry, protocols, and construction plan",
+    "run construction trajectory and seal its lock",
+    "open validation trajectory and intervention evidence",
+    "rebuild all decisions in a fresh process"
+  ],
+  "predictions": [
+    {
+      "id": "P1",
+      "name": "exact_gate_identity",
+      "statement": "Final-gate rescaling multiplies every row difference by the same factor; a zero gate produces the constant bias row; and the global architecture bound encloses all registered pairs."
+    },
+    {
+      "id": "P2",
+      "name": "schedule_capture",
+      "statement": "At least one source-fixed post-warmup eight-update block has a residual-padded ordered 48-dimensional gain below one, even if one or more constituent updates expand."
+    },
+    {
+      "id": "P3",
+      "name": "source_owned_energy_enclosure",
+      "statement": "Construction-owned gate, directional-shape, and remainder charges enclose every validation energy node, while forcing and direct product charges enclose their corresponding validation data."
+    },
+    {
+      "id": "P4",
+      "name": "mechanism_and_intervention_decomposition",
+      "statement": "The construction classification as gate-led, shape-led, or mixed replicates on the validation trajectory. Every matched continuation obeys the exact gate-shape energy decomposition, and the final-gate freeze has identically zero gate work."
+    },
+    {
+      "id": "P5",
+      "name": "plga_secant_transfer",
+      "statement": "Exact occupied-interval secants reconstruct the PLGA deductive difference and enclose the held-out centered-logit difference."
+    }
+  ],
+  "resource_caps": {
+    "engineering_reserve_gpu_hours": 0.4,
+    "gpu_bytes_each": 25769803776,
+    "gpu_count": 2,
+    "gpu_model": "NVIDIA RTX 4090",
+    "hard_gpu_hours": 3.25,
+    "hard_wall_clock_hours": 4.0,
+    "host_bytes": 134217728000,
+    "qualification_required_before_freeze": true,
+    "scientific_subtotal_gpu_hours": 2.45,
+    "validation_tuning_permitted": false
+  },
+  "schema_version": "pldr-gate-shape-protocol-v1",
+  "stage_order": [
+    "Q",
+    "T",
+    "TR",
+    "G",
+    "C",
+    "I",
+    "A",
+    "R"
+  ],
+  "stages": [
+    {
+      "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+      "dependencies": [],
+      "gpu_hour_cap": 0.1,
+      "id": "Q",
+      "purpose": "Replay one CPU-realized context-256 row-map fixture on both devices.",
+      "required_checks": [
+        "same_realized_fixture",
+        "context_256_row_map_complete",
+        "gate_factorization_replays",
+        "zero_gate_is_constant",
+        "gate_scaling_identity_replays",
+        "global_gate_bound_encloses_rows",
+        "dense_true_hessian_replays",
+        "analytic_48_by_48_adamw_block_matches_autodiff",
+        "cross_device_arrays_agree_with_declared_tolerance",
+        "measured_memory_and_seconds_recorded"
+      ],
+      "title": "Two-device gate-path qualification"
+    },
+    {
+      "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+      "dependencies": [
+        "Q"
+      ],
+      "gpu_hour_cap": 0.4,
+      "id": "T",
+      "purpose": "Train seeds 3401 and 3402 with complete source and endpoint state.",
+      "required_checks": [
+        "exactly_6144_updates",
+        "all_three_anchor_blocks_complete",
+        "model_optimizer_scheduler_rng_and_data_cursor_bound",
+        "one_resolved_lineage_root_per_ledger",
+        "construction_and_validation_chunks_disjoint",
+        "all_resource_events_complete"
+      ],
+      "title": "Complete construction and validation trajectories"
+    },
+    {
+      "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+      "dependencies": [
+        "T"
+      ],
+      "gpu_hour_cap": 0.15,
+      "id": "TR",
+      "purpose": "Repeat the registered primary trajectory from scratch.",
+      "required_checks": [
+        "distinct_run_and_lineage_identity",
+        "scientific_checkpoint_components_equal",
+        "aliased_primary_rejected",
+        "registered_update_count_and_windows_equal"
+      ],
+      "title": "Independent same-device replay"
+    },
+    {
+      "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+      "dependencies": [
+        "T",
+        "TR"
+      ],
+      "gpu_hour_cap": 1.15,
+      "id": "G",
+      "purpose": "Measure every 16-dimensional layer gate on disjoint contexts.",
+      "required_checks": [
+        "row_outputs_recomputed_from_final_layernorm_preactivations",
+        "q_and_energy_recomputed_from_fixed_pairs",
+        "fisher_plus_signed_jet_reconstructs_true_hessian",
+        "all_dense_spectra_recomputed",
+        "spectral_sign_uses_residual_scaled_threshold",
+        "gate_force_at_zero_recomputed",
+        "no_parameter_jacobian_svd_or_lanczos_basis"
+      ],
+      "title": "Gate-shape geometry and true-loss response"
+    },
+    {
+      "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+      "dependencies": [
+        "G"
+      ],
+      "gpu_hour_cap": 0.35,
+      "id": "C",
+      "purpose": "Test exact 48-dimensional AdamW products and gate-shape work.",
+      "required_checks": [
+        "analytic_gate_blocks_match_automatic_differentiation",
+        "clipping_boundary_distance_recorded",
+        "direct_ordered_products_recomputed",
+        "construction_block_and_remainder_lock_precedes_validation",
+        "target_energy_not_read_while_constructing_envelope",
+        "gate_plus_shape_work_identity_replays_at_every_node",
+        "validation_nodes_lie_in_source_owned_envelope",
+        "capturing_block_contains_transient_expansion",
+        "construction_mechanism_label_replicates"
+      ],
+      "title": "Ordered gate capture and source-owned energy enclosure"
+    },
+    {
+      "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+      "dependencies": [
+        "C"
+      ],
+      "gpu_hour_cap": 0.2,
+      "id": "I",
+      "purpose": "Run short validation-owned rate and freeze continuations.",
+      "required_checks": [
+        "branches_share_one_complete_source_state",
+        "all_five_registered_arms_complete",
+        "only_registered_intervention_differs",
+        "real_event_ledgers_have_one_lineage_root",
+        "all_gate_shape_energies_recomputed",
+        "final_gate_freeze_has_zero_gate_work"
+      ],
+      "title": "Causal gate and shape interventions"
+    },
+    {
+      "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+      "dependencies": [
+        "G"
+      ],
+      "gpu_hour_cap": 0.1,
+      "id": "A",
+      "purpose": "Propagate fixed same-source generator pairs through PLGA.",
+      "required_checks": [
+        "checkpoint_bindings_and_logit_differences_replay",
+        "iswiglu_and_positive_power_secants_replay",
+        "deductive_and_centered_logit_differences_enclosed",
+        "margin_claim_only_for_independently_qualified_pairs",
+        "empty_qualified_set_supports_no_decision_claim"
+      ],
+      "title": "Exact PLGA secant transfer"
+    },
+    {
+      "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+      "dependencies": [
+        "C",
+        "I",
+        "A"
+      ],
+      "gpu_hour_cap": 0.0,
+      "id": "R",
+      "purpose": "Recompute the campaign in a clean CPU process.",
+      "required_checks": [
+        "all_relative_paths_resolve_under_campaign_root",
+        "self_pairs_and_absolute_paths_rejected",
+        "every_deciding_tensor_mutation_rejected",
+        "npz_payloads_have_npz_names",
+        "records_rebuild_byte_stably",
+        "device_host_disk_and_wall_time_recomputed",
+        "hard_resource_caps_hold"
+      ],
+      "title": "Fresh-process reconstruction and mutation gate"
+    }
+  ],
+  "status": "DRAFT_PENDING_TWO_DEVICE_QUALIFICATION"
+}

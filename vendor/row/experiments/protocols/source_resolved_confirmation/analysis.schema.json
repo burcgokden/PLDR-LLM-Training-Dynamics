@@ -1,0 +1,513 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "finite_horizon_only": {
+      "const": true
+    },
+    "input_sha256": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "map_record_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "negative_outcomes_retained": {
+      "const": true
+    },
+    "outcome_counts": {
+      "additionalProperties": false,
+      "properties": {
+        "confirmed": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "not_confirmed": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "technically_invalid": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "unresolved": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "confirmed",
+        "not_confirmed",
+        "unresolved",
+        "technically_invalid"
+      ],
+      "title": "Scientific outcome counts",
+      "type": "object"
+    },
+    "outcome_records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "context": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "criterion": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "head": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "layer": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "observed": {
+            "type": "number"
+          },
+          "outcome": {
+            "enum": [
+              "confirmed",
+              "not_confirmed",
+              "unresolved",
+              "technically_invalid"
+            ]
+          },
+          "stage": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "trajectory": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "map_id",
+          "context",
+          "layer",
+          "head",
+          "stage",
+          "trajectory",
+          "criterion",
+          "observed",
+          "outcome"
+        ],
+        "title": "Retained mapwise scientific outcome",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "outcomes_by_context": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "counts": {
+            "additionalProperties": false,
+            "properties": {
+              "confirmed": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "not_confirmed": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "technically_invalid": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "unresolved": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "confirmed",
+              "not_confirmed",
+              "unresolved",
+              "technically_invalid"
+            ],
+            "title": "Scientific outcome counts",
+            "type": "object"
+          },
+          "key": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "key",
+          "counts"
+        ],
+        "title": "Closed grouped outcome count",
+        "type": "object"
+      },
+      "minItems": 0,
+      "type": "array"
+    },
+    "outcomes_by_head": {
+      "additionalProperties": false,
+      "properties": {
+        "0": {
+          "additionalProperties": false,
+          "properties": {
+            "confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "not_confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "technically_invalid": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "unresolved": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "confirmed",
+            "not_confirmed",
+            "unresolved",
+            "technically_invalid"
+          ],
+          "title": "Scientific outcome counts",
+          "type": "object"
+        },
+        "1": {
+          "additionalProperties": false,
+          "properties": {
+            "confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "not_confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "technically_invalid": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "unresolved": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "confirmed",
+            "not_confirmed",
+            "unresolved",
+            "technically_invalid"
+          ],
+          "title": "Scientific outcome counts",
+          "type": "object"
+        },
+        "2": {
+          "additionalProperties": false,
+          "properties": {
+            "confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "not_confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "technically_invalid": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "unresolved": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "confirmed",
+            "not_confirmed",
+            "unresolved",
+            "technically_invalid"
+          ],
+          "title": "Scientific outcome counts",
+          "type": "object"
+        },
+        "3": {
+          "additionalProperties": false,
+          "properties": {
+            "confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "not_confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "technically_invalid": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "unresolved": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "confirmed",
+            "not_confirmed",
+            "unresolved",
+            "technically_invalid"
+          ],
+          "title": "Scientific outcome counts",
+          "type": "object"
+        }
+      },
+      "required": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "title": "Head outcome map",
+      "type": "object"
+    },
+    "outcomes_by_layer": {
+      "additionalProperties": false,
+      "properties": {
+        "0": {
+          "additionalProperties": false,
+          "properties": {
+            "confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "not_confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "technically_invalid": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "unresolved": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "confirmed",
+            "not_confirmed",
+            "unresolved",
+            "technically_invalid"
+          ],
+          "title": "Scientific outcome counts",
+          "type": "object"
+        },
+        "1": {
+          "additionalProperties": false,
+          "properties": {
+            "confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "not_confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "technically_invalid": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "unresolved": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "confirmed",
+            "not_confirmed",
+            "unresolved",
+            "technically_invalid"
+          ],
+          "title": "Scientific outcome counts",
+          "type": "object"
+        },
+        "2": {
+          "additionalProperties": false,
+          "properties": {
+            "confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "not_confirmed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "technically_invalid": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "unresolved": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "confirmed",
+            "not_confirmed",
+            "unresolved",
+            "technically_invalid"
+          ],
+          "title": "Scientific outcome counts",
+          "type": "object"
+        }
+      },
+      "required": [
+        "0",
+        "1",
+        "2"
+      ],
+      "title": "Layer outcome map",
+      "type": "object"
+    },
+    "outcomes_by_stage": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "counts": {
+            "additionalProperties": false,
+            "properties": {
+              "confirmed": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "not_confirmed": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "technically_invalid": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "unresolved": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "confirmed",
+              "not_confirmed",
+              "unresolved",
+              "technically_invalid"
+            ],
+            "title": "Scientific outcome counts",
+            "type": "object"
+          },
+          "key": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "key",
+          "counts"
+        ],
+        "title": "Closed grouped outcome count",
+        "type": "object"
+      },
+      "minItems": 0,
+      "type": "array"
+    },
+    "outcomes_by_trajectory": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "counts": {
+            "additionalProperties": false,
+            "properties": {
+              "confirmed": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "not_confirmed": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "technically_invalid": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "unresolved": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "confirmed",
+              "not_confirmed",
+              "unresolved",
+              "technically_invalid"
+            ],
+            "title": "Scientific outcome counts",
+            "type": "object"
+          },
+          "key": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "key",
+          "counts"
+        ],
+        "title": "Closed grouped outcome count",
+        "type": "object"
+      },
+      "minItems": 0,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-analysis-v1"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "input_sha256",
+    "map_record_count",
+    "outcome_counts",
+    "outcomes_by_layer",
+    "outcomes_by_head",
+    "outcomes_by_context",
+    "outcomes_by_stage",
+    "outcomes_by_trajectory",
+    "outcome_records",
+    "finite_horizon_only",
+    "negative_outcomes_retained",
+    "technical_valid"
+  ],
+  "title": "Source-resolved campaign analysis",
+  "type": "object"
+}

@@ -1,0 +1,371 @@
+[
+  {
+    "label": "lem:centered-row-geometry",
+    "paper": "Centered-row identity and norm equivalence",
+    "module": "VectorCenteredRowGeometry",
+    "declarations": [
+      "vectorCenteredEnergy",
+      "vectorOrderedPairEnergy",
+      "vectorPairDistanceSq",
+      "vector_pairwise_variance_identity",
+      "vector_pair_distance_le_twice_centered_energy",
+      "vector_pair_collapse_of_centered_energy"
+    ],
+    "scope": "The finite-dimensional vector pairwise-variance identity, the direct pair-distance upper bound by twice centered energy, and its sequence collapse consequence.",
+    "excluded": "Attainment of the finite physical diameter and the reverse diameter-to-energy inequality.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:regularized-layernorm-geometry",
+    "paper": "LayerNorm range and exact endpoint chord",
+    "module": "LayerNormGeometry",
+    "declarations": [
+      "normalizedShapeSq",
+      "normalized_shape_sq_lt",
+      "gate_diameter_bound"
+    ],
+    "scope": "The strict regularized normalized-shape radius and its gate-controlled diameter consequence.",
+    "excluded": "The displayed vector chord matrix, positive-denominator derivation, and Hessian bound.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:layernorm-interface-rank",
+    "paper": "Exact fixed-gate LayerNorm interface rank",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The finite-dimensional rank of the fixed-gate LayerNorm differential image and its row-centered product space.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "thm:mixed-gate-shape-characterization",
+    "paper": "Mixed gate-shape characterization",
+    "module": "GateShapeFactorization",
+    "declarations": [
+      "coordinateEnergy",
+      "gateShapeEnergy",
+      "coordinate_energy_nonnegative",
+      "gate_shape_energy_zero_iff",
+      "coordinate_energy_collapse_iff"
+    ],
+    "scope": "The finite nonnegative coordinate factorization and equivalence between convergence of total energy and convergence of every mixed coordinate energy.",
+    "excluded": "Matrix row-centering, Frobenius column assembly, and conversion to physical row diameter.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:coordinate-energy-cocycle",
+    "paper": "Coordinate energy cocycle",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The positive-coordinate logarithm identity and the absolute policy for zero coordinate energies.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "thm:effective-gate-endpoint-gain",
+    "paper": "Effective-gate bounds and conventional endpoint factorization",
+    "module": "EffectiveGateShape",
+    "declarations": [
+      "shapeEnergy",
+      "physicalEnergy",
+      "gate_lower_energy_bound",
+      "gate_upper_energy_bound",
+      "endpoint_three_channel_gain"
+    ],
+    "scope": "The finite coordinate shape and physical energies, transfer of coordinatewise squared-gate bounds, and exact positive endpoint three-factor identity.",
+    "excluded": "Construction of occupancies from row tensors, zero endpoints, and all interpretive or causal meaning of the conventional intermediate factor.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:implemented-spatial-baseline",
+    "paper": "Implemented spatial chord and range baseline",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The full-program fundamental-theorem chord, exact implementation order, and LayerNorm range substitution.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:primitive-endpoint-increments",
+    "paper": "Exact primitive endpoint increments",
+    "module": "ImplementedFiniteTransport",
+    "declarations": [
+      "affine_endpoint_increment",
+      "product_endpoint_increment"
+    ],
+    "scope": "Exact finite scalar affine and product endpoint identities.",
+    "excluded": "Tensor broadcasting, the midpoint convention, LayerNorm chord, SiLU secant, and residual assembly.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:finite-source-unroll",
+    "paper": "Exact finite source unrolling",
+    "module": "FiniteSourceTransport",
+    "declarations": [
+      "applyLinear",
+      "finiteFold",
+      "transportedSources",
+      "applyLinear_add",
+      "finite_affine_step",
+      "finite_source_unroll"
+    ],
+    "scope": "The complete finite additive-map recurrence and chronological suffix transport of every inserted source.",
+    "excluded": "Construction of the node maps from the implemented tensor graph.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "prop:implemented-complete-source-transport",
+    "paper": "Implemented complete-source transport",
+    "module": "PostNormChain",
+    "declarations": [
+      "appendUnit",
+      "fullChain",
+      "full_chain_append",
+      "eight_unit_execution_order",
+      "eight_unit_shape_execution_order"
+    ],
+    "scope": "Chronological assembly of eight residual and postnorm factors after the pre-chain factor.",
+    "excluded": "Runtime graph enumeration, complete AdamW prepending, branch changes, and the one-use-per-edge implementation check.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:symmetric-gate-shape-transport",
+    "paper": "Symmetric gate-shape transport and energy ledger",
+    "module": "SymmetricEndpointTransport",
+    "declarations": [
+      "midpoint_product_identity",
+      "shapeIncrement",
+      "gateIncrement",
+      "symmetric_gate_shape_increment",
+      "symmetric_energy_ledger"
+    ],
+    "scope": "The endpoint-symmetric scalar product split and exact work, self-charge, and interaction ledger.",
+    "excluded": "Tensor broadcasting, row centering, and Frobenius summation.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:finite-shapley-efficiency",
+    "paper": "Three-source symmetric attribution efficiency",
+    "module": "FiniteSourceShapley",
+    "declarations": [
+      "contributionA",
+      "contributionB",
+      "contributionC",
+      "three_source_efficiency"
+    ],
+    "scope": "The exact three-source Shapley coefficients and their efficiency identity.",
+    "excluded": "Runtime construction of the eight coalition values and interpretation of the selected source groups.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:source-work-gram",
+    "paper": "Exact source work and charge Gram identity",
+    "module": "ObservableEnergyDissipation",
+    "declarations": [
+      "source_ledger_pairing",
+      "shapeEnergy",
+      "shapeCross",
+      "shapeGain",
+      "shapeCharge",
+      "exact_shape_work",
+      "shape_charge_nonnegative"
+    ],
+    "scope": "Finite inner-product source pairing, exact quadratic work identity, and nonnegative total charge.",
+    "excluded": "The named three-source matrix, positive-semidefinite Gram proof, and physical row-centering construction.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:source-native-energy-envelope",
+    "paper": "Source-to-native energy envelope",
+    "module": "SourceNativeEnergy",
+    "declarations": [
+      "source_native_energy_envelope",
+      "zero_native_radius_exact"
+    ],
+    "scope": "The norm triangle, squared outward charge, and exact zero-radius specialization in an abstract seminormed group.",
+    "excluded": "Checkpoint linkage and production of the outward radius.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:exact-block-excursion",
+    "paper": "Exact block excursion and conservative variation",
+    "module": "BlockExcursion",
+    "declarations": [
+      "blockOffsets",
+      "blockExcursion",
+      "blockMaximum",
+      "energy_le_anchor_add_excursion",
+      "block_excursion_eq_maximum",
+      "block_excursion_le_positive_variation"
+    ],
+    "scope": "The attained finite block maximum, its exact anchor-plus-excursion identity, and domination of exact excursion by positive edge variation.",
+    "excluded": "The manuscript's arbitrary-index notation and the separate finite reopening endpoint envelope.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:block-excursion-collapse-iff",
+    "paper": "Necessary and sufficient block criterion",
+    "module": "BlockExcursion",
+    "declarations": [
+      "block_excursion_collapse_iff"
+    ],
+    "scope": "Equivalence between vanishing attained block maxima and joint vanishing of nonnegative anchors and exact excursions.",
+    "excluded": "Passage between successive blocks and the full natural-number orbit, unboundedness of the anchor partition, and diameter equivalence.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:block-reopening-collapse",
+    "paper": "Conservative reopening criterion",
+    "module": "BlockExcursion",
+    "declarations": [
+      "block_envelope_collapse"
+    ],
+    "scope": "Vanishing nonnegative anchor-plus-positive-variation envelopes force vanishing anchor-plus-exact-excursion envelopes.",
+    "excluded": "Construction of a successive unbounded block partition and transfer from block envelopes to the complete physical row orbit.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:summable-reopening-collapse",
+    "paper": "Summable reopening criterion",
+    "module": "ReopeningBudget",
+    "declarations": [
+      "summable_reopening_collapse"
+    ],
+    "scope": "The complete tail-series proof for nonnegative energy, expressed through arbitrarily late epsilon-small anchors, and convergence of the full sequence.",
+    "excluded": "Notation-level translation from extended-real liminf to the explicit small-anchor hypothesis and conversion from energy to row diameter.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:adamw-gate-duhamel",
+    "paper": "Finite AdamW gate Duhamel formula",
+    "module": "AdamWGateForcing",
+    "declarations": [
+      "adamw_gate_duhamel_finite",
+      "adamw_gate_absolute_convolution",
+      "adamw_gate_collapse_of_vanishing_convolution",
+      "adamw_finite_gate_coordinate_collapse",
+      "adamw_gate_shape_energy_collapse"
+    ],
+    "scope": "The exact scalar chronological recurrence, its absolute innovation envelope, the vanishing-envelope limit, finite-coordinate specialization, and the uniform-shape bridge to mixed energy collapse.",
+    "excluded": "Construction of multipliers and innovations from PyTorch AdamW, clipping and bias correction, and conversion from mixed coordinate energy to physical row diameter.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:previsible-drift-convolution",
+    "paper": "Previsible drift convolution",
+    "module": "NonautonomousAttraction",
+    "declarations": [
+      "orderedEnvelope",
+      "ordered_product_convolution"
+    ],
+    "scope": "Chronological iteration of nonnegative one-step affine upper bounds without a pointwise contraction requirement.",
+    "excluded": "The explicit closed product notation, the limit squeeze, source-time measurability, and physical diameter transfer.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:source-resolved-reopening-bound",
+    "paper": "Source-resolved reopening enclosure",
+    "module": "ReopeningBudget",
+    "declarations": [
+      "affine_reopening_bound",
+      "work_gram_reopening_bound"
+    ],
+    "scope": "Monotone positive-part conversion of an affine energy envelope and its work-minus-Gram substitution.",
+    "excluded": "Frobenius source construction, native-radius charge, the zero-energy norm square, and block summation.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:unified-orbitwise-collapse",
+    "paper": "Unified orbitwise collapse classification",
+    "module": "",
+    "declarations": [],
+    "scope": "No single combined formal declaration is claimed; the coordinate, block, registry, and centered-energy constituents are mapped in their own rows.",
+    "excluded": "The four-way finite-registry equivalence as one formal theorem.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "cor:finite-registry-transfer",
+    "paper": "Finite-registry transfer",
+    "module": "SourceResolvedEnergyCollapse",
+    "declarations": [
+      "map_energy_le_registry_total"
+    ],
+    "scope": "A registered nonnegative map energy is bounded by the total energy over a finite registry.",
+    "excluded": "The epsilon proof converting pointwise convergence to convergence of the finite maximum and the reopening alternative.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:inactive-adamw-response",
+    "paper": "Structurally inactive AdamW response",
+    "module": "AdamWInactiveCoordinates",
+    "declarations": [
+      "inactivePosition",
+      "inactive_position_response",
+      "inactive_moments_remain_zero"
+    ],
+    "scope": "Exact decoupled-decay position response and preservation of zero moments on a structurally inactive scalar coordinate.",
+    "excluded": "Executable proof that a batch-local gradient is identically zero on a neighborhood and tensor mask construction.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:forward-radius-local-robustness",
+    "paper": "Forward-radius local robustness",
+    "module": "ComprehensiveRadiusClosure",
+    "declarations": [
+      "comprehensive_block_envelope_from_C3"
+    ],
+    "scope": "Forward induction derives tube membership from the radius recursion and then applies the chronological affine envelope.",
+    "excluded": "Construction of AdamW operators, chart rank, metrics, analytic constants, physical observation, and asymptotic limit.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:implemented-plga-derivatives",
+    "paper": "Closed derivatives of the implemented PLGA power",
+    "module": "PLGAImplementedDerivatives",
+    "declarations": [
+      "hasDerivAt_sigmoid",
+      "hasDerivAt_implementedBase",
+      "hasDerivAt_implementedPower_z",
+      "hasDerivAt_implementedPower_exponent",
+      "implemented_z_derivative_closed",
+      "implemented_p_derivative_closed"
+    ],
+    "scope": "Differentiability and closed first derivatives in preactivation and exponent under positive adjustment.",
+    "excluded": "The displayed second derivatives and outward interval bounds.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:implemented-plga-telescope",
+    "paper": "Exact two-coordinate PLGA telescope",
+    "module": "PLGAImplementedPower",
+    "declarations": [
+      "sigmoid",
+      "implementedBase",
+      "implementedPower",
+      "plga_base_lower",
+      "implemented_power_positive",
+      "implementedZDerivative",
+      "implementedPDerivative",
+      "implementedZSecant",
+      "implementedPSecant",
+      "implemented_z_secant_diagonal",
+      "implemented_p_secant_diagonal",
+      "implemented_two_variable_telescope",
+      "implemented_two_variable_telescope_exponent_last"
+    ],
+    "scope": "Positive implemented base, true derivative diagonal branches, and both exact coordinate orders for arbitrary real endpoints.",
+    "excluded": "Tensor broadcasting and transport through the complete downstream PLGA graph.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "cor:plga-quotient-transfer",
+    "paper": "PLGA quotient transfer",
+    "module": "PLGAQuotientTransfer",
+    "declarations": [
+      "quotient_transfer_step"
+    ],
+    "scope": "The finite norm transfer under an independently assumed response coefficient and an additive row-constant force.",
+    "excluded": "Runtime production of the absolute response, derivative bound, force, limit conclusion, and softmax readout.",
+    "faithfulness": "partial"
+  }
+]

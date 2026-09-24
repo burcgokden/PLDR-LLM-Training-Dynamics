@@ -1,0 +1,45 @@
+{
+ "K_s": 2611847.347930124,
+ "K_q": 126587413.74514943,
+ "C_P": 129199261.09307955,
+ "Z_cap": 0.0250625,
+ "u_max": 0.0017531250000000003,
+ "event_time_bound": 932,
+ "reset_lo": 0.28323259200460493,
+ "reset_hi": 1.0,
+ "rho_w": 0.2,
+ "amp_factor": 0.4472135954999579,
+ "D_max": 0.41000000000000003,
+ "delta_b": 0.15000000000000002,
+ "fuel_required": 1710,
+ "band_lo": 0.05,
+ "band_hi": 3.4,
+ "band_downward_closed": true,
+ "maintenance": {
+  "thm": {
+   "r_min": 0.5168486499657339,
+   "q_step": 0.999,
+   "t_cyc": 7,
+   "n_act": 7,
+   "floor": 0.1428048488159369,
+   "prefix_min": 0.07380849331907773,
+   "cycle_avg": 0.10837608156456105,
+   "nsat": 0.14280484881593694,
+   "licensure": "time-average",
+   "window_min": 67
+  },
+  "orbit": {
+   "r_min": 0.8770414943118726,
+   "q_step": 0.999,
+   "t_cyc": 7,
+   "n_act": 7,
+   "floor": 0.5385170889905709,
+   "prefix_min": 0.47230183244077,
+   "cycle_avg": 0.5054774799686725,
+   "nsat": 0.5385170889905709,
+   "licensure": "pointwise",
+   "window_min": 8
+  }
+ },
+ "note": "exact machine values behind every displayed constant; displayed certified upper bounds are OUTWARD-rounded from these; sources are separated in the manuscript's constants tables (source / generated / measured)"
+}

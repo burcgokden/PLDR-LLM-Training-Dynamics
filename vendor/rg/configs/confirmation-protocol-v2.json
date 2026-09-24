@@ -1,0 +1,46 @@
+{
+  "schema_version": "pldr-row-rg-confirmation-protocol-v2",
+  "protocol_id": "rgmap-refinedweb-byte-4096-20260902",
+  "expected_updates": 4096,
+  "block_sizes": [1, 2, 4, 8, 16, 32, 64, 128],
+  "observer_effect_floor": 1e-12,
+  "identity_tolerances": {
+    "float64_affine_replay_relative": 5e-12,
+    "float32_gate_shape_relative": 2e-6,
+    "plga_decomposition_relative": 5e-12
+  },
+  "decision_rules": {
+    "estimation_fraction": 0.5,
+    "time_batch_length": 64,
+    "minimum_time_batches": 8,
+    "familywise_alpha": 0.05,
+    "multiple_comparison_rule": "Bonferroni over trajectory-layer cells",
+    "subcritical_cell_rule": "one-sided familywise upper confidence bound for the holdout batch-mean log gain is below zero and the estimation mean is below zero",
+    "stationarity": {
+      "maximum_split_shift_z": 3.0,
+      "minimum_variance_ratio": 0.5,
+      "maximum_variance_ratio": 2.0,
+      "maximum_absolute_lag1_correlation": 0.2
+    },
+    "gaussian_calibration": {
+      "seed": 20260902,
+      "replicates": 400,
+      "quantile": 0.95,
+      "minimum_blocks": 16,
+      "maximum_absolute_excess_kurtosis": 1.5,
+      "maximum_final_to_initial_ks_ratio": 0.8
+    },
+    "plga_transfer": {
+      "maximum_constant_input_defect_norm": 1e-6,
+      "maximum_decomposition_relative_residual": 5e-12,
+      "maximum_sampled_directional_gain": 100.0,
+      "rule": "all implemented interventions must satisfy every bound; a nonzero defect above tolerance rejects finite-horizon face preservation"
+    }
+  },
+  "interpretation": {
+    "all_cells_subcritical": "finite-horizon evidence only",
+    "universality": "identified on the registered compact-model domain only if every stationarity and Gaussian-law prerequisite passes",
+    "face_restarts": "only native exact zeros activate the source branch",
+    "plga": "implemented-head intervention; no random-head substitution"
+  }
+}

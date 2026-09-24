@@ -1,0 +1,272 @@
+[
+  {
+    "label": "lem:layernorm-differential",
+    "paper": "Exact LayerNorm differential",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The matrix differential, eigenspaces, and eigenvalues remain in the written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:layernorm-chord",
+    "paper": "Stable LayerNorm chord",
+    "module": "LayerNormFactorization",
+    "declarations": ["row_contrast", "strict_regularized_radius"],
+    "scope": "Affine-bias cancellation and the strictly positive regularized radius used by the chord.",
+    "excluded": "The stable reciprocal-difference matrix formula is established only in the written proof.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:postnorm-chord-chain",
+    "paper": "Implemented postnorm chord chain",
+    "module": "PostNormChain",
+    "declarations": ["full_chain_append", "eight_unit_execution_order", "eight_unit_shape_execution_order"],
+    "scope": "Exact matrix order for the pre-chain factor, eight residual and postnorm factors, and final shape replacement.",
+    "excluded": "Construction of nonlinear chord integrals and their binding to runtime tensors.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:path-metric-contraction",
+    "paper": "Ordered path-metric contraction",
+    "module": "PathMetricChain",
+    "declarations": ["two_stage_quadratic_contraction", "ordered_quadratic_contraction"],
+    "scope": "Chronological multiplication of supplied quadratic energy gains over two and arbitrary finite stages.",
+    "excluded": "Positive-semidefinite matrix inequalities and runtime metric construction.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:executed-adamw-displacement",
+    "paper": "Executed parameter displacement",
+    "module": "LiftedAdamWMatrix",
+    "declarations": ["fullLinearStep", "full_adamw_block_expansion"],
+    "scope": "The complete abstract parameter, first-moment, and second-moment block expansion.",
+    "excluded": "Bias-correction and square-root denominator binding to the native runtime state.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:clipped-gradient-gate-route",
+    "paper": "Clipped-gradient-to-gate convolution",
+    "module": "AdamWGateForcing",
+    "declarations": ["adamw_gate_duhamel", "vanishing_gradient_direction"],
+    "scope": "Ordered gate forcing and the vanishing gradient-direction endpoint.",
+    "excluded": "The arbitrary-horizon clipped-gradient and first-moment convolution is in the written proof.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:registered-gate-tube",
+    "paper": "Registered gate tube",
+    "module": "AdamWGateForcing",
+    "declarations": ["gate_forcing_step", "persistent_innovation_gate_tube", "vanishing_innovation_gate_collapse"],
+    "scope": "Stable affine forcing, an invariant forced tube, and vanishing-innovation collapse kernels.",
+    "excluded": "The exact registered numerical multiplier and finite-horizon convolution.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:gate-shape-jvp",
+    "paper": "Physical gate-shape direction and remainder",
+    "module": "ComprehensiveRowMapCollapse",
+    "declarations": ["gate_shape_product_step"],
+    "scope": "The complete mixed nonnegative gate-shape product step including the product charge.",
+    "excluded": "The vector product rule and normwise physical-row remainder formula.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:parameter-segment-decomposition",
+    "paper": "Parameter-segment decomposition",
+    "module": "ShapeDirEnclosure",
+    "declarations": ["scalar_directional_shape_identity", "scalar_directional_shape_enclosure"],
+    "scope": "A scalar directional source-plus-JVP-plus-remainder identity and its enclosure.",
+    "excluded": "The vector-valued integral Taylor formula over the complete parameter segment.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:two-sided-pair-energy",
+    "paper": "Two-sided predictive pair energy",
+    "module": "PredictiveEnergyStep",
+    "declarations": ["upperIncrement", "lowerIncrement", "two_sided_pair_energy"],
+    "scope": "The displayed simultaneous upper and lower squared-energy bounds in a real inner-product space.",
+    "excluded": "Runtime construction of row JVPs, radii, and floating-point charges.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:finite-registry-prediction",
+    "paper": "Finite-registry contraction and re-expansion prediction",
+    "module": "FiniteRegistryPrediction",
+    "declarations": ["finiteMaximum", "le_finiteMaximum", "finiteMaximum_mono", "predictive_diameter_upper", "predictive_strict_contraction", "predictive_one_pair_expansion"],
+    "scope": "The actual finite maximum, strict all-pair upper contraction, and one-pair lower re-expansion implications.",
+    "excluded": "Square-root reporting and numerical streaming implementation.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:forced-block-recurrence",
+    "paper": "Forced block recurrence",
+    "module": "NonautonomousAttraction",
+    "declarations": ["orderedEnvelope", "ordered_product_convolution"],
+    "scope": "The chronological ordered-product forcing convolution.",
+    "excluded": "The initial all-pairs maximum step and squared-gain notation.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:comprehensive-collapse",
+    "paper": "Comprehensive row-map collapse criterion",
+    "module": "ComprehensiveRowMapCollapse",
+    "declarations": ["coordinate_block_collapse", "gate_shape_master", "forced_row_map_tube"],
+    "scope": "Geometric coordinate collapse and transfer of a forced carrier tube to row diameter.",
+    "excluded": "The full nonuniform vanishing-forcing limit proof.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:lifted-adamw-jacobian",
+    "paper": "Lifted AdamW Jacobian",
+    "module": "LiftedAdamWMatrix",
+    "declarations": ["fullLinearStep", "full_adamw_block_expansion", "frozen_second_moment_specialization"],
+    "scope": "Block coupling of parameters, first moments, and second moments, plus a frozen-second-moment specialization.",
+    "excluded": "The displayed branch-resolved Hessian and adaptive square-root derivative blocks.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:nonautonomous-lifted-attraction",
+    "paper": "Nonautonomous lifted attraction",
+    "module": "NonautonomousAttraction",
+    "declarations": ["ordered_product_convolution", "nonautonomous_invariant_tube"],
+    "scope": "Ordered nonautonomous forcing and an invariant-tube implication under supplied gains.",
+    "excluded": "Moving positive-definite metrics, segment integration, and reference defects.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:zero-gate-invariance",
+    "paper": "Zero-gate invariance",
+    "module": "LayerNormFactorization",
+    "declarations": ["zero_gate_row_independent"],
+    "scope": "A zero shared affine gate makes every abstract row output identical.",
+    "excluded": "The optimizer-side condition that preserves the zero gate for the next update.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:manifold-attraction-collapse",
+    "paper": "Manifold attraction implies row collapse",
+    "module": "PathMetricContraction",
+    "declarations": ["metric_to_physical"],
+    "scope": "Transfer of a supplied metric-state bound to a physical observable bound.",
+    "excluded": "Construction of the collapsed manifold, reference sequence, and lifted attraction hypotheses.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:composite-signed-secant",
+    "paper": "Composite signed secant",
+    "module": "PLGADividedDifference",
+    "declarations": ["divided_difference_exact", "divided_difference_diagonal", "divided_difference_chain"],
+    "scope": "Exact off-diagonal, diagonal, and two-stage divided-difference composition identities.",
+    "excluded": "Analytic differentiation of the implemented iSwiGLU and positive real power.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:composite-plga-transfer",
+    "paper": "Exact composite PLGA transfer",
+    "module": "PLGADividedDifference",
+    "declarations": ["divided_difference_chain", "affine_secant_transfer"],
+    "scope": "Entrywise composite secant followed by an affine coupling transfer.",
+    "excluded": "Matrix Frobenius and operator-norm bounds and runtime PLGA binding.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:row-centering-identity",
+    "paper": "Pairwise variance and row diameter",
+    "module": "ObservableEnergyDissipation",
+    "declarations": ["stackedDeviationSq", "stacked_generator_sq_bound"],
+    "scope": "Stacked squared deviations and the cardinality-times-diameter bound.",
+    "excluded": "The exact all-unordered-pairs variance identity and sharp square-root coefficient.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:row-collapse-plga",
+    "paper": "Row-collapse transfer to PLGA curvature",
+    "module": "PLGASignedSecant",
+    "declarations": ["occupied_segment_bound"],
+    "scope": "Transfer through a positive real-power secant under a supplied occupied bound.",
+    "excluded": "iSwiGLU composition, row centering, matrix coupling, and restricted coefficient.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:causal-score-quotient",
+    "paper": "Restricted causal-score transfer",
+    "module": "PLGAScoreTransfer",
+    "declarations": ["rectangular_three_factor", "fixed_query_key"],
+    "scope": "The exact moving three-factor telescope and fixed-query-key specialization.",
+    "excluded": "Causal prefix centering and the restricted operator supremum.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:causal-softmax-stability",
+    "paper": "Causal softmax and winner stability",
+    "module": "CenteredLogitMargin",
+    "declarations": ["centered_pair_difference", "sharp_centered_margin", "sqrt_two_attained"],
+    "scope": "Centering preserves pair differences and the sharp square-root-two winner-margin implication.",
+    "excluded": "The one-half softmax Lipschitz bound on each causal prefix.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "pred:finite-step-sign",
+    "paper": "Finite-step sign prediction",
+    "module": "FiniteRegistryPrediction",
+    "declarations": ["predictive_strict_contraction", "predictive_one_pair_expansion"],
+    "scope": "The mathematical sign implications exercised by the prospective prediction.",
+    "excluded": "The empirical outcome of the registered campaign.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "pred:postnorm-localization",
+    "paper": "Postnorm localization",
+    "module": "PostNormChain",
+    "declarations": ["eight_unit_execution_order", "eight_unit_shape_execution_order"],
+    "scope": "The two factor orders exercised by the prospective chain comparison.",
+    "excluded": "The empirical automatic-differentiation residuals and path-metric localization.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "pred:executed-gate-route",
+    "paper": "Executed gate route",
+    "module": "AdamWGateForcing",
+    "declarations": ["adamw_gate_duhamel", "persistent_innovation_gate_tube"],
+    "scope": "The gate convolution and persistent forcing tube exercised by the prospective measurement.",
+    "excluded": "The empirical gate histories and registered numerical envelopes.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "pred:composite-plga-transfer",
+    "paper": "Composite PLGA and causal-score transfer",
+    "module": "PLGADividedDifference",
+    "declarations": ["divided_difference_chain", "affine_secant_transfer"],
+    "scope": "The abstract composite and affine secant identities exercised prospectively.",
+    "excluded": "The empirical PLGA cells, negative-exponent occupancy, and restricted coefficients.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:diameter-slack-accounting",
+    "paper": "Exact diameter-slack accounting",
+    "module": "DiameterSlack",
+    "declarations": ["pairDecrement", "diameterSlack", "diameter_slack_identity"],
+    "scope": "Exact equality between the successor maximum and source diameter minus the minimum realized pair slack.",
+    "excluded": "Runtime enumeration of the registered pairs.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "prop:executed-gate-accounting",
+    "paper": "Executed gate-energy accounting",
+    "module": "ExecutedAdamWEnergy",
+    "declarations": ["energy", "pairing", "decayDissipation", "executed_adamw_balance"],
+    "scope": "The full diagonal quadratic balance into decay, signed alignment, and finite innovation energy.",
+    "excluded": "Runtime identification of the abstract innovation with checkpoint moment tensors.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "prop:gate-shape-accounting",
+    "paper": "Gate-then-shape accounting",
+    "module": "CounterfactualShapeResponse",
+    "declarations": ["two_arm_energy_identity"],
+    "scope": "The exact add-and-subtract intermediate-energy decomposition.",
+    "excluded": "Binding the abstract energies to one realized PLDR row pair.",
+    "faithfulness": "faithful"
+  }
+]

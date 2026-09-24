@@ -1,0 +1,109 @@
+{
+  "A": {
+    "caller_bounds": "FORBIDDEN",
+    "caller_comparison_matrices": "FORBIDDEN",
+    "caller_forcing_envelopes": "FORBIDDEN",
+    "caller_pass_flags": "FORBIDDEN",
+    "exact_arrays": [
+      "application_pair_ids",
+      "checkpoint_complete_digests",
+      "comparison_logits",
+      "construction_row_defects",
+      "construction_stage_differences",
+      "layernorm_centered_norms",
+      "measurement_registry_sha256",
+      "observed_stage_differences",
+      "producer_code_sha256",
+      "reference_logits",
+      "row_defects",
+      "stage_names"
+    ],
+    "format": "NPZ_WITH_ALLOW_PICKLE_FALSE",
+    "schema_version": "pldr-a-raw-observations-v3"
+  },
+  "I": {
+    "caller_bounds": "FORBIDDEN",
+    "caller_comparison_matrices": "FORBIDDEN",
+    "caller_forcing_envelopes": "FORBIDDEN",
+    "caller_pass_flags": "FORBIDDEN",
+    "exact_arrays": [
+      "alpha_effective",
+      "beta1",
+      "branch_complete_digests",
+      "branch_non_rate_digests",
+      "normal_amplitudes",
+      "normal_eigenvalues",
+      "producer_code_sha256",
+      "realized_decay",
+      "source_complete_digests"
+    ],
+    "format": "NPZ_WITH_ALLOW_PICKLE_FALSE",
+    "schema_version": "pldr-i-raw-observations-v3"
+  },
+  "N": {
+    "caller_bounds": "FORBIDDEN",
+    "caller_comparison_matrices": "FORBIDDEN",
+    "caller_forcing_envelopes": "FORBIDDEN",
+    "caller_pass_flags": "FORBIDDEN",
+    "exact_arrays": [
+      "checkpoint_complete_digests",
+      "construction_observation_factors",
+      "direct_initial_defects_construction",
+      "direct_initial_defects_validation",
+      "direct_observed_defects_construction",
+      "direct_observed_defects_validation",
+      "measurement_registry_sha256",
+      "normal_states_construction",
+      "normal_states_validation",
+      "producer_code_sha256",
+      "quotient_probability_floors",
+      "quotient_projection_errors",
+      "validation_full_hessian_matrices",
+      "validation_hessian_fisher_matrices",
+      "validation_observation_factors"
+    ],
+    "format": "NPZ_WITH_ALLOW_PICKLE_FALSE",
+    "schema_version": "pldr-n-raw-observations-v3"
+  },
+  "Q": {
+    "caller_bounds": "FORBIDDEN",
+    "caller_comparison_matrices": "FORBIDDEN",
+    "caller_forcing_envelopes": "FORBIDDEN",
+    "caller_pass_flags": "FORBIDDEN",
+    "exact_arrays": [],
+    "format": "JSON",
+    "schema_version": "pldr-q-live-record-v2"
+  },
+  "R": {
+    "caller_bounds": "FORBIDDEN",
+    "caller_comparison_matrices": "FORBIDDEN",
+    "caller_forcing_envelopes": "FORBIDDEN",
+    "caller_pass_flags": "FORBIDDEN",
+    "exact_arrays": [],
+    "format": "JSON",
+    "schema_version": "pldr-r-raw-observations-v2"
+  },
+  "T": {
+    "caller_bounds": "FORBIDDEN",
+    "caller_comparison_matrices": "FORBIDDEN",
+    "caller_forcing_envelopes": "FORBIDDEN",
+    "caller_pass_flags": "FORBIDDEN",
+    "exact_arrays": [
+      "applied_learning_rates",
+      "component_names",
+      "data_cursors",
+      "landmark_complete_digests",
+      "landmark_component_digests",
+      "landmark_steps",
+      "model_shape",
+      "optimizer_steps",
+      "producer_code_sha256",
+      "recomputed_learning_rates",
+      "replay_complete_digests",
+      "replay_component_digests",
+      "seed_ids"
+    ],
+    "format": "NPZ_WITH_ALLOW_PICKLE_FALSE",
+    "schema_version": "pldr-t-raw-observations-v3"
+  }
+}

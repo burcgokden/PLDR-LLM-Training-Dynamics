@@ -1,0 +1,188 @@
+[
+  {
+    "label": "lem:row-quotient-geometry",
+    "paper": "Physical quotient and row diameter",
+    "module": "VectorCenteredRowGeometry",
+    "declarations": [
+      "vectorCenteredEnergy",
+      "vectorPairDistanceSq",
+      "vectorOrderedPairEnergy",
+      "vector_pairwise_variance_identity",
+      "vector_pair_distance_le_twice_centered_energy",
+      "vector_pair_collapse_of_centered_energy"
+    ],
+    "scope": "Finite-dimensional centered energy, the vector pairwise-variance identity, the direct pair-distance bound, and the centered-energy collapse implication.",
+    "excluded": "Attainment of the finite maximum, the reverse diameter-to-energy bound, and the three-way sequence equivalence.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:layer-resolved-gate-shape",
+    "paper": "Layer-resolved mixed gate-shape collapse",
+    "module": "GateShapeFactorization",
+    "declarations": [
+      "coordinateEnergy",
+      "gateShapeEnergy",
+      "coordinate_energy_nonnegative",
+      "gate_shape_energy_zero_iff",
+      "coordinate_energy_collapse_iff"
+    ],
+    "scope": "The finite nonnegative coordinate factorization and equivalence between total-energy convergence and convergence of every mixed coordinate energy.",
+    "excluded": "Matrix row centering, Frobenius column assembly, and transfer to maximum physical row diameter.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:block-orbit-criterion",
+    "paper": "Necessary and sufficient block orbit criterion",
+    "module": "BlockExcursion",
+    "declarations": [
+      "blockOffsets",
+      "blockExcursion",
+      "blockMaximum",
+      "energy_le_anchor_add_excursion",
+      "block_excursion_eq_maximum",
+      "block_excursion_collapse_iff",
+      "block_excursion_le_positive_variation"
+    ],
+    "scope": "Attained finite block maxima, exact anchor-plus-excursion identity, the nonnegative block collapse equivalence, and domination by positive variation.",
+    "excluded": "Passage from successive unbounded blocks to the complete natural-number orbit and the finite-registry maximum.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:implemented-adamw-lift",
+    "paper": "Implemented lifted AdamW derivative",
+    "module": "LiftedAdamWMatrix",
+    "declarations": [
+      "fullLinearStep",
+      "full_adamw_block_expansion",
+      "state_independent_intervention"
+    ],
+    "scope": "The abstract three-block lifted state action, its block expansion, and cancellation of state-independent additive forcing from a perturbation response.",
+    "excluded": "Construction of live Hessian, clipping, bias-correction, denominator, and decay blocks from the implemented optimizer.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:complete-state-collapse",
+    "paper": "Complete-state row-map collapse",
+    "module": "CompleteStateCocycle",
+    "declarations": [
+      "physical_cover_collapse"
+    ],
+    "scope": "Transfer from a vanishing nonnegative complete-state normal and vanishing physical baseline through a uniform linear physical cover.",
+    "excluded": "Chart construction, scheduled metrics, nonlinear tube induction, chronological scalar unrolling, and the uniform context-class extension.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:finite-cocycle-envelope",
+    "paper": "Finite-horizon cocycle envelope",
+    "module": "CompleteStateCocycle",
+    "declarations": [
+      "complete_state_affine_envelope"
+    ],
+    "scope": "Chronological finite iteration of the nonnegative affine scalar estimate used after the nonlinear tube bound.",
+    "excluded": "The tube induction, scheduled norms, and finite physical-cover maximum.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:linear-stochastic-forcing",
+    "paper": "Transported stochastic forcing",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "Martingale orthogonality, the transported second-moment bound, and its mean-square consequence.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "thm:collapse-obstructions",
+    "paper": "Collapse obstructions",
+    "module": "CompleteStateCocycle",
+    "declarations": [
+      "vanishing_invariance_force_necessary",
+      "nonvanishing_force_obstructs_collapse",
+      "delayedReopening",
+      "delayed_reopening_matches_finite_prefix",
+      "delayed_reopening_not_tendsto_zero"
+    ],
+    "scope": "Necessity of vanishing realized force under vanishing successor components, its contrapositive obstruction, and an explicit finite-prefix reopening counterexample.",
+    "excluded": "The common-observation-kernel counterexample and the degenerating scheduled-metric counterexample.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:plga-quotient-defect",
+    "paper": "PLGA quotient-defect decomposition",
+    "module": "PLGARowConstantDefect",
+    "declarations": [
+      "constant_input_output_is_defect",
+      "nonzero_defect_obstructs_row_preservation",
+      "quotient_defect_bound"
+    ],
+    "scope": "The abstract response-plus-defect bound, exact reduction at zero upstream quotient, and obstruction from a nonzero constant-input defect.",
+    "excluded": "The implemented PLGA formula, segment integral construction of the response bound, and sequential transfer.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:plga-row-preservation",
+    "paper": "Sufficient PLGA row preservation",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "Propagation of row constancy through the five implemented PLGA parameter conditions.",
+    "faithfulness": "not-formalized"
+  }
+,
+  {
+    "label": "prop:gate-zero-invariance",
+    "paper": "Gate-zero invariance criterion",
+    "module": "GateZeroStratum",
+    "declarations": [
+      "zero_gate_successor_iff_zero_moment",
+      "zero_gate_zero_moment_invariant_iff"
+    ],
+    "scope": "The scalar adaptive-write zero criterion and its reduction to a zero clipped gradient when the incoming first moment vanishes.",
+    "excluded": "The coordinatewise AdamW denominator construction and the final physical gate-shape alternative.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:observable-complete-state",
+    "paper": "Observable complete-state variation of constants",
+    "module": "ObservableCompleteStateCocycle",
+    "declarations": [
+      "homogeneous",
+      "transported",
+      "complete_state_variation_of_constants",
+      "observable_variation_of_constants",
+      "componentwise_observable_vanishing"
+    ],
+    "scope": "Exact chronological state and observable decompositions in additive groups, with separate transported force and remainder and a componentwise vanishing sufficient condition.",
+    "excluded": "Finite-registry row geometry, differentiable observation remainders, the norm envelope, the Gram cancellation identity, and the necessary-and-sufficient limit wording.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:stratified-itinerary",
+    "paper": "Stratified itinerary identity",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "Route-dependent chart spaces, nonsmooth compatible linear maps, and separation of exact algebra from routewise remainder regularity.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "thm:lower-metric-transfer",
+    "paper": "Lower-metric fixed-norm transfer",
+    "module": "ObservableCompleteStateCocycle",
+    "declarations": [
+      "lower_metric_transfer"
+    ],
+    "scope": "A uniform positive lower comparison transfers convergence of a nonnegative scheduled quantity to convergence of the fixed quantity without an upper comparison.",
+    "excluded": "Matrix-valued metrics, extraction of square-root norm inequalities, and variable chart dimensions.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:continuous-observable",
+    "paper": "Observable continuous-time specialization",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "Fundamental propagators, the Duhamel formula, observation transport, and any discrete-to-continuous scaling limit.",
+    "faithfulness": "not-formalized"
+  }
+]

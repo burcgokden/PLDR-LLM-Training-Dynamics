@@ -1,0 +1,221 @@
+{
+  "neighboring_family_resource_consumers": [
+    {
+      "disposition": "Analysis/coverage consumer of recorded resource summaries; not a shared campaign launcher. No runtime guarantee inferred.",
+      "functions": [
+        "read",
+        "probability",
+        "analyze"
+      ],
+      "path": "vendor/model/scripts/analyze_matched_clock.py",
+      "sha256": "f6ca67f9b8471baf8dab7a94106562992255109bb3881d39ed1f6576661f60df"
+    },
+    {
+      "disposition": "Analysis/coverage consumer of recorded resource summaries; not a shared campaign launcher. No runtime guarantee inferred.",
+      "functions": [
+        "main"
+      ],
+      "path": "vendor/model/scripts/analyze_row_transport.py",
+      "sha256": "57f822a299b633d9202e8bba38b09338c1442d813c9c0d8a9854aad33d0113d3"
+    },
+    {
+      "disposition": "Analysis/coverage consumer of recorded resource summaries; not a shared campaign launcher. No runtime guarantee inferred.",
+      "functions": [
+        "require",
+        "read",
+        "canonical",
+        "source_hashes",
+        "admitted_protocol",
+        "number",
+        "keys",
+        "digest",
+        "census",
+        "design",
+        "seed_binding",
+        "inventory",
+        "validate_analysis",
+        "validate_certificate",
+        "validate_records"
+      ],
+      "path": "vendor/model/scripts/matched_clock_coverage.py",
+      "sha256": "6a65f2f78180a1ebb5cf364142a3c7888c94ce1c0b557fa538c135a568f599b5"
+    }
+  ],
+  "row_launchers": [
+    {
+      "contract": "pldr-campaign-budget-v1",
+      "disposition": "bounded-shared-accounting; archival scientific campaign",
+      "execution_checks": "validation/campaign-budget.json and validation/resource-execution.json; overlaps row suite",
+      "inspected_functions": [
+        "execute"
+      ],
+      "inspection": "Full-plan journal, immutable attempts, prelaunch envelope and exclusive lock; shared bounded regressions.",
+      "path": "vendor/row/scripts/execute_block_normal_plan.py",
+      "sha256": "15eee6341fa09ce0a9e3834e52b3b952338d51685e59b20106a1282728e13a2c"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "_resource_cap",
+        "execute_node",
+        "main"
+      ],
+      "inspection": "Node/dependency resource checks and aggregate output check; no common cumulative device-time claim.",
+      "path": "vendor/row/scripts/execute_contrast_energy_plan.py",
+      "sha256": "7f972893003cc0742ec416762a95c48e41bb5616f14e60b3bf13975b7d269dfd"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "_aggregate_hours",
+        "_run_node",
+        "execute"
+      ],
+      "inspection": "Refuses resource-record overwrite and checks aggregate before and after phase; phase queues do not reserve the full remaining envelope atomically.",
+      "path": "vendor/row/scripts/execute_direct_work_plan.py",
+      "sha256": "0aefa8bae9022992b536fd6ecffe2e091bcdd423c01a93f374ae385a300fdc17"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "aggregate_hours",
+        "run_phase",
+        "run_node"
+      ],
+      "inspection": "Per-node process checks and aggregate phase checks; no common durable prelaunch campaign reservation.",
+      "path": "vendor/row/scripts/execute_direct_work_replication.py",
+      "sha256": "94127c82cd7c0bf0bd0aa9bfbeab08a7a0d16b5946f84a2ff7cbebe1c5206301"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "execute_node",
+        "main"
+      ],
+      "inspection": "Invocation summary aggregates selected outputs after execution; no common persistent all-attempt admission.",
+      "path": "vendor/row/scripts/execute_finite_increment_plan.py",
+      "sha256": "f85bf52618b91cbba6b1668dae51c37ea1c53cf023328a369aff6777c56c7e86"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "_used_gpu_seconds",
+        "execute_node"
+      ],
+      "inspection": "Completed-record aggregation and postlaunch cap test; does not certify all failed or interrupted attempts.",
+      "path": "vendor/row/scripts/execute_layer_cocycle_plan.py",
+      "sha256": "000a4cd04bbba47dcac99480b72bb7fc07cbfd350e89bf3fdb9b47214b98e48e"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "_attempt_directory",
+        "execute_node"
+      ],
+      "inspection": "Attempt logs and completion markers, with no common durable campaign device-time admission.",
+      "path": "vendor/row/scripts/execute_mixed_collapse_plan.py",
+      "sha256": "0a9d385aa0b9818b4604ab6d1440327d9522f8b43ef6c456ae8882e46c4c4c7f"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "_attempt_gpu_seconds",
+        "execute_node"
+      ],
+      "inspection": "Includes completed attempt records, but checks current total before launch and actual cost after; no durable prelaunch reservation.",
+      "path": "vendor/row/scripts/execute_observable_balance_plan.py",
+      "sha256": "45aee394d5ee65df3b8a0c4548d51f57cdc483ee312c978f11290c8ec89264e9"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "_used_gpu_seconds",
+        "execute_node"
+      ],
+      "inspection": "Completed-record aggregation and postlaunch cap test; not the common durable attempt contract.",
+      "path": "vendor/row/scripts/execute_observable_cocycle_plan.py",
+      "sha256": "3a4c70cf39f4e6d393a4f34ea215f87d5a7bdd4f87296cb24ef18122d5e2f653"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "_campaign_records",
+        "_resource_usage",
+        "_reservation_pass",
+        "_execute_locked",
+        "execute"
+      ],
+      "inspection": "Has plan-owned ledger, full recorded costs, reservation calculation and exclusive lock. Reservation is not a durable unresolved-attempt event before spawn; interruption behavior is not certified by the common contract.",
+      "path": "vendor/row/scripts/execute_observable_margin_plan.py",
+      "sha256": "9e827142624a6d268c7eb35cdc438bb245a3fadef71502a112ee45855d74145a"
+    },
+    {
+      "contract": "pldr-campaign-budget-v1",
+      "disposition": "bounded-shared-accounting; archival scientific campaign",
+      "execution_checks": "validation/campaign-budget.json and validation/resource-execution.json; overlaps row suite",
+      "inspected_functions": [
+        "module alias"
+      ],
+      "inspection": "Delegates to source-resolved executor with family schema constants; same contract.",
+      "path": "vendor/row/scripts/execute_orbitwise_plan.py",
+      "sha256": "91acb04e8c8f500abf906aa6170c11227e84e751928036bf28e14c7886f83d34"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "aggregate_hours",
+        "run_phase",
+        "run_node"
+      ],
+      "inspection": "Per-node process checks and aggregate phase checks; no common durable prelaunch campaign reservation.",
+      "path": "vendor/row/scripts/execute_radial_context_holdout.py",
+      "sha256": "a61ed96f4027c308b98a4c35f9570c2fd704b464ff3de0de2d3fd91399dd0684"
+    },
+    {
+      "contract": null,
+      "disposition": "archival; no validated interruption-safe cumulative guarantee",
+      "execution_checks": "Retained family tests only; no native campaign or common-contract runtime claim",
+      "inspected_functions": [
+        "_verified_resource_usage",
+        "_execute_job",
+        "execute"
+      ],
+      "inspection": "Totals prior verified successes plus current lane results; cap checks after work. No certified failed-attempt history or prelaunch reservation.",
+      "path": "vendor/row/scripts/execute_row_map_plan.py",
+      "sha256": "86221f1bbb9c8d2343cce21bec70ce99749a3d0a67da3cc43af63f68cb044665"
+    },
+    {
+      "contract": "pldr-campaign-budget-v1",
+      "disposition": "bounded-shared-accounting; archival scientific campaign",
+      "execution_checks": "validation/campaign-budget.json and validation/resource-execution.json; overlaps row suite",
+      "inspected_functions": [
+        "execute"
+      ],
+      "inspection": "Same shared contract; no success-only prior-total reconstruction.",
+      "path": "vendor/row/scripts/execute_source_resolved_plan.py",
+      "sha256": "38f85c46e76f2301dd3647b948eeed3081532484362859c0d55bd045f14b755a"
+    }
+  ],
+  "schema": "pldr-campaign-accounting-inventory-v1",
+  "scope": "Source inspection of all row execute*.py interfaces and named budget consumers in RG/model scripts; bounded execution only for explicitly listed shared interfaces. Not exhaustive runtime validation of the archive."
+}

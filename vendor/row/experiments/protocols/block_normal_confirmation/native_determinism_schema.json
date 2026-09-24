@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "tensor_comparisons",
+    "row_comparisons",
+    "native_centered_row_radius",
+    "conversion_centered_row_radius",
+    "charges_combined",
+    "source_checkpoint_path",
+    "source_checkpoint_sha256",
+    "native_successor_path",
+    "native_successor_sha256"
+  ],
+  "title": "Native deterministic clone and conversion charges",
+  "type": "object"
+}

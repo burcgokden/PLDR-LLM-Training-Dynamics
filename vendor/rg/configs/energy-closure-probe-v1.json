@@ -1,0 +1,20 @@
+{
+  "schema_version": "pldr-row-rg-energy-closure-probe-config-v1",
+  "probe_id": "pldr-adamw-moment-energy-closure-v7",
+  "source_run_root": "/pldr-data/rg/executed/stage-a-runner-smoke-v7-20260903/run",
+  "block_sizes": [1, 2, 4, 8],
+  "baseline_replicates": 2,
+  "intervention": "zero_adamw_first_moment",
+  "trajectories": [
+    {
+      "trajectory_id": "stage-a-smoke-t0",
+      "device": 0,
+      "source_step": 16
+    },
+    {
+      "trajectory_id": "stage-a-smoke-t1",
+      "device": 1,
+      "source_step": 16
+    }
+  ]
+}

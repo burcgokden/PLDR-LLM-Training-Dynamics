@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checkpoint_binding_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "checkpoint_content_opened": {
+          "type": "boolean"
+        },
+        "device_exercised": {
+          "type": "boolean"
+        },
+        "forced_cap_record_pass": {
+          "type": "boolean"
+        },
+        "kernels_pass": {
+          "type": "boolean"
+        },
+        "recovery_pass": {
+          "type": "boolean"
+        },
+        "schema_rejects_unknown_fields": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "kernels_pass",
+        "schema_rejects_unknown_fields",
+        "device_exercised",
+        "checkpoint_content_opened",
+        "recovery_pass",
+        "forced_cap_record_pass"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "device": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "maximum_identity_residuals": {
+      "additionalProperties": false,
+      "properties": {
+        "energy_ledger": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "gate_shape": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "shapley_efficiency": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "symmetric_transport": {
+          "minimum": 0.0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "gate_shape",
+        "symmetric_transport",
+        "energy_ledger",
+        "shapley_efficiency"
+      ],
+      "title": "Numerical identity residuals",
+      "type": "object"
+    },
+    "mode": {
+      "enum": [
+        "fixture",
+        "real-checkpoint"
+      ]
+    },
+    "peak_gpu_allocated_bytes": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "peak_gpu_reserved_bytes": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "peak_host_rss_bytes": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-qualification-v1"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "mode",
+    "device",
+    "checkpoint_binding_sha256",
+    "maximum_identity_residuals",
+    "peak_gpu_allocated_bytes",
+    "peak_gpu_reserved_bytes",
+    "peak_host_rss_bytes",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Kernel and device qualification",
+  "type": "object"
+}

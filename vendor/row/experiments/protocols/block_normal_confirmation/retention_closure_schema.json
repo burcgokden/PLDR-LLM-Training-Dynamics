@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "complete_checkpoint_path",
+    "complete_checkpoint_sha256",
+    "model_only_checkpoint_path",
+    "model_only_checkpoint_sha256",
+    "open_descendants",
+    "recovery",
+    "measured_storage_bytes",
+    "cleanup_authorized",
+    "deletion_performed"
+  ],
+  "title": "Complete checkpoint retention closure",
+  "type": "object"
+}

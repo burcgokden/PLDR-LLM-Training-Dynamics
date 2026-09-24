@@ -1,0 +1,32 @@
+{
+  "analyzer": "experiments/analysis/comprehensive_confirmation_analysis.py",
+  "producer": "experiments/confirm/comprehensive_live_producers.py",
+  "raw_required": [
+    "primary_checkpoint",
+    "replay_checkpoint",
+    "primary_event_ledger",
+    "replay_event_ledger"
+  ],
+  "schema_version": "pldr-comprehensive-collapse-protocol-v4",
+  "stage": {
+    "decision_source": "The analyzer resolves the sealed request, checkpoints, raw archive, producer and analyzer code, partition, resource record, challenge seed, and prediction lock, then recomputes the decision.",
+    "dependencies": [
+      "T"
+    ],
+    "gpu_hour_cap": 0.25,
+    "id": "TR",
+    "placement": "primary trajectory repeated from scratch on cuda:0",
+    "primary_outputs": [
+      "scientific state equality",
+      "distinct run identity and event ledger"
+    ],
+    "required_checks": [
+      "replay_run_identity_differs",
+      "replay_lineage_differs",
+      "model_moments_clocks_masks_registry_next_batch_rng_equal",
+      "device_and_cursor_labels_excluded_from_scientific_digest",
+      "aliased_primary_checkpoint_rejected"
+    ],
+    "title": "Independent same-device replay"
+  }
+}

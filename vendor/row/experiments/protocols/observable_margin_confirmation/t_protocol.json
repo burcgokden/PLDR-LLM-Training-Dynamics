@@ -1,0 +1,31 @@
+{
+  "analyzer": "experiments/analysis/analyze_observable_margin.py",
+  "campaign_id": "observable-margin-confirmation-rev37",
+  "evidence": "compact-npz-no-raw-parameter-nodes",
+  "executor": "scripts/execute_observable_margin_plan.py",
+  "native_producer": null,
+  "planner": "experiments/confirm/run_observable_margin_confirmation.py",
+  "robustness_scientific_gate": null,
+  "schema_version": "pldr-observable-margin-protocol-v1",
+  "stage": {
+    "attempt_rule": "append-only-positive-integer-attempts",
+    "dependencies": [
+      "R"
+    ],
+    "gpu_hour_cap": 6.0,
+    "hard_gate": true,
+    "id": "T",
+    "record_key": "STAGE:job_id",
+    "required_checks": [
+      "three_fresh_seeds",
+      "native_float32_adamw",
+      "actual_minibatches",
+      "five_complete_optimizer_anchors",
+      "exact_restart_replay",
+      "data_cursor_and_rng_state",
+      "checkpoint_registry_binding"
+    ],
+    "title": "Fresh exact-state trajectories"
+  },
+  "status": "WAITING_FOR_FRESH_CHECKPOINTS"
+}

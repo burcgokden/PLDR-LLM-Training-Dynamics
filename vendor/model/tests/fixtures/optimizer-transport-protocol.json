@@ -1,0 +1,202 @@
+{
+  "schema": "finite-optimizer-transport-v1",
+  "stage": "assessment",
+  "created_at": "2026-09-12T05:21:42.136022+00:00",
+  "cases": [
+    {
+      "branch_seed": 9140101,
+      "corpus": 0,
+      "generator_seed": 9120101,
+      "heads": 4,
+      "identity": 0,
+      "name": "h4-c0-i0",
+      "profile": {
+        "arithmetic": "float32 full batch32; no TF32; per-tensor AdamW",
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "body_peak": 0.00015,
+        "clipping": "norm",
+        "epsilon": 1e-08,
+        "floor_fraction": 1.0,
+        "generator_peak": 0.0003,
+        "heads": 4,
+        "name": "controlled",
+        "objective": "last_external_target",
+        "total_steps": 0,
+        "warmup_steps": 0,
+        "weight_decay": 0.01
+      },
+      "seed": 9110101,
+      "stream_seed": 9130101
+    },
+    {
+      "branch_seed": 9140101,
+      "corpus": 0,
+      "generator_seed": 9120101,
+      "heads": 14,
+      "identity": 0,
+      "name": "h14-c0-i0",
+      "profile": {
+        "arithmetic": "float32 full batch32; no TF32; per-tensor AdamW",
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "body_peak": 4.2857142857142856e-05,
+        "clipping": "norm",
+        "epsilon": 1e-08,
+        "floor_fraction": 1.0,
+        "generator_peak": 0.0003,
+        "heads": 14,
+        "name": "controlled",
+        "objective": "last_external_target",
+        "total_steps": 0,
+        "warmup_steps": 0,
+        "weight_decay": 0.01
+      },
+      "seed": 9110101,
+      "stream_seed": 9130101
+    }
+  ],
+  "arms": [
+    {
+      "name": "zero",
+      "family": null,
+      "h": 0.0
+    },
+    {
+      "name": "first-plus",
+      "family": "first",
+      "h": 0.1
+    },
+    {
+      "name": "first-minus",
+      "family": "first",
+      "h": -0.1
+    },
+    {
+      "name": "first-halfplus",
+      "family": "first",
+      "h": 0.05
+    },
+    {
+      "name": "first-halfminus",
+      "family": "first",
+      "h": -0.05
+    },
+    {
+      "name": "logsecond-plus",
+      "family": "logsecond",
+      "h": 0.1
+    },
+    {
+      "name": "logsecond-minus",
+      "family": "logsecond",
+      "h": -0.1
+    },
+    {
+      "name": "logsecond-halfplus",
+      "family": "logsecond",
+      "h": 0.05
+    },
+    {
+      "name": "logsecond-halfminus",
+      "family": "logsecond",
+      "h": -0.05
+    }
+  ],
+  "modes": [
+    "native32",
+    "arithmetic64"
+  ],
+  "horizon": 8,
+  "replicates": 2,
+  "times": [
+    0,
+    1,
+    2,
+    4,
+    8
+  ],
+  "batch_size": 32,
+  "source_seed": 914141000,
+  "prediction_tolerance_units": 32.0,
+  "signal_floor": 5e-07,
+  "observation": "Twelve coordinates: external-target risk, entropy, five log1p common RMS and five log1p transverse RMS; equal saved-time and coordinate weights. Full path primary; no elapsed-time quadrature.",
+  "intervention": "All first moments multiplied by 1+h OR all positive second moments multiplied by exp(h); zeros preserved. h=+-0.1,+-0.05; all other incoming state unchanged. Uniform radial moment directions, no equality of physical norms across families asserted.",
+  "primary": "Fixed-clipped-gradient first-step state prediction; all model-coordinate errors divided by dtype epsilon times magnitude scale <=32. Incoming full logits equal baseline; measure later visibility with fixed signal floor. Every source/sign/mode retained. No derivative-domain success claim.",
+  "sources": {
+    "/pldr-code/model/scripts/analyze_optimizer_transport.py": "9ed422e00e09e221c99aceaeb46d74c8a1fcfa108464dde5277f89fb00899c11",
+    "/pldr-code/model/scripts/finite_response_study.py": "bc70da2d5db67270a7edbb402868d9ee268134ff169636499ebf3b2bee63e05e",
+    "/pldr-code/model/scripts/measure_law_closure.py": "c08872d64335673d6e7e35e5d9a04704db048d030fcb1434ee2a099d57c7907e",
+    "/pldr-code/model/scripts/optimizer_transport_study.py": "2d237d7221b3081f2128970d015ba5d6273b5168ce2e7b08c8f08fce4412c86b",
+    "/pldr-code/model/scripts/outer_transfer_study.py": "9e9f84b3375791212db449212024c4acd0b956e482f7bc33698a5c182e6dd9b8",
+    "/pldr-code/model/scripts/verify_optimizer_transport.py": "50317b46cd5bb75fa5ee827d24e23b84baed300ac677a0b8854814f120f7e231",
+    "/pldr-code/model/src/model_rg/__init__.py": "7a29c7c3930bf2f5e1898becbd12bf40578f38aeded6ad62ee506b0ef55f56bc",
+    "/pldr-code/model/src/model_rg/adam_tangent.py": "2c1b96773736e98ddc89ea52a6ddd2b7f4d45a2f3e0877cae866428cae926dda",
+    "/pldr-code/model/src/model_rg/checkpointing.py": "7aff6afb95801a023342cd8f7393aad1ffc3bc77e88395322f11cb84ab9452fc",
+    "/pldr-code/model/src/model_rg/common_geometry.py": "4d2411cd4d308570d56a8957b084810de1b9282f65f86ac20d8a55fff1c20bcf",
+    "/pldr-code/model/src/model_rg/controlled.py": "183977ae378b09714f7f160048b4c3ba3628210ba6fdf83f90736e1715a078a0",
+    "/pldr-code/model/src/model_rg/correlations.py": "11a484c84a8e47df0198705d62caed463035eeb81750ce3530cd2aa7c33d70b0",
+    "/pldr-code/model/src/model_rg/criticality.py": "eb14cef4185c5c707d6f1e95c2018cd9d0334e108e52b0a44c7170cd2597d4ed",
+    "/pldr-code/model/src/model_rg/evidence_progress.py": "7596f2ab4ff217d05479b706d595fde01b7b5b203b52cca74cbae86c37698990",
+    "/pldr-code/model/src/model_rg/finite_optimizer.py": "737f09101c6f6fc40791a8eda400b4879e67e47ec3d8124e3718c263924c4d84",
+    "/pldr-code/model/src/model_rg/inference_interventions.py": "2035f165abd115432b4c6321f7e143eb4b3670e020fd3b008557d7c719a2f01e",
+    "/pldr-code/model/src/model_rg/layer_interventions.py": "4cdffda8f1ce47c4d56767231244007957768cee4a0a386667da03f9a6b32dd9",
+    "/pldr-code/model/src/model_rg/moment_rg.py": "69f35807f2671ff3e64e9df6f72761525d200bd3bf30d6f895aa340942a59fd2",
+    "/pldr-code/model/src/model_rg/native.py": "2b468292b0e823303c88affb88c2f8f895fa7c1835e8ee57e3f448b40c2162d0",
+    "/pldr-code/model/src/model_rg/observation.py": "ead17dd2e14189e00e5ff5f91b792d1842d70fbb4a06916f31946bd6bca47aba",
+    "/pldr-code/model/src/model_rg/onepass_regimes.py": "b8c2295d565172d9fcffb449627c7b24437fb5bd3f10f920ce11954a7ad1c396",
+    "/pldr-code/model/src/model_rg/precision.py": "c7c7143f49053f6fa17a6a539b366cff713507882c7694d2db83252621e5e499",
+    "/pldr-code/model/src/model_rg/provenance.py": "a80e758af37e833825f5a8bd0b19d33c943192959a5a1c4160e9f3f33216a362",
+    "/pldr-code/model/src/model_rg/qualification.py": "7b4a75d26c9259eafa351984e6a8e60f277662143d4457a12aa7f63bb6e411e5",
+    "/pldr-code/model/src/model_rg/refresh.py": "3e2e5a0ba925fad193de8bcc01ee582558372b3353e17ea83ee9d0a03dbf2882",
+    "/pldr-code/model/src/model_rg/resource_coupling.py": "cfe7b44e831c290121b16c65876c098bd25ad3bd0a7eead144b288220bbeaaca",
+    "/pldr-code/model/src/model_rg/rg.py": "380f10170d873a0fabc69b9d728618e5a093fa34a22e7ff925cb783083a16472",
+    "/pldr-code/model/src/model_rg/row_projection.py": "f1e24ab58283cc3f30a3d9de95065d1def241eb844d2c2948bbd7dda414e3402",
+    "/pldr-code/model/src/model_rg/scaling.py": "b0ecd068238b99c607ad2c51ce1724409d15b887756606951516855987fb58a0",
+    "/pldr-code/model/src/model_rg/scheduled_regimes.py": "43f075a071673b0f5db0d19fb3208d9642a917d64804ad6cf107988d336fd12f",
+    "/pldr-code/model/src/model_rg/schedules.py": "154d2742d3d208ead049bb07aa8c9fdb3553108fdc93e171e3b6b420d185cc1b",
+    "/pldr-code/model/src/model_rg/source_basis.py": "18e2ab58b7c2c7aa314539c93accb777e9a1940ca9f5f0b460fe8d40b44cf1fd",
+    "/pldr-code/model/src/model_rg/training.py": "04157d038de4febc1aafdfa2593532dd4cb6b0d04ceee939b42b41fcba0e4922",
+    "/pldr-code/model/src/model_rg/update_records.py": "7ca6c26896bf4b578ee2d33541e6b25291e4a538aebd24314f08995db0d18371",
+    "/pldr-code/model/src/model_rg/variance_family.py": "c9f4a5b4140138de670a26fccf104e3d656ccc2187570f0bc6a41f3dacf77cbf",
+    "/pldr-code/model/src/model_rg/visible_noise.py": "2e8a9e01839a56e6123fca29ae2373a19dc93dea52e51701340559e7a4b9793b"
+  },
+  "inputs": {
+    "/pldr-data/model/outer-transfer-20260911/protocol.json": "d5639570ddc7e5784ecdbf58e2e8d1b51e55366c2fb74be853ba053617efea4c",
+    "/pldr-data/model/outer-transfer-20260911/data/panels.npz": "6ce0f5019a50f5aa4e2f180375663a1d4342b9a0a2c6e3eb1b9c599a37373a8c",
+    "/pldr-data/model/outer-transfer-20260911/data/corpus-0.npy": "c062ca3a52fad8d80eca2a72d5e495a37ecea4afe14050eeae85add66f0ac336",
+    "/pldr-data/model/outer-transfer-20260911/runs/h4-c0-i0/incoming-state.pt": "bda0f9892dc127f066914ea60e11f9aec312d5b631174d052318757744ed130f",
+    "/pldr-data/model/outer-transfer-20260911/runs/h14-c0-i0/incoming-state.pt": "549cdfa4157e148a2802888d458328ee0bb0a3ff10b2a17f9a6ac0778f5018f9",
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/config.json": "0896185036d5010f41cab56b6cff66479251e6517d12b7d72169138114102284",
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/configuration_pldrllm.py": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e",
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/generation_config.json": "e5131a14d35ccee01f957470696240455e400250d4c5f53d159b3adb1bd348e9",
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/modeling_pldrllm.py": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0",
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/special_tokens_map.json": "9068aeaa96eace489c182ce17328d008d344fe36eee0f3dc2d14e61162394680",
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/tokenizer.json": "3bf58672c12be6bf8c4e326da46ffde1414bbac376a6e5d3cdb6747436fd09aa",
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/tokenizer.model": "51f4369714712232bfc746188f347e550790d1d75e5e35bfa4399b784d2a666f",
+    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/tokenizer_config.json": "42934f44b9a72e64c56554608812c54523df036d480af39b9e7b0c96998dac58"
+  },
+  "runtime": {
+    "python": "3.14.6",
+    "numpy": "2.5.2",
+    "torch": "2.12.1+cu132",
+    "cuda": "13.2",
+    "cudnn": 92000,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "threads": 4,
+    "tf32": false
+  },
+  "data_root": "/pldr-data/model",
+  "sampling": {
+    "/pldr-data/model/optimizer-transport-20260912/assessment/h4-c0-i0-blocks.npy": "b74e3be4c47ade73e0ba3e3f93b3e357f6383da5f8ba69988374acdc4989127e",
+    "/pldr-data/model/optimizer-transport-20260912/assessment/h14-c0-i0-blocks.npy": "750dc7a41aa833f6344581e90388b3360ca3691eb707825e95dc5f9354b6407c"
+  },
+  "qualification": {
+    "path": "/pldr-data/model/optimizer-transport-20260912/native-qualification/verification.json",
+    "sha256": "0e4dbb07736c9f3e61309b4d17a141c632bf8b69d6c15f5f6e8ce32194554582"
+  }
+}

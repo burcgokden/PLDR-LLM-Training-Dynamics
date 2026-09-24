@@ -1,0 +1,503 @@
+{
+  "$id": "pldr-e0-prime-observable-v2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "availability": {
+      "additionalProperties": false,
+      "properties": {
+        "averaging_preconditioner_metadata": {
+          "enum": [
+            "PASS",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        },
+        "bindings": {
+          "enum": [
+            "PASS",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        },
+        "eligible_unit_ledger": {
+          "enum": [
+            "PASS",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        },
+        "fresh_namespace": {
+          "enum": [
+            "PASS",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        },
+        "global_checkpoint_clock": {
+          "enum": [
+            "PASS",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        },
+        "strict_json": {
+          "enum": [
+            "PASS",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "bindings",
+        "fresh_namespace",
+        "strict_json",
+        "global_checkpoint_clock",
+        "averaging_preconditioner_metadata",
+        "eligible_unit_ledger"
+      ],
+      "type": "object"
+    },
+    "bindings": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "data_order_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "protocol_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "source_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "tokenizer_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "protocol_sha256",
+        "schema_sha256",
+        "source_sha256",
+        "calibration_sha256",
+        "data_order_sha256",
+        "tokenizer_sha256"
+      ],
+      "type": "object"
+    },
+    "branch_pilot": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "NONPOSITIVE_COLLAPSE_RESOLVED",
+            "POSITIVE_CAPTURE_RESOLVED",
+            "SIGN_UNRESOLVED",
+            "UNRESOLVED",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "type": "object"
+    },
+    "campaign_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "core_checks": {
+      "additionalProperties": false,
+      "properties": {
+        "direct_row_map_probe": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        },
+        "ordered_adamw_ledger": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        },
+        "quiet_tail_contraction": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        },
+        "trajectory_guard_tube": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "MISSING",
+            "ERROR"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "direct_row_map_probe",
+        "quiet_tail_contraction",
+        "trajectory_guard_tube",
+        "ordered_adamw_ledger"
+      ],
+      "type": "object"
+    },
+    "eligibility": {
+      "additionalProperties": false,
+      "properties": {
+        "capture_quench_contrast": {
+          "additionalProperties": false,
+          "properties": {
+            "minimum": {
+              "const": 32
+            },
+            "n": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "status": {
+              "enum": [
+                "ELIGIBLE",
+                "MAX_CAP_UNRESOLVED",
+                "MISSING",
+                "ERROR"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "n",
+            "minimum"
+          ],
+          "type": "object"
+        },
+        "direct_tail_contraction": {
+          "additionalProperties": false,
+          "properties": {
+            "minimum": {
+              "const": 80
+            },
+            "n": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "status": {
+              "enum": [
+                "ELIGIBLE",
+                "MAX_CAP_UNRESOLVED",
+                "MISSING",
+                "ERROR"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "n",
+            "minimum"
+          ],
+          "type": "object"
+        },
+        "guard_tube_closure": {
+          "additionalProperties": false,
+          "properties": {
+            "minimum": {
+              "const": 80
+            },
+            "n": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "status": {
+              "enum": [
+                "ELIGIBLE",
+                "MAX_CAP_UNRESOLVED",
+                "MISSING",
+                "ERROR"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "n",
+            "minimum"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "direct_tail_contraction",
+        "guard_tube_closure",
+        "capture_quench_contrast"
+      ],
+      "type": "object"
+    },
+    "families": {
+      "additionalProperties": false,
+      "properties": {
+        "capture_quench_contrast": {
+          "additionalProperties": false,
+          "properties": {
+            "direction_pass": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "p_value": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "CONCLUSIVE",
+                "UNRESOLVED",
+                "MISSING",
+                "ERROR"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "p_value",
+            "direction_pass"
+          ],
+          "type": "object"
+        },
+        "direct_tail_contraction": {
+          "additionalProperties": false,
+          "properties": {
+            "direction_pass": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "p_value": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "CONCLUSIVE",
+                "UNRESOLVED",
+                "MISSING",
+                "ERROR"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "p_value",
+            "direction_pass"
+          ],
+          "type": "object"
+        },
+        "guard_tube_closure": {
+          "additionalProperties": false,
+          "properties": {
+            "direction_pass": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "p_value": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "CONCLUSIVE",
+                "UNRESOLVED",
+                "MISSING",
+                "ERROR"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "p_value",
+            "direction_pass"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "direct_tail_contraction",
+        "guard_tube_closure",
+        "capture_quench_contrast"
+      ],
+      "type": "object"
+    },
+    "gate": {
+      "additionalProperties": false,
+      "properties": {
+        "estimate": {
+          "type": "number"
+        },
+        "interval": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        }
+      },
+      "required": [
+        "estimate",
+        "interval"
+      ],
+      "type": "object"
+    },
+    "mechanism_checks": {
+      "additionalProperties": false,
+      "properties": {
+        "anchor_chart": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        },
+        "crossing_signature": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        },
+        "curvature_factory": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        },
+        "fiber_convexity": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        },
+        "fresh_box_band": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        },
+        "gauss_newton_bridge": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        },
+        "normalized_stress_path": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNRESOLVED",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "anchor_chart",
+        "normalized_stress_path",
+        "fresh_box_band",
+        "gauss_newton_bridge",
+        "curvature_factory",
+        "fiber_convexity",
+        "crossing_signature"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "pldr-e0-prime-observable-v2"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "bindings",
+    "availability",
+    "core_checks",
+    "mechanism_checks",
+    "eligibility",
+    "gate",
+    "branch_pilot",
+    "families"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,50 @@
+{
+  "analyzer": "experiments/analysis/comprehensive_confirmation_analysis.py",
+  "producer": "experiments/confirm/comprehensive_live_producers.py",
+  "raw_required": [
+    "checkpoint",
+    "tokens",
+    "registry",
+    "normal_metadata",
+    "finite_stencil_jacobian",
+    "normal_basis",
+    "normal_left_basis",
+    "singular_values",
+    "normal_actions",
+    "prediction_lock"
+  ],
+  "schema_version": "pldr-comprehensive-collapse-protocol-v4",
+  "stage": {
+    "decision_source": "The analyzer resolves the sealed request, checkpoints, raw archive, producer and analyzer code, partition, resource record, challenge seed, and prediction lock, then recomputes the decision.",
+    "dependencies": [
+      "T",
+      "TR"
+    ],
+    "gpu_hour_cap": 1.4,
+    "id": "N",
+    "placement": "one anchor per GPU; large tangent blocks staged in host memory",
+    "primary_outputs": [
+      "rank and basis of DZ_h",
+      "selected pairwise normal frame",
+      "true full-loss edge",
+      "first and second balance defects",
+      "finite-batch force",
+      "joint row-direction cover radii",
+      "spectral residuals"
+    ],
+    "required_checks": [
+      "parameter_count_recorded",
+      "stencil_capacity_exceeds_normal_rank",
+      "normal_rank_residual_certified",
+      "joint_registered_pair_cover_certified",
+      "selected_edges_span_normal_dual",
+      "pair_frame_edge_positive",
+      "signed_full_loss_edge_positive",
+      "balance_defects_within_lock",
+      "force_within_schedule_envelope",
+      "checkpoint_challenge_probes_replay",
+      "synthetic_archive_rejected"
+    ],
+    "title": "Parameter-normal frame and balance"
+  }
+}

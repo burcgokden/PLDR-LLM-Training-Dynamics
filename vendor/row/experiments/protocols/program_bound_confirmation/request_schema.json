@@ -1,0 +1,24 @@
+{
+  "artifact_exact_fields": [
+    "role",
+    "path",
+    "sha256"
+  ],
+  "artifact_roles": [
+    "stage_protocol",
+    "raw_observations",
+    "source_complete_state",
+    "target_complete_state",
+    "partition_manifest",
+    "resource_metadata"
+  ],
+  "exact_fields": [
+    "schema_version",
+    "campaign_id",
+    "stage",
+    "time_semantics",
+    "artifacts"
+  ],
+  "paths": "NORMALIZED_RELATIVE_ONLY",
+  "schema_version": "pldr-composite-observability-stage-request-v3"
+}

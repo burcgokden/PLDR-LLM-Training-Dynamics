@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "coverage": "all files below results_root after immutable ledger-prefix snapshot and before final release attestation",
+  "excluded": [
+    "the manifest itself",
+    "release-verification.json sealed by the executor output binding"
+  ],
+  "format": "sha256-two-space-normalized-relative-path",
+  "omission_sensitive": true,
+  "schema_version": "pldr-observable-results-manifest-v1",
+  "symbolic_links_allowed": false,
+  "verification": "independent full re-enumeration and digest replay"
+}

@@ -1,0 +1,31 @@
+{
+  "analyzer": "experiments/analysis/analyze_observable_margin.py",
+  "campaign_id": "observable-margin-confirmation-rev37",
+  "evidence": "compact-npz-no-raw-parameter-nodes",
+  "executor": "scripts/execute_observable_margin_plan.py",
+  "native_producer": "experiments/confirm/observable_margin_controls.py",
+  "planner": "experiments/confirm/run_observable_margin_confirmation.py",
+  "robustness_scientific_gate": false,
+  "schema_version": "pldr-observable-margin-protocol-v1",
+  "stage": {
+    "attempt_rule": "append-only-positive-integer-attempts",
+    "dependencies": [
+      "H"
+    ],
+    "gpu_hour_cap": 2.0,
+    "hard_gate": false,
+    "id": "ROB",
+    "record_key": "STAGE:job_id",
+    "required_checks": [
+      "full_3d_native_block",
+      "scaled_induced_norm",
+      "spectral_radius",
+      "endpoint_conditioning",
+      "clipping_and_dissipation",
+      "diagnostic_not_scalar_margin_gate",
+      "terminal_record_required_but_pass_not_required_by_M"
+    ],
+    "title": "Coordinate robustness diagnostic"
+  },
+  "status": "WAITING_FOR_FRESH_CHECKPOINTS"
+}

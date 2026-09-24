@@ -1,0 +1,36 @@
+{
+  "PLDR-LLM-v51-SOC-110M-1": {
+    "files": {
+      "README.md": "fa75aa0d1d6e3b6df99df1bc92b5783913fb4cacddcaf32274e972bc6f99b803",
+      "config.json": "0896185036d5010f41cab56b6cff66479251e6517d12b7d72169138114102284",
+      "configuration_pldrllm.py": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e",
+      "generation_config.json": "e5131a14d35ccee01f957470696240455e400250d4c5f53d159b3adb1bd348e9",
+      "model.safetensors": "7a1987a214f418831e6981c8cdf873101144820db845694f2f2d1231188a891d",
+      "modeling_pldrllm.py": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0",
+      "requirements.txt": "b124a27c6226373858eb4f6428e5f56a19d417673b5dfce7d031b8b6f5a3c7e1",
+      "special_tokens_map.json": "9068aeaa96eace489c182ce17328d008d344fe36eee0f3dc2d14e61162394680",
+      "tokenizer.json": "3bf58672c12be6bf8c4e326da46ffde1414bbac376a6e5d3cdb6747436fd09aa",
+      "tokenizer.model": "51f4369714712232bfc746188f347e550790d1d75e5e35bfa4399b784d2a666f",
+      "tokenizer_config.json": "42934f44b9a72e64c56554608812c54523df036d480af39b9e7b0c96998dac58"
+    },
+    "repository": "fromthesky/PLDR-LLM-v51-SOC-110M-1",
+    "revision": "7a34e2ca9aa78038683677cfda17fe3a9fe6da8a"
+  },
+  "PLDR-LLM-v51-SOC-110M-2": {
+    "files": {
+      "README.md": "b910ec8964c827735badd5e60d8b9717612b5f1eebea5bc74d6511af15433fe6",
+      "config.json": "0896185036d5010f41cab56b6cff66479251e6517d12b7d72169138114102284",
+      "configuration_pldrllm.py": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e",
+      "generation_config.json": "e5131a14d35ccee01f957470696240455e400250d4c5f53d159b3adb1bd348e9",
+      "model.safetensors": "9fe3862d9f9dbd38219fa3b0b85d3f24e08908e144b29fbd7b7d53ce960905d8",
+      "modeling_pldrllm.py": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0",
+      "requirements.txt": "b124a27c6226373858eb4f6428e5f56a19d417673b5dfce7d031b8b6f5a3c7e1",
+      "special_tokens_map.json": "9068aeaa96eace489c182ce17328d008d344fe36eee0f3dc2d14e61162394680",
+      "tokenizer.json": "3bf58672c12be6bf8c4e326da46ffde1414bbac376a6e5d3cdb6747436fd09aa",
+      "tokenizer.model": "51f4369714712232bfc746188f347e550790d1d75e5e35bfa4399b784d2a666f",
+      "tokenizer_config.json": "42934f44b9a72e64c56554608812c54523df036d480af39b9e7b0c96998dac58"
+    },
+    "repository": "fromthesky/PLDR-LLM-v51-SOC-110M-2",
+    "revision": "5e6f3164f6aef7878743f92725364860931047a0"
+  }
+}

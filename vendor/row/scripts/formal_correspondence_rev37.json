@@ -1,0 +1,144 @@
+[
+  {
+    "label": "lem:shape-radius",
+    "paper": "Normalized-shape radius",
+    "module": "LayerNormGeometry",
+    "declarations": [
+      "normalizedShapeSq",
+      "normalized_shape_sq_lt"
+    ],
+    "scope": "The exact scalar radius formula and its strict finite-dimensional bound under positive width and LayerNorm regularization.",
+    "excluded": "Construction of the centered vector, its norm identity from LayerNorm coordinates, and the global vector gate-diameter consequence.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:gate-factorization",
+    "paper": "Gate-shape factorization and global diameter",
+    "module": "LayerNormGeometry",
+    "declarations": [
+      "gate_diameter_bound"
+    ],
+    "scope": "The scalar triangle-inequality kernel converting two common shape-radius bounds and a nonnegative gate norm into a global pairwise distance bound.",
+    "excluded": "The implemented LayerNorm factorization, operator-norm evaluation, strict positive-gate inequality, and zero-gate classification.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:gate-classification",
+    "paper": "Exact coordinate routes",
+    "module": "LayerNormGate",
+    "declarations": [
+      "gateOutput",
+      "gate_difference",
+      "coordinate_constant_iff",
+      "zero_gate_constant",
+      "coordinate_oscillation_bound"
+    ],
+    "scope": "The exact coordinatewise gate difference, constant-coordinate equivalence, zero-gate specialization, and scalar oscillation bound.",
+    "excluded": "The all-coordinate aggregation and evaluation of the upstream normalized-shape map on physical rows.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:gate-shape-work",
+    "paper": "Gate-shape work identity",
+    "module": "GateContrastEnergy",
+    "declarations": [
+      "contrastEnergy",
+      "gateWork",
+      "shapeWork",
+      "exact_gate_shape_increment",
+      "shape_metric_nonnegative",
+      "zero_gate_zero_energy"
+    ],
+    "scope": "The exact finite diagonal gate-work plus successor-evaluated shape-work identity, nonnegative weighted-square metrics, and the zero-gate specialization.",
+    "excluded": "Construction of graph shape coefficients from PLDR rows and checkpoint evaluation of the finite terms.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:shape-secant",
+    "paper": "Exact finite shape work",
+    "module": "ObservableEnergyDissipation",
+    "declarations": [
+      "shapeEnergy",
+      "shapeCross",
+      "shapeGain",
+      "shapeCharge",
+      "exact_shape_work",
+      "shape_charge_nonnegative"
+    ],
+    "scope": "The exact finite weighted secant identity and nonnegativity of its quadratic shape charge, with incidence and shape maps supplied inside the contrast coordinates.",
+    "excluded": "Construction of the PLDR row-shape operator, automatic differentiation, and numerical evaluation of the supplied contrasts.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:softmax-pairwise",
+    "paper": "Full-vocabulary pairwise covariance",
+    "module": "GeneralSoftmaxPairwise",
+    "declarations": [
+      "covarianceEnergy",
+      "orderedPairEnergy",
+      "general_vocabulary_pairwise_identity",
+      "ordered_pair_nonnegative"
+    ],
+    "scope": "The finite-vocabulary covariance identity in ordered-pair form and its nonnegativity for nonnegative probabilities of unit mass.",
+    "excluded": "The explicit unordered-pair reindexing, checkpoint logit differentiation, and construction of the signed second jet.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:observable-dissipation",
+    "paper": "Observable one-step dissipation",
+    "module": "ObservableEnergyDissipation",
+    "declarations": [
+      "diagonalEnergy",
+      "diagonalPairing",
+      "metricShapeWork",
+      "moving_metric_adamw_identity",
+      "explicit_one_step_margin_contraction"
+    ],
+    "scope": "The exact finite moving-diagonal-metric energy identity and the explicit signed-margin implication giving one-step contraction.",
+    "excluded": "Identification of the abstract direction with live clipped AdamW moments, checkpoint tensor loading, and numerical margin certification.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:log-route",
+    "paper": "Exact logarithmic route decomposition",
+    "module": "LogRouteCollapse",
+    "declarations": [
+      "coordinateEnergy",
+      "coordinate_ratio_product",
+      "logDecrement",
+      "log_route_telescopes",
+      "zero_factor_energy"
+    ],
+    "scope": "Coordinate product energy, factorized nonzero ratios, finite telescoping log decrements, and nodewise zero-factor annihilation.",
+    "excluded": "Positive-segment indexing, the infinite-tail limit equivalence, absorption after a zero event, and route reopening.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:observable-block",
+    "paper": "Ordered affine block capture",
+    "module": "ObservableEnergyDissipation",
+    "declarations": [
+      "orderedEnvelope",
+      "ordered_affine_recursion",
+      "zero_block_forcing_geometric",
+      "uniform_block_forcing_convolution",
+      "uniform_block_forcing_bound"
+    ],
+    "scope": "Chronological affine comparison, geometric decay with zero block forcing, and the exact finite convolution and closed bound under uniform block forcing.",
+    "excluded": "Arbitrary checkpoint block partitions, vanishing-forcing limit arguments, and empirical construction of block gains and forcing.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:stacked-generator",
+    "paper": "Stacked PLGA generator control",
+    "module": "ObservableEnergyDissipation",
+    "declarations": [
+      "supplied_pairwise_energy_to_diameter",
+      "stackedDeviationSq",
+      "stacked_generator_sq_bound"
+    ],
+    "scope": "Transfer of a supplied uniform pairwise squared bound to a supplied diameter-attaining pair, followed by the finite squared Frobenius stack identity and its cardinality bound from row-to-anchor control.",
+    "excluded": "The square-root reformulation, graph-energy pairwise estimate, positive-base certification, and application-margin evaluation.",
+    "faithfulness": "partial"
+  }
+]

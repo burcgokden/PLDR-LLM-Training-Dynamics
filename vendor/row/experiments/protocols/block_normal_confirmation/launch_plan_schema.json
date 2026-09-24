@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "bundle_root",
+    "dataset",
+    "tokenizer",
+    "registry",
+    "orders",
+    "resource_budget",
+    "nodes",
+    "analysis_command"
+  ],
+  "title": "Concrete Q0-Q5 execution graph",
+  "type": "object"
+}

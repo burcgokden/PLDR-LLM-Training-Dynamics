@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-observable-full-state-cocycle-v1"
+    },
+    "schema_version": {
+      "const": "pldr-observable-cocycle-analysis-v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id"
+  ],
+  "title": "Observable full-state cocycle analysis",
+  "type": "object"
+}

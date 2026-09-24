@@ -1,0 +1,74 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-orbitwise-row-map-collapse-v2"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "design_canonical": {
+          "type": "boolean"
+        },
+        "effective_gate_bounds": {
+          "type": "boolean"
+        },
+        "reopening_envelope": {
+          "type": "boolean"
+        },
+        "requested_device_exercised": {
+          "type": "boolean"
+        },
+        "schema_rejects_unknown_field": {
+          "type": "boolean"
+        },
+        "three_channel_identity": {
+          "type": "boolean"
+        },
+        "zero_energy_reopening": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "design_canonical",
+        "effective_gate_bounds",
+        "three_channel_identity",
+        "reopening_envelope",
+        "zero_energy_reopening",
+        "schema_rejects_unknown_field",
+        "requested_device_exercised"
+      ],
+      "title": "Derived checks",
+      "type": "object"
+    },
+    "device": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "peak_gpu_allocated_bytes": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "peak_gpu_reserved_bytes": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": "pldr-orbitwise-qualification-v2"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "device",
+    "peak_gpu_allocated_bytes",
+    "peak_gpu_reserved_bytes",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Orbitwise kernel and device qualification",
+  "type": "object"
+}

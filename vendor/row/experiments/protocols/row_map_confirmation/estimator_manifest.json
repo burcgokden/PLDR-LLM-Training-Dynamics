@@ -1,0 +1,1958 @@
+{
+  "checker": "experiments/confirm/check_certificate.py",
+  "estimators": {
+    "E0.cover_identity_error": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "cover_identity_error",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.cover_remainder": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "cover_remainder",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.cover_utility_margin": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "cover_utility_margin",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.direct_row_map_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "direct_row_map_upper",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.grid_jacobian_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "grid_jacobian_upper",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.heldout_cover_radius_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "heldout_cover_radius_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.heldout_jacobian_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "heldout_jacobian_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.mixed_derivative_enclosure_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "mixed_derivative_enclosure_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.numerical_error": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "numerical_error",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.third_derivative_enclosure_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "third_derivative_enclosure_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E0.validation_domain_membership_indicator": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_row_map.py",
+      "executable_sha256": "fa28c3ced98862952d1649df8148a7b7da7f87b64a1f4d59e216a9f28b3677e2",
+      "function": "measure_checkpoint",
+      "measurement_name": "validation_domain_membership_indicator",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E0"
+    },
+    "E1.adamw_ledger_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "adamw_ledger_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.applied_learning_rate": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "applied_learning_rate",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.bias_corrected_step": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "bias_corrected_step",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.coordinate_motion_enclosure_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "coordinate_motion_enclosure_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.decay_coefficient": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "decay_coefficient",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.defect_recomposition_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "defect_recomposition_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.intervention_boundary_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "intervention_boundary_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.lifted_recurrence_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "lifted_recurrence_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.optimizer_state_step": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "optimizer_state_step",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.schedule_increment": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "schedule_increment",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E1.taylor_remainder_enclosure_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_optimizer_transport.py",
+      "executable_sha256": "f1740d0915a7fde44ff8bf3b192d81e6e1adbd7e7270d181545406e52093f487",
+      "function": "measure_live_snapshot",
+      "measurement_name": "taylor_remainder_enclosure_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E1"
+    },
+    "E2.jury_lower_margin": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "jury_lower_margin",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E2.jury_margin_min": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "jury_margin_min",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E2.jury_upper_margin": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "jury_upper_margin",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E2.lower_normal_edge": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "lower_normal_edge",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E2.nonlinear_residual_enclosure_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "nonlinear_residual_enclosure_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E2.normal_linearization_residual_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "normal_linearization_residual_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E2.normal_operator_identity_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "normal_operator_identity_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E2.normal_operator_self_adjoint_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "normal_operator_self_adjoint_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E2.spectral_loading": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "spectral_loading",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E2.upper_normal_edge": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e2",
+      "measurement_name": "upper_normal_edge",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E2"
+    },
+    "E3.maximum_corner_h_gain": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "maximum_corner_h_gain",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E3.metric_eigenvalue_min": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "metric_eigenvalue_min",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E3.multiaffine_reconstruction_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "multiaffine_reconstruction_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E3.nominal_lyapunov_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "nominal_lyapunov_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E3.nominal_q": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "nominal_q",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E3.observed_h_gain": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "observed_h_gain",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E3.path_window_gain": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "path_window_gain",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E3.primitive_box_enclosure_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "primitive_box_enclosure_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E3.structured_family_q": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "structured_family_q",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E3.structured_family_slack": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e3",
+      "measurement_name": "structured_family_slack",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E3"
+    },
+    "E4.complete_defect_norm": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e4",
+      "measurement_name": "complete_defect_norm",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E4"
+    },
+    "E4.complete_disturbance_norm": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e4",
+      "measurement_name": "complete_disturbance_norm",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E4"
+    },
+    "E4.defect_recomposition_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e4",
+      "measurement_name": "defect_recomposition_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E4"
+    },
+    "E4.disturbance_envelope": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e4",
+      "measurement_name": "disturbance_envelope",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E4"
+    },
+    "E4.envelope_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e4",
+      "measurement_name": "envelope_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E4"
+    },
+    "E4.forcing_norm": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e4",
+      "measurement_name": "forcing_norm",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E4"
+    },
+    "E4.geometric_rate": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e4",
+      "measurement_name": "geometric_rate",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E4"
+    },
+    "E4.persistent_disturbance_floor": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e4",
+      "measurement_name": "persistent_disturbance_floor",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E4"
+    },
+    "E4.positive_comparison_witness_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e4",
+      "measurement_name": "positive_comparison_witness_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E4"
+    },
+    "E5.auxiliary_budget_slack_min": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "auxiliary_budget_slack_min",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E5.block_lifted_budget_slack": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "block_lifted_budget_slack",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E5.family_box_enclosure_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "family_box_enclosure_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E5.heldout_image_margin": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "heldout_image_margin",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E5.initial_membership_margin": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "initial_membership_margin",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E5.lifted_budget_slack": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "lifted_budget_slack",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E5.one_step_escape_count": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "one_step_escape_count",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E5.path_window_gain": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "path_window_gain",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E5.path_window_length": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "path_window_length",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E5.prefix_budget_slack_min": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e5",
+      "measurement_name": "prefix_budget_slack_min",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E5"
+    },
+    "E6.block_product_convolution_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "block_product_convolution_upper",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.criterion": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "criterion",
+      "numeric_projection": "lower",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.direct_row_map_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "direct_row_map_upper",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.entry_error": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "entry_error",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.observed_entry_step": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "observed_entry_step",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.path_window_gain": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "path_window_gain",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.path_window_length": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "path_window_length",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.predicted_entry_step": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "predicted_entry_step",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.residual_floor": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "residual_floor",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.schedule_predicted_entry_step": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "schedule_predicted_entry_step",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.schedule_product_convolution_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "schedule_product_convolution_upper",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E6.sustained_entry_indicator": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_direct_certificate.py",
+      "executable_sha256": "9dc4cc6853795caba79a36aa181898e7a356c4b7f9110fbd2c1768be07abdacb",
+      "function": "measure_live_e6",
+      "measurement_name": "sustained_entry_indicator",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E6"
+    },
+    "E7.avalanche_event_rate": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "avalanche_event_rate",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.avalanche_mean_size": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "avalanche_mean_size",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.avalanche_mean_support": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "avalanche_mean_support",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.complete_disturbance_envelope": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "complete_disturbance_envelope",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.direct_row_map_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "direct_row_map_upper",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.heldout_loss": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "heldout_loss",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.intervention_dose": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "intervention_dose",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.jury_lower_margin": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "jury_lower_margin",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.jury_upper_margin": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "jury_upper_margin",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.predicted_entry_step": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "predicted_entry_step",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.robust_q": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "robust_q",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.schedule_product_convolution_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "schedule_product_convolution_upper",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E7.spectral_loading": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_intervention.py",
+      "executable_sha256": "229eb946ee4288842c823d6ffa51dfbbcb476ce87d3271f12571847b4598e655",
+      "function": "measure_live_e7",
+      "measurement_name": "spectral_loading",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E7"
+    },
+    "E8.anneal_floor": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "anneal_floor",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.avalanche_event_rate": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "avalanche_event_rate",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.avalanche_mean_duration": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "avalanche_mean_duration",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.avalanche_mean_size": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "avalanche_mean_size",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.avalanche_mean_support": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "avalanche_mean_support",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.avalanche_tail_comparison": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "avalanche_tail_comparison",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.baseline_indicator": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "baseline_indicator",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.criterion": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "criterion",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.direct_row_map_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "direct_row_map_upper",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.downstream_lipschitz": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "downstream_lipschitz",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.finite_size_scaling_error": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "finite_size_scaling_error",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.heldout_loss": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "heldout_loss",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.maximum_learning_rate": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "maximum_learning_rate",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.model_depth": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "model_depth",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.model_score": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "model_score",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.model_width": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "model_width",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.observed_entry_step": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "observed_entry_step",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.order_parameter_bridge_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "order_parameter_bridge_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.order_parameter_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "order_parameter_upper",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.predicted_entry_step": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "predicted_entry_step",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_block_size": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_block_size",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_deductive_closure_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_deductive_closure_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_deductive_closure_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_deductive_closure_upper",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_density_identity_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_density_identity_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_full_layer_closure_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_full_layer_closure_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_full_layer_closure_upper": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_full_layer_closure_upper",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_layernorm_scale_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_layernorm_scale_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_repeated_block_semigroup_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_repeated_block_semigroup_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_softmax_aggregation_residual": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_softmax_aggregation_residual",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.rg_within_covariance_trace": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "rg_within_covariance_trace",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.row_input_spread": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "row_input_spread",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.source_order_parameter": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "source_order_parameter",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.source_rmse": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "source_rmse",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.tensor_mean_abs": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "tensor_mean_abs",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.theorem_bound_ratio": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "theorem_bound_ratio",
+      "numeric_projection": "upper",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    },
+    "E8.warmup_steps": {
+      "checker": "experiments/confirm/check_certificate.py",
+      "executable": "experiments/confirm/measure_scale_transfer.py",
+      "executable_sha256": "ef6edb58e81938aeb737e16a5b2d93ff16a64ce3fdf05a7e59283db05264f648",
+      "function": "measure_live_e8",
+      "measurement_name": "warmup_steps",
+      "numeric_projection": "point",
+      "output_type": "finite_scalar_with_registered_projection",
+      "permitted_parent_types": [
+        "bound_root_artifact",
+        "validated_certificate_node",
+        "immutable_empirical_array"
+      ],
+      "primary": true,
+      "protocol_id": "E8"
+    }
+  },
+  "schema_version": "pldr-estimator-manifest-v2"
+}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","properties":{"campaign_id":{"const":"pldr-finite-increment-observable-balance-v1"},"schema_version":{"const":"pldr-observable-balance-analysis-v1"}},"required":["schema_version","campaign_id","construction","heldout","stratum_control","resource"],"title":"Observable-balance final analysis","type":"object"}

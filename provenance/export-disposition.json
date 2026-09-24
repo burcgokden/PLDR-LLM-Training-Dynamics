@@ -1,0 +1,2396 @@
+{
+  "adapted_modules": [
+    {
+      "excluded_definitions": [
+        "If",
+        "main"
+      ],
+      "path": "vendor/model/scripts/analyze_factorial_replication.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main"
+      ],
+      "path": "vendor/model/scripts/analyze_potential_block_area.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "render"
+      ],
+      "path": "vendor/model/scripts/analyze_potential_factorial.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "run"
+      ],
+      "path": "vendor/model/scripts/analyze_row_derivative_metrics.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "ImportFrom",
+        "check"
+      ],
+      "path": "vendor/model/scripts/check_accounting_outcome_cli.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "ImportFrom"
+      ],
+      "path": "vendor/model/scripts/check_study_registry.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "render"
+      ],
+      "path": "vendor/model/scripts/resource_coupling_study.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "ImportFrom",
+        "verify"
+      ],
+      "path": "vendor/model/scripts/verify_finetuning_evidence.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_complete_positive_chain",
+        "test_renderer_rejects_stale_certificate"
+      ],
+      "path": "vendor/model/tests/test_cache_risk_admission.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_corrupt_displayed_mean_fails",
+        "test_valid_displayed_means_are_reconstructed"
+      ],
+      "path": "vendor/model/tests/test_context_risk_renderer.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_invalid_render_input_has_no_output_side_effect",
+        "test_publication_requires_explicit_replacement_and_preserves_analysis"
+      ],
+      "path": "vendor/model/tests/test_finite_emission_outputs.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "Import",
+        "test_claim_boundaries_reject_before_comparison"
+      ],
+      "path": "vendor/model/tests/test_finite_verification.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "_tex",
+        "main"
+      ],
+      "path": "vendor/rg/scripts/analyze_retained_summary.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "ImportFrom",
+        "check_axioms",
+        "main",
+        "theorem_names"
+      ],
+      "path": "vendor/rg/scripts/check_formal_soundness.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_duplicate_numbered_result_is_rejected",
+        "test_iff_to_implication_mutation_changes_elaborated_type_digest",
+        "test_lean_type_digest_drift_is_rejected",
+        "test_manuscript_statement_digest_drift_is_rejected",
+        "test_missing_numbered_result_is_rejected",
+        "test_misspelled_declaration_is_rejected",
+        "test_real_manuscript_and_complete_lean_census_validate",
+        "test_summary_coverage_must_follow_clause_statuses",
+        "test_unclassified_lean_declaration_is_rejected"
+      ],
+      "path": "vendor/rg/tests/test_confirmation.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_aggregate_rows_use_per_trajectory_map_counts",
+        "dependent module structure"
+      ],
+      "path": "vendor/rg/tests/test_energy_closure_renderer_v3.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_exact_clopper_pearson_values",
+        "test_qualification_rows_recover_integer_counts",
+        "test_nonintegral_proportion_is_rejected",
+        "render",
+        "test_rejecting_nonrejecting_and_nonevaluable_records_render",
+        "test_negative_pair_is_reported_and_malformed_records_fail",
+        "dependent module structure"
+      ],
+      "path": "vendor/rg/tests/test_evidence_intervals.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_render_separates_exact_positive_and_device_control",
+        "dependent module structure"
+      ],
+      "path": "vendor/rg/tests/test_observer_precision_renderer.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_excursion_free_record_is_total_and_renderable",
+        "test_renderer_uses_content_record_and_prints_all_layers"
+      ],
+      "path": "vendor/rg/tests/test_observer_regime.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_complete_cell_renders_all_registered_diagnostic_tables",
+        "test_face_interruption_renders_restart_product",
+        "test_v5_analysis_record_is_renderable",
+        "dependent module structure"
+      ],
+      "path": "vendor/rg/tests/test_renderer_v3.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_v2_record_renders_local_and_precision_tables",
+        "test_v3_zero_free_record_renders_not_applicable_extrema",
+        "test_v4_exact_zero_has_explicit_semantics"
+      ],
+      "path": "vendor/rg/tests/test_stage_resolved_renderer.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_renderer_reports_gated_stop"
+      ],
+      "path": "vendor/rg/tests/test_staged_predictive_protocol.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "_write_tex",
+        "final_analysis",
+        "main"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_direct_work_confirmation.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "analyze",
+        "main",
+        "tex_payloads"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_direct_work_mechanism.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main",
+        "outputs",
+        "tex_payloads"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_direct_work_precision.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "final_analysis",
+        "main",
+        "tex_payloads"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_direct_work_replication.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main",
+        "render_tex"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_layer_cocycle_confirmation.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "_tex",
+        "analyze",
+        "main"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_mixed_collapse_confirmation.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main",
+        "render_macros",
+        "render_tex",
+        "write_final"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_observable_balance_confirmation.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main",
+        "render_macros",
+        "render_tex",
+        "write_final"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_observable_cocycle_confirmation.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "analyze",
+        "main",
+        "tex_payloads"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_observer_block.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "final",
+        "main",
+        "output_payloads"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_radial_context_holdout.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "_macro_payload",
+        "_table_payload",
+        "generated_outputs",
+        "main"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_radial_tangential.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "_macro_payload",
+        "_table_payload",
+        "generated_files",
+        "main"
+      ],
+      "path": "vendor/row/experiments/analysis/analyze_retained_energy_audit.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "table_summary"
+      ],
+      "path": "vendor/row/experiments/analysis/make_figures.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main",
+        "payloads",
+        "render_macros",
+        "render_tables"
+      ],
+      "path": "vendor/row/experiments/analysis/summarize_layer_cocycle_manuscript.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main",
+        "render"
+      ],
+      "path": "vendor/row/experiments/analysis/summarize_mixed_manuscript_results.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "generated_files",
+        "main"
+      ],
+      "path": "vendor/row/experiments/analysis/summarize_observable_balance_manuscript.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "_detailed_tex",
+        "generated_files",
+        "main"
+      ],
+      "path": "vendor/row/experiments/analysis/summarize_observable_cocycle_manuscript.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main",
+        "render_tex"
+      ],
+      "path": "vendor/row/experiments/analysis/summarize_orbitwise_results.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "ImportFrom",
+        "_manuscript_export_snapshot",
+        "_parser",
+        "_release_plan_paths_match",
+        "_repository_release_snapshot",
+        "main",
+        "produce_release"
+      ],
+      "path": "vendor/row/experiments/confirm/observable_margin_controls.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "ImportFrom",
+        "main"
+      ],
+      "path": "vendor/row/experiments/confirm/run_observable_margin_confirmation.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "test_complete_state_collapse_proofs_are_standalone"
+      ],
+      "path": "vendor/row/experiments/tests/test_corrected_interfaces.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "test_manuscript_macros_bind_analysis_evidence_source_and_resources"
+      ],
+      "path": "vendor/row/experiments/tests/test_layer_cocycle_confirmation.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "ImportFrom",
+        "test_coverage_renderer_maps_lean_logic_symbols"
+      ],
+      "path": "vendor/row/experiments/tests/test_mixed_collapse_rev47.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "ImportFrom",
+        "main",
+        "validate_layout"
+      ],
+      "path": "vendor/row/scripts/check_lean_archive.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "generated_files",
+        "main",
+        "tex_table"
+      ],
+      "path": "vendor/row/scripts/gen_confirmation_protocols.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "expected",
+        "generate",
+        "main"
+      ],
+      "path": "vendor/row/scripts/gen_program_energy_protocols.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main"
+      ],
+      "path": "vendor/row/scripts/gen_protocols.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "expected",
+        "generate",
+        "main"
+      ],
+      "path": "vendor/row/scripts/gen_rg_universality_protocols.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "Assign",
+        "If",
+        "ImportFrom",
+        "_exec_with_sanitized_environment",
+        "desired_environment",
+        "main",
+        "run"
+      ],
+      "path": "vendor/row/scripts/run_current_release_tests.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "main",
+        "seal"
+      ],
+      "path": "vendor/row/scripts/seal_observable_balance_provenance.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "excluded_definitions": [
+        "If",
+        "ImportFrom",
+        "expected_files",
+        "main",
+        "stage"
+      ],
+      "path": "vendor/row/scripts/stage_observable_margin_confirmation.py",
+      "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
+    },
+    {
+      "path": "vendor/model/scripts/matched_clock_coverage.py",
+      "reason": "Bind normalized bundled design separately from immutable acquisition protocol; raw admission retains its original SHA-256."
+    },
+    {
+      "path": "vendor/model/tests/fixtures/optimizer-transport-protocol.json",
+      "reason": "Numerical fixture moved out of publication directory."
+    },
+    {
+      "path": "vendor/model/tests/fixtures/optimizer-transport-analysis.json",
+      "reason": "Numerical fixture moved out of publication directory."
+    },
+    {
+      "path": "vendor/model/tests/test_finite_verification.py",
+      "reason": "Use shipped numerical fixture without manuscript tree."
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/state-refresh-study.sh",
+      "reason": "Retain scientific phases with explicit data settings; omit typesetting phases."
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/directional-response-study.sh",
+      "reason": "Retain scientific phases with explicit data settings; omit typesetting phases."
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/verify_training_completed.sh",
+      "reason": "Retain scientific phases with explicit data settings; omit typesetting phases."
+    },
+    {
+      "path": "vendor/model/scripts/check_training_wrapper.py",
+      "reason": "Parser fixture supplies explicit public model/data roots."
+    },
+    {
+      "path": "vendor/model/tests/test_verifier_cli_boundaries.py",
+      "reason": "Omit only the removed publication-verifier parameter; retain all three scientific CLI corruption routes."
+    },
+    {
+      "path": "vendor/rg/src/row_rgmap/staged_validation.py",
+      "reason": "Scientific source registry excludes removed table renderer."
+    },
+    {
+      "path": "vendor/rg/formal-correspondence.json",
+      "reason": "Keep selected formal kernel metadata; monograph-wide map supplied separately."
+    },
+    {
+      "path": "vendor/row/scripts/stage_observable_margin_confirmation.py",
+      "reason": "Excluded archival staging requires exact private publication export; numerical observable-margin kernels remain bundled."
+    },
+    {
+      "path": "scripts/check_process_boundaries.py",
+      "reason": "Check four publication-independent row staging interfaces."
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_confirmation_program.py",
+      "reason": "Exclude publication-only fixtures: test_protocol_bundle_has_exact_grids_and_clean_language"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_single_clock.py",
+      "reason": "Exclude publication-only fixtures: test_displayed_certified_constants_are_outward_rounded"
+    },
+    {
+      "path": "vendor/rg/tests/test_confirmation.py",
+      "reason": "Exclude publication-only fixtures: FormalCorrespondenceTests"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_retained_energy_audit_rev51.py",
+      "reason": "Check the retained study identity directly without publication-release metadata."
+    },
+    {
+      "path": "vendor/row/experiments/analysis/make_table.py",
+      "reason": "Exclude imports and checks specific to removed presentation definitions: If, table_summary"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_layer_cocycle_confirmation.py",
+      "reason": "Exclude imports and checks specific to removed presentation definitions: render_macros, render_tables, test_manuscript_table_summary_retains_all_measurement_families"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_observable_cocycle_confirmation.py",
+      "reason": "Exclude imports and checks specific to removed presentation definitions: render_macros, render_tex, test_rendered_evidence_states_scope_and_is_deterministic"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_rg_universality_program.py",
+      "reason": "Exclude imports and checks specific to removed presentation definitions: expected, test_generated_protocol_set_is_complete"
+    },
+    {
+      "path": "vendor/row/scripts/check_mixed_collapse_results.py",
+      "reason": "Exclude imports and checks specific to removed presentation definitions: If, _verify_analysis, main, render_mechanism_tables"
+    }
+  ],
+  "boundary": "Excluded publication code and fixture checks are not scientific passes. Pure numerical definitions from mixed modules are retained; deleted presentation-dependent CLI functions are not public entry points.",
+  "excluded_files": [
+    {
+      "path": "vendor/model/README.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/ASSET_ACCESS.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/CACHE_RISK_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/CACHE_STATE_TRANSFER.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/CATEGORICAL_SCALE_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/COMPACT_RELEASE.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/CONTEXT_RISK_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/CRITICAL_ONEPASS_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/CURRENT_EXECUTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/EQUAL_TIME_FLUX_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/FINITE_METRIC_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/FINITE_ROW_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/MATCHED_CLOCK_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/MATCHED_ONEPASS_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/NATIVE_REPLAY_REQUIREMENTS.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/OPERATOR_CACHE_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/POTENTIAL_ACTIVITY_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/POTENTIAL_FACTORIAL_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/RELEASE_BODY.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/RELEASE_INDEX.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/REPLICA_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/ROW_PATH_REPRODUCTION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/STATE_CONFIRMATION.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/docs/STUDY_REGISTRY.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/protocol.json",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/scripts/analyze_potential_factorial.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/scripts/run_potential_factorial.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/scripts/train_potential_avalanches.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/scripts/verify_potential_factorial.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/__init__.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/adam_tangent.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/checkpointing.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/common_geometry.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/controlled.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/correlations.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/criticality.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/deductive_activity.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/evidence_progress.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/finetuning.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/finite_optimizer.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/inference_interventions.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/lattice.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/layer_interventions.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/moment_rg.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/native.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/observation.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/onepass_regimes.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/physical_native.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/potential_avalanches.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/potential_symmetry.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/precision.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/provenance.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/qualification.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/refresh.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/released_qualification.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/resource_coupling.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/rg.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/row_projection.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/scaling.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/scheduled_regimes.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/schedules.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/source_basis.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/training.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/update_records.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/variance_family.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/visible_noise.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/protocol.json",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/factorial_admission.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/run_potential_factorial.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/train_potential_avalanches.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/__init__.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/adam_tangent.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/checkpointing.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/common_geometry.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/controlled.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/correlations.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/criticality.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/deductive_activity.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/evidence_progress.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/finetuning.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/finite_optimizer.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/inference_interventions.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/lattice.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/layer_interventions.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/moment_rg.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/native.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/observation.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/onepass_regimes.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/physical_native.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/potential_avalanches.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/potential_symmetry.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/precision.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/provenance.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/qualification.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/refresh.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/released_qualification.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/resource_coupling.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/rg.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/row_projection.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/scaling.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/scheduled_regimes.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/schedules.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/source_basis.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/training.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/update_records.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/variance_family.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/visible_noise.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/manuscript/generated/optimizer-transport-analysis.json",
+      "reason": "publication, cache or execution output"
+    },
+    {
+      "path": "vendor/model/manuscript/generated/optimizer-transport-protocol.json",
+      "reason": "publication, cache or execution output"
+    },
+    {
+      "path": "vendor/model/publication-release.json",
+      "reason": "internal publication identity, replaced by monograph manifest"
+    },
+    {
+      "path": "vendor/model/scripts/build_cache_risk_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_categorical_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_compact_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_critical_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_finetuning_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_memory_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_operator_cache_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_optimizer_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_paper.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_physical_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_potential_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_readout_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_released_adaptation_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_replica_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_table_coverage.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/build_tex_converged.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/categorical-visibility.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/check_context_renderer.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/check_statement_contracts.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/exact-replica-profiles.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/formal/statement-registry.json",
+      "reason": "internal publication identity, replaced by monograph manifest"
+    },
+    {
+      "path": "vendor/model/scripts/qualify-singlepass-routes.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/recompute-singlepass-uncertainty.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/render_cache_risk.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_cache_state_transfer.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_categorical_confirmation.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_categorical_ledger.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_categorical_scales.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_claim_index.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_collective_row_flux.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_conditional_memory.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_context_risk.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_critical_collectives.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_critical_formal.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_critical_joint.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_critical_ledger.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_critical_onepass.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_critical_refinement.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_critical_sign_limits.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_criticality.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_current_qualification.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_decoder_prefix_interventions.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_directional.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_dynamics.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_equal_time_flux.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_evidence.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_execution_ledger.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_execution_routes.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_finetuning.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_finetuning_ledger.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_finetuning_reference.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_finite_emission_transport.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_finite_metric_budget.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_fixed_cache_panel.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_fresh_readout.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_inference_mechanism.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_integrated_results.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_law_closure.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_matched_clock.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_matched_onepass.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_metric_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_moment_transport.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_numerical_response.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_observation.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_onepass.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_onepass_data_comparison.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_onepass_input_domain.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_onepass_native_steps.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_onepass_schedule_comparison.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_operator_cache.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_optimizer_transport.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_outer_transfer.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_physical_results.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_potential_early.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_potential_followups.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_potential_inventory.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_projection_transport.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_prompt_conditioning.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_readout_budget.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_reference_benchmarks.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_refresh.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_released_adaptation.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_replica_evidence.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_replica_ledger.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_response_windows.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_results.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_row_path_confirmation.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_row_quadrature.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_scaling.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_scheduled.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_selected_formal.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_singlepass_adaptation.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_source_reuse.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_state_confirmation.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_study_lineage.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_thermal_transport.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/render_training.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/run_onepass_release_evidence.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/run_projection_checks.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/study_registry.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify-categorical-visibility.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/verify_cache_risk_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_categorical_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_compact_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_critical_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_directional_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_memory_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_moment_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_operator_cache_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_outer_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_physical_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_refresh_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/verify_replica_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze-categorical-scales.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze-critical-onepass.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze-critical-shared-paths.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze-matched-onepass.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze-potential-factorial.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze_completed.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze_controlled.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze_criticality_completed.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze_dynamics_completed.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze_metric_collectives.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/analyze_training_completed.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/cache-risk-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/categorical-context-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/categorical-transfer-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/conditional-memory-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/context-risk-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/critical-onepass-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/critical-shared-path-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/directional-response-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/equal-time-flux.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/finite-metric-budget.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/finite-response-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/finite-row-confirmation.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/law-closure-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/matched-clock-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/matched-onepass-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/moment-transport-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/observation-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/operator-cache-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/optimizer-transport-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/outer-transfer-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/potential-factorial-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/refine-finite-metric.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/refine-matched-metric.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/row-path-confirmation.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/run_confirmation.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/run_controlled.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/run_criticality_scan.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/run_dynamics_family.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/run_factorial_disjoint.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/run_row_diagnostics.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/run_shared_gradient_reduction.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/run_training_study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/scaling-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/scheduled-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/state-refresh-study.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/temporal-energy.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/verify-critical-onepass.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/verify_completed.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/verify_controlled.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/verify_criticality_completed.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/verify_dynamics_completed.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/verify_metric_collectives.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/scripts/workspace-wrappers/verify_training_completed.sh",
+      "reason": "archival shell workflow; use explicit scientific Python entry points"
+    },
+    {
+      "path": "vendor/model/tests/test_categorical_publication.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/tests/test_critical_publication.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/tests/test_matched_clock_analysis_bundle.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/tests/test_study_registry.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/tests/test_tex_convergence.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/model/verification/clean/verification.json",
+      "reason": "publication, cache or execution output"
+    },
+    {
+      "path": "vendor/model/verification/formal/verification.json",
+      "reason": "publication, cache or execution output"
+    },
+    {
+      "path": "vendor/model/verification/numerical/verification.json",
+      "reason": "publication, cache or execution output"
+    },
+    {
+      "path": "vendor/model/verification/statement-mutations/verification.json",
+      "reason": "publication, cache or execution output"
+    },
+    {
+      "path": "vendor/native/PLDR-LLM-v51-SOC-110M-1/README.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/native/PLDR-LLM-v51-SOC-110M-2/README.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/rg/.gitignore",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/rg/CITATION.cff",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/rg/Makefile",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/rg/README.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/rg/formal-correspondence.json",
+      "reason": "internal publication identity, replaced by monograph manifest"
+    },
+    {
+      "path": "vendor/rg/scripts/check_manuscript_release.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/create_public_evidence_bundle.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_confirmation_tex.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_energy_closure_tex.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_energy_closure_tex_v2.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_energy_closure_tex_v3.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_evidence_lineage_tex.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_formal_correspondence.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_observer_precision_tex.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_observer_regime_tex.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_stage_resolved_observer_tex.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_staged_predictive_closure_tex.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/scripts/render_synthetic_tex.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/tests/test_public_evidence_bundle.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/tests/test_release_metadata.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/Makefile",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/README.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/SOURCE_IDENTITY.json",
+      "reason": "internal publication identity, replaced by monograph manifest"
+    },
+    {
+      "path": "vendor/row/docs/README.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/complete_state_cocycle_rev55.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/direct_energy_rev55.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/discussion_rev55.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/executed_evidence_rev55.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/direct_work_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/direct_work_mechanism_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/direct_work_mechanism_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/direct_work_precision_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/direct_work_precision_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/direct_work_replication_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/direct_work_replication_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/direct_work_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/formal_correspondence.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/formal_declaration_count.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/layer_cocycle_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/layer_cocycle_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/observable_balance_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/observable_balance_provenance.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/observable_balance_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/observable_cocycle_detailed_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/observable_cocycle_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/observable_cocycle_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/observer_block_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/observer_block_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/radial_context_holdout_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/radial_context_holdout_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/radial_tangential_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/radial_tangential_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/release_id.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/retained_energy_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/figures/retained_energy_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/interfaces_rev55.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/pldr_training_dynamics.bbl",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/pldr_training_dynamics.bib",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/pldr_training_dynamics.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/plga_defect_rev55.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/related_work_rev55.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/retained_energy_evidence_rev55.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/rev55_abstract.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/rev55_introduction.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/docs/row_geometry_rev55.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/evidence/README.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/analysis/mechanism-summary.json",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/analysis/mechanism_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/analysis/mechanism_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/analysis/supersession-delta.json",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/provenance-seal.json",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/row/evidence/observer-stratum-block-analysis/analysis/independent-check.json",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/row/evidence/observer-stratum-block-analysis/analysis/observer-block-summary.json",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/row/evidence/observer-stratum-block-analysis/analysis/observer_block_macros.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/evidence/observer-stratum-block-analysis/analysis/observer_block_results.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/evidence/observer-stratum-block-analysis/provenance-seal.json",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/row/experiments/analysis/Makefile",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/confirm/LAUNCH_NOTES.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/confirm/observable_margin_environment.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e0_construct_validity.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e0_prime_observable_closure.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e1_dosed_loading.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e2_event_law_global_clock.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e3_kernel_offspring.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e4_fiber_flux.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e5_two_regime.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e6_capture_map.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e7_exponents_routes.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/e8_baseline_comparison.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/e0_joint_regularity_cover.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/e1_exact_optimizer_transport.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/e2_normal_operator_spectrum.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/e3_structured_path_lyapunov.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/e4_complete_defect_decay.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/e5_direct_tail_self_map.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/e6_finite_entry_horizon.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/e7_certificate_interventions.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/e8_heldout_scale_discrimination.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/protocols/row_map_confirmation/q0_instrument_qualification.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/negative_bare_spacing.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/negative_dash.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/negative_differential.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/negative_history.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/positive.tex",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_bundle_hygiene_rev53.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_claim_sweep.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_current_release_gate.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_frozen_reports.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_manuscript_integrity_rev51.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_observable_margin_environment.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_observable_margin_executor.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_observable_margin_pipeline.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_readme_count.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_release_identity.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_relocated_staging.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_symbol_sweep.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/tests/test_totality_maintenance.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/experiments/wave4_prereg.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/wave5_prereg.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/wave6_prereg.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/wave7_prereg.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/experiments/wave8_prereg.md",
+      "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/row/release.json",
+      "reason": "internal publication identity, replaced by monograph manifest"
+    },
+    {
+      "path": "vendor/row/scripts/build_confirmation_report.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/check_anchors.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/check_claims.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/check_manuscript_contract.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/check_manuscript_integrity.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/check_symbols.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/direct_work_mechanism_bundle.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/direct_work_precision_bundle.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/execute_observable_margin_plan.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/export_manuscript.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/gen_coverage.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/gen_formal_correspondence.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/gen_release_metadata.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/gen_stamp.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/import_direct_work_manuscript_artifacts.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/import_observer_block_manuscript_artifacts.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/import_radial_manuscript_artifacts.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/make_artifact.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/make_manifest.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/observer_block_bundle.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/prune_bibliography.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/radial_tangential_bundle.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/release_config.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/release_identity.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/repair_rev40_inline_math.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/repair_rev41_inline_math.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/repair_rev42_inline_math.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/repair_rev44_inline_math.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/repair_rev45_inline_math.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/repair_rev46_inline_math.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/row/scripts/verify_direct_work_bundle.py",
+      "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/tests/test_energy_closure_renderer_v3.py",
+      "reason": "dependent publication interface"
+    },
+    {
+      "path": "vendor/rg/tests/test_evidence_intervals.py",
+      "reason": "dependent publication interface"
+    },
+    {
+      "path": "vendor/rg/tests/test_observer_precision_renderer.py",
+      "reason": "dependent publication interface"
+    },
+    {
+      "path": "vendor/rg/tests/test_renderer_v3.py",
+      "reason": "dependent publication interface"
+    }
+  ],
+  "schema": "pldr-scientific-export-disposition-v1"
+}

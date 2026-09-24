@@ -1,0 +1,538 @@
+{
+  "anchors": {
+    "candidate_block_lengths": [
+      16,
+      64,
+      256
+    ],
+    "checkpoint_pattern": "ckpt_{step}.pt",
+    "complete_optimizer_steps": [
+      2000,
+      4000,
+      8000,
+      16000,
+      24000
+    ],
+    "construction_window_starts": [
+      2000,
+      4000,
+      8000,
+      16000
+    ],
+    "layers": [
+      0,
+      1,
+      2
+    ],
+    "required_checkpoint_state": [
+      "model",
+      "optimizer",
+      "scheduler_clock",
+      "torch_rng",
+      "numpy_rng",
+      "python_rng",
+      "data_cursor",
+      "registry",
+      "code_manifest",
+      "complete_state_digest"
+    ],
+    "selection_rule": "Among algebraically qualified construction cells, maximize positive relative block margin; break ties by shorter block, earlier anchor, then lower layer. Lock exactly one cell before held-out evidence opens."
+  },
+  "architecture": {
+    "adam_betas": [
+      0.9,
+      0.95
+    ],
+    "adam_epsilon": 1e-05,
+    "batch_size": 32,
+    "constant_rate_after_warmup": true,
+    "context_length": 256,
+    "decoder_layers": 3,
+    "gate_dimension": 64,
+    "gradient_value_clip": 1.0,
+    "heads": 4,
+    "learning_rate": 0.00075,
+    "model_width": 256,
+    "optimizer": "adamw",
+    "parameter_count": 20622914,
+    "row_glu_blocks_per_unit": 2,
+    "row_hidden_width": 170,
+    "row_residual_units": 8,
+    "row_width": 64,
+    "training_instrumentation": {
+      "probe_every": 1000000,
+      "purpose": "Retain native training, complete checkpoints, validation logs, and resource telemetry while disabling unrelated legacy curvature probes during fresh trajectory construction.",
+      "sharp_block_every": 0,
+      "sharp_every": 1000000,
+      "sharp_full": 0,
+      "sharp_pre_every": 1000000,
+      "validation_batches": 1
+    },
+    "warmup_updates": 250,
+    "weight_decay": 0.1
+  },
+  "arithmetic": {
+    "absolute_identity_tolerance": 1e-12,
+    "clipping_boundary_tolerance": 1e-10,
+    "deciding_shadow_dtype": "float64",
+    "float64_control": "A separately labeled float64 continuation is a numerical control only and never replaces or enlarges the native-system verdict.",
+    "native_moment_transition_relative_tolerance": 5e-07,
+    "native_update": "Training and continuation execute the registered native float32 AdamW update, including value clipping and decoupled weight decay.",
+    "relative_identity_tolerance": 1e-08,
+    "roundoff_charge": "The residual between the float64 ideal update and the promoted executed native successor is measured as a nonnegative floating-point charge in every one-step and block bound.",
+    "shadow_rule": "Deciding gate, shape, bridge-sector, graph, and affine ledgers are recomputed in float64 from the executed native source and successor."
+  },
+  "bridge_sector_order": [
+    "fisher",
+    "signed_jet",
+    "force",
+    "nonlinear",
+    "clip",
+    "preconditioner",
+    "lag"
+  ],
+  "campaign_id": "observable-margin-confirmation-rev37",
+  "final_release_gate": [
+    "make",
+    "release-check-current"
+  ],
+  "final_release_provenance": {
+    "canonical_command": [
+      "make",
+      "release-check-current"
+    ],
+    "independent_verification": {
+      "phases": [
+        "before",
+        "after"
+      ],
+      "rule": "Independently recompute pass booleans, counts, manifest digests, staged-seal equality, and all-target aggregate digests before and after the canonical release command, then require exact stability.",
+      "top_level_report_fields": [
+        "release_plan_paths_pass",
+        "repository_release_command_exact",
+        "repository_release_verification",
+        "manuscript_export_verification"
+      ]
+    },
+    "manuscript_export": {
+      "nonself_manifest_entry_count": 17,
+      "required_container_fields": [
+        "root_path",
+        "live_manifest_path",
+        "staged_manifest_path",
+        "before",
+        "after",
+        "stable_across_release_command"
+      ],
+      "required_snapshot_fields": [
+        "pass",
+        "file_count",
+        "manifest_entry_count",
+        "manifest_sha256",
+        "staged_manifest_sha256",
+        "staged_manifest_equal",
+        "target_aggregate_sha256",
+        "error"
+      ],
+      "revision": "rev37",
+      "rule": "Require exactly 18 regular files and the 17-entry nonself MANIFEST, reject missing, extra, symbolic-link, and nonregular nodes, and require the staged export seal to equal the live manifest byte for byte.",
+      "strict_file_count": 18
+    },
+    "realized_environment": {
+      "required_attestation_fields": [
+        "python.import_root",
+        "installed_distributions.count",
+        "installed_distributions.sha256"
+      ],
+      "required_report_fields": [
+        "environment_attestation_path",
+        "environment_attestation_sha256",
+        "environment_import_root",
+        "environment_package_inventory_count",
+        "environment_package_inventory_sha256",
+        "environment_replay_pass",
+        "environment_replay_error"
+      ],
+      "rule": "The digest-bound realized attestation supplies the one resolved Python import root and the normalized installed-package inventory count and digest used by every child process."
+    },
+    "repository": {
+      "live_manifest": "MANIFEST.sha256",
+      "required_container_fields": [
+        "live_manifest_path",
+        "staged_manifest_path",
+        "before",
+        "after",
+        "stable_across_release_command"
+      ],
+      "required_snapshot_fields": [
+        "pass",
+        "target_count",
+        "manifest_sha256",
+        "staged_manifest_sha256",
+        "staged_manifest_equal",
+        "target_aggregate_sha256",
+        "error"
+      ],
+      "rule": "Freshly enumerate the exact current regular-file release closure, verify every MANIFEST target without expanding historical CHECKSUMS targets, and require the staged manifest seal to equal the live manifest byte for byte.",
+      "staged_manifest": "preflight/repository-MANIFEST.sha256"
+    }
+  },
+  "final_results_manifest": "omission-sensitive pre-release results plus immutable campaign-ledger prefix; executor output binding seals the final release attestation",
+  "intervention_operator_contracts": [
+    {
+      "application_point": "after-native-optimizer-and-scheduler-step-v1",
+      "name": "aggregate_adaptive_gate_displacement_suppression",
+      "normalized_shape_reference_semantics": "not-applicable",
+      "operator_identity": "post-native-selected-gate-aggregate-adaptive-displacement-suppression-v1",
+      "post_update_probe_semantics": "unclamped-fixed-registry-probe-v1",
+      "selected_gate_moment_semantics": "retain-native-selected-gate-adam-moments-and-evolve-on-modified-trajectory-v1"
+    },
+    {
+      "application_point": "after-native-optimizer-and-scheduler-step-v1",
+      "name": "decay_source_removal",
+      "normalized_shape_reference_semantics": "not-applicable",
+      "operator_identity": "post-native-selected-gate-decay-removal-v1",
+      "post_update_probe_semantics": "unclamped-fixed-registry-probe-v1",
+      "selected_gate_moment_semantics": "retain-native-selected-gate-adam-moments-and-evolve-on-modified-trajectory-v1"
+    },
+    {
+      "application_point": "inside-loss-forward-and-backward-before-native-step-v1",
+      "name": "fixed_source_normalized_shape_activation_clamp",
+      "normalized_shape_reference_semantics": "unadvanced-digest-bound-checkpoint-source-model-training-mode-same-minibatch-arm-rng-replay-detached-v1",
+      "operator_identity": "selected-final-metric-layernorm-loss-forward-backward-activation-clamp-v1",
+      "post_update_probe_semantics": "unclamped-fixed-registry-probe-v1",
+      "selected_gate_moment_semantics": "native-adam-moments-advance-from-clamped-loss-gradient-v1"
+    }
+  ],
+  "observable_contract": {
+    "attribution": [
+      "gate-first",
+      "symmetric-shapley"
+    ],
+    "block": "Ordered nonautonomous affine convolution, not a mean factor",
+    "bridge": "Each of the seven disaggregated bridge-sector direction vectors is stored. Their sum must replay the executed adaptive direction before sector energy gains are used.",
+    "compact_node_arrays": [
+      "gamma",
+      "q",
+      "linear_q",
+      "quadratic_q",
+      "normalized_edge_contrast",
+      "adaptive_direction",
+      "bridge_sector_direction",
+      "gate_decay_mask",
+      "optimizer_gate_weight_decay",
+      "roundoff_charge",
+      "energy"
+    ],
+    "decay_mask": "Record the binary gate-coordinate decay mask and the optimizer's effective decay coefficient at every update; replay both before using the decay dissipation.",
+    "energy": "E = sum_j gamma_j^2 q_j on one fixed connected union graph",
+    "plga": "Positive occupied bases, signed real exponents, exact divided differences, and derivative extrema on the occupied segment only.",
+    "raw_node_policy": "forbidden",
+    "shape_secant": "q_next = q + linear_q + quadratic_q exactly; the signed linear shape gain and nonnegative quadratic shape charge are separate.",
+    "single_union_sufficient_arrays": [
+      "graph_edges",
+      "graph_weights",
+      "block_vertex_offsets",
+      "block_head_index",
+      "normalized_edge_contrast"
+    ],
+    "source_margin": "Executed decay dissipation, signed Fisher and signed-jet gains, and signed-shape gain, minus the absolute force, nonlinear, clip, preconditioner, and lag projections and the finite-step, quadratic-shape, and measured floating-point charges. The aggregate adaptive gain is retained only as an exact diagnostic."
+  },
+  "ownership_rule": "Seed 4444 owns cell and envelope selection. Seeds 5555 and 6666 remain unopened until the construction lock is sealed.",
+  "registry": {
+    "block_row_rule": "complete-ordered-generator-rows-0-through-63-v1",
+    "construction_contexts": 8,
+    "context_head_block_rule": "head-equals-context-index-modulo-four-v1",
+    "context_length": 256,
+    "domain_statement": "The effective-resistance diameter bound controls only the finite registered union graph. It is not a continuum cover claim.",
+    "graph_binding": "Only context identities, head assignment, complete d-row order, ordinal role mapping, and the algorithm are prebound. The eight construction context-head blocks form one ordered 512-vertex union. Construction coordinates determine one connected edge/weight graph and exact resistance constant; that object is frozen and reused byte-for-byte on ordinal held-out block identities at every node.",
+    "graph_rule": "symmetric-8nn-plus-euclidean-mst-uniform-v1",
+    "graph_scope": "one connected graph on eight ordered context-head blocks",
+    "graph_transfer": "single-union-ordinal-block-transfer-v1",
+    "graph_weights": "uniform-1-over-edge-count",
+    "heldout_contexts": 8,
+    "intervention_steps": 4,
+    "intervention_unit_rule": "Twenty-four deterministic continuation sites, twelve per held-out seed, use distinct registered RNG substreams and nonoverlapping future update intervals. The three intervention comparisons reuse each site identity. Sites, steps, nodes, rows, and contexts are not randomized or treated as independent replicates.",
+    "neighbors": 8,
+    "node_rule": "Evaluate the identical hash-bound probe chunks at every parameter node. Actual sequential training minibatches alone drive updates.",
+    "non_telescoping_guard": "An energy sequence may telescope only when every node carries the same probe_registry_sha256 and probe_chunk_ids_sha256. Changing actual update batches is expected and is recorded separately.",
+    "probe_location": "reserved-dataset-tail",
+    "schema_version": "pldr-observable-probe-registry-v1",
+    "training_disjoint": true
+  },
+  "resource_caps": {
+    "aggregate_output_bytes": 34359738368,
+    "compact_output_bytes_per_job": 4294967296,
+    "derivative_microbatch_contexts": 8,
+    "hard_gpu_hours": 48.0,
+    "hard_wall_clock_hours": 80.0,
+    "peak_gpu_allocated_bytes_per_job": 24696061952,
+    "peak_host_rss_bytes_per_job": 68719476736,
+    "planned_gpu_hours": 44.25,
+    "planned_stage_gpu_hours": {
+      "B": 10.0,
+      "F": 0.2,
+      "H": 8.0,
+      "I": 8.0,
+      "M": 10.0,
+      "R": 0.05,
+      "ROB": 2.0,
+      "T": 6.0
+    },
+    "raw_nodes_allowed": false,
+    "registered_devices": [
+      "cuda:0",
+      "cuda:1"
+    ],
+    "simultaneous_derivative_directions": 1,
+    "usage_carries_across_every_stage": true
+  },
+  "runs": [
+    {
+      "device": "cuda:0",
+      "name": "om37-const-lr7.5e-4-s4444",
+      "ownership": "construction",
+      "seed": 4444
+    },
+    {
+      "device": "cuda:1",
+      "name": "om37-const-lr7.5e-4-s5555",
+      "ownership": "heldout",
+      "seed": 5555
+    },
+    {
+      "device": "cuda:0",
+      "name": "om37-const-lr7.5e-4-s6666",
+      "ownership": "heldout",
+      "seed": 6666
+    }
+  ],
+  "schema_version": "pldr-observable-margin-protocol-v1",
+  "stage_order": [
+    "R",
+    "T",
+    "B",
+    "H",
+    "ROB",
+    "M",
+    "I",
+    "F"
+  ],
+  "stages": [
+    {
+      "attempt_rule": "append-only-positive-integer-attempts",
+      "dependencies": [],
+      "gpu_hour_cap": 0.05,
+      "hard_gate": true,
+      "id": "R",
+      "record_key": "STAGE:job_id",
+      "required_checks": [
+        "fresh_run_names",
+        "dataset_and_tokenizer_digests",
+        "fixed_probe_registry",
+        "training_probe_disjointness",
+        "native_update_shadow_arithmetic",
+        "registered_devices",
+        "compact_evidence_only",
+        "resource_meter_ready"
+      ],
+      "title": "Registry, arithmetic, and resource preflight"
+    },
+    {
+      "attempt_rule": "append-only-positive-integer-attempts",
+      "dependencies": [
+        "R"
+      ],
+      "gpu_hour_cap": 6.0,
+      "hard_gate": true,
+      "id": "T",
+      "record_key": "STAGE:job_id",
+      "required_checks": [
+        "three_fresh_seeds",
+        "native_float32_adamw",
+        "actual_minibatches",
+        "five_complete_optimizer_anchors",
+        "exact_restart_replay",
+        "data_cursor_and_rng_state",
+        "checkpoint_registry_binding"
+      ],
+      "title": "Fresh exact-state trajectories"
+    },
+    {
+      "attempt_rule": "append-only-positive-integer-attempts",
+      "dependencies": [
+        "T"
+      ],
+      "gpu_hour_cap": 10.0,
+      "hard_gate": true,
+      "id": "B",
+      "record_key": "STAGE:job_id",
+      "required_checks": [
+        "construction_only",
+        "fixed_probe_at_every_node",
+        "symmetric_8nn_mst_union_graph",
+        "effective_resistance_enclosure",
+        "exact_gate_shape_secants",
+        "native_roundoff_charge",
+        "ordered_affine_convolution",
+        "one_locked_candidate_cell"
+      ],
+      "title": "Construction baseline and candidate lock"
+    },
+    {
+      "attempt_rule": "append-only-positive-integer-attempts",
+      "dependencies": [
+        "B"
+      ],
+      "gpu_hour_cap": 8.0,
+      "hard_gate": true,
+      "id": "H",
+      "record_key": "STAGE:job_id",
+      "required_checks": [
+        "fisher",
+        "signed_jet",
+        "force",
+        "nonlinear",
+        "clip",
+        "preconditioner",
+        "lag",
+        "sector_vector_sum",
+        "actual_adaptive_direction_replay",
+        "float64_shadow"
+      ],
+      "title": "Executed loss-bridge sectors"
+    },
+    {
+      "attempt_rule": "append-only-positive-integer-attempts",
+      "dependencies": [
+        "H"
+      ],
+      "gpu_hour_cap": 2.0,
+      "hard_gate": false,
+      "id": "ROB",
+      "record_key": "STAGE:job_id",
+      "required_checks": [
+        "full_3d_native_block",
+        "scaled_induced_norm",
+        "spectral_radius",
+        "endpoint_conditioning",
+        "clipping_and_dissipation",
+        "diagnostic_not_scalar_margin_gate",
+        "terminal_record_required_but_pass_not_required_by_M"
+      ],
+      "title": "Coordinate robustness diagnostic"
+    },
+    {
+      "attempt_rule": "append-only-positive-integer-attempts",
+      "dependencies": [
+        "H",
+        "ROB"
+      ],
+      "gpu_hour_cap": 10.0,
+      "hard_gate": true,
+      "id": "M",
+      "record_key": "STAGE:job_id",
+      "required_checks": [
+        "construction_lock_precedes_opening",
+        "both_heldout_seeds",
+        "unchanged_candidate_cell",
+        "fixed_probe_at_every_node",
+        "positive_charged_margin",
+        "endpoint_contraction",
+        "graph_enclosure",
+        "positive_base_real_exponent_plga"
+      ],
+      "title": "Held-out observable margin"
+    },
+    {
+      "attempt_rule": "append-only-positive-integer-attempts",
+      "dependencies": [
+        "M"
+      ],
+      "gpu_hour_cap": 8.0,
+      "hard_gate": true,
+      "id": "I",
+      "record_key": "STAGE:job_id",
+      "required_checks": [
+        "twenty_four_preregistered_sites",
+        "three_comparisons",
+        "common_native_source",
+        "common_actual_minibatch_sequence",
+        "registered_intervention_execution_evidence",
+        "seed_stratified_sign_coverage",
+        "seed_stratified_effect_floor"
+      ],
+      "title": "Paired causal interventions"
+    },
+    {
+      "attempt_rule": "append-only-positive-integer-attempts",
+      "dependencies": [
+        "I"
+      ],
+      "gpu_hour_cap": 0.2,
+      "hard_gate": true,
+      "id": "F",
+      "record_key": "STAGE:job_id",
+      "required_checks": [
+        "fresh_process_reanalysis",
+        "unique_stage_job_record_keys",
+        "append_only_attempts",
+        "schema_and_digest_replay",
+        "resource_caps",
+        "mutation_tests",
+        "no_raw_nodes",
+        "final_checksum_manifest"
+      ],
+      "title": "Fresh-process reconstruction and release"
+    }
+  ],
+  "statistics": {
+    "construction_seed": 4444,
+    "deterministic_criterion": "For each held-out seed separately, at least nine of twelve fixed continuation sites must have the preregistered directional sign, and the fourth ascending directional effect must meet the frozen positive floor. This is deterministic seed-stratified coverage, not an independent-replicate significance test.",
+    "heldout_rule": "Both held-out seeds must pass algebraic replay, graph enclosure, positive exact block margin after all charges, and endpoint contraction for the unchanged locked cell.",
+    "heldout_seeds": [
+      5555,
+      6666
+    ],
+    "intervention_comparisons": 3,
+    "intervention_sites": 24,
+    "lower_effect_order_statistic_per_seed": 4,
+    "positive_sites_required_per_seed": 9,
+    "sites_per_heldout_seed": 12,
+    "stopping": "No optional stopping or sample-size adaptation. Failed or exhausted jobs remain in the append-only attempt ledger.",
+    "trajectory_estimand": "The registered probe population is fixed. Nodes, coordinates, contexts, and optimizer steps are not treated as independent replicates."
+  },
+  "status": "WAITING_FOR_FRESH_CHECKPOINTS",
+  "stop_gates": [
+    "missing_or_incomplete_anchor_checkpoint",
+    "checkpoint_or_registry_digest_mismatch",
+    "probe_registry_changes_between_nodes",
+    "training_range_overlaps_probe_registry",
+    "native_successor_or_bridge_sector_replay_failure",
+    "nonfinite_deciding_array",
+    "algebraic_residual_above_registered_tolerance",
+    "graph_effective_resistance_enclosure_failure",
+    "construction_lock_missing_before_heldout_open",
+    "resource_cap_exceeded",
+    "raw_node_artifact_detected"
+  ],
+  "transfer": {
+    "construction_safety_multiplier": 1.25,
+    "diameter_bound_to_observed_ratio_max": 4.0,
+    "diameter_endpoint_fraction_of_construction_source": 0.75,
+    "frozen_arrays": [
+      "affine_factor_upper_by_step",
+      "affine_forcing_upper_by_step",
+      "roundoff_charge_upper_by_step",
+      "effective_resistance_upper"
+    ],
+    "frozen_scalars": [
+      "effective_resistance_upper",
+      "source_energy_upper",
+      "source_diameter_bound_upper"
+    ],
+    "heldout_enlargement_allowed": false,
+    "lower_bound_rule": "The simultaneous held-out lower bound is the minimum relative block margin over both preregistered seeds on the locked union graph. It must be strictly positive; nodes and context-head blocks are not resampled or treated as independent replicates.",
+    "numerical_margin_floor_multiplier": 1.25
+  }
+}

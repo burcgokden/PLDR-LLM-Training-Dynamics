@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "arrays": {
+      "allOf": [
+        {
+          "contains": {
+            "const": "qualified"
+          }
+        },
+        {
+          "contains": {
+            "const": "relative_response_residual"
+          }
+        },
+        {
+          "contains": {
+            "const": "maximum_adamw_replay_relative_residual"
+          }
+        }
+      ],
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "campaign_id": {
+      "const": "pldr-observable-full-state-cocycle-v1"
+    },
+    "schema_version": {
+      "const": "pldr-observable-cocycle-qualification-v1"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "source_step",
+    "arrays"
+  ],
+  "title": "Development resource and derivative qualification",
+  "type": "object"
+}

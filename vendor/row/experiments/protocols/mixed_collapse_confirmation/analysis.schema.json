@@ -1,0 +1,39 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-mixed-row-map-collapse-v1"
+    },
+    "finite_horizon_only": {
+      "const": true
+    },
+    "input_manifest_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "map_count": {
+      "const": 288
+    },
+    "results_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-mixed-collapse-analysis-v1"
+    },
+    "trajectory_count": {
+      "const": 3
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "input_manifest_sha256",
+    "trajectory_count",
+    "map_count",
+    "finite_horizon_only",
+    "results_sha256"
+  ],
+  "title": "Finite mixed-collapse analysis artifact",
+  "type": "object"
+}

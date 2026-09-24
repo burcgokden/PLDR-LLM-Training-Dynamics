@@ -1,0 +1,91 @@
+{
+  "schema": "released-adaptation-assessment-plan-v1",
+  "selected_base": 5,
+  "primary_physical": [
+    "physical-s0",
+    "physical-s1"
+  ],
+  "language_arms": [
+    "technical-s0",
+    "narrative-s0",
+    "mixture-s0",
+    "general-s0"
+  ],
+  "physical_target": "Native next-spin conditional cross entropy and accuracy, followed by complete native generated-law moments and spatial correlations.",
+  "selection": "No final-test data used for model, learning-rate or checkpoint selection. Base selection uses 768 validation documents. Hyperparameters use disposable 256-step pilots. Minimum task-specific validation loss includes the incoming base.",
+  "physical_training_epochs": 3,
+  "physical_learning_rate": 3e-05,
+  "language_training_epochs": 3,
+  "language_learning_rate": 1e-05,
+  "physical_test": {
+    "q": [
+      2,
+      3
+    ],
+    "L": [
+      4,
+      6,
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "ratios": [
+      0.94,
+      0.97,
+      1,
+      1.03,
+      1.06
+    ],
+    "chains": 16,
+    "samples_per_chain": 8,
+    "target_sites": "8 stratified uniformly sampled sites with stratum-width weights; independent frozen seed 219301; intervals conditional on chosen sites"
+  },
+  "generation": {
+    "critical_sizes": [
+      4,
+      6,
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "critical_samples": 512,
+    "thermal_sizes": [
+      4,
+      8,
+      16,
+      24
+    ],
+    "thermal_ratios": [
+      0.94,
+      0.97,
+      1.03,
+      1.06
+    ],
+    "thermal_samples": 128,
+    "temperature": 1,
+    "cache": false,
+    "models": [
+      "base5",
+      "physical-s0",
+      "physical-s1"
+    ]
+  },
+  "slope_fit": {
+    "cutoffs": [
+      4,
+      8,
+      12
+    ],
+    "moments": [
+      "m",
+      "chi",
+      "connected_chi"
+    ],
+    "method": "ordinary least squares in log size; independent configuration bootstrap within each generated cell; source independent-chain bootstrap; report each adaptation seed separately"
+  },
+  "inference": "Finite sizes and one released pretrained checkpoint. No fit alone certifies native thermodynamic exponents or a training universality class."
+}

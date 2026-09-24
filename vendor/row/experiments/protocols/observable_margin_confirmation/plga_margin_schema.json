@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "comparison_rule": "same-context-collapsed-anchor-union-subset-v1",
+  "criterion": "sqrt(2)*remainder_bound < centered_logit_gap",
+  "curvature_cache_reduction": "reference-and-candidate-QK-byte-equal-so-only-Q-deltaG-KT-remains",
+  "qualified_set_must_be_nonempty_for_each_heldout_seed": true,
+  "required_comparison_fields": [
+    "positive_bases",
+    "real_exponent",
+    "query_operator_norm",
+    "key_operator_norm",
+    "score_difference_norm",
+    "query_endpoint_fixed",
+    "key_endpoint_fixed",
+    "score_query_term_norm",
+    "score_generator_term_norm",
+    "score_key_term_norm",
+    "score_transfer_relative_residual",
+    "centered_logit_gap",
+    "remainder_bound",
+    "heldout_transfer_without_enlargement"
+  ],
+  "required_endpoint_arrays": [
+    "plga_reference_query",
+    "plga_candidate_query",
+    "plga_reference_key",
+    "plga_candidate_key",
+    "plga_curvature_left",
+    "plga_curvature_right",
+    "plga_reference_pre_mask_score",
+    "plga_candidate_pre_mask_score"
+  ],
+  "schema_version": "pldr-observable-plga-margin-v1",
+  "score_transfer_rule": "deltaQ-G0-K0-plus-Q1-deltaG-K0-plus-Q1-G1-deltaK-v1"
+}

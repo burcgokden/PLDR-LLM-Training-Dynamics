@@ -1,0 +1,88 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "all_registered_arms_present": {
+      "type": "boolean"
+    },
+    "analysis_unit": {
+      "const": "seed-layer-horizon"
+    },
+    "campaign_id": {
+      "const": "pldr-mixed-row-map-collapse-v1"
+    },
+    "effects": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "endpoint_step": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "energy_difference_from_control": {
+            "type": "number"
+          },
+          "energy_ratio_to_control": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "layer": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "mode": {
+            "enum": [
+              "full",
+              "frozen",
+              "decay_only",
+              "adaptive_only"
+            ]
+          },
+          "seed": {
+            "type": "integer"
+          },
+          "source_step": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "trajectory": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "trajectory",
+          "seed",
+          "source_step",
+          "endpoint_step",
+          "layer",
+          "mode",
+          "energy_ratio_to_control",
+          "energy_difference_from_control"
+        ],
+        "title": "One seed-layer-horizon factorial effect",
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "pldr-gate-factorial-result-v1"
+    },
+    "source_log_sha256": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "source_log_sha256",
+    "analysis_unit",
+    "effects",
+    "all_registered_arms_present"
+  ],
+  "title": "Hierarchy-aware final-gate factorial result",
+  "type": "object"
+}

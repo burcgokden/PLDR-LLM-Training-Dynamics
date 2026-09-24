@@ -1,0 +1,367 @@
+{
+  "analysis_outputs": [
+    "reports/final-analysis.json",
+    "reports/confirmation_results.tex",
+    "reports/confirmation_macros.tex",
+    "reports/EVIDENCE.sha256"
+  ],
+  "calibration": [
+    {
+      "layer": 0,
+      "path": "records/calibration/A-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 1,
+      "path": "records/calibration/A-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 2,
+      "path": "records/calibration/A-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 0,
+      "path": "records/calibration/A-layer0-step8192.npz",
+      "step": 8192,
+      "trajectory": "A"
+    },
+    {
+      "layer": 1,
+      "path": "records/calibration/A-layer1-step8192.npz",
+      "step": 8192,
+      "trajectory": "A"
+    },
+    {
+      "layer": 2,
+      "path": "records/calibration/A-layer2-step8192.npz",
+      "step": 8192,
+      "trajectory": "A"
+    },
+    {
+      "layer": 0,
+      "path": "records/calibration/A-layer0-step16384.npz",
+      "step": 16384,
+      "trajectory": "A"
+    },
+    {
+      "layer": 1,
+      "path": "records/calibration/A-layer1-step16384.npz",
+      "step": 16384,
+      "trajectory": "A"
+    },
+    {
+      "layer": 2,
+      "path": "records/calibration/A-layer2-step16384.npz",
+      "step": 16384,
+      "trajectory": "A"
+    }
+  ],
+  "campaign_id": "pldr-observable-full-state-cocycle-v1",
+  "lock_output": "reports/construction-lock.json",
+  "prediction": [
+    {
+      "layer": 0,
+      "path": "records/prediction/B-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 1,
+      "path": "records/prediction/B-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 2,
+      "path": "records/prediction/B-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 0,
+      "path": "records/prediction/B-layer0-step8192.npz",
+      "step": 8192,
+      "trajectory": "B"
+    },
+    {
+      "layer": 1,
+      "path": "records/prediction/B-layer1-step8192.npz",
+      "step": 8192,
+      "trajectory": "B"
+    },
+    {
+      "layer": 2,
+      "path": "records/prediction/B-layer2-step8192.npz",
+      "step": 8192,
+      "trajectory": "B"
+    },
+    {
+      "layer": 0,
+      "path": "records/prediction/B-layer0-step16384.npz",
+      "step": 16384,
+      "trajectory": "B"
+    },
+    {
+      "layer": 1,
+      "path": "records/prediction/B-layer1-step16384.npz",
+      "step": 16384,
+      "trajectory": "B"
+    },
+    {
+      "layer": 2,
+      "path": "records/prediction/B-layer2-step16384.npz",
+      "step": 16384,
+      "trajectory": "B"
+    },
+    {
+      "layer": 0,
+      "path": "records/prediction/C-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 1,
+      "path": "records/prediction/C-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 2,
+      "path": "records/prediction/C-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 0,
+      "path": "records/prediction/C-layer0-step8192.npz",
+      "step": 8192,
+      "trajectory": "C"
+    },
+    {
+      "layer": 1,
+      "path": "records/prediction/C-layer1-step8192.npz",
+      "step": 8192,
+      "trajectory": "C"
+    },
+    {
+      "layer": 2,
+      "path": "records/prediction/C-layer2-step8192.npz",
+      "step": 8192,
+      "trajectory": "C"
+    },
+    {
+      "layer": 0,
+      "path": "records/prediction/C-layer0-step16384.npz",
+      "step": 16384,
+      "trajectory": "C"
+    },
+    {
+      "layer": 1,
+      "path": "records/prediction/C-layer1-step16384.npz",
+      "step": 16384,
+      "trajectory": "C"
+    },
+    {
+      "layer": 2,
+      "path": "records/prediction/C-layer2-step16384.npz",
+      "step": 16384,
+      "trajectory": "C"
+    }
+  ],
+  "qualification": {
+    "layer": 0,
+    "path": "records/qualification/A-layer0-step4096.npz",
+    "step": 4096,
+    "trajectory": "A"
+  },
+  "schema_version": "pldr-observable-cocycle-record-inventory-v1",
+  "stratum": [
+    {
+      "layer": 0,
+      "path": "records/stratum/A-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 1,
+      "path": "records/stratum/A-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 2,
+      "path": "records/stratum/A-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 0,
+      "path": "records/stratum/B-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 1,
+      "path": "records/stratum/B-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 2,
+      "path": "records/stratum/B-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 0,
+      "path": "records/stratum/C-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 1,
+      "path": "records/stratum/C-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 2,
+      "path": "records/stratum/C-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    }
+  ],
+  "validation": [
+    {
+      "layer": 0,
+      "path": "records/validation/B-layer0-step4096.npz",
+      "prediction_path": "records/prediction/B-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 1,
+      "path": "records/validation/B-layer1-step4096.npz",
+      "prediction_path": "records/prediction/B-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 2,
+      "path": "records/validation/B-layer2-step4096.npz",
+      "prediction_path": "records/prediction/B-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 0,
+      "path": "records/validation/B-layer0-step8192.npz",
+      "prediction_path": "records/prediction/B-layer0-step8192.npz",
+      "step": 8192,
+      "trajectory": "B"
+    },
+    {
+      "layer": 1,
+      "path": "records/validation/B-layer1-step8192.npz",
+      "prediction_path": "records/prediction/B-layer1-step8192.npz",
+      "step": 8192,
+      "trajectory": "B"
+    },
+    {
+      "layer": 2,
+      "path": "records/validation/B-layer2-step8192.npz",
+      "prediction_path": "records/prediction/B-layer2-step8192.npz",
+      "step": 8192,
+      "trajectory": "B"
+    },
+    {
+      "layer": 0,
+      "path": "records/validation/B-layer0-step16384.npz",
+      "prediction_path": "records/prediction/B-layer0-step16384.npz",
+      "step": 16384,
+      "trajectory": "B"
+    },
+    {
+      "layer": 1,
+      "path": "records/validation/B-layer1-step16384.npz",
+      "prediction_path": "records/prediction/B-layer1-step16384.npz",
+      "step": 16384,
+      "trajectory": "B"
+    },
+    {
+      "layer": 2,
+      "path": "records/validation/B-layer2-step16384.npz",
+      "prediction_path": "records/prediction/B-layer2-step16384.npz",
+      "step": 16384,
+      "trajectory": "B"
+    },
+    {
+      "layer": 0,
+      "path": "records/validation/C-layer0-step4096.npz",
+      "prediction_path": "records/prediction/C-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 1,
+      "path": "records/validation/C-layer1-step4096.npz",
+      "prediction_path": "records/prediction/C-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 2,
+      "path": "records/validation/C-layer2-step4096.npz",
+      "prediction_path": "records/prediction/C-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 0,
+      "path": "records/validation/C-layer0-step8192.npz",
+      "prediction_path": "records/prediction/C-layer0-step8192.npz",
+      "step": 8192,
+      "trajectory": "C"
+    },
+    {
+      "layer": 1,
+      "path": "records/validation/C-layer1-step8192.npz",
+      "prediction_path": "records/prediction/C-layer1-step8192.npz",
+      "step": 8192,
+      "trajectory": "C"
+    },
+    {
+      "layer": 2,
+      "path": "records/validation/C-layer2-step8192.npz",
+      "prediction_path": "records/prediction/C-layer2-step8192.npz",
+      "step": 8192,
+      "trajectory": "C"
+    },
+    {
+      "layer": 0,
+      "path": "records/validation/C-layer0-step16384.npz",
+      "prediction_path": "records/prediction/C-layer0-step16384.npz",
+      "step": 16384,
+      "trajectory": "C"
+    },
+    {
+      "layer": 1,
+      "path": "records/validation/C-layer1-step16384.npz",
+      "prediction_path": "records/prediction/C-layer1-step16384.npz",
+      "step": 16384,
+      "trajectory": "C"
+    },
+    {
+      "layer": 2,
+      "path": "records/validation/C-layer2-step16384.npz",
+      "prediction_path": "records/prediction/C-layer2-step16384.npz",
+      "step": 16384,
+      "trajectory": "C"
+    }
+  ]
+}

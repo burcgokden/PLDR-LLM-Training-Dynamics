@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "source_names",
+    "topological_order",
+    "centered_transport_residual_norm",
+    "energy_balance_residual",
+    "plga_multiplied_fields",
+    "outward_radius"
+  ],
+  "title": "Exact finite row-program transport",
+  "type": "object"
+}

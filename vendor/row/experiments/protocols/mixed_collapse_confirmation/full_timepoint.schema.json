@@ -1,0 +1,149 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-mixed-row-map-collapse-v1"
+    },
+    "coordinate_factorization_relative_residual": {
+      "minimum": 0.0,
+      "type": "number"
+    },
+    "cross_map_pairs_formed": {
+      "const": false
+    },
+    "diameter_squared": {
+      "items": {
+        "minimum": 0.0,
+        "type": "number"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "energy": {
+      "items": {
+        "minimum": 0.0,
+        "type": "number"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "gate_shape_coordinate_energy": {
+      "items": {
+        "items": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "maxItems": 64,
+        "minItems": 64,
+        "type": "array"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "layer_final_gate": {
+      "items": {
+        "items": {
+          "type": "number"
+        },
+        "maxItems": 64,
+        "minItems": 64,
+        "type": "array"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "map_order": {
+      "const": "context-major-layer-major-head-major-v1"
+    },
+    "maximizing_pairs": {
+      "items": {
+        "items": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "array"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "normalized_shape_coordinate_energy": {
+      "items": {
+        "items": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "maxItems": 64,
+        "minItems": 64,
+        "type": "array"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "plga_absolute_response": {
+      "items": {
+        "minimum": 0.0,
+        "type": "number"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "plga_force": {
+      "items": {
+        "minimum": 0.0,
+        "type": "number"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "plga_quotient_ratio": {
+      "items": {
+        "minimum": 0.0,
+        "type": "number"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "registry_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-mixed-collapse-full-timepoint-v1"
+    },
+    "step": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "step",
+    "registry_sha256",
+    "map_order",
+    "energy",
+    "diameter_squared",
+    "maximizing_pairs",
+    "gate_shape_coordinate_energy",
+    "normalized_shape_coordinate_energy",
+    "layer_final_gate",
+    "coordinate_factorization_relative_residual",
+    "plga_quotient_ratio",
+    "plga_absolute_response",
+    "plga_force",
+    "cross_map_pairs_formed"
+  ],
+  "title": "All-map mixed-collapse timepoint",
+  "type": "object"
+}

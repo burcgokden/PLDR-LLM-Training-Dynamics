@@ -1,0 +1,2 @@
+The observable balance is exact.
+The integral uses the differential ds.

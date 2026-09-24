@@ -1,0 +1,556 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "all_input_artifacts_technical": {
+      "type": "boolean"
+    },
+    "campaign_id": {
+      "const": "pldr-orbitwise-row-map-collapse-v2"
+    },
+    "finite_horizon_only": {
+      "const": true
+    },
+    "gate_intervention_map_record_count": {
+      "const": 864
+    },
+    "gate_interventions": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "gate_registered_direction_support_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "gate_registered_direction_support_fraction": {
+      "minimum": 0.0,
+      "type": "number"
+    },
+    "schema_version": {
+      "const": "pldr-orbitwise-analysis-v2"
+    },
+    "source_link_map_record_count": {
+      "const": 2304
+    },
+    "source_links": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array"
+    },
+    "source_reopening_bound_holds": {
+      "type": "boolean"
+    },
+    "source_reopening_minimum_slack": {
+      "type": "number"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "trajectories": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "dense_blocks": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "anchor_energy": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "maximum": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "median": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "minimum": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "p90": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "minimum",
+                    "median",
+                    "p90",
+                    "maximum"
+                  ],
+                  "title": "Finite channel summary",
+                  "type": "object"
+                },
+                "block_maximum": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "maximum": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "median": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "minimum": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "p90": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "minimum",
+                    "median",
+                    "p90",
+                    "maximum"
+                  ],
+                  "title": "Finite channel summary",
+                  "type": "object"
+                },
+                "center": {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "edge_count": {
+                  "const": 64
+                },
+                "envelope_slack": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "maximum": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "median": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "minimum": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "p90": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "minimum",
+                    "median",
+                    "p90",
+                    "maximum"
+                  ],
+                  "title": "Finite channel summary",
+                  "type": "object"
+                },
+                "map_count": {
+                  "const": 24
+                },
+                "reopening_budget": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "maximum": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "median": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "minimum": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    },
+                    "p90": {
+                      "minimum": 0.0,
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "minimum",
+                    "median",
+                    "p90",
+                    "maximum"
+                  ],
+                  "title": "Finite channel summary",
+                  "type": "object"
+                }
+              },
+              "required": [
+                "center",
+                "edge_count",
+                "map_count",
+                "anchor_energy",
+                "reopening_budget",
+                "block_maximum",
+                "envelope_slack"
+              ],
+              "title": "Dense reopening block",
+              "type": "object"
+            },
+            "maxItems": 4,
+            "minItems": 4,
+            "type": "array"
+          },
+          "dense_snapshot_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "full_snapshot_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "gain_defined_map_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "initial_plga_absolute_response": {
+            "additionalProperties": false,
+            "properties": {
+              "maximum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "median": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "minimum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "p90": {
+                "minimum": 0.0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "minimum",
+              "median",
+              "p90",
+              "maximum"
+            ],
+            "title": "Finite channel summary",
+            "type": "object"
+          },
+          "initial_plga_force": {
+            "additionalProperties": false,
+            "properties": {
+              "maximum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "median": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "minimum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "p90": {
+                "minimum": 0.0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "minimum",
+              "median",
+              "p90",
+              "maximum"
+            ],
+            "title": "Finite channel summary",
+            "type": "object"
+          },
+          "log_gain_defined_map_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "map_count": {
+            "const": 288
+          },
+          "maximum_factorization_relative_residual": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "maximum_reopening_envelope_violation": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "maximum_three_channel_gain_residual": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "maximum_three_channel_log_residual": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "role": {
+            "enum": [
+              "construction",
+              "transfer"
+            ]
+          },
+          "seed": {
+            "type": "integer"
+          },
+          "technical_valid": {
+            "type": "boolean"
+          },
+          "terminal_alignment_gain": {
+            "additionalProperties": false,
+            "properties": {
+              "maximum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "median": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "minimum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "p90": {
+                "minimum": 0.0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "minimum",
+              "median",
+              "p90",
+              "maximum"
+            ],
+            "title": "Finite channel summary",
+            "type": "object"
+          },
+          "terminal_gate_only_gain": {
+            "additionalProperties": false,
+            "properties": {
+              "maximum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "median": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "minimum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "p90": {
+                "minimum": 0.0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "minimum",
+              "median",
+              "p90",
+              "maximum"
+            ],
+            "title": "Finite channel summary",
+            "type": "object"
+          },
+          "terminal_physical_gain": {
+            "additionalProperties": false,
+            "properties": {
+              "maximum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "median": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "minimum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "p90": {
+                "minimum": 0.0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "minimum",
+              "median",
+              "p90",
+              "maximum"
+            ],
+            "title": "Finite channel summary",
+            "type": "object"
+          },
+          "terminal_plga_absolute_response": {
+            "additionalProperties": false,
+            "properties": {
+              "maximum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "median": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "minimum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "p90": {
+                "minimum": 0.0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "minimum",
+              "median",
+              "p90",
+              "maximum"
+            ],
+            "title": "Finite channel summary",
+            "type": "object"
+          },
+          "terminal_plga_force": {
+            "additionalProperties": false,
+            "properties": {
+              "maximum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "median": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "minimum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "p90": {
+                "minimum": 0.0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "minimum",
+              "median",
+              "p90",
+              "maximum"
+            ],
+            "title": "Finite channel summary",
+            "type": "object"
+          },
+          "terminal_shape_gain": {
+            "additionalProperties": false,
+            "properties": {
+              "maximum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "median": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "minimum": {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              "p90": {
+                "minimum": 0.0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "minimum",
+              "median",
+              "p90",
+              "maximum"
+            ],
+            "title": "Finite channel summary",
+            "type": "object"
+          },
+          "terminal_update": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "trajectory": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "zero_initial_physical_energy_count": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "trajectory",
+          "seed",
+          "role",
+          "full_snapshot_count",
+          "dense_snapshot_count",
+          "map_count",
+          "terminal_update",
+          "terminal_physical_gain",
+          "terminal_shape_gain",
+          "terminal_gate_only_gain",
+          "terminal_alignment_gain",
+          "gain_defined_map_count",
+          "log_gain_defined_map_count",
+          "zero_initial_physical_energy_count",
+          "initial_plga_absolute_response",
+          "terminal_plga_absolute_response",
+          "initial_plga_force",
+          "terminal_plga_force",
+          "maximum_factorization_relative_residual",
+          "maximum_three_channel_gain_residual",
+          "maximum_three_channel_log_residual",
+          "maximum_reopening_envelope_violation",
+          "dense_blocks",
+          "technical_valid"
+        ],
+        "title": "One trajectory analysis",
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "trajectory_count": {
+      "const": 3
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "finite_horizon_only",
+    "trajectory_count",
+    "trajectories",
+    "source_links",
+    "source_link_map_record_count",
+    "source_reopening_bound_holds",
+    "source_reopening_minimum_slack",
+    "gate_interventions",
+    "gate_intervention_map_record_count",
+    "gate_registered_direction_support_count",
+    "gate_registered_direction_support_fraction",
+    "all_input_artifacts_technical",
+    "technical_valid"
+  ],
+  "title": "Complete finite orbitwise analysis",
+  "type": "object"
+}

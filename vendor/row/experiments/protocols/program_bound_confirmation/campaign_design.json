@@ -1,0 +1,270 @@
+{
+  "architecture_runs": [
+    {
+      "architecture": "w064_d04_h04",
+      "gate": "PRIMARY",
+      "landmarks": [
+        256,
+        768,
+        3072,
+        5632
+      ],
+      "normal_window_starts": [
+        768,
+        5632
+      ],
+      "run": "w64-d4-seed-3201-primary",
+      "schedule": "warmup_cosine",
+      "seed": 3201,
+      "updates": 6144
+    },
+    {
+      "architecture": "w064_d04_h04",
+      "gate": "AFTER_PRIMARY_Q_T_N",
+      "landmarks": [
+        256,
+        768,
+        3072,
+        5632
+      ],
+      "normal_window_starts": [
+        768
+      ],
+      "run": "w64-d4-seed-3202-replication",
+      "schedule": "warmup_cosine",
+      "seed": 3202,
+      "updates": 6144
+    }
+  ],
+  "model_derived_figures": [
+    "qualification_taylor_remainder",
+    "normal_window_contraction",
+    "same_source_downstream_envelope"
+  ],
+  "ordered_affine_blocking": {
+    "block_sizes": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "decision": "ORDERED_PRODUCT_FORCE_AND_QUADRATIC_TUBE_RECURRENCE",
+    "fine_coefficients": "RECOMPUTED_FROM_LIVE_CHECKPOINT_OPERATORS",
+    "individual_fine_gain_may_exceed_one": true,
+    "map": "visible_null_sector_common_metric_product_convolution",
+    "normalization": "construction_metric_with_correlated_vertices",
+    "schema_version": "pldr-composite-blocking-qualification-v3"
+  },
+  "owner_sha256": {
+    "experiments/analysis/composite_confirmation_analysis.py": "a49311e1631b75a5c044f75bfd59a515c9d6a6f3ad1a822d5bad895d8d4b7b19",
+    "experiments/confirm/branch_resolved_state.py": "23170664ad10301f01072592681a84b66a75e23be7ea3e19822193a6ff951f46",
+    "experiments/confirm/capture_confirmation_stage.py": "569bc6e8e5afa7d9730c1caa6fd6443489db31c5d34ab22605cd9a304ec0bcf7",
+    "experiments/confirm/confirmation_artifacts.py": "f17cecd5a3fd65e9fac93acb87e4db6c583101f56dd19f55823ce16d56aa38c8",
+    "experiments/confirm/constructive_block_comparison.py": "f67b7c11a631d579f13e9cca72576cfc66ce8a39a4a28e8e06dc420229861acd",
+    "experiments/confirm/live_confirmation_producers.py": "fbc4bcf2f7c246e0febebd172650671eb754203878ff7b9eacbd11d6bb263738",
+    "experiments/confirm/normal_stability.py": "a846f0ba1773b297cf226594fbeb36da8051dee073e5705d7317124fa5c1141c",
+    "experiments/confirm/program_energy_protocol_specs_v3.py": "daff0bc1e4dead37ac631e6aea7b1e869f0cff552f32a15aa8fe1f712ab53aa6",
+    "experiments/confirm/qualification_normal_stability.py": "bb2a97bc30b868441a83e2fd26c12363d8064858c34fc7479fbe6dedaa1c4661",
+    "experiments/confirm/same_source_bridge.py": "25c37278cbea186d487746915e20697f633e7e021f12e8c18ee7a45219c90f85",
+    "experiments/confirm/validated_directional_taylor_mixed.py": "13c915f444821ac32c791eb1e9b9b5371756eb69d7a3b7124be80025c3a62b2e",
+    "experiments/confirm/validated_interval.py": "2fd9498141465153d975565a9e793bf1f987ad455e65c0c48169db4ba7b9bae0",
+    "experiments/confirm/validated_row_map.py": "1d423b280fd06ef77983fc3015e8f7695917368147624eabbbba3e2806f47f16",
+    "experiments/train_run.py": "9dba074f8a3aed480f360fa1427bd2dc477cbee5db3fb1e81d4aac64da9ebae0"
+  },
+  "prediction_lock": "the checkpoint seals split registries and executable owners; the analyzer derives contracts only from construction axes",
+  "resource_caps": {
+    "application_heldout_pairs": 32,
+    "construction_contexts": 32,
+    "context_length": 256,
+    "dense_stack_parameter_derivative": "FORBIDDEN_EXCEPT_Q",
+    "gated_replication_gpu_hours": 0.75,
+    "gpu_bytes_each": 21474836480,
+    "gpu_count": 2,
+    "hard_gpu_hours": 4.5,
+    "hard_wall_clock_hours": 12,
+    "host_bytes_total": 103079215104,
+    "planned_gpu_hours": 4.5,
+    "primary_gpu_hours": 3.75,
+    "retained_artifact_bytes": 85899345920,
+    "stage_gpu_hours": {
+      "A": 0.25,
+      "I": 0.5,
+      "N": 2.0,
+      "Q": 0.25,
+      "R": 0,
+      "T": 0.75
+    },
+    "validation_contexts": 32
+  },
+  "schema_version": "pldr-collapse-confirmation-campaign-v3",
+  "stage_order": [
+    "Q",
+    "T",
+    "N",
+    "I",
+    "A",
+    "R"
+  ],
+  "stages": [
+    {
+      "analyzer": "experiments/analysis/composite_confirmation_analysis.py",
+      "decision": "The bound analyzer resolves complete v3 checkpoints and recomputes all decisions from producer-owned sufficient tensors. Caller arrays, pass flags, bounds, masks, and argmax claims are not accepted.",
+      "dependencies": [],
+      "fresh_execution": "Width 8, depth 1, float64, batch 8, context 8 on target device",
+      "gpu_hour_cap": 0.25,
+      "id": "Q",
+      "raw_schema": "pldr-q-live-record-v2",
+      "required_checks": [
+        "all_rows_registered",
+        "frozen_job_geometry",
+        "dense_matrix_free_jvp",
+        "moving_row_decomposition",
+        "taylor_remainder_enclosed",
+        "layernorm_floor_measured",
+        "adamw_successor_exact",
+        "energy_identity",
+        "negative_work_measured",
+        "positive_witness_constructed",
+        "provenance_mutation_rejected",
+        "taylor_enclosure_ratio"
+      ],
+      "target": "Qualify every row JVP, whole-tube LayerNorm floors, nonvacuous Taylor transport, exact AdamW replay, and a dense composite Gram.",
+      "time_semantics": [
+        "FINITE_IMPLEMENTED_SCHEDULE"
+      ],
+      "title": "Instrument qualification"
+    },
+    {
+      "analyzer": "experiments/analysis/composite_confirmation_analysis.py",
+      "decision": "The bound analyzer resolves complete v3 checkpoints and recomputes all decisions from producer-owned sufficient tensors. Caller arrays, pass flags, bounds, masks, and argmax claims are not accepted.",
+      "dependencies": [
+        "Q"
+      ],
+      "fresh_execution": "Width 64, depth 4, four heads, 6144 updates and four landmarks",
+      "gpu_hour_cap": 0.75,
+      "id": "T",
+      "raw_schema": "pldr-t-raw-observations-v3",
+      "required_checks": [
+        "live_producer_bound",
+        "primary_seed_bound",
+        "architecture_and_updates",
+        "four_primary_landmarks",
+        "complete_checkpoint_schema",
+        "optimizer_clock_consistent",
+        "scheduler_coefficients_recomputed",
+        "fresh_process_tensor_replay",
+        "data_cursor_advances"
+      ],
+      "target": "Bind and fresh-process replay model tensors, Adam moments, clocks, realized masks, registries, RNG state, and next minibatch.",
+      "time_semantics": [
+        "FINITE_IMPLEMENTED_SCHEDULE"
+      ],
+      "title": "Complete-state training and restart"
+    },
+    {
+      "analyzer": "experiments/analysis/composite_confirmation_analysis.py",
+      "decision": "The bound analyzer resolves complete v3 checkpoints and recomputes all decisions from producer-owned sufficient tensors. Caller arrays, pass flags, bounds, masks, and argmax claims are not accepted.",
+      "dependencies": [
+        "T"
+      ],
+      "fresh_execution": "First layer, post-warmup and late anchors, disjoint 32 by 256 rows",
+      "gpu_hour_cap": 2.0,
+      "id": "N",
+      "raw_schema": "pldr-n-raw-observations-v3",
+      "required_checks": [
+        "partition_and_producer_bound",
+        "capacity_obstructions_accounted",
+        "backward_frame_recomputed",
+        "composite_kernel_resolved",
+        "charged_full_edge_positive",
+        "sector_comparison_contracts",
+        "common_metric_contracts",
+        "ordered_windows_contract",
+        "nonlinear_recurrence_encloses",
+        "direct_validation_contracts"
+      ],
+      "target": "Resolve row, causal-score, value and composite capacities; construct visible/null frames, charge the full edge, and test the normal tube.",
+      "time_semantics": [
+        "FINITE_IMPLEMENTED_SCHEDULE"
+      ],
+      "title": "Composite normal windows"
+    },
+    {
+      "analyzer": "experiments/analysis/composite_confirmation_analysis.py",
+      "decision": "The bound analyzer resolves complete v3 checkpoints and recomputes all decisions from producer-owned sufficient tensors. Caller arrays, pass flags, bounds, masks, and argmax claims are not accepted.",
+      "dependencies": [
+        "N"
+      ],
+      "fresh_execution": "One matched anchor and 32 paired low-rate and high-rate continuations",
+      "gpu_hour_cap": 0.5,
+      "id": "I",
+      "raw_schema": "pldr-i-raw-observations-v3",
+      "required_checks": [
+        "live_producer_bound",
+        "matched_source_states",
+        "branch_only_changes_rate",
+        "jury_margins_recomputed",
+        "corridor_bracketed",
+        "damping_order_observed",
+        "oscillation_onset_order_observed"
+      ],
+      "target": "Use the live Adam denominator and realized decay coefficient to test the full lifted Jury and common-metric ordering.",
+      "time_semantics": [
+        "FINITE_IMPLEMENTED_SCHEDULE"
+      ],
+      "title": "Decay-aware corridor intervention"
+    },
+    {
+      "analyzer": "experiments/analysis/composite_confirmation_analysis.py",
+      "decision": "The bound analyzer resolves complete v3 checkpoints and recomputes all decisions from producer-owned sufficient tensors. Caller arrays, pass flags, bounds, masks, and argmax claims are not accepted.",
+      "dependencies": [
+        "N"
+      ],
+      "fresh_execution": "Early and late checkpoints, all layers, 32 immutable held-out pairs",
+      "gpu_hour_cap": 0.25,
+      "id": "A",
+      "raw_schema": "pldr-a-raw-observations-v3",
+      "required_checks": [
+        "partition_and_producer_bound",
+        "heldout_pairs_immutable",
+        "all_layers_registered",
+        "row_factor_applied_once",
+        "stage_envelopes_recomputed",
+        "absolute_differences_enclosed",
+        "layernorm_floors_measured",
+        "registered_margins_preserved"
+      ],
+      "target": "Propagate the row defect once through actual PLGA stage tensors and recompute the sharp logit margin and greedy decision from logits.",
+      "time_semantics": [
+        "FROZEN_CHECKPOINT"
+      ],
+      "title": "Same-source application bridge"
+    },
+    {
+      "analyzer": "experiments/analysis/composite_confirmation_analysis.py",
+      "decision": "The bound analyzer resolves complete v3 checkpoints and recomputes all decisions from producer-owned sufficient tensors. Caller arrays, pass flags, bounds, masks, and argmax claims are not accepted.",
+      "dependencies": [
+        "I",
+        "A"
+      ],
+      "fresh_execution": "Fresh CPU process with deterministic analyzers and report build",
+      "gpu_hour_cap": 0,
+      "id": "R",
+      "raw_schema": "pldr-r-raw-observations-v2",
+      "required_checks": [
+        "all_artifacts_resolve",
+        "scientific_digests_replay",
+        "records_recompute_byte_stably",
+        "tables_recompute_byte_stably",
+        "figures_recompute_byte_stably",
+        "resource_metadata_unsigned"
+      ],
+      "target": "Rehash every artifact and regenerate scientific records, tables, figures, protocols, and manuscript outputs byte stably.",
+      "time_semantics": [
+        "FINITE_IMPLEMENTED_SCHEDULE",
+        "FROZEN_CHECKPOINT"
+      ],
+      "title": "Independent replay and report"
+    }
+  ]
+}

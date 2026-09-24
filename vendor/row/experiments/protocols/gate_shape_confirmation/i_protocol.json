@@ -1,0 +1,35 @@
+{
+  "analyzer": "experiments/analysis/analyze_gate_shape_confirmation.py",
+  "producer": "experiments/confirm/gate_shape_live.py",
+  "raw_required": [
+    "source_checkpoint",
+    "arm_checkpoints",
+    "arm_event_ledgers",
+    "tokens",
+    "registry",
+    "construction_lock",
+    "intervention_geometry_raw_archives",
+    "producer_source"
+  ],
+  "schema_version": "pldr-gate-shape-protocol-v1",
+  "scientific_arrays": "npz_without_pickle",
+  "stage": {
+    "decision_source": "A fresh analyzer resolves normalized checkpoint-bound paths and recomputes every deciding quantity from raw evidence. Digests bind evidence but never stand in for scientific recomputation.",
+    "dependencies": [
+      "C"
+    ],
+    "gpu_hour_cap": 0.2,
+    "id": "I",
+    "purpose": "Run short validation-owned rate and freeze continuations.",
+    "required_checks": [
+      "branches_share_one_complete_source_state",
+      "all_five_registered_arms_complete",
+      "only_registered_intervention_differs",
+      "real_event_ledgers_have_one_lineage_root",
+      "all_gate_shape_energies_recomputed",
+      "final_gate_freeze_has_zero_gate_work"
+    ],
+    "title": "Causal gate and shape interventions"
+  },
+  "status": "DRAFT_PENDING_TWO_DEVICE_QUALIFICATION"
+}

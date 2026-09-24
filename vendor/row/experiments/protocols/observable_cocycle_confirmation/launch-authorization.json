@@ -1,0 +1,26 @@
+{
+  "authorized": true,
+  "campaign_id": "pldr-observable-full-state-cocycle-v1",
+  "construction_records_may_determine_only_the_declared_lock": true,
+  "design_sha256": "fbb83afb4b88fba45694d813befac7a69e9a677507d81061bece0eb0ccf6d2c6",
+  "execution_command": [
+    "python3",
+    "scripts/execute_observable_cocycle_plan.py",
+    "--bundle",
+    "/pldr-data/row/rev49/observable-full-state-cocycle-confirmation",
+    "--all"
+  ],
+  "heldout_signed_responses_opened_before_authorization": false,
+  "outcomes_may_change_execution_graph": false,
+  "resource_caps": {
+    "hard_aggregate_reserved_device_hours": 3.0,
+    "process_reserved_memory_bytes": 21474836480
+  },
+  "schema_version": "pldr-observable-cocycle-launch-authorization-v1",
+  "source_code_commit": "4afef76ffe0ec8e6c554eddd44b91a4eb76678d6",
+  "validation": {
+    "command": "make test",
+    "passed": 823,
+    "warnings": 35
+  }
+}

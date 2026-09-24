@@ -1,0 +1,182 @@
+[
+  {
+    "label": "lem:centered-row-geometry",
+    "paper": "Centered-row identity and norm equivalence",
+    "module": "CenteredRowGeometry",
+    "declarations": ["centeredEnergy", "orderedPairEnergy", "pairwise_variance_identity", "diameter_le_centered_energy", "centered_energy_le_diameter"],
+    "scope": "The scalar coordinate identity and both finite inequality kernels used after coordinatewise summation.",
+    "excluded": "Assembly of vector coordinates, the unordered-pair normalization, and the convergence equivalence.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:regularized-layernorm-geometry",
+    "paper": "LayerNorm range and finite chord",
+    "module": "LayerNormGeometry",
+    "declarations": ["normalizedShapeSq", "normalized_shape_sq_lt", "gate_diameter_bound"],
+    "scope": "The strict regularized normalized-shape radius and the gate-controlled universal diameter inequality.",
+    "excluded": "The displayed finite reciprocal-radius chord matrix and denominator bounds.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:implemented-spatial-chain",
+    "paper": "Implemented spatial chord chain",
+    "module": "PostNormChain",
+    "declarations": ["appendUnit", "fullChain", "full_chain_append", "eight_unit_execution_order", "eight_unit_shape_execution_order"],
+    "scope": "The pre-chain factor, eight residual and postnorm factors, and final normalized-shape replacement in program order.",
+    "excluded": "The fundamental-theorem integral and runtime construction of nonlinear Jacobian factors.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:spatial-two-channel",
+    "paper": "Two-channel spatial diameter bound",
+    "module": "SpatialRowMapCollapse",
+    "declarations": ["gate_shape_product_bound"],
+    "scope": "Taking the smaller of two valid gate-weighted diameter channels.",
+    "excluded": "Construction of the universal LayerNorm radius and occupied full-program chord coefficient.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:spatial-collapse-alternatives",
+    "paper": "Spatial collapse alternatives",
+    "module": "SpatialRowMapCollapse",
+    "declarations": ["two_channel_collapse"],
+    "scope": "Squeezing a nonnegative diameter by a vanishing gain-shape-input product.",
+    "excluded": "The separate universal-gain specialization, which is proved in writing by the same squeeze argument.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "prop:complete-source-segment",
+    "paper": "Complete-source segment",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "Native AdamW, minibatch, mask, and deterministic-program binding remain executable obligations.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:signed-source-work",
+    "paper": "Signed source-work decomposition",
+    "module": "ObservableEnergyDissipation",
+    "declarations": ["source_ledger_pairing"],
+    "scope": "Additivity of the signed source pairing over an explicitly finite source ledger.",
+    "excluded": "The chain-rule construction of physical row-map JVPs and the derivative of squared norm.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "lem:source-segment-remainder",
+    "paper": "Integral source-segment remainder",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The twice-integrated fundamental-theorem identity and numerical remainder construction are checked outside the selected kernels.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:native-energy-charge",
+    "paper": "Native energy charge",
+    "module": "EndpointGateShape",
+    "declarations": ["shape_work_upper"],
+    "scope": "The scalar polarization inequality giving a twice-linear plus quadratic perturbation charge.",
+    "excluded": "Assembly over vector contrasts and source-derived native rounding radii.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:finite-diameter-slack-rev43",
+    "paper": "Exact finite diameter slack",
+    "module": "DiameterSlack",
+    "declarations": ["diameterSlack", "finiteMinimum", "finiteMaximum", "finite_diameter_slack_identity", "strict_contraction_iff"],
+    "scope": "Actual finite source and successor maxima, the exact minimum-slack identity, and strict squared-diameter contraction.",
+    "excluded": "Equality and expansion sign corollaries for unsquared nonnegative diameters.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:source-restoring-step",
+    "paper": "Source-restoring diameter step",
+    "module": "SourcePredictiveEnergy",
+    "declarations": ["sourceUpper", "sourceMargin", "source_restoring_step", "strict_source_contraction"],
+    "scope": "Finite pair upper enclosures, minimum source margins, maximizer switching, and fractional diameter contraction.",
+    "excluded": "Analytical and numerical construction of work, remainder, and arithmetic-charge inputs.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "prop:source-upper-multiplier",
+    "paper": "One-step source multiplier",
+    "module": "SourcePredictiveEnergy",
+    "declarations": ["pair_upper_to_diameter_upper"],
+    "scope": "Monotonic passage of pointwise source upper energies through the actual finite maximum.",
+    "excluded": "Division by a positive source diameter and the strict-below-one corollary.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:source-multiplier-cocycle",
+    "paper": "Source multiplier cocycle",
+    "module": "SourceMultiplierCocycle",
+    "declarations": ["orderedSourceProduct", "ordered_source_product"],
+    "scope": "Inductive composition of nonnegative source multipliers, including factors above one.",
+    "excluded": "Runtime chronology and checkpoint-digest linkage.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "cor:source-product-collapse",
+    "paper": "Product and log-drift collapse",
+    "module": "SourceMultiplierCocycle",
+    "declarations": ["source_product_collapse"],
+    "scope": "Collapse of a nonnegative diameter beneath a vanishing ordered source product.",
+    "excluded": "The elementary exponential equivalence with cumulative logarithms.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "thm:divergent-restoring-collapse",
+    "paper": "Divergent restoring work forces collapse",
+    "module": "SourceMultiplierCocycle",
+    "declarations": ["summable_restoring_collapse"],
+    "scope": "The exponential product envelope and collapse under a divergent sum of restoring coefficients in the unit interval.",
+    "excluded": "Construction of each coefficient from row-map source margins.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "cor:finite-registry-collapse",
+    "paper": "Finite-registry collapse",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "The finite maximum of pointwise-convergent map diameters is handled by the written epsilon argument.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "lem:implemented-power-telescope",
+    "paper": "Crossing-safe two-coordinate telescope",
+    "module": "PLGAImplementedPower",
+    "declarations": ["sigmoid", "implementedBase", "implementedPower", "plga_base_lower", "implemented_power_positive", "implementedZSecant", "implementedPSecant", "implemented_two_variable_telescope"],
+    "scope": "Positive implemented base, positive arbitrary real power, coordinate secants, and the exact two-coordinate telescope.",
+    "excluded": "Analytical derivative values chosen on diagonal secant branches and outward runtime arithmetic.",
+    "faithfulness": "faithful"
+  },
+  {
+    "label": "thm:moving-plga-telescope-rev43",
+    "paper": "Exact moving-parameter PLGA telescope",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "Tensor affine telescopes and their operation-ordered composition are checked by the written proof.",
+    "faithfulness": "not-formalized"
+  },
+  {
+    "label": "thm:spatial-plga-transfer-rev43",
+    "paper": "Exact spatial PLGA transfer and competing bounds",
+    "module": "PLGADividedDifference",
+    "declarations": ["divided_difference_chain", "affine_secant_transfer"],
+    "scope": "Exact scalar secant composition and cancellation through a following affine coupling.",
+    "excluded": "Tensor row centering, Frobenius operator bounds, and comparison with the direct output bound.",
+    "faithfulness": "partial"
+  },
+  {
+    "label": "cor:causal-score-softmax-transfer",
+    "paper": "Causal-score and softmax transfer",
+    "module": "",
+    "declarations": [],
+    "scope": "No formal coverage is claimed.",
+    "excluded": "Causal projection, matrix operator bounds, and the softmax Jacobian norm are checked by the written proof.",
+    "faithfulness": "not-formalized"
+  }
+]

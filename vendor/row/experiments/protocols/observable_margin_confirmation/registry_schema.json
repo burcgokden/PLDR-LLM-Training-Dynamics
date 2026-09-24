@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "observable_graph_contract": {
+    "block_row_rule": "complete-ordered-generator-rows-0-through-63-v1",
+    "construction_contexts": 8,
+    "context_head_block_rule": "head-equals-context-index-modulo-four-v1",
+    "context_length": 256,
+    "domain_statement": "The effective-resistance diameter bound controls only the finite registered union graph. It is not a continuum cover claim.",
+    "graph_binding": "Only context identities, head assignment, complete d-row order, ordinal role mapping, and the algorithm are prebound. The eight construction context-head blocks form one ordered 512-vertex union. Construction coordinates determine one connected edge/weight graph and exact resistance constant; that object is frozen and reused byte-for-byte on ordinal held-out block identities at every node.",
+    "graph_rule": "symmetric-8nn-plus-euclidean-mst-uniform-v1",
+    "graph_scope": "one connected graph on eight ordered context-head blocks",
+    "graph_transfer": "single-union-ordinal-block-transfer-v1",
+    "graph_weights": "uniform-1-over-edge-count",
+    "heldout_contexts": 8,
+    "intervention_steps": 4,
+    "intervention_unit_rule": "Twenty-four deterministic continuation sites, twelve per held-out seed, use distinct registered RNG substreams and nonoverlapping future update intervals. The three intervention comparisons reuse each site identity. Sites, steps, nodes, rows, and contexts are not randomized or treated as independent replicates.",
+    "neighbors": 8,
+    "node_rule": "Evaluate the identical hash-bound probe chunks at every parameter node. Actual sequential training minibatches alone drive updates.",
+    "non_telescoping_guard": "An energy sequence may telescope only when every node carries the same probe_registry_sha256 and probe_chunk_ids_sha256. Changing actual update batches is expected and is recorded separately.",
+    "probe_location": "reserved-dataset-tail",
+    "schema_version": "pldr-observable-probe-registry-v1",
+    "training_disjoint": true
+  },
+  "properties": {
+    "anchors": {
+      "const": [
+        2000,
+        4000,
+        8000,
+        16000,
+        24000
+      ]
+    },
+    "block_row_rule": {
+      "const": "complete-ordered-generator-rows-0-through-63-v1"
+    },
+    "construction": {
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array"
+    },
+    "context_head_block_rule": {
+      "const": "head-equals-context-index-modulo-four-v1"
+    },
+    "context_length": {
+      "const": 256
+    },
+    "dataset_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "graph_transfer": {
+      "const": "single-union-ordinal-block-transfer-v1"
+    },
+    "intervention_unit_rule": {
+      "const": "Twenty-four deterministic continuation sites, twelve per held-out seed, use distinct registered RNG substreams and nonoverlapping future update intervals. The three intervention comparisons reuse each site identity. Sites, steps, nodes, rows, and contexts are not randomized or treated as independent replicates."
+    },
+    "intervention_units": {
+      "maxItems": 24,
+      "minItems": 24,
+      "type": "array"
+    },
+    "plga_binding_rule": {
+      "const": "same-node-context-block-anchor-row-zero-b-locks-layer-node-v1"
+    },
+    "registry_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "pldr-observable-probe-registry-v1"
+    },
+    "tokenizer_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "validation": {
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "context_length",
+    "construction",
+    "validation",
+    "anchors",
+    "context_head_block_rule",
+    "block_row_rule",
+    "graph_transfer",
+    "plga_binding_rule",
+    "intervention_units",
+    "intervention_unit_rule",
+    "dataset_sha256",
+    "tokenizer_sha256",
+    "registry_sha256"
+  ],
+  "title": "Trainer-compatible observable probe and intervention registry",
+  "type": "object"
+}

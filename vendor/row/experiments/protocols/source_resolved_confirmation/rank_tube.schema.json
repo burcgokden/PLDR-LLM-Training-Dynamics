@@ -1,0 +1,402 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "analytic_bounds": {
+      "additionalProperties": false,
+      "properties": {
+        "block_quadratic_coefficient_upper": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "diagnostic_only": {
+          "const": true
+        },
+        "diagnostic_radius_eligible": {
+          "type": "boolean"
+        },
+        "diagnostic_radius_gain_used": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "diagnostic_radius_lower": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "diagnostic_radius_upper": {
+          "minimum": 0.0,
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "layernorm_hessian_upper": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "observed_orbit_radius_gain": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "plga_z_derivative_upper": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "plga_z_second_derivative_upper": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "realized_displacement": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "realized_displacement_inside_diagnostic_radius": {
+          "type": "boolean"
+        },
+        "sampled_block_row_gain": {
+          "minimum": 0.0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "layernorm_hessian_upper",
+        "plga_z_derivative_upper",
+        "plga_z_second_derivative_upper",
+        "block_quadratic_coefficient_upper",
+        "observed_orbit_radius_gain",
+        "sampled_block_row_gain",
+        "diagnostic_radius_gain_used",
+        "diagnostic_radius_lower",
+        "diagnostic_radius_upper",
+        "diagnostic_radius_eligible",
+        "realized_displacement",
+        "realized_displacement_inside_diagnostic_radius",
+        "diagnostic_only"
+      ],
+      "title": "Analytic local bounds and diagnostic radius",
+      "type": "object"
+    },
+    "block_response_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "block_test": {
+      "additionalProperties": false,
+      "properties": {
+        "audit_direction_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "audit_response_maximum": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "audit_response_squared_maximum": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "block_length": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "block_start": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "full_operator_theorem_claimed": {
+          "const": false
+        },
+        "layernorm_baseline": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "metric_cap": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "metric_cap_screen_pass": {
+          "type": "boolean"
+        },
+        "metric_upper_bound_certified": {
+          "const": false
+        },
+        "observed_block_diameter_envelope": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "physical_scale_screen_pass": {
+          "type": "boolean"
+        },
+        "reduced_krylov_rank": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "source_diameter": {
+          "minimum": 0.0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "block_start",
+        "block_length",
+        "reduced_krylov_rank",
+        "audit_direction_count",
+        "audit_response_squared_maximum",
+        "metric_cap",
+        "metric_cap_screen_pass",
+        "metric_upper_bound_certified",
+        "observed_block_diameter_envelope",
+        "source_diameter",
+        "layernorm_baseline",
+        "physical_scale_screen_pass",
+        "audit_response_maximum",
+        "full_operator_theorem_claimed"
+      ],
+      "title": "Reduced empirical block screen",
+      "type": "object"
+    },
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "analytic_bounds_not_fitted": {
+          "type": "boolean"
+        },
+        "diagnostic_radius_labeled": {
+          "type": "boolean"
+        },
+        "full_state_rank_not_inferred": {
+          "type": "boolean"
+        },
+        "lifted_block_response_bound": {
+          "type": "boolean"
+        },
+        "rank_diagnostics_finite": {
+          "type": "boolean"
+        },
+        "rank_threshold_frozen": {
+          "type": "boolean"
+        },
+        "sampled_response_not_promoted_to_bound": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "rank_threshold_frozen",
+        "rank_diagnostics_finite",
+        "analytic_bounds_not_fitted",
+        "diagnostic_radius_labeled",
+        "full_state_rank_not_inferred",
+        "sampled_response_not_promoted_to_bound",
+        "lifted_block_response_bound"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "edge_sha256": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "endpoint_checkpoint_binding_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "local_robustness_outcome": {
+      "enum": [
+        "confirmed",
+        "not_confirmed",
+        "unresolved"
+      ]
+    },
+    "mask_response_sha256": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "per_map_rank": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "condition_estimate": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "constraint_dimension_exact": {
+            "type": "boolean"
+          },
+          "context": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "estimated_numerical_rank": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "exact_algebraic_rank": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "head": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "layer": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "operator_scope": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "rank_threshold_pass": {
+            "type": "boolean"
+          },
+          "relative_threshold": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "smallest_relative_singular_estimate": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "target_row_count": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "map_id",
+          "context",
+          "layer",
+          "head",
+          "operator_scope",
+          "constraint_dimension_exact",
+          "target_row_count",
+          "relative_threshold",
+          "estimated_numerical_rank",
+          "exact_algebraic_rank",
+          "smallest_relative_singular_estimate",
+          "condition_estimate",
+          "rank_threshold_pass"
+        ],
+        "title": "Constraint rank record",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-rank-tube-v1"
+    },
+    "source_checkpoint_binding_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "stacked_rank": {
+      "additionalProperties": false,
+      "properties": {
+        "condition_estimate": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "constraint_dimension_exact": {
+          "type": "boolean"
+        },
+        "context": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "estimated_numerical_rank": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "exact_algebraic_rank": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "head": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "layer": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "map_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "operator_scope": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "rank_threshold_pass": {
+          "type": "boolean"
+        },
+        "relative_threshold": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "smallest_relative_singular_estimate": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "target_row_count": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "map_id",
+        "context",
+        "layer",
+        "head",
+        "operator_scope",
+        "constraint_dimension_exact",
+        "target_row_count",
+        "relative_threshold",
+        "estimated_numerical_rank",
+        "exact_algebraic_rank",
+        "smallest_relative_singular_estimate",
+        "condition_estimate",
+        "rank_threshold_pass"
+      ],
+      "title": "Constraint rank record",
+      "type": "object"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "source_checkpoint_binding_sha256",
+    "endpoint_checkpoint_binding_sha256",
+    "mask_response_sha256",
+    "edge_sha256",
+    "block_response_sha256",
+    "per_map_rank",
+    "stacked_rank",
+    "analytic_bounds",
+    "block_test",
+    "local_robustness_outcome",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Interface rank and diagnostic local-tube evidence",
+  "type": "object"
+}

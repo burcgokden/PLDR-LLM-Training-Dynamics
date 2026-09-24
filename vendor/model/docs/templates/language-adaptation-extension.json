@@ -1,0 +1,18 @@
+{
+  "schema": "released-language-constraint-extension-v1",
+  "motivation": "Full-parameter adaptation shows validation overfitting on the small language corpus. No final-test assessment has started.",
+  "base": 5,
+  "training_examples_per_epoch": 32768,
+  "epochs": 3,
+  "rank": 4,
+  "trainable_parameters": 203264,
+  "targets": "query and value matrices of all five decoder layers and the vocabulary output matrix",
+  "candidates": [
+    0.0001,
+    0.0003
+  ],
+  "development_updates_per_candidate": 256,
+  "selection": "Minimum technical validation cross entropy at the fixed development endpoint; each main source arm separately selects its minimum validation-loss checkpoint including the incoming base.",
+  "test_policy": "Evaluate every selected full-parameter and constrained source-arm checkpoint on the same untouched test documents; compare with base 5 using paired document resampling.",
+  "inference": "Rank updates merged into the existing native weights with a measured floating-point agreement check at every selected export."
+}

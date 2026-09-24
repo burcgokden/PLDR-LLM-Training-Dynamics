@@ -1,0 +1,303 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "basis_maximum_abs_inner_product": {
+      "minimum": 0.0,
+      "type": "number"
+    },
+    "block_length": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "block_start": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checkpoint_binding_sha256": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "audit_population_complete": {
+          "type": "boolean"
+        },
+        "basis_orthogonality_within_tolerance": {
+          "type": "boolean"
+        },
+        "binding_sequence_complete": {
+          "type": "boolean"
+        },
+        "coordinate_mask_opened": {
+          "type": "boolean"
+        },
+        "full_operator_not_claimed": {
+          "type": "boolean"
+        },
+        "krylov_actions_finite": {
+          "type": "boolean"
+        },
+        "native_edge_clone_closure": {
+          "type": "boolean"
+        },
+        "reduced_operator_labeled": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "binding_sequence_complete",
+        "native_edge_clone_closure",
+        "coordinate_mask_opened",
+        "krylov_actions_finite",
+        "audit_population_complete",
+        "basis_orthogonality_within_tolerance",
+        "reduced_operator_labeled",
+        "full_operator_not_claimed"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "edge_sha256": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "full_operator_theorem_claimed": {
+      "const": false
+    },
+    "hessenberg": {
+      "items": {
+        "items": {
+          "type": "number"
+        },
+        "minItems": 0,
+        "type": "array"
+      },
+      "minItems": 0,
+      "type": "array"
+    },
+    "krylov_actions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "arnoldi_residual_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "direction_class": {
+            "const": "krylov"
+          },
+          "direction_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "endpoint_row_response_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "input_state_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "output_state_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "row_response_gain": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_row_response_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          }
+        },
+        "required": [
+          "direction_class",
+          "direction_index",
+          "input_state_norm",
+          "output_state_norm",
+          "source_row_response_norm",
+          "endpoint_row_response_norm",
+          "row_response_gain",
+          "arnoldi_residual_norm"
+        ],
+        "title": "One lifted block Krylov action",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "krylov_breakdown": {
+      "type": "boolean"
+    },
+    "mask_response_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "maximum_audit_omitted_response": {
+      "minimum": 0.0,
+      "type": "number"
+    },
+    "maximum_audit_row_gain": {
+      "minimum": 0.0,
+      "type": "number"
+    },
+    "orthogonal_audits": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "direction_class": {
+            "const": "orthogonal-audit"
+          },
+          "direction_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "endpoint_row_response_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "input_state_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "omitted_state_response_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "output_state_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "row_response_gain": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_row_response_norm": {
+            "minimum": 0.0,
+            "type": "number"
+          }
+        },
+        "required": [
+          "direction_class",
+          "direction_index",
+          "input_state_norm",
+          "output_state_norm",
+          "source_row_response_norm",
+          "endpoint_row_response_norm",
+          "row_response_gain",
+          "omitted_state_response_norm"
+        ],
+        "title": "One independent lifted block audit",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "reduced_operator_kind": {
+      "const": "euclidean-arnoldi-diagnostic"
+    },
+    "reduced_rank_achieved": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "reduced_rank_requested": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "reduced_singular_values": {
+      "items": {
+        "minimum": 0.0,
+        "type": "number"
+      },
+      "minItems": 0,
+      "type": "array"
+    },
+    "resources": {
+      "additionalProperties": false,
+      "properties": {
+        "action_wall_seconds": {
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "peak_gpu_reserved_bytes": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "action_wall_seconds",
+        "peak_gpu_reserved_bytes"
+      ],
+      "title": "Reduced block resources",
+      "type": "object"
+    },
+    "ritz_modulus": {
+      "items": {
+        "minimum": 0.0,
+        "type": "number"
+      },
+      "minItems": 0,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-block-response-v1"
+    },
+    "smooth_full_state_eligible": {
+      "type": "boolean"
+    },
+    "state_scope": {
+      "const": "parameters-first-moments-second-moments"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "unresolved_coordinate_count": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "checkpoint_binding_sha256",
+    "edge_sha256",
+    "mask_response_sha256",
+    "block_start",
+    "block_length",
+    "state_scope",
+    "reduced_operator_kind",
+    "reduced_rank_requested",
+    "reduced_rank_achieved",
+    "krylov_breakdown",
+    "hessenberg",
+    "ritz_modulus",
+    "reduced_singular_values",
+    "krylov_actions",
+    "orthogonal_audits",
+    "maximum_audit_omitted_response",
+    "maximum_audit_row_gain",
+    "smooth_full_state_eligible",
+    "unresolved_coordinate_count",
+    "basis_maximum_abs_inner_product",
+    "resources",
+    "full_operator_theorem_claimed",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Matrix-free reduced lifted AdamW block response",
+  "type": "object"
+}

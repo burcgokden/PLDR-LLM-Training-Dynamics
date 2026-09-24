@@ -1,0 +1,120 @@
+{
+  "architecture": {
+    "decoder_layers": 3,
+    "head_width": 64,
+    "heads_per_layer": 4,
+    "maps_per_layer": 96,
+    "registered_contexts": 24,
+    "registered_maps": 288,
+    "row_map_residual_units": 8
+  },
+  "campaign_id": "pldr-layer-resolved-cocycle-confirmation-v1",
+  "design_sha256": "433b526fc11bed6586c5351039c667198b1fcaeddab8ff9bc3c2f73be1b4ec7a",
+  "execution_policy": {
+    "all_adverse_outcomes_reported": true,
+    "committed_clean_source_required": true,
+    "construction_prediction_precedes_validation": true,
+    "contexts_and_heads_are_within_layer_subsamples": true,
+    "identity_checks_are_regressions_not_scientific_decisions": true,
+    "long_branches_not_authorized": true,
+    "same_device_scientific_comparisons": true,
+    "source_snapshot_must_match_commit": true
+  },
+  "gate_operator_policy": {
+    "autodiff_crosscheck_scope": "implemented-adamw-composition-given-exact-loss-gradient-and-hessian",
+    "autodiff_relative_tolerance": 2e-09,
+    "clipping_boundary_tolerance": 1e-10,
+    "dimensionless_probe_amplitudes": [
+      0.0009765625,
+      0.00048828125
+    ],
+    "direction_classes": [
+      "gate",
+      "first_moment",
+      "second_moment",
+      "mixed"
+    ],
+    "direction_seed": 48101,
+    "hessian_construction": "weighted-basiswise-forward-over-reverse",
+    "maximum_smaller_probe_relative_residual": 0.01,
+    "minimum_probe_residual_reduction": 1.25,
+    "scaled_invariance_defect_zero_tolerance": 1e-08
+  },
+  "gate_operator_step": 4096,
+  "intervention_arms": [
+    "native",
+    "noop_restamp",
+    "one_ulp_placebo",
+    "gate_update_removed",
+    "upstream_update_removed",
+    "joint_row_program_update_removed",
+    "gate_decay_only",
+    "gate_adaptive_only"
+  ],
+  "intervention_policy": {
+    "energy_effect_floor": 1e-12,
+    "horizon_updates": 1,
+    "placebo_coordinate": 0,
+    "placebo_direction": "positive_float32_nextafter",
+    "placebo_fraction_of_treatment": 0.1,
+    "placebo_parameter": "selected-layer-final-gate-weight"
+  },
+  "intervention_step": 4096,
+  "perturbation_policy": {
+    "construction_amplitude": 0.000244140625,
+    "direction_scope": "one-layer-upstream-row-program-parameters",
+    "direction_seed": 48211,
+    "maximum_validation_relative_residual": 0.25,
+    "normalization": "global-euclidean-relative-to-parameter-norm",
+    "prediction": "centered-central-secant-at-half-amplitude",
+    "validation_amplitude_fraction": 0.5
+  },
+  "plga_policy": {
+    "defect_zero_tolerance": 1e-12,
+    "regularization_constant": 1e-09,
+    "row_preservation_tolerance": 1e-10
+  },
+  "precision_steps": [
+    16384,
+    65536
+  ],
+  "resolution_policy": {
+    "arithmetic_safety_factor": 8.0,
+    "finite_registry_energy_threshold": 0.001,
+    "float64_factorization_relative_tolerance": 1e-12,
+    "relative_denominator_floor": 1e-30
+  },
+  "resource_budget": {
+    "hard_aggregate_gpu_hours": 3.0,
+    "persistent_output_cap_bytes": 2147483648,
+    "process_reserved_memory_cap_bytes": 21474836480,
+    "working_aggregate_gpu_hours": 2.0
+  },
+  "schema_version": "pldr-layer-cocycle-design-v1",
+  "trajectories": [
+    {
+      "device": "cuda:0",
+      "label": "A",
+      "name": "construction-seed10444",
+      "order": "construction-chunk-order.npy",
+      "role": "construction",
+      "seed": 10444
+    },
+    {
+      "device": "cuda:0",
+      "label": "B",
+      "name": "transfer-seed11444",
+      "order": "transfer11444-chunk-order.npy",
+      "role": "heldout",
+      "seed": 11444
+    },
+    {
+      "device": "cuda:1",
+      "label": "C",
+      "name": "transfer-seed12444",
+      "order": "transfer12444-chunk-order.npy",
+      "role": "heldout",
+      "seed": 12444
+    }
+  ]
+}

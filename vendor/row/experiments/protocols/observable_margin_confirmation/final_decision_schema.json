@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "algebra_is_prerequisite_not_scientific_statement": true,
+  "required_statements": [
+    "S1_positive_heldout_margin",
+    "S2_nonvacuous_frozen_energy_and_diameter_bound",
+    "S3_causal_intervention_response",
+    "S4_fresh_seed_transfer_without_enlargement",
+    "S5_nonempty_centered_logit_plga_margin"
+  ],
+  "robustness_scientific_gate": false,
+  "schema_version": "pldr-observable-margin-final-decision-v1"
+}

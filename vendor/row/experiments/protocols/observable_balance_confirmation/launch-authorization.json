@@ -1,0 +1,16 @@
+{
+  "authorized": true,
+  "campaign_id": "pldr-finite-increment-observable-balance-v1",
+  "design_sha256": "e453570dc957e4422edd849f8f18d8224976d15e11f272c8a2ff8a0de59927a5",
+  "execution_command": [
+    "python3",
+    "scripts/execute_observable_balance_plan.py",
+    "--bundle",
+    "/pldr-data/row/rev50/finite-increment-observable-balance",
+    "--all"
+  ],
+  "gate_control_qualification_sha256": "cccf5e53a68207abc4774d2e3132868c48e814de4cd13435e998a19931582e95",
+  "qualification_sha256": "6eba1ea86bde4361ebb917aaa722537d08bc44ffd5258554c9387df4cd91a0aa",
+  "schema_version": "pldr-observable-balance-launch-authorization-v1",
+  "source_code_commit": "eab18471d1f1cfba22bdc4023347530c52ab891d"
+}

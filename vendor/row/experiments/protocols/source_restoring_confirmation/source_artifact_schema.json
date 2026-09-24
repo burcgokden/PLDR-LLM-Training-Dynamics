@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_rows",
+    "gate_velocity_rows",
+    "shape_velocity_rows",
+    "input_velocity_rows",
+    "metadata_json"
+  ],
+  "title": "Source row-map JVP artifact",
+  "type": "object"
+}

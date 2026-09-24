@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checkpoint_binding_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "all_responses_finite": {
+          "type": "boolean"
+        },
+        "coordinate_partition_exhaustive": {
+          "type": "boolean"
+        },
+        "no_division_before_mask": {
+          "type": "boolean"
+        },
+        "response_population_complete": {
+          "type": "boolean"
+        },
+        "structural_proofs_bound": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "coordinate_partition_exhaustive",
+        "structural_proofs_bound",
+        "no_division_before_mask",
+        "response_population_complete",
+        "all_responses_finite"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "coordinate_tensors": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "active_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "coordinate_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "structural_proof_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "structurally_inactive_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "structurally_inactive_indices": {
+            "items": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "minItems": 0,
+            "type": "array"
+          },
+          "unresolved_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "zero_second_moment_indices": {
+            "items": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "minItems": 0,
+            "type": "array"
+          },
+          "zero_second_moment_indices_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "coordinate_count",
+          "active_count",
+          "structurally_inactive_count",
+          "unresolved_count",
+          "zero_second_moment_indices",
+          "structurally_inactive_indices",
+          "zero_second_moment_indices_sha256",
+          "structural_proof_sha256"
+        ],
+        "title": "AdamW coordinate partition for one tensor",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "responses": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "context": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "direction_class": {
+            "enum": [
+              "energy-gradient",
+              "random-audit",
+              "krylov"
+            ]
+          },
+          "direction_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "finite": {
+            "type": "boolean"
+          },
+          "head": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "layer": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "parameter_response": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "row_response": {
+            "minimum": 0.0,
+            "type": "number"
+          }
+        },
+        "required": [
+          "map_id",
+          "context",
+          "layer",
+          "head",
+          "direction_id",
+          "direction_class",
+          "parameter_response",
+          "row_response",
+          "finite"
+        ],
+        "title": "One row-observable response",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-mask-response-v1"
+    },
+    "smooth_full_state_eligible": {
+      "type": "boolean"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "unresolved_coordinate_count": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "checkpoint_binding_sha256",
+    "coordinate_tensors",
+    "responses",
+    "unresolved_coordinate_count",
+    "smooth_full_state_eligible",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "AdamW coordinate mask and one-update response",
+  "type": "object"
+}

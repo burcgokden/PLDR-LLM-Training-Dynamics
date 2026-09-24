@@ -1,0 +1,235 @@
+{
+  "analysis_outputs": [
+    "reports/final-analysis.json",
+    "reports/confirmation_results.tex",
+    "reports/EVIDENCE.sha256"
+  ],
+  "campaign_id": "pldr-layer-resolved-cocycle-confirmation-v1",
+  "gate_operator": [
+    {
+      "layer": 0,
+      "path": "records/gate-operator/A-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 1,
+      "path": "records/gate-operator/A-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 2,
+      "path": "records/gate-operator/A-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 0,
+      "path": "records/gate-operator/B-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 1,
+      "path": "records/gate-operator/B-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 2,
+      "path": "records/gate-operator/B-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 0,
+      "path": "records/gate-operator/C-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 1,
+      "path": "records/gate-operator/C-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 2,
+      "path": "records/gate-operator/C-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    }
+  ],
+  "intervention": [
+    {
+      "layer": 0,
+      "path": "records/intervention/A-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 1,
+      "path": "records/intervention/A-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 2,
+      "path": "records/intervention/A-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "A"
+    },
+    {
+      "layer": 0,
+      "path": "records/intervention/B-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 1,
+      "path": "records/intervention/B-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 2,
+      "path": "records/intervention/B-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "B"
+    },
+    {
+      "layer": 0,
+      "path": "records/intervention/C-layer0-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 1,
+      "path": "records/intervention/C-layer1-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    },
+    {
+      "layer": 2,
+      "path": "records/intervention/C-layer2-step4096.npz",
+      "step": 4096,
+      "trajectory": "C"
+    }
+  ],
+  "perturbation": [
+    {
+      "layer": 0,
+      "prediction_path": "records/perturbation/A-layer0-step4096-prediction.npz",
+      "step": 4096,
+      "trajectory": "A",
+      "validation_path": "records/perturbation/A-layer0-step4096.npz"
+    },
+    {
+      "layer": 1,
+      "prediction_path": "records/perturbation/A-layer1-step4096-prediction.npz",
+      "step": 4096,
+      "trajectory": "A",
+      "validation_path": "records/perturbation/A-layer1-step4096.npz"
+    },
+    {
+      "layer": 2,
+      "prediction_path": "records/perturbation/A-layer2-step4096-prediction.npz",
+      "step": 4096,
+      "trajectory": "A",
+      "validation_path": "records/perturbation/A-layer2-step4096.npz"
+    },
+    {
+      "layer": 0,
+      "prediction_path": "records/perturbation/B-layer0-step4096-prediction.npz",
+      "step": 4096,
+      "trajectory": "B",
+      "validation_path": "records/perturbation/B-layer0-step4096.npz"
+    },
+    {
+      "layer": 1,
+      "prediction_path": "records/perturbation/B-layer1-step4096-prediction.npz",
+      "step": 4096,
+      "trajectory": "B",
+      "validation_path": "records/perturbation/B-layer1-step4096.npz"
+    },
+    {
+      "layer": 2,
+      "prediction_path": "records/perturbation/B-layer2-step4096-prediction.npz",
+      "step": 4096,
+      "trajectory": "B",
+      "validation_path": "records/perturbation/B-layer2-step4096.npz"
+    },
+    {
+      "layer": 0,
+      "prediction_path": "records/perturbation/C-layer0-step4096-prediction.npz",
+      "step": 4096,
+      "trajectory": "C",
+      "validation_path": "records/perturbation/C-layer0-step4096.npz"
+    },
+    {
+      "layer": 1,
+      "prediction_path": "records/perturbation/C-layer1-step4096-prediction.npz",
+      "step": 4096,
+      "trajectory": "C",
+      "validation_path": "records/perturbation/C-layer1-step4096.npz"
+    },
+    {
+      "layer": 2,
+      "prediction_path": "records/perturbation/C-layer2-step4096-prediction.npz",
+      "step": 4096,
+      "trajectory": "C",
+      "validation_path": "records/perturbation/C-layer2-step4096.npz"
+    }
+  ],
+  "plga": [
+    {
+      "path": "records/plga/A-step65536.npz",
+      "step": 65536,
+      "trajectory": "A"
+    },
+    {
+      "path": "records/plga/B-step65536.npz",
+      "step": 65536,
+      "trajectory": "B"
+    },
+    {
+      "path": "records/plga/C-step65536.npz",
+      "step": 65536,
+      "trajectory": "C"
+    }
+  ],
+  "precision": [
+    {
+      "path": "records/precision/A-step16384.npz",
+      "step": 16384,
+      "trajectory": "A"
+    },
+    {
+      "path": "records/precision/A-step65536.npz",
+      "step": 65536,
+      "trajectory": "A"
+    },
+    {
+      "path": "records/precision/B-step16384.npz",
+      "step": 16384,
+      "trajectory": "B"
+    },
+    {
+      "path": "records/precision/B-step65536.npz",
+      "step": 65536,
+      "trajectory": "B"
+    },
+    {
+      "path": "records/precision/C-step16384.npz",
+      "step": 16384,
+      "trajectory": "C"
+    },
+    {
+      "path": "records/precision/C-step65536.npz",
+      "step": 65536,
+      "trajectory": "C"
+    }
+  ],
+  "schema_version": "pldr-layer-cocycle-record-inventory-v1"
+}

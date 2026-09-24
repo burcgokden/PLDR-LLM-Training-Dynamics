@@ -1,0 +1,19 @@
+{
+  "archive": "/pldr-data/model/categorical-observation-deposit-context-risk-20260915.tar",
+  "archive_bytes": 5269411840,
+  "archive_sha256": "d2faf21848e51774801ac243de4fd6cfe1371046b37b1e45822b7a1cb9211a1a",
+  "checks": {
+    "portable-context-risk.json": "8fa40c07cae58b613f0da59d61b62944c9eba91b0c280fe0b98de828bce76ece",
+    "portable-verification.json": "9ef7cc0319836f4394ca4ca689ac2c6d4ae265280e2679a0df5f94150783c9fe"
+  },
+  "clean_extraction_reproduced": true,
+  "empty_pythonpath": true,
+  "index_sha256": "17e3f28b95e694f1bd0caf86f8881531471b289abde902bfeb4aa238a051b1da",
+  "members": 479,
+  "native_forward_calls": 0,
+  "public_availability": false,
+  "schema": "local-observation-deposit-v1",
+  "source_sha256": "33376ac1c36717fd6ffecaab789cb6d11da581deea6d4e67a88815073c6f3b52",
+  "status": "passed",
+  "training_updates": 0
+}

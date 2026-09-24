@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-source-resolved-row-map-collapse-v1"
+    },
+    "checks": {
+      "additionalProperties": false,
+      "properties": {
+        "all_values_finite": {
+          "type": "boolean"
+        },
+        "checkpoint_links_exact": {
+          "type": "boolean"
+        },
+        "map_population_complete": {
+          "type": "boolean"
+        },
+        "paired_batches_equal": {
+          "type": "boolean"
+        },
+        "paired_rng_equal": {
+          "type": "boolean"
+        },
+        "source_prediction_precedes_native": {
+          "type": "boolean"
+        },
+        "source_step_matches_policy_window": {
+          "type": "boolean"
+        },
+        "windows_frozen_before_interventions": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "windows_frozen_before_interventions",
+        "source_step_matches_policy_window",
+        "paired_batches_equal",
+        "paired_rng_equal",
+        "source_prediction_precedes_native",
+        "checkpoint_links_exact",
+        "map_population_complete",
+        "all_values_finite"
+      ],
+      "title": "Derived validity checks",
+      "type": "object"
+    },
+    "construction_policy_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "endpoint_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "native_opened_at_ns": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "prediction_created_at_ns": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "prediction_relative_tolerance": {
+      "minimum": 0.0,
+      "type": "number"
+    },
+    "prediction_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "context": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "control_checkpoint_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "head": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "intervention": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "intervention_checkpoint_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "layer": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "native_energy_change": {
+            "type": "number"
+          },
+          "prediction_residual": {
+            "type": "number"
+          },
+          "relative_prediction_residual": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_predicted_energy_change": {
+            "type": "number"
+          },
+          "window": {
+            "enum": [
+              "pre-onset",
+              "onset",
+              "late"
+            ]
+          }
+        },
+        "required": [
+          "map_id",
+          "context",
+          "layer",
+          "head",
+          "window",
+          "intervention",
+          "source_predicted_energy_change",
+          "native_energy_change",
+          "prediction_residual",
+          "relative_prediction_residual",
+          "control_checkpoint_sha256",
+          "intervention_checkpoint_sha256"
+        ],
+        "title": "One paired intervention response",
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "pldr-source-resolved-intervention-v1"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "window_updates": {
+      "additionalProperties": false,
+      "properties": {
+        "late": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "onset": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "pre-onset": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "pre-onset",
+        "onset",
+        "late"
+      ],
+      "title": "Frozen intervention windows",
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "construction_policy_sha256",
+    "prediction_sha256",
+    "prediction_created_at_ns",
+    "native_opened_at_ns",
+    "source_step",
+    "endpoint_step",
+    "prediction_relative_tolerance",
+    "window_updates",
+    "records",
+    "checks",
+    "technical_valid"
+  ],
+  "title": "Controlled intervention evidence",
+  "type": "object"
+}

@@ -1,0 +1,36 @@
+{
+  "analyzer_sha256": "a49311e1631b75a5c044f75bfd59a515c9d6a6f3ad1a822d5bad895d8d4b7b19",
+  "decision_source": "live-producer sufficient tensors and complete v3 states recomputed by the bound analyzer; caller arrays forbidden",
+  "dependencies": [
+    "Q"
+  ],
+  "fresh_execution": "Width 64, depth 4, four heads, 6144 updates and four landmarks",
+  "gpu_hour_cap": 0.75,
+  "purpose": "Bind and fresh-process replay model tensors, Adam moments, clocks, realized masks, registries, RNG state, and next minibatch.",
+  "raw_schema": "pldr-t-raw-observations-v3",
+  "required_artifact_roles": [
+    "stage_protocol",
+    "raw_observations",
+    "source_complete_state",
+    "target_complete_state",
+    "partition_manifest",
+    "resource_metadata"
+  ],
+  "required_checks": [
+    "live_producer_bound",
+    "primary_seed_bound",
+    "architecture_and_updates",
+    "four_primary_landmarks",
+    "complete_checkpoint_schema",
+    "optimizer_clock_consistent",
+    "scheduler_coefficients_recomputed",
+    "fresh_process_tensor_replay",
+    "data_cursor_advances"
+  ],
+  "schema_version": "pldr-collapse-stage-protocol-v3",
+  "stage": "T",
+  "time_semantics": [
+    "FINITE_IMPLEMENTED_SCHEDULE"
+  ],
+  "title": "Complete-state training and restart"
+}

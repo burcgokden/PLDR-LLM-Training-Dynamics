@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "application": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "campaign_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "code_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "construction_request_sha256": {
+      "items": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "direct_conversion": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "intervals": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "lock_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "partition_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "path_metrics": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "protocol_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "radii": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "schedule": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "pldr-prediction-lock-v4"
+    },
+    "selected_edges": {
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "code_sha256",
+    "protocol_sha256",
+    "partition_sha256",
+    "construction_request_sha256",
+    "schedule",
+    "selected_edges",
+    "intervals",
+    "path_metrics",
+    "radii",
+    "direct_conversion",
+    "application",
+    "lock_sha256"
+  ],
+  "title": "PLDR comprehensive-collapse numeric prediction lock",
+  "type": "object"
+}

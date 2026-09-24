@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "source_prediction_sha256",
+    "source_checkpoint_sha256",
+    "native_checkpoint_path",
+    "native_checkpoint_sha256",
+    "opened_at_ns",
+    "observations"
+  ],
+  "title": "Later native endpoint observations bound to a sealed source",
+  "type": "object"
+}

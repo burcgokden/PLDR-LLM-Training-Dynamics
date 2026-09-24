@@ -1,0 +1,41 @@
+{
+  "analyzer": "experiments/analysis/comprehensive_confirmation_analysis.py",
+  "producer": "experiments/confirm/comprehensive_live_producers.py",
+  "raw_required": [
+    "dynamics",
+    "snapshots",
+    "prediction_lock",
+    "normal_metadata",
+    "normal_left_basis",
+    "singular_values",
+    "normal_actions",
+    "direct_trajectory"
+  ],
+  "schema_version": "pldr-comprehensive-collapse-protocol-v4",
+  "stage": {
+    "decision_source": "The analyzer resolves the sealed request, checkpoints, raw archive, producer and analyzer code, partition, resource record, challenge seed, and prediction lock, then recomputes the decision.",
+    "dependencies": [
+      "N"
+    ],
+    "gpu_hour_cap": 0.15,
+    "id": "D",
+    "placement": "early and late windows split across both GPUs",
+    "primary_outputs": [
+      "sealed scalar three-block AdamW snapshot challenges",
+      "analyzer-owned successor differentiation",
+      "SVD-linearized normal coordinates",
+      "two-block scheduled metrics",
+      "variable radii and construction-locked direct conversion"
+    ],
+    "required_checks": [
+      "live_successor_matches_jvp",
+      "path_metric_inequalities_hold",
+      "metric_conditioning_within_lock",
+      "radius_images_are_invariant",
+      "normal_trajectory_enclosed",
+      "direct_trajectory_enclosed",
+      "transient_expansion_charged_at_block_boundary"
+    ],
+    "title": "Scheduled-metric trajectory enclosure"
+  }
+}

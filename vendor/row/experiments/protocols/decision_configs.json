@@ -1,0 +1,212 @@
+{
+ "e5": {
+  "rule": "e5-study",
+  "version": "3.1.0",
+  "attempts": [
+   {
+    "rule": "e5",
+    "version": "3.1.0",
+    "attempt_id": "e5-primary",
+    "seed_block": "e5-primary-fresh",
+    "arms": [
+     "captured",
+     "separated",
+     "gateheld"
+    ],
+    "seeds_per_arm": 3,
+    "predictions": {
+     "captured": "quiet-tail",
+     "separated": "sep-window",
+     "gateheld": "unsep-window"
+    },
+    "raw_fields": [
+     "word",
+     "act",
+     "probe_steps",
+     "rowmap_samples",
+     "normalization"
+    ],
+    "forbidden_summaries": [
+     "entry",
+     "collapsed",
+     "collapse_step",
+     "J"
+    ],
+    "cycle_fields": [
+     "r_min",
+     "q_step",
+     "m_cyc",
+     "t_cyc",
+     "n_act"
+    ],
+    "burn_frac": 0.1,
+    "min_persistence_probes": 3,
+    "J_crit": 0.1,
+    "entry_bound": 3972,
+    "q_step": 0.999,
+    "m_quantum": 0.010000000000000002,
+    "thm_tier": {
+     "r_min": 0.5168486499657339,
+     "floor": 0.1428048488159369,
+     "prefix_min": 0.07380849331907773,
+     "cycle_avg": 0.10837608156456105,
+     "licensure": "time-average",
+     "theorem_entry_bound": 3583,
+     "raw_endpoint_observation_delay": 389,
+     "raw_endpoint_noise": 0.0035355339059327372
+    }
+   },
+   {
+    "rule": "e5",
+    "version": "3.1.0",
+    "attempt_id": "e5-censoring-repeat",
+    "seed_block": "e5-repeat-fresh",
+    "arms": [
+     "captured",
+     "separated",
+     "gateheld"
+    ],
+    "seeds_per_arm": 6,
+    "predictions": {
+     "captured": "quiet-tail",
+     "separated": "sep-window",
+     "gateheld": "unsep-window"
+    },
+    "raw_fields": [
+     "word",
+     "act",
+     "probe_steps",
+     "rowmap_samples",
+     "normalization"
+    ],
+    "forbidden_summaries": [
+     "entry",
+     "collapsed",
+     "collapse_step",
+     "J"
+    ],
+    "cycle_fields": [
+     "r_min",
+     "q_step",
+     "m_cyc",
+     "t_cyc",
+     "n_act"
+    ],
+    "burn_frac": 0.1,
+    "min_persistence_probes": 3,
+    "J_crit": 0.1,
+    "entry_bound": 3972,
+    "q_step": 0.999,
+    "m_quantum": 0.010000000000000002,
+    "thm_tier": {
+     "r_min": 0.5168486499657339,
+     "floor": 0.1428048488159369,
+     "prefix_min": 0.07380849331907773,
+     "cycle_avg": 0.10837608156456105,
+     "licensure": "time-average",
+     "theorem_entry_bound": 3583,
+     "raw_endpoint_observation_delay": 389,
+     "raw_endpoint_noise": 0.0035355339059327372
+    }
+   }
+  ],
+  "repeat_only_after": "INDETERMINATE",
+  "second_indeterminate": "INDETERMINATE"
+ },
+ "e6": {
+  "rule": "e6-study",
+  "version": "3.1.0",
+  "study_alpha": 0.05,
+  "alpha_sum": 0.05,
+  "attempts": [
+   {
+    "rule": "e6",
+    "version": "3.1.0",
+    "attempt_id": "e6-primary",
+    "seed_block": "e6-primary-fresh",
+    "n_cells": 4,
+    "seeds_per_cell": 10,
+    "cell_majority": 7,
+    "cells_required": 4,
+    "alpha": 0.025,
+    "total_threshold": 33,
+    "J_crit": 0.1,
+    "burn_frac": 0.1,
+    "min_persistence_probes": 3,
+    "raw_fields": [
+     "word",
+     "act",
+     "probe_steps",
+     "rowmap_samples",
+     "normalization"
+    ],
+    "forbidden_summaries": [
+     "entry",
+     "collapsed",
+     "collapse_step",
+     "J"
+    ],
+    "calibration": {
+     "threshold": 33,
+     "worst": {
+      "worst": 0.014689708983855389,
+      "delta": 0.25,
+      "w": 0.94,
+      "max_adjacent_step": 0.0025296666764833033,
+      "n_members": 1071
+     },
+     "corners": {
+      "shared_at_K": 0.0107421875,
+      "shared_at_Kminus1": 0.0546875,
+      "independent_at_K": 1.7229423065145966e-05
+     }
+    }
+   },
+   {
+    "rule": "e6",
+    "version": "3.1.0",
+    "attempt_id": "e6-censoring-repeat",
+    "seed_block": "e6-repeat-fresh",
+    "n_cells": 4,
+    "seeds_per_cell": 12,
+    "cell_majority": 8,
+    "cells_required": 4,
+    "alpha": 0.025,
+    "total_threshold": 38,
+    "J_crit": 0.1,
+    "burn_frac": 0.1,
+    "min_persistence_probes": 3,
+    "raw_fields": [
+     "word",
+     "act",
+     "probe_steps",
+     "rowmap_samples",
+     "normalization"
+    ],
+    "forbidden_summaries": [
+     "entry",
+     "collapsed",
+     "collapse_step",
+     "J"
+    ],
+    "calibration": {
+     "threshold": 38,
+     "worst": {
+      "worst": 0.01941241507368547,
+      "delta": 0.25,
+      "w": 0.98,
+      "max_adjacent_step": 0.003702725540689882,
+      "n_members": 1071
+     },
+     "corners": {
+      "shared_at_K": 0.019287109375,
+      "shared_at_Kminus1": 0.019287109375,
+      "independent_at_K": 2.4899027447844446e-05
+     }
+    }
+   }
+  ],
+  "repeat_only_after": "INDETERMINATE",
+  "second_indeterminate": "INDETERMINATE"
+ }
+}

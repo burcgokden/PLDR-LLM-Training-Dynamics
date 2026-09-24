@@ -1,0 +1,92 @@
+{
+  "schema_version": "pldr-row-rg-four-trajectory-run-v3",
+  "run_id": "pldr-refinedweb-byte-rgmap-v3-conditioned-20260902",
+  "devices": [0, 1],
+  "producer_timeout_seconds": 14400,
+  "protocol_path": "confirmation-protocol-v3.json",
+  "qualification": {
+    "path": "/pldr-data/rg/protocol-v3/qualification-v3-04.json",
+    "file_sha256": "daaf69245b6374d861c6fdfc9d5a5072913fef9e592940aed0246c71e56ed250",
+    "record_sha256": "f3e4ae60037f9bc490b1aa8b1bf5190cacd7006ec83109dd05cb4f7e9138b416"
+  },
+  "trajectories": [
+    {
+      "trajectory_id": "rgv3-t0",
+      "wave": 0,
+      "device": 0,
+      "seed": 202609300,
+      "train_document_offset": 7000
+    },
+    {
+      "trajectory_id": "rgv3-t1",
+      "wave": 0,
+      "device": 1,
+      "seed": 202609301,
+      "train_document_offset": 36000
+    },
+    {
+      "trajectory_id": "rgv3-t2",
+      "wave": 1,
+      "device": 0,
+      "seed": 202609302,
+      "train_document_offset": 66000
+    },
+    {
+      "trajectory_id": "rgv3-t3",
+      "wave": 1,
+      "device": 1,
+      "seed": 202609303,
+      "train_document_offset": 95000
+    }
+  ],
+  "producer_command": [
+    "/usr/bin/python3",
+    "/pldr-code/rg/scripts/pldr_energy_producer_v3.py",
+    "--logical-device",
+    "cuda:0",
+    "--physical-device",
+    "{device}",
+    "--trajectory-id",
+    "{trajectory_id}",
+    "--seed",
+    "{seed}",
+    "--output",
+    "{output}",
+    "--metrics-output",
+    "{metrics}",
+    "--metadata-output",
+    "{metadata}",
+    "--checkpoint-dir",
+    "{checkpoint_dir}",
+    "--protocol",
+    "{protocol}",
+    "--code-commit",
+    "{code_commit}",
+    "--reference-experiments",
+    "/pldr-code/row/experiments",
+    "--dataset-shard",
+    "/pldr-assets/refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c/falcon-refinedweb-train-00000-of-05518.arrow",
+    "--steps",
+    "196608",
+    "--layers",
+    "3",
+    "--heads",
+    "4",
+    "--dk",
+    "64",
+    "--contexts",
+    "4",
+    "--context-length",
+    "64",
+    "--batch-size",
+    "4",
+    "--learning-rate",
+    "0.001",
+    "--train-document-offset",
+    "{train_document_offset}",
+    "--probe-document-offset",
+    "140000",
+    "--max-sequence-length",
+    "128"
+  ]
+}

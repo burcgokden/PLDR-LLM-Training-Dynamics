@@ -1,0 +1,139 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {
+      "const": "pldr-mixed-row-map-collapse-v1"
+    },
+    "checkpoint_opened": {
+      "type": "boolean"
+    },
+    "checkpoint_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "comparison_device": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "data_order_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "endpoint_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "energy_envelope_closed": {
+      "type": "boolean"
+    },
+    "map_records": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "comparison_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "energy_slack": {
+            "type": "number"
+          },
+          "energy_upper": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "map_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "predeclared_radius": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "predicted_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "radius_slack": {
+            "type": "number"
+          },
+          "realized_radius": {
+            "minimum": 0.0,
+            "type": "number"
+          },
+          "source_energy": {
+            "minimum": 0.0,
+            "type": "number"
+          }
+        },
+        "required": [
+          "map_id",
+          "source_energy",
+          "predicted_energy",
+          "comparison_energy",
+          "realized_radius",
+          "predeclared_radius",
+          "energy_upper",
+          "energy_slack",
+          "radius_slack"
+        ],
+        "title": "One predeclared-radius map result",
+        "type": "object"
+      },
+      "maxItems": 288,
+      "minItems": 288,
+      "type": "array"
+    },
+    "population_complete": {
+      "type": "boolean"
+    },
+    "predeclared_radius": {
+      "minimum": 0.0,
+      "type": "number"
+    },
+    "prediction_device": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "radius_contract_closed": {
+      "type": "boolean"
+    },
+    "schema_version": {
+      "const": "pldr-source-frozen-radius-v1"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "source_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "technical_valid": {
+      "type": "boolean"
+    },
+    "trajectory": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "campaign_id",
+    "trajectory",
+    "seed",
+    "source_step",
+    "endpoint_step",
+    "checkpoint_sha256",
+    "data_order_sha256",
+    "prediction_device",
+    "comparison_device",
+    "predeclared_radius",
+    "map_records",
+    "checkpoint_opened",
+    "population_complete",
+    "radius_contract_closed",
+    "energy_envelope_closed",
+    "technical_valid"
+  ],
+  "title": "Source-frozen cross-arithmetic radius result",
+  "type": "object"
+}

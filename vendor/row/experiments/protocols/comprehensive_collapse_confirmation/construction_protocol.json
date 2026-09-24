@@ -1,0 +1,8 @@
+{
+  "purpose": "Content-address the construction-only numeric summary before any validation artifact is opened.",
+  "raw_required": [
+    "construction_summary"
+  ],
+  "schema_version": "pldr-comprehensive-collapse-protocol-v4",
+  "stage": "CONSTRUCTION"
+}
