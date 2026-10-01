@@ -1,0 +1,2 @@
+# Optional published-PDF destination check; evidence readers need only stdlib.
+pypdf==6.16.1

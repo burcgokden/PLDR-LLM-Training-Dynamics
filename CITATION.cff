@@ -1,8 +1,26 @@
 cff-version: 1.2.0
-message: "Please cite the accompanying monograph when using these scientific programs."
-title: "Training and Inference Dynamics of PLDR-LLMs: Row-Map Collapse, Renormalization, and Predictive Reduction"
+message: >-
+  Please cite the monograph below when using these scientific programs.
+  Also record the exact code revision and scientific manifest payload used.
+type: software
+title: PLDR-LLM-Training-Dynamics
 authors:
   - family-names: Gokden
     given-names: Burc
 url: "https://github.com/burcgokden/PLDR-LLM-Training-Dynamics"
 repository-code: "https://github.com/burcgokden/PLDR-LLM-Training-Dynamics"
+preferred-citation:
+  type: article
+  title: >-
+    Training and Inference Dynamics of PLDR-LLMs: Row-Map Collapse,
+    Renormalization, and Predictive Reduction
+  authors:
+    - family-names: Gokden
+      given-names: Burc
+  journal: arXiv
+  year: 2026
+  month: 9
+  date-released: '2026-09-28'
+  version: '1'
+  doi: 10.48550/arXiv.2609.34130
+  url: https://arxiv.org/abs/2609.34130v1

@@ -3,9 +3,10 @@
 Scientific code for **Training and Inference Dynamics of PLDR-LLMs: Row-Map
 Collapse, Renormalization, and Predictive Reduction**, by Burc Gokden.
 
-Code: https://github.com/burcgokden/PLDR-LLM-Training-Dynamics
-
-Numerical evidence: https://huggingface.co/datasets/fromthesky/pldr-llm-training-dynamics-data
+- **Monograph:** [arXiv Paper](https://arxiv.org/abs/2609.34130).
+- **Code:** [GitHub repository](https://github.com/burcgokden/PLDR-LLM-Training-Dynamics).
+- **Numerical evidence:** [Hugging Face dataset](https://huggingface.co/datasets/fromthesky/pldr-llm-training-dynamics-data).
+- **Citation:** [CITATION.cff](CITATION.cff).
 
 This repository provides selected Lean developments, scientific
 implementations, numerical reducers, experiment producers, protocols and tests.
@@ -68,6 +69,19 @@ controls, source-selection identities and uncertainty summaries. Local path
 metadata is normalized and exported records have new hashes. The coverage
 index distinguishes numerical summaries, printed table values and raw inputs
 that are not included. Integrity checking is not independent replication.
+
+The statement index also records destinations in the published arXiv v1 PDF,
+bound to that artifact's SHA-256. The
+[published-PDF check](docs/CHAPTERS.md#published-pdf-destinations) verifies all
+263 destinations and their PDF pages while retaining the original-build metadata.
+
+## Citation
+
+Use [CITATION.cff](CITATION.cff) or GitHub's **Cite this repository** menu
+for the preferred monograph citation, which identifies arXiv version 1.
+For reproducible code use, also record the exact Git commit and
+`scientific-manifest.json` payload SHA-256. Manuscript and software versions
+are separate identifiers.
 
 ## Scientific execution
 

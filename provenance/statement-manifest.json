@@ -188,13 +188,13 @@
       "checked_hypotheses": "Explicit declaration types in validation/lean-correspondence.log; No formal coverage is claimed.",
       "coverage": "No formal coverage is claimed.",
       "declarations": [],
-      "exclusions": "Piecewise Fréchet differentiability, the fundamental theorem on a partitioned segment, and the implemented AdamW parameter-source partition.",
+      "exclusions": "Piecewise Fr\u00e9chet differentiability, the fundamental theorem on a partitioned segment, and the implemented AdamW parameter-source partition.",
       "family": "row",
       "labels": [
         "row:thm:integrated-parameter-secant"
       ],
       "module": null,
-      "remaining_written_obligations": "Piecewise Fréchet differentiability, the fundamental theorem on a partitioned segment, and the implemented AdamW parameter-source partition.",
+      "remaining_written_obligations": "Piecewise Fr\u00e9chet differentiability, the fundamental theorem on a partitioned segment, and the implemented AdamW parameter-source partition.",
       "status": "not-formalized"
     },
     {
@@ -672,13 +672,13 @@
         "PldrLlmCurvatureSandpile.ObservationZeroFiber.square_observation_nonzero_at_one",
         "PldrLlmCurvatureSandpile.ObservationZeroFiber.derivative_kernel_does_not_imply_zero_fiber"
       ],
-      "exclusions": "Time-varying codomains, Fréchet derivatives in general normed spaces, and the physical row-map observation formula.",
+      "exclusions": "Time-varying codomains, Fr\u00e9chet derivatives in general normed spaces, and the physical row-map observation formula.",
       "family": "row",
       "labels": [
         "row:prop:nonlinear-zero-fiber-obstruction"
       ],
       "module": "vendor/row/PldrLlmCurvatureSandpile/ObservationZeroFiber.lean",
-      "remaining_written_obligations": "Time-varying codomains, Fréchet derivatives in general normed spaces, and the physical row-map observation formula.",
+      "remaining_written_obligations": "Time-varying codomains, Fr\u00e9chet derivatives in general normed spaces, and the physical row-map observation formula.",
       "status": "partial"
     },
     {
@@ -12598,6 +12598,14 @@
       "page": "46"
     }
   },
+  "published_pdf": {
+    "arxiv_id": "2609.34130v1",
+    "page_numbering": "one-based PDF page index",
+    "pages": 655,
+    "scope": "Numbered mathematical statements; original-build anchors and nested equation/clause metadata are retained separately.",
+    "sha256": "b1f5130df73c4e7ab0b3949f94707e557a71c0ef2aff5faa526f2b5a40259b0a",
+    "url": "https://arxiv.org/pdf/2609.34130v1"
+  },
   "schema": "pldr-statement-manifest-v2",
   "statements": [
     {
@@ -12626,6 +12634,8 @@
       ],
       "number": "2.1",
       "primary_label": "model:prop:regularity",
+      "published_anchor": "theorem.2.1",
+      "published_pdf_page": 23,
       "statement_labels": [
         "model:prop:regularity"
       ],
@@ -12663,6 +12673,8 @@
       ],
       "number": "3.1",
       "primary_label": "row:lem:row-quotient-geometry",
+      "published_anchor": "theorem.3.1",
+      "published_pdf_page": 28,
       "statement_labels": [
         "rg:lem:quotient-diameter",
         "row:lem:row-quotient-geometry"
@@ -12709,6 +12721,8 @@
       ],
       "number": "3.2",
       "primary_label": "row:thm:layer-resolved-gate-shape",
+      "published_anchor": "theorem.3.2",
+      "published_pdf_page": 28,
       "statement_labels": [
         "rg:thm:mixed-gate-shape",
         "row:thm:layer-resolved-gate-shape"
@@ -12742,6 +12756,8 @@
       ],
       "number": "3.3",
       "primary_label": "row:thm:block-orbit-criterion",
+      "published_anchor": "theorem.3.3",
+      "published_pdf_page": 29,
       "statement_labels": [
         "row:thm:block-orbit-criterion"
       ],
@@ -12765,6 +12781,8 @@
       "nested_labels": [],
       "number": "3.4",
       "primary_label": "row:thm:observer-stratum-partition",
+      "published_anchor": "theorem.3.4",
+      "published_pdf_page": 30,
       "statement_labels": [
         "row:thm:observer-stratum-partition"
       ],
@@ -12797,6 +12815,8 @@
       ],
       "number": "3.5",
       "primary_label": "rg:thm:observer-energy-enclosure",
+      "published_anchor": "theorem.3.5",
+      "published_pdf_page": 30,
       "statement_labels": [
         "rg:thm:observer-energy-enclosure"
       ],
@@ -12845,6 +12865,8 @@
       ],
       "number": "4.1",
       "primary_label": "row:thm:exact-direct-work-charge",
+      "published_anchor": "theorem.4.1",
+      "published_pdf_page": 32,
       "statement_labels": [
         "row:thm:exact-direct-work-charge"
       ],
@@ -12877,6 +12899,8 @@
       ],
       "number": "4.2",
       "primary_label": "row:thm:observer-safe-work-charge",
+      "published_anchor": "theorem.4.2",
+      "published_pdf_page": 33,
       "statement_labels": [
         "row:thm:observer-safe-work-charge"
       ],
@@ -12933,6 +12957,8 @@
       ],
       "number": "4.3",
       "primary_label": "row:thm:interval-certified-work-charge",
+      "published_anchor": "theorem.4.3",
+      "published_pdf_page": 33,
       "statement_labels": [
         "row:thm:interval-certified-work-charge"
       ],
@@ -12973,6 +12999,8 @@
       ],
       "number": "4.4",
       "primary_label": "row:prop:exact-gate-shape-secant",
+      "published_anchor": "theorem.4.4",
+      "published_pdf_page": 34,
       "statement_labels": [
         "row:prop:exact-gate-shape-secant"
       ],
@@ -13013,6 +13041,8 @@
       ],
       "number": "4.5",
       "primary_label": "row:prop:precision-resolved-collapse",
+      "published_anchor": "theorem.4.5",
+      "published_pdf_page": 35,
       "statement_labels": [
         "row:prop:precision-resolved-collapse"
       ],
@@ -13053,6 +13083,8 @@
       ],
       "number": "4.6",
       "primary_label": "row:thm:integrated-parameter-secant",
+      "published_anchor": "theorem.4.6",
+      "published_pdf_page": 35,
       "statement_labels": [
         "row:thm:integrated-parameter-secant"
       ],
@@ -13085,6 +13117,8 @@
       ],
       "number": "4.7",
       "primary_label": "row:thm:exact-paired-energy-contrast",
+      "published_anchor": "theorem.4.7",
+      "published_pdf_page": 36,
       "statement_labels": [
         "row:thm:exact-paired-energy-contrast"
       ],
@@ -13133,6 +13167,8 @@
       ],
       "number": "4.8",
       "primary_label": "row:thm:exact-radial-tangential-gain",
+      "published_anchor": "theorem.4.8",
+      "published_pdf_page": 36,
       "statement_labels": [
         "row:thm:exact-radial-tangential-gain"
       ],
@@ -13181,6 +13217,8 @@
       ],
       "number": "4.9",
       "primary_label": "row:prop:source-resolved-radial-ledger",
+      "published_anchor": "theorem.4.9",
+      "published_pdf_page": 37,
       "statement_labels": [
         "row:prop:source-resolved-radial-ledger"
       ],
@@ -13221,6 +13259,8 @@
       ],
       "number": "4.10",
       "primary_label": "row:thm:radial-tangential-paired-contrast",
+      "published_anchor": "theorem.4.10",
+      "published_pdf_page": 37,
       "statement_labels": [
         "row:thm:radial-tangential-paired-contrast"
       ],
@@ -13253,6 +13293,8 @@
       ],
       "number": "4.11",
       "primary_label": "row:cor:exact-positive-excursion-product",
+      "published_anchor": "theorem.4.11",
+      "published_pdf_page": 38,
       "statement_labels": [
         "row:cor:exact-positive-excursion-product"
       ],
@@ -13285,6 +13327,8 @@
       ],
       "number": "4.12",
       "primary_label": "row:thm:direct-energy-envelope",
+      "published_anchor": "theorem.4.12",
+      "published_pdf_page": 38,
       "statement_labels": [
         "row:thm:direct-energy-envelope"
       ],
@@ -13308,6 +13352,8 @@
       "nested_labels": [],
       "number": "4.13",
       "primary_label": "row:thm:summable-reopening-closure",
+      "published_anchor": "theorem.4.13",
+      "published_pdf_page": 39,
       "statement_labels": [
         "row:thm:summable-reopening-closure"
       ],
@@ -13340,6 +13386,8 @@
       ],
       "number": "4.14",
       "primary_label": "row:prop:direct-face-preservation",
+      "published_anchor": "theorem.4.14",
+      "published_pdf_page": 39,
       "statement_labels": [
         "row:prop:direct-face-preservation"
       ],
@@ -13388,6 +13436,8 @@
       ],
       "number": "4.15",
       "primary_label": "row:thm:exact-radial-face-cocycle",
+      "published_anchor": "theorem.4.15",
+      "published_pdf_page": 39,
       "statement_labels": [
         "row:thm:exact-radial-face-cocycle"
       ],
@@ -13428,6 +13478,8 @@
       ],
       "number": "4.16",
       "primary_label": "row:thm:intermittent-block-radial-face-closure",
+      "published_anchor": "theorem.4.16",
+      "published_pdf_page": 40,
       "statement_labels": [
         "row:thm:intermittent-block-radial-face-closure"
       ],
@@ -13470,6 +13522,8 @@
       ],
       "number": "4.17",
       "primary_label": "row:thm:comprehensive-direct-collapse",
+      "published_anchor": "theorem.4.17",
+      "published_pdf_page": 41,
       "statement_labels": [
         "row:thm:comprehensive-direct-collapse"
       ],
@@ -13502,6 +13556,8 @@
       ],
       "number": "4.18",
       "primary_label": "row:prop:cumulative-direct-ledger",
+      "published_anchor": "theorem.4.18",
+      "published_pdf_page": 41,
       "statement_labels": [
         "row:prop:cumulative-direct-ledger"
       ],
@@ -13525,6 +13581,8 @@
       "nested_labels": [],
       "number": "4.19",
       "primary_label": "row:thm:sufficient-direct-closures",
+      "published_anchor": "theorem.4.19",
+      "published_pdf_page": 41,
       "statement_labels": [
         "row:thm:sufficient-direct-closures"
       ],
@@ -13557,6 +13615,8 @@
       ],
       "number": "5.1",
       "primary_label": "row:thm:implemented-adamw-lift",
+      "published_anchor": "theorem.5.1",
+      "published_pdf_page": 43,
       "statement_labels": [
         "row:thm:implemented-adamw-lift"
       ],
@@ -13597,6 +13657,8 @@
       ],
       "number": "5.2",
       "primary_label": "row:prop:gate-zero-invariance",
+      "published_anchor": "theorem.5.2",
+      "published_pdf_page": 44,
       "statement_labels": [
         "row:prop:gate-zero-invariance"
       ],
@@ -13645,6 +13707,8 @@
       ],
       "number": "5.3",
       "primary_label": "row:thm:observable-complete-state",
+      "published_anchor": "theorem.5.3",
+      "published_pdf_page": 47,
       "statement_labels": [
         "row:thm:observable-complete-state"
       ],
@@ -13693,6 +13757,8 @@
       ],
       "number": "5.4",
       "primary_label": "row:thm:finite-increment-observable-balance",
+      "published_anchor": "theorem.5.4",
+      "published_pdf_page": 47,
       "statement_labels": [
         "row:thm:finite-increment-observable-balance"
       ],
@@ -13716,6 +13782,8 @@
       "nested_labels": [],
       "number": "5.5",
       "primary_label": "row:prop:stratified-itinerary",
+      "published_anchor": "theorem.5.5",
+      "published_pdf_page": 48,
       "statement_labels": [
         "row:prop:stratified-itinerary"
       ],
@@ -13739,6 +13807,8 @@
       "nested_labels": [],
       "number": "5.6",
       "primary_label": "row:thm:lower-metric-transfer",
+      "published_anchor": "theorem.5.6",
+      "published_pdf_page": 49,
       "statement_labels": [
         "row:thm:lower-metric-transfer"
       ],
@@ -13779,6 +13849,8 @@
       ],
       "number": "5.7",
       "primary_label": "row:thm:scheduled-tube-collapse",
+      "published_anchor": "theorem.5.7",
+      "published_pdf_page": 49,
       "statement_labels": [
         "row:thm:scheduled-tube-collapse"
       ],
@@ -13811,6 +13883,8 @@
       ],
       "number": "5.8",
       "primary_label": "row:cor:scheduled-cover-collapse",
+      "published_anchor": "theorem.5.8",
+      "published_pdf_page": 50,
       "statement_labels": [
         "row:cor:scheduled-cover-collapse"
       ],
@@ -13843,6 +13917,8 @@
       ],
       "number": "5.9",
       "primary_label": "row:cor:fixed-norm-collapse-transfer",
+      "published_anchor": "theorem.5.9",
+      "published_pdf_page": 50,
       "statement_labels": [
         "row:cor:fixed-norm-collapse-transfer"
       ],
@@ -13883,6 +13959,8 @@
       ],
       "number": "5.10",
       "primary_label": "row:thm:finite-cocycle-envelope",
+      "published_anchor": "theorem.5.10",
+      "published_pdf_page": 50,
       "statement_labels": [
         "row:thm:finite-cocycle-envelope"
       ],
@@ -13931,6 +14009,8 @@
       ],
       "number": "5.11",
       "primary_label": "row:cor:continuous-observable",
+      "published_anchor": "theorem.5.11",
+      "published_pdf_page": 51,
       "statement_labels": [
         "row:cor:continuous-observable"
       ],
@@ -13995,6 +14075,8 @@
       ],
       "number": "5.12",
       "primary_label": "row:cor:linear-stochastic-forcing",
+      "published_anchor": "theorem.5.12",
+      "published_pdf_page": 52,
       "statement_labels": [
         "row:cor:linear-stochastic-forcing"
       ],
@@ -14018,6 +14100,8 @@
       "nested_labels": [],
       "number": "5.13",
       "primary_label": "row:thm:collapse-obstructions",
+      "published_anchor": "theorem.5.13",
+      "published_pdf_page": 53,
       "statement_labels": [
         "row:thm:collapse-obstructions"
       ],
@@ -14041,6 +14125,8 @@
       "nested_labels": [],
       "number": "5.14",
       "primary_label": "row:thm:linear-observation-kernel-obstruction",
+      "published_anchor": "theorem.5.14",
+      "published_pdf_page": 53,
       "statement_labels": [
         "row:thm:linear-observation-kernel-obstruction"
       ],
@@ -14064,6 +14150,8 @@
       "nested_labels": [],
       "number": "5.15",
       "primary_label": "row:prop:nonlinear-zero-fiber-obstruction",
+      "published_anchor": "theorem.5.15",
+      "published_pdf_page": 53,
       "statement_labels": [
         "row:prop:nonlinear-zero-fiber-obstruction"
       ],
@@ -14112,6 +14200,8 @@
       ],
       "number": "6.1",
       "primary_label": "row:thm:plga-quotient-defect",
+      "published_anchor": "theorem.6.1",
+      "published_pdf_page": 54,
       "statement_labels": [
         "row:thm:plga-quotient-defect"
       ],
@@ -14135,6 +14225,8 @@
       "nested_labels": [],
       "number": "6.2",
       "primary_label": "row:prop:plga-row-preservation",
+      "published_anchor": "theorem.6.2",
+      "published_pdf_page": 55,
       "statement_labels": [
         "row:prop:plga-row-preservation"
       ],
@@ -14167,6 +14259,8 @@
       ],
       "number": "6.3",
       "primary_label": "rg:prop:plga-face-preservation",
+      "published_anchor": "theorem.6.3",
+      "published_pdf_page": 56,
       "statement_labels": [
         "rg:prop:plga-face-preservation"
       ],
@@ -14215,6 +14309,8 @@
       ],
       "number": "6.4",
       "primary_label": "rg:thm:plga-rg-transfer",
+      "published_anchor": "theorem.6.4",
+      "published_pdf_page": 56,
       "statement_labels": [
         "rg:thm:plga-rg-transfer"
       ],
@@ -14247,6 +14343,8 @@
       ],
       "number": "6.5",
       "primary_label": "rg:cor:plga-sequential-collapse",
+      "published_anchor": "theorem.6.5",
+      "published_pdf_page": 57,
       "statement_labels": [
         "rg:cor:plga-sequential-collapse"
       ],
@@ -14270,6 +14368,8 @@
       "nested_labels": [],
       "number": "6.6",
       "primary_label": "prop:absolute-relative",
+      "published_anchor": "theorem.6.6",
+      "published_pdf_page": 59,
       "statement_labels": [
         "prop:absolute-relative"
       ],
@@ -14302,6 +14402,8 @@
       ],
       "number": "6.7",
       "primary_label": "prop:row-predictive-bridge",
+      "published_anchor": "theorem.6.7",
+      "published_pdf_page": 59,
       "statement_labels": [
         "prop:row-predictive-bridge"
       ],
@@ -14350,6 +14452,8 @@
       ],
       "number": "8.1",
       "primary_label": "rg:thm:radial-closing",
+      "published_anchor": "theorem.8.1",
+      "published_pdf_page": 78,
       "statement_labels": [
         "rg:thm:radial-closing"
       ],
@@ -14382,6 +14486,8 @@
       ],
       "number": "8.2",
       "primary_label": "rg:def:canonical-edge",
+      "published_anchor": "theorem.8.2",
+      "published_pdf_page": 79,
       "statement_labels": [
         "rg:def:canonical-edge"
       ],
@@ -14414,6 +14520,8 @@
       ],
       "number": "8.3",
       "primary_label": "rg:thm:canonical-cone-closure",
+      "published_anchor": "theorem.8.3",
+      "published_pdf_page": 79,
       "statement_labels": [
         "rg:thm:canonical-cone-closure"
       ],
@@ -14470,6 +14578,8 @@
       ],
       "number": "8.4",
       "primary_label": "rg:thm:affine-rg-semigroup",
+      "published_anchor": "theorem.8.4",
+      "published_pdf_page": 80,
       "statement_labels": [
         "rg:thm:affine-rg-semigroup"
       ],
@@ -14510,6 +14620,8 @@
       ],
       "number": "8.5",
       "primary_label": "rg:thm:interval-affine-rg",
+      "published_anchor": "theorem.8.5",
+      "published_pdf_page": 81,
       "statement_labels": [
         "rg:thm:interval-affine-rg"
       ],
@@ -14550,6 +14662,8 @@
       ],
       "number": "8.6",
       "primary_label": "rg:thm:gauge-covariance",
+      "published_anchor": "theorem.8.6",
+      "published_pdf_page": 82,
       "statement_labels": [
         "rg:thm:gauge-covariance"
       ],
@@ -14582,6 +14696,8 @@
       ],
       "number": "8.7",
       "primary_label": "rg:prop:matrix-comparison-rg",
+      "published_anchor": "theorem.8.7",
+      "published_pdf_page": 82,
       "statement_labels": [
         "rg:prop:matrix-comparison-rg"
       ],
@@ -14614,6 +14730,8 @@
       ],
       "number": "8.8",
       "primary_label": "rg:thm:two-sector-collapse",
+      "published_anchor": "theorem.8.8",
+      "published_pdf_page": 83,
       "statement_labels": [
         "rg:thm:two-sector-collapse"
       ],
@@ -14662,6 +14780,8 @@
       ],
       "number": "9.1",
       "primary_label": "rg:thm:clean-fixed-points",
+      "published_anchor": "theorem.9.1",
+      "published_pdf_page": 84,
       "statement_labels": [
         "rg:thm:clean-fixed-points"
       ],
@@ -14710,6 +14830,8 @@
       ],
       "number": "9.2",
       "primary_label": "rg:thm:clean-critical-scaling",
+      "published_anchor": "theorem.9.2",
+      "published_pdf_page": 85,
       "statement_labels": [
         "rg:thm:clean-critical-scaling"
       ],
@@ -14742,6 +14864,8 @@
       ],
       "number": "9.3",
       "primary_label": "rg:lem:cumulative-log-criterion",
+      "published_anchor": "theorem.9.3",
+      "published_pdf_page": 86,
       "statement_labels": [
         "rg:lem:cumulative-log-criterion"
       ],
@@ -14816,6 +14940,8 @@
       ],
       "number": "9.4",
       "primary_label": "rg:prop:regular-nonautonomous-drift",
+      "published_anchor": "theorem.9.4",
+      "published_pdf_page": 86,
       "statement_labels": [
         "rg:prop:regular-nonautonomous-drift"
       ],
@@ -14839,6 +14965,8 @@
       "nested_labels": [],
       "number": "9.5",
       "primary_label": "rg:thm:positive-excursion-phase",
+      "published_anchor": "theorem.9.5",
+      "published_pdf_page": 87,
       "statement_labels": [
         "rg:thm:positive-excursion-phase"
       ],
@@ -14871,6 +14999,8 @@
       ],
       "number": "9.6",
       "primary_label": "rg:thm:recurrent-face-collapse",
+      "published_anchor": "theorem.9.6",
+      "published_pdf_page": 88,
       "statement_labels": [
         "rg:thm:recurrent-face-collapse"
       ],
@@ -14894,6 +15024,8 @@
       "nested_labels": [],
       "number": "9.7",
       "primary_label": "rg:prop:restart-amplification-criticality",
+      "published_anchor": "theorem.9.7",
+      "published_pdf_page": 88,
       "statement_labels": [
         "rg:prop:restart-amplification-criticality"
       ],
@@ -14926,6 +15058,8 @@
       ],
       "number": "9.8",
       "primary_label": "rg:thm:uniform-block-closure",
+      "published_anchor": "theorem.9.8",
+      "published_pdf_page": 89,
       "statement_labels": [
         "rg:thm:uniform-block-closure"
       ],
@@ -14949,6 +15083,8 @@
       "nested_labels": [],
       "number": "9.9",
       "primary_label": "rg:cor:block-cover-closure",
+      "published_anchor": "theorem.9.9",
+      "published_pdf_page": 89,
       "statement_labels": [
         "rg:cor:block-cover-closure"
       ],
@@ -15013,6 +15149,8 @@
       ],
       "number": "10.1",
       "primary_label": "rg:thm:complete-state-kernel-rg",
+      "published_anchor": "theorem.10.1",
+      "published_pdf_page": 91,
       "statement_labels": [
         "rg:thm:complete-state-kernel-rg"
       ],
@@ -15053,6 +15191,8 @@
       ],
       "number": "10.2",
       "primary_label": "rg:prop:gauge-orbit-null",
+      "published_anchor": "theorem.10.2",
+      "published_pdf_page": 93,
       "statement_labels": [
         "rg:prop:gauge-orbit-null"
       ],
@@ -15085,6 +15225,8 @@
       ],
       "number": "10.3",
       "primary_label": "rg:cor:paired-gauge-successor",
+      "published_anchor": "theorem.10.3",
+      "published_pdf_page": 93,
       "statement_labels": [
         "rg:cor:paired-gauge-successor"
       ],
@@ -15108,6 +15250,8 @@
       "nested_labels": [],
       "number": "10.4",
       "primary_label": "rg:lem:augmented-fiber-witness",
+      "published_anchor": "theorem.10.4",
+      "published_pdf_page": 94,
       "statement_labels": [
         "rg:lem:augmented-fiber-witness"
       ],
@@ -15131,6 +15275,8 @@
       "nested_labels": [],
       "number": "10.5",
       "primary_label": "rg:def:multiplicative-universality",
+      "published_anchor": "theorem.10.5",
+      "published_pdf_page": 95,
       "statement_labels": [
         "rg:def:multiplicative-universality"
       ],
@@ -15179,6 +15325,8 @@
       ],
       "number": "10.6",
       "primary_label": "rg:thm:gaussian-log-gain-fixed-point",
+      "published_anchor": "theorem.10.6",
+      "published_pdf_page": 96,
       "statement_labels": [
         "rg:thm:gaussian-log-gain-fixed-point"
       ],
@@ -15235,6 +15383,8 @@
       ],
       "number": "10.7",
       "primary_label": "rg:prop:universality-taxonomy",
+      "published_anchor": "theorem.10.7",
+      "published_pdf_page": 97,
       "statement_labels": [
         "rg:prop:universality-taxonomy"
       ],
@@ -15267,6 +15417,8 @@
       ],
       "number": "12.1",
       "primary_label": "model:thm:graph",
+      "published_anchor": "theorem.12.1",
+      "published_pdf_page": 125,
       "statement_labels": [
         "model:thm:graph"
       ],
@@ -15307,6 +15459,8 @@
       ],
       "number": "12.2",
       "primary_label": "model:thm:law-rg",
+      "published_anchor": "theorem.12.2",
+      "published_pdf_page": 126,
       "statement_labels": [
         "model:thm:law-rg"
       ],
@@ -15347,6 +15501,8 @@
       ],
       "number": "12.3",
       "primary_label": "model:thm:training-block",
+      "published_anchor": "theorem.12.3",
+      "published_pdf_page": 127,
       "statement_labels": [
         "model:thm:training-block"
       ],
@@ -15370,6 +15526,8 @@
       "nested_labels": [],
       "number": "12.4",
       "primary_label": "model:prop:training-closure",
+      "published_anchor": "theorem.12.4",
+      "published_pdf_page": 128,
       "statement_labels": [
         "model:prop:training-closure"
       ],
@@ -15402,6 +15560,8 @@
       ],
       "number": "12.5",
       "primary_label": "model:prop:closure-error",
+      "published_anchor": "theorem.12.5",
+      "published_pdf_page": 129,
       "statement_labels": [
         "model:prop:closure-error"
       ],
@@ -15434,6 +15594,8 @@
       ],
       "number": "12.6",
       "primary_label": "model:prop:metric-closure",
+      "published_anchor": "theorem.12.6",
+      "published_pdf_page": 129,
       "statement_labels": [
         "model:prop:metric-closure"
       ],
@@ -15466,6 +15628,8 @@
       ],
       "number": "12.7",
       "primary_label": "model:prop:law-closure",
+      "published_anchor": "theorem.12.7",
+      "published_pdf_page": 130,
       "statement_labels": [
         "model:prop:law-closure"
       ],
@@ -15506,6 +15670,8 @@
       ],
       "number": "12.8",
       "primary_label": "model:cor:empirical-law-closure",
+      "published_anchor": "theorem.12.8",
+      "published_pdf_page": 131,
       "statement_labels": [
         "model:cor:empirical-law-closure"
       ],
@@ -15546,6 +15712,8 @@
       ],
       "number": "12.9",
       "primary_label": "model:prop:conditional-memory",
+      "published_anchor": "theorem.12.9",
+      "published_pdf_page": 131,
       "statement_labels": [
         "model:prop:conditional-memory"
       ],
@@ -15578,6 +15746,8 @@
       ],
       "number": "12.10",
       "primary_label": "model:prop:constant-stability",
+      "published_anchor": "theorem.12.10",
+      "published_pdf_page": 132,
       "statement_labels": [
         "model:prop:constant-stability"
       ],
@@ -15618,6 +15788,8 @@
       ],
       "number": "13.1",
       "primary_label": "model:prop:consumption-stationarity",
+      "published_anchor": "theorem.13.1",
+      "published_pdf_page": 134,
       "statement_labels": [
         "model:prop:consumption-stationarity"
       ],
@@ -15650,6 +15822,8 @@
       ],
       "number": "13.2",
       "primary_label": "model:prop:finite-population-innovation",
+      "published_anchor": "theorem.13.2",
+      "published_pdf_page": 135,
       "statement_labels": [
         "model:prop:finite-population-innovation"
       ],
@@ -15682,6 +15856,8 @@
       ],
       "number": "13.3",
       "primary_label": "model:prop:masked-target-ratio",
+      "published_anchor": "theorem.13.3",
+      "published_pdf_page": 136,
       "statement_labels": [
         "model:prop:masked-target-ratio"
       ],
@@ -15714,6 +15890,8 @@
       ],
       "number": "13.4",
       "primary_label": "model:prop:source-position-occupancy",
+      "published_anchor": "theorem.13.4",
+      "published_pdf_page": 137,
       "statement_labels": [
         "model:prop:source-position-occupancy"
       ],
@@ -15746,6 +15924,8 @@
       ],
       "number": "13.5",
       "primary_label": "model:prop:data-path-coupling",
+      "published_anchor": "theorem.13.5",
+      "published_pdf_page": 137,
       "statement_labels": [
         "model:prop:data-path-coupling"
       ],
@@ -15786,6 +15966,8 @@
       ],
       "number": "13.6",
       "primary_label": "model:prop:single-pass-source-transport",
+      "published_anchor": "theorem.13.6",
+      "published_pdf_page": 139,
       "statement_labels": [
         "model:prop:single-pass-source-transport"
       ],
@@ -15826,6 +16008,8 @@
       ],
       "number": "13.7",
       "primary_label": "model:cor:onepass-response-memory",
+      "published_anchor": "theorem.13.7",
+      "published_pdf_page": 139,
       "statement_labels": [
         "model:cor:onepass-response-memory"
       ],
@@ -15866,6 +16050,8 @@
       ],
       "number": "13.8",
       "primary_label": "model:prop:corpus-conditioning",
+      "published_anchor": "theorem.13.8",
+      "published_pdf_page": 140,
       "statement_labels": [
         "model:prop:corpus-conditioning"
       ],
@@ -15889,6 +16075,8 @@
       "nested_labels": [],
       "number": "13.9",
       "primary_label": "model:cor:iid-corpus-path",
+      "published_anchor": "theorem.13.9",
+      "published_pdf_page": 141,
       "statement_labels": [
         "model:cor:iid-corpus-path"
       ],
@@ -15921,6 +16109,8 @@
       ],
       "number": "13.10",
       "primary_label": "model:prop:data-conditioned-risk-drift",
+      "published_anchor": "theorem.13.10",
+      "published_pdf_page": 142,
       "statement_labels": [
         "model:prop:data-conditioned-risk-drift"
       ],
@@ -15953,6 +16143,8 @@
       ],
       "number": "13.11",
       "primary_label": "model:prop:finite-logit-risk",
+      "published_anchor": "theorem.13.11",
+      "published_pdf_page": 142,
       "statement_labels": [
         "model:prop:finite-logit-risk"
       ],
@@ -16001,6 +16193,8 @@
       ],
       "number": "14.1",
       "primary_label": "model:prop:potential-block",
+      "published_anchor": "theorem.14.1",
+      "published_pdf_page": 144,
       "statement_labels": [
         "model:prop:potential-block"
       ],
@@ -16041,6 +16235,8 @@
       ],
       "number": "14.2",
       "primary_label": "model:prop:potential-symmetric",
+      "published_anchor": "theorem.14.2",
+      "published_pdf_page": 145,
       "statement_labels": [
         "model:prop:potential-symmetric"
       ],
@@ -16089,6 +16285,8 @@
       ],
       "number": "14.3",
       "primary_label": "model:prop:potential-area",
+      "published_anchor": "theorem.14.3",
+      "published_pdf_page": 145,
       "statement_labels": [
         "model:prop:potential-area"
       ],
@@ -16121,6 +16319,8 @@
       ],
       "number": "14.4",
       "primary_label": "model:prop:potential-clock",
+      "published_anchor": "theorem.14.4",
+      "published_pdf_page": 147,
       "statement_labels": [
         "model:prop:potential-clock"
       ],
@@ -16153,6 +16353,8 @@
       ],
       "number": "14.5",
       "primary_label": "model:prop:potential-base-amplification",
+      "published_anchor": "theorem.14.5",
+      "published_pdf_page": 147,
       "statement_labels": [
         "model:prop:potential-base-amplification"
       ],
@@ -16185,6 +16387,8 @@
       ],
       "number": "14.6",
       "primary_label": "model:prop:potential-tail-counterexample",
+      "published_anchor": "theorem.14.6",
+      "published_pdf_page": 148,
       "statement_labels": [
         "model:prop:potential-tail-counterexample"
       ],
@@ -16217,6 +16421,8 @@
       ],
       "number": "14.7",
       "primary_label": "model:prop:potential-zero-gradient",
+      "published_anchor": "theorem.14.7",
+      "published_pdf_page": 148,
       "statement_labels": [
         "model:prop:potential-zero-gradient"
       ],
@@ -16240,6 +16446,8 @@
       "nested_labels": [],
       "number": "14.8",
       "primary_label": "model:prop:potential-intervention-transport",
+      "published_anchor": "theorem.14.8",
+      "published_pdf_page": 149,
       "statement_labels": [
         "model:prop:potential-intervention-transport"
       ],
@@ -16272,6 +16480,8 @@
       ],
       "number": "14.9",
       "primary_label": "model:prop:finite-categorical-transport",
+      "published_anchor": "theorem.14.9",
+      "published_pdf_page": 149,
       "statement_labels": [
         "model:prop:finite-categorical-transport"
       ],
@@ -16312,6 +16522,8 @@
       ],
       "number": "14.10",
       "primary_label": "model:prop:metric-budget",
+      "published_anchor": "theorem.14.10",
+      "published_pdf_page": 150,
       "statement_labels": [
         "model:prop:metric-budget"
       ],
@@ -16344,6 +16556,8 @@
       ],
       "number": "14.11",
       "primary_label": "model:cor:refinement",
+      "published_anchor": "theorem.14.11",
+      "published_pdf_page": 151,
       "statement_labels": [
         "model:cor:refinement"
       ],
@@ -16384,6 +16598,8 @@
       ],
       "number": "14.12",
       "primary_label": "model:thm:jet",
+      "published_anchor": "theorem.14.12",
+      "published_pdf_page": 152,
       "statement_labels": [
         "model:thm:jet"
       ],
@@ -16424,6 +16640,8 @@
       ],
       "number": "14.13",
       "primary_label": "model:thm:kl",
+      "published_anchor": "theorem.14.13",
+      "published_pdf_page": 153,
       "statement_labels": [
         "model:thm:kl"
       ],
@@ -16456,6 +16674,8 @@
       ],
       "number": "14.14",
       "primary_label": "model:cor:training-response",
+      "published_anchor": "theorem.14.14",
+      "published_pdf_page": 154,
       "statement_labels": [
         "model:cor:training-response"
       ],
@@ -16479,6 +16699,8 @@
       "nested_labels": [],
       "number": "14.15",
       "primary_label": "model:cor:freezing",
+      "published_anchor": "theorem.14.15",
+      "published_pdf_page": 154,
       "statement_labels": [
         "model:cor:freezing"
       ],
@@ -16511,6 +16733,8 @@
       ],
       "number": "14.16",
       "primary_label": "model:thm:training-mixture",
+      "published_anchor": "theorem.14.16",
+      "published_pdf_page": 155,
       "statement_labels": [
         "model:thm:training-mixture"
       ],
@@ -16534,6 +16758,8 @@
       "nested_labels": [],
       "number": "14.17",
       "primary_label": "model:prop:conditional-universality",
+      "published_anchor": "theorem.14.17",
+      "published_pdf_page": 155,
       "statement_labels": [
         "model:prop:conditional-universality"
       ],
@@ -16566,6 +16792,8 @@
       ],
       "number": "14.18",
       "primary_label": "model:prop:inference-drift",
+      "published_anchor": "theorem.14.18",
+      "published_pdf_page": 156,
       "statement_labels": [
         "model:prop:inference-drift"
       ],
@@ -16598,6 +16826,8 @@
       ],
       "number": "14.21",
       "primary_label": "model:prop:covariance-drift",
+      "published_anchor": "theorem.14.21",
+      "published_pdf_page": 157,
       "statement_labels": [
         "model:prop:covariance-drift"
       ],
@@ -16638,6 +16868,8 @@
       ],
       "number": "14.22",
       "primary_label": "model:prop:operator-approximation",
+      "published_anchor": "theorem.14.22",
+      "published_pdf_page": 158,
       "statement_labels": [
         "model:prop:operator-approximation"
       ],
@@ -16686,6 +16918,8 @@
       ],
       "number": "14.23",
       "primary_label": "model:prop:response-window",
+      "published_anchor": "theorem.14.23",
+      "published_pdf_page": 158,
       "statement_labels": [
         "model:prop:response-window"
       ],
@@ -16718,6 +16952,8 @@
       ],
       "number": "14.24",
       "primary_label": "model:prop:three-sectors",
+      "published_anchor": "theorem.14.24",
+      "published_pdf_page": 159,
       "statement_labels": [
         "model:prop:three-sectors"
       ],
@@ -16741,6 +16977,8 @@
       "nested_labels": [],
       "number": "14.25",
       "primary_label": "model:prop:shared-class",
+      "published_anchor": "theorem.14.25",
+      "published_pdf_page": 159,
       "statement_labels": [
         "model:prop:shared-class"
       ],
@@ -16773,6 +17011,8 @@
       ],
       "number": "14.26",
       "primary_label": "model:prop:context-dispersion",
+      "published_anchor": "theorem.14.26",
+      "published_pdf_page": 160,
       "statement_labels": [
         "model:prop:context-dispersion"
       ],
@@ -16829,6 +17069,8 @@
       ],
       "number": "14.19",
       "primary_label": "model:lem:master-perturbation",
+      "published_anchor": "theorem.14.19",
+      "published_pdf_page": 156,
       "statement_labels": [
         "model:lem:master-perturbation"
       ],
@@ -16852,6 +17094,8 @@
       "nested_labels": [],
       "number": "14.20",
       "primary_label": "model:cor:master-empirical",
+      "published_anchor": "theorem.14.20",
+      "published_pdf_page": 157,
       "statement_labels": [
         "model:cor:master-empirical"
       ],
@@ -16913,6 +17157,8 @@
       ],
       "number": "14.27",
       "primary_label": "model:prop:master-chronological",
+      "published_anchor": "theorem.14.27",
+      "published_pdf_page": 161,
       "statement_labels": [
         "model:prop:law-innovation-transport",
         "model:prop:master-chronological"
@@ -16946,6 +17192,8 @@
       ],
       "number": "14.29",
       "primary_label": "model:prop:conditional-risk-tube",
+      "published_anchor": "theorem.14.29",
+      "published_pdf_page": 163,
       "statement_labels": [
         "model:prop:conditional-risk-tube"
       ],
@@ -16978,6 +17226,8 @@
       ],
       "number": "14.28",
       "primary_label": "model:prop:affine-memory",
+      "published_anchor": "theorem.14.28",
+      "published_pdf_page": 162,
       "statement_labels": [
         "model:prop:affine-memory"
       ],
@@ -17018,6 +17268,8 @@
       ],
       "number": "15.1",
       "primary_label": "model:prop:native-head-sign-symmetry",
+      "published_anchor": "theorem.15.1",
+      "published_pdf_page": 165,
       "statement_labels": [
         "model:prop:native-head-sign-symmetry"
       ],
@@ -17050,6 +17302,8 @@
       ],
       "number": "15.2",
       "primary_label": "model:cor:head-sign-uniform-concentration",
+      "published_anchor": "theorem.15.2",
+      "published_pdf_page": 166,
       "statement_labels": [
         "model:cor:head-sign-uniform-concentration"
       ],
@@ -17090,6 +17344,8 @@
       ],
       "number": "15.3",
       "primary_label": "model:prop:predictive-hellinger",
+      "published_anchor": "theorem.15.3",
+      "published_pdf_page": 168,
       "statement_labels": [
         "model:prop:predictive-hellinger"
       ],
@@ -17113,6 +17369,8 @@
       "nested_labels": [],
       "number": "15.4",
       "primary_label": "model:prop:finite-training-continuity",
+      "published_anchor": "theorem.15.4",
+      "published_pdf_page": 171,
       "statement_labels": [
         "model:prop:finite-training-continuity"
       ],
@@ -17145,6 +17403,8 @@
       ],
       "number": "15.5",
       "primary_label": "model:prop:shared-path-compactness",
+      "published_anchor": "theorem.15.5",
+      "published_pdf_page": 172,
       "statement_labels": [
         "model:prop:shared-path-compactness"
       ],
@@ -17168,6 +17428,8 @@
       "nested_labels": [],
       "number": "15.6",
       "primary_label": "model:cor:joint-observation-compactness",
+      "published_anchor": "theorem.15.6",
+      "published_pdf_page": 173,
       "statement_labels": [
         "model:cor:joint-observation-compactness"
       ],
@@ -17208,6 +17470,8 @@
       ],
       "number": "15.7",
       "primary_label": "model:prop:first-shared-force",
+      "published_anchor": "theorem.15.7",
+      "published_pdf_page": 174,
       "statement_labels": [
         "model:prop:first-shared-force"
       ],
@@ -17248,6 +17512,8 @@
       ],
       "number": "15.8",
       "primary_label": "model:prop:shared-path-covariance-budget",
+      "published_anchor": "theorem.15.8",
+      "published_pdf_page": 175,
       "statement_labels": [
         "model:prop:shared-path-covariance-budget"
       ],
@@ -17280,6 +17546,8 @@
       ],
       "number": "15.9",
       "primary_label": "model:prop:critical-timing-mixture",
+      "published_anchor": "theorem.15.9",
+      "published_pdf_page": 176,
       "statement_labels": [
         "model:prop:critical-timing-mixture"
       ],
@@ -17312,6 +17580,8 @@
       ],
       "number": "15.10",
       "primary_label": "model:prop:kinetic-control-peak",
+      "published_anchor": "theorem.15.10",
+      "published_pdf_page": 176,
       "statement_labels": [
         "model:prop:kinetic-control-peak"
       ],
@@ -17352,6 +17622,8 @@
       ],
       "number": "16.1",
       "primary_label": "model:prop:matched-memory-force",
+      "published_anchor": "theorem.16.1",
+      "published_pdf_page": 178,
       "statement_labels": [
         "model:prop:matched-memory-force"
       ],
@@ -17392,6 +17664,8 @@
       ],
       "number": "16.2",
       "primary_label": "model:prop:physical-clock",
+      "published_anchor": "theorem.16.2",
+      "published_pdf_page": 179,
       "statement_labels": [
         "model:prop:physical-clock"
       ],
@@ -17424,6 +17698,8 @@
       ],
       "number": "16.3",
       "primary_label": "model:prop:consuming-bridge",
+      "published_anchor": "theorem.16.3",
+      "published_pdf_page": 180,
       "statement_labels": [
         "model:prop:consuming-bridge"
       ],
@@ -17456,6 +17732,8 @@
       ],
       "number": "16.4",
       "primary_label": "model:cor:consuming-clock",
+      "published_anchor": "theorem.16.4",
+      "published_pdf_page": 181,
       "statement_labels": [
         "model:cor:consuming-clock"
       ],
@@ -17496,6 +17774,8 @@
       ],
       "number": "16.5",
       "primary_label": "model:prop:collective-clock",
+      "published_anchor": "theorem.16.5",
+      "published_pdf_page": 182,
       "statement_labels": [
         "model:prop:collective-clock"
       ],
@@ -17528,6 +17808,8 @@
       ],
       "number": "16.8",
       "primary_label": "model:prop:finite-flux-forecast",
+      "published_anchor": "theorem.16.8",
+      "published_pdf_page": 184,
       "statement_labels": [
         "model:prop:finite-flux-forecast"
       ],
@@ -17551,6 +17833,8 @@
       "nested_labels": [],
       "number": "16.9",
       "primary_label": "model:prop:energy-cocycle",
+      "published_anchor": "theorem.16.9",
+      "published_pdf_page": 185,
       "statement_labels": [
         "model:prop:energy-cocycle"
       ],
@@ -17599,6 +17883,8 @@
       ],
       "number": "16.6",
       "primary_label": "model:lem:finite-defect",
+      "published_anchor": "theorem.16.6",
+      "published_pdf_page": 182,
       "statement_labels": [
         "model:lem:finite-defect"
       ],
@@ -17631,6 +17917,8 @@
       ],
       "number": "16.7",
       "primary_label": "model:cor:row-path-error",
+      "published_anchor": "theorem.16.7",
+      "published_pdf_page": 183,
       "statement_labels": [
         "model:cor:row-path-error"
       ],
@@ -17679,6 +17967,8 @@
       ],
       "number": "16.10",
       "primary_label": "model:prop:temporal-energy",
+      "published_anchor": "theorem.16.10",
+      "published_pdf_page": 186,
       "statement_labels": [
         "model:prop:temporal-energy"
       ],
@@ -17743,6 +18033,8 @@
       ],
       "number": "19.1",
       "primary_label": "model:prop:finite-density",
+      "published_anchor": "theorem.19.1",
+      "published_pdf_page": 244,
       "statement_labels": [
         "model:prop:finite-density"
       ],
@@ -17783,6 +18075,8 @@
       ],
       "number": "19.2",
       "primary_label": "model:prop:nested-kl",
+      "published_anchor": "theorem.19.2",
+      "published_pdf_page": 245,
       "statement_labels": [
         "model:prop:nested-kl"
       ],
@@ -17815,6 +18109,8 @@
       ],
       "number": "19.3",
       "primary_label": "model:prop:tail-risk",
+      "published_anchor": "theorem.19.3",
+      "published_pdf_page": 246,
       "statement_labels": [
         "model:prop:tail-risk"
       ],
@@ -17855,6 +18151,8 @@
       ],
       "number": "19.4",
       "primary_label": "model:prop:context-risk",
+      "published_anchor": "theorem.19.4",
+      "published_pdf_page": 246,
       "statement_labels": [
         "model:prop:context-risk"
       ],
@@ -17887,6 +18185,8 @@
       ],
       "number": "19.5",
       "primary_label": "model:prop:equivariant-cache",
+      "published_anchor": "theorem.19.5",
+      "published_pdf_page": 247,
       "statement_labels": [
         "model:prop:equivariant-cache"
       ],
@@ -17927,6 +18227,8 @@
       ],
       "number": "19.6",
       "primary_label": "model:prop:cache-risk",
+      "published_anchor": "theorem.19.6",
+      "published_pdf_page": 248,
       "statement_labels": [
         "model:prop:cache-risk"
       ],
@@ -17959,6 +18261,8 @@
       ],
       "number": "19.7",
       "primary_label": "model:cor:cache-emission-risk",
+      "published_anchor": "theorem.19.7",
+      "published_pdf_page": 249,
       "statement_labels": [
         "model:cor:cache-emission-risk"
       ],
@@ -17999,6 +18303,8 @@
       ],
       "number": "19.8",
       "primary_label": "model:prop:cache-state-transport",
+      "published_anchor": "theorem.19.8",
+      "published_pdf_page": 249,
       "statement_labels": [
         "model:prop:cache-state-transport"
       ],
@@ -18047,6 +18353,8 @@
       ],
       "number": "21.1",
       "primary_label": "model:prop:finite-pulse",
+      "published_anchor": "theorem.21.1",
+      "published_pdf_page": 263,
       "statement_labels": [
         "model:prop:finite-pulse"
       ],
@@ -18087,6 +18395,8 @@
       ],
       "number": "21.2",
       "primary_label": "model:prop:finite-optimizer",
+      "published_anchor": "theorem.21.2",
+      "published_pdf_page": 264,
       "statement_labels": [
         "model:prop:finite-optimizer"
       ],
@@ -18110,6 +18420,8 @@
       "nested_labels": [],
       "number": "21.3",
       "primary_label": "model:cor:optimizer-closure-obstruction",
+      "published_anchor": "theorem.21.3",
+      "published_pdf_page": 264,
       "statement_labels": [
         "model:cor:optimizer-closure-obstruction"
       ],
@@ -18158,6 +18470,8 @@
       ],
       "number": "21.4",
       "primary_label": "model:prop:causal-risk-transfer",
+      "published_anchor": "theorem.21.4",
+      "published_pdf_page": 265,
       "statement_labels": [
         "model:prop:causal-risk-transfer"
       ],
@@ -18198,6 +18512,8 @@
       ],
       "number": "21.5",
       "primary_label": "model:prop:shared-row-input-contraction",
+      "published_anchor": "theorem.21.5",
+      "published_pdf_page": 266,
       "statement_labels": [
         "model:prop:shared-row-input-contraction"
       ],
@@ -18246,6 +18562,8 @@
       ],
       "number": "21.6",
       "primary_label": "model:prop:transverse-common-modes",
+      "published_anchor": "theorem.21.6",
+      "published_pdf_page": 267,
       "statement_labels": [
         "model:prop:transverse-common-modes"
       ],
@@ -18269,6 +18587,8 @@
       "nested_labels": [],
       "number": "21.7",
       "primary_label": "model:prop:fixed-operator-prefix",
+      "published_anchor": "theorem.21.7",
+      "published_pdf_page": 268,
       "statement_labels": [
         "model:prop:fixed-operator-prefix"
       ],
@@ -18301,6 +18621,8 @@
       ],
       "number": "21.8",
       "primary_label": "model:prop:prefix-defect-bound",
+      "published_anchor": "theorem.21.8",
+      "published_pdf_page": 269,
       "statement_labels": [
         "model:prop:prefix-defect-bound"
       ],
@@ -18341,6 +18663,8 @@
       ],
       "number": "21.9",
       "primary_label": "model:prop:proper-risk-chain",
+      "published_anchor": "theorem.21.9",
+      "published_pdf_page": 270,
       "statement_labels": [
         "model:prop:proper-risk-chain"
       ],
@@ -18364,6 +18688,8 @@
       "nested_labels": [],
       "number": "21.10",
       "primary_label": "model:prop:task-margin",
+      "published_anchor": "theorem.21.10",
+      "published_pdf_page": 271,
       "statement_labels": [
         "model:prop:task-margin"
       ],
@@ -18396,6 +18722,8 @@
       ],
       "number": "21.11",
       "primary_label": "model:prop:premise-routing-margin",
+      "published_anchor": "theorem.21.11",
+      "published_pdf_page": 271,
       "statement_labels": [
         "model:prop:premise-routing-margin"
       ],
@@ -18436,6 +18764,8 @@
       ],
       "number": "21.12",
       "primary_label": "model:prop:operator-task-transfer",
+      "published_anchor": "theorem.21.12",
+      "published_pdf_page": 272,
       "statement_labels": [
         "model:prop:operator-task-transfer"
       ],
@@ -18468,6 +18798,8 @@
       ],
       "number": "21.13",
       "primary_label": "model:prop:inference-fluctuation-transfer",
+      "published_anchor": "theorem.21.13",
+      "published_pdf_page": 273,
       "statement_labels": [
         "model:prop:inference-fluctuation-transfer"
       ],
@@ -18500,6 +18832,8 @@
       ],
       "number": "21.14",
       "primary_label": "model:prop:adaptation-factor-state",
+      "published_anchor": "theorem.21.14",
+      "published_pdf_page": 274,
       "statement_labels": [
         "model:prop:adaptation-factor-state"
       ],
@@ -18532,6 +18866,8 @@
       ],
       "number": "21.15",
       "primary_label": "model:prop:paired-order-covariance",
+      "published_anchor": "theorem.21.15",
+      "published_pdf_page": 275,
       "statement_labels": [
         "model:prop:paired-order-covariance"
       ],
@@ -18572,6 +18908,8 @@
       ],
       "number": "21.16",
       "primary_label": "model:prop:finite-source-polynomial",
+      "published_anchor": "theorem.21.16",
+      "published_pdf_page": 276,
       "statement_labels": [
         "model:prop:finite-source-polynomial"
       ],
@@ -18604,6 +18942,8 @@
       ],
       "number": "21.17",
       "primary_label": "model:thm:finetuning-mode-inheritance",
+      "published_anchor": "theorem.21.17",
+      "published_pdf_page": 278,
       "statement_labels": [
         "model:thm:finetuning-mode-inheritance"
       ],
@@ -18627,6 +18967,8 @@
       "nested_labels": [],
       "number": "21.18",
       "primary_label": "model:cor:finite-source-span",
+      "published_anchor": "theorem.21.18",
+      "published_pdf_page": 279,
       "statement_labels": [
         "model:cor:finite-source-span"
       ],
@@ -18675,6 +19017,8 @@
       ],
       "number": "21.19",
       "primary_label": "model:prop:projection-obstruction",
+      "published_anchor": "theorem.21.19",
+      "published_pdf_page": 280,
       "statement_labels": [
         "model:prop:projection-obstruction"
       ],
@@ -18698,6 +19042,8 @@
       "nested_labels": [],
       "number": "22.1",
       "primary_label": "model:prop:moment-blocking",
+      "published_anchor": "theorem.22.1",
+      "published_pdf_page": 281,
       "statement_labels": [
         "model:prop:moment-blocking"
       ],
@@ -18730,6 +19076,8 @@
       ],
       "number": "22.2",
       "primary_label": "model:prop:endpoint-sample",
+      "published_anchor": "theorem.22.2",
+      "published_pdf_page": 281,
       "statement_labels": [
         "model:prop:endpoint-sample"
       ],
@@ -18762,6 +19110,8 @@
       ],
       "number": "22.3",
       "primary_label": "model:prop:moment-score",
+      "published_anchor": "theorem.22.3",
+      "published_pdf_page": 282,
       "statement_labels": [
         "model:prop:moment-score"
       ],
@@ -18794,6 +19144,8 @@
       ],
       "number": "22.5",
       "primary_label": "model:prop:moment-precision",
+      "published_anchor": "theorem.22.5",
+      "published_pdf_page": 282,
       "statement_labels": [
         "model:prop:moment-precision"
       ],
@@ -18826,6 +19178,8 @@
       ],
       "number": "22.6",
       "primary_label": "model:cor:nested-moment-sectors",
+      "published_anchor": "theorem.22.6",
+      "published_pdf_page": 283,
       "statement_labels": [
         "model:cor:nested-moment-sectors"
       ],
@@ -18858,6 +19212,8 @@
       ],
       "number": "22.7",
       "primary_label": "model:prop:correlation-transfer",
+      "published_anchor": "theorem.22.7",
+      "published_pdf_page": 284,
       "statement_labels": [
         "model:prop:correlation-transfer"
       ],
@@ -18890,6 +19246,8 @@
       ],
       "number": "22.8",
       "primary_label": "model:prop:calibrated-scale-images",
+      "published_anchor": "theorem.22.8",
+      "published_pdf_page": 284,
       "statement_labels": [
         "model:prop:calibrated-scale-images"
       ],
@@ -18922,6 +19280,8 @@
       ],
       "number": "22.9",
       "primary_label": "model:prop:state-moment-reuse",
+      "published_anchor": "theorem.22.9",
+      "published_pdf_page": 285,
       "statement_labels": [
         "model:prop:state-moment-reuse"
       ],
@@ -18962,6 +19322,8 @@
       ],
       "number": "22.10",
       "primary_label": "model:prop:resource-edit-coupling",
+      "published_anchor": "theorem.22.10",
+      "published_pdf_page": 286,
       "statement_labels": [
         "model:prop:resource-edit-coupling"
       ],
@@ -18994,6 +19356,8 @@
       ],
       "number": "22.11",
       "primary_label": "model:prop:state-tube-reuse",
+      "published_anchor": "theorem.22.11",
+      "published_pdf_page": 286,
       "statement_labels": [
         "model:prop:state-tube-reuse"
       ],
@@ -19026,6 +19390,8 @@
       ],
       "number": "22.12",
       "primary_label": "model:prop:acquisition-noise",
+      "published_anchor": "theorem.22.12",
+      "published_pdf_page": 287,
       "statement_labels": [
         "model:prop:acquisition-noise"
       ],
@@ -19074,6 +19440,8 @@
       ],
       "number": "22.13",
       "primary_label": "model:prop:measured-pulse-error",
+      "published_anchor": "theorem.22.13",
+      "published_pdf_page": 288,
       "statement_labels": [
         "model:prop:measured-pulse-error"
       ],
@@ -19097,6 +19465,8 @@
       "nested_labels": [],
       "number": "22.14",
       "primary_label": "model:prop:native-smooth-domain",
+      "published_anchor": "theorem.22.14",
+      "published_pdf_page": 288,
       "statement_labels": [
         "model:prop:native-smooth-domain"
       ],
@@ -19129,6 +19499,8 @@
       ],
       "number": "22.15",
       "primary_label": "model:prop:implementation-error",
+      "published_anchor": "theorem.22.15",
+      "published_pdf_page": 289,
       "statement_labels": [
         "model:prop:implementation-error"
       ],
@@ -19169,6 +19541,8 @@
       ],
       "number": "25.1",
       "primary_label": "model:thm:cumulants",
+      "published_anchor": "theorem.25.1",
+      "published_pdf_page": 341,
       "statement_labels": [
         "model:thm:cumulants"
       ],
@@ -19201,6 +19575,8 @@
       ],
       "number": "25.2",
       "primary_label": "model:thm:clt",
+      "published_anchor": "theorem.25.2",
+      "published_pdf_page": 342,
       "statement_labels": [
         "model:thm:clt"
       ],
@@ -19233,6 +19609,8 @@
       ],
       "number": "25.3",
       "primary_label": "model:thm:schur",
+      "published_anchor": "theorem.25.3",
+      "published_pdf_page": 342,
       "statement_labels": [
         "model:thm:schur"
       ],
@@ -19281,6 +19659,8 @@
       ],
       "number": "25.4",
       "primary_label": "model:thm:chi",
+      "published_anchor": "theorem.25.4",
+      "published_pdf_page": 343,
       "statement_labels": [
         "model:thm:chi"
       ],
@@ -19313,6 +19693,8 @@
       ],
       "number": "25.5",
       "primary_label": "model:def:fluctuation-criticality",
+      "published_anchor": "theorem.25.5",
+      "published_pdf_page": 343,
       "statement_labels": [
         "model:def:fluctuation-criticality"
       ],
@@ -19345,6 +19727,8 @@
       ],
       "number": "25.6",
       "primary_label": "model:prop:longrange",
+      "published_anchor": "theorem.25.6",
+      "published_pdf_page": 344,
       "statement_labels": [
         "model:prop:longrange"
       ],
@@ -19377,6 +19761,8 @@
       ],
       "number": "25.7",
       "primary_label": "model:prop:mixture-potential",
+      "published_anchor": "theorem.25.7",
+      "published_pdf_page": 345,
       "statement_labels": [
         "model:prop:mixture-potential"
       ],
@@ -19409,6 +19795,8 @@
       ],
       "number": "25.8",
       "primary_label": "model:prop:rg-exponent",
+      "published_anchor": "theorem.25.8",
+      "published_pdf_page": 346,
       "statement_labels": [
         "model:prop:rg-exponent"
       ],
@@ -19457,6 +19845,8 @@
       ],
       "number": "25.9",
       "primary_label": "model:prop:feedback",
+      "published_anchor": "theorem.25.9",
+      "published_pdf_page": 347,
       "statement_labels": [
         "model:prop:feedback"
       ],
@@ -19497,6 +19887,8 @@
       ],
       "number": "25.10",
       "primary_label": "model:prop:geometric-blocking",
+      "published_anchor": "theorem.25.10",
+      "published_pdf_page": 347,
       "statement_labels": [
         "model:prop:geometric-blocking"
       ],
@@ -19529,6 +19921,8 @@
       ],
       "number": "25.11",
       "primary_label": "model:prop:adam-normalization",
+      "published_anchor": "theorem.25.11",
+      "published_pdf_page": 348,
       "statement_labels": [
         "model:prop:adam-normalization"
       ],
@@ -19552,6 +19946,8 @@
       "nested_labels": [],
       "number": "25.12",
       "primary_label": "model:prop:regular-limit",
+      "published_anchor": "theorem.25.12",
+      "published_pdf_page": 349,
       "statement_labels": [
         "model:prop:regular-limit"
       ],
@@ -19575,6 +19971,8 @@
       "nested_labels": [],
       "number": "25.13",
       "primary_label": "model:cor:head-gaussian",
+      "published_anchor": "theorem.25.13",
+      "published_pdf_page": 349,
       "statement_labels": [
         "model:cor:head-gaussian"
       ],
@@ -19623,6 +20021,8 @@
       ],
       "number": "25.14",
       "primary_label": "model:thm:native-sign-gaussian-mixture",
+      "published_anchor": "theorem.25.14",
+      "published_pdf_page": 350,
       "statement_labels": [
         "model:thm:native-sign-gaussian-mixture"
       ],
@@ -19663,6 +20063,8 @@
       ],
       "number": "25.15",
       "primary_label": "model:prop:sign-orbit-fourth-budget",
+      "published_anchor": "theorem.25.15",
+      "published_pdf_page": 351,
       "statement_labels": [
         "model:prop:sign-orbit-fourth-budget"
       ],
@@ -19695,6 +20097,8 @@
       ],
       "number": "25.16",
       "primary_label": "model:cor:zero-control-regular-rate",
+      "published_anchor": "theorem.25.16",
+      "published_pdf_page": 351,
       "statement_labels": [
         "model:cor:zero-control-regular-rate"
       ],
@@ -19718,6 +20122,8 @@
       "nested_labels": [],
       "number": "25.17",
       "primary_label": "model:lem:head-symmetry",
+      "published_anchor": "theorem.25.17",
+      "published_pdf_page": 353,
       "statement_labels": [
         "model:lem:head-symmetry"
       ],
@@ -19750,6 +20156,8 @@
       ],
       "number": "25.18",
       "primary_label": "model:prop:head-susceptibility",
+      "published_anchor": "theorem.25.18",
+      "published_pdf_page": 353,
       "statement_labels": [
         "model:prop:head-susceptibility"
       ],
@@ -19782,6 +20190,8 @@
       ],
       "number": "25.19",
       "primary_label": "model:prop:head-blocking",
+      "published_anchor": "theorem.25.19",
+      "published_pdf_page": 354,
       "statement_labels": [
         "model:prop:head-blocking"
       ],
@@ -19805,6 +20215,8 @@
       "nested_labels": [],
       "number": "25.26",
       "primary_label": "model:prop:head-influence",
+      "published_anchor": "theorem.25.26",
+      "published_pdf_page": 361,
       "statement_labels": [
         "model:prop:head-influence"
       ],
@@ -19845,6 +20257,8 @@
       ],
       "number": "25.27",
       "primary_label": "model:prop:collective-stability",
+      "published_anchor": "theorem.25.27",
+      "published_pdf_page": 362,
       "statement_labels": [
         "model:prop:collective-stability"
       ],
@@ -19877,6 +20291,8 @@
       ],
       "number": "25.20",
       "primary_label": "model:prop:shape-initialization",
+      "published_anchor": "theorem.25.20",
+      "published_pdf_page": 354,
       "statement_labels": [
         "model:prop:shape-initialization"
       ],
@@ -19900,6 +20316,8 @@
       "nested_labels": [],
       "number": "25.25",
       "primary_label": "model:prop:potential-compactness",
+      "published_anchor": "theorem.25.25",
+      "published_pdf_page": 360,
       "statement_labels": [
         "model:prop:potential-compactness"
       ],
@@ -19923,6 +20341,8 @@
       "nested_labels": [],
       "number": "25.21",
       "primary_label": "model:thm:initialization-limit",
+      "published_anchor": "theorem.25.21",
+      "published_pdf_page": 355,
       "statement_labels": [
         "model:thm:initialization-limit"
       ],
@@ -19955,6 +20375,8 @@
       ],
       "number": "25.22",
       "primary_label": "model:prop:generator-envelope",
+      "published_anchor": "theorem.25.22",
+      "published_pdf_page": 357,
       "statement_labels": [
         "model:prop:generator-envelope"
       ],
@@ -19978,6 +20400,8 @@
       "nested_labels": [],
       "number": "25.23",
       "primary_label": "model:prop:finite-stationarity",
+      "published_anchor": "theorem.25.23",
+      "published_pdf_page": 358,
       "statement_labels": [
         "model:prop:finite-stationarity"
       ],
@@ -20001,6 +20425,8 @@
       "nested_labels": [],
       "number": "25.24",
       "primary_label": "model:prop:paired-kernel",
+      "published_anchor": "theorem.25.24",
+      "published_pdf_page": 359,
       "statement_labels": [
         "model:prop:paired-kernel"
       ],
@@ -20041,6 +20467,8 @@
       ],
       "number": "25.28",
       "primary_label": "model:prop:saturation",
+      "published_anchor": "theorem.25.28",
+      "published_pdf_page": 363,
       "statement_labels": [
         "model:prop:saturation"
       ],
@@ -20064,6 +20492,8 @@
       "nested_labels": [],
       "number": "25.29",
       "primary_label": "model:cor:hard-selection",
+      "published_anchor": "theorem.25.29",
+      "published_pdf_page": 363,
       "statement_labels": [
         "model:cor:hard-selection"
       ],
@@ -20104,6 +20534,8 @@
       ],
       "number": "26.1",
       "primary_label": "model:prop:colored-mode",
+      "published_anchor": "theorem.26.1",
+      "published_pdf_page": 365,
       "statement_labels": [
         "model:prop:colored-mode"
       ],
@@ -20127,6 +20559,8 @@
       "nested_labels": [],
       "number": "26.2",
       "primary_label": "model:cor:colored-exponents",
+      "published_anchor": "theorem.26.2",
+      "published_pdf_page": 365,
       "statement_labels": [
         "model:cor:colored-exponents"
       ],
@@ -20159,6 +20593,8 @@
       ],
       "number": "26.3",
       "primary_label": "model:prop:nonstationary-response-covariance",
+      "published_anchor": "theorem.26.3",
+      "published_pdf_page": 366,
       "statement_labels": [
         "model:prop:nonstationary-response-covariance"
       ],
@@ -20191,6 +20627,8 @@
       ],
       "number": "26.4",
       "primary_label": "model:prop:reference-schedule-clocks",
+      "published_anchor": "theorem.26.4",
+      "published_pdf_page": 368,
       "statement_labels": [
         "model:prop:reference-schedule-clocks"
       ],
@@ -20214,6 +20652,8 @@
       "nested_labels": [],
       "number": "26.5",
       "primary_label": "model:prop:clamped-phase-invariant",
+      "published_anchor": "theorem.26.5",
+      "published_pdf_page": 368,
       "statement_labels": [
         "model:prop:clamped-phase-invariant"
       ],
@@ -20246,6 +20686,8 @@
       ],
       "number": "26.6",
       "primary_label": "model:prop:two-clock-generator",
+      "published_anchor": "theorem.26.6",
+      "published_pdf_page": 369,
       "statement_labels": [
         "model:prop:two-clock-generator"
       ],
@@ -20286,6 +20728,8 @@
       ],
       "number": "26.7",
       "primary_label": "model:prop:innovation-motion",
+      "published_anchor": "theorem.26.7",
+      "published_pdf_page": 370,
       "statement_labels": [
         "model:prop:innovation-motion"
       ],
@@ -20334,6 +20778,8 @@
       ],
       "number": "26.8",
       "primary_label": "model:prop:finite-source-corners",
+      "published_anchor": "theorem.26.8",
+      "published_pdf_page": 370,
       "statement_labels": [
         "model:prop:finite-source-corners"
       ],
@@ -20382,6 +20828,8 @@
       ],
       "number": "26.9",
       "primary_label": "model:prop:visible-source-coordinates",
+      "published_anchor": "theorem.26.9",
+      "published_pdf_page": 371,
       "statement_labels": [
         "model:prop:visible-source-coordinates"
       ],
@@ -20414,6 +20862,8 @@
       ],
       "number": "26.10",
       "primary_label": "model:cor:source-noise-priority",
+      "published_anchor": "theorem.26.10",
+      "published_pdf_page": 372,
       "statement_labels": [
         "model:cor:source-noise-priority"
       ],
@@ -20446,6 +20896,8 @@
       ],
       "number": "26.11",
       "primary_label": "model:prop:invisible-decay",
+      "published_anchor": "theorem.26.11",
+      "published_pdf_page": 373,
       "statement_labels": [
         "model:prop:invisible-decay"
       ],
@@ -20478,6 +20930,8 @@
       ],
       "number": "26.12",
       "primary_label": "model:prop:bounded-count-exponent",
+      "published_anchor": "theorem.26.12",
+      "published_pdf_page": 373,
       "statement_labels": [
         "model:prop:bounded-count-exponent"
       ],
@@ -20510,6 +20964,8 @@
       ],
       "number": "26.13",
       "primary_label": "model:prop:common-radial-directional",
+      "published_anchor": "theorem.26.13",
+      "published_pdf_page": 374,
       "statement_labels": [
         "model:prop:common-radial-directional"
       ],
@@ -20533,6 +20989,8 @@
       "nested_labels": [],
       "number": "26.14",
       "primary_label": "model:prop:finite-common-corner",
+      "published_anchor": "theorem.26.14",
+      "published_pdf_page": 374,
       "statement_labels": [
         "model:prop:finite-common-corner"
       ],
@@ -20565,6 +21023,8 @@
       ],
       "number": "26.15",
       "primary_label": "model:prop:nonlinear-scaling",
+      "published_anchor": "theorem.26.15",
+      "published_pdf_page": 375,
       "statement_labels": [
         "model:prop:nonlinear-scaling"
       ],
@@ -20613,6 +21073,8 @@
       ],
       "number": "26.17",
       "primary_label": "model:prop:critical-closure",
+      "published_anchor": "theorem.26.17",
+      "published_pdf_page": 376,
       "statement_labels": [
         "model:prop:critical-closure"
       ],
@@ -20645,6 +21107,8 @@
       ],
       "number": "26.18",
       "primary_label": "model:prop:moving-peak",
+      "published_anchor": "theorem.26.18",
+      "published_pdf_page": 376,
       "statement_labels": [
         "model:prop:moving-peak"
       ],
@@ -20685,6 +21149,8 @@
       ],
       "number": "26.19",
       "primary_label": "model:prop:colored-feedback",
+      "published_anchor": "theorem.26.19",
+      "published_pdf_page": 377,
       "statement_labels": [
         "model:prop:colored-feedback"
       ],
@@ -20725,6 +21191,8 @@
       ],
       "number": "26.16",
       "primary_label": "model:prop:signed-transfer",
+      "published_anchor": "theorem.26.16",
+      "published_pdf_page": 375,
       "statement_labels": [
         "model:prop:signed-transfer"
       ],
@@ -20757,6 +21225,8 @@
       ],
       "number": "26.20",
       "primary_label": "model:prop:scalar-fluctuation-visibility",
+      "published_anchor": "theorem.26.20",
+      "published_pdf_page": 378,
       "statement_labels": [
         "model:prop:scalar-fluctuation-visibility"
       ],
@@ -20789,6 +21259,8 @@
       ],
       "number": "26.21",
       "primary_label": "model:prop:vector-fluctuation-visibility",
+      "published_anchor": "theorem.26.21",
+      "published_pdf_page": 379,
       "statement_labels": [
         "model:prop:vector-fluctuation-visibility"
       ],
@@ -20829,6 +21301,8 @@
       ],
       "number": "26.22",
       "primary_label": "model:prop:categorical-tail-visibility",
+      "published_anchor": "theorem.26.22",
+      "published_pdf_page": 379,
       "statement_labels": [
         "model:prop:categorical-tail-visibility"
       ],
@@ -20852,6 +21326,8 @@
       "nested_labels": [],
       "number": "26.23",
       "primary_label": "model:prop:selection-window",
+      "published_anchor": "theorem.26.23",
+      "published_pdf_page": 380,
       "statement_labels": [
         "model:prop:selection-window"
       ],
@@ -20884,6 +21360,8 @@
       ],
       "number": "27.1",
       "primary_label": "model:prop:adam-tangent",
+      "published_anchor": "theorem.27.1",
+      "published_pdf_page": 381,
       "statement_labels": [
         "model:prop:adam-tangent"
       ],
@@ -20916,6 +21394,8 @@
       ],
       "number": "27.2",
       "primary_label": "model:prop:adam-decay-sector",
+      "published_anchor": "theorem.27.2",
+      "published_pdf_page": 382,
       "statement_labels": [
         "model:prop:adam-decay-sector"
       ],
@@ -20948,6 +21428,8 @@
       ],
       "number": "27.3",
       "primary_label": "model:prop:crossed-collective",
+      "published_anchor": "theorem.27.3",
+      "published_pdf_page": 383,
       "statement_labels": [
         "model:prop:crossed-collective"
       ],
@@ -20980,6 +21462,8 @@
       ],
       "number": "27.4",
       "primary_label": "model:prop:row-concentration",
+      "published_anchor": "theorem.27.4",
+      "published_pdf_page": 384,
       "statement_labels": [
         "model:prop:row-concentration"
       ],
@@ -21020,6 +21504,8 @@
       ],
       "number": "27.5",
       "primary_label": "model:prop:metric-collective-sectors",
+      "published_anchor": "theorem.27.5",
+      "published_pdf_page": 386,
       "statement_labels": [
         "model:prop:metric-collective-sectors"
       ],
@@ -21060,6 +21546,8 @@
       ],
       "number": "27.6",
       "primary_label": "model:prop:metric-row-transport",
+      "published_anchor": "theorem.27.6",
+      "published_pdf_page": 387,
       "statement_labels": [
         "model:prop:metric-row-transport"
       ],
@@ -21083,6 +21571,8 @@
       "nested_labels": [],
       "number": "27.7",
       "primary_label": "model:cor:metric-row-contraction",
+      "published_anchor": "theorem.27.7",
+      "published_pdf_page": 388,
       "statement_labels": [
         "model:cor:metric-row-contraction"
       ],
@@ -21123,6 +21613,8 @@
       ],
       "number": "27.8",
       "primary_label": "model:prop:metric-row-adjoint",
+      "published_anchor": "theorem.27.8",
+      "published_pdf_page": 388,
       "statement_labels": [
         "model:prop:metric-row-adjoint"
       ],
@@ -21155,6 +21647,8 @@
       ],
       "number": "27.9",
       "primary_label": "model:cor:shared-gradient-closure",
+      "published_anchor": "theorem.27.9",
+      "published_pdf_page": 389,
       "statement_labels": [
         "model:cor:shared-gradient-closure"
       ],
@@ -21187,6 +21681,8 @@
       ],
       "number": "27.10",
       "primary_label": "model:prop:exception-projection",
+      "published_anchor": "theorem.27.10",
+      "published_pdf_page": 390,
       "statement_labels": [
         "model:prop:exception-projection"
       ],
@@ -21219,6 +21715,8 @@
       ],
       "number": "27.11",
       "primary_label": "model:prop:susceptibility-transfer",
+      "published_anchor": "theorem.27.11",
+      "published_pdf_page": 391,
       "statement_labels": [
         "model:prop:susceptibility-transfer"
       ],
@@ -21259,6 +21757,8 @@
       ],
       "number": "27.12",
       "primary_label": "model:prop:observation-energy",
+      "published_anchor": "theorem.27.12",
+      "published_pdf_page": 391,
       "statement_labels": [
         "model:prop:observation-energy"
       ],
@@ -21299,6 +21799,8 @@
       ],
       "number": "27.13",
       "primary_label": "model:prop:sample-observation",
+      "published_anchor": "theorem.27.13",
+      "published_pdf_page": 392,
       "statement_labels": [
         "model:prop:sample-observation"
       ],
@@ -21331,6 +21833,8 @@
       ],
       "number": "27.14",
       "primary_label": "model:prop:inference-visibility",
+      "published_anchor": "theorem.27.14",
+      "published_pdf_page": 392,
       "statement_labels": [
         "model:prop:inference-visibility"
       ],
@@ -21363,6 +21867,8 @@
       ],
       "number": "29.1",
       "primary_label": "model:prop:physical-prefix-control",
+      "published_anchor": "theorem.29.1",
+      "published_pdf_page": 465,
       "statement_labels": [
         "model:prop:physical-prefix-control"
       ],
@@ -21395,6 +21901,8 @@
       ],
       "number": "29.2",
       "primary_label": "model:prop:physical-spatial-centering",
+      "published_anchor": "theorem.29.2",
+      "published_pdf_page": 465,
       "statement_labels": [
         "model:prop:physical-spatial-centering"
       ],
@@ -21427,6 +21935,8 @@
       ],
       "number": "29.4",
       "primary_label": "model:prop:physical-slope-control",
+      "published_anchor": "theorem.29.4",
+      "published_pdf_page": 467,
       "statement_labels": [
         "model:prop:physical-slope-control"
       ],
@@ -21459,6 +21969,8 @@
       ],
       "number": "29.5",
       "primary_label": "model:prop:physical-gram",
+      "published_anchor": "theorem.29.5",
+      "published_pdf_page": 467,
       "statement_labels": [
         "model:prop:physical-gram"
       ],
@@ -21491,6 +22003,8 @@
       ],
       "number": "29.6",
       "primary_label": "model:prop:physical-invariant",
+      "published_anchor": "theorem.29.6",
+      "published_pdf_page": 468,
       "statement_labels": [
         "model:prop:physical-invariant"
       ],
@@ -21523,6 +22037,8 @@
       ],
       "number": "29.7",
       "primary_label": "model:prop:physical-transport",
+      "published_anchor": "theorem.29.7",
+      "published_pdf_page": 468,
       "statement_labels": [
         "model:prop:physical-transport"
       ],
@@ -21555,6 +22071,8 @@
       ],
       "number": "29.8",
       "primary_label": "model:prop:physical-intertwining",
+      "published_anchor": "theorem.29.8",
+      "published_pdf_page": 469,
       "statement_labels": [
         "model:prop:physical-intertwining"
       ],
@@ -21578,6 +22096,8 @@
       "nested_labels": [],
       "number": "29.9",
       "primary_label": "model:prop:physical-shuffle",
+      "published_anchor": "theorem.29.9",
+      "published_pdf_page": 469,
       "statement_labels": [
         "model:prop:physical-shuffle"
       ],
@@ -21634,6 +22154,8 @@
       ],
       "number": "29.3",
       "primary_label": "model:prop:thermal-transport",
+      "published_anchor": "theorem.29.3",
+      "published_pdf_page": 466,
       "statement_labels": [
         "model:prop:thermal-transport"
       ],
@@ -21682,6 +22204,8 @@
       ],
       "number": "29.10",
       "primary_label": "model:prop:readout-refinement",
+      "published_anchor": "theorem.29.10",
+      "published_pdf_page": 470,
       "statement_labels": [
         "model:prop:readout-refinement"
       ],
@@ -21705,6 +22229,8 @@
       "nested_labels": [],
       "number": "29.11",
       "primary_label": "model:prop:connected-refinement",
+      "published_anchor": "theorem.29.11",
+      "published_pdf_page": 470,
       "statement_labels": [
         "model:prop:connected-refinement"
       ],
@@ -21728,6 +22254,8 @@
       "nested_labels": [],
       "number": "29.12",
       "primary_label": "model:prop:joint-refinement",
+      "published_anchor": "theorem.29.12",
+      "published_pdf_page": 471,
       "statement_labels": [
         "model:prop:joint-refinement"
       ],
@@ -21760,6 +22288,8 @@
       ],
       "number": "29.13",
       "primary_label": "model:prop:prefix-readout-budget",
+      "published_anchor": "theorem.29.13",
+      "published_pdf_page": 471,
       "statement_labels": [
         "model:prop:prefix-readout-budget"
       ],
@@ -21792,6 +22322,8 @@
       ],
       "number": "A.1",
       "primary_label": "model:prop:replica-count-variance",
+      "published_anchor": "theorem.A.1",
+      "published_pdf_page": 496,
       "statement_labels": [
         "model:prop:replica-count-variance"
       ],
@@ -21824,6 +22356,8 @@
       ],
       "number": "B.1",
       "primary_label": "model:prop:row-quadrature-budget",
+      "published_anchor": "theorem.B.1",
+      "published_pdf_page": 535,
       "statement_labels": [
         "model:prop:row-quadrature-budget"
       ],

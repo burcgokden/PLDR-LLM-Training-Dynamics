@@ -20,7 +20,7 @@ training replications.
 ## Statement identities
 
 `provenance/statement-manifest.json` records each numbered statement's
-`primary_label`, printed `number`, compiled `anchor`, and shared `counter`.
+`primary_label`, printed `number`, original-build `anchor`, and shared `counter`.
 `statement_labels` contains its own labels, including declared aliases;
 `nested_labels` contains equation and clause labels within it. Definition 25.5
 uses `model:def:fluctuation-criticality`; its Equation (25.12) uses
@@ -30,6 +30,39 @@ Equation labels remain valid targets of partial formal correspondence.
 Run `python3 scripts/check_formal_manifest.py --data-repo /path/to/data`
 to check the code manifest and numerical dataset's mathematical claim index
 together. Neither manuscript sources nor TeX are required.
+
+## Published PDF destinations
+
+The original-build `anchor` and `labels` records remain unchanged. Statement
+rows additionally expose `published_anchor` and `published_pdf_page` for the
+published arXiv monograph. `published_pdf_page` is a one-based PDF page index,
+including front matter; it is distinct from printed page numbers.
+
+The top-level `published_pdf` binding identifies arXiv `2609.34130v1`, its
+versioned PDF URL, SHA-256 and 655-page extent. All 263 numbered statements
+have published destinations. The 212 original-build anchors that differ
+remain available as provenance. Nested equation/clause anchors and the
+original label map retain their original-build interpretation.
+
+`check_formal_manifest.py --data-repo DATA-REPO` checks both original metadata
+and the published-PDF mapping for code/data agreement. To authenticate the
+actual PDF and resolve every published statement destination and page, run
+from this code package's root (the included `companions/dynamics/` directory
+when using an included copy):
+
+```sh
+python3 -m pip install -r requirements-publication.txt
+curl -fL https://arxiv.org/pdf/2609.34130v1 -o /tmp/pldr-monograph-2609.34130v1.pdf
+python3 scripts/check_published_pdf.py --pdf /tmp/pldr-monograph-2609.34130v1.pdf --data-repo DATA-REPO --output validation/published-pdf.json
+```
+
+Use matching code and dataset revisions that include these fields. The PDF
+checker requires only the optional pinned `pypdf` dependency in addition to
+the standard library; it reads a local PDF and never changes the dataset.
+The ordinary evidence reader and code/data metadata checker remain
+standard-library-only. The report distinguishes actual PDF verification from
+metadata agreement. This check covers numbered-statement navigation, with
+mathematical proofs and numerical reproduction retaining their separate checks.
 
 The two-row example in Chapter 6 is illustrative mathematics. Run
 `python3 scripts/check_chart_example.py` to check its exact rational values

@@ -12,3 +12,5 @@ pyarrow==25.0.1
 datasets==5.0.0
 matplotlib==3.11.1
 huggingface-hub==1.28.0
+# Publication-metadata regression tests use small generated PDF fixtures.
+-r requirements-publication.txt
