@@ -10,6 +10,11 @@ def pairs(items):
         out[key]=value
     return out
 def read_json(path):return json.loads(Path(path).read_text(),object_pairs_hook=pairs)
+def materialized_bytes(root,name):
+    raw=safe(root,name).read_bytes()
+    if raw.startswith(b'version https://git-lfs.github.com/spec/v1\n') or raw.startswith(b'version https://git-lfs.github.com/spec/v1\r\n'):
+        raise ValueError('Unresolved Git LFS pointer: '+name+'. From the dataset checkout, run git lfs install --local and git lfs pull origin at the intended revision; then run sha256sum -c SHA256SUMS. See the dataset README Access recipe. Downloading requires Git LFS; reading materialized records uses only the Python standard library.')
+    return raw
 def safe(root,name):
     p=PurePosixPath(name)
     if not name or p.is_absolute() or '..' in p.parts or '\\' in name or str(p)!=name:
@@ -27,7 +32,7 @@ class Evidence:
             if r['id'] in self.records:raise ValueError('Duplicate evidence identity')
             safe(self.root,r['id']);safe(self.root,r['object']);self.records[r['id']]=r
     def read(self,identity):
-        r=self.records[identity];compressed=safe(self.root,r['object']).read_bytes()
+        r=self.records[identity];compressed=materialized_bytes(self.root,r['object'])
         if digest(compressed)!=r['compressed_sha256'] or len(compressed)!=r['compressed_bytes']:raise ValueError('Compressed integrity failure: '+identity)
         raw=gzip.decompress(compressed)
         if digest(raw)!=r['sha256'] or len(raw)!=r['bytes']:raise ValueError('Record integrity failure: '+identity)
@@ -37,9 +42,12 @@ class Evidence:
         manifest=read_json(self.root/'manifest.json')
         expected=set(manifest['files'])
         actual={str(p.relative_to(self.root)) for p in self.root.rglob('*') if p.is_file() and '.git' not in p.relative_to(self.root).parts and str(p.relative_to(self.root)) not in {'manifest.json','SHA256SUMS'}}
-        if actual!=expected:raise ValueError('Dataset file inventory differs')
+        if actual!=expected:
+            missing=sorted(expected-actual);unexpected=sorted(actual-expected)
+            detail='; missing='+repr(missing[:5])+'; unexpected='+repr(unexpected[:5])
+            raise ValueError('Dataset file inventory differs'+detail+'. Use the dataset README Access recipe to create a complete checkout with regular files. Hub cache/snapshot layouts, .cache metadata, extracted records and validation outputs are not part of the dataset export; keep them outside its root. No extra files are silently ignored except Git metadata.')
         for name,h in manifest['files'].items():
-            if digest(safe(self.root,name).read_bytes())!=h:raise ValueError('Dataset file digest differs: '+name)
+            if digest(materialized_bytes(self.root,name))!=h:raise ValueError('Dataset file digest differs: '+name)
         total=0
         for identity in sorted(self.records):
             raw=self.read(identity);total+=len(raw)

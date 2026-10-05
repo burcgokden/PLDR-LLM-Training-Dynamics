@@ -1,3 +1,15 @@
+# Historical validation record
+
+The original record below is preserved as historical evidence. In the upstream
+Training Dynamics repository it was committed on 2026-09-25 at
+`e79a0b99f3b4b7608ce76655cc1a4c750455a795`; the original execution date is not
+specified. Its test counts and statement about uncommitted changes describe
+that preparation, not the current checkout. The accompanying `VALIDATION.json`
+and lowercase `validation.json`, where present, also retain their historical
+scope. Current execution requires a new release-gate record tied to exact bytes.
+
+---
+
 # Scientific companion validation
 
 - root: 32 passed, 0 documented fixture skips; 4 additional subtests.

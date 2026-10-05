@@ -55,8 +55,15 @@ Validation output is written beneath `validation/` and `build/`.
 
 ## Numerical evidence
 
-Clone the dataset to any directory. All readers and verification code reside
-here; the dataset contains only records, indexes, dictionaries and metadata.
+Follow the dataset card's [pinned HTTPS download recipe](https://huggingface.co/datasets/fromthesky/pldr-llm-training-dynamics-data#access)
+to obtain regular evidence files with Git LFS, then run `sha256sum -c SHA256SUMS`
+inside that checkout. The supported public dataset revision is
+`5b1f9a53ca8a8e4f3c208b3b7b2625b5dd0c2cfe` (about 52.4 MB compressed objects).
+The reader itself needs only the Python standard library. Keep extraction and
+validation outputs outside the dataset root; pointer-only clones and Hub cache
+directories do not satisfy its strict inventory and integrity contract.
+All readers and verification code reside here; the dataset contains only
+records, indexes, dictionaries and metadata.
 
 ```sh
 python3 scripts/verify_evidence.py --data-repo /path/to/data-repo
@@ -111,3 +118,15 @@ tokenizer assets retain their upstream identities in `vendor/native/`.
 
 Runtime diagnostics and native cache-position semantics are documented in
 [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
+
+## Published book
+
+[Power Law Graph Attention and PLDR-LLMs: Mathematical Foundations, Training Dynamics, and Predictive Inference](https://www.amazon.com/dp/B0HLS1N6C9), by Burc Gokden,
+is commercially published. Its [Book Companion](https://github.com/burcgokden/PLDR-LLM-Book-Companion)
+provides book-specific code, correspondence and edition-to-release guidance.
+This repository's existing paper/monograph citation retains its original scope.
+
+## Release validation
+
+[RELEASE.md](RELEASE.md) documents the CPU release gate, immutable inputs,
+execution records, separate Lean/GPU scopes and preparation of reviewed tags.

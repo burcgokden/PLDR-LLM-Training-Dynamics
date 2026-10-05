@@ -1,0 +1,90 @@
+{
+  "manifest": "scientific-manifest.json",
+  "publication": {
+    "url": "https://arxiv.org/pdf/2609.34130v1",
+    "sha256": "b1f5130df73c4e7ab0b3949f94707e557a71c0ef2aff5faa526f2b5a40259b0a"
+  },
+  "dataset": {
+    "url": "https://huggingface.co/datasets/fromthesky/pldr-llm-training-dynamics-data",
+    "commit": "5b1f9a53ca8a8e4f3c208b3b7b2625b5dd0c2cfe",
+    "manifest_sha256": "d639bc535224e03ae34e71e057f5309916e10e4a7d17b0275e5b146de8d4170a",
+    "payload_sha256": "45921d31a700bd29e77645f1e9b42f0ec87d39f0c0a9a5f44da130531fc73fcd",
+    "index_sha256": "596b71a06eb12fc06e66465a9c1786a8dd641b7fa22b7e33dc93d26976b479fc"
+  },
+  "checks": [
+    {
+      "name": "scientific",
+      "cwd": ".",
+      "argv": [
+        "{python}",
+        "-B",
+        "scripts/run_scientific_checks.py"
+      ]
+    },
+    {
+      "name": "code-data",
+      "cwd": ".",
+      "argv": [
+        "{python}",
+        "-B",
+        "scripts/check_formal_manifest.py",
+        "--data-repo",
+        "{data}"
+      ]
+    },
+    {
+      "name": "evidence",
+      "cwd": ".",
+      "argv": [
+        "{python}",
+        "-B",
+        "scripts/verify_evidence.py",
+        "--data-repo",
+        "{data}"
+      ]
+    },
+    {
+      "name": "publication",
+      "cwd": ".",
+      "argv": [
+        "{python}",
+        "-B",
+        "scripts/check_published_pdf.py",
+        "--pdf",
+        "{pdf}",
+        "--data-repo",
+        "{data}",
+        "--output",
+        "validation/published-pdf.json"
+      ]
+    },
+    {
+      "name": "check_process_boundaries",
+      "cwd": ".",
+      "argv": [
+        "{python}",
+        "-B",
+        "scripts/check_process_boundaries.py"
+      ]
+    },
+    {
+      "name": "check_campaign_budget",
+      "cwd": ".",
+      "argv": [
+        "{python}",
+        "-B",
+        "scripts/check_campaign_budget.py"
+      ]
+    },
+    {
+      "name": "check_resource_execution",
+      "cwd": ".",
+      "argv": [
+        "{python}",
+        "-B",
+        "scripts/check_resource_execution.py"
+      ]
+    }
+  ],
+  "schema": "pldr-release-gate-v1"
+}

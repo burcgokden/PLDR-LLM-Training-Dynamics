@@ -21,6 +21,21 @@ class EvidenceIntegrityTests(unittest.TestCase):
     def test_changed_compressed_bytes_rejected(self):
         (self.root/self.obj).write_bytes(b'changed')
         with self.assertRaises(ValueError):Evidence(self.root).verify()
+    def test_lfs_pointer_explains_materialization_for_read_and_verify(self):
+        for newline in [b'\n',b'\r\n']:
+            pointer=newline.join([b'version https://git-lfs.github.com/spec/v1',b'oid sha256:'+self.row['compressed_sha256'].encode(),b'size '+str(self.row['compressed_bytes']).encode(),b''])
+            (self.root/self.obj).write_bytes(pointer)
+            for action in [lambda: Evidence(self.root).read('row/result.json'),lambda: Evidence(self.root).verify()]:
+                with self.subTest(newline=newline,action=action),self.assertRaisesRegex(ValueError,'Unresolved Git LFS pointer: .*git lfs pull origin'):
+                    action()
+    def test_cache_metadata_is_rejected_with_layout_guidance(self):
+        cache=self.root/'.cache/huggingface/download/example.metadata';cache.parent.mkdir(parents=True);cache.write_text('cache')
+        with self.assertRaisesRegex(ValueError,r'Dataset file inventory differs.*unexpected=.*\.cache/huggingface/download/example.metadata.*outside its root'):
+            Evidence(self.root).verify()
+    def test_missing_object_is_named(self):
+        (self.root/self.obj).unlink()
+        with self.assertRaisesRegex(ValueError,'Dataset file inventory differs.*missing=.*'+self.obj):
+            Evidence(self.root).verify()
     def test_index_cannot_be_silently_changed(self):
         self.row['bytes']+=1;self.root.joinpath('index.json').write_text(json.dumps(self.index))
         with self.assertRaises(ValueError):Evidence(self.root).verify()
