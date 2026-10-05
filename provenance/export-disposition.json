@@ -601,7 +601,7 @@
       "reason": "Exclude imports and checks specific to removed presentation definitions: If, _verify_analysis, main, render_mechanism_tables"
     }
   ],
-  "boundary": "Excluded publication code and fixture checks are not scientific passes. Pure numerical definitions from mixed modules are retained; deleted presentation-dependent CLI functions are not public entry points.",
+  "boundary": "Excluded publication code and fixture checks are not scientific passes. Pure numerical definitions from mixed modules are retained; deleted presentation-dependent CLI functions are not public entry points. Obsolete manuscript sources, formatting helpers and superseded correspondence snapshots are omitted from this inventory; maintained formal mappings are in provenance/statement-manifest.json.",
   "excluded_files": [
     {
       "path": "vendor/model/README.md",
@@ -698,6 +698,170 @@
     {
       "path": "vendor/model/docs/STUDY_REGISTRY.md",
       "reason": "outside scientific format allowlist"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/protocol.json",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/factorial_admission.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/run_potential_factorial.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/train_potential_avalanches.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/__init__.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/adam_tangent.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/checkpointing.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/common_geometry.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/controlled.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/correlations.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/criticality.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/deductive_activity.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/evidence_progress.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/finetuning.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/finite_optimizer.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/inference_interventions.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/lattice.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/layer_interventions.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/moment_rg.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/native.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/observation.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/onepass_regimes.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/physical_native.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/potential_avalanches.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/potential_symmetry.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/precision.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/provenance.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/qualification.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/refresh.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/released_qualification.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/resource_coupling.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/rg.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/row_projection.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/scaling.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/scheduled_regimes.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/schedules.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/source_basis.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/training.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/update_records.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/variance_family.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
+    },
+    {
+      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/visible_noise.py",
+      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
       "path": "vendor/model/evidence/executed/potential-factorial/protocol.json",
@@ -865,170 +1029,6 @@
     },
     {
       "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/visible_noise.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/protocol.json",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/factorial_admission.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/run_potential_factorial.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/train_potential_avalanches.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/__init__.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/adam_tangent.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/checkpointing.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/common_geometry.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/controlled.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/correlations.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/criticality.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/deductive_activity.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/evidence_progress.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/finetuning.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/finite_optimizer.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/inference_interventions.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/lattice.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/layer_interventions.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/moment_rg.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/native.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/observation.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/onepass_regimes.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/physical_native.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/potential_avalanches.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/potential_symmetry.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/precision.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/provenance.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/qualification.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/refresh.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/released_qualification.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/resource_coupling.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/rg.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/row_projection.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/scaling.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/scheduled_regimes.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/schedules.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/source_basis.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/training.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/update_records.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/variance_family.py",
-      "reason": "numerical records supplied in dataset; duplicate executed source not needed"
-    },
-    {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/visible_noise.py",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
@@ -1832,12 +1832,28 @@
       "reason": "document assembly or publication validation"
     },
     {
+      "path": "vendor/rg/tests/test_energy_closure_renderer_v3.py",
+      "reason": "dependent publication interface"
+    },
+    {
+      "path": "vendor/rg/tests/test_evidence_intervals.py",
+      "reason": "dependent publication interface"
+    },
+    {
+      "path": "vendor/rg/tests/test_observer_precision_renderer.py",
+      "reason": "dependent publication interface"
+    },
+    {
       "path": "vendor/rg/tests/test_public_evidence_bundle.py",
       "reason": "document assembly or publication validation"
     },
     {
       "path": "vendor/rg/tests/test_release_metadata.py",
       "reason": "document assembly or publication validation"
+    },
+    {
+      "path": "vendor/rg/tests/test_renderer_v3.py",
+      "reason": "dependent publication interface"
     },
     {
       "path": "vendor/row/Makefile",
@@ -1853,22 +1869,6 @@
     },
     {
       "path": "vendor/row/docs/README.md",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/complete_state_cocycle_rev55.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/direct_energy_rev55.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/discussion_rev55.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/executed_evidence_rev55.tex",
       "reason": "outside scientific format allowlist"
     },
     {
@@ -1980,10 +1980,6 @@
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/interfaces_rev55.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
       "path": "vendor/row/docs/pldr_training_dynamics.bbl",
       "reason": "outside scientific format allowlist"
     },
@@ -1993,30 +1989,6 @@
     },
     {
       "path": "vendor/row/docs/pldr_training_dynamics.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/plga_defect_rev55.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/related_work_rev55.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/retained_energy_evidence_rev55.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/rev55_abstract.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/rev55_introduction.tex",
-      "reason": "outside scientific format allowlist"
-    },
-    {
-      "path": "vendor/row/docs/row_geometry_rev55.tex",
       "reason": "outside scientific format allowlist"
     },
     {
@@ -2348,48 +2320,8 @@
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/repair_rev40_inline_math.py",
-      "reason": "document assembly or publication validation"
-    },
-    {
-      "path": "vendor/row/scripts/repair_rev41_inline_math.py",
-      "reason": "document assembly or publication validation"
-    },
-    {
-      "path": "vendor/row/scripts/repair_rev42_inline_math.py",
-      "reason": "document assembly or publication validation"
-    },
-    {
-      "path": "vendor/row/scripts/repair_rev44_inline_math.py",
-      "reason": "document assembly or publication validation"
-    },
-    {
-      "path": "vendor/row/scripts/repair_rev45_inline_math.py",
-      "reason": "document assembly or publication validation"
-    },
-    {
-      "path": "vendor/row/scripts/repair_rev46_inline_math.py",
-      "reason": "document assembly or publication validation"
-    },
-    {
       "path": "vendor/row/scripts/verify_direct_work_bundle.py",
       "reason": "document assembly or publication validation"
-    },
-    {
-      "path": "vendor/rg/tests/test_energy_closure_renderer_v3.py",
-      "reason": "dependent publication interface"
-    },
-    {
-      "path": "vendor/rg/tests/test_evidence_intervals.py",
-      "reason": "dependent publication interface"
-    },
-    {
-      "path": "vendor/rg/tests/test_observer_precision_renderer.py",
-      "reason": "dependent publication interface"
-    },
-    {
-      "path": "vendor/rg/tests/test_renderer_v3.py",
-      "reason": "dependent publication interface"
     }
   ],
   "schema": "pldr-scientific-export-disposition-v1"
