@@ -291,10 +291,23 @@ def _bounded_injected_probe(probe, device, deadline):
         receive.close()
 
 
-def _stop_guardian(process):
+def _stop_guardian(process, result):
+    cleanup_deadline=time.monotonic()+2
     if process.poll() is None:
-        process.terminate()
-    try:process.wait(timeout=2)
+        # A startup timeout can precede installation of the signal handlers.
+        # Cancel launch first, then allow the guardian to report actual cleanup.
+        try:result.with_suffix('.cancel').touch()
+        except OSError:pass  # The bounded signal/kill path remains available.
+        ready=result.with_suffix('.ready')
+        while process.poll() is None and not ready.is_file():
+            remaining=cleanup_deadline-time.monotonic()
+            if remaining<=0:break
+            try:process.wait(timeout=min(.005,remaining))
+            except subprocess.TimeoutExpired:pass
+        if process.poll() is None and ready.is_file():
+            try:process.terminate()
+            except ProcessLookupError:pass
+    try:process.wait(timeout=max(0,cleanup_deadline-time.monotonic()))
     except subprocess.TimeoutExpired:
         try:os.killpg(process.pid,signal.SIGKILL)
         except ProcessLookupError:pass
@@ -370,11 +383,12 @@ def run_capped(command: Sequence[str], *, device: str, output_root: str | Path,
     started_ns=time.time_ns();started=time.monotonic();deadline=started+caps.wall_seconds
     with tempfile.TemporaryDirectory(prefix='guardian-',dir=target.parent) as temp:
         result=Path(temp)/'result.json'
+        launch_granted=False
         try:
             with (root/'worker.stdout.log').open('ab') as stdout, (root/'worker.stderr.log').open('ab') as stderr:
                 started_ns=time.time_ns();started=time.monotonic();deadline=started+caps.wall_seconds
                 process=subprocess.Popen([sys.executable,'-B',str(Path(__file__).with_name('resource_worker.py')),
-                                          str(result),*command],cwd=root,env=child_env,
+                                          str(result),str(deadline),*command],cwd=root,env=child_env,
                                          start_new_session=True,stdout=stdout,stderr=stderr)
                 while True:
                     exited=process.poll() is not None
@@ -387,6 +401,9 @@ def run_capped(command: Sequence[str], *, device: str, output_root: str | Path,
                         try:process.wait(timeout=min(.005,max(0,deadline-time.monotonic())))
                         except subprocess.TimeoutExpired:pass
                         continue
+                    if not launch_granted:
+                        result.with_suffix('.launch').touch()
+                        launch_granted=True
                     try:
                         size=directory_bytes(monitored)
                         pids=_process_tree_pids(process.pid)
@@ -420,7 +437,7 @@ def run_capped(command: Sequence[str], *, device: str, output_root: str | Path,
         except Exception as error:
             measurement_error=f'{type(error).__name__}: {error}';status='launch_failed' if process is None else 'monitoring_failed'
         finally:
-            stopped=True if process is None else _stop_guardian(process)
+            stopped=True if process is None else _stop_guardian(process,result)
             if result.is_file():
                 try:guardian=json.loads(result.read_text())
                 except (OSError,ValueError) as error:

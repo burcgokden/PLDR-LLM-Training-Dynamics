@@ -44,7 +44,7 @@ def cleanup(seconds=1.0):
 
 
 def main():
-    result_path=Path(sys.argv[1]);command=sys.argv[2:]
+    result_path=Path(sys.argv[1]);deadline=float(sys.argv[2]);command=sys.argv[3:]
     result=dict(exit_code=None,cleanup_complete=False,surviving_descendants=[],
                 detached_descendants=[],error=None)
     stopped=False
@@ -60,7 +60,14 @@ def main():
         if libc.prctl(36,1,0,0,0)!=0:
             raise OSError(ctypes.get_errno(),'PR_SET_CHILD_SUBREAPER failed')
         result_path.with_suffix(".ready").touch()
-        if stopped:raise RuntimeError("guardian stopped before worker launch")
+        launch=result_path.with_suffix('.launch')
+        cancel=result_path.with_suffix('.cancel')
+        # Readiness does not authorize a workload. The supervisor can cancel
+        # during interpreter startup, and that time still belongs to the cap.
+        while not stopped and not cancel.is_file() and not launch.is_file() and time.monotonic()<deadline:
+            time.sleep(.005)
+        if stopped or cancel.is_file():raise RuntimeError("guardian stopped before worker launch")
+        if time.monotonic()>=deadline:raise TimeoutError("guardian launch deadline reached")
         child=subprocess.Popen(command)
         result['worker_pid']=child.pid
         escaped=set()

@@ -60,6 +60,64 @@ def test_wall_deadline_shorter_than_poll(tmp_path):
     assert time.monotonic()-start<3
 
 
+def guardian_startup_hook(tmp_path, *, release_on_cancel):
+    hooks=tmp_path/'startup-hooks';hooks.mkdir()
+    entered=tmp_path/'guardian-startup.pid'
+    (hooks/'sitecustomize.py').write_text(f'''import os, sys, time
+from pathlib import Path
+if Path(sys.argv[0]).name == 'resource_worker.py':
+    Path({str(entered)!r}).write_text(str(os.getpid()))
+    cancel=Path(sys.argv[1]).with_suffix('.cancel')
+    limit=time.monotonic()+10
+    while time.monotonic()<limit:
+        if {release_on_cancel!r} and cancel.is_file():
+            break
+        time.sleep(.005)
+''')
+    return entered, {'PYTHONPATH':str(hooks),'PYTHONDONTWRITEBYTECODE':'1'}
+
+
+@pytest.mark.parametrize('wall',[.05,.1])
+def test_deadline_during_guardian_startup_cancels_before_launch(tmp_path,wall):
+    entered,environment=guardian_startup_hook(tmp_path,release_on_cancel=True)
+    start=time.monotonic()
+    record=run(tmp_path,"from pathlib import Path;Path('worker-started').touch()",
+               replace(BASE,wall_seconds=wall),environment=environment)
+    assert record['cap_status']=='reached_wall_seconds'
+    assert not record['technical_valid'] and record['cleanup_complete']
+    assert record['deadline_outcome']=='reached_or_unobserved'
+    assert record['sample_count']==0 and record['exit_code'] is None
+    assert not (tmp_path/'payload/worker-started').exists()
+    assert not Path('/proc',entered.read_text()).exists()
+    assert time.monotonic()-start<3
+
+
+def test_unresponsive_guardian_startup_is_bounded_and_not_admitted(tmp_path):
+    entered,environment=guardian_startup_hook(tmp_path,release_on_cancel=False)
+    start=time.monotonic()
+    record=run(tmp_path,"from pathlib import Path;Path('worker-started').touch()",
+               replace(BASE,wall_seconds=.05),environment=environment)
+    assert record['cap_status']=='reached_wall_seconds'
+    assert not record['technical_valid'] and not record['cleanup_complete']
+    assert not (tmp_path/'payload/worker-started').exists()
+    assert not Path('/proc',entered.read_text()).exists()
+    assert time.monotonic()-start<4
+
+
+def test_guardian_rejects_launch_permission_after_deadline(tmp_path):
+    result=tmp_path/'result.json'
+    result.with_suffix('.launch').touch()
+    worker=Path(executor.__file__).with_name('resource_worker.py')
+    subprocess.run([sys.executable,'-B',str(worker),str(result),
+                    str(time.monotonic()-1),sys.executable,'-c',
+                    "from pathlib import Path;Path('worker-started').touch()"],
+                   cwd=tmp_path,check=True,timeout=5)
+    record=json.loads(result.read_text())
+    assert record['cleanup_complete'] and record['exit_code'] is None
+    assert record['error'].startswith('TimeoutError:')
+    assert not (tmp_path/'worker-started').exists()
+
+
 def test_success_and_control_accounting(tmp_path):
     record=run(tmp_path,"from pathlib import Path;Path('data').write_bytes(b'x'*7);print('abc')")
     assert executor.record_is_admissible(record)
@@ -276,7 +334,7 @@ def test_sampled_memory_equality_reaches_cap(tmp_path,monkeypatch,kind):
 
 def test_incomplete_cleanup_cannot_admit(tmp_path,monkeypatch):
     stop=executor._stop_guardian
-    def incomplete(process):stop(process);return False
+    def incomplete(process,result):stop(process,result);return False
     monkeypatch.setattr(executor,'_stop_guardian',incomplete)
     record=run(tmp_path,'pass')
     assert record['cap_status']=='cleanup_failed' and not record['technical_valid']

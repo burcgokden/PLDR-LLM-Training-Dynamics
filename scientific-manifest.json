@@ -24,7 +24,7 @@
     "docs/CHAPTERS.md": "ceeb377c4cbd2cde9fddddb1af0693ed29097260cf0d6cfa7a5fbdc0fb510efe",
     "docs/COMPATIBILITY.md": "946aa364846a25d512246baf49d46566682d3771c632035fe52543ffd1d87af3",
     "docs/EXECUTION.md": "e61e7a140848597831e37a7a280f8039d6e8f552455da6ad34b5a550cb2db554",
-    "docs/RESOURCE_EXECUTION.md": "68ed48a0b464307f7c0c18048d8e246dd2a1834ff360b525c1d01307317a3096",
+    "docs/RESOURCE_EXECUTION.md": "697063ee7351c502269038c0b7f0fa613344de2577594feae64ca07a206e77b8",
     "lake-manifest.json": "3c3d659d02e04e89fa728eb8791db91a21e3b14c17b6f3aab004df3338a7161c",
     "lakefile.toml": "46d5b706835361b7d85b0b1bfd6ade335e7fd1b85741d791eff7c8d67d302428",
     "lean-toolchain": "62c2d9c0fc1ec4c67e151c11eff41ca004ef38e179cf9476c230406e6defedef",
@@ -1285,9 +1285,9 @@
     "vendor/row/experiments/confirm/renormalization_group.py": "b070478b747d33304742ca98dcff3a1131f86dad5fc9b1260a76a59a90d1bb59",
     "vendor/row/experiments/confirm/require_e0_pass.py": "14d761749a04a948463d5331644e8644e74722bacef1840a62a712e45962ab33",
     "vendor/row/experiments/confirm/resource_clocks.py": "93a82ad76166341b3e75a96ebed0163d262177e6d165ced5b431e48d03337f63",
-    "vendor/row/experiments/confirm/resource_executor.py": "70b8ad6dffe08ffe15a45a86dfef8b77195f948a6046090fe11274f5725e38a2",
+    "vendor/row/experiments/confirm/resource_executor.py": "fbb68f5b77bcdc90e9bdb31f006f773dd24e9bf44088079ed8dfac17b3dc0bb2",
     "vendor/row/experiments/confirm/resource_gate.py": "465460bc801d871aed88be4d3becebaf2e62762613b977d5462fa40eec2f3ef1",
-    "vendor/row/experiments/confirm/resource_worker.py": "a64a449abe9b39ad89dad3f22d9bf7be29157d7140bc7841d66b5780a090b22b",
+    "vendor/row/experiments/confirm/resource_worker.py": "f346e4b258b9263ea9fe686c933a7887dea524da80c3e700e2292fb12fd02ec9",
     "vendor/row/experiments/confirm/rg_universality_protocol_specs.py": "bc6ff8409cdd26788cc7b31ae5f1a5174beafb2b7e174da05a19d3d815c16216",
     "vendor/row/experiments/confirm/row_domain.py": "468d1590dfe37b9a862a0d96ff30c6172107c142cb4a7e9b90cb3a9cb8c19f9f",
     "vendor/row/experiments/confirm/row_map_confirmation_specs.py": "ec90989321de8974ad18e7e16330a525c8a80b91754475e8ba34478772056b50",
@@ -1602,7 +1602,7 @@
     "vendor/row/experiments/tests/test_radial_context_holdout_rev53.py": "f39764b610f4c1ec23e2f0068845528091921317bf360bfeb0b29abeb7a5efa5",
     "vendor/row/experiments/tests/test_radial_tangential_rev53.py": "eee25ac6d93ea5dcd0e59678275cf96614d2b5f84e633fc66b8c9ebec7a34b95",
     "vendor/row/experiments/tests/test_reanalysis.py": "a8d71711a2cde89df98e1af44a204066b2b2a5c11fb01a55efbca847dee41014",
-    "vendor/row/experiments/tests/test_resource_executor.py": "db9aa12c796d9ad6219300489f0f6d9d52ed25ec614b0e18ca9cbdb68194b282",
+    "vendor/row/experiments/tests/test_resource_executor.py": "7cf4cbe3224c9334004741078504e7273e1c206bf20599b5a49a353087a4efc3",
     "vendor/row/experiments/tests/test_retained_energy_audit_rev51.py": "4aa1853bdbca1f12445f22cb9e2d987674b278c26d7a499e83b21dfc46be23e3",
     "vendor/row/experiments/tests/test_rev21_theory.py": "8b6f48968c5dd254f5e4345a8d0683c256d853f15e3699ea7fdf361ec1f876e4",
     "vendor/row/experiments/tests/test_rev22_clipped_route.py": "1f2c74bcd97eb0286e79626632c0fc345b230b097c9134eabe5c765e22d4d5e1",
@@ -1761,7 +1761,7 @@
     "vendor/row/scripts/summarize_q_devices.py": "97b6cfc037cf3cef709dff3a84b0b7267b2cf40f447a03a866218d547c903c00"
   },
   "identity": "content-addressed payload; Git commit identity is recorded externally",
-  "payload_sha256": "1c9b39d44aee56dc3531bb39dc9a3ea527f2cc069cf3a33e4c673320dd62ec8b",
+  "payload_sha256": "95068debc627c0b7654aab8b86f8dcedfa7c7e13e187ac9f23ca754734950ed8",
   "release_commit": null,
   "schema": "pldr-scientific-files-v1"
 }

@@ -37,6 +37,15 @@ This is supervision of cooperating scientific programs, not a security sandbox:
 workers must not hand writes to unrelated services or write outside the declared
 tree. The guardian is part of each newly frozen source bundle.
 
+Guardian startup is included in the wall budget. After installing its handlers
+and subreaper, the guardian waits for explicit launch permission and checks the
+original monotonic deadline before starting the workload. Early cancellation
+prevents launch and allows a cleanup report even when interpreter startup
+outlasts the wall cap. Shutdown allows at most two seconds for cooperative
+cleanup, followed by a one-second wait after forced termination. Forced shutdown
+without confirmed cleanup remains invalid; cleanup time is charged through
+`total_supervisor_seconds`.
+
 The wall deadline limits waits independently of the resource sampling interval.
 External GPU queries and injected test probes have bounded waits. The final
 payload sample runs after cleanup on every termination path. A reached-cap or
