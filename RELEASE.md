@@ -10,10 +10,10 @@ authenticates its bytes; it does not check paper destinations or proofs.
 
 ## Run the gate
 
-Install the existing pinned CPU check dependencies first. Use Python 3.14.6
-for the tested scientific stack; the gate and downloader use the standard
-library. The download also requires Git and Git LFS. A fresh anonymous download
-can be prepared outside the code checkout:
+Install the pinned dependencies in a fresh Python 3.14.6 virtual environment
+using the CPU PyTorch recipe in [README.md](README.md#checks). The gate and
+downloader use the standard library. The download also requires Git and Git LFS.
+A fresh anonymous download can be prepared outside the code checkout:
 
 ```sh
 python3 scripts/download_release_inputs.py --destination ../pldr-release-inputs
@@ -58,8 +58,9 @@ published revision. It cannot be combined with `--require-clean`.
 
 The workflow `.github/workflows/release-validation.yml` runs on pull requests,
 main-branch pushes, version tags and manual dispatch. It installs the declared
-dependencies, downloads immutable public inputs, requires a clean source
-checkout, and uploads the execution record even when a check fails. CI never
+dependencies, checks their consistency and the torchtune import before downloading
+immutable public inputs, requires a clean source checkout, and uploads the
+execution record even when a check fails. CI never
 refreshes hashes to make a failing payload pass.
 
 ## Separate validation scopes

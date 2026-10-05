@@ -1,10 +1,12 @@
 # Direct dependencies of the shipped CPU scientific test suites.
-# Observed passing environment: Python 3.14.6. Install an appropriate CPU
-# PyTorch wheel separately if the default platform wheel includes CUDA.
+# Use Python 3.14.6 and install the PyTorch build specified in README.md first.
 numpy==2.5.2
 scipy==1.18.1
 pytest==9.1.1
 torch==2.12.1
+# Row-map experiments import torchtune; torchtune also requires torchao.
+torchtune==0.6.1
+torchao==0.17.0
 sentencepiece==0.2.1
 safetensors==0.8.0
 transformers==5.12.1

@@ -20,7 +20,11 @@ The scientific suites were checked with Python 3.14.6 and the dependencies in
 library and supports Python 3.11 or later. Native acquisition has additional
 producer-specific dependencies and requires supplied model/corpus assets.
 
+Use a fresh Python 3.14.6 virtual environment and install the CPU PyTorch build
+before the remaining dependencies:
+
 ```sh
+python3 -m pip install torch==2.12.1+cpu --index-url https://download.pytorch.org/whl/cpu
 python3 -m pip install -r requirements-checks.txt
 python3 scripts/verify_scientific_manifest.py
 python3 scripts/check_formal_manifest.py

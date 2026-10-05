@@ -1,7 +1,7 @@
 {
   "base_checkout_head": "38ccd5050e035904dd23579d137824a447111ce3",
   "files": {
-    ".github/workflows/release-validation.yml": "eb9cde49e04f44a16cea55bad4f1688837b8bfcedc9973702284a3f6580ea79f",
+    ".github/workflows/release-validation.yml": "5ca220524be10b849beec3c880f6f27ab92a813cbd6b36581a506cfdbeeff6f9",
     ".gitignore": "53ac78e44b91f7c400af43d59d001892e438964030195a0458d97d031f5c6a26",
     "CITATION.cff": "0e73254b887bea7f3320980e29ead40e3ee5ea187abe00a4f39108f10502ce86",
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
@@ -15,8 +15,8 @@
     "PldrTrainingDynamics/ScalingBalance.lean": "a8b2aaad8dfb7505059a3904da3e6608ab651f8509d9eb06e172ee2a96011b2b",
     "PldrTrainingDynamics/StochasticTransport.lean": "a3a60197d76b88fea474cf2b7f2fe19765a2fd69519eadd1f030ab744c09444d",
     "PldrTrainingDynamics/TrajectoryChart.lean": "46f77c01a230e3290f6b7c7f2449765fd137c4b38d8c80fea57f176eb0c1939b",
-    "README.md": "4c14cfb741867d3218c5e902dc52cdcf7eea01c66f0b9f09fdf183171eed4223",
-    "RELEASE.md": "2368d223c238db168348d3cee28a7061d390d4f46b42e363744ceb8435e551c4",
+    "README.md": "fc55aad8d7f4d640bb838cd10e041bb1938a3c61307f0dc667c1ccba309e688a",
+    "RELEASE.md": "7a0c6dec89a975c06b62f3fd984d541dece8cd355e9f10ecf425ff45387b4b83",
     "VALIDATION.json": "979549edec85864906b92912222f0232c3200b6590e9f6bb02115a9ee45627d7",
     "VALIDATION.md": "443ca0bf8ad81e02931acb8e40db95d1995ec8169fd331b945a12b9244780ee6",
     "companion_paths.py": "e0f591971fc8537a372afec333c69cf546c4e2ea2d10ffdec9c1e54332844bad",
@@ -34,7 +34,7 @@
     "provenance/supported-programs.json": "d52112e6f768a2210ae77d831dba479d3cd3e516b90ee13f27bcce68e2fa9320",
     "public_pytest.py": "b819dbde16434b359ad217c23759768f6a0f18d4cf947124290198eb8cd73200",
     "release-gate.json": "08188932e81383d2c0f2f0526dd9cc4f839c3389fe0e345e51ac95b80fb96c49",
-    "requirements-checks.txt": "e528805244c46a3794e87e6aff95e605da4c221d5ee706c6a0aa40a8cb89bee9",
+    "requirements-checks.txt": "0425ac290929c2faeb235f54d2443bd211b22985c114783e577f9745e9cba26d",
     "requirements-publication.txt": "52cabf6f2913180325aa5970cfda342490fc76e74ffafbe959b8bd872ba5e354",
     "scripts/check_cache_relocation.py": "077a726f606d471e7ac950419e222e3c8986fba229dd1efb8895b34c356a9e08",
     "scripts/check_campaign_budget.py": "a369be2422b51a4bf971b349420a3095eb055f7fc43e34bcbfc55044197bbd2b",
@@ -1761,7 +1761,7 @@
     "vendor/row/scripts/summarize_q_devices.py": "97b6cfc037cf3cef709dff3a84b0b7267b2cf40f447a03a866218d547c903c00"
   },
   "identity": "content-addressed payload; Git commit identity is recorded externally",
-  "payload_sha256": "51545eff0f7fe3f2e3a53471b5a8d658c8b97d97e42001fb53195a5f2e31a972",
+  "payload_sha256": "1c9b39d44aee56dc3531bb39dc9a3ea527f2cc069cf3a33e4c673320dd62ec8b",
   "release_commit": null,
   "schema": "pldr-scientific-files-v1"
 }
