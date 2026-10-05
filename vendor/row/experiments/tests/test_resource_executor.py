@@ -187,23 +187,87 @@ def test_record_and_worker_domains(tmp_path):
         executor.run_capped(['true'],device='cpu',output_root=tmp_path/'worker',monitor_root=tmp_path/'payload',record_path=tmp_path/'control.json',caps=BASE)
 
 
-@pytest.mark.parametrize('detach',[False,True])
-def test_surviving_descendant_cannot_write_after_record(tmp_path,detach):
-    code="""import os,time
+def descendant_fixture(detach, delayed_publication):
+    """Publish the PID before permitting detachment, with a bounded handshake."""
+    return """import json,os,select,signal,time
 from pathlib import Path
+release_read,release_write=os.pipe()
+state_read,state_write=os.pipe()
+parent_session=os.getsid(0)
+deadline=time.monotonic()+3.0
+
+def receive(fd):
+    ready,_,_=select.select([fd],[],[],max(0.0,deadline-time.monotonic()))
+    if not ready:
+        raise RuntimeError('fixture handshake deadline exceeded')
+    token=os.read(fd,1)
+    if not token:
+        raise RuntimeError('fixture handshake closed before acknowledgement')
+    return token
+
 pid=os.fork()
 if pid==0:
-    DETACH
-    time.sleep(30)
+    os.close(release_write)
+    os.close(state_read)
+    os.write(state_write,b'W')  # Waiting stage; detachment is still forbidden.
+    token=receive(release_read)
+    if token==b'P':
+        # The parent holds the PID file open and empty until this observation.
+        assert Path('descendant.pid').read_bytes()==b''
+        assert os.getsid(0)==parent_session
+        Path('publication-boundary.json').write_text(json.dumps(dict(
+            pid=os.getpid(),empty=True,attached=True)))
+        os.write(state_write,b'B')
+        token=receive(release_read)
+    assert token==b'R'
+    os.close(release_read)
+    assert Path('descendant.pid').read_text()==str(os.getpid())
+    if DETACH:
+        os.setsid()
+    os.write(state_write,b'D' if DETACH else b'A')
+    os.close(state_write)
+    time.sleep(30)  # The forbidden late write remains the cleanup witness.
     Path('late').write_text('must not appear')
     os._exit(0)
-Path('descendant.pid').write_text(str(pid))
-""".replace('DETACH','os.setsid()' if detach else 'pass')
-    record=run(tmp_path,code)
+os.close(release_read)
+os.close(state_write)
+with Path('descendant.pid').open('w') as published:
+    assert receive(state_read)==b'W'
+    if DELAY_PUBLICATION:
+        os.write(release_write,b'P')
+        assert receive(state_read)==b'B'
+        assert Path('descendant.pid').read_bytes()==b''
+    published.write(str(pid))
+    published.flush()
+    os.fsync(published.fileno())
+# Closing the complete file precedes the only token that permits detachment.
+os.write(release_write,b'R')
+os.close(release_write)
+assert receive(state_read)==(b'D' if DETACH else b'A')
+os.close(state_read)
+if DETACH:
+    # Keep the parent alive until the guardian observes the detached child.
+    signal.pause()
+""".replace('DETACH',repr(detach)).replace('DELAY_PUBLICATION',repr(delayed_publication))
+
+
+@pytest.mark.parametrize('detach',[False,True])
+@pytest.mark.parametrize('delayed_publication',[False,True])
+def test_surviving_descendant_cannot_write_after_record(tmp_path,detach,delayed_publication):
+    record=run(tmp_path,descendant_fixture(detach,delayed_publication))
+    assert json.loads((tmp_path/'control/resource.json').read_text())==record
     assert not record['technical_valid']
-    assert record['cap_status'] in ('surviving_descendants','detached_descendants')
+    assert record['cap_status']==('detached_descendants' if detach else 'surviving_descendants')
     assert record['cleanup_complete']
     pid=int((tmp_path/'payload/descendant.pid').read_text())
+    assert pid in record['surviving_descendants']
+    if detach:
+        assert pid in record['detached_descendants']
+    else:
+        assert not record['detached_descendants']
+    if delayed_publication:
+        assert json.loads((tmp_path/'payload/publication-boundary.json').read_text())==dict(
+            pid=pid,empty=True,attached=True)
     with pytest.raises(ProcessLookupError):os.kill(pid,0)
     assert not (tmp_path/'payload/late').exists()
 

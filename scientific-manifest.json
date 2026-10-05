@@ -1602,7 +1602,7 @@
     "vendor/row/experiments/tests/test_radial_context_holdout_rev53.py": "f39764b610f4c1ec23e2f0068845528091921317bf360bfeb0b29abeb7a5efa5",
     "vendor/row/experiments/tests/test_radial_tangential_rev53.py": "eee25ac6d93ea5dcd0e59678275cf96614d2b5f84e633fc66b8c9ebec7a34b95",
     "vendor/row/experiments/tests/test_reanalysis.py": "a8d71711a2cde89df98e1af44a204066b2b2a5c11fb01a55efbca847dee41014",
-    "vendor/row/experiments/tests/test_resource_executor.py": "7cf4cbe3224c9334004741078504e7273e1c206bf20599b5a49a353087a4efc3",
+    "vendor/row/experiments/tests/test_resource_executor.py": "27bdc6b93346e9382e91c6cf4f1199ab457e96f387d1708bdf9559c0bd70b591",
     "vendor/row/experiments/tests/test_retained_energy_audit_rev51.py": "4aa1853bdbca1f12445f22cb9e2d987674b278c26d7a499e83b21dfc46be23e3",
     "vendor/row/experiments/tests/test_rev21_theory.py": "8b6f48968c5dd254f5e4345a8d0683c256d853f15e3699ea7fdf361ec1f876e4",
     "vendor/row/experiments/tests/test_rev22_clipped_route.py": "1f2c74bcd97eb0286e79626632c0fc345b230b097c9134eabe5c765e22d4d5e1",
@@ -1739,7 +1739,7 @@
     "vendor/row/scripts/summarize_q_devices.py": "97b6cfc037cf3cef709dff3a84b0b7267b2cf40f447a03a866218d547c903c00"
   },
   "identity": "content-addressed payload; Git commit identity is recorded externally",
-  "payload_sha256": "cd69a2f5e95ff8803b775056ae5a0d1dd9d450506ba4d6770e04c5b78fc5c112",
+  "payload_sha256": "de5c7bd69c0964df7f545ed9ee21fc63e26cadb1f42b4ae1de6578e7489b57fa",
   "release_commit": null,
   "schema": "pldr-scientific-files-v1"
 }
