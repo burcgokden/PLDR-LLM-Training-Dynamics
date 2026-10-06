@@ -70,11 +70,17 @@ jobs:
         run: |
           curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-      - name: Obtain pinned dependencies and check owned proofs
+      - name: Obtain pinned Lean dependencies
+        shell: bash
         run: |
-          lake exe cache get
-          lake build
-          python scripts/check_lean.py
+          mkdir -p validation
+          lake exe cache get 2>&1 | tee validation/lean-dependencies.log
+      - name: Build pinned Lean project
+        shell: bash
+        run: lake build 2>&1 | tee validation/lean-build.log
+      - name: Recompile owned proofs and audit axioms
+        shell: bash
+        run: python scripts/check_lean.py 2>&1 | tee validation/lean-check.log
       - name: Retain separate formal record
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

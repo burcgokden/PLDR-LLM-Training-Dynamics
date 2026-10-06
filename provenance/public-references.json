@@ -34828,11 +34828,6 @@
       "scope": "Historical acquisition locator, not a downloadable file. Its original spelling is retained only in the pinned historical repository. This digest identifies the locator, not artifact bytes.",
       "status": "not-distributed"
     },
-    "urn:pldr:unavailable:fd192e16bc7cf53633d375bda1f45a277eb2abb6373b8f375c45e4777125f0f6": {
-      "locator_sha256": "fd192e16bc7cf53633d375bda1f45a277eb2abb6373b8f375c45e4777125f0f6",
-      "scope": "Historical acquisition locator, not a downloadable file. Its original spelling is retained only in the pinned historical repository. This digest identifies the locator, not artifact bytes.",
-      "status": "not-distributed"
-    },
     "urn:pldr:unavailable:fd21df28dcf81c443436824542c0ecb33968b923edd2b28f75e970b05a25d1e9": {
       "locator_sha256": "fd21df28dcf81c443436824542c0ecb33968b923edd2b28f75e970b05a25d1e9",
       "scope": "Historical acquisition locator, not a downloadable file. Its original spelling is retained only in the pinned historical repository. This digest identifies the locator, not artifact bytes.",
