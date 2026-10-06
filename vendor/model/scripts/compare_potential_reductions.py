@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Internal completeness check of reconstructed tail and surrogate diagnostics."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,json
 from pathlib import Path
 from model_rg.provenance import sha256,write_json
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 KEYS=['status','n','n_tail','xmin','alpha','ks','tail_decades']
 
 

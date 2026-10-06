@@ -1,13 +1,13 @@
 """Test a finite Binder/thermal-contrast error budget on all 18 exact laws.
 The bounds use complete probabilities, not empirical NLL as a proxy for KL.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import hashlib
 import json
 from pathlib import Path
 import numpy as np
 
-STUDY=Path(legacy_path('/pldr-data/model/released-adaptation-20260913'))
+STUDY=Path(configured_path('data:model/released-adaptation-20260913'))
 
 def main():
     panels={};rows=[];inputs={}

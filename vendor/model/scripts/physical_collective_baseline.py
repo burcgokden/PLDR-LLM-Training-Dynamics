@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Matched incoming and random-initialization controls for physical readouts."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import gc
 import json
@@ -17,7 +17,7 @@ from model_rg.training import TrainingModel
 from model_rg.physical_native import spin_tokens
 from model_rg.lattice import dyadic_block
 from model_rg.provenance import sha256,write_json
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 NAMES=['scripts/physical_collective_baseline.py','scripts/physical_collective_validation.py',
        'scripts/physical_mechanisms.py','scripts/analyze_physical_mechanisms.py',
        'src/model_rg/training.py','src/model_rg/native.py','src/model_rg/physical_native.py',

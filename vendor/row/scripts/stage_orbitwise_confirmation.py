@@ -44,8 +44,8 @@ from scripts.gen_orbitwise_protocols import (  # noqa: E402
 DEFAULT_OUTPUT = (
     ROOT.parent
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev46"
+    / "campaigns"
+    / "orbitwise"
     / "orbitwise-row-map-confirmation"
 )
 DEFAULT_TOKENS = (
@@ -60,8 +60,8 @@ DEFAULT_TOKENIZER = ROOT / "experiments" / "data" / "tokenizer.model"
 DEFAULT_REGISTRY = (
     ROOT.parent
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev45"
+    / "campaigns"
+    / "source-resolved"
     / "source-resolved-row-map-confirmation"
     / "protocol"
     / "registry.json"

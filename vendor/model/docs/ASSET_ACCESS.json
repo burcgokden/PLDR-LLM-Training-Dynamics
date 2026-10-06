@@ -5,1337 +5,1337 @@
       "access": "locally retained; no public deposit claimed",
       "bytes": 9738,
       "category": "Protocol or source/evaluation selection",
-      "path": "/pldr-data/model/potential-factorial-20260913/protocol.json",
+      "path": "pldr-data:model/research/potential-factorial-20260913/protocol.json",
       "sha256": "6234c3f6c417953bb52b17e683d8889bef441a8514f9692a6ee90c7a887524aa"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 78188,
       "category": "Protocol or source/evaluation selection",
-      "path": "/pldr-data/model/potential-factorial-20260913/selection.npz",
+      "path": "urn:pldr:unavailable:a6152eab53541cec3059acac482779a0adcb1bb4f32d44bc1186b5e32236c0b7",
       "sha256": "1bcbec30ac328a0b1773b5d7b526489d2722eef9e06e89742984a2054d334096"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1317362238,
       "category": "Complete model/Adam/scheduler incoming state",
-      "path": "/pldr-data/model/scheduled-training-feasible-20260908/runs/data_schedule-reference1-h14-s640101/final-training-state.pt",
+      "path": "urn:pldr:unavailable:172268abc055286fcb33fc205cde45065a371330c6b029ab876c420fb9b625a9",
       "sha256": "d1548791e6a19889e0415c9aebddeba73bff130b3b4214f2794d3fb3bbcacb1e"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 128299,
       "category": "Incoming-state manifest",
-      "path": "/pldr-data/model/scheduled-training-feasible-20260908/runs/data_schedule-reference1-h14-s640101/manifest.json",
+      "path": "pldr-data:model/research/scheduled-training-feasible-20260908/runs/data_schedule-reference1-h14-s640101/manifest.json",
       "sha256": "99467b6f807b08f1c3fb61b7ca3f82996b5c26b4560d4cd98d3dcb02142cc5e3"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 8451829,
       "category": "Ordered consumed-source history",
-      "path": "/pldr-data/model/scheduled-training-feasible-20260908/runs/data_schedule-reference1-h14-s640101/sampling.npz",
+      "path": "urn:pldr:unavailable:0b78efc40721a26c52e171d34e4ca5e04293aeaa6a0c7a5fde8265e9f7856a7e",
       "sha256": "6a63945a6386e4cf7d2099246e00ca8bc6469de70d0fa8696d0d9130ba90a712"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1317362238,
       "category": "Complete model/Adam/scheduler incoming state",
-      "path": "/pldr-data/model/scheduled-training-feasible-20260908/runs/data_schedule-subcritical1-h14-s640101/final-training-state.pt",
+      "path": "urn:pldr:unavailable:73de90ca75c37eb4bcebdab2e978392ad906bde6d543eb3465f9bf8ea9552f75",
       "sha256": "b5cc69daa48c76f9ffaebab56db35dff7a71e0faae3ec529f5c328d081267640"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 128307,
       "category": "Incoming-state manifest",
-      "path": "/pldr-data/model/scheduled-training-feasible-20260908/runs/data_schedule-subcritical1-h14-s640101/manifest.json",
+      "path": "pldr-data:model/research/scheduled-training-feasible-20260908/runs/data_schedule-subcritical1-h14-s640101/manifest.json",
       "sha256": "c0d8333662cf8c8c90a7d85736e3b23371d926de06d4defac1d8181eaef03d43"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 8451829,
       "category": "Ordered consumed-source history",
-      "path": "/pldr-data/model/scheduled-training-feasible-20260908/runs/data_schedule-subcritical1-h14-s640101/sampling.npz",
+      "path": "urn:pldr:unavailable:1fb0d511c578a141fee934b2f55d97296a7c773994e41ab3416b1036ef6f9d49",
       "sha256": "6a63945a6386e4cf7d2099246e00ca8bc6469de70d0fa8696d0d9130ba90a712"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 145699207,
       "category": "Complete model/Adam/scheduler incoming state",
-      "path": "/pldr-data/model/potential-avalanche-20260913/runs/h2-warm_cosine-s913101/final-state.pt",
+      "path": "urn:pldr:unavailable:9ed694d8159f391cf8708fc5e89ea34fb641a42da8e0d55ac787fa72814bfb18",
       "sha256": "1f17c5be16cd91760d51159ca3ef2937047f41340450cd29dac908f7ef517240"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 9246,
       "category": "Incoming-state manifest",
-      "path": "/pldr-data/model/potential-avalanche-20260913/runs/h2-warm_cosine-s913101/manifest.json",
+      "path": "pldr-data:model/research/potential-avalanche-20260913/runs/h2-warm_cosine-s913101/manifest.json",
       "sha256": "1e5751a52252c62068dcf49bbfe37a1953ea565c3aa4bc9db6052a54f94805d4"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 32260821,
       "category": "Ordered consumed-source history",
-      "path": "/pldr-data/model/potential-avalanche-20260913/runs/h2-warm_cosine-s913101/activity.npz",
+      "path": "urn:pldr:unavailable:59022ecdbba010a4f075f934dd6284f9805102a35718d5e0fbb65b33bdeb3ce6",
       "sha256": "fbecb914f7e1332b128c9be5c78270420e48420646331e0728be36a799fe399d"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 625248391,
       "category": "Complete model/Adam/scheduler incoming state",
-      "path": "/pldr-data/model/potential-avalanche-20260913/runs/h8-warm_cosine-s913101/final-state.pt",
+      "path": "urn:pldr:unavailable:c2eed91775482bec95c75fadf2187ffc6713c6bf9dbb35440b9e2335853d33f9",
       "sha256": "4bd0d29b99578c64ecc4cf49c72449cd3a7ee5df362fc7ab64ad333dc1b36045"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 9248,
       "category": "Incoming-state manifest",
-      "path": "/pldr-data/model/potential-avalanche-20260913/runs/h8-warm_cosine-s913101/manifest.json",
+      "path": "pldr-data:model/research/potential-avalanche-20260913/runs/h8-warm_cosine-s913101/manifest.json",
       "sha256": "bfbaf36ef9e35d5e18a09d08ee5a4e5c5711d6732005c9ae95677bdc450bd7f6"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 128036589,
       "category": "Ordered consumed-source history",
-      "path": "/pldr-data/model/potential-avalanche-20260913/runs/h8-warm_cosine-s913101/activity.npz",
+      "path": "urn:pldr:unavailable:fb9a9b1016300f0cde908d3400159fb28b5b0afb6ba6e01f3381c3e429268708",
       "sha256": "38e36d7f325bb1f3eb3a6e05474bc0cc001ec6f52aaa7599d2542321f959c5fa"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 53872209,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h2/native_keep.npz",
+      "path": "urn:pldr:unavailable:70b1a779dcb992cb1d6a4a20c43a2e2795c08589ae085d1831c688b85b40e9fb",
       "sha256": "5d1a4137388de737d3e893279d7fc715b2b03be76d110ee32b076ed00c9e1e8f"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 53868533,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h2/native_reset.npz",
+      "path": "urn:pldr:unavailable:30af38fd4e34dea3ab92207acbcd2677f20ac94dcb28563b7ad7b99a3859b384",
       "sha256": "9cd233705927db577be4255f085d072c865921aebd0734e205291903140a3412"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 53872577,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h2/raised_keep.npz",
+      "path": "urn:pldr:unavailable:8c8bd55f2e51106b8a01c84f9e180c1e0990c7cb4e1103606dc8decd29f3c046",
       "sha256": "424d818a75c666497472cae6c53b636bc624e2679464d64ecbe38b58b8789ec3"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 53866663,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h2/raised_reset.npz",
+      "path": "urn:pldr:unavailable:1d783e9fa1959fd6f711e1f6e0fca7997d9f4952dea0c8240da80d56d2c25d32",
       "sha256": "90321fa9648a3923b2c42aec88195982295295efa5c99e2422e3e8de7223ca44"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 19525673,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h2/replay.npz",
+      "path": "urn:pldr:unavailable:c51b154c89f5afff5880f7a25510d767db6ff2b95a71e2eba35f9d85f99f58ca",
       "sha256": "75d4fb8b5f88f03ec3fa0297d0f54fabd1985d97547bd46338bf5ac153a6d4ad"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 80192707,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h8/native_keep.npz",
+      "path": "urn:pldr:unavailable:bae04f856e26c15dce92beb76ebd081be81365a96a7a746719984db929f349fe",
       "sha256": "7a0c7a33265bfbc3f416ecea6f041d292ffc963d135d374527ee3437ec2d70e8"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 80194483,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h8/native_reset.npz",
+      "path": "urn:pldr:unavailable:176065f83eec17af3b1b34772f970134ea89a90755dcf363198c64b8cb89fcae",
       "sha256": "1a54b7ef5a33dc01b05e385e15cc0c270a54022ca92969fe38862686a2610d62"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 80149319,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h8/raised_keep.npz",
+      "path": "urn:pldr:unavailable:d50ee256ac5401985432e35256eb0a35b2ad66739ca437ea2576cbe38e504e63",
       "sha256": "06bbfe36f0f1bdd6fae6ee24c71baf53d23674a058373c64b0068411e5cc7589"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 80150734,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h8/raised_reset.npz",
+      "path": "urn:pldr:unavailable:e86e42c1dcfbfb6e58d401f2c55f4965269fefcc0127a4b50f2ccd3fe1e99bcf",
       "sha256": "d4395970808bf55ea7407a2719127f337be68c31f422c078a64f882e91edcf5c"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 19292588,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/early-h8/replay.npz",
+      "path": "urn:pldr:unavailable:776c5bc395585a13ceefd69a7a93a6169e86fda061c9923b8bda8a7cfe863215",
       "sha256": "5c0a172ca94e79b4cb95ec9789f81cc9e58622f444ccfd958b29faebaf0bb8bc"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 102630128,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/reference1/native_keep.npz",
+      "path": "urn:pldr:unavailable:68104d4faad3076bac9885744e27d0ab254609367d11f393b8b14380264df726",
       "sha256": "c54ec3dced0e3057479147bc468c17628a3d9b1b1c257f85332cc0c45f6f486d"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 102670976,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/reference1/native_reset.npz",
+      "path": "urn:pldr:unavailable:6949566c9f4a164d60bf26297733ffce6ce974c72cfff537bea3ffe17d216819",
       "sha256": "78f2ef85d7e8cb408200e30135fb1e711b1c7ef65939f187b945397e79d19707"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 102149206,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/reference1/raised_keep.npz",
+      "path": "urn:pldr:unavailable:7c7f642a03ec0436d8fe80fd0b6d8a4c49d3678ec72012d28d52a0f431fc86a5",
       "sha256": "025dfddb091cc04ee06f2ca483235a2b84e638cc10e5ab007f84dd991a645e39"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 102251755,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/reference1/raised_reset.npz",
+      "path": "urn:pldr:unavailable:a677d2ebae6ec11a90eae8acb000edbb9620ebac91789e5125db2364c283c9ec",
       "sha256": "32a052e8be94d001f8a1adcf0f7466c26c142931ae13af985fcae8060d165e82"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 20904820,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/reference1/replay.npz",
+      "path": "urn:pldr:unavailable:6c0dd30bdc932ff0d6df19b34ee22c208c613ab61560210162a36ea813538730",
       "sha256": "6a7e25ac89380b38f6bd1fe611517fd66fee6f76b9a9c7d47754e900d6ab7096"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 109919322,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/subcritical1/native_keep.npz",
+      "path": "urn:pldr:unavailable:2ef65fd4cce1f4632679650b8c31043fb230ca5288fdec77adb259ebfcf5059b",
       "sha256": "b0d15b176aacb08ed154dffb151a861e1ba71ec0ca7d573f7a4aca458d3a1bb1"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 109841103,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/subcritical1/native_reset.npz",
+      "path": "urn:pldr:unavailable:0518ebdbcd2bb191a397f4f704823b3895512a353e5edee6ed9f32f72c997df1",
       "sha256": "7623f9993c598398be431ad2be713e4c740aa8689ac302def6c3fd911ed9a97c"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 109385744,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/subcritical1/raised_keep.npz",
+      "path": "urn:pldr:unavailable:24b174e10ddf5495d74165fc3a92122fd20e0378a76d383e274489f757bb8c52",
       "sha256": "3a4ce51598df2f0fa5bea67574f72c523f260e77dd692c7bfdbb48517422e632"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 109332775,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/subcritical1/raised_reset.npz",
+      "path": "urn:pldr:unavailable:2089b9b089e655dac4296992b72596b37da8e9c63a98747602b61e1c2064b4db",
       "sha256": "09e2ab5e8c40f1d96110ae6c9112cb42ceacced5172627fc7f38953b79629059"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 20746645,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/runs/subcritical1/replay.npz",
+      "path": "urn:pldr:unavailable:2b4fa73dada5ba6aec29accebe3054552bfd7e10f4fe79b09604274678c15674",
       "sha256": "c95ca17c2ef88fecb3c87ead4d1dcd98590e336116d666aa1053bd97d484969a"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 62018227,
       "category": "Qualification observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/profile/reference1/native_keep.npz",
+      "path": "urn:pldr:unavailable:9618057363b495563047d1f7ff54aa31360bc502b9118d70646218384662658c",
       "sha256": "2d5c22c01d1aed3ab65409e15d9aee11caf87dd6ae26de5f67707cd4a0abcd62"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 20893805,
       "category": "Qualification observations and replay",
-      "path": "/pldr-data/model/potential-factorial-20260913/profile/reference1/replay.npz",
+      "path": "urn:pldr:unavailable:d0bc13651e1cc0f2ec5689a1a4d6b182134173bd5c592b4b22f151a1e823040c",
       "sha256": "3467b2b4d54b3581ff703e972837ed27277069f854b931988b45dcce67ead564"
     },
     {
       "access": "public upstream; exact local content pinned by SHA-256",
       "bytes": 15041,
       "category": "Pinned native code",
-      "path": "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/configuration_pldrllm.py",
+      "path": "urn:pldr:unavailable:8d917ef9aa8ff1b9c239e533686646aea56981952ae76e4ec41c8bf6b3bd164e",
       "sha256": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e"
     },
     {
       "access": "public upstream; exact local content pinned by SHA-256",
       "bytes": 78861,
       "category": "Pinned native code",
-      "path": "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/modeling_pldrllm.py",
+      "path": "urn:pldr:unavailable:d5b1b5c7a3c7fd8542cb524e69758cce7e615acbd46b3c3d35a556a0a67a290d",
       "sha256": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 11956,
       "category": "Protocol or source/evaluation selection",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/protocol.json",
+      "path": "pldr-data:model/research/potential-factorial-disjoint-20260914/protocol.json",
       "sha256": "d6ad56ae21b1ae8a75c8514d3824478df009e59c0fa70397d12adacea84a960c"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 78076,
       "category": "Protocol or source/evaluation selection",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/selection.npz",
+      "path": "urn:pldr:unavailable:faf462bce580ee6fb732376a0fab64d4d0038699e29d89ea304c41227fde3d3e",
       "sha256": "887724c1e2839f9460209b4f8ca1b0b7527ac15f52241d38ba84e41d2e4ba0da"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 53885760,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h2/native_keep.npz",
+      "path": "urn:pldr:unavailable:2484107b491c462cb63e81e1358470d78223de85d464edd901ce35ceb40c514a",
       "sha256": "6f40777cdc81b5b8e12851b9dee568a1ea00251e348a88c51f0f21c447e6880d"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 53880725,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h2/native_reset.npz",
+      "path": "urn:pldr:unavailable:92673f19b18499c665dc117d035f9b74227fcf4cb476def8a5aeda81aa26576a",
       "sha256": "6bd6649886b17b18fce94b31a9309c3d393e423dcf4e0e2cbd660179ddccf74a"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 53878328,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h2/raised_keep.npz",
+      "path": "urn:pldr:unavailable:9049e8fab5dd6ea86d0b0ef42ae9037e59d93831c116ef154819646851e8ee05",
       "sha256": "b94d61f4ef1464cb023bf634dda60208396be9d881a8fb92c40e1a12ba0fa6cc"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 53878898,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h2/raised_reset.npz",
+      "path": "urn:pldr:unavailable:879f8ff6c16d10b4698b19dbf61bae3104b8c56e82b7bee6706cd8bc7443d778",
       "sha256": "1c3f4cdea6b12cb3a9118c9272b443eb00cdad1978d5a475965d7c16adf6e496"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 19530871,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h2/replay.npz",
+      "path": "urn:pldr:unavailable:0ddf5e08fbf5e3a82a997e26073a6975e6de44479a509542c7e7b4b8fe3f5548",
       "sha256": "abe9dd4c088d179f35bbcda7d31aaee7fd21c6fe6e1a82618abbe5e2dbdf48fc"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 80198519,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h8/native_keep.npz",
+      "path": "urn:pldr:unavailable:b423872a490d1389fbcd75d3adcaf8b9b86d01863d5606ba097dcf200898cd29",
       "sha256": "a20429ad17fcb6c0003b5f3fb6c78fc1c0ac0c7816fcf3bac0c5405baa039839"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 80206481,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h8/native_reset.npz",
+      "path": "urn:pldr:unavailable:e99b810ccbb76b5704517616ce2cb23fc8cb1ddb462007b4c96d12843f77efa6",
       "sha256": "412d18d1028470a4c8d1b7df2005707174497fcdf1411135c0a1f838d4b669f5"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 80154089,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h8/raised_keep.npz",
+      "path": "urn:pldr:unavailable:bd7e9433da6181bc604cb6eeefc0d18faced56d47642cb8b48ef6f8fab70369a",
       "sha256": "98644af0aa3964443f42460d527d452c416c72fad30fe4a4024b8367f2120e12"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 80161882,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h8/raised_reset.npz",
+      "path": "urn:pldr:unavailable:af0a73389a4dd4cdfd3b65cb1c7dafc4b4bfa49c5ad2c39ef23903883665ecef",
       "sha256": "68c7b8aa2e396125136d9e734e1daf1ef3abcff20fdbf3e7b1cd4ee0e13efbe5"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 19305925,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/early-h8/replay.npz",
+      "path": "urn:pldr:unavailable:16805eb053302b8b31a4e4a5b9a83db26a4382f10ec03abe19d2182328c9f77e",
       "sha256": "c14f05361d549c97c011da18931316b910f1759dc8ae2b8d126b6c0f6ce058af"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 102603043,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/reference1/native_keep.npz",
+      "path": "urn:pldr:unavailable:178828f2b06aa7b4461599b77a9581b81afbaa1c3ce2dfa1168dde2bf6b3d129",
       "sha256": "c5b2cc5b9159cf4922193d891c98500e60515e1f2b14fd941ac9217c5b95aa94"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 102778748,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/reference1/native_reset.npz",
+      "path": "urn:pldr:unavailable:8e2575dff017a1b32d2f6c8646f1578f58aba8576d87721060fd7293ddd05b31",
       "sha256": "7cd2647ed7eb7162cda5885d906f02bb8e555bf12d5f886a8d59c9a6a9d9f276"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 102312455,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/reference1/raised_keep.npz",
+      "path": "urn:pldr:unavailable:d3345aa706b6e3a6cd05e17fba0c7397dbdd6e46f95e0b37d5aecc12bade112a",
       "sha256": "dc3f25f47833ca6a5bd0a8da58c382e50fbd9d60334a08bc45d1116003c572c4"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 102366076,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/reference1/raised_reset.npz",
+      "path": "urn:pldr:unavailable:143ee75753086b3859e6c4b376b193ccca8ba71035be666c00ba736a39095781",
       "sha256": "52500e6be791071d65fcfbf5a5fdca7877b927d2fd5e260421b39ba46a99af3b"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 20901064,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/reference1/replay.npz",
+      "path": "urn:pldr:unavailable:25be061530fd0361bd126f16f324721afd02e6983f2d266e34ef4fbfe416564a",
       "sha256": "07e741a98867fdd925a6a5cf43a13c1880fe1e9eb91a6f60f4d2d9ba7b37fc61"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 109899103,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/subcritical1/native_keep.npz",
+      "path": "urn:pldr:unavailable:5294e2075c3b9020fe0c0157cba498adfcb4365f1b92c5cb841b3affcce1aa48",
       "sha256": "6f874bfc8aaa65ab231fd7a68af7ae2df199de2dc6e7cabe3d26f864ce0eac80"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 109877400,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/subcritical1/native_reset.npz",
+      "path": "urn:pldr:unavailable:3783fc4ae9738633d33a7a532e57b66b45859473a00a6d1d2929430456df0f88",
       "sha256": "b7d8addf1e77a863e99a4484218b6aaa47ea225dc26cf6c13040431d05e60ec6"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 109391331,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/subcritical1/raised_keep.npz",
+      "path": "urn:pldr:unavailable:17b52d8cf30efdce4603124a25b11a90195494dc9d8f345fe981e37fd99270c5",
       "sha256": "ad87fad7b2e22b0933bf82a630250eb60ff42a5282a250ddfa41881cb951811e"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 109379834,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/subcritical1/raised_reset.npz",
+      "path": "urn:pldr:unavailable:d498d11f33d8bce3870dfdf456ee80924473b154729d0988efc98ca4f561fd1a",
       "sha256": "8fd72d90d00892863a0555cf96771e3fb4fbeb2873e54b67ade7fb92b2dda660"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 20750300,
       "category": "Native paired observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/runs/subcritical1/replay.npz",
+      "path": "urn:pldr:unavailable:82e1a3310006a81c20f5c495f5f272f3ee30f08d3f0311422e030b308dcee86b",
       "sha256": "1213f4c77838a5261d4bbd270e9b6ed3cb4aa88a08fc8101fe47f07ce9b01dff"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 62057291,
       "category": "Qualification observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/profile/reference1/native_keep.npz",
+      "path": "urn:pldr:unavailable:8c8ca7dd1745d86512f5f7fb8421628b9dd43e25a4686dec93f3f547626c8990",
       "sha256": "2bfa7d605d508c60474e6e5d20da33011e8755fccc463cc3021098e4f033c114"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 20896091,
       "category": "Qualification observations and replay",
-      "path": "/pldr-data/model/potential-factorial-disjoint-20260914/profile/reference1/replay.npz",
+      "path": "urn:pldr:unavailable:11f9f6bb5120f78b6b14c78ac341931f45fa1628c07f174157ebbc64472d9770",
       "sha256": "208f1229b4784ada514eb73708538a69de1a674085eb4b04367f6bff4eab224f"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1075839104,
       "category": "Tokenized single-pass corpus and document identities",
-      "path": "/pldr-data/model/data/refinedweb-onepass-524288/tokens.npy",
+      "path": "urn:pldr:unavailable:b9ed8f49f32d9786845fe67b6758a74138c959475df0d8e9e095742b05dd455d",
       "sha256": "63eee605320cd77f8e4d1cc34ecf5ee02131f94727a6083ea7150f12894f37ef"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 4682,
       "category": "Tokenized single-pass corpus and document identities",
-      "path": "/pldr-data/model/data/refinedweb-onepass-524288/manifest.json",
+      "path": "pldr-data:model/research/data/refinedweb-onepass-524288/manifest.json",
       "sha256": "ec5445c6f08d183e5453330259b75b78cb86af3696e5e6b09c9275b3d636a9d2"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 145544763,
       "category": "Tokenized single-pass corpus and document identities",
-      "path": "/pldr-data/model/data/refinedweb-onepass-524288/records.json",
+      "path": "pldr-data:model/research/data/refinedweb-onepass-524288/records.json",
       "sha256": "eaac0616a2025727b0b73fc7f8b7d9211f531b59d3a17c062bbc9bd04c8170ed"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 8467,
       "category": "Matched one-pass protocol, source selection or qualification",
-      "path": "/pldr-data/model/matched-onepass-20260914/protocol.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/protocol.json",
       "sha256": "01027bd37888fbfc4a6aa170d5442e0288bac500f8d93b3ecf8146f8f6808093"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 381761,
       "category": "Matched one-pass protocol, source selection or qualification",
-      "path": "/pldr-data/model/matched-onepass-20260914/selection.npz",
+      "path": "urn:pldr:unavailable:427f8981b52b0cca4a6b9135b274672df2956ac7b2baa071ab8b8543c6bf1c3b",
       "sha256": "2e47aa290e746a4e1b105ba17a1f6f17843b8a12eddd6d742f10a3ef58ed00bc"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1353,
       "category": "Matched one-pass protocol, source selection or qualification",
-      "path": "/pldr-data/model/matched-onepass-20260914/qualification/verification.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/qualification/verification.json",
       "sha256": "37c6d671d6786c13b13e4911e897ad7892d3837e7c1261f1c5c78f91bec6edee"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1317434445,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-cosine-s914241/final-state.pt",
+      "path": "urn:pldr:unavailable:e0a48dc96bc39b4c52c89f24f7508f54da4b740152f54663d7879612a2a45b5b",
       "sha256": "8391f52a705673df336b90140edfdf001327b6179d3403f3593028ff04b9c7f4"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14747,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-cosine-s914241/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h14-cosine-s914241/manifest.json",
       "sha256": "2a59299cf18c04e7baa84d4d4c964722d5ec74d26fff3dd8f3e9dadf74c559b6"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 31200485,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-cosine-s914241/observations.npz",
+      "path": "urn:pldr:unavailable:78471a38a4a9545bfdddefa2bc5ca4899274ae3ff8f45cf7cba342463bb9cc9e",
       "sha256": "f64bcbd97c7a870b1c90afbf8448f14823096c0ae7c120fa5c292b37b913ff47"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1317434573,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-cosine-s914242/final-state.pt",
+      "path": "urn:pldr:unavailable:b4bb3f2aec8b8dda2c9461c398eb4d66ecc5504331db0484bece66f855bd4c4c",
       "sha256": "4c3b6922b2b12d62759c3edeb9cc7b0067aebd822e9c0568a3dda5ad3dee2bdb"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14789,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-cosine-s914242/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h14-cosine-s914242/manifest.json",
       "sha256": "01d0b1b7adc1601c3791b598954d03708986588c85a4e554101af411dfc7fbd3"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 31146676,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-cosine-s914242/observations.npz",
+      "path": "urn:pldr:unavailable:3e05439ee1afeb0f187a5ed2ce4d928752684d82f1cacda41b4252fabbc01954",
       "sha256": "fe2d4bc154f4f15f1e289c10e0a121c9e48d2a1131ef616f1798019cc9b93e93"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1317434317,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-cosine-s914243/final-state.pt",
+      "path": "urn:pldr:unavailable:03bf28950a4978e297ca89249fac6cd5bf6aa869ddb6c79f54cbf0123b3771bc",
       "sha256": "17d8fe4df6f9eec12791db58d6d93c58d2508dbb3b0e994e5e215c151d59904d"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14780,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-cosine-s914243/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h14-cosine-s914243/manifest.json",
       "sha256": "120fedd7b54eb168a4659ba37bc5048e01285b6ff0514e86c59211464607dcca"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 31218221,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-cosine-s914243/observations.npz",
+      "path": "urn:pldr:unavailable:4b8ea90befae5e5a9fc88d23dc2fa5e7aee0acfc3fbce873f8b8bcf3a66818ce",
       "sha256": "402c69789ff1e7d11820a1389cfd4094c83870cd81ebc1ebb6448e916402dd88"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1317434509,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-plateau-s914241/final-state.pt",
+      "path": "urn:pldr:unavailable:c92fd55fa741c8246b4193f764abd76ef6f826f9f2e7b738f76b78ff4549974d",
       "sha256": "5e7444af52f179f6e4fa555d86fc8f0c31eede14981f551f8e495bf668135f76"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14763,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-plateau-s914241/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h14-plateau-s914241/manifest.json",
       "sha256": "910fdfa00c1b2c7a6a80273ac36445d6149ba52c5b6d543780682f4d748a3495"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 31102248,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-plateau-s914241/observations.npz",
+      "path": "urn:pldr:unavailable:9b467ffd01f49b4e1a07424302ae0e39aa9845ab2d564efdd6594ba174912e56",
       "sha256": "aa64bc6c71376279e244ffdb4265b47157475977d3c339f42ba60871eaddd13f"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1317434573,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-plateau-s914242/final-state.pt",
+      "path": "urn:pldr:unavailable:a6b95e2a0f6b84499775a1a2ac0e2b5e2b3be6f9c4688bfe41cd7b298e2382c3",
       "sha256": "a31b42cbb154ac9d0f24efbc3e10f4528b564f4d15a7ce3e42373519e4b0ee53"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14792,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-plateau-s914242/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h14-plateau-s914242/manifest.json",
       "sha256": "832f9aa7e648f73fd72626526fa13dcb67223ee0e735f589f8d14b3ba2dba081"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 31083883,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-plateau-s914242/observations.npz",
+      "path": "urn:pldr:unavailable:d4f0cfb19ef8d8390f21cacf4a1107520d7e1db87fce43be2f97c188a5566c7a",
       "sha256": "5828eb79c006397151053e3897269291f1bc27684b7c7d79b7c751efbef43578"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1317434317,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-plateau-s914243/final-state.pt",
+      "path": "urn:pldr:unavailable:6abd32eb16bcf83263a2c4ecfa601a0d371afef2e3b111ce0600ef6a00af850f",
       "sha256": "f13ba8a9e9ab520bd8d5e939de6f6d9ba3d5b862b841b4ee109e471ff60b5e7a"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14777,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-plateau-s914243/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h14-plateau-s914243/manifest.json",
       "sha256": "1611f09242897e350bf87e176b87a2238ecc26c21df5dc93295f75b1ee083e89"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 31135327,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h14-plateau-s914243/observations.npz",
+      "path": "urn:pldr:unavailable:d963e4030b13c0d927d931dad17364b7b54bee8bbe32435c07a15e686c957a38",
       "sha256": "796a5ab523e9ff97a38ab6ad8a8c36800e8d75b135f1bc772ca801ce57ded9b3"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 146000269,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-cosine-s914241/final-state.pt",
+      "path": "urn:pldr:unavailable:9c2b3978379e1463e5352d74d6eb78bc5b5df1b436430de75ff534ca50f41f5f",
       "sha256": "b53542b3346eb18bef44598c0131fbff4869058a728f07f3320f81ae916d5af7"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14750,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-cosine-s914241/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h2-cosine-s914241/manifest.json",
       "sha256": "07215e078c977a642f3867f68b13601249f5d49bfc050b6ee91296eaf34fbe92"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 27593661,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-cosine-s914241/observations.npz",
+      "path": "urn:pldr:unavailable:db6be95c0e5607b711413fdc28ac9c12d04a21f9c4c6675e6dbf269326832412",
       "sha256": "7083269effd1241005b73f28fe5b5fb6e2d324e579a82e933c257314cb9b77a6"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 146000333,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-cosine-s914242/final-state.pt",
+      "path": "urn:pldr:unavailable:38d578cb7636c5761c45471edf33d298092914a24d54046c0eee4aaec8379e86",
       "sha256": "5883b7489b74b112532f3bab3d297a273ff40abda937c350f658a953029781c1"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14741,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-cosine-s914242/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h2-cosine-s914242/manifest.json",
       "sha256": "66cc64ad1d778cb3465edb373754c504c6a501a7f507fb4a0662624b64496e77"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 27537860,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-cosine-s914242/observations.npz",
+      "path": "urn:pldr:unavailable:a5bb2dc48fd254d95bf141f28a95d6a832d655213a5448cb0750f804275332a0",
       "sha256": "f6d902163fd8688a014904c9b79bc04e322ea6b9828a8aaf4a4f67c254bea547"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 146000077,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-cosine-s914243/final-state.pt",
+      "path": "urn:pldr:unavailable:086e321f96aafdeffd524bd66233d74967344472bd75fc35ec77392591ed32d0",
       "sha256": "369e71ad8cbd800da350273efcc266c7c250039d9bc61aa049d5f175f900afdb"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14770,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-cosine-s914243/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h2-cosine-s914243/manifest.json",
       "sha256": "7dc1ce65d8e6d66a21e75fdb13a8c4a76c719fc1dfb78d715f79774fb54c1a1a"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 27554236,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-cosine-s914243/observations.npz",
+      "path": "urn:pldr:unavailable:3e59cfbb2cad4353cc807a7301db420080b19e922747ade4416d1e22125247c4",
       "sha256": "b2009e8de2ec0009ca5d0e4c08813bfd925e509554a5fe90fa44bcbb9ce1b5df"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 146000269,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-plateau-s914241/final-state.pt",
+      "path": "urn:pldr:unavailable:8055376ed07bd44c1ec571e63eff7c4ecc6b456124122ec29e33a09625f512a8",
       "sha256": "a9800b221cfc2d6581bde89baeffd7bae6e3efc18f85e82027ba9d39fe109983"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14756,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-plateau-s914241/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h2-plateau-s914241/manifest.json",
       "sha256": "8488297302aefe1206b8b7b735367d288c9f326fc4194976f354725c58ef6030"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 27582369,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-plateau-s914241/observations.npz",
+      "path": "urn:pldr:unavailable:028af04eb54dff896e7ce026e65423d4b83b5407eab7a471e13212908a745d69",
       "sha256": "b15f1962436194832cf8beadc8fa1544d470755d0b62a3cea43c1cc225fc27b4"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 146000333,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-plateau-s914242/final-state.pt",
+      "path": "urn:pldr:unavailable:81885bee4e5d61ff0646d03d3225ecfe9521a8350bfae802c777cce67fb73ac6",
       "sha256": "cc7da00be114f3aa811634eee0568af256c37d0af5b43135c93cce7077b6b987"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14761,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-plateau-s914242/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h2-plateau-s914242/manifest.json",
       "sha256": "536b5796567fe607a1e299af6c933fd759011e030c33e0b11d58358cb643b2c3"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 27552776,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-plateau-s914242/observations.npz",
+      "path": "urn:pldr:unavailable:c70d1c474fb5bad46e262940efc5feb4a48a7b9f798d2ccfd950d46b5507c503",
       "sha256": "a3c1bba2f978b39cebba8d1d65a4bb8ff3d7e37d6604c5e02fe8ca8d2dd03670"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 146000077,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-plateau-s914243/final-state.pt",
+      "path": "urn:pldr:unavailable:6b41fc7793f58b89ebf2548e27e3b052954acbf63c10f2df1d337e5a57aa5b45",
       "sha256": "74a9831c27c046e3c6c3fee7830550f87219e446f857ee9cc3694c047b5a6fb8"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14774,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-plateau-s914243/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h2-plateau-s914243/manifest.json",
       "sha256": "3a48dd724f6b40ffbc65c2b06ed7611917cac043ceada8fda37d0a9f51944961"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 27525236,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h2-plateau-s914243/observations.npz",
+      "path": "urn:pldr:unavailable:b77422c2c8e52e901cd61b21ed01ddac6bb3e305c06f51c2073b0ed36e0f3095",
       "sha256": "dbb3554684ce3f507308930a82b95b5557199feee9a7e539be3f6505a750689a"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 282241485,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-cosine-s914241/final-state.pt",
+      "path": "urn:pldr:unavailable:3dde50ad4a0f0f3fd23802a3c39b3d47da924c69c1872a78609dbcbeced7f693",
       "sha256": "890f3e57fb5d1dcdf6b32ba27504929d7d611bde18f631df0176b37d305eca6b"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14756,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-cosine-s914241/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h4-cosine-s914241/manifest.json",
       "sha256": "fa16483cdce7cbb98a40ee852817802466acce257269d8252b3b2e3b82191382"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 28151735,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-cosine-s914241/observations.npz",
+      "path": "urn:pldr:unavailable:96db953cafdc0a87d22c27d328f7f5ea98a2b9af900a4645188f8b7bd9ef75b4",
       "sha256": "adf93b72430b1d460f9c996eeca6c42950da2d7b3eb4567fc405256d16e65ea6"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 282241613,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-cosine-s914242/final-state.pt",
+      "path": "urn:pldr:unavailable:ea459b5164ce30af67ad7b8c6baa24c60fb61f7ac4d11584fee9b3e2e35823d0",
       "sha256": "1c0dbff6f6f868123294b16528551ea1851da0cf9742ab20331b712237ecae25"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14768,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-cosine-s914242/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h4-cosine-s914242/manifest.json",
       "sha256": "b56b7099c91355f2b06f9bbe259492a42a6a828f123a335481f4ecf309b7648d"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 28111503,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-cosine-s914242/observations.npz",
+      "path": "urn:pldr:unavailable:f04740c5886772a3ceb732439b68a8293f015d5605a5c6b5795c82ad695b131a",
       "sha256": "9fc2638db90158df7eb5199d2dce29a3153cc6e1d7051a85ef3befa80502a9de"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 282241357,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-cosine-s914243/final-state.pt",
+      "path": "urn:pldr:unavailable:d777fe4b02390294eb57a8df7a4f9bd97b935489f633fa4631d3526e3f1abe5c",
       "sha256": "38a4243db894958f2d6f45ad3d574ebd091ddda9e52a19c25b6e7ce54831ec5e"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14758,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-cosine-s914243/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h4-cosine-s914243/manifest.json",
       "sha256": "4b5ade3af6680a7f82d99e479fb300d2f7638fe04916ebe5dd4e2221491fb8de"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 28123921,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-cosine-s914243/observations.npz",
+      "path": "urn:pldr:unavailable:e6085c973d6c0a60981ba0ba808673fc0f5911702d1f0f9b9a3214958f415d32",
       "sha256": "69c743df55564713f18d63979b6b00267a137e01dc922dcf4fb19d04d032b6ac"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 282241485,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-plateau-s914241/final-state.pt",
+      "path": "urn:pldr:unavailable:7af09ad3ce7eea8dbfbf9638b1bddf96142a0a962729816d927f32481b5bd9bc",
       "sha256": "d024234afb62bd435c3f5f91a68509f2c6e06a4edd9a332a79c00b2a49ff583e"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14767,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-plateau-s914241/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h4-plateau-s914241/manifest.json",
       "sha256": "3f1e1b0c9af10d3104890dbfd6f73bb9a353ec17b4ac2aed94dabcae0d55fb16"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 28081003,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-plateau-s914241/observations.npz",
+      "path": "urn:pldr:unavailable:843f5b6e2580aff3e2cb1d904a956ae55e46d67fe2606fde389291339894428a",
       "sha256": "f2a9a29e32f5d12cad93c4f71db75fef79b98bd9ca502e54edcff6027dd3b4f4"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 282241613,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-plateau-s914242/final-state.pt",
+      "path": "urn:pldr:unavailable:435c48510e8334c2c4e3b78ff46455eb6a44d753de10f9d970e5f5c825b30b84",
       "sha256": "1f91e879ad8871cdd286c33faf4a166082aa1f743bb197ff2a08312b77239631"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14789,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-plateau-s914242/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h4-plateau-s914242/manifest.json",
       "sha256": "bc74b24ba18dfc7e60c8b1df0116fb739da06e5e0678bb8490daf727a246e780"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 28102472,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-plateau-s914242/observations.npz",
+      "path": "urn:pldr:unavailable:663a806406a9f3ccdfdee38b6b766149b69216ac5014edfdc9aadceefc5ce8a9",
       "sha256": "83df1f0848b57ffec2364304decfd1acfb032e96dc282f490b7a3368be415af7"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 282241357,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-plateau-s914243/final-state.pt",
+      "path": "urn:pldr:unavailable:c09d20c7d7e4add54ddca2dc5994a1fee6487f6dc69cbc0527148594067f6bad",
       "sha256": "ec5f95219ba8efa9f35872a092d86a75961bfad90add1fcf25b75207a1b83f84"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14762,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-plateau-s914243/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h4-plateau-s914243/manifest.json",
       "sha256": "266ba05b14d41272c5a07d858553d181d916a69724b2d2b556494b3eda20906d"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 28076362,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h4-plateau-s914243/observations.npz",
+      "path": "urn:pldr:unavailable:f3cd3b0e3ee9f99b23d82209095ae5ef66e5ae13fc5664d49f8c301f76683047",
       "sha256": "7164e2a3e45a62539bc93744137a0dd52c797965fd6cb8e27e5133281e0342e2"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 625549389,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-cosine-s914241/final-state.pt",
+      "path": "urn:pldr:unavailable:ce8ed4a62100a664b17a7b51dbd3e52249b6a5be7e309d2465fabf04cdca58a3",
       "sha256": "d007b7508ecf5ba84a6cd662dcdbf183e8318b5853bf6c69b2cceb395fe88236"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14773,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-cosine-s914241/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h8-cosine-s914241/manifest.json",
       "sha256": "38d083bda12bca8a208248eb339071abff745ae54427d146f7c2f709187fa020"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 29334668,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-cosine-s914241/observations.npz",
+      "path": "urn:pldr:unavailable:28898cb740131fd49c41fb02e648b1e8caf1d90b41623cb40fc92fc2d1047e71",
       "sha256": "30e82254de17ce040d2224af1af6c8f70b28d00b51fc00804d416b609ad90646"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 625549517,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-cosine-s914242/final-state.pt",
+      "path": "urn:pldr:unavailable:bfd99bc499c8cd03d73fdd7168b6ecc721da1ef052eea3044b6c01e857b8cd30",
       "sha256": "00c48c03890cb5526abb12311f9dd012e8d0dc394f17427a12391efd4c627620"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14769,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-cosine-s914242/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h8-cosine-s914242/manifest.json",
       "sha256": "e6675fa27991ca2276a7ff4aa206286ce94d3c9ac65e9d3c7d65d2f8cece972e"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 29292407,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-cosine-s914242/observations.npz",
+      "path": "urn:pldr:unavailable:13e3f52879fbce4a132bd8d01fc733b45e509edcb6c2598b16740cb55c852c17",
       "sha256": "e3adc0184c00acf2a92dbf4c72047ba47f13a63b54bb2573d2a807d62a1590c2"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 625549261,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-cosine-s914243/final-state.pt",
+      "path": "urn:pldr:unavailable:01638d7eb3e3dcb6670e370d8d0359d42b2cb3f5dd52b2971d3f1bbd4f180752",
       "sha256": "6f9396556e16f28e2a11e547a028e0d6e91d2aa3bae7f21b9adb51e5c8d56c3d"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14769,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-cosine-s914243/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h8-cosine-s914243/manifest.json",
       "sha256": "39a54c267eb9e9243b502e6a8a7bfe0fbf89bd066d99299b66a12c4e2704c945"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 29313461,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-cosine-s914243/observations.npz",
+      "path": "urn:pldr:unavailable:63ba9fd82ba67375f401ba09925464cbc02bdefca5ab3ca9608b2e10ca52bd57",
       "sha256": "3010b395af9862bc921514f6c1b0d8a2c3f3186e780055a2b925d9b41838281e"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 625549389,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-plateau-s914241/final-state.pt",
+      "path": "urn:pldr:unavailable:d5e24837ca1109ae34d94dd1e7d7db385a2d2776afb2c0ea5c336f788ec01d1f",
       "sha256": "1fcf6f5173c4caa98eff0c73429425a4261ab1fb229eade4489bee3b3ad16dfb"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14781,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-plateau-s914241/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h8-plateau-s914241/manifest.json",
       "sha256": "f7d876a8313cbc9d7fb7e45bca26667c723115d37f08c746cae9f16a8abdb12e"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 29212772,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-plateau-s914241/observations.npz",
+      "path": "urn:pldr:unavailable:257952c1bc01299147a2a1fa7bc7dd055c8a228ffb89bc847672129e845d6f7e",
       "sha256": "62fb0fb4e7813f533563860934025bdc4ffa6011c5c3cd4456f6819c63c45c08"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 625549517,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-plateau-s914242/final-state.pt",
+      "path": "urn:pldr:unavailable:0ea515b85fd69c90be79fa540e0d0b7a6bc0b15037993de31af39a3dec4bbde2",
       "sha256": "8739a38d59a785ed0f3f97ffb2a2e28de6bd6fa202ecdc20b7914df6cd0de7a7"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14754,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-plateau-s914242/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h8-plateau-s914242/manifest.json",
       "sha256": "1bd645f411be23015d7f7045854a95aae78d0138a6f2813629e99591e1d0abb9"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 29169108,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-plateau-s914242/observations.npz",
+      "path": "urn:pldr:unavailable:0685f547eb321caf09909746b05234926e13285f9287e5b6d15f3eddb11e0aa3",
       "sha256": "261954e7ea236eb2108e59f4b7a2a551e97c145d6bed130b0dbda64a8fb57f71"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 625549261,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-plateau-s914243/final-state.pt",
+      "path": "urn:pldr:unavailable:bc00b98b8fd44592c857168a6fcce61ffb72415b30fe9e5829377622bf821103",
       "sha256": "3f310f7a42456b37ecb1f68ee687a52b3c5219eff9ff8c556852f189f713021a"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 14784,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-plateau-s914243/manifest.json",
+      "path": "pldr-data:model/research/matched-onepass-20260914/runs/h8-plateau-s914243/manifest.json",
       "sha256": "6615469077fbdb57be7485fb5e4376f38c8a24a635b3508eb0cb02ecfe75e1dd"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 29223612,
       "category": "Matched single-pass scientific observations and complete trained states",
-      "path": "/pldr-data/model/matched-onepass-20260914/runs/h8-plateau-s914243/observations.npz",
+      "path": "urn:pldr:unavailable:d3d5fa2ea568abb157f7c765e41374716b1f715608c2fb91895827143786b11f",
       "sha256": "2af7194906d1941abea27dd3ede8d0959074780c1b92eabf40aa1bf5bb772504"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 26881,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/protocol.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/protocol.json",
       "sha256": "d1a1b5c19ca88f9b6017ab29b4c62b07bef8c101c428b18c561dd9369a21b0e4"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 1248,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/risk-plan.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/risk-plan.json",
       "sha256": "5f8ceaac6edb801f122e938936a1919d1816a4c6b5dccb3bc45d776d6a672698"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 338494,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/inputs.npz",
+      "path": "urn:pldr:unavailable:c74017ab67842640d0b1818e266dfba20b90616e03824fd62f0ac195cae45d1d",
       "sha256": "155f1b56b3b7de8af4b22a0c04af0f6a33bbd5868f1a2325c7321236dc0a0b3c"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 936,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915101/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g0-s915101/manifest.json",
       "sha256": "85e6ea5b906ea6abacdbed4b64b2e6b1bdd2f516d6f107d3d1263da7f81d27ff"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13330947,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915101/observations.npz",
+      "path": "urn:pldr:unavailable:cdc281b7eb0ed5f746765399160571bd2c3b7abc3a0b72a7fe1f9aaff646f657",
       "sha256": "c8cfec4be82dd184aaeca08bb6c27d5673b7b223dd9d1c2e1c3f59a2aa3ebc25"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 936,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915102/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g0-s915102/manifest.json",
       "sha256": "207afc54ec4a715e3a3f3320c397d9b3a0ac9e8e21aa1bd078436d7ba3ced15c"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13326555,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915102/observations.npz",
+      "path": "urn:pldr:unavailable:2cf119719bb6ee12d821c33d5f894c02aabb4c9bd4e3e924d722a46134d224b2",
       "sha256": "3398d4bb02894e5d974b5b249a8beedc7818349c34213196045b76ef57cbcff4"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 937,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915103/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g0-s915103/manifest.json",
       "sha256": "44b460569b99454e607d75d37b54d0f8949dbf071f57f4eea94d2466f0a76edf"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13358941,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915103/observations.npz",
+      "path": "urn:pldr:unavailable:314ce7defbe204c1f04c91756de9c7f8409a464d65752d216e6e01229a943a7a",
       "sha256": "7e07a06af691a17283d7a546e2f2cfb6e18d8b2ffc039a73ae2f49dfd0a8033a"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 937,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915104/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g0-s915104/manifest.json",
       "sha256": "354cc725cbcee69eaa86d9602e1e5037b9c31bafd2b3b02b3b695a3132c96b6c"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13350781,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915104/observations.npz",
+      "path": "urn:pldr:unavailable:79e35ba2398f91e11cc1e9e83d4f4a364fcca7406778e76cdc0bb55aacb1d1a9",
       "sha256": "7e539b31a32613942bedd2f48f9330c57622ab443119326e2f2bd4b1d6503322"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 937,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915105/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g0-s915105/manifest.json",
       "sha256": "0a7e7527d844d840b902605917663ba5b6b0bb014fab34a919456ef5cd7991aa"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13335803,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915105/observations.npz",
+      "path": "urn:pldr:unavailable:93d455d2ddb18b35312da72fb23095d721d37446f0ae88db6eb410975cbc0069",
       "sha256": "1a97456d4981b4995a23c5e2c60d9afd43c1270fbaf2ba6e4746ebf1203e820b"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 937,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915106/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g0-s915106/manifest.json",
       "sha256": "1d057c63ead9d2d7d0fcef36377a46c43230b9873933f5894918af32a1341c14"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13347890,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g0-s915106/observations.npz",
+      "path": "urn:pldr:unavailable:6c4d17bd98d17ce95d536f36bd8df380524940639c69752181b86453037487bf",
       "sha256": "8cb8906eb6323ecabef4761a279106b95b576ef13dac4f9d26313bc05dadfd72"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 941,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915101/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g1.5-s915101/manifest.json",
       "sha256": "0aa9dcb5ce1235cd1b9556c6f901917d2b60e1310e78326bca44f0c87b2eb4aa"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13357392,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915101/observations.npz",
+      "path": "urn:pldr:unavailable:36f0ee6cde892da32a2bb12b785275abd39f520e80456ba42bf4474291ad2fb2",
       "sha256": "a1a0822e66c619d5ddeb83e2bba742317633c7b14990aa60613e1595431ec8c8"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 943,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915102/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g1.5-s915102/manifest.json",
       "sha256": "6b19ecb629a6794e39738a5831660bd30010853f7ac698037529e59555c6fa94"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13376153,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915102/observations.npz",
+      "path": "urn:pldr:unavailable:159f40198537fa510c751e6799ee09740b4d0a5ac1508d9c6974c770ccef00ad",
       "sha256": "5203fbb59ac80ffa0e26a6f2810c029ac02c2f03128f9dd9032f7fa16b95da29"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 942,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915103/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g1.5-s915103/manifest.json",
       "sha256": "dd1b28d3c9cbf071bb922352f791275db0d0c30753282f080baf4038bd99e82b"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13379967,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915103/observations.npz",
+      "path": "urn:pldr:unavailable:2672a1568bab40b23bce931c154fabce44a29d238a256a85a952d6727eaf30d0",
       "sha256": "8f508da6719b786801a446e3cbf308de2450ba1d01b6ac83ca043933a32a2dc9"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 943,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915104/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g1.5-s915104/manifest.json",
       "sha256": "959b26e0847e070c2104d3475920f6e5bbe8ae4a4d395457f72d4ae51fa67091"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13382709,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915104/observations.npz",
+      "path": "urn:pldr:unavailable:cd7b8d93235c0fd3fb4b7e0cdd60ebd4829d49cd0eab24f84735ebfa4d8a64ba",
       "sha256": "5ff58a9fb150abcac59924d507f94bba0f8ffe1e8f6e21df1bc4e92fc267a5fd"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 942,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915105/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g1.5-s915105/manifest.json",
       "sha256": "139ef12ba9710c155b53c3482faa5ebf05bd5c7fd2ef1065f987b433827199bd"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13377300,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915105/observations.npz",
+      "path": "urn:pldr:unavailable:d6df463b37a7de97c4b991737c0a7f391d5e9664ca288ed72b9d25e376f730af",
       "sha256": "455b8ef7ddf3005be0a36c20ccf860f6a5e39ceb2bea4c9dce994ba1c495fc62"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 943,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915106/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h24-g1.5-s915106/manifest.json",
       "sha256": "691e0ad8c7ee590d2def032263637497c2228b2734ef783d3b059bffb5c4d13a"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13381600,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h24-g1.5-s915106/observations.npz",
+      "path": "urn:pldr:unavailable:f1e9021c01b093881259516ac53702d47d1beb78825485a4ad6cf1c95f199984",
       "sha256": "4842fa0ccdddb00e7f9f83a8ebf2573eb8ba64cdfb7a18702c4c51f4fc3a596b"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 932,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915101/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g0-s915101/manifest.json",
       "sha256": "0694f1a1bacfd62a11908f678df912bdc574b75507a7cef3c76a049ef2180bc9"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13314568,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915101/observations.npz",
+      "path": "urn:pldr:unavailable:b107a34de3f305810cb78ac34926dd4fec55f6263fcba942a392c471bc12e258",
       "sha256": "d1c3d77a5e483672a61f776dd65f7fee1d15959641218a66045ab6392b147bf5"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 932,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915102/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g0-s915102/manifest.json",
       "sha256": "08d7837fd7555019a877eff8b457038d74146fdded37a5262bd5223292e765e9"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13295218,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915102/observations.npz",
+      "path": "urn:pldr:unavailable:9020c07ef6f03eb0d5efedd394f065d1384c11abe9d5fa838ab6d8af076a6c43",
       "sha256": "28692621750fc3c2356d259560a3a5b1cbda1c7283b84b66e7c4abf2283ae775"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 933,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915103/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g0-s915103/manifest.json",
       "sha256": "41e98abfe6069d3cf73df7f809eab4a0db85457f4ec9b6d7c958e1c488964d4b"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13342283,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915103/observations.npz",
+      "path": "urn:pldr:unavailable:8d80b7c1c81cba82f2cef2e28d50b9c76add406c088286a5714467b4859608b6",
       "sha256": "72d901ac7fe05f1b6757ac360d80d0b505a80448e41cee4b84aab031db89fbf4"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 933,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915104/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g0-s915104/manifest.json",
       "sha256": "7ea1670707fbbd71c9244879b174fd81a3c030f0258029e6148f655640435cd8"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13337774,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915104/observations.npz",
+      "path": "urn:pldr:unavailable:39943ee2adcbfde6e413c26f6583b6ae2ae6232caaa331fabc1c504a1aca307e",
       "sha256": "9cd8945db182c159238dd3fd907175d5a8fef1c76f24da81eb2edea7b9c5f941"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 933,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915105/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g0-s915105/manifest.json",
       "sha256": "fd16a69b82b9f4e77763974fa7f33ebf50268d8de9da8051940df8ef84ac1b51"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13293082,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915105/observations.npz",
+      "path": "urn:pldr:unavailable:c36e02eedb86f9c18cca284c307d09432bccb45f04d858481d44c2fdc909d6f0",
       "sha256": "dac9050d0949b0f9c6902f5c4327921b0a4d9806d1b5dda18afdcc733ae5969c"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 933,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915106/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g0-s915106/manifest.json",
       "sha256": "ceb310f030a22a1a33b58faeb6969e1a55c38de5f43cd49fba346f7d885b3887"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13307912,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g0-s915106/observations.npz",
+      "path": "urn:pldr:unavailable:5eb9c17cbc536a298a945957505869cf6ccc746234ae91bb25c9435e28defc4b",
       "sha256": "8bf552e6f46a83f49454442c93b48e837ec10a0d20edbbbb461cef7db07ec8d0"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 939,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915101/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g1.5-s915101/manifest.json",
       "sha256": "906afd2a73a54d62918159aa2e12140a887a77646b190071bf0bff04072cd110"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13373803,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915101/observations.npz",
+      "path": "urn:pldr:unavailable:c7e650ef41ff01ff7da578a085d6d0fa0b7fd0346c5aceda774028dcb599fec9",
       "sha256": "e71c8246b8fcfc6081352ad90ea55756129ecb387edd097c996948f29ec7454b"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 938,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915102/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g1.5-s915102/manifest.json",
       "sha256": "4f356fe068761f7b845036d9af228e34b75a28ee6b0aa4395c615accd02858d8"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13403082,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915102/observations.npz",
+      "path": "urn:pldr:unavailable:9602c9b3dd29775dfdb36e90a7a45c9791e48f9a7c08aaa8b873d7b944013fcd",
       "sha256": "4672336680939e72908e2fafe1024696060f032b0375f8d9b00dee576756b63d"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 937,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915103/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g1.5-s915103/manifest.json",
       "sha256": "f0ae8185d956a8e5e67f26cf23fec583e3528ea712b1453c80b78c573a9b1af7"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13380064,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915103/observations.npz",
+      "path": "urn:pldr:unavailable:fc33578411840658a62b255827a2c7a728ff7f281875354bce1d58b4943d512d",
       "sha256": "0024b797bb0fbfebbee66179c24f0cd0b5f5480a5803bcebc2d8242970d06886"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 938,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915104/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g1.5-s915104/manifest.json",
       "sha256": "3101ea580f5573b8e882cd0e961c35adbfdbfe431da995b12b521064c7f20c48"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13382185,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915104/observations.npz",
+      "path": "urn:pldr:unavailable:295fe372ba36da723f3d2ece6c0b1b67a40c7985050ba6c6496821eda59059a4",
       "sha256": "c29228eef79a2d78b5e2e610e251b5385cef7b92d57500d519ee1c0304fb5b1b"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 938,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915105/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g1.5-s915105/manifest.json",
       "sha256": "f70b8bada8f1d32b9e4f18cae0a9a129788fa8fded6bea56bae566b1f35d68af"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13380211,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915105/observations.npz",
+      "path": "urn:pldr:unavailable:742f99849b0131099f8902eca94b8f0282b19ef31ba317cf41676ed3cab8865e",
       "sha256": "85e531f3d82275a5ebd9be38df67fcabe2f9baa5f19920e9b28e9c9da7ce0a78"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 939,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915106/manifest.json",
+      "path": "pldr-data:model/research/context-risk-128-20260915/runs/e1-h8-g1.5-s915106/manifest.json",
       "sha256": "4640b091deae6b02aa3568944534e60f2f6ec8fe61b52aa0e329ca487981aabc"
     },
     {
       "access": "locally retained; no public deposit claimed",
       "bytes": 13347505,
       "category": "Completed 128-document context-risk observation",
-      "path": "/pldr-data/model/context-risk-128-20260915/runs/e1-h8-g1.5-s915106/observations.npz",
+      "path": "urn:pldr:unavailable:1e6e7016526cb24a93fbf98053e7d4eff8a474e1ec871a12ecfee0d1cd724778",
       "sha256": "6e8dcdb82a2021b590786f0cc4da0da2f68d04ff1ac70823980034941b1ee426"
     }
   ],
@@ -1351,11 +1351,11 @@
     "clean_reproduction_sha256": "eaf702fde36a41be590afcfc8338e746db29835f50f84a81e9a8d1be34df3436",
     "index_sha256": "3a8b5919e61a8a33be58a7b993658215a4a781252a0bdbe23c0543ab9a312455",
     "observation_files": 408,
-    "path": "/pldr-data/model/categorical-observation-package-20260915",
+    "path": "urn:pldr:unavailable:8b637fbdad31eb65275a36128c0e62f097eb1eb733ab3b5d72ad358b10abf675",
     "persistent_identifier": null
   },
   "categorical_observed_data": {
-    "complete_local_root": "/pldr-data/model/categorical-observation-package-complete-20260915",
+    "complete_local_root": "urn:pldr:unavailable:a2e68dc8a83418d336a022c7918a054362743edcca6da8aaaf9fd4c8a9d047bc",
     "index_sha256": "c8c5d244b6238264133ed7a171a6d15793b89495aa30ea2359fc44741481deb8",
     "indexed_bytes": 4947893234,
     "indexed_files": 448,
@@ -1374,6 +1374,6 @@
       "url": "https://huggingface.co/datasets/tiiuae/falcon-refinedweb"
     }
   ],
-  "restriction": "Read-only source corpus at /pldr-assets/refinedweb. Exact historical pretraining streams of released checkpoints are not supplied by public inference weights.",
+  "restriction": "Read-only source corpus at urn:pldr:unavailable:5f6ee691ae24a8067695cb17390aa03ad91acc381f408fe557471c966de123d7 Exact historical pretraining streams of released checkpoints are not supplied by public inference weights.",
   "schema": "native-study-asset-access-v2"
 }

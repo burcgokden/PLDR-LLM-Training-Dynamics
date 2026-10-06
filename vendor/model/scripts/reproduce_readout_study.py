@@ -1,6 +1,6 @@
 """Reproduce the executed readout study and its current execution qualification."""
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -9,7 +9,7 @@ import sys
 import os
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def main(base):

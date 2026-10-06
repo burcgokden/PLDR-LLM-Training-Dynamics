@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Independent trapezoidal reconstruction of all retained and paired areas."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,hashlib,json,time
 from pathlib import Path
 import numpy as np
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 def sha(p):
     with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()

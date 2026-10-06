@@ -1,5 +1,6 @@
 """Verify complete released-model evidence, resource identities and checkpoint selection."""
-from companion_paths import legacy_path
+from companion_paths import required_input, acquisition_identity
+from companion_paths import configured_path
 from numerical_claims import finite_greater
 from numerical_validation import load_json_strict
 import argparse,json,math,sys,subprocess
@@ -7,7 +8,7 @@ from pathlib import Path
 import numpy as np
 REPO=Path(__file__).resolve().parents[1];sys.path.insert(0,str(REPO/'src'))
 from model_rg.provenance import sha256,write_json
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 def main(a):
     producer=Path(a.producer_root).resolve()
@@ -203,7 +204,7 @@ def main(a):
         r=read(transport/name)
         for p,h in r['inputs'].items():check(p,h)
     for n in ['docs/TRANSPORT_REPRODUCTION.md','docs/environment-transport.json']:check(REPO/n)
-    generated=REPO/'manuscript/generated';render=read(generated/'released-render-manifest.json')
+    generated=Path(required_input('generated-evidence'));render=read(generated/'released-render-manifest.json')
     if render['status']!='complete' or render['renderer_sha256']!=sha256(REPO/'scripts/render_released_adaptation.py'):raise ValueError('Changed renderer')
     for kind,h in render['analyses'].items():check(s/'analysis'/(kind+'.json'),h)
     for n,h in render['generated'].items():check(generated/n,h)
@@ -227,16 +228,16 @@ def main(a):
     clean=read(REPO/'docs/transport-clean/verification.json')
     if clean.get('status')!='passed' or clean.get('preexisting_owned_artifacts') is not False:raise ValueError('Missing clean owned formal rebuild')
     for n,h in clean['module_sources'].items():check(REPO/n,h)
-    retained=Path(legacy_path('/pldr-archive/model/paper-outputs/paper-outputs-rev19'));manifest=retained/'MANIFEST.sha256';check(manifest)
+    retained=Path(required_input('verify-released-adaptation-input-1'));manifest=retained/'MANIFEST.sha256';check(manifest)
     for line in manifest.read_text().splitlines():
         h,n=line.split('  ',1);check(retained/n,h)
     source={}
     for folder in ['src','scripts','tests','ModelRG']:
         for p in sorted((REPO/folder).rglob('*')):
             if p.is_file() and p.suffix in ['.py','.lean','.cpp','.sh','.json']:source[str(p.relative_to(REPO))]=sha256(p)
-    for p in (REPO/'manuscript').rglob('*'):
-        if p.is_file() and p.suffix not in ['.aux','.log','.bbl','.blg','.toc','.out'] and (p.parent!=REPO/'manuscript' or p.suffix in ['.tex','.bib']):check(p)
-    for n in ['ModelRG.lean','README.md','docs/RELEASED_ADAPTATION_REPRODUCTION.md','manuscript/generated/qualification-current.json']:check(REPO/n)
+    for p in (Path(required_input('publication-source'))).rglob('*'):
+        if p.is_file() and p.suffix not in ['.aux','.log','.bbl','.blg','.toc','.out'] and (p.parent!=Path(required_input('publication-source')) or p.suffix in ['.tex','.bib']):check(p)
+    for n in ['ModelRG.lean','README.md','docs/RELEASED_ADAPTATION_REPRODUCTION.md',str(Path(required_input('generated-evidence'))/'qualification-current.json')]:check(REPO/n)
     write_json(out/'verification.json',dict(status='passed',schema='released-adaptation-complete-release-v1',study=str(s),retained_release=str(retained),verifier_sha256=sha256(__file__),current_sources=source,archived_producer_root=str(producer),checked_sha256=bound,software=software,transport_study=str(transport),singlepass_updates=2048,current_execution_qualification_updates=6,runs=inventory,counts=dict(scientific_updates=sum(r['scientific_updates'] for r in inventory),development_updates=sum(r['development_updates'] for r in inventory),qualification_updates=9,physical_test_cells=210,generated_cells=138,exact_law_cells=18,language_test_models=9),scope='All completed selected paths and frozen assessment cells, independent q-token logit and compact language-score reductions, proper-prefix and finite-resource invariants, source-bound software checks, immutable retained publication. This does not certify population universality or unavailable pretraining document manifests.'))
     print(out/'verification.json',flush=True)
 if __name__=='__main__':

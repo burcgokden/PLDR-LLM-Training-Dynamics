@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Frozen proper-prefix, generation and metric-intervention assessment."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from contextlib import nullcontext
 from datetime import datetime,timezone
@@ -21,7 +21,7 @@ from model_rg.inference_interventions import projected_rows
 from model_rg.lattice import observables,summarize
 from model_rg.provenance import sha256,write_json
 
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 NAMES=['scripts/physical_assessment.py','src/model_rg/physical_native.py','src/model_rg/training.py',
        'src/model_rg/native.py','src/model_rg/inference_interventions.py','src/model_rg/lattice.py',
        'src/model_rg/provenance.py']

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Stratified, document-disjoint RefinedWeb contexts from read-only Arrow files."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import hashlib
 import time
@@ -13,7 +13,7 @@ from model_rg.provenance import sha256, write_json
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--dataset-root", default=legacy_path('/pldr-assets/refinedweb'))
+    p.add_argument("--dataset-root", default=configured_path('assets:refinedweb'))
     p.add_argument("--tokenizer", required=True)
     p.add_argument("--output", required=True)
     p.add_argument("--documents", type=int, default=4608)

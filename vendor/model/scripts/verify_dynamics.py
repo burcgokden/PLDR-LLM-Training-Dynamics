@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """Verify the completed width-time study, interventions and formal source graph."""
-from companion_paths import legacy_path
+from companion_paths import required_input
+from companion_paths import configured_path
 import argparse
 import json
 from numerical_claims import finite_greater
@@ -116,8 +117,8 @@ def main():
         if not check['expectation_met']:raise AssertionError('A formal mutation gate failed')
     current_formal=Path(args.output).with_suffix('').with_name(Path(args.output).stem+'-formal')
     current_formal.mkdir(parents=True,exist_ok=False)
-    env=dict(os.environ,ELAN_HOME=legacy_path('/pldr-tools/elan'),
-        PATH=legacy_path('/pldr-tools/elan/bin')+os.pathsep+os.environ['PATH'])
+    env=dict(os.environ,ELAN_HOME=configured_path('tools:elan'),
+        PATH=configured_path('tools:elan/bin')+os.pathsep+os.environ['PATH'])
     for label,command in [('build',['lake','build']),('gate',['lake','env','lean','scripts/formal/Gate.lean'])]:
         with (current_formal/(label+'.log')).open('w') as log:
             subprocess.run(command,cwd=repo,env=env,stdout=log,stderr=subprocess.STDOUT,check=True)
@@ -135,7 +136,7 @@ def main():
         if args.trajectory_family and name!=args.trajectory_family:continue
         protocol=study/'protocols'/(name+'.json');spec=load_json_strict(protocol.read_text());protocols[name]=spec
         if len(spec['jobs'])!=count:raise AssertionError('Training protocol inventory changed')
-        bound(repo/'internal/dynamics-protocols'/(name+'.json'),digest(protocol))
+        bound(Path(required_input('dynamics-protocols'))/(name+'.json'),digest(protocol))
         ledger=load_json_strict((study/('launcher-'+name+'.json')).read_text())
         if ledger['status']!='complete' or any(r['returncode'] for r in ledger['records']):raise AssertionError('Unresolved training outcome')
         bound(protocol,ledger['protocol_sha256'])
@@ -235,12 +236,12 @@ def main():
         print('Verified complete trajectory family',args.trajectory_family,len(inventory));return
     return_protocol=study/'protocols/collective-return.json';spec=load_json_strict(return_protocol.read_text())
     emission_protocol=study/'protocols/collective-return-emission.json'
-    bound(repo/'internal/dynamics-protocols/collective-return-emission.json',digest(emission_protocol))
+    bound(Path(required_input('dynamics-protocols')) / 'collective-return-emission.json',digest(emission_protocol))
     bound(return_protocol,load_json_strict(emission_protocol.read_text())['training_protocol_sha256'])
     return_results={r['name']:r for r in load_json_strict((study/'analysis/controls/results.json').read_text())['collective_returns']}
     if set(return_results)!={c['name'] for c in spec['cases']}:raise AssertionError('Return summary parent identities changed')
     probe_tokens=np.load(root/'controlled-study-20260905/data/short/tokens.npy');probe_offsets=np.load(root/'controlled-study-20260905/data/short/offsets.npy')
-    bound(repo/'internal/dynamics-protocols/collective-return.json',digest(return_protocol))
+    bound(Path(required_input('dynamics-protocols')) / 'collective-return.json',digest(return_protocol))
     ledger=load_json_strict((study/'collective-return.json').read_text())
     if ledger['status']!='complete' or len(ledger['records'])!=4:raise AssertionError('Component return inventory incomplete')
     return_trajectory_checks=0
@@ -461,7 +462,7 @@ def main():
         for d in data:d.close()
     optimizer_result=load_json_strict((study/'analysis/optimizer-scales/results.json').read_text())
     optimizer_protocol=study/'protocols/optimizer-scales.json';optimizer_spec=load_json_strict(optimizer_protocol.read_text())
-    bound(repo/'internal/dynamics-protocols/optimizer-scales.json',digest(optimizer_protocol))
+    bound(Path(required_input('dynamics-protocols')) / 'optimizer-scales.json',digest(optimizer_protocol))
     if optimizer_result['pilot_only'] or len(optimizer_result['cases'])!=64:raise AssertionError('Incomplete optimizer-scale inventory')
     if [r['case'] for r in optimizer_result['cases']]!=optimizer_spec['cases']:raise AssertionError('Optimizer-scale identities changed')
     for row in optimizer_result['cases']:

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Qualify all near/subcritical scalar drives against the public scheduler."""
+from companion_paths import required_input
 import argparse
 import json
 from pathlib import Path
@@ -19,8 +20,8 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--root',required=True)
     p.add_argument('--study',default='scheduled-training-20260908');a=p.parse_args()
     repo=Path(__file__).resolve().parents[1];study=Path(a.root).resolve()/a.study
-    table=repo/'internal/reference-schedule/regime-table.json';spec=json.loads(table.read_text())
-    reference=repo/'internal/reference-schedule/pldr_run_model_v510.py'
+    table=Path(required_input('reference-schedule')) / 'regime-table.json';spec=json.loads(table.read_text())
+    reference=Path(required_input('reference-schedule')) / 'pldr_run_model_v510.py'
     out=study/'qualification/reference-regimes';out.mkdir(parents=True,exist_ok=False)
     files=[table,Path(spec['source']),reference,study/'qualification/reference-cpu-final/manifest.json']
     if sha256(spec['source'])!=spec['source_sha256']:raise AssertionError('The reference paper changed')

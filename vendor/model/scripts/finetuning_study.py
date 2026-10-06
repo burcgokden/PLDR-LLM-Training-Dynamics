@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Frozen, bounded native fine-tuning with distinct remaining corpus blocks."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import copy
 from datetime import datetime, timezone
@@ -284,7 +284,7 @@ def run(study):
 
 if __name__=='__main__':
     ap=argparse.ArgumentParser();ap.add_argument('action',choices=['prepare','run','worker','validate'])
-    ap.add_argument('--study',required=True);ap.add_argument('--root',default=legacy_path('/pldr-data/model'))
+    ap.add_argument('--study',required=True);ap.add_argument('--root',default=configured_path('data:model'))
     ap.add_argument('--stage',choices=['qualification','assessment']);ap.add_argument('--qualification')
     ap.add_argument('--case');ap.add_argument('--device');a=ap.parse_args()
     if a.action=='prepare':

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Native selected-output parity and bounded GPU execution qualification."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 from pathlib import Path
@@ -15,7 +15,7 @@ from model_rg.training import TrainingModel
 from model_rg.physical_native import context_tokens, spin_tokens, prefix_batch, selected_forward, generate
 from model_rg.provenance import sha256, write_json
 
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def main():

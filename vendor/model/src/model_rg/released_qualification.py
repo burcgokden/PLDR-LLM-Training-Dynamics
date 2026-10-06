@@ -17,7 +17,8 @@ import torch
 from model_rg.provenance import sha256
 
 REPO=Path(__file__).resolve().parents[2]
-ROOT=Path('/pldr-data/model')
+from companion_paths import data_root
+ROOT=data_root('model')
 SCHEMA='released-execution-qualification-v2'
 PINS={1:'7a34e2ca9aa78038683677cfda17fe3a9fe6da8a',4:'c377be06f2294aeccb56d19ea5f52640b1850daf',5:'de8e539c0ba1829072f4b8c2c5fae3bde0a3a2d2'}
 ENTRY={'full':['train_released_adaptation','assess_released_adaptation','observe_released_geometry'],

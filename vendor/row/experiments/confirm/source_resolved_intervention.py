@@ -1,4 +1,4 @@
-"""Prediction-before-native producers for rev45 controlled interventions."""
+"""Prediction-before-native producers for source-resolved controlled interventions."""
 
 from __future__ import annotations
 

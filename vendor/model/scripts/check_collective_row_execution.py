@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Separate completed native row continuations from internal optimizer replay."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from pathlib import Path
 from model_rg.provenance import sha256,write_json
 from numerical_validation import load_json_strict
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def check():

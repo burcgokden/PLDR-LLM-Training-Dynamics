@@ -143,7 +143,7 @@
         "test_aggregate_rows_use_per_trajectory_map_counts",
         "dependent module structure"
       ],
-      "path": "vendor/rg/tests/test_energy_closure_renderer_v3.py",
+      "path": "urn:pldr:unavailable:8d3b4291ca0bfc89b2dc0212c79d7c6872da6c21989955f8db52e7cea22a4381",
       "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
     },
     {
@@ -157,7 +157,7 @@
         "test_negative_pair_is_reported_and_malformed_records_fail",
         "dependent module structure"
       ],
-      "path": "vendor/rg/tests/test_evidence_intervals.py",
+      "path": "urn:pldr:unavailable:786d1ab4dec32bb4db41c84cd6371106bbd5cdf18ba5118b3eea53c50b668343",
       "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
     },
     {
@@ -166,7 +166,7 @@
         "test_render_separates_exact_positive_and_device_control",
         "dependent module structure"
       ],
-      "path": "vendor/rg/tests/test_observer_precision_renderer.py",
+      "path": "urn:pldr:unavailable:4a1d7e378cfc91304eee41600fec3f2332d8bd55eeedf87c35c49ce5c93ab4f0",
       "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
     },
     {
@@ -186,7 +186,7 @@
         "test_v5_analysis_record_is_renderable",
         "dependent module structure"
       ],
-      "path": "vendor/rg/tests/test_renderer_v3.py",
+      "path": "urn:pldr:unavailable:ac3339522cbe6950d603016c93cb749b8a590014c557262b6afd233c318ab620",
       "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
     },
     {
@@ -428,7 +428,7 @@
         "ImportFrom",
         "test_coverage_renderer_maps_lean_logic_symbols"
       ],
-      "path": "vendor/row/experiments/tests/test_mixed_collapse_rev47.py",
+      "path": "urn:pldr:unavailable:a9dadba05ef3d3bbc8594acc66cfb1b1625e522b973dedea9f5d8acf2757458f",
       "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
     },
     {
@@ -509,7 +509,7 @@
         "main",
         "stage"
       ],
-      "path": "vendor/row/scripts/stage_observable_margin_confirmation.py",
+      "path": "urn:pldr:unavailable:7e3ffd5594d2253a48a8ce95be84b3277c5a76e468b3a8c739738e031a5549ef",
       "reason": "presentation logic and dependent interface, numerical definitions retained where separable"
     },
     {
@@ -557,7 +557,7 @@
       "reason": "Keep selected formal kernel metadata; monograph-wide map supplied separately."
     },
     {
-      "path": "vendor/row/scripts/stage_observable_margin_confirmation.py",
+      "path": "urn:pldr:unavailable:7e3ffd5594d2253a48a8ce95be84b3277c5a76e468b3a8c739738e031a5549ef",
       "reason": "Excluded archival staging requires exact private publication export; numerical observable-margin kernels remain bundled."
     },
     {
@@ -577,7 +577,7 @@
       "reason": "Exclude publication-only fixtures: FormalCorrespondenceTests"
     },
     {
-      "path": "vendor/row/experiments/tests/test_retained_energy_audit_rev51.py",
+      "path": "urn:pldr:unavailable:32c654a01f4fd8c02608325d5cdf0b7d518234e07c05991f189e8289a49f11e9",
       "reason": "Check the retained study identity directly without publication-release metadata."
     },
     {
@@ -604,1725 +604,1732 @@
   "boundary": "Excluded publication code and fixture checks are not scientific passes. Pure numerical definitions from mixed modules are retained; deleted presentation-dependent CLI functions are not public entry points. Obsolete manuscript sources, formatting helpers and superseded correspondence snapshots are omitted from this inventory; maintained formal mappings are in provenance/statement-manifest.json.",
   "excluded_files": [
     {
-      "path": "vendor/model/README.md",
+      "original_path_sha256": "9f84632cecf839c80a5f8cfe4af2b3e137252cd67d2ae2f55763ebd1d30483a7",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/ASSET_ACCESS.md",
+      "original_path_sha256": "d58b5d08cfedcbf08a972c74e1f95ab19bb8bf368ac9b0cc42d4c4a53adde25d",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/CACHE_RISK_REPRODUCTION.md",
+      "original_path_sha256": "98173f1e4af84dc12e54a049ee37f77f9a586acdf1ddb3859a037ffc88f2cc15",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/CACHE_STATE_TRANSFER.md",
+      "original_path_sha256": "fc965e6631839d76deeab5765da63532808387026e3901b4e76c16cf867daf23",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/CATEGORICAL_SCALE_REPRODUCTION.md",
+      "original_path_sha256": "41d4af6aa44377393ee47b77b26393f4b0ac424c112fe582d398c79618f03e9f",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/COMPACT_RELEASE.md",
+      "original_path_sha256": "92b009290bb1efa9026adaac0f01b1264097299f7ea227810104c757443042d7",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/CONTEXT_RISK_REPRODUCTION.md",
+      "original_path_sha256": "240d214dcc8bb57600e16cda1a7baa6d211e59d1b5cb4f8bdbaea08c62d35507",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/CRITICAL_ONEPASS_REPRODUCTION.md",
+      "original_path_sha256": "9e1100f05082a4a73f91ca7d5e027d8c0c8945dc5b3fd709545a6337a1ee9767",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/CURRENT_EXECUTION.md",
+      "original_path_sha256": "9365f4c88f176cac8e70efb2d1ad610f2f12db90ee5940b0f0b430b1d4db21c9",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/EQUAL_TIME_FLUX_REPRODUCTION.md",
+      "original_path_sha256": "f0a6f3b649f1426e11b81bca81eb65b64d07e427ac1c78247e26e5653fe1274d",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/FINITE_METRIC_REPRODUCTION.md",
+      "original_path_sha256": "9127396826ed2d32a530e079216000667a7ae32676552a42ea96fb6ccbfc111f",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/FINITE_ROW_REPRODUCTION.md",
+      "original_path_sha256": "0bfcb8d78136be39fd08a821f5e00cff1a2c880ef70098c71f616630bfa2f25a",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/MATCHED_CLOCK_REPRODUCTION.md",
+      "original_path_sha256": "7acb0052c886d69ba104c18f1dda5f0ae0a77100ef197650bec0fae3b699f165",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/MATCHED_ONEPASS_REPRODUCTION.md",
+      "original_path_sha256": "da9eea802ec7f0042ffc7b219a13e6e0e89d1b7f87003a3614b891e06cbeb555",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/NATIVE_REPLAY_REQUIREMENTS.md",
+      "original_path_sha256": "4868d8246ce6bf3f6a122bd2f6ed21512444f4654b4cd615d504af915c3e2d72",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/OPERATOR_CACHE_REPRODUCTION.md",
+      "original_path_sha256": "789d2c0637a9d8aeef1563796b83ff98012e411306f3d4355e421d50ed13de77",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/POTENTIAL_ACTIVITY_REPRODUCTION.md",
+      "original_path_sha256": "be972bf4b40baa7a291babcdb42a4e62d8f7242f307232b990f64f4545fbc98f",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/POTENTIAL_FACTORIAL_REPRODUCTION.md",
+      "original_path_sha256": "7304df25e06db363e0d4e5cf6aff17c47ae0deb805b0cdaf5f713b483039c6fa",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/RELEASE_BODY.md",
+      "original_path_sha256": "5a5d9914fb5bc4a9e79f56e17a5cd929d58153f7464f34bf95f5ef8fa43eea25",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/RELEASE_INDEX.md",
+      "original_path_sha256": "686871fa718572baebdfa16512143fb6a870f3613b467d4d4c456549beef172e",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/REPLICA_REPRODUCTION.md",
+      "original_path_sha256": "853a50e51c8610df1a9d7a9c2a7c0caf5279ff0328c849b38ba32f47312ae59e",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/ROW_PATH_REPRODUCTION.md",
+      "original_path_sha256": "57446fad07af1db2d8d054f7791092afaa9fa4b66dcdff7d2f65b3172e20fd6b",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/STATE_CONFIRMATION.md",
+      "original_path_sha256": "c560a7bcceda75800c84fe97e73ae92af7038f0b6463be08ce8f89aa09348a07",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/docs/STUDY_REGISTRY.md",
+      "original_path_sha256": "3957c5c86391ea5e1e5dee8a22ea228c6b03ce65c697d21d0312796b6023f525",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/protocol.json",
+      "original_path_sha256": "ccfa9970d339e380db8f8746205e4a587d431dd2a7086e8667beb332762a70d0",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/factorial_admission.py",
+      "original_path_sha256": "5770a1f944e77d63e35db2b60f48e8c5782ad89d32f17cac32dc67f32e8d9780",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/run_potential_factorial.py",
+      "original_path_sha256": "98a7f2ae7077faba45b459e2ddfeecd1b2a28bcad071946a0f2a9522c972a0ea",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/scripts/train_potential_avalanches.py",
+      "original_path_sha256": "42f6c9606a5d41a4f3891d6a9af0c29d1ccf234e41ab04284c34ab3f87d0b24f",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/__init__.py",
+      "original_path_sha256": "2d88452d12bc72ca313c835bd98282b7c62a7f3640cf70134c1101c27bdcb6c5",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/adam_tangent.py",
+      "original_path_sha256": "806481228166ae30b4d071d1092e190c93a690d2dd2a76490a63a7ff535f549f",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/checkpointing.py",
+      "original_path_sha256": "fef4dc43ffe6a3660a84cf1973d7131f6a6b71a1c07256c48e0a8646d63ed303",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/common_geometry.py",
+      "original_path_sha256": "ee5168e31e730ec466346519c00f564009d5298424eccb0fc4e8bc03718ab28f",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/controlled.py",
+      "original_path_sha256": "681b35cf08feb52ff27b8c53ef5a39551007ff09db5d2982f19e1690dc37a669",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/correlations.py",
+      "original_path_sha256": "3bf3b9fb217eee2ed76527b3c86c5237b047d8cfe644a914bffb7f7ed8f83e2e",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/criticality.py",
+      "original_path_sha256": "574e41f185b0b217c3e43f80d486433bd30de845640b13995e93eaae2922d39d",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/deductive_activity.py",
+      "original_path_sha256": "14526811dd67e8f0c0c5df7fc2b3b3caf6ba1917696e099be3c4038388512715",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/evidence_progress.py",
+      "original_path_sha256": "b41c786b7939411aae847e40ef394ae4be43b7ad6e8b4198e6b42c3eca506da0",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/finetuning.py",
+      "original_path_sha256": "79242926378f0a89641639dc7c7a43cff79ecade94e67d824a0faada3fcf4370",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/finite_optimizer.py",
+      "original_path_sha256": "165ca5431cf7da5bc277f10f96289fae86c7614adf42af2b50ab7ad0766eb34b",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/inference_interventions.py",
+      "original_path_sha256": "08db85a63e41ec3930ced79a03b425a5cd3bd844527600d5f41586c2463a50d5",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/lattice.py",
+      "original_path_sha256": "147a1bb172740ebe7dec56e7c91b3a54f368977c0ce8c8aded4273793d1cd597",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/layer_interventions.py",
+      "original_path_sha256": "8cc700b80932ef1d6006e1a6d1c18b0f71de89f62e397db8de337a076fa9ef6e",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/moment_rg.py",
+      "original_path_sha256": "6c8e68a621120c1f6e49d3812f2394f01bdf9af0edd9e8f9764247c9897406cb",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/native.py",
+      "original_path_sha256": "b816580eae705a75b10b7c5851f81e002826736283dcbd6ea0884239a9615a47",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/observation.py",
+      "original_path_sha256": "d0186bfe3cbd9777c5449c3df4955c7369cda50984df98352b9259a3a0620e23",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/onepass_regimes.py",
+      "original_path_sha256": "33ac560100955b8aa9057599c7439693f1f088356b9b310909191682c70272c8",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/physical_native.py",
+      "original_path_sha256": "f2c1340dff14ca1de5ca396f2bbeaa2d388dfa0ea4d2540883edec2051ce0917",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/potential_avalanches.py",
+      "original_path_sha256": "ec65cf4c6fc887471b243493d80aa008f79a5a836bad59fc7ee721399ec03df4",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/potential_symmetry.py",
+      "original_path_sha256": "fe94f270739f4804e162a2a9a2c099da3444381ac013c804f303ae43059ffdd9",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/precision.py",
+      "original_path_sha256": "fb683665e11e0301b8bfb9f002a6bf14b06750916e5fa5494a803bd33fcf664c",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/provenance.py",
+      "original_path_sha256": "4a7e9df67d102ce1a6ec5b092d8d67a83343c42e2ffb819db7bad24b00761040",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/qualification.py",
+      "original_path_sha256": "af67331127e32801944c47155877b18ce6cc8a1c0e1d8746068b0d6a4fdd9526",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/refresh.py",
+      "original_path_sha256": "ae5f08217de91da533c4cfca6dc3e6c7e1ca6720f9adc982677cba91133167f8",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/released_qualification.py",
+      "original_path_sha256": "3ba2ade71606d1c5a29203f257d380303d391a0119b5e0de7cd9a82c0821a814",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/resource_coupling.py",
+      "original_path_sha256": "a4684ca8edf32b0ab306b156cd7118670586b26534862d5c7e06867eb0d45c50",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/rg.py",
+      "original_path_sha256": "f5ee89d781057a77683bd28255f931a9fdf33c44d03e30e37682e92732600328",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/row_projection.py",
+      "original_path_sha256": "35d3978eef19546ec4127527ea268ce8e2db457871b3526a3a8e2f56be343c4c",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/scaling.py",
+      "original_path_sha256": "ca7fc53bcaff763614b32294f208a1e0a892d9ea999fe2553b50bd7a589a977b",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/scheduled_regimes.py",
+      "original_path_sha256": "7a601b101cc61ac0064760db1ad1a6014e6a27e73f8dd56b4de82fb613505225",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/schedules.py",
+      "original_path_sha256": "fe8515363c1b7825b77e3105fb70b211eb401bf7730c206e9647a9ea4998c7c8",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/source_basis.py",
+      "original_path_sha256": "86c99905747b7d4207bb0ca10615ad795cd2894aea9455e7cabc7bb218d14d44",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/training.py",
+      "original_path_sha256": "e32eb7b6153b7d37980a60bf881f533bb86225ac37746c99a9abc8bf21a3c2ab",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/update_records.py",
+      "original_path_sha256": "5d5c9cffdc4109712dd50a596ddc70cf3d0e24020c59044db8e1af8cea9a1a18",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/variance_family.py",
+      "original_path_sha256": "5b369eab4a01a766957722b836a44b64b540f1d925aee09cb92b0ea5ddf23c68",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial-disjoint/src/model_rg/visible_noise.py",
+      "original_path_sha256": "e93b5153781c5521f1c1422c313ed24f25907be7ae6d31d3a9e294b79bc38faf",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/protocol.json",
+      "original_path_sha256": "1b4612524f6d5196ac01a97463b541814081926cc924f861192e15884dbff227",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/scripts/analyze_potential_factorial.py",
+      "original_path_sha256": "bcd2f961da7e544f05e5c88ce3c94f1c8b34fa51290860194bdc77fb9d430b2b",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/scripts/run_potential_factorial.py",
+      "original_path_sha256": "27ddc3c3a0ef3ec8f2a916e4a1b308ef68be33639354797b8961105a6b0c2a80",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/scripts/train_potential_avalanches.py",
+      "original_path_sha256": "92395d5fb5d5fb4f33bd56afc3edc73ee1bd2db94dd6714364c9204077ce709a",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/scripts/verify_potential_factorial.py",
+      "original_path_sha256": "5116d795c1edd5be208f776ad95e6ce460264e5efceee8d28c2aa4f2323de166",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/__init__.py",
+      "original_path_sha256": "f36051806d5a52213fb2d65c3429d2a224725c510d82e3a323db19974517a047",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/adam_tangent.py",
+      "original_path_sha256": "f2d306fdaa61da973f96100a4a66e2d57e258d224a936e6d6a67370b65042f3f",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/checkpointing.py",
+      "original_path_sha256": "d8695411919d8e5fd7cc2cb3786229a55a9a20ae4d941b5fa1e635d65826b1fd",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/common_geometry.py",
+      "original_path_sha256": "20a7adc0691cdcda5b9100d95a5f8318d4fdfc91f143ab4995374342e401bd08",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/controlled.py",
+      "original_path_sha256": "6fa2a0b7605d1e390d78ac80c6987ea6ae9a73ac1a2eb479412e928fe62903b5",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/correlations.py",
+      "original_path_sha256": "d224867e3becd9b4c2425ef8625fef1f753ac445dae11cb54b5c303d9c7840e0",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/criticality.py",
+      "original_path_sha256": "00d2f7b46fd208bd2130e2313365b162da557692eecd37017a474120382b774f",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/deductive_activity.py",
+      "original_path_sha256": "47664f7443b004050ff82a8d64ba845c8a466f9c65da8897b5c44e1034c0d9e5",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/evidence_progress.py",
+      "original_path_sha256": "8253901b5a3edc0f1ddd53f41e68ebb8a9e26aa09afbf9f7586688c5f35f4fbf",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/finetuning.py",
+      "original_path_sha256": "3250d64238eaedf93233107d091d293950972d96291314e8109fc1976cfc6fd8",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/finite_optimizer.py",
+      "original_path_sha256": "7ee49962f7be249a05510c425c7fc1ffde76a05ca344615f98708f59990a7f3b",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/inference_interventions.py",
+      "original_path_sha256": "347ad8e10787591f75efcd7cd80e1054f8be2baedc14514d8d0c0a535801a03c",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/lattice.py",
+      "original_path_sha256": "6de95c2cd50e8050eb001d9af20ab01700dd49064c562475c94e87bd7a799895",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/layer_interventions.py",
+      "original_path_sha256": "03e05c63b380f4894eeb880e271cedd46046d22dac7236dd42c0011d0bab32f3",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/moment_rg.py",
+      "original_path_sha256": "9e6b0b287b75f0b82b9fec309dcdbb8a41c43bf18bb06b0042f3cd37b1e25811",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/native.py",
+      "original_path_sha256": "b815705b8697d4ed0acba87e43af9043009f8a01c9fd798914e462c45176bc80",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/observation.py",
+      "original_path_sha256": "c8702be9cb5558267c747570ae0c49c1b3e79e8756e82747cfc5c7efc9b08936",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/onepass_regimes.py",
+      "original_path_sha256": "8ca7f622de8d76c04e9967068f418e17446f3ad3fd9ea4fdfde1026e931d319e",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/physical_native.py",
+      "original_path_sha256": "e8eddd38d00bc2a9b0ec5a924618b8602848ebe74b3619d5af0e631b83e470ae",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/potential_avalanches.py",
+      "original_path_sha256": "0f7d82cd9439e58192c03461b4905b2a4623ecc79c204fa0d9cf8fff33fb6e56",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/potential_symmetry.py",
+      "original_path_sha256": "1d5b434bf2311d6ad19faac173f2b678fe0abde04a44d382b8360d87600c1c03",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/precision.py",
+      "original_path_sha256": "396fe8c0d0f26b0e4b33254b5567ca75c9ff30f064cee44dfb792d9f09cd8ad1",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/provenance.py",
+      "original_path_sha256": "3d631f2a4ea07c982c5b8e643bc450a855b21bc26d0ccabadec6d3dee6e12592",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/qualification.py",
+      "original_path_sha256": "16bdce494d49c0fc960a81f6b304814357ef46a2aac1ae739a47112295a6a29a",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/refresh.py",
+      "original_path_sha256": "fd398ad88aed9b509cb8e8390253fb04d600d817b0336f75ba598c44381a9458",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/released_qualification.py",
+      "original_path_sha256": "b5dcd6ba8e5eda5d349c13de787f13665b7de4ff985c7c9084bcdd500eb86f0c",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/resource_coupling.py",
+      "original_path_sha256": "cb96730c760b84d6aafbdf45c23b2631a9e05e17e997b82cf4a4f18ed5e8c11e",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/rg.py",
+      "original_path_sha256": "8dd5adf070fcbc3fa1c9b1fcf63ad9c0a68cf3bf09f8099fb7e4c5c2688c0f2e",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/row_projection.py",
+      "original_path_sha256": "14875156147538f28511e3d45800507d0ae3b0df3b1b22176669b76d8e2b8eda",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/scaling.py",
+      "original_path_sha256": "71b69d92bdcb8df242c5e5a2d0b484b6632deb3da8959875fe241aa84cf9802f",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/scheduled_regimes.py",
+      "original_path_sha256": "53884f1c389131257b5777f68a2afcc16f6d21cd806a64dd5ac6b784310d8720",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/schedules.py",
+      "original_path_sha256": "1c72ad40e7b3365da9a99029eb7f8e541668713adbf5f07684ff09a37959009d",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/source_basis.py",
+      "original_path_sha256": "066d3c2c84de7c93ee53f01d6e34dc112426f4ccc11875a8feee65bce7a81f1f",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/training.py",
+      "original_path_sha256": "bb681ef2d028fab9d89bf4b4050261cb36180bd20938317348a12fdd0950da76",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/update_records.py",
+      "original_path_sha256": "c2b1a1a684222069944bd9f1996a9d7b32e7cb25f7aeda52a6e9d6ea84d93613",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/variance_family.py",
+      "original_path_sha256": "63fe20d7941193cd76fce7c2a2a2be4c3bbdc25969fcd051141d0437f26cc17f",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/evidence/executed/potential-factorial/src/model_rg/visible_noise.py",
+      "original_path_sha256": "bcb075730647441569db8847207e0b4d407935f72d91374ae5211b4b8318b7d8",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/model/manuscript/generated/optimizer-transport-analysis.json",
+      "original_path_sha256": "41d24d4d82652e6dd15b0bea49285f0684c91f576d0bd24f4fcb2c890b9693aa",
       "reason": "publication, cache or execution output"
     },
     {
-      "path": "vendor/model/manuscript/generated/optimizer-transport-protocol.json",
+      "original_path_sha256": "088972c47069a5d4dde1663b50aba4ea3f9a10387fbac4e946cb75370980fffa",
       "reason": "publication, cache or execution output"
     },
     {
-      "path": "vendor/model/publication-release.json",
+      "original_path_sha256": "78f0683fa5c50b21869511ae46d20b73ea07439f9c693e2ce9c6cd818baf9a8f",
       "reason": "internal publication identity, replaced by monograph manifest"
     },
     {
-      "path": "vendor/model/scripts/build_cache_risk_release.py",
+      "original_path_sha256": "dd4d7a70f61a17ec5d0b8ca724f2eb5da9f6561496058aba1df6ec04429028f9",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_categorical_release.py",
+      "original_path_sha256": "8dae37e315a272e24d7375561f5f5af6b530b287211f84d69c428ada21940ec3",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_compact_release.py",
+      "original_path_sha256": "42e66368c780861d75347e133178b4625d9e9eaf1f8b1bffb10899c3c236bdfe",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_critical_release.py",
+      "original_path_sha256": "e66eb6e310d4a2c85f1b34fe9e4ad468553d1addac65ba992433cae13d66d5cc",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_finetuning_release.py",
+      "original_path_sha256": "574fa174a387b1af639a896ab9198483af4a39559da0e0d2a77ac97c7d521a54",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_memory_release.py",
+      "original_path_sha256": "41b2eb07468d6914ba0d05258aa2a119cbef3cdacc89b08883797d217c4586f4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_operator_cache_release.py",
+      "original_path_sha256": "76c1e9db31045f5317ac509fe80dece29674b13dcdde71161489712992e1c7a0",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_optimizer_release.py",
+      "original_path_sha256": "92f2c389f8e903093d313f464614dc8b7912f20f0b160a18338d1405e2f28759",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_paper.py",
+      "original_path_sha256": "133f0e282c3f214929a3b2b84d26cfb15daa7eb82347b648ec724286bd2b2814",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_physical_release.py",
+      "original_path_sha256": "1eea3fabdefb43e913613bc95f931b2bf17615180f9859569c7f61cd6d65d2dd",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_potential_release.py",
+      "original_path_sha256": "6dab2210b58fb44106b029ee7c483012e615db4498d7cc69612a7fecf88f26b9",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_readout_release.py",
+      "original_path_sha256": "6d07c50b7e9cc1e333c2ac6e2333e1d65ced8215b0faf0b05f3336b1a82c566b",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_released_adaptation_release.py",
+      "original_path_sha256": "33bf8adf307c29d48bbd9822c1551767d524b2d3cb5303a1a7543b94be612fc2",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_replica_release.py",
+      "original_path_sha256": "117665d2a8f076efc1192f8124721edf4ea7a16e65698718efc3a93d6dc7c434",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_table_coverage.py",
+      "original_path_sha256": "697cf712542aaab6b93f83e57a0ea9afac7d96aaf9f73322f3d383495b7e900f",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/build_tex_converged.py",
+      "original_path_sha256": "667b40de2cf07872e65f7a507514c72247a8c0bc621ac163f84ad75ff303ef59",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/categorical-visibility.sh",
+      "original_path_sha256": "af4fb8509cf976c12d26ca0c9b606bbfb5de971d84035eaee80c6ff06faf5c33",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/check_context_renderer.py",
+      "original_path_sha256": "62b463a9148d0b4288afaecda281936862db1ddc224f171c516b9557ab78806c",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/check_statement_contracts.py",
+      "original_path_sha256": "b97701388601732c45e398fee3c222808df9b610a11c0c9787da191b19b3dbe9",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/exact-replica-profiles.sh",
+      "original_path_sha256": "832cc4f72ee8c151fed878620b023db4505869b4949e5bf547e88271ecd92edd",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/formal/statement-registry.json",
+      "original_path_sha256": "c1f7e4b448cda53b33f49f6ce32498343693b8bb7603a2c704733bf73149e602",
       "reason": "internal publication identity, replaced by monograph manifest"
     },
     {
-      "path": "vendor/model/scripts/qualify-singlepass-routes.sh",
+      "original_path_sha256": "85ef8c72754a91b256fbff60be7da8d890e833635a49fbe96b8fbc1e22a7cce4",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/recompute-singlepass-uncertainty.sh",
+      "original_path_sha256": "7371be89ac1898d8a7e6dddce0fcefa4e0ad91fa2b218011748cf36dfc6b6a30",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/render_cache_risk.py",
+      "original_path_sha256": "117dbc3db81e53e5fc1b4444fef0850bedf489e9af0dfb6b69f69e8cf88a6eac",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_cache_state_transfer.py",
+      "original_path_sha256": "e3a2b8aaf38a340e942a42c4c67d05ff3feb5ee002a197e18400c3e8573e6b92",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_categorical_confirmation.py",
+      "original_path_sha256": "ed751992f9b5cf23c1ffb073ac805379ac4d41d69977f0679563f366a06aa03e",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_categorical_ledger.py",
+      "original_path_sha256": "d166bd91a19f69ebb5be943a6f7aff7f486712f36cf154cd8e86bb53ba96c43d",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_categorical_scales.py",
+      "original_path_sha256": "43289ed20d08a0fcbd70caac8fd8da7cda6f9642f0b3c5d76da152704b4aca41",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_claim_index.py",
+      "original_path_sha256": "bf8ebb377faaecaf32f33f7c30a09dbe60be26622f8b748fdb9319b7e7a55bd4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_collective_row_flux.py",
+      "original_path_sha256": "bc36fbe37d9cca00764d980a7de2b7d7904f16082b2063f99c28f818f6c83320",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_conditional_memory.py",
+      "original_path_sha256": "e14416eb21066a507d4eab24508347488c914da3dce3c000cb884ae5a4789b4e",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_context_risk.py",
+      "original_path_sha256": "410378c1b50d62199628e40838e1a29472e3a58601809d59645d9baebbd85f3d",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_critical_collectives.py",
+      "original_path_sha256": "e0b630ad5af44a033017516803eecece611bc0e952da583cb017dee85e4c0cdd",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_critical_formal.py",
+      "original_path_sha256": "e5dc2dbd81c0f691b977518c8e58e479b196438a304b77a6a6bbdefd9184d5a3",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_critical_joint.py",
+      "original_path_sha256": "d13c12c493cf505b6555615e09cba0fcced3cde19c75212bad765eccd3a2c863",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_critical_ledger.py",
+      "original_path_sha256": "1f2413840efad09cc3a026b2ee2538cabe64f41053f19c33df1fa47c256dba5e",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_critical_onepass.py",
+      "original_path_sha256": "421fad8cffe34f871e0a06d7cb28381954152e15205899c982f21573a59835d4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_critical_refinement.py",
+      "original_path_sha256": "bb44e3d83108859703c942648b3e917cd2f6df8635b3af6968b15334a9643744",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_critical_sign_limits.py",
+      "original_path_sha256": "13a104fbb6a2ec780cb5a6129a2ee563bb8eeb27a93fbf714450d20e3407236b",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_criticality.py",
+      "original_path_sha256": "15c78adcd8c5d2ec1a5b8d384764b0aa638175b70772c781b05acb90eeea0339",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_current_qualification.py",
+      "original_path_sha256": "00d34bed55d36eaa028506986dc23e88bab11a6abdbf53c5264143b54c985fcc",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_decoder_prefix_interventions.py",
+      "original_path_sha256": "9ec5b0d88e45944703ba31ab93c22b080130a512744e86838f8b4d4da1061f4b",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_directional.py",
+      "original_path_sha256": "2e79ca310a5d6d9aefa31d3b3c4624c09485dc01a487c3a0acc67f3d6a1cda9e",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_dynamics.py",
+      "original_path_sha256": "60eb1d32131f455124347c0ba5b3831e99526a317249b495dd0e391ea688f670",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_equal_time_flux.py",
+      "original_path_sha256": "ac803d0c6b5b59864adefa93279903ab3c9573547a67c03bdc232c495cef1616",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_evidence.py",
+      "original_path_sha256": "f9af8c1803f2d34c8e5de7d93f032ed2b2daccdb90cdea97417c8006963cda28",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_execution_ledger.py",
+      "original_path_sha256": "601256ad82263c9d7e2507e3f2a62510879c17b59fa76cededf660e6b99d1eee",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_execution_routes.py",
+      "original_path_sha256": "41b9fda53772673301d7adab25a2500fc0a2b2e81f3b7533100c051c696614a4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_finetuning.py",
+      "original_path_sha256": "e89f4d4bd547099eb422e1e80650e75b5eb9ba2d039553c22f43b63325bd9eee",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_finetuning_ledger.py",
+      "original_path_sha256": "af9aae55c0e521c1bc68e9b57b7c663b39d5be06f343fb39aaf5d5f31e7e28d4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_finetuning_reference.py",
+      "original_path_sha256": "af17648abeb349e84fb0a6de6948e594ca49c66e0da6e92c1970e2b49ad293c4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_finite_emission_transport.py",
+      "original_path_sha256": "976538fc5939a40cd809d989624cc78685f408006d3f59027c952d7327d85dc2",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_finite_metric_budget.py",
+      "original_path_sha256": "2e1d814f3ad137de0a687c41584a0a3eec8534db4666eff03b1ca2e9e17f98b6",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_fixed_cache_panel.py",
+      "original_path_sha256": "3e9a53a798ea994207850afe729a8ac28edfa65f83bcb4fd8afca3a10c919370",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_fresh_readout.py",
+      "original_path_sha256": "b28236375d00ae9e175432e136b288bc380a7aa70b9168d368d327bdc0322ff9",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_inference_mechanism.py",
+      "original_path_sha256": "e9d770c18dabb3b92e3d090b64dba1ddeb54278badfb1f3b21fab6aea6a0f559",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_integrated_results.py",
+      "original_path_sha256": "00a4fe29bae6d1e4b9124507b47c51acc0249119fb971f763499348708944bd9",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_law_closure.py",
+      "original_path_sha256": "377e08a58230dea98eec398464f9e5d1c5c9d66225d03fe56c85c1c0a5b9aced",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_matched_clock.py",
+      "original_path_sha256": "08bf950875d8468388d9fd163e7bf86329c2c9d9a06c527fdf93c60fde52f5c8",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_matched_onepass.py",
+      "original_path_sha256": "82c598585b4bd7579b5dcb349cf060447693bcabe7d36cd80a3af9ba6c9237bd",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_metric_release.py",
+      "original_path_sha256": "2d67edc1a74bd0c36c412fd9dc0ed9651822a2e6b8320631b1f579bade38426f",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_moment_transport.py",
+      "original_path_sha256": "b9473900811e657d124106963c99b2841f5997d2c63fac1e3232477345da81c7",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_numerical_response.py",
+      "original_path_sha256": "8c9847e9299ceba4510db109daf833512d5438d20d793aa0cbf2b32b6d0b0dd0",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_observation.py",
+      "original_path_sha256": "702ec3eaf0885c467cf84db1c40b0a547435a14eccc0c7d667dd67a927144e18",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_onepass.py",
+      "original_path_sha256": "0854f91f05025f4b83a2dcb60a30df89e106d1d38b959c9e556e9c03b70ffac7",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_onepass_data_comparison.py",
+      "original_path_sha256": "b4c3d671a14789a4733ccfcb57b9e4fa7d0141410890f10d3132d48157ee5149",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_onepass_input_domain.py",
+      "original_path_sha256": "cdc23af1da576b1ac5282644967a2deeea8855b2d8ebc9e35dec14970fd8b1ba",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_onepass_native_steps.py",
+      "original_path_sha256": "a9ad6a3f72a57dc432b1dfb560e5b4748641d2dd77a9a7ea65116c5d63a19cb1",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_onepass_schedule_comparison.py",
+      "original_path_sha256": "7d33359c423581f9811a38cb9b95c276bae238141dcf3b05c0ac7c28d56bc3b0",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_operator_cache.py",
+      "original_path_sha256": "94e6b8f250be1a04cffcef65e4500b17e1619363109e964b9aa653a115517c23",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_optimizer_transport.py",
+      "original_path_sha256": "a06b1da18fc64e4abe1fa3e96a0e56337cdb47853f805b0eeb6c8a2478971218",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_outer_transfer.py",
+      "original_path_sha256": "c60b87b6469d0f7672e1baa59541a4d9124318f3dc4a1459d25918ef9cdac9e5",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_physical_results.py",
+      "original_path_sha256": "d58ad0e1539ae9b949eb2119fa3ef4433b3ad682da960b478d29c77768009e24",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_potential_early.py",
+      "original_path_sha256": "fd0eca620b7ca2aed21df47230f8dffbc327658550ae9e63622fee8ebe2e6006",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_potential_followups.py",
+      "original_path_sha256": "54cd1d727db46d0a456741894fe84c5efe27eac4214ad18a05c6bdf75dc9dfc0",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_potential_inventory.py",
+      "original_path_sha256": "6a21c7720e649d3f5be28c8c0d0907f3a40c4a96510af411140d84a7c52ca85f",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_projection_transport.py",
+      "original_path_sha256": "f78a32d959f9bc44080a563fc3f2ae12e9bf0a21ccd7dc528f1c89a5ef7b5594",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_prompt_conditioning.py",
+      "original_path_sha256": "a542c20bee7822c88d2a2c1cd351c3beed675c3845a22b925a48dd9a1d44f858",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_readout_budget.py",
+      "original_path_sha256": "191509a7e0fe248e629a86ca261de6f27ddac7b3885e3ba18ea0caf53e983631",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_reference_benchmarks.py",
+      "original_path_sha256": "7f6ab840d60b6136557dd7d11451d3e00ed55bd163c61cc4f664b33bda30ee33",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_refresh.py",
+      "original_path_sha256": "1d11d3a37af53b493b4b5b6c71da2f6d35bda183f38d2da50c2e2b0c71237cca",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_released_adaptation.py",
+      "original_path_sha256": "a7566d4ad1082650cfe487addf462a1eb44ba96913ad126b45a27aaabf030028",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_replica_evidence.py",
+      "original_path_sha256": "e02de3a03e68de9e67373fd7f9c3a5aab729e175370e81cc7b9bc8d4abc95d7a",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_replica_ledger.py",
+      "original_path_sha256": "6c71d9ad803504b3b6387ebc3732f62ed2ce5b44622c1b6a861ac0e4556d3505",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_response_windows.py",
+      "original_path_sha256": "737a62258dd0637030fd0646732cb315861f1bd2bbb2629db8fff8d788cdc5e1",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_results.py",
+      "original_path_sha256": "46ed6edc40d45c891107f11919f70e2b993456c846139d7a3687647d3dbc2db4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_row_path_confirmation.py",
+      "original_path_sha256": "29764a8f3ca38727ce2c8751d85ac355b4cc388185b3a0a636c44caae1f34426",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_row_quadrature.py",
+      "original_path_sha256": "779c0d85b99389ebd8b07691f9cc4065ee3f6025f7372595b2aed23df8a017d5",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_scaling.py",
+      "original_path_sha256": "5740f87cfc8b77375d079905ab36d13e0005bd689ef01c8bee1bca929dd720ce",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_scheduled.py",
+      "original_path_sha256": "64576a415523660dc76f7705d4f03bb174b3c4944fe29bb0ebeb76968a35bc67",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_selected_formal.py",
+      "original_path_sha256": "016c0e746ffd8ef65d69ab34be2b766c06ea1057deb47400012c3ba90b549fe1",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_singlepass_adaptation.py",
+      "original_path_sha256": "df699a54b1ca6501812788dda5111fc703444b4c5bc7626ad1d1e72872d4d97f",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_source_reuse.py",
+      "original_path_sha256": "2a9cc2f4b598c7c34542338920e6a4247191e5360822a1ed9a515c22bb115b7d",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_state_confirmation.py",
+      "original_path_sha256": "f85c19e81f8ed8442344c005cf7495e9434e5b7fa37bc2d547c87973b1dbbcb0",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_study_lineage.py",
+      "original_path_sha256": "17d5b053dd0ab7dacb5a58e47bddb75b57ca1af631bfe2af6f5e029183e4165f",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_thermal_transport.py",
+      "original_path_sha256": "562a0ee3e065e70f280accb8984601ddccaeba1bffa5877334b0d965d732e1e0",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/render_training.py",
+      "original_path_sha256": "a5a70eefcf0699a09dfcea2e3d8e7b0a19d29da0827b9f6758feef4dd73606e1",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/run_onepass_release_evidence.py",
+      "original_path_sha256": "271ca7ac4b3849144eb635e32d8fed54a88c9f5ab394ae835f8c3ad7cdccc5af",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/run_projection_checks.sh",
+      "original_path_sha256": "5f07db1e3fd26aae813d37f0c6ad66954b26e0f4d5bb8b9b817aafc36005cc2b",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/study_registry.py",
+      "original_path_sha256": "a071dadd3a0ebc18536a7f42819cf30ce43e4d9a172a021b699e3452f0431d52",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify-categorical-visibility.sh",
+      "original_path_sha256": "ce997c60c83ba7bd5a6b719e462b3fbfeecb228c49d25eee9bfb37fd6c85b705",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/verify_cache_risk_release.py",
+      "original_path_sha256": "f0fd0dbd0608c4f3075ccdd16c1e6b46e149d224c0885bd2445ee79b40b609eb",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_categorical_release.py",
+      "original_path_sha256": "87e752f2b7ed6dba4c4df3fb494e70f1a7167d9f241f64a50fd2523f991238b4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_compact_release.py",
+      "original_path_sha256": "78ec931772728ebc788a563d42e0c04cbf94fb68c6d31a73587c19fdffb2c872",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_critical_release.py",
+      "original_path_sha256": "ac80526afd1b5b12b761e61bcbef1ed4a4d4ac6c2d388123604986989b35b568",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_directional_release.py",
+      "original_path_sha256": "f5ab27c0196378f5bcdf851035d43d38cda67012099cc86d5c32e5f90d7db6fc",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_memory_release.py",
+      "original_path_sha256": "10f75558d0692c887cfcfc1441441d3fa80cf8a4c4e21a95ce1e054583d9b0d4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_moment_release.py",
+      "original_path_sha256": "89b46d8fae4f354bfb7a8d86a910eb32e9743f1f024e7c601bb1844b79977e9e",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_operator_cache_release.py",
+      "original_path_sha256": "d73ad3fca60b67689deae7cd91ccd040aeb8ab752fb0e2b7390d35923ee5364b",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_outer_release.py",
+      "original_path_sha256": "9807b758ca9b97a7a7fe0f5234b969a8ba477330ee6357271e3da8881f36f3a2",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_physical_release.py",
+      "original_path_sha256": "d51e0e89091a6d4abe79cb914b9ab2caed6f3f1cf0da6917e33d3447dc1c5a9a",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_refresh_release.py",
+      "original_path_sha256": "0e48e7f6247a85f8a6506ac1e6e3c7826b46bbc192c6908492545a913d014533",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_release.py",
+      "original_path_sha256": "b65336f7a74dc67e0f273ca599b946dd98872a2c1f6db35556ac81b70770323c",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/verify_replica_release.py",
+      "original_path_sha256": "6544ba3387769702f66f1cff255475a55c23583afd809f92604ca0aface6cf87",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze-categorical-scales.sh",
+      "original_path_sha256": "2efd16681571b438b37ea3c303a6f3a6d53f996b98d44fab151e1d2afae5d16a",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze-critical-onepass.sh",
+      "original_path_sha256": "738be85c8bbc7c69a094585bbf0fbf7285571a718175397f58d6d8c42ada1aaf",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze-critical-shared-paths.sh",
+      "original_path_sha256": "5a0baf117aec3daeee95b480566ca471257fe83c98f7a211ec7a5ccd87b19c70",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze-matched-onepass.sh",
+      "original_path_sha256": "74f4c7a2a91013480431c7701e6e5e429b5275e2bbaaa78da1fa1a679ce90ff2",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze-potential-factorial.sh",
+      "original_path_sha256": "d4b42855c286b8dd30aed2ccb65dd7ebbef2e389c35ad0a24e2a1a3be897f5ad",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze_completed.sh",
+      "original_path_sha256": "a2e59582f39aedf6631c1ca6a8d5446926fab6e786bbe699088fac2727d67e14",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze_controlled.sh",
+      "original_path_sha256": "6dbcd5131f994b80b174d91079f8bfd55cf07dc21d2da09283a96e4bf622df8c",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze_criticality_completed.sh",
+      "original_path_sha256": "45143fca0aa553d01b794af8c723662e6dc47ed5649616a06cee1859de9f6d64",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze_dynamics_completed.sh",
+      "original_path_sha256": "6b965c5b1ac6cde665236676e12cdca1e0a08399d2b3c9cb557afb338f48d5b7",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze_metric_collectives.sh",
+      "original_path_sha256": "b4758db5187c5b7323a2ac32e22b989deee566d5cbedfbe4ea6fb7fe08da7a78",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/analyze_training_completed.sh",
+      "original_path_sha256": "2633260ec99c8bc0fab6823785dca38e21ee86e523b3a57c44555b2a784a8f98",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/cache-risk-study.sh",
+      "original_path_sha256": "4f8549141bda6ed9a22b13bae7dd1155fd204296e67b57ead2abc38652f6c177",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/categorical-context-study.sh",
+      "original_path_sha256": "948bbc7ed0f1d8fa5547acb4de598fa188e53d1361764f2945d801c30487f6cd",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/categorical-transfer-study.sh",
+      "original_path_sha256": "20da88eaa4734545cb47e9d9aefc58a76cf6eed75c7ef776375dabff3f32950c",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/conditional-memory-study.sh",
+      "original_path_sha256": "f66ab38768382699e26ca5f52235c98910005bca8b619bd195aa5e34cf1e1b14",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/context-risk-study.sh",
+      "original_path_sha256": "87cdff8a4265341d23a86c08142699ac9070178b42bba189584b1f57656f60f4",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/critical-onepass-study.sh",
+      "original_path_sha256": "d4bbf6d9f1041c84fc0df7eaa9d8ebc5c4e12f24aeccbe2f6dcedbfb0f15edbd",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/critical-shared-path-study.sh",
+      "original_path_sha256": "532b5c6891a0268dfa1e3bfdfe1d7b17c99b1a3ff0019fbe610579c81cfff406",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/directional-response-study.sh",
+      "original_path_sha256": "a3c97289dbe9cced1007b81ea9b0dbdbc7879757389e820d330c4276d24e5a5b",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/equal-time-flux.sh",
+      "original_path_sha256": "5be7b223ded296936146cc2ed4a7794504d143863a4e6838be9d1f105e4a4e6d",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/finite-metric-budget.sh",
+      "original_path_sha256": "6fca55c681386d112236ec3031e7eca5af9197872aa012632b8b58a4064ddacd",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/finite-response-study.sh",
+      "original_path_sha256": "5a6f72125105dcfa8b2f1d9ecae71fab9818cae2adadae95cf989c1dc86416ac",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/finite-row-confirmation.sh",
+      "original_path_sha256": "63fd3aee50d9b6e445c11adb9806fd5fb08a96e31fdc5749cb32f5c678a9de4c",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/law-closure-study.sh",
+      "original_path_sha256": "679dfc7c58da655ce749e879f39ff3feb767c2a86cfaf23d4828ec5555a2ebbc",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/matched-clock-study.sh",
+      "original_path_sha256": "85d35c073595dcd7f6b6fd95981fcb1c9a55947205d6630eaac49900130e6ebf",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/matched-onepass-study.sh",
+      "original_path_sha256": "28d80b44b094f45253aa1ff5df0bf0ceb265a3e6890d0fd7abb9d3a149c5c5c1",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/moment-transport-study.sh",
+      "original_path_sha256": "dfd743aa4a0c934e876e87fc7c41c9277c23816d241e545df8361b9e7d80ee90",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/observation-study.sh",
+      "original_path_sha256": "68e4241a1761ebe4382a2a42dcd6a631f9f173e6be373529d3bd212af3aee3da",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/operator-cache-study.sh",
+      "original_path_sha256": "dc39c28386b37f658b48850cc89a7510b55a6af763ff9703a6e3cd3a0c103f1d",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/optimizer-transport-study.sh",
+      "original_path_sha256": "e8d6d28a891638d6459688533c39ac8e65626e65df23e2e9e103f321c1d67695",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/outer-transfer-study.sh",
+      "original_path_sha256": "c4630195c6c33b6f7cdf9c225cb2adb84f2c158f7b0c0e9a35c74a67059189ca",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/potential-factorial-study.sh",
+      "original_path_sha256": "39807efc08956283482cad1a4d42b241f562c9ea32d70afabf57d894c717515b",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/refine-finite-metric.sh",
+      "original_path_sha256": "ad050b83e1adbc42b2a8895fe9efc114a8553f4e43d1ccfc88750d5817e994d5",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/refine-matched-metric.sh",
+      "original_path_sha256": "a3685c9fc68da27a5338641d2a4c2a12a4979d456307ee38bd7d32ba971528c1",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/row-path-confirmation.sh",
+      "original_path_sha256": "814ab5ea73466e86e8b78dfb4fe77b87ca4158446015e221e2b4dae427ae2289",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/run_confirmation.sh",
+      "original_path_sha256": "8027f325bdde77d67da77737660112e7471528ae692eba2780cdefa8da401901",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/run_controlled.sh",
+      "original_path_sha256": "562537c142a0716cc13805c0c533dfa1ec397f624d545c2d23528bbb49d6bbf8",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/run_criticality_scan.sh",
+      "original_path_sha256": "b964d824354c263e6b8d9710a7d23104571504f254bb17635cb72c15591302c1",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/run_dynamics_family.sh",
+      "original_path_sha256": "6ba40408e34a1639f7e59d472ea240eab334aab6f972e63da4d4486ecbf337ae",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/run_factorial_disjoint.sh",
+      "original_path_sha256": "f5f063c35995617f1ee6b9c54c86dcf418184612167ddb91194debc84439573a",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/run_row_diagnostics.sh",
+      "original_path_sha256": "b7159bc96b5cfbd9103ef35a35658e0f757d6f018ab571ad94061921881845f4",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/run_shared_gradient_reduction.sh",
+      "original_path_sha256": "63fe9e6b50393dd5866c341c5d015e9c90dc1085130cab5292c0308cbe92094a",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/run_training_study.sh",
+      "original_path_sha256": "11fd8f7fd5c68d600c544ab44fa247f4b29d502d5ee3c618c9d89d081b177664",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/scaling-study.sh",
+      "original_path_sha256": "497e6bbedc6fcbcbe2f79baf83b5a45f6d6b7ddb73b5a7600c0ff21df033b4bb",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/scheduled-study.sh",
+      "original_path_sha256": "67f464a18399b9a5cc4afff2ca8a0b8c1c1e3352df43b6761c60529993bdab31",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/state-refresh-study.sh",
+      "original_path_sha256": "6e09149c2e5d8e4bd8fb18b378e7488ac6077276f5df593922d01c16171cc47a",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/temporal-energy.sh",
+      "original_path_sha256": "f0bcfbb73660e5d22a68f7773365198b7736c34c53680bef79cf08c089b3df80",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/verify-critical-onepass.sh",
+      "original_path_sha256": "fb58ba92511e0d2118e95d3b73e33dc46ed479e6e0a8bba24fffcbc743b490d2",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/verify_completed.sh",
+      "original_path_sha256": "07deb7bc6dfc5466d7789213988bdb26afe0438eff0752cf64ad4bd8d361fe83",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/verify_controlled.sh",
+      "original_path_sha256": "654a7d9db039d6c316e7b66e0d3b7fbf1eba5c9463131b79faafa55c1b77dc82",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/verify_criticality_completed.sh",
+      "original_path_sha256": "85a4aedc7d9ca648c35a3aebc6c395cf19343eea08cb6ed7093cea258dc4515d",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/verify_dynamics_completed.sh",
+      "original_path_sha256": "e59a39340f37ac812286bf7931d9a955f54b3af9be9815724d890570f8e3e4a1",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/verify_metric_collectives.sh",
+      "original_path_sha256": "deb190bec1fce5593cdc5d62804667aaa32358b7406cf0982590531b3944b498",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/scripts/workspace-wrappers/verify_training_completed.sh",
+      "original_path_sha256": "d03db53ddbbe12f92f4fe2d130530d3aa846e93626af50952a0f9c8743522c28",
       "reason": "archival shell workflow; use explicit scientific Python entry points"
     },
     {
-      "path": "vendor/model/tests/test_categorical_publication.py",
+      "original_path_sha256": "a167c908c2df890cd08b16de7bf59b6748a424c8939be9ce75cbd22a17c9e6d2",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/tests/test_critical_publication.py",
+      "original_path_sha256": "dd44bab781ef1cd5fd14f15ac883efd115a99d36468c94ffb523f8bcdac393eb",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/tests/test_matched_clock_analysis_bundle.py",
+      "original_path_sha256": "82925ec282fd233fb4bd58cb09522851a41958a8ef536a43b0f9f6a8b8ae7c5f",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/tests/test_study_registry.py",
+      "original_path_sha256": "0781ee69add1f48e21cef5436871333d39217336a8bcb6918f5502b461a67a53",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/tests/test_tex_convergence.py",
+      "original_path_sha256": "46ba09062ceb61027e1d5860b45fe99d3136414ed332a9b7c4eeceb7273c1f82",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/model/verification/clean/verification.json",
+      "original_path_sha256": "af7cbded11d80d5cbf4395f8660b553a91f24a22a885c89a56b48f401fb2c573",
       "reason": "publication, cache or execution output"
     },
     {
-      "path": "vendor/model/verification/formal/verification.json",
+      "original_path_sha256": "1b54a226126978024b743206a1a71d2d112e2e5d5a7fca4eb0e412c3c37927d5",
       "reason": "publication, cache or execution output"
     },
     {
-      "path": "vendor/model/verification/numerical/verification.json",
+      "original_path_sha256": "e33cc537646f48320be4877512d2d91c23297f982d9f58c6bde12f0f3f7a0527",
       "reason": "publication, cache or execution output"
     },
     {
-      "path": "vendor/model/verification/statement-mutations/verification.json",
+      "original_path_sha256": "064af315b5be005e3559d34c0e9979720896831e4f736ac21d5b89fcfd4e8b3a",
       "reason": "publication, cache or execution output"
     },
     {
-      "path": "vendor/native/PLDR-LLM-v51-SOC-110M-1/README.md",
+      "original_path_sha256": "ae5ace53fb947dbd010cbce88ac427f183831d894f7c642b73fb8cfae488daf2",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/native/PLDR-LLM-v51-SOC-110M-2/README.md",
+      "original_path_sha256": "1aa724626f9b864377f1490e921317c37c89e99d64b9ab14a47b09d209894757",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/rg/.gitignore",
+      "original_path_sha256": "302e4450473f7b4c757b2f47bdaccf40d4cd1032daae926aa3191068ac4ed129",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/rg/CITATION.cff",
+      "original_path_sha256": "0ee013e599cb01884f5b9f8d49d9c7eeef1bd74f8e629b51ab219af68f902216",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/rg/Makefile",
+      "original_path_sha256": "45b0f9634a4423d217f5a329eb4e11e50be7b6728faae11bd550aede02564ae6",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/rg/README.md",
+      "original_path_sha256": "c2248f963f2341cb052d11653642bd55f56372f05d86789d6d294047970a093d",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/rg/formal-correspondence.json",
+      "original_path_sha256": "487e5926640da7895a002fe7931fbc8f152cf46707f767bf04b3cf8ee5d5beb4",
       "reason": "internal publication identity, replaced by monograph manifest"
     },
     {
-      "path": "vendor/rg/scripts/check_manuscript_release.py",
+      "original_path_sha256": "80bfb68e92ce6993e749502dfe123383b09242b1861735e01434be1582b03a1c",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/create_public_evidence_bundle.py",
+      "original_path_sha256": "7af010d2696c93f1b49b3e459ad643dd5d8fab67fb0393cb01bc2cd6b3d7626e",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_confirmation_tex.py",
+      "original_path_sha256": "d4f962bb6a59f6ef160a4b3c6bc2321d3ded94509fefcd33418dd1ce3a6dbb69",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_energy_closure_tex.py",
+      "original_path_sha256": "1c80a31fd3d2ff7af3e2a2fdb6e79da9dff72312057622258d4a2e16f0869b3f",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_energy_closure_tex_v2.py",
+      "original_path_sha256": "2d27168d8a86d476d49d3196b794593905f46270f8b146eed86cf25e61725674",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_energy_closure_tex_v3.py",
+      "original_path_sha256": "b584f5ecb8bf019259db26591bfabef8d65d51b3ee02e42b93ba1fb0bc481ffd",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_evidence_lineage_tex.py",
+      "original_path_sha256": "cbdbcb675c69368271647e0f9381858f5ba8f1a1bb098b9900b535959c0e4c63",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_formal_correspondence.py",
+      "original_path_sha256": "061ff727d9aeffd03939db0f7b15e5bf96b2089e4139d3bfa4283ef6b9f1c69c",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_observer_precision_tex.py",
+      "original_path_sha256": "1815c44d9ee9b6cc4fa5e4aacac36918f4a1d85bd2538f8ae75ffd2fc04f664d",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_observer_regime_tex.py",
+      "original_path_sha256": "02ba74909e3e7583913daa01e0e6b4e50e92b17057a80e2d769077720795025f",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_stage_resolved_observer_tex.py",
+      "original_path_sha256": "d4d1f553e759887d88e4dcc8acf9eb9bbaa1f3e75ca7dfd1cce8a8071871c3d5",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_staged_predictive_closure_tex.py",
+      "original_path_sha256": "00a4cc37c9b4d798541d448d4c1d14a680983e07bae5f577d693588ea434bf2b",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/scripts/render_synthetic_tex.py",
+      "original_path_sha256": "7c455a8e4ebfad3780218fe1dcdc7aacc7903251b827d2dced8ced5d952a19c5",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/tests/test_energy_closure_renderer_v3.py",
+      "original_path_sha256": "8d3b4291ca0bfc89b2dc0212c79d7c6872da6c21989955f8db52e7cea22a4381",
       "reason": "dependent publication interface"
     },
     {
-      "path": "vendor/rg/tests/test_evidence_intervals.py",
+      "original_path_sha256": "786d1ab4dec32bb4db41c84cd6371106bbd5cdf18ba5118b3eea53c50b668343",
       "reason": "dependent publication interface"
     },
     {
-      "path": "vendor/rg/tests/test_observer_precision_renderer.py",
+      "original_path_sha256": "4a1d7e378cfc91304eee41600fec3f2332d8bd55eeedf87c35c49ce5c93ab4f0",
       "reason": "dependent publication interface"
     },
     {
-      "path": "vendor/rg/tests/test_public_evidence_bundle.py",
+      "original_path_sha256": "f3c37277ff78f40c4740ea0b1b479502986592572ae41f3649a531d61af9d980",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/tests/test_release_metadata.py",
+      "original_path_sha256": "1f3855adcc8252c3357ca4f4900f68e67002f2613946ce8f74a2012650bebc9e",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/rg/tests/test_renderer_v3.py",
+      "original_path_sha256": "ac3339522cbe6950d603016c93cb749b8a590014c557262b6afd233c318ab620",
       "reason": "dependent publication interface"
     },
     {
-      "path": "vendor/row/Makefile",
+      "original_path_sha256": "69906da599c90c49fa69cbee40c436d43ea353512f015da8c19795cfcd47c413",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/README.md",
+      "original_path_sha256": "0b6e0fe45407fae393d798fd58edea261bf10faee4115a796e7afc091533c4f6",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/SOURCE_IDENTITY.json",
+      "original_path_sha256": "8b52f1514aeff802e378ccb1313e5acdc935907640cf25f0e77a6b4aa7a3a1dc",
       "reason": "internal publication identity, replaced by monograph manifest"
     },
     {
-      "path": "vendor/row/docs/README.md",
+      "original_path_sha256": "8e815c7f320624895dad025977aa186a33d4a889ee6fe0ac61f7b7a231700d44",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/direct_work_macros.tex",
+      "original_path_sha256": "21f04ce5cc00c1a1802f2c16c9dd3388433e897c5418af2e00c2c51d9fb0e096",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/direct_work_mechanism_macros.tex",
+      "original_path_sha256": "5138a0677032e222225c55338c5a3cffb091614a3936439e1c320f4968dd84a5",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/direct_work_mechanism_results.tex",
+      "original_path_sha256": "09c7d867f16d501820c82a36bc7e1ed0d09a71b3bca5715b045898f4e1138a06",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/direct_work_precision_macros.tex",
+      "original_path_sha256": "b14e2090200bb168afab466ab132fdb6c2a6e675d3918d7bff728203f8c8a5f5",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/direct_work_precision_results.tex",
+      "original_path_sha256": "7e479131cf079dd4f9e5b12501e178f2a32f91503e34d89dfad1c601e5115b95",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/direct_work_replication_macros.tex",
+      "original_path_sha256": "21bafedb8e92c6fe11b0ad6d2663703703916383b231f897f8f842a876c38c01",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/direct_work_replication_results.tex",
+      "original_path_sha256": "89630bf86ef2d26473f866ceedfa16a0f60071cd5f2ccc8ac2adaee702f40d67",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/direct_work_results.tex",
+      "original_path_sha256": "8c86b9c0c0b619ea094a098ca1df4eac97d5b5f9b382402967d58936eac5cb7d",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/formal_correspondence.tex",
+      "original_path_sha256": "fc65c09a4e2721755b72351fa6d66c2b3550c73275cf71901101c92626cb8736",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/formal_declaration_count.tex",
+      "original_path_sha256": "54b62d21061f1224274c5228871af2bfed33b208f6ac93a51fe86e2d5bd2300f",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/layer_cocycle_macros.tex",
+      "original_path_sha256": "0f809b392383f2c778747420d9401f97a4399760caf127be7b4044ff6d050570",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/layer_cocycle_results.tex",
+      "original_path_sha256": "e35af8d2453c7683fbf53cfa5103e480339ea62b63a94db66c4d4a0c0acf54a1",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/observable_balance_macros.tex",
+      "original_path_sha256": "9f8ab27bbce872b7601e2aa317c33b96fdf0d86ff2ca5775f9c0cd155f296643",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/observable_balance_provenance.tex",
+      "original_path_sha256": "2992580bf14a2839bdba3340e78502e8ff28fc5b0bb500747692b2941b41cc1c",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/observable_balance_results.tex",
+      "original_path_sha256": "9632e66a3847ea83c5d4adb48043917e0bd1f24487abee799b64ac94f4c1ab3c",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/observable_cocycle_detailed_results.tex",
+      "original_path_sha256": "a2d32fe4e69a2d999a28963514741fae882ec49c3069f88112330d175ef10966",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/observable_cocycle_macros.tex",
+      "original_path_sha256": "5e93c7c6b913ef8bfdde1502539c9c0e0a7ef009da08bcb42ba37079f695d8da",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/observable_cocycle_results.tex",
+      "original_path_sha256": "8154b36820daebcde07a82d0e189e71f9956de765f2161c03ba71eea21f604d4",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/observer_block_macros.tex",
+      "original_path_sha256": "3819897e728861aaee81a37ddb045420ce70b58bfaa89d957d7f10938fcca1e8",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/observer_block_results.tex",
+      "original_path_sha256": "cc81fb95f2cc09e37b7331b95bf34b072aa55be3979df8aa9aedce3a41fdbe28",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/radial_context_holdout_macros.tex",
+      "original_path_sha256": "614215711a742cfaa13825b474bc1576e5293683acb836b58ed8b9ec8bd90104",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/radial_context_holdout_results.tex",
+      "original_path_sha256": "062a4658d123fd0efb56a6a091fcd709082061e190e2632e6bc6763fe5eb7bd2",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/radial_tangential_macros.tex",
+      "original_path_sha256": "b20af108b78af5f72be5b4a7aa9c31a72281bcab6af696105aa2119a52a89534",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/radial_tangential_results.tex",
+      "original_path_sha256": "3470cfce2efd24d1a2672d6012cdd4fbe2745423addbe4af46c60e28839da375",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/release_id.tex",
+      "original_path_sha256": "6756797ed2d85ce22685d9e0171959271adff0ecac49c034acae79433283f852",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/retained_energy_macros.tex",
+      "original_path_sha256": "f168626019a7d60326aa3dc07c0c856ed4f9b58b63e374785f93ef2a5fc5fe6a",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/figures/retained_energy_results.tex",
+      "original_path_sha256": "7ba587b994e83fd4823b4ea684b245e0bc83fd1c0f661bcc8648bb5188f2441d",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/pldr_training_dynamics.bbl",
+      "original_path_sha256": "d7af3bfadd5db57b6e5106e39b87fed0b42903a8c165ed7b8dc769569f3a16b3",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/pldr_training_dynamics.bib",
+      "original_path_sha256": "5ac532b60e95563763f4c313d6dec9b811206a2068ea4e348a274c37795e308f",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/docs/pldr_training_dynamics.tex",
+      "original_path_sha256": "58c85eeb2593f1fb3dd9c3ea11e85ee5c8ac91ea86dcfb592c1b28fc74f11f79",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/evidence/README.md",
+      "original_path_sha256": "cea451ad2407d563fed5d9cf38fd68555d68e49187be7b43d7c7fc4bd6672392",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/analysis/mechanism-summary.json",
+      "original_path_sha256": "8b86bd16cef838a40d571244634ffc0167601ea357d11d8b50ef10cb46236069",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/analysis/mechanism_macros.tex",
+      "original_path_sha256": "9088621325d9052b2f2da9d7391d4cd2300ee7c9fb7d1dea0ddb49f7f25890f5",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/analysis/mechanism_results.tex",
+      "original_path_sha256": "6b728a826fbe8d38dd376fefcdbb18e71f8a667ac4cb59b308ce10821efa6d14",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/analysis/supersession-delta.json",
+      "original_path_sha256": "b65964db68392e444673bb6ebc79b84ef820549dea2e6a5553fe8f4c33815f5f",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/row/evidence/direct-work-paired-contrast-mechanism/provenance-seal.json",
+      "original_path_sha256": "b9205382cd3db6c20c6a4a01bf6501f64eb062003fd58c5f3ba168d0a1635d1c",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/row/evidence/observer-stratum-block-analysis/analysis/independent-check.json",
+      "original_path_sha256": "e15825b3cc55ff47f67b5df133521e627fb995813d942d21b8bebc45c426a86a",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/row/evidence/observer-stratum-block-analysis/analysis/observer-block-summary.json",
+      "original_path_sha256": "1179c3a64a36335c40fdd779f016c1c7e50ff8da0a3f29d4f404bd0e6a35fe73",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/row/evidence/observer-stratum-block-analysis/analysis/observer_block_macros.tex",
+      "original_path_sha256": "e14b8fe4c42cfdd95586bbd761816c73d2cb06d9d243584fa2c714beabd913e6",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/evidence/observer-stratum-block-analysis/analysis/observer_block_results.tex",
+      "original_path_sha256": "d6ef44c07992bcb0052e8f64c947185c0a9189083fb3a4f9b39c85b1e63f2515",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/evidence/observer-stratum-block-analysis/provenance-seal.json",
+      "original_path_sha256": "71a290912eecbf78e226350a29d31bff3b768560ac5fc8d67829276476e3fddc",
       "reason": "numerical records supplied in dataset; duplicate executed source not needed"
     },
     {
-      "path": "vendor/row/experiments/analysis/Makefile",
+      "original_path_sha256": "5cd3e8f908dfff546c30675c9815a391eeb859715dd9e8de80940c5527a92eae",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/confirm/LAUNCH_NOTES.md",
+      "original_path_sha256": "c4e482de1b3bb4715f6a72f54e42042b437b00a7117f5921436fe4125bfcbd8d",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/confirm/observable_margin_environment.py",
+      "original_path_sha256": "8b928275d94c6fcbfd7ce8e74f02b4c805fab3d7e21d6dbf580e5563222bcfaa",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/protocols/e0_construct_validity.md",
+      "original_path_sha256": "e81440a1f8913af9d875c626677920f59942036329f36345b235bbd37abb5cd4",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/e0_prime_observable_closure.md",
+      "original_path_sha256": "50d1a4994266e9121858cd59a534b79a51e2afe3dc4f1210d1cdbde4526d7f01",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/e1_dosed_loading.md",
+      "original_path_sha256": "05c3edadecb9b2b732235d902fbc71602eb710590f5fa541c99bcdd3102502fc",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/e2_event_law_global_clock.md",
+      "original_path_sha256": "586ea258bd168d6620909b6c6b4eb7d63edf38b06de12b1e1146b7812a192713",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/e3_kernel_offspring.md",
+      "original_path_sha256": "e6b2b0ada248f6ab36131915b01709e02933a906fd09af68ef54c88d399fed25",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/e4_fiber_flux.md",
+      "original_path_sha256": "9fa91d5d12b99b9bf5204ee38bc720cba5f7bea8a759f4d23e4fe77362dbf9f8",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/e5_two_regime.md",
+      "original_path_sha256": "96e45b09d186b07071ff1bef6b205dcc2b643a95e1c52195daa130d1ef0da507",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/e6_capture_map.md",
+      "original_path_sha256": "9dcfef7c1293cea836ccf51d3dfa0c895c9d33440f6e97e30310af5b79f75b2e",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/e7_exponents_routes.md",
+      "original_path_sha256": "d6639b9df32ea8bb21a8c0a0cccbc00bde65f066b82b1784ad366708bc6f1420",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/e8_baseline_comparison.md",
+      "original_path_sha256": "035b17771ff2119455a1be4a30d212876994066e98f8e21be9ff8bf05c0d5297",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/e0_joint_regularity_cover.md",
+      "original_path_sha256": "fe490ba1175daf137a2bf94541ef3e182637b83a342efcf27fbf104e437342cc",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/e1_exact_optimizer_transport.md",
+      "original_path_sha256": "b8d33557150972f3153a576a6fedb3debf86d5bc2005f6e4e7b2608a87ff5108",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/e2_normal_operator_spectrum.md",
+      "original_path_sha256": "9a439cfa3d7bbf305a2f423efd1e840a61aba2be8f85c0656d51ba995a5e3dae",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/e3_structured_path_lyapunov.md",
+      "original_path_sha256": "6a19b7a292ee6736a8bb1e3d02f4e5876844389d3b2eb00747176a9dbc9fff80",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/e4_complete_defect_decay.md",
+      "original_path_sha256": "603ff22cc825be309602322d1580768f5c3b02accbaeaaa0890f41b043bc54d8",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/e5_direct_tail_self_map.md",
+      "original_path_sha256": "5314de865a35570eaca8a9e2ed54068971008cfa0dd984d8c8cc6401004b167d",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/e6_finite_entry_horizon.md",
+      "original_path_sha256": "1fd32fc332521cb1a389272f45d64f049a2603ce1b3158063c435329eb5148b5",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/e7_certificate_interventions.md",
+      "original_path_sha256": "f2329e087d35e9e650a6eab583d674e5cc1f02a71aa8577e6273c59bb1700e21",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/e8_heldout_scale_discrimination.md",
+      "original_path_sha256": "d1b52bb3d3edc3b9acde7a9437e354209f75a9bbfe65a19277da76d17aa4aed2",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/protocols/row_map_confirmation/q0_instrument_qualification.md",
+      "original_path_sha256": "61b5c6a442246166e9ae102c6d837689853a38f8c8f86aaec406b0d78afe6409",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/negative_bare_spacing.tex",
+      "original_path_sha256": "e65ed3fb042735f86d22a4f2beb856f0d971ebf8b0cea7da827c086a4e9d3704",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/negative_dash.tex",
+      "original_path_sha256": "5713aa302ac687f37c48593db36d5697639180fd904f7d045d09b8c1956c7c10",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/negative_differential.tex",
+      "original_path_sha256": "07b902c452f5c03900b683432b81b9d6702913ffd30b43cd05b5b6c16637890d",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/negative_history.tex",
+      "original_path_sha256": "d6d035779b29a142206ffb9056d183e9b3bb993d827851bb067998c6c6160b5a",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/tests/fixtures/manuscript_integrity/positive.tex",
+      "original_path_sha256": "4016439b96df690af4ec5bd696cc4a5d80f995d4e5bf0688c23ab8961ae9dd5e",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/tests/test_bundle_hygiene_rev53.py",
+      "original_path_sha256": "f362fb78eba0c3c53c342cdff2bdcd191978653aa648955e5ae58a7b594e8a55",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_claim_sweep.py",
+      "original_path_sha256": "895a404b6d1cee72ca2a4ded804e99d34c8fdb8cc6ba8bbf9276ce089cc68569",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_current_release_gate.py",
+      "original_path_sha256": "ab9524ccea0be90e63824d9aa76a6c5facb04b95270e7f435f822d16d5d72816",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_frozen_reports.py",
+      "original_path_sha256": "bd8d6b726f93d01a11db822584bbed6cec75bebf854fb3602a2eca03d252f6d0",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_manuscript_integrity_rev51.py",
+      "original_path_sha256": "d4021fdd5362f6d6ef5ed5b1e9d8732e945876b60e35f2164193bdb7723b92a1",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_observable_margin_environment.py",
+      "original_path_sha256": "b3cf3e67825ac001520fa939a16b8de455c4fa9d008963902b3c73ad5c2e2934",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_observable_margin_executor.py",
+      "original_path_sha256": "fd056855c1a6629a0d3df0a48ff8039ade08f54d7b5285cb47a930494aa59e24",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_observable_margin_pipeline.py",
+      "original_path_sha256": "eff2597a11c737c72c62ceb536ee60f79e965e365208b241142958f548a59a26",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_readme_count.py",
+      "original_path_sha256": "e148d69e5f79046db4148cff57215dcef91398335b008088f1994ebd46c1a1f6",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_release_identity.py",
+      "original_path_sha256": "46e64d1af1a81d70e306d35e124b3663d34422cf3042314a0316b93e47f85b23",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_relocated_staging.py",
+      "original_path_sha256": "71afbc9efc86e18242c377145b7b7972aeada49fac63c5e614be65dbece1cf4f",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_symbol_sweep.py",
+      "original_path_sha256": "2f75b3d4f9a4a66d662611a9024138c431121ed961217548dc2ce88797e784d1",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/tests/test_totality_maintenance.py",
+      "original_path_sha256": "14c3ff7fab16ca34264ab8cb6908557af3f787126dbdeb3850f5519eb33a4cee",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/experiments/wave4_prereg.md",
+      "original_path_sha256": "a208ff113853ade608bc1cf93de9125c9269e48bfad2583181e4bb047f423ff0",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/wave5_prereg.md",
+      "original_path_sha256": "9b50302f19ced7123d5c0251b98b2df5165758dadd6dc73e6248bace17763d0b",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/wave6_prereg.md",
+      "original_path_sha256": "121d16a2138028e7d76f0e6d51697f53e29a56b25b670584a5de8ff5e9ddcc0e",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/wave7_prereg.md",
+      "original_path_sha256": "7f4553f04d4ad3b0088127c70e41585e867bd75dbaec8f432455d03f6618f073",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/experiments/wave8_prereg.md",
+      "original_path_sha256": "701f4594f0aa16fcd50cbfc32c0d1f3c83674f9bb884260109024eceea7117e6",
       "reason": "outside scientific format allowlist"
     },
     {
-      "path": "vendor/row/release.json",
+      "original_path_sha256": "8d13b7752689165f7cf819312d995e59f089a272e59850889815f869969daa11",
       "reason": "internal publication identity, replaced by monograph manifest"
     },
     {
-      "path": "vendor/row/scripts/build_confirmation_report.py",
+      "original_path_sha256": "12f63d26b4ea5bb660af86930e2ad397f4226a96fd4c25380cc5dec6f615fc79",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/check_anchors.py",
+      "original_path_sha256": "a035e689bd8d0109a6d136e7f358edd2d4572385b8643cd689ca9e4cc21bcf29",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/check_claims.py",
+      "original_path_sha256": "e7e5b7662e1e924878b4c879bc1447ce4b3dfa6702b544e8a5b2d3efaabbeac8",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/check_manuscript_contract.py",
+      "original_path_sha256": "8220dddd57e6c3809d1fd0c69a9b5df061cd1204227927250f3f2e11d4190ff1",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/check_manuscript_integrity.py",
+      "original_path_sha256": "7ea1925526e08af660bcaafe74a0f644c4edaf57b2cc60d538c3e2ec9ed45a13",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/check_symbols.py",
+      "original_path_sha256": "3ddf73eafb73fa0427397922b6d1cc0d3c3f62b43650d707e604beb1576209d0",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/direct_work_mechanism_bundle.py",
+      "original_path_sha256": "99148fb3acdcb20b9ed09f891f8b20f32aa052a417f23e684ceefd2027075e4d",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/direct_work_precision_bundle.py",
+      "original_path_sha256": "e021abfb9aa742e5827f5953cb0ba1aa4a4285307eb81b405df4e2d317397ef5",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/execute_observable_margin_plan.py",
+      "original_path_sha256": "fb6e198fc42cc5e6f5e01d5c3be6c0bdff75079872acae50c6e648e7670fa3dc",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/export_manuscript.py",
+      "original_path_sha256": "692c2f639127bcdd8f7d1e6df2c31c90442f98699078bae2d7337243a8a0a598",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/gen_coverage.py",
+      "original_path_sha256": "b25018868812898ea27599c5186ddc52344da5b5493b3a51657cb151d43e12c8",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/gen_formal_correspondence.py",
+      "original_path_sha256": "043dfd238c092a498fd914190fa4cd6265175561f545b654df7fe14e4d77191b",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/gen_release_metadata.py",
+      "original_path_sha256": "26c992acf8c8cabb7b41b74634bc3b79e2c98837cc7831d5480bc7ec930bd2bb",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/gen_stamp.py",
+      "original_path_sha256": "c3cffe1c951300d709fb16ebbb89dcf1e230b504c6f558ad8bae6de2d314a567",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/import_direct_work_manuscript_artifacts.py",
+      "original_path_sha256": "ae602ae228b14e4d54bd1b606529015ad69cc4e82a1b4bf6b061857c5120e377",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/import_observer_block_manuscript_artifacts.py",
+      "original_path_sha256": "cd5a204612c53a22a6fdb94dcdc2764194f38bcbce7bcb9b661ff614f3eb9a3a",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/import_radial_manuscript_artifacts.py",
+      "original_path_sha256": "90e164dda6c5cef8f55d5005760dd371251de09dc7bedd6dd2339485a0530292",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/make_artifact.py",
+      "original_path_sha256": "6a241d28edcb9b6730549791a91d56788335646243a8bab18062e195ee2b6e1d",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/make_manifest.py",
+      "original_path_sha256": "0e071db3058bb6777560b416984f082bd7906e6f0a3a773835dba2e33787e71b",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/observer_block_bundle.py",
+      "original_path_sha256": "220c717e52ed189dd5828ac895b589939eaaa960b2f1395ada13cf0ec6b56fa4",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/prune_bibliography.py",
+      "original_path_sha256": "98b04783e4f5ae6034be5e600e263ae866a5caa520c705c73bea8d73576ed0fc",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/radial_tangential_bundle.py",
+      "original_path_sha256": "be2b263b426729de67ec80923b2fc7edf3915fc6e011282dc441a35fd658515a",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/release_config.py",
+      "original_path_sha256": "23d276a8a158c06d537a87ed5aa274bdaee9804e878112c934f52def5c9fd798",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/release_identity.py",
+      "original_path_sha256": "cea391e476550e7287e1a7d7a02d81f57a91ce43f3c9ab808913cbe8120d938d",
       "reason": "document assembly or publication validation"
     },
     {
-      "path": "vendor/row/scripts/verify_direct_work_bundle.py",
+      "original_path_sha256": "b679db86e3b7eb4b0edfd3a4bf3c66571fe97d6043ad1a1bd0cca3f67b4e17b4",
       "reason": "document assembly or publication validation"
     }
   ],
+  "historical_inventory": {
+    "path": "provenance/export-disposition.json",
+    "public_base_commit": "e3f29ffd6a9d4666d0f7fba6cb0511c6807b496b",
+    "repository": "https://github.com/burcgokden/PLDR-LLM-Training-Dynamics",
+    "reviewed_inventory_sha256": "89bac48ea157e327d5c182c2ec0b9cb09d8d32272d9a95489f1a6954b826643b",
+    "scope": "Excluded entries identify prior locators by digest; they are not current file paths. Reasons and exclusion counts are retained. The original public export inventory is available at the public base commit."
+  },
   "schema": "pldr-scientific-export-disposition-v1"
 }

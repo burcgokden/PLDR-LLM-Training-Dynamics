@@ -3,7 +3,7 @@
 Selection is complete before test inference. Test configurations are never used for
 checkpoint choice. Native generation recomputes the entire proper prefix without a cache.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,itertools,json,sys,time
 from pathlib import Path
 import numpy as np
@@ -15,7 +15,7 @@ from model_rg.physical_native import selected_forward,prefix_batch,context_token
 from model_rg.provenance import sha256,write_json
 from model_rg.lattice import observables,critical_temperature
 from qualify_released_base import language
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 def sources():
     names=['scripts/assess_released_adaptation.py','scripts/qualify_released_base.py','src/model_rg/native.py','src/model_rg/physical_native.py','src/model_rg/lattice.py']

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run the fixed context-risk experiment with one native worker per local GPU."""
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import os
 from pathlib import Path
@@ -13,7 +13,7 @@ from context_execution_contract import admit as shared_admit
 from cache_state_contract import sources as validate_sources, same, keys
 
 REPO = Path(__file__).resolve().parents[1]
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 
 
 def run(args):

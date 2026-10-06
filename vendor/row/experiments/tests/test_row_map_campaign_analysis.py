@@ -1,4 +1,4 @@
-"""Synthetic campaign-record tests for the rev36 analyzers."""
+"""Synthetic campaign-record tests for the row-map analyzers."""
 
 from __future__ import annotations
 

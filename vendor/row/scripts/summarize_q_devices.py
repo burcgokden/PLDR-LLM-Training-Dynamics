@@ -23,7 +23,7 @@ from confirmation_artifacts import (  # noqa: E402
 
 
 DEFAULT_DIRECTORY = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev33"
+    ROOT.parent / "experiment-data" / "campaigns" / "collapse-confirmation"
     / "confirmation-program" / "campaigns" / "qualification"
 )
 

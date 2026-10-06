@@ -5,7 +5,7 @@ and cached rotary constants as exact starting values, promotes arithmetic, and
 removes the executed forced-float32 attention and reference-RoPE input casts.
 It is a different numerical implementation, not a real-arithmetic certificate.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import copy
 from datetime import datetime,timezone
@@ -22,7 +22,7 @@ import numpy as np
 import torch
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(os.environ.get('MODEL_RG_DATA_ROOT',legacy_path('/pldr-data/model'))).resolve()
+ROOT=Path(os.environ.get('MODEL_RG_DATA_ROOT',configured_path('data:model'))).resolve()
 OUT=ROOT/'finite-response-20260912/assessment'
 sys.path[:0]=[str(REPO/'src'),str(REPO/'scripts')]
 from model_rg.training import TrainingModel

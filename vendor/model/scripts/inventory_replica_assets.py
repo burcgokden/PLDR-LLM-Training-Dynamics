@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Describe exact local inputs and distinguish measured from retained hashes."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 from pathlib import Path
 from model_rg.provenance import sha256,write_json
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 REPO=Path(__file__).resolve().parents[1]
 
 
@@ -64,7 +64,7 @@ def inventory(output,uncertainty,qualification):
         public_upstream_references=['https://huggingface.co/fromthesky/PLDR-LLM-v51-SOC-110M-1',
                                     'https://huggingface.co/datasets/tiiuae/falcon-refinedweb'],
         regeneration='Use the frozen expanded and one-pass selection protocols and their enumerated prerequisite hashes with prepare_expanded_refinedweb.py and prepare_onepass_refinedweb.py. Exact master-corpus regeneration requires the recorded local shard strata and tokenizer; arbitrary public downloads need not reproduce them.',
-        read_only_source=legacy_path('/pldr-assets/refinedweb'),
+        read_only_source=configured_path('assets:refinedweb'),
         access_boundary='Source ZIP builds the manuscript and contains compact evidence/code. Large local assets require the maintained research archive. No public deposit, DOI, or independently tested external clean-asset reconstruction is claimed.',
         storage_bytes=sum(r['bytes'] for r in entries.values())))
     print('Inventoried',len(entries),'assets',flush=True)

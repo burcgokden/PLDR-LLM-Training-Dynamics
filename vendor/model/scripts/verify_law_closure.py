@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Independently reconstruct all selected branch sampling, losses and coarse bounds."""
+from companion_paths import required_input, acquisition_identity
 import argparse
 from datetime import datetime
 import json
@@ -136,7 +137,7 @@ def main():
     assert mutation['status']=='passed' and len(mutation['mutations'])==2 and all(x['rejected'] for x in mutation['mutations'])
     check(repo/'scripts/check_law_statement_mutations.py',mutation['checker_sha256'])
     check(repo/'ModelRG/Scaling.lean',mutation['module_sha256'])
-    original=root/'rebuttal-rev3-20260910/baseline-single.npz'
+    original=root/required_input('verify-law-closure-input-1')
     current=repo/'docs/law-closure-native-single/candidate-single.npz'
     check(original);check(current)
     with np.load(original) as old,np.load(current) as new:

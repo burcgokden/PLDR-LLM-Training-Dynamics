@@ -2,7 +2,7 @@
 """Stage an immutable-ready observable full-state cocycle confirmation bundle."""
 
 from __future__ import annotations
-from companion_paths import legacy_path
+from companion_paths import configured_path
 
 import argparse
 import ast
@@ -35,15 +35,15 @@ from scripts.gen_observable_cocycle_protocols import (  # noqa: E402
 DEFAULT_INPUT = (
     PROJECTS
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev47"
+    / "campaigns"
+    / "mixed-collapse"
     / "mixed-row-map-collapse-confirmation"
 )
 DEFAULT_OUTPUT = (
     PROJECTS
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev49"
+    / "campaigns"
+    / "observable-cocycle"
     / "observable-full-state-cocycle-confirmation"
 )
 DEFAULT_TOKENS = (
@@ -367,7 +367,7 @@ def _validated_launch_authorization(head: str) -> dict[str, Any]:
         "python3",
         "scripts/execute_observable_cocycle_plan.py",
         "--bundle",
-        legacy_path('/pldr-data/row/rev49/observable-full-state-cocycle-confirmation'),
+        configured_path('data:row/observable-cocycle/observable-full-state-cocycle-confirmation'),
         "--all",
     ]
     if (

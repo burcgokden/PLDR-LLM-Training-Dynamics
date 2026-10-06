@@ -2,7 +2,7 @@
 """Independently analyze the staged predictive-state closure experiment."""
 
 from __future__ import annotations
-from companion_paths import legacy_path
+from companion_paths import configured_path
 
 import argparse
 from datetime import datetime, timezone
@@ -192,7 +192,7 @@ def analyze(
     data_root: Path,
     *,
     manifest: dict[str, Any] | None = None,
-    refinedweb_root: Path = Path(legacy_path('/pldr-assets/refinedweb')),
+    refinedweb_root: Path = Path(configured_path('assets:refinedweb')),
 ) -> dict[str, Any]:
     run_root = run_root.resolve()
     data_root = data_root.resolve()
@@ -650,7 +650,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-root", required=True)
     parser.add_argument("--data-root", required=True)
-    parser.add_argument("--refinedweb-root", default=legacy_path('/pldr-assets/refinedweb'))
+    parser.add_argument("--refinedweb-root", default=configured_path('assets:refinedweb'))
     parser.add_argument("--output", required=True)
     arguments = parser.parse_args()
     output = Path(arguments.output).resolve()

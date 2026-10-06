@@ -7,7 +7,7 @@
       "type": "integer"
     },
     "campaign_id": {
-      "const": "observable-margin-confirmation-rev37"
+      "const": "observable-margin-confirmation"
     },
     "checks": {
       "minProperties": 1,

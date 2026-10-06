@@ -156,7 +156,7 @@
       "status": "archival-source-utility"
     },
     {
-      "path": "vendor/row/experiments/analysis/analyze_rev46_orbitwise.py",
+      "path": "vendor/row/experiments/analysis/analyze_orbitwise.py",
       "scope": "Preserved source program; no current end-to-end execution claim. Source-paper assembly additionally requires its historical publication fixture.",
       "status": "archival-source-utility"
     },
@@ -4787,7 +4787,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -4815,7 +4815,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -4843,7 +4843,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -4871,7 +4871,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -4899,7 +4899,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -4927,7 +4927,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -4955,7 +4955,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -4983,7 +4983,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -5011,7 +5011,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -5039,7 +5039,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -5067,7 +5067,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -5095,7 +5095,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -5123,7 +5123,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -5151,7 +5151,7 @@
       "required_assets": [
         "Explicit family data root, admitted protocol, pinned native implementation, selected tokens, required checkpoints/probes"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-acquisition"
     },
     {
@@ -5182,7 +5182,7 @@
         "--tokenizer or PLDR_ROW_TOKENIZER",
         "source-run or manuscript-export root if requested by this stage"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-staging"
     },
     {
@@ -5213,7 +5213,7 @@
         "--tokenizer or PLDR_ROW_TOKENIZER",
         "source-run or manuscript-export root if requested by this stage"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-staging"
     },
     {
@@ -5244,7 +5244,7 @@
         "--tokenizer or PLDR_ROW_TOKENIZER",
         "source-run or manuscript-export root if requested by this stage"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-staging"
     },
     {
@@ -5275,7 +5275,7 @@
         "--tokenizer or PLDR_ROW_TOKENIZER",
         "source-run or manuscript-export root if requested by this stage"
       ],
-      "validation": "validation/process-boundaries.json",
+      "validation": "urn:pldr:unavailable:189c45c32b5f82eb9394f5386661562a78f6b2d6e924106fa49c8dfe8cb4ae43",
       "workflow": "prospective-staging"
     },
     {
@@ -5305,7 +5305,7 @@
         "PLDR_INPUT_MANIFEST for exact relocated external file aliases",
         "Analysis JSON for the verifier"
       ],
-      "validation": "validation/standalone.json",
+      "validation": "urn:pldr:unavailable:f97fd871934f9215aacc91e42faa7722c3761d8716584d5f23a74fb15f8749a8",
       "workflow": "historical-reduction"
     },
     {
@@ -5335,7 +5335,7 @@
         "PLDR_INPUT_MANIFEST for exact relocated external file aliases",
         "Analysis JSON for the verifier"
       ],
-      "validation": "validation/standalone.json",
+      "validation": "urn:pldr:unavailable:f97fd871934f9215aacc91e42faa7722c3761d8716584d5f23a74fb15f8749a8",
       "workflow": "historical-reduction"
     },
     {
@@ -5361,7 +5361,7 @@
       "path": "vendor/rg/scripts/run_synthetic_rg.py",
       "purpose": "Finite CPU algebra/calibration check",
       "required_assets": [],
-      "validation": "validation/standalone.json",
+      "validation": "urn:pldr:unavailable:f97fd871934f9215aacc91e42faa7722c3761d8716584d5f23a74fb15f8749a8",
       "workflow": "reduction-only"
     },
     {
@@ -5387,7 +5387,7 @@
       "path": "vendor/model/scripts/check_consuming_bridge.py",
       "purpose": "Finite CPU algebra/calibration check",
       "required_assets": [],
-      "validation": "validation/standalone.json",
+      "validation": "urn:pldr:unavailable:f97fd871934f9215aacc91e42faa7722c3761d8716584d5f23a74fb15f8749a8",
       "workflow": "reduction-only"
     },
     {
@@ -5413,7 +5413,7 @@
       "path": "vendor/model/scripts/check_physical_clock.py",
       "purpose": "Finite CPU algebra/calibration check",
       "required_assets": [],
-      "validation": "validation/standalone.json",
+      "validation": "urn:pldr:unavailable:f97fd871934f9215aacc91e42faa7722c3761d8716584d5f23a74fb15f8749a8",
       "workflow": "reduction-only"
     },
     {
@@ -5423,7 +5423,7 @@
       "path": "vendor/model/scripts/workspace-wrappers/analyze-cache-state-transfer.sh",
       "purpose": "Portable shell route to supported combined commands",
       "required_assets": "Same protocol graph as underlying commands",
-      "validation": "validation/cache-relocation.json",
+      "validation": "urn:pldr:unavailable:6b95c1a3a47cd2250e09d22738e61c927df93a2454464a1729583696cb0a8cdf",
       "workflow": "historical-reduction"
     },
     {

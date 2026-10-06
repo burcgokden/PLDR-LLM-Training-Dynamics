@@ -7,14 +7,14 @@ segments are observation geometry, not counterfactual native training paths.
 Only --output is written. Publication rendering is an explicit separate step
 using render_finite_emission_transport.py.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,json,time
 from pathlib import Path
 import numpy as np
 from numpy.polynomial.legendre import leggauss
 from scipy.special import logsumexp
 from model_rg.provenance import sha256,write_json
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 REPO=Path(__file__).resolve().parents[1]
 
 def integrate(a,b,order):

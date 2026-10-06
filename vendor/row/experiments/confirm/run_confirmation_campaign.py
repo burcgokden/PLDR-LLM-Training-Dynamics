@@ -144,7 +144,7 @@ class CampaignRunner:
 
 
     def _verify_resources(self):
-        free = shutil.disk_usage("/pldr-work").free
+        free = shutil.disk_usage(ROOT).free
         required = int(self.design["resources"][
             "minimum_free_workspace_bytes"])
         if free < required:
@@ -234,7 +234,7 @@ class CampaignRunner:
         if final_step is not None:
             return int(final_step) == int(end_step)
 
-        # Compatibility for the first two rev26 confirmation runs, whose
+        # Compatibility for the first two historical confirmation runs, whose
         # generation-complete record predated the terminal-step field.  Do
         # not infer completion from the checkpoint alone: the final event
         # must follow a loss-bearing training row at the same exact step.

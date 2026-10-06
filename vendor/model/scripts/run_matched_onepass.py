@@ -6,7 +6,7 @@ widest model twice. Scientific workers cannot override the frozen role, job,
 source, or horizon. One process per device, with two devices in the queue.
 """
 from companion_paths import child_pythonpath, dispatch_worker, validate_worker_cli
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import json
@@ -27,7 +27,7 @@ from model_rg.provenance import sha256, write_json, environment
 from model_rg.replay_equality import require_replay, require_observations, contract
 
 REPO = Path(__file__).resolve().parents[1]
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 DEFAULT = ROOT/'matched-onepass-20260914'
 CORPUS = ROOT/'data/refinedweb-onepass-524288'
 PROBES = ROOT/'controlled-study-20260905/data/short'

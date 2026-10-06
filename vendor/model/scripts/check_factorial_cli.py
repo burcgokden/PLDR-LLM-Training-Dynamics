@@ -1,5 +1,5 @@
 """Intercept CLI dispatch before any worker, queue, or prepare body executes."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import contextlib
 import hashlib
@@ -15,7 +15,7 @@ p.add_argument('--output', type=Path, required=True)
 a = p.parse_args()
 sys.path[:0] = [str(a.repo/'src'), str(a.repo/'scripts')]
 script = a.repo/'scripts/run_potential_factorial.py'
-study = Path(legacy_path('/pldr-data/model/potential-factorial-disjoint-20260914'))
+study = Path(configured_path('data:model/potential-factorial-disjoint-20260914'))
 class StopDispatch(Exception):
     pass
 

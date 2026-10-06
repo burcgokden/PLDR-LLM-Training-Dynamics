@@ -24,7 +24,7 @@ from confirmation_artifacts import (  # noqa: E402
 
 
 DEFAULT_RECORD = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev33"
+    ROOT.parent / "experiment-data" / "campaigns" / "collapse-confirmation"
     / "confirmation-program" / "q_qualification.json"
 )
 DEFAULT_FIGURE = (

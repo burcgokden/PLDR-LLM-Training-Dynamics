@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Check the analytically derived noninteracting small-base tangent observation."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 from pathlib import Path
 import numpy as np
 from model_rg.provenance import write_json,sha256
@@ -13,7 +13,7 @@ def main():
         x=np.sqrt(2*epsilon);value=c*x/(epsilon+x*x/2);expected=c/np.sqrt(2*epsilon)
         if not np.isclose(value,expected,rtol=1e-15):raise ValueError('Wrong regularized tangent maximum')
         rows.append(dict(offset=epsilon,maximum=value,formula=expected))
-    write_json(Path(legacy_path('/pldr-data/model/potential-avalanche-20260913/analysis/base-null.json')),dict(
+    write_json(Path(configured_path('data:model/potential-avalanche-20260913/analysis/base-null.json')),dict(
         status='complete',producer_sha256=sha256(__file__),seed=916001,samples=len(z),
         law='iid standard normal preactivations; fixed c=0.2; tangent observation only',
         cutoffs=cutoffs.tolist(),empirical_survival=tail.tolist(),asymptotic_survival=pred.tolist(),maxima=rows,

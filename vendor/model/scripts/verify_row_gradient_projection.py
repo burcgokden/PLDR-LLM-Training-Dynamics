@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Independently check shared-gradient arrays, projection choices, and predictive KL."""
+from companion_paths import required_input
 import argparse
 import json
 from pathlib import Path
@@ -23,7 +24,7 @@ def integrated_kl(base, other, order):
 def verify_gradient_projection(study,bound):
     study=Path(study);repo=Path(__file__).resolve().parents[1];torch.set_num_threads(4)
     protocol=study/'protocols/row-gradient-projection.json';spec=json.loads(protocol.read_text());ledger=json.loads((study/'row-gradient-projection.json').read_text())
-    bound(repo/'internal/dynamics-protocols/row-gradient-projection.json',sha256(protocol))
+    bound(Path(required_input('dynamics-protocols')) / 'row-gradient-projection.json',sha256(protocol))
     bound(protocol,ledger['protocol_sha256'])
     if ledger['status']!='complete' or len(ledger['records'])!=48 or any(r['returncode'] for r in ledger['records']):raise AssertionError('Incomplete paired gradient design')
     if {r['name'] for r in ledger['records']}!={c['name'] for c in spec['cases']}:raise AssertionError('Gradient ledger case identities changed')

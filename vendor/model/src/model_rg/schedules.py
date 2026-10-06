@@ -3,7 +3,7 @@
 The scalar schedule follows LinearWarmupCosineLRSchedule in Burc Gokden's
 Apache-2.0 PLDR-LLM-Self-Organized-Criticality implementation, commit
 6c9ad835f23f8557942de2c00dfe33ec8262da81. Preserved sources and the two
-released-model configurations are in internal/reference-schedule.
+released-model configurations are supplied explicitly as reference-schedule inputs.
 """
 import math
 

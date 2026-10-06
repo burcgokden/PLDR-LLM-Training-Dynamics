@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage the revision-47 mixed-collapse campaign and relative launch plan."""
+"""Stage the mixed-collapse campaign and relative launch plan."""
 
 from __future__ import annotations
 
@@ -46,7 +46,7 @@ from scripts.gen_mixed_collapse_protocols import (  # noqa: E402
 
 
 DEFAULT_OUTPUT = (
-    PROJECTS / "experiment-data" / "manuscript-revisions" / "rev47"
+    PROJECTS / "experiment-data" / "campaigns" / "mixed-collapse"
     / "mixed-row-map-collapse-confirmation"
 )
 DEFAULT_TOKENS = (
@@ -59,11 +59,11 @@ DEFAULT_PREDECESSOR_TOKENS = (
 )
 DEFAULT_TOKENIZER = ROOT / "experiments" / "data" / "tokenizer.model"
 DEFAULT_REGISTRY = (
-    PROJECTS / "experiment-data" / "manuscript-revisions" / "rev46"
+    PROJECTS / "experiment-data" / "campaigns" / "orbitwise"
     / "orbitwise-row-map-confirmation" / "protocol" / "registry.json"
 )
 PREDECESSOR_ORDERS = (
-    PROJECTS / "experiment-data" / "manuscript-revisions" / "rev46"
+    PROJECTS / "experiment-data" / "campaigns" / "orbitwise"
     / "orbitwise-row-map-confirmation" / "orders"
 )
 
@@ -249,7 +249,7 @@ def launch_plan() -> dict[str, Any]:
     nodes = []
     for trajectory in TRAJECTORIES:
         name = str(trajectory["name"])
-        run_id = f"rev47-{name}"
+        run_id = f"mixed-collapse-{name}"
         intermediate = [
             step for step in PERMANENT_CHECKPOINT_UPDATES
             if step != TERMINAL_UPDATE
@@ -276,7 +276,7 @@ def launch_plan() -> dict[str, Any]:
     for trajectory in TRAJECTORIES:
         name = str(trajectory["name"])
         order_key = str(trajectory["order_key"])
-        lineage = f"rev47-{name}"
+        lineage = f"mixed-collapse-{name}"
         for source_step in INTERVENTION_UPDATES:
             for mode in INTERVENTION_MODES:
                 arm = f"gate-{trajectory['seed']}-{source_step}-{mode}"
@@ -287,7 +287,7 @@ def launch_plan() -> dict[str, Any]:
                     "depends_on": [f"train-{trajectory['seed']}"],
                     "command": _trainer_common(trajectory) + [
                         "--name", arm,
-                        "--run-id", f"rev47-{arm}",
+                        "--run-id", f"mixed-collapse-{arm}",
                         "--lineage-root", lineage,
                         "--device", str(trajectory["preferred_device"]),
                         "--init_from",

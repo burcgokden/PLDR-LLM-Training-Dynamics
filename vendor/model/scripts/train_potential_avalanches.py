@@ -4,7 +4,7 @@
 This measures excursions, not a preclassified SOC process. The selected matrix
 coordinates are nested in head count. All-coordinate summaries are also kept.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import copy
 import json
@@ -18,7 +18,7 @@ from model_rg.variance_family import normalize_variance_initialization
 from model_rg.criticality import parameter_digest
 from model_rg.provenance import sha256, write_json, environment
 
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 STUDY = ROOT/'potential-avalanche-20260913'
 REPO = Path(__file__).resolve().parents[1]
 FIELDS = ['log_potential_increment_rms','exponent_contribution_rms',

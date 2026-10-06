@@ -4,7 +4,7 @@ Native checkpoint exports merge each rank-four update back into the existing
 linear matrix. The comparison with full native inference is checked at every
 selected export. Test data never enter training or selection.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,math,sys,time,json
 from pathlib import Path
 import numpy as np
@@ -15,7 +15,7 @@ REPO=Path(__file__).resolve().parents[1];sys.path[:0]=[str(REPO/'src'),str(REPO/
 from model_rg.native import NativeModel
 from model_rg.provenance import sha256,write_json
 from train_released_adaptation import prepare_draws,language_validation
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 class LowRank(nn.Module):
     def __init__(self,base,rank=4):

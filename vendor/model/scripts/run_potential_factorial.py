@@ -5,7 +5,7 @@ Preparation freezes inputs and executable identities. Profile and scientific
 stages are distinct; the latter requires a completed 64-step width-14 profile.
 """
 from companion_paths import child_pythonpath, dispatch_worker, validate_worker_cli
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse, copy, hashlib, inspect, json, os, subprocess, sys, textwrap, time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -22,7 +22,7 @@ from model_rg.deductive_activity import DeductiveActivity, TENSOR_NAMES, STAT_NA
 from factorial_admission import POLICY
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 POTENTIAL=ROOT/'potential-avalanche-20260913'
 DEFAULT=ROOT/'potential-factorial-disjoint-20260914'
 BRANCHES=[('native_keep',1e-9,False),('raised_keep',1e-6,False),

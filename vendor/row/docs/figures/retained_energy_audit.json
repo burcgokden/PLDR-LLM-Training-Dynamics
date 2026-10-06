@@ -703,7 +703,7 @@
     "fixed_by": "direct-work-qualification-numerical-policy",
     "relative": 2e-05
   },
-  "release_id": "rev55",
+  "release_id": "observer-energy",
   "schema_version": "pldr-retained-energy-audit-v1",
   "successive_physical_map_archive": {
     "all_increments_within_fixed_float64_tolerance": true,
@@ -762,7 +762,7 @@
         "nonpositive_energy_increments": 0,
         "positive_energy_increments": 96,
         "positive_fraction": 1.0,
-        "record": "construction-A-L0-S16384.npz",
+        "record": "urn:pldr:unavailable:6d3bad1ab85b9e06f81ef31f90546447cc8d0bf40b41f2dd0daf7127a9718138",
         "source_horizon": 1,
         "source_step": 16384,
         "trajectory": "construction-seed10444"
@@ -775,7 +775,7 @@
         "nonpositive_energy_increments": 30,
         "positive_energy_increments": 66,
         "positive_fraction": 0.6875,
-        "record": "construction-A-L0-S4096.npz",
+        "record": "urn:pldr:unavailable:597ff5c69c8859667375d443fab5c6b98b2675d64034b8cabb70d4b9363a3b38",
         "source_horizon": 1,
         "source_step": 4096,
         "trajectory": "construction-seed10444"
@@ -788,7 +788,7 @@
         "nonpositive_energy_increments": 0,
         "positive_energy_increments": 96,
         "positive_fraction": 1.0,
-        "record": "construction-A-L0-S8192.npz",
+        "record": "urn:pldr:unavailable:b821eff1d1723063ae1a0ed1b0fa72f2446d6a9ad9b5ddc6493e26dffccd2eb9",
         "source_horizon": 1,
         "source_step": 8192,
         "trajectory": "construction-seed10444"
@@ -801,7 +801,7 @@
         "nonpositive_energy_increments": 96,
         "positive_energy_increments": 0,
         "positive_fraction": 0.0,
-        "record": "construction-A-L1-S16384.npz",
+        "record": "urn:pldr:unavailable:2e228fd696ea2d1db2d689313492137484823c4c91383791a8aeecd5e18a7416",
         "source_horizon": 1,
         "source_step": 16384,
         "trajectory": "construction-seed10444"
@@ -814,7 +814,7 @@
         "nonpositive_energy_increments": 96,
         "positive_energy_increments": 0,
         "positive_fraction": 0.0,
-        "record": "construction-A-L1-S4096.npz",
+        "record": "urn:pldr:unavailable:2380fce2aa82e0be62b10988b9dc6358515b877fc0d453779f22555d5b3cab21",
         "source_horizon": 1,
         "source_step": 4096,
         "trajectory": "construction-seed10444"
@@ -827,7 +827,7 @@
         "nonpositive_energy_increments": 0,
         "positive_energy_increments": 96,
         "positive_fraction": 1.0,
-        "record": "construction-A-L1-S8192.npz",
+        "record": "urn:pldr:unavailable:ba6206d6934057a688f09d5ae18a5312069626d2383f604db0667f66567f79e6",
         "source_horizon": 1,
         "source_step": 8192,
         "trajectory": "construction-seed10444"
@@ -840,7 +840,7 @@
         "nonpositive_energy_increments": 21,
         "positive_energy_increments": 75,
         "positive_fraction": 0.78125,
-        "record": "construction-A-L2-S16384.npz",
+        "record": "urn:pldr:unavailable:4afa57b508adf04601b38d039559ed5a4a693eb57db74cbf46c79bd15f369725",
         "source_horizon": 1,
         "source_step": 16384,
         "trajectory": "construction-seed10444"
@@ -853,7 +853,7 @@
         "nonpositive_energy_increments": 92,
         "positive_energy_increments": 4,
         "positive_fraction": 0.041666666666666664,
-        "record": "construction-A-L2-S4096.npz",
+        "record": "urn:pldr:unavailable:bd2a18d6a464423d505684ebe51698a2795bda2c6d4f0d8ca6f9f064413b9b37",
         "source_horizon": 1,
         "source_step": 4096,
         "trajectory": "construction-seed10444"
@@ -866,7 +866,7 @@
         "nonpositive_energy_increments": 55,
         "positive_energy_increments": 41,
         "positive_fraction": 0.4270833333333333,
-        "record": "construction-A-L2-S8192.npz",
+        "record": "urn:pldr:unavailable:5a59f9f3219a591068809292ea9ff280602301d3b7f9725cfdce13235f5e868c",
         "source_horizon": 1,
         "source_step": 8192,
         "trajectory": "construction-seed10444"

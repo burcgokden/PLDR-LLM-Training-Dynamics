@@ -25,7 +25,7 @@ PROTOCOL_SOURCE = (
     ROOT / "experiments" / "protocols" / "program_bound_confirmation"
 )
 DEFAULT_OUTPUT = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev32"
+    ROOT.parent / "experiment-data" / "campaigns" / "confirmation-pilot"
     / "confirmation-program"
 )
 
@@ -88,8 +88,8 @@ Protocol and staging manifest files remain immutable.
 WRAPPER = """#!/bin/sh
 set -eu
 
-repo_root=/pldr-work/row-code
-data_root=/pldr-data/row/rev32/confirmation-program
+repo_root="${PLDR_ROW_CODE_ROOT:?Set PLDR_ROW_CODE_ROOT to the public vendor/row directory}"
+data_root="${PLDR_ROW_RUN_ROOT:?Set PLDR_ROW_RUN_ROOT to the campaign directory}"
 launch_dir=$(pwd)
 command=${1-}
 

@@ -1,4 +1,4 @@
-"""Regression tests for the Rev22 construct-validity contract."""
+"""Regression tests for the construct-validity contract."""
 
 from pathlib import Path
 import sys

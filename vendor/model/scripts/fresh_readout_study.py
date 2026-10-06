@@ -3,7 +3,7 @@
 No optimizer updates. Physical source configurations are independent of the
 single-pass RefinedWeb corpus that produced the pretrained model states.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import gc
@@ -23,7 +23,7 @@ from model_rg.lattice import dyadic_block,observables
 from model_rg.provenance import sha256,write_json
 from prepare_lattice_data import generate,compile_sampler
 
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 SOURCE=ROOT/'assets/PLDR-LLM-v51-SOC-110M-1'
 OLD=ROOT/'known-universality-20260912'
 NAMES=['scripts/fresh_readout_study.py','scripts/prepare_lattice_data.py','scripts/potts_mc.cpp',

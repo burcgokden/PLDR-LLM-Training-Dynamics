@@ -1,4 +1,4 @@
-"""Regression tests for the revision-47 mixed-collapse campaign."""
+"""Regression tests for the mixed-collapse campaign."""
 
 from __future__ import annotations
 

@@ -2,7 +2,7 @@
 """Stage a self-checking row-map confirmation bundle in experiment-data."""
 
 from __future__ import annotations
-from companion_paths import legacy_path, data_root, resolve_row_arguments
+from companion_paths import configured_path, data_root, resolve_row_arguments
 
 import argparse
 import hashlib
@@ -22,7 +22,7 @@ from run_row_map_confirmation import execution_plan  # noqa: E402
 
 
 DEFAULT_OUTPUT = Path(
-    legacy_path('/pldr-data/row/rev36/row-map-collapse-confirmation'))
+    configured_path('data:row/row-map/row-map-collapse-confirmation'))
 DEFAULT_RUN_ROOT = Path(
     data_root('row') / 'inputs/runs')
 DEFAULT_TOKENS = ROOT / "experiments" / "data" / "refinedweb_tokens.npy"

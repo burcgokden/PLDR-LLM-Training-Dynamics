@@ -1,51 +1,37 @@
 {
-  "manifest": "scientific-manifest.json",
-  "publication": {
-    "url": "https://arxiv.org/pdf/2609.34130v1",
-    "sha256": "b1f5130df73c4e7ab0b3949f94707e557a71c0ef2aff5faa526f2b5a40259b0a"
-  },
-  "dataset": {
-    "url": "https://huggingface.co/datasets/fromthesky/pldr-llm-training-dynamics-data",
-    "commit": "5b1f9a53ca8a8e4f3c208b3b7b2625b5dd0c2cfe",
-    "manifest_sha256": "d639bc535224e03ae34e71e057f5309916e10e4a7d17b0275e5b146de8d4170a",
-    "payload_sha256": "45921d31a700bd29e77645f1e9b42f0ec87d39f0c0a9a5f44da130531fc73fcd",
-    "index_sha256": "596b71a06eb12fc06e66465a9c1786a8dd641b7fa22b7e33dc93d26976b479fc"
-  },
   "checks": [
     {
-      "name": "scientific",
-      "cwd": ".",
       "argv": [
         "{python}",
         "-B",
         "scripts/run_scientific_checks.py"
-      ]
+      ],
+      "cwd": ".",
+      "name": "scientific"
     },
     {
-      "name": "code-data",
-      "cwd": ".",
       "argv": [
         "{python}",
         "-B",
         "scripts/check_formal_manifest.py",
         "--data-repo",
         "{data}"
-      ]
+      ],
+      "cwd": ".",
+      "name": "code-data"
     },
     {
-      "name": "evidence",
-      "cwd": ".",
       "argv": [
         "{python}",
         "-B",
         "scripts/verify_evidence.py",
         "--data-repo",
         "{data}"
-      ]
+      ],
+      "cwd": ".",
+      "name": "evidence"
     },
     {
-      "name": "publication",
-      "cwd": ".",
       "argv": [
         "{python}",
         "-B",
@@ -56,35 +42,49 @@
         "{data}",
         "--output",
         "validation/published-pdf.json"
-      ]
+      ],
+      "cwd": ".",
+      "name": "publication"
     },
     {
-      "name": "check_process_boundaries",
-      "cwd": ".",
       "argv": [
         "{python}",
         "-B",
         "scripts/check_process_boundaries.py"
-      ]
+      ],
+      "cwd": ".",
+      "name": "check_process_boundaries"
     },
     {
-      "name": "check_campaign_budget",
-      "cwd": ".",
       "argv": [
         "{python}",
         "-B",
         "scripts/check_campaign_budget.py"
-      ]
+      ],
+      "cwd": ".",
+      "name": "check_campaign_budget"
     },
     {
-      "name": "check_resource_execution",
-      "cwd": ".",
       "argv": [
         "{python}",
         "-B",
         "scripts/check_resource_execution.py"
-      ]
+      ],
+      "cwd": ".",
+      "name": "check_resource_execution"
     }
   ],
+  "dataset": {
+    "commit": "f03c292a227e58a03d145d478103f587d98a8c8a",
+    "index_sha256": "4c7042937c03adeb1f222d4525dec358d1dc541f28ff7a6911a23b755906e974",
+    "manifest_sha256": "225427ff888f9d4ecd4506ae34cc39e67b028aa7f684bd96de3d4398aeb49c90",
+    "payload_sha256": "41020c31446a02d27caaa73a3a317c30c231f5884ab7a74d010b80d8c216a947",
+    "url": "https://huggingface.co/datasets/fromthesky/pldr-llm-training-dynamics-data"
+  },
+  "manifest": "scientific-manifest.json",
+  "publication": {
+    "sha256": "b1f5130df73c4e7ab0b3949f94707e557a71c0ef2aff5faa526f2b5a40259b0a",
+    "url": "https://arxiv.org/pdf/2609.34130v1"
+  },
   "schema": "pldr-release-gate-v1"
 }

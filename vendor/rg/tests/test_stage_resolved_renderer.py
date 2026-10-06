@@ -22,7 +22,7 @@ class StageResolvedRendererTests(unittest.TestCase):
         import json
 
         predecessor_path = Path(
-            "/pldr-data/rg/executed/"
+            "data:rg/executed/"
             "stage-resolved-observer-v7-20260903/result.json"
         )
         predecessor = json.loads(predecessor_path.read_text(encoding="utf-8"))
@@ -61,7 +61,7 @@ class StageResolvedRendererTests(unittest.TestCase):
 
     def test_route_preflight_completes_before_any_torch_import(self):
         run_root = Path(
-            "/pldr-data/rg/executed/"
+            "data:rg/executed/"
             "stage-a-runner-smoke-v7-20260903/run"
         )
         original_import = builtins.__import__

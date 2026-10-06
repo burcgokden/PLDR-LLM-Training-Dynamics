@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Register only the finite algebra supporting the consuming-population theorem."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import hashlib
 import json
 import os
@@ -19,7 +19,7 @@ for name,coverage in [
 for row in r['exports']:
  if row['name']=='ModelRG.closureDefect_eq':
   row['paper_labels']=['prop:closure-error'];row['coverage']='Finite kernel-matrix telescoping defect only. General metric transport and economical native successor closure are outside this export.'
-env=dict(os.environ,ELAN_HOME=legacy_path('/pldr-tools/elan'),PATH=legacy_path('/pldr-tools/elan/bin')+os.pathsep+os.environ['PATH'])
+env=dict(os.environ,ELAN_HOME=configured_path('tools:elan'),PATH=configured_path('tools:elan/bin')+os.pathsep+os.environ['PATH'])
 with tempfile.TemporaryDirectory(prefix='population-types-',dir='/tmp') as tmp:
  p=Path(tmp)/'Export.lean';p.write_text((ROOT/'scripts/formal/ExportStatements.lean').read_text()+'\n'+'\n'.join('#export_modelrg '+x['name'] for x in r['exports'])+'\n')
  result=subprocess.run(['lake','env','lean',str(p)],cwd=ROOT,env=env,capture_output=True,text=True,check=True)

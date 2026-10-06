@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Export a local complete observation deposit and reproduce an extracted copy."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import os
 from pathlib import Path
@@ -12,7 +12,7 @@ from model_rg.provenance import sha256, write_json
 from numerical_validation import load_json_strict
 from observed_package_contract import inspect_package
 
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def export(package,archive,records):

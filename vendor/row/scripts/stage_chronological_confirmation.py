@@ -2,7 +2,7 @@
 """Stage an immutable chronological-confirmation bundle in experiment-data."""
 
 from __future__ import annotations
-from companion_paths import legacy_path
+from companion_paths import configured_path
 
 import argparse
 import hashlib
@@ -14,7 +14,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 PROTOCOL = ROOT / "experiments" / "protocols" / "chronological_confirmation"
 DEFAULT_OUTPUT = Path(
-    legacy_path('/pldr-data/row/rev38/chronological-collapse-confirmation')
+    configured_path('data:row/chronological-collapse/chronological-collapse-confirmation')
 )
 SOURCES = (
     "requirements.txt",
@@ -44,10 +44,10 @@ SOURCES = (
     "scripts/run_chronological_qualification.py",
     "scripts/gen_chronological_protocols.py",
     "scripts/stage_chronological_confirmation.py",
-    "experiments/tests/test_chronological_capture_rev38.py",
-    "experiments/tests/test_chronological_campaign_rev38.py",
-    "experiments/tests/test_chronological_collapse_rev38.py",
-    "experiments/tests/test_chronological_history_rev38.py",
+    "experiments/tests/test_chronological_capture.py",
+    "experiments/tests/test_chronological_campaign.py",
+    "experiments/tests/test_chronological_collapse.py",
+    "experiments/tests/test_chronological_history.py",
 )
 
 
@@ -76,7 +76,7 @@ def expected_files() -> dict[Path, bytes]:
     files[Path("STAGING.json")] = _json({
         "schema_version": "pldr-chronological-staging-v1",
         "campaign_id": "pldr-chronological-collapse-confirmation-v1",
-        "manuscript_series": "rev38",
+        "manuscript_series": "chronological-collapse",
         "protocol_manifest_sha256": _sha256(protocol_manifest),
         "source_files": list(SOURCES),
         "qualification_command": [

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Freeze the bounded potential-avalanche assay before any scientific path runs."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from pathlib import Path
 import numpy as np
 from model_rg.provenance import sha256,write_json,environment
 from model_rg.onepass_regimes import sample_batches
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 STUDY=ROOT/'potential-avalanche-20260913'
 REPO=Path(__file__).resolve().parents[1]
 

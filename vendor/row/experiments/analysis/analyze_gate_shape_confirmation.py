@@ -1141,7 +1141,7 @@ def _i_measurements(resolved, root):
         raise ValueError("I source checkpoint lacks a run identity")
 
     expected_run_ids = {
-        arm: f"rev35-{arm}-s{source_step}"
+        arm: f"gate-shape-{arm}-s{source_step}"
         for arm in ARCHITECTURE["intervention_arms"]
     }
     by_arm = {arm: [] for arm in ARCHITECTURE["intervention_arms"]}

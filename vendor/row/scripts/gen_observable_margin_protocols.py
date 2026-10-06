@@ -2,6 +2,7 @@
 """Generate the frozen observable-margin confirmation protocols."""
 
 from __future__ import annotations
+from companion_paths import acquisition_identity
 
 import argparse
 import hashlib
@@ -93,7 +94,7 @@ FINAL_RELEASE_PROVENANCE = {
         ),
     },
     "manuscript_export": {
-        "revision": "rev37",
+        "revision": acquisition_identity('observable-margin-manuscript-identity'),
         "strict_file_count": 18,
         "nonself_manifest_entry_count": 17,
         "required_container_fields": [
@@ -192,7 +193,7 @@ def expected_files():
             "planner": (
                 "experiments/confirm/run_observable_margin_confirmation.py"),
             "analyzer": "experiments/analysis/analyze_observable_margin.py",
-            "executor": "scripts/execute_observable_margin_plan.py",
+            "executor": "urn:pldr:unavailable:4760e88189d8163c866d60ff6ec5ba5e8f56f8a29b8806edb4c2341410733491",
             "evidence": "compact-npz-no-raw-parameter-nodes",
             "robustness_scientific_gate": False if stage["id"] == "ROB" else None,
         }
@@ -577,7 +578,7 @@ def expected_files():
         "package-inventory count and digest. It freshly verifies the exact "
         "current repository MANIFEST target count, manifest digest, and "
         "all-target aggregate against an equal staged seal. It separately "
-        "verifies the strict Rev37 manuscript export of exactly 18 regular "
+        "verifies the strict observable-margin manuscript export of exactly 18 regular "
         "files, including a 17-entry nonself MANIFEST, with manifest and "
         "all-target aggregate digests against its equal staged seal. Both "
         "closures are independently recomputed before and after the canonical "

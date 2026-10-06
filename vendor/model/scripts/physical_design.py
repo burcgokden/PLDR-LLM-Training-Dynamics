@@ -1,5 +1,5 @@
 """Physical experiment admission. Validation performs no writes or native work."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 from dataclasses import dataclass
 import importlib.metadata
 import json
@@ -14,7 +14,7 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / 'src'))
 from model_rg.provenance import sha256
 
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 ASSETS = ROOT / 'assets/PLDR-LLM-v51-SOC-110M-1'
 SOURCE_NAMES = ['scripts/physical_study.py', 'scripts/physical_design.py',
     'scripts/run_physical_queue.py', 'scripts/qualify_physical_native.py',

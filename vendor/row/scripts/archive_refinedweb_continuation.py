@@ -11,7 +11,7 @@ measurement contexts remain unchanged.
 """
 
 from __future__ import annotations
-from companion_paths import legacy_path
+from companion_paths import configured_path
 
 import argparse
 import hashlib
@@ -28,7 +28,7 @@ import sentencepiece as spm
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS = ROOT.parent
 DEFAULT_ARROW_ROOT = Path(
-    legacy_path('/pldr-assets/refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c')
+    configured_path('assets:refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c')
 )
 DEFAULT_PREDECESSOR = (
     PROJECTS / "experiment-data" / "shared" / "datasets"

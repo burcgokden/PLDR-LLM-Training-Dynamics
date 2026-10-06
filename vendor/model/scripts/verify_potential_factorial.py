@@ -4,14 +4,14 @@
 Imports no producer observer or analysis reducer. Full-state bitwise equality
 is a source-bound producer digest check; saved arrays are compared directly.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,hashlib,json
 from pathlib import Path
 import numpy as np
 from scipy.special import logsumexp
 from factorial_admission import check_design,check_corpus,check_profile,check_source,producer_inventory,freeze_corpus
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def sha(p):

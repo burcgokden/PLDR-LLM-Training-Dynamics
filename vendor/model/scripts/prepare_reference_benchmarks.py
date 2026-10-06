@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Freeze complete ARC splits, explicit normalization and two released states."""
+from companion_paths import required_input
 import argparse
 from datetime import datetime, timezone
 import json
@@ -17,7 +18,7 @@ def main():
     p.add_argument('--study', default='scheduled-training-20260908'); args = p.parse_args()
     root = Path(args.root).resolve(); study = root/args.study; repo = Path(__file__).resolve().parents[1]
     source = study/'data/arc-source'; tokenizer_path = root/'assets/PLDR-LLM-v51-SOC-110M-1/tokenizer.model'
-    harness = repo/'internal/reference-evaluation'; harness_manifest = json.loads((harness/'manifest.json').read_text())
+    harness = Path(required_input('reference-evaluation')); harness_manifest = json.loads((harness/'manifest.json').read_text())
     inputs = [source/'manifest.json', tokenizer_path, harness/'manifest.json']
     source_manifest = json.loads((source/'manifest.json').read_text())
     for record in source_manifest['files']:

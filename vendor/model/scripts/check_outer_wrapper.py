@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Parse every emitted outer-study command through its actual Python parser."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 import os
@@ -41,7 +41,7 @@ runpy.run_path(str(script),run_name='__main__')
             if phase=='render':assert parsed['parsed']['output']==str(render)
             records.append(dict(phase=phase,**parsed))
         assert not data.exists() and not study.exists() and not render.exists()
-    installed=[repo.parent/'scripts/outer-transfer-study.sh',Path(legacy_path('/pldr-data/model/scripts/outer-transfer-study.sh'))]
+    installed=[repo.parent/'scripts/outer-transfer-study.sh',Path(configured_path('data:model/scripts/outer-transfer-study.sh'))]
     assert all(sha256(path)==sha256(wrapper) for path in installed)
     write_json(output,dict(status='passed',phases=records,wrapper_sha256=sha256(wrapper),checker_sha256=sha256(__file__),
         installed={str(path):sha256(path) for path in installed},scope='Actual child parsers with paths containing spaces and overridden data root; no scientific body executed.'))

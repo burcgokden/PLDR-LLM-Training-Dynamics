@@ -1,11 +1,12 @@
 """Frozen design for the fresh-context radial-predictor holdout."""
 
 from __future__ import annotations
+from companion_paths import acquisition_identity
 
 from typing import Any
 
 
-RELEASE_ID = "rev53"
+RELEASE_ID = acquisition_identity('radial-context-acquisition-release')
 CAMPAIGN_ID = "pldr-radial-context-holdout-v1"
 DESIGN_SCHEMA = "pldr-radial-context-holdout-design-v1"
 RECORD_SCHEMA = "pldr-radial-context-holdout-record-v1"

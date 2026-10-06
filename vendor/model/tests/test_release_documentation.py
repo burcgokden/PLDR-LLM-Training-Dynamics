@@ -7,8 +7,8 @@ from scripts.release_documentation import readmes, check_links
 
 def test_location_specific_links(tmp_path):
     repo=tmp_path/'repo';repo.mkdir();(repo/'docs').mkdir()
-    output=tmp_path/'paper-outputs/release';output.mkdir(parents=True)
-    (repo/'publication-release.json').write_text(json.dumps(dict(schema='modelrg-release-v1',release_root='../paper-outputs/release',body='docs/body.md')))
+    output=tmp_path/'exports/release';output.mkdir(parents=True)
+    (repo/'publication-release.json').write_text(json.dumps(dict(schema='modelrg-release-v1',release_root='../exports/release',body='docs/body.md')))
     (repo/'docs/body.md').write_text('Completed science.\n')
     for name in ['main.pdf','arxiv-source.zip','MANIFEST.sha256']:(output/name).write_text('fixture')
     source=output/'arxiv-source';source.mkdir();code=source/'code';code.mkdir()

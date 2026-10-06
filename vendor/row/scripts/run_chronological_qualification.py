@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate and analyze the deterministic rev38 algebra qualification."""
+"""Generate and analyze the deterministic chronological algebra qualification."""
 
 from __future__ import annotations
 

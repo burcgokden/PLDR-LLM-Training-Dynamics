@@ -45,7 +45,7 @@ from scripts.execute_mixed_collapse_plan import (  # noqa: E402
 
 
 DEFAULT_BUNDLE = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev47"
+    ROOT.parent / "experiment-data" / "campaigns" / "mixed-collapse"
     / "mixed-row-map-collapse-confirmation"
 )
 DEFAULT_TEX = ROOT / "docs" / "figures" / "mixed_collapse_confirmation_results.tex"
@@ -370,7 +370,7 @@ def _verify_manuscript_binding(
     aggregate_gpu_hours: float,
     total_bytes: int,
 ) -> None:
-    source_path = ROOT / "docs" / "confirmation_program_rev46.tex"
+    source_path = ROOT / "docs" / "orbitwise_confirmation_program.tex"
     source = source_path.read_text(encoding="utf-8")
     required = {
         _sha256(bundle / "reports" / "final-analysis.json"):

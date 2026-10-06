@@ -64,7 +64,7 @@ def check(study, analysis, verification, output):
                     script, args = 'verify_compact_release.py', ['--records', str(folder)]
                 else:
                     script, args = 'build_compact_release.py', ['--verification', str(proof)]
-                    destination = REPO.parent / 'paper-outputs' / ('.coverage-reject-' + output.name + '-' + name + ('-O' if optimized else '-N'))
+                    destination = REPO / 'build' / 'exports' / ('.coverage-reject-' + output.name + '-' + name + ('-O' if optimized else '-N'))
                 if destination.exists():
                     raise FileExistsError(destination)
                 cmd = prefix + [str(REPO / 'scripts' / script), *args, '--output', str(destination)]

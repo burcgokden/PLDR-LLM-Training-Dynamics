@@ -1,4 +1,4 @@
-"""Strict evidence binding and replay semantics for the rev34 program."""
+"""Strict evidence binding and replay semantics for the comprehensive confirmation program."""
 
 from __future__ import annotations
 

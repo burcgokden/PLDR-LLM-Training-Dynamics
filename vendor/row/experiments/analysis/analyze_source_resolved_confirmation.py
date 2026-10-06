@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Strict mapwise analysis for the rev45 source-resolved campaign."""
+"""Strict mapwise analysis for the source-resolved campaign."""
 
 from __future__ import annotations
 

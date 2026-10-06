@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Reconstruct endpoint convention sensitivity and every native paired effect."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,json,shutil
 from pathlib import Path
 import numpy as np
@@ -8,7 +8,7 @@ from scipy.special import logsumexp
 from model_rg.provenance import sha256,write_json
 from model_rg.potential_symmetry import summarize_allocations
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 LABELS={'reference1':'Strong collapse','subcritical1':'Partial collapse','early-h2':'Early 2 heads','early-h8':'Early 8 heads'}
 
 

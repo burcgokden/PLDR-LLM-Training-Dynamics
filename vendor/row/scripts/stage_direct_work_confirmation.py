@@ -118,7 +118,7 @@ def stage(binding_root: Path, campaign_root: Path) -> dict[str, Any]:
         raise ValueError("campaign root escapes binding root")
     prior = _bound_path(
         binding_root
-        / "experiment-data/manuscript-revisions/rev47/"
+        / "experiment-data/campaigns/mixed-collapse/"
         "mixed-row-map-collapse-confirmation",
         binding_root,
     )
@@ -273,7 +273,7 @@ def main() -> None:
         arguments.campaign_root.resolve(strict=False)
         if arguments.campaign_root is not None
         else binding_root
-        / "experiment-data/manuscript-revisions"
+        / "experiment-data/campaigns"
         / RELEASE_ID
         / "direct-work-source-intervention"
     )

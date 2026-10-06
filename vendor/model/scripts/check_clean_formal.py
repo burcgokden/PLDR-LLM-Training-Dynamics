@@ -1,5 +1,5 @@
 """Rebuild all owned Lean modules without any pre-existing owned build outputs."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,os,shutil,subprocess,tempfile,sys
 from pathlib import Path
 REPO=Path(__file__).resolve().parents[1];sys.path.insert(0,str(REPO/'src'))
@@ -7,7 +7,7 @@ from model_rg.provenance import sha256,write_json
 
 def main(a):
     out=Path(a.output).resolve();out.mkdir(parents=True,exist_ok=False)
-    env=dict(os.environ,ELAN_HOME=legacy_path('/pldr-tools/elan'),PATH=legacy_path('/pldr-tools/elan/bin')+os.pathsep+os.environ['PATH'])
+    env=dict(os.environ,ELAN_HOME=configured_path('tools:elan'),PATH=configured_path('tools:elan/bin')+os.pathsep+os.environ['PATH'])
     with tempfile.TemporaryDirectory(prefix='modelrg-clean-',dir='/tmp') as tmp:
         root=Path(tmp);shutil.copytree(REPO/'ModelRG',root/'ModelRG')
         for n in ['ModelRG.lean','lakefile.toml','lake-manifest.json','lean-toolchain']:shutil.copy2(REPO/n,root/n)

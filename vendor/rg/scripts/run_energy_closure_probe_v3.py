@@ -2,7 +2,7 @@
 """Run portable, source-remeasured PLDR closure and sensitivity continuations."""
 
 from __future__ import annotations
-from companion_paths import legacy_path
+from companion_paths import configured_path
 
 import argparse
 from concurrent.futures import ThreadPoolExecutor
@@ -924,7 +924,7 @@ def main() -> None:
     parser.add_argument("--config", required=True)
     parser.add_argument("--data-root", required=True)
     parser.add_argument("--output-root", required=True)
-    parser.add_argument("--refinedweb-root", default=legacy_path('/pldr-assets/refinedweb'))
+    parser.add_argument("--refinedweb-root", default=configured_path('assets:refinedweb'))
     arguments = parser.parse_args()
     config_path = Path(arguments.config).resolve()
     data_root = Path(arguments.data_root).resolve()

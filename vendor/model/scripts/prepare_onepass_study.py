@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Freeze the complete finite-duration study on nonrepeated RefinedWeb blocks."""
+from companion_paths import required_input
 import argparse
 from datetime import datetime, timezone
 import json
@@ -38,7 +39,7 @@ def main():
             raise AssertionError('The nonrepeated corpus and stream must pass before selection')
     previous = json.loads((old/'protocols/regime-training-selection.json').read_text())
     references = {key:value for key,value in previous['reference_inputs'].items()
-                  if '/internal/reference-schedule/' in key or '/qualification/' in key or '2603.23539' in key}
+                  if str(Path(required_input('reference-schedule'))) in key or '/qualification/' in key or '2603.23539' in key}
     references.update({str(path):sha256(path) for path in paths})
     sources = dict(previous['producer_sources'])
     sources.pop('scripts/train_scheduled_regimes.py')

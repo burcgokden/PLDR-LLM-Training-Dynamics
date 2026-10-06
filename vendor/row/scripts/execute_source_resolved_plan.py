@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Execute the rev45 producer graph with a deadline and observed memory/storage admission."""
+"""Execute the source-resolved producer graph with a deadline and observed memory/storage admission."""
 
 from __future__ import annotations
 

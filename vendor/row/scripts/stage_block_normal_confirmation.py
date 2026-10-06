@@ -23,8 +23,8 @@ DEFAULT_FOUNDATION = (
 DEFAULT_OUTPUT = (
     ROOT.parent
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev44"
+    / "campaigns"
+    / "block-normal"
     / "block-normal-collapse-confirmation"
 )
 DEFAULT_DATASET = (

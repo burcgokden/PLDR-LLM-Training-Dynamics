@@ -5,97 +5,97 @@
       "id": "selected-analysis",
       "status": "current",
       "role": "registered analysis used by the manuscript",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0002/result.json"
+      "path": "urn:pldr:unavailable:a7f6656d45c8cacff2e8ce170d9cd5a6351356581b06119580df18b0b96f6384"
     },
     {
       "id": "selected-analysis-manifest",
       "status": "current",
       "role": "analysis manifest",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0002/manifest.json"
+      "path": "urn:pldr:unavailable:271478f012d08e32e14dfa898d466368ad66c761f536ab2ae23c56799bcc2b4d"
     },
     {
       "id": "selected-root-manifest",
       "status": "current",
       "role": "root manifest",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/manifests/manifest-0002.json"
+      "path": "urn:pldr:unavailable:d5ddfc86b0e85fbbcf16bc23548cbd2d0d999c7b2d537b40f5638a53cd0025ea"
     },
     {
       "id": "observer-record",
       "status": "current",
       "role": "source-bound full-trace observer analysis",
-      "path": "executed/observer-regime-v6-20260903/result.json"
+      "path": "urn:pldr:unavailable:d2ffdc83a7434debf5257d6047e5070c2c63d73f05c827271d56d2bd7d11c988"
     },
     {
       "id": "stage-record",
       "status": "current",
       "role": "source-bound stage-resolved replay with exact represented-array energy",
-      "path": "executed/stage-resolved-observer-v7-20260903/result.json"
+      "path": "urn:pldr:unavailable:bffb6561ef45dbde6474c8bd96d5ece54f79a2dd8c8abdbf7d2204d35c267d3e"
     },
     {
       "id": "stage-a-smoke-result",
       "status": "diagnostic",
       "role": "executed production-runner state-machine smoke result",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/analyses/analysis-0001/result.json"
+      "path": "urn:pldr:unavailable:f2e9dbfac270edc1930a00e61c62c5ebe4896c323f8d7431f17d5042c144604e"
     },
     {
       "id": "stage-a-smoke-manifest",
       "status": "diagnostic",
       "role": "executed production-runner state-machine smoke root manifest",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/manifests/manifest-0001.json"
+      "path": "urn:pldr:unavailable:98a4c24968e077eb1d4d74afdd4c5afada9c60bd79f1d16a1277fac62077e860"
     },
     {
       "id": "stage-a-smoke-protocol",
       "status": "diagnostic",
       "role": "executed production-runner smoke protocol with derived seeds",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/inputs/protocol.json"
+      "path": "urn:pldr:unavailable:03f52613e18c285a302c1c328dd7607d32754be2688622484f2e0538e26c5841"
     },
     {
       "id": "stage-a-smoke-qualification",
       "status": "diagnostic",
       "role": "source-bound production-runner smoke qualification",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/inputs/qualification.json"
+      "path": "urn:pldr:unavailable:61bad898e9c813a1c7bbe0e1d61852a4f06dd9319103b429b91e7fe8adc3d0ac"
     },
     {
       "id": "stage-a-smoke-observer",
       "status": "diagnostic",
       "role": "executed zero-safe observer analysis of the runner smoke",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/observer/result.json"
+      "path": "urn:pldr:unavailable:03fc76693284bc4768f48b2213a7a012d3d613b6491b27f725abb3790dcb4075"
     },
     {
       "id": "stage-a-smoke-stage",
       "status": "diagnostic",
       "role": "executed zero-safe three-device stage replay of the runner smoke",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/stage/result.json"
+      "path": "urn:pldr:unavailable:d802d8ccba8709ecd44b00798ecd7af61e86e17a91343c44ee9b43cdb27c5933"
     },
     {
       "id": "stage-a-smoke-verification",
       "status": "diagnostic",
       "role": "sealed independent verification report for the runner smoke archive",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/verification.json"
+      "path": "urn:pldr:unavailable:0c0e100b94f196000c4db0967c0e04a32af89fb7842bbb1c17a4deeb49198df5"
     },
     {
       "id": "corrected-smoke-root",
       "status": "diagnostic",
       "role": "root record for the corrected historical production-runner smoke",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/run-root.json"
+      "path": "urn:pldr:unavailable:2a7659d322da43ae7d5e2a3f8f9dce1633d8a57e672f65d05bb0335c0393f343"
     },
     {
       "id": "failed-smoke-root",
       "status": "diagnostic",
       "role": "root record for the retained failed 63-bit-seed smoke launch",
-      "path": "executed/stage-a-runner-smoke-v6-20260903/run/run-root.json"
+      "path": "urn:pldr:unavailable:844ca986b10def6fb35c94d8054ac2aff3d91525f20a9c2ccc06c37cf17e2af7"
     },
     {
       "id": "failed-smoke-protocol",
       "status": "diagnostic",
       "role": "resolved protocol carrying the rejected 63-bit training seeds",
-      "path": "executed/stage-a-runner-smoke-v6-20260903/run/protocol-resolved.json"
+      "path": "urn:pldr:unavailable:ea1a084eb00b422132a22f5f13747435672b0d4a72a937e412cb3e241f833785"
     },
     {
       "id": "failed-smoke-events",
       "status": "diagnostic",
       "role": "parent-chained initialization, launch, and failure event record",
-      "path": "executed/stage-a-runner-smoke-v6-20260903/run/events.jsonl"
+      "path": "urn:pldr:unavailable:3b6119f0d0dce1decb03658ac6ddcf7c5c3de34e2aee544f659bce5d78ec60f2"
     },
     {
       "id": "failed-smoke-attempt-0",
@@ -113,230 +113,230 @@
       "id": "final-smoke-root",
       "status": "diagnostic",
       "role": "root record for the final source-bound production-runner smoke",
-      "path": "executed/stage-a-runner-smoke-v9-20260904/run/run-root.json"
+      "path": "urn:pldr:unavailable:c47424a5e2129fc225105732c80d7569228324c0481964a18faa8e16f6e610e9"
     },
     {
       "id": "final-smoke-result",
       "status": "diagnostic",
       "role": "final production-runner smoke analysis",
-      "path": "executed/stage-a-runner-smoke-v9-20260904/run/analyses/analysis-0001/result.json"
+      "path": "urn:pldr:unavailable:6236d6610da5cbb02627d2e9df4fdebd512b13cfd2619eafeb51467c23627a52"
     },
     {
       "id": "final-smoke-manifest",
       "status": "diagnostic",
       "role": "final production-runner smoke root manifest",
-      "path": "executed/stage-a-runner-smoke-v9-20260904/run/manifests/manifest-0001.json"
+      "path": "urn:pldr:unavailable:775664e438a2a357aaa55fad1e7b2250967e8d39dabdca92dd027ce9a8e1bc5f"
     },
     {
       "id": "final-smoke-protocol",
       "status": "diagnostic",
       "role": "final production-runner smoke protocol",
-      "path": "executed/stage-a-runner-smoke-v9-20260904/inputs/protocol.json"
+      "path": "urn:pldr:unavailable:8227904ee1d5e85ef6f8ca357cd5529a9da2ce928e79a2eec3669f65d8ae76ad"
     },
     {
       "id": "final-smoke-qualification",
       "status": "diagnostic",
       "role": "final source-bound production-runner smoke qualification",
-      "path": "executed/stage-a-runner-smoke-v9-20260904/inputs/qualification.json"
+      "path": "urn:pldr:unavailable:02ace19ab0d214c6866ad1b0e87e88dbd6108a9842298d85934b092a9770cd4d"
     },
     {
       "id": "final-smoke-observer",
       "status": "diagnostic",
       "role": "final zero-safe observer analysis of the production-runner smoke",
-      "path": "executed/stage-a-runner-smoke-v9-20260904/observer/result.json"
+      "path": "urn:pldr:unavailable:898af058484492b6b0633d7d6da2db67ebd4ece19479884d5beebbdc3a03926c"
     },
     {
       "id": "final-smoke-stage",
       "status": "diagnostic",
       "role": "final three-device stage replay of the production-runner smoke",
-      "path": "executed/stage-a-runner-smoke-v9-20260904/stage/result.json"
+      "path": "urn:pldr:unavailable:202c4181a247542ede71e667087d39f960f5d463f520a90132d69640af2ef347"
     },
     {
       "id": "final-smoke-verification",
       "status": "diagnostic",
       "role": "sealed verification report for the final production-runner smoke",
-      "path": "executed/stage-a-runner-smoke-v9-20260904/verification.json"
+      "path": "urn:pldr:unavailable:f19219a0fef082dd18c7374af7a83c38b7a06b2836188198e5a0db081f424fd2"
     },
     {
       "id": "closure-v7-run-manifest",
       "status": "retained",
       "role": "retained predecessor manifest for the matched first-moment continuation",
-      "path": "executed/energy-closure-v7-20260903/run-manifest.json"
+      "path": "urn:pldr:unavailable:44f25c30cc3d42a8e97dcba208835f3c44f2bed7eeb2b43cf2d0e4242355b659"
     },
     {
       "id": "closure-v7-record",
       "status": "retained",
       "role": "retained predecessor analysis for the matched first-moment continuation",
-      "path": "executed/energy-closure-v7-20260903/result.json"
+      "path": "urn:pldr:unavailable:3c70a5e26790a02e6a4e8eda6aaff6288b08d99cee7bc91a0c4ab84c3c86f047"
     },
     {
       "id": "closure-v8-run-manifest",
       "status": "retained",
       "role": "retained source-remeasured closure execution manifest",
-      "path": "executed/energy-closure-v8-20260903/run-manifest.json"
+      "path": "urn:pldr:unavailable:56cc757bb5f49e57a0865a508e69db37da4ddf84a18526a9af2957758f0d1f7b"
     },
     {
       "id": "closure-v8-record",
       "status": "retained",
       "role": "retained source-remeasured closure analysis",
-      "path": "executed/energy-closure-v8-20260903/result.json"
+      "path": "urn:pldr:unavailable:63db1d4298a8065f7edf960a3cfd58032bd8380022fb95e5b18409bc2c270db4"
     },
     {
       "id": "closure-v8-relocation-record",
       "status": "retained",
       "role": "retained relocated-data-root reanalysis validation",
-      "path": "executed/energy-closure-v8-20260903/relocation-validation.json"
+      "path": "urn:pldr:unavailable:beadd75bfb5d05034e98526d8f66b1f9567340ac922e09e92df7d0f11d9d037e"
     },
     {
       "id": "excluded-disposition",
       "status": "current",
       "role": "source-bound excluded-run disposition",
-      "path": "executed/execution-disposition-v5-20260902/excluded-run.json"
+      "path": "urn:pldr:unavailable:8607658830479f0a21dd0c690baca6dbaeaa2a65c3fac1b91ca5bbd3fbb868c8"
     },
     {
       "id": "selected-qualification",
       "status": "current",
       "role": "qualification consumed by the evidence launch",
-      "path": "protocol-v3/qualification-v3-04.json"
+      "path": "urn:pldr:unavailable:4839477c6029829b1a3159e5dd4e152850ba1b2f3e054106058186a1aa8025cf"
     },
     {
       "id": "executed-protocol",
       "status": "current",
       "role": "byte-identical protocol archive",
-      "path": "protocol-v3/confirmation-protocol-v3-executed-166dc22c.json"
+      "path": "urn:pldr:unavailable:813fa1ade42858dde44af9bddbdd64ffc8bbab4e5bad8e65c004087b1b463ef1"
     },
     {
       "id": "retained-analysis",
       "status": "current",
       "role": "descriptive retained-trajectory reduction",
-      "path": "executed/retained-scale-flow-v3.json"
+      "path": "urn:pldr:unavailable:542996c21826779ce22e0b751d464c099c03610659aec48ddc52fe52bb9907ef"
     },
     {
       "id": "synthetic-analysis",
       "status": "current",
       "role": "synthetic algebra and law qualification",
-      "path": "executed/synthetic-rg-qualification.json"
+      "path": "urn:pldr:unavailable:f876d3a0940ca81aca9de6bb1be14c8a8fd652aeb50952894e2dcf59bd905aa0"
     },
     {
       "id": "selected-combined-energy",
       "status": "current",
       "role": "combined dense energy tensor",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/raw/combined-energies.npz"
+      "path": "urn:pldr:unavailable:92670344adc15db063eb830a0be560bd4df84d2dbbfd286b33b7aaef1ba63d1f"
     },
     {
       "id": "initial-analysis",
       "status": "retained",
       "role": "immutable initial analysis",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0001/result.json"
+      "path": "urn:pldr:unavailable:d09f91001c33199c7cc8e1003e4c2336c3d6887ffee59a5cb7fbb065f865ccbc"
     },
     {
       "id": "initial-root-manifest",
       "status": "retained",
       "role": "immutable initial root manifest",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/manifests/manifest-0001.json"
+      "path": "urn:pldr:unavailable:70b4c47bc1babf002dba085cd2c1eb57dc79685c20f818b0ed5ad09bb9f296df"
     },
     {
       "id": "observer-predecessor",
       "status": "retained",
       "role": "prior source-bound observer analysis",
-      "path": "executed/observer-regime-v5-20260902/result.json"
+      "path": "urn:pldr:unavailable:44fcdc7704788d32cb147896ed0bc44879b77befbee39974572594408a333c9d"
     },
     {
       "id": "stage-predecessor",
       "status": "retained",
       "role": "stage replay before rounded all-map extrema were renamed",
-      "path": "executed/stage-resolved-observer-v6-20260903/result.json"
+      "path": "urn:pldr:unavailable:b679ec77a9fe5da32440ac7a0f605310cf0ebe3f4fb9a1097ea26c4cd35b223e"
     },
     {
       "id": "stage-legacy-predecessor",
       "status": "retained",
       "role": "stage replay before exact represented-array energy classification",
-      "path": "executed/stage-resolved-observer-v5b-20260902/result.json"
+      "path": "urn:pldr:unavailable:f20ddc67ece11e35c133db3f41e43c862e0ad468690b23d15b7a4ec3da877ae1"
     },
     {
       "id": "disposition-predecessor",
       "status": "retained",
       "role": "excluded-run disposition predecessor",
-      "path": "executed/execution-disposition-v4-20260902/first-campaign.json"
+      "path": "urn:pldr:unavailable:3934a7ff0538103afbb613b319a6ebbaa4cd53d9626c543592f39200ef697e2a"
     },
     {
       "id": "precision-predecessor",
       "status": "retained",
       "role": "checkpoint precision diagnostic replaced by the stage replay",
-      "path": "executed/observer-precision-v4-20260902/result.json"
+      "path": "urn:pldr:unavailable:6efbc6786645b1c5cfb3a5c250903f22a43c78f4263b65db2c969b96a79dee1b"
     },
     {
       "id": "qualification-01",
       "status": "retained",
       "role": "passing qualification not consumed by a launch",
-      "path": "protocol-v3/qualification-v3.json"
+      "path": "urn:pldr:unavailable:b3dc6cec69dd789c95166ea8d53f6e713102aa8c0a9f726f40039e23a087f1e8"
     },
     {
       "id": "qualification-02",
       "status": "retained",
       "role": "passing qualification consumed by the excluded launch",
-      "path": "protocol-v3/qualification-v3-02.json"
+      "path": "urn:pldr:unavailable:0900704cb8012ccaa32df7f3b225427d3c6c58861754c19a00afa55a596b6198"
     },
     {
       "id": "qualification-03",
       "status": "unavailable-dependency",
       "role": "passing qualification whose exact protocol copy is unavailable",
-      "path": "protocol-v3/qualification-v3-03.json",
+      "path": "urn:pldr:unavailable:da6d08a2379dfda67c5bf268ce250e30f36d46e86e9f595b241831db72a08776",
       "unavailable_dependency_sha256": "93d54a04fff21e2ec7bb1ba1a0184a83e2900f2356fe365a99d7a429c3a65212"
     },
     {
       "id": "pilot-result",
       "status": "diagnostic",
       "role": "descriptive 4096-update pilot",
-      "path": "executed/pldr-refinedweb-byte-4096/confirmation-result.json"
+      "path": "urn:pldr:unavailable:7dac3d2a5c610ca253b1ef4cdfb65cb78dff1966abcf070e85a8e2ed9f972eb6"
     },
     {
       "id": "planning-record-0",
       "status": "diagnostic",
       "role": "descriptive 16384-update planning record",
-      "path": "exploratory/rebuttal-rev2-16384/row_rg_rebuttal_rev2_16384_d0.json"
+      "path": "urn:pldr:unavailable:35d50898f23c8c63cedcb0392debf54b7ce22fbb7db895885d19df73a2e7a515"
     },
     {
       "id": "planning-record-1",
       "status": "diagnostic",
       "role": "descriptive 16384-update planning record",
-      "path": "exploratory/rebuttal-rev2-16384/row_rg_rebuttal_rev2_16384_d1.json"
+      "path": "urn:pldr:unavailable:1983965bb26e90cb8f790cd42fb821ca68d0a6afc890fc6c2a673c4b829dae0c"
     },
     {
       "id": "closure-run-manifest",
       "status": "current",
       "role": "source-remeasured 13-branch closure execution manifest with complete successor-checkpoint inventory",
-      "path": "executed/energy-closure-v9-20260904/run-manifest.json"
+      "path": "urn:pldr:unavailable:2fc602d8e2a8440f66c146e77e250dfd632ea7fc6f0a7f0456e9443b34ae5be9"
     },
     {
       "id": "closure-record",
       "status": "current",
       "role": "source-remeasured closure, second-moment dose, and gauge-control analysis",
-      "path": "executed/energy-closure-v9-20260904/result.json"
+      "path": "urn:pldr:unavailable:897708964d90cf07291f435ec0e7fd3658b6def596db2dba2c0db14713b12eea"
     },
     {
       "id": "closure-relocation-record",
       "status": "current",
       "role": "relocated-data-root reanalysis including all successor checkpoints",
-      "path": "executed/energy-closure-v9-20260904/relocation-validation.json"
+      "path": "urn:pldr:unavailable:21e3512eb7fa570d048bd4e44429ce3f8b73a62515f1aacd1b13f36d84cff756"
     },
     {
       "id": "closure-checkpoint-inventory",
       "status": "current",
       "role": "sealed direct inventory of all 32 earlier closure successor checkpoints",
-      "path": "executed/energy-closure-v8-checkpoint-inventory-v9-20260904/inventory.json"
+      "path": "urn:pldr:unavailable:1b08b492e18fd3926a47c92669fed6a48ce949aa70a69879d5571077b13b1c38"
     },
     {
       "id": "closure-checkpoint-inventory-relocation",
       "status": "current",
       "role": "relocation and tamper validation for all 32 earlier closure successor checkpoints",
-      "path": "executed/energy-closure-v8-checkpoint-inventory-v9-20260904/relocation-validation.json"
+      "path": "urn:pldr:unavailable:d5fdfab9a4732dc78842989b5908df39a3ca17a1bf4c90d8781d092b3d0c4930"
     },
     {
       "id": "formal-build-boundary-record",
       "status": "current",
       "role": "fresh-build and stale-artifact rejection regression for the Lean correspondence boundary",
-      "path": "executed/energy-closure-v8-checkpoint-inventory-v9-20260904/formal-build-boundary.json"
+      "path": "urn:pldr:unavailable:7e5190b2e26df7b5d2f73963e74e9c8fadcfadfcf07b048b5809a21eda0f3e30"
     }
   ],
   "executed_inventory": [
@@ -432,7 +432,7 @@
       "sealed_chain_verification": true
     },
     {
-      "name": "retained-scale-flow-v3.json",
+      "name": "urn:pldr:unavailable:34f77f2233eeb405161a890ec063bbf5eb2d73c681503b27541d7e79520a1d44",
       "classification": "current-evidence",
       "role": "content-addressed retained-trajectory reduction",
       "representative_entry_ids": [
@@ -440,18 +440,18 @@
       ]
     },
     {
-      "name": "retained-scale-flow-v3.tex",
+      "name": "urn:pldr:unavailable:c847461cc968c2f90e10b024b0435d3bcdabe95c7d5da8bea64450f1912487ba",
       "classification": "diagnostic",
       "role": "derived rendering of the retained-trajectory reduction"
     },
     {
-      "name": "retained-scale-flow.json",
+      "name": "urn:pldr:unavailable:6b245769c582e4eba1d62cf6b1fe13cf47e320e0ec53547b3c1b215cfb89bff0",
       "classification": "superseded-artifact",
       "role": "earlier retained-trajectory reduction",
       "reason": "replaced by the content-addressed v3 reduction"
     },
     {
-      "name": "retained-scale-flow.tex",
+      "name": "urn:pldr:unavailable:cafac072a3ae7ccbfe3c8a5abb00ac043d5918de306800071400f5f10f4a8bc5",
       "classification": "superseded-artifact",
       "role": "earlier retained-trajectory rendering",
       "reason": "replaced by the v3 rendering"
@@ -520,7 +520,7 @@
       "sealed_chain_verification": true
     },
     {
-      "name": "synthetic-rg-qualification.json",
+      "name": "urn:pldr:unavailable:72b5f8fe9cb5e2de5539baa4377edd6f60b3fda062d250a638325b1161903beb",
       "classification": "current-evidence",
       "role": "synthetic algebra and fixed-law qualification",
       "representative_entry_ids": [
@@ -528,7 +528,7 @@
       ]
     },
     {
-      "name": "synthetic-rg-results.tex",
+      "name": "urn:pldr:unavailable:e125a1f8f503570f425c46c4d8fd818491c24819c167ccc999417b7f7efcb888",
       "classification": "diagnostic",
       "role": "derived rendering of synthetic qualification"
     },

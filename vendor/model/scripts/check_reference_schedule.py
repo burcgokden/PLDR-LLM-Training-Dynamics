@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Qualify the scalar drive against preserved public code and native CPU updates."""
+from companion_paths import required_input
 import argparse
 import ast
 import copy
@@ -44,9 +45,9 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--root',required=True);p.add_argument('--output',required=True)
     a=p.parse_args();root=Path(a.root);repo=Path(__file__).resolve().parents[1]
     source=root/'assets/PLDR-LLM-v51-SOC-110M-1'
-    reference=repo/'internal/reference-schedule/pldr_run_model_v510.py'
+    reference=Path(required_input('reference-schedule')) / 'pldr_run_model_v510.py'
     out=Path(a.output);out.mkdir(parents=True,exist_ok=False)
-    inputs=[reference,repo/'internal/reference-schedule/manifest.json',
+    inputs=[reference,Path(required_input('reference-schedule')) / 'manifest.json',
             source/'modeling_pldrllm.py',source/'configuration_pldrllm.py',root/'data/refinedweb-4608/tokens.npy']
     bind_run(out,inputs,vars(a));torch.set_num_threads(4)
     public=public_functions(reference);raw={};checks={}

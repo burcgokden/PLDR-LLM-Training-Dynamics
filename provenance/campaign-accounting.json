@@ -164,7 +164,7 @@
         "execute"
       ],
       "inspection": "Has plan-owned ledger, full recorded costs, reservation calculation and exclusive lock. Reservation is not a durable unresolved-attempt event before spawn; interruption behavior is not certified by the common contract.",
-      "path": "vendor/row/scripts/execute_observable_margin_plan.py",
+      "path": "urn:pldr:unavailable:fb6e198fc42cc5e6f5e01d5c3be6c0bdff75079872acae50c6e648e7670fa3dc",
       "sha256": "9e827142624a6d268c7eb35cdc438bb245a3fadef71502a112ee45855d74145a"
     },
     {

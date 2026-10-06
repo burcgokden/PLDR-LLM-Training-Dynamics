@@ -1,4 +1,4 @@
-"""Regression tests for the revision-46 orbitwise collapse kernels."""
+"""Regression tests for the orbitwise collapse kernels."""
 
 from __future__ import annotations
 

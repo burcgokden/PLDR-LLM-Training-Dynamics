@@ -17,8 +17,8 @@ BINDING_ROOT = ROOT.parents[1]
 BUNDLE = (
     BINDING_ROOT
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev49"
+    / "campaigns"
+    / "observable-cocycle"
     / "observable-full-state-cocycle-confirmation"
 )
 OUTPUT = ROOT / "docs" / "figures"

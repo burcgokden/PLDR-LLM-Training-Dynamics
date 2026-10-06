@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Paired physical blocking and finite optimizer responses at adapted endpoints."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import gc
 import json
@@ -19,7 +19,7 @@ from model_rg.physical_native import context_tokens, spin_tokens, prefix_batch, 
 from model_rg.lattice import dyadic_block, observables
 from model_rg.provenance import sha256, write_json
 
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 NAMES = ['scripts/physical_mechanisms.py', 'src/model_rg/physical_native.py',
          'src/model_rg/training.py', 'src/model_rg/native.py', 'src/model_rg/lattice.py',
          'src/model_rg/provenance.py']

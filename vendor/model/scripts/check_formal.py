@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Discover all production Lean modules and run an axiom gate plus mutations."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 import os
@@ -14,11 +14,11 @@ from model_rg.provenance import sha256, write_json
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--output',required=True)
-    ap.add_argument('--elan-bin',default=legacy_path('/pldr-tools/elan/bin'))
+    ap.add_argument('--elan-bin',default=configured_path('tools:elan/bin'))
     a=ap.parse_args();repo=Path(__file__).resolve().parents[1];out=Path(a.output)
     out.mkdir(parents=True,exist_ok=True)
     env=dict(os.environ,PATH=a.elan_bin+os.pathsep+os.environ['PATH'],
-             ELAN_HOME=legacy_path('/pldr-tools/elan'))
+             ELAN_HOME=configured_path('tools:elan'))
     modules=sorted(repo.glob('ModelRG/**/*.lean'))
     imports='\n'.join('import '+'.'.join(p.relative_to(repo).with_suffix('').parts) for p in modules)+'\n'
     # Discovery closes the hole left by an environment-only check of one import.

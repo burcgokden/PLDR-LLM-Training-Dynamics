@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Exact empirical endpoint profiles and an independent centered-sum check."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 from pathlib import Path
@@ -8,7 +8,7 @@ import numpy as np
 from model_rg.critical_resampling import replica_distances,resampled_variance,replica_counts,exact_replica_counts,weighted_inverse_cdf
 from model_rg.provenance import sha256,write_json
 from analyze_critical_joint import peak_draws
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 STUDY=ROOT/'critical-onepass-refinement-20260914'
 
 

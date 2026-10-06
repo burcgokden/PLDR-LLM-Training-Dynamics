@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Complete numerical evidence from retained finite-call and initialization runs."""
+from companion_paths import required_input, acquisition_identity
 import argparse
 import json
 from pathlib import Path
@@ -18,7 +19,7 @@ def stats(x):
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--root',required=True);ap.add_argument('--output',required=True)
     a=ap.parse_args();root=Path(a.root);out=Path(a.output);out.mkdir(parents=True,exist_ok=False)
-    executed=root/'executed';extra=root/'rebuttal-rev1-20260905/results'
+    executed=root/'executed';extra=root/required_input('analyze-supporting-input-1')
     inputs=[root/'analysis/main/results.json',root/'analysis/main/analysis-manifest.json',root/'data/refinedweb-4608/tokens.npy']
     for run in executed.iterdir():
         inputs += [p for p in run.iterdir() if p.suffix in ['.npz','.json']]

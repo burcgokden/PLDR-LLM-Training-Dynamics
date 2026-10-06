@@ -62,7 +62,7 @@ Validation output is written beneath `validation/` and `build/`.
 Follow the dataset card's [pinned HTTPS download recipe](https://huggingface.co/datasets/fromthesky/pldr-llm-training-dynamics-data#access)
 to obtain regular evidence files with Git LFS, then run `sha256sum -c SHA256SUMS`
 inside that checkout. The supported public dataset revision is
-`5b1f9a53ca8a8e4f3c208b3b7b2625b5dd0c2cfe` (about 52.4 MB compressed objects).
+`f03c292a227e58a03d145d478103f587d98a8c8a` (about 53.7 MB compressed objects).
 The reader itself needs only the Python standard library. Keep extraction and
 validation outputs outside the dataset root; pointer-only clones and Hub cache
 directories do not satisfy its strict inventory and integrity contract.
@@ -105,7 +105,7 @@ python3 scripts/run_source.py model scripts/run_cache_state_transfer.py --valida
 `--data-root PATH` on `run_source.py` sets `PLDR_DATA_ROOT`; family inputs then
 resolve beneath `FAMILY/research/`. `MODEL_RG_DATA_ROOT`, `PLDR_ROW_DATA_ROOT`
 and `PLDR_RG_DATA_ROOT` select family roots directly. `PLDR_REFINEDWEB_ROOT`
-selects a read-only corpus. The virtual names `/pldr-data/` and `/pldr-code/`
+selects a read-only corpus. The documented data and code roles
 are acquisition roles resolved by `companion_paths`, not machine mounts.
 Large arrays, weights, optimizer states and corpus tokens are external inputs.
 
@@ -134,3 +134,34 @@ This repository's existing paper/monograph citation retains its original scope.
 
 [RELEASE.md](RELEASE.md) documents the CPU release gate, immutable inputs,
 execution records, separate Lean/GPU scopes and preparation of reviewed tags.
+
+
+## Public evidence references
+
+The dataset index provides the supported descriptive record identities.
+Normalized metadata uses `pldr-data:` identities for indexed public evidence,
+`pldr-code:` identities for shipped source files, and explicitly unavailable
+identities for raw inputs that are not distributed. Consult the dataset
+`public-references.json` catalogue for their meaning. These identifiers are
+not local filesystem paths. Original acquisition hashes are retained in
+`normalization.json`; derived records are not new acquisition authorizations.
+
+Historical source and data releases retain their original byte identities.
+Current normalized exports are documentation and analysis evidence. Reconstructing
+an original acquisition requires its exact raw inputs and the matching historical
+software release. Unsupported historical aliases are not silently resolved.
+
+Runtime code and data locations are selected through the documented root
+environment variables. Workflows needing additional raw inputs use
+`PLDR_NAMED_INPUTS`, the path to a caller-supplied JSON file mapping the requested semantic
+input names to existing absolute paths. Missing inputs fail explicitly.
+
+Archived publication-verification utilities additionally request `generated-evidence`
+and `publication-source` explicitly when needed. These are external inputs, not
+files promised by this source checkout. The potential-study verifier writes its
+execution record to the required `--execution-output` destination.
+
+Relative output names inside campaign specifications describe files generated
+by the public experiment producers within a caller-selected run directory.
+They are part of the experiment interface, not links to files included in this
+checkout or claims that the corresponding raw run has been distributed.

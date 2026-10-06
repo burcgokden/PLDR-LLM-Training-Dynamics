@@ -1,4 +1,4 @@
-"""Executable twins of the corrected-theory cores (Revision 9).
+"""Executable twins of the corrected-theory cores.
 
 Each test mirrors a printed statement of the paper and, where one
 exists, a machine-checked Lean declaration, so the Python

@@ -1,3 +1,4 @@
+from companion_paths import acquisition_identity
 import json
 from pathlib import Path
 import subprocess
@@ -34,7 +35,7 @@ def test_replication_design_uses_native_four_source_observer():
     design = campaign_design()
     validate_design(design)
     assert design["campaign_id"] == CAMPAIGN_ID
-    assert design["release_id"] == "rev52"
+    assert design["release_id"] == acquisition_identity('direct-work-acquisition-release')
     assert design["registered_maps_per_unit"] == 96
     assert design["observer_policy"]["native_causal_eligibility"]
     assert design["observer_policy"]["sources"][-1] == "implementation-defect"

@@ -3,9 +3,9 @@
   "run_id": "replace-with-unique-four-trajectory-run-id",
   "devices": [0, 1],
   "producer_timeout_seconds": 14400,
-  "protocol_path": "confirmation-protocol-v3.json",
+  "protocol_path": "urn:pldr:unavailable:c39378b5d2954958afea940acad04e212283531e46c1e1fe54bd90dca2daadea",
   "qualification": {
-    "path": "/pldr-data/rg/protocol-v3/qualification-v3-04.json",
+    "path": "urn:pldr:unavailable:6ef724ecb994f1c614d3e924ce0760946aa4042c590557cc641eacb589647203",
     "file_sha256": "daaf69245b6374d861c6fdfc9d5a5072913fef9e592940aed0246c71e56ed250",
     "record_sha256": "f3e4ae60037f9bc490b1aa8b1bf5190cacd7006ec83109dd05cb4f7e9138b416"
   },
@@ -41,7 +41,7 @@
   ],
   "producer_command": [
     "/usr/bin/python3",
-    "/pldr-code/rg/scripts/pldr_energy_producer_v3.py",
+    "pldr-code:vendor/rg/scripts/pldr_energy_producer_v3.py",
     "--logical-device",
     "cuda:0",
     "--physical-device",
@@ -63,9 +63,9 @@
     "--code-commit",
     "{code_commit}",
     "--reference-experiments",
-    "/pldr-code/row/experiments",
+    "pldr-code:vendor/row/experiments",
     "--dataset-shard",
-    "/pldr-assets/refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c/falcon-refinedweb-train-00000-of-05518.arrow",
+    "urn:pldr:unavailable:656c0a819700f00c877e828946700ff00537b860a3f230518435bba247223263",
     "--steps",
     "196608",
     "--layers",

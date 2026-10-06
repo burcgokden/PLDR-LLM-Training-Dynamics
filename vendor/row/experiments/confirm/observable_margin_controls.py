@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compact live controls for rev37 observable-margin confirmation."""
+"""Compact live controls for observable-margin confirmation."""
 
 from __future__ import annotations
 

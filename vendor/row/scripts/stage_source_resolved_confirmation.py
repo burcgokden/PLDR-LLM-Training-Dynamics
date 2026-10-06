@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage the immutable, producer-first rev45 source-resolved campaign."""
+"""Stage the immutable, producer-first source-resolved campaign."""
 
 from __future__ import annotations
 
@@ -29,11 +29,11 @@ from confirm.source_resolved_specs import (  # noqa: E402
 
 
 DEFAULT_PARENT = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev43"
+    ROOT.parent / "experiment-data" / "campaigns" / "source-restoring"
     / "source-restoring-collapse-confirmation"
 )
 DEFAULT_OUTPUT = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev45"
+    ROOT.parent / "experiment-data" / "campaigns" / "source-resolved"
     / "source-resolved-row-map-confirmation"
 )
 DEFAULT_TOKENS = (
@@ -866,7 +866,7 @@ def build(
     )
     (output / "protocol" / "launch_plan.json").write_bytes(canonical(plan))
     (output / "README.md").write_text(
-        "# Rev45 source-resolved row-map confirmation\n\n"
+        "# Source-resolved row-map confirmation\n\n"
         "This immutable bundle stages real checkpoint producers for Q0 through "
         "Q6. Run `source/scripts/execute_source_resolved_plan.py --plan "
         "protocol/launch_plan.json --dry-run` from any directory to inspect "
@@ -881,7 +881,7 @@ def verify(output: Path) -> None:
     output = output.resolve()
     manifest = output / "MANIFEST.sha256"
     if not manifest.is_file():
-        raise FileNotFoundError("rev45 staged manifest is missing")
+        raise FileNotFoundError("Source-resolved staged manifest is missing")
     expected = set()
     for line in manifest.read_text(encoding="ascii").splitlines():
         digest, relative = line.split("  ", 1)

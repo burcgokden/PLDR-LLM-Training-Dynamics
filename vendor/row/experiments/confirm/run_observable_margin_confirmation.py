@@ -30,7 +30,7 @@ ANALYZER = ROOT / "experiments" / "analysis" / "analyze_observable_margin.py"
 LIVE = ROOT / "experiments" / "confirm" / "observable_margin_live.py"
 CONTROLS = ROOT / "experiments" / "confirm" / "observable_margin_controls.py"
 DEFAULT_MANUSCRIPT_EXPORT = (
-    ROOT.parent / "paper-outputs" / "paper-outputs-rev37")
+    ROOT / "build" / "exports" / "observable-margin-export")
 sys.path.insert(0, str(HERE))
 
 from gate_shape_evidence import (  # noqa: E402

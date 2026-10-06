@@ -3,12 +3,12 @@
 This producer-side specification is deliberately separate from the independent
 terminal reconstruction in finetuning_verification_design.py.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import hashlib
 import json
 from pathlib import Path
 
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 
 
 def require(condition, message):

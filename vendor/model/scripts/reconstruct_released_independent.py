@@ -4,13 +4,13 @@ Recomputes every new spin score, exact law, generation moment/slope/contrast,
 spatial decomposition, and compact language score. Intervals are audited
 separately; these are point-estimate and algebra checks, not fresh experiments.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import hashlib
 import json
 from pathlib import Path
 import numpy as np
 
-STUDY = Path(legacy_path('/pldr-data/model/released-adaptation-20260913'))
+STUDY = Path(configured_path('data:model/released-adaptation-20260913'))
 counts = {}
 errors = {}
 bindings = {}

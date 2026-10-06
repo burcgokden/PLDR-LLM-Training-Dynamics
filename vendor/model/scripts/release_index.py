@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build, inspect or execute the bounded reconstruction routes of the release index."""
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import importlib.metadata
 import json
@@ -14,7 +14,7 @@ from model_rg.provenance import sha256,write_json
 from numerical_validation import load_json_strict
 
 REPO=Path(__file__).resolve().parents[1]
-DATA=Path(legacy_path('/pldr-data/model'))
+DATA=Path(configured_path('data:model'))
 
 
 def generate(output):

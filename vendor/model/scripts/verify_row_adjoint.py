@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Independently check the matched sampler and full row-adjoint arrays."""
+from companion_paths import required_input
 import argparse
 import json
 from pathlib import Path
@@ -11,7 +12,7 @@ def verify_adjoint(study,bound,include_source_control=False):
     study=Path(study);repo=Path(__file__).resolve().parents[1];spec_cases=[]
     for name in ['row-adjoint']+(['row-adjoint-source-control'] if include_source_control else []):
         protocol=study/'protocols'/(name+'.json');spec=json.loads(protocol.read_text());ledger=json.loads((study/(name+'.json')).read_text())
-        bound(repo/'internal/dynamics-protocols'/(name+'.json'),sha256(protocol));bound(protocol,ledger['protocol_sha256'])
+        bound(Path(required_input('dynamics-protocols'))/(name+'.json'),sha256(protocol));bound(protocol,ledger['protocol_sha256'])
         if ledger['status']!='complete' or len(ledger['records'])!=24 or any(r['returncode'] for r in ledger['records']):raise AssertionError('Incomplete adjoint ledger')
         if [r['name'] for r in ledger['records']]!=[c['name'] for c in spec['cases']]:raise AssertionError('Adjoint execution identities changed')
         spec_cases.extend(spec['cases'])

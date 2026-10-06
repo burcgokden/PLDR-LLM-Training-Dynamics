@@ -46,7 +46,8 @@ published revision. It cannot be combined with `--require-clean`.
 3. Run the gate against the final bytes and inspect the execution record and skips.
 4. The maintainer decides the commits. If dataset metadata is released, commit it
    first, then put its full commit, manifest-file and payload hashes in each
-   consuming `release-gate.json`; retain the unchanged scientific index binding.
+   consuming `release-gate.json`; retain the scientific index binding for metadata-only edits. A reviewed naming
+   migration updates that binding only after the exact old/new scientific comparison passes.
    Refresh source manifests again after this configuration edit.
 5. After committing the reviewed source, rerun the gate with `--require-clean`.
    This produces a record bound to the final commit; a pre-commit candidate pass
@@ -57,7 +58,7 @@ published revision. It cannot be combined with `--require-clean`.
    commit or release automatically.
 
 The workflow `.github/workflows/release-validation.yml` runs on pull requests,
-main-branch pushes, version tags and manual dispatch. It installs the declared
+main and cleanup-development-branch pushes, version tags and manual dispatch. It installs the declared
 dependencies, checks their consistency and the torchtune import before downloading
 immutable public inputs, requires a clean source checkout, and uploads the
 execution record even when a check fails. CI never
@@ -74,3 +75,25 @@ fresh Lean build, a GPU result, or reproduction of the training campaigns.
 
 Historical validation records retain their original counts and context. New
 execution artifacts establish only the named checks on the recorded payload.
+
+
+
+## Public evidence references
+
+The dataset index provides the supported descriptive record identities.
+Normalized metadata uses `pldr-data:` identities for indexed public evidence,
+`pldr-code:` identities for shipped source files, and explicitly unavailable
+identities for raw inputs that are not distributed. Consult the dataset
+`public-references.json` catalogue for their meaning. These identifiers are
+not local filesystem paths. Original acquisition hashes are retained in
+`normalization.json`; derived records are not new acquisition authorizations.
+
+Historical source and data releases retain their original byte identities.
+Current normalized exports are documentation and analysis evidence. Reconstructing
+an original acquisition requires its exact raw inputs and the matching historical
+software release. Unsupported historical aliases are not silently resolved.
+
+Runtime code and data locations are selected through the documented root
+environment variables. Workflows needing additional raw inputs use
+`PLDR_NAMED_INPUTS`, a caller-supplied JSON object mapping the requested semantic
+input names to existing absolute paths. Missing inputs fail explicitly.

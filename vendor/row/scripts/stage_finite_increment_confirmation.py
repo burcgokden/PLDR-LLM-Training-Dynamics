@@ -45,7 +45,7 @@ from train_run import (  # noqa: E402
 
 
 DEFAULT_OUTPUT = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev42"
+    ROOT.parent / "experiment-data" / "campaigns" / "finite-increment"
     / "finite-increment-collapse-confirmation"
 )
 DEFAULT_TOKENS = (

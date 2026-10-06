@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Queue bounded mechanistic follow-ups after both initial GPU workers finish."""
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 from pathlib import Path
 import json,os,subprocess,sys,time
 from concurrent.futures import ThreadPoolExecutor
-ROOT=Path(legacy_path('/pldr-data/model/potential-avalanche-20260913'))
+ROOT=Path(configured_path('data:model/potential-avalanche-20260913'))
 REPO=Path(__file__).resolve().parents[1]
 
 def worker(device,cases):

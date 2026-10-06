@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Intervene on external gradients and optimizer memory at fixed native states."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,copy,json,time
 from pathlib import Path
 import numpy as np
@@ -10,7 +10,7 @@ from model_rg.schedules import optimizer_and_scheduler
 from model_rg.provenance import sha256,write_json,environment
 from train_potential_avalanches import observe,FIELDS
 from model_rg.deductive_activity import DeductiveActivity,TENSOR_NAMES,STAT_NAMES
-ROOT=Path(legacy_path('/pldr-data/model'));STUDY=ROOT/'potential-avalanche-20260913'
+ROOT=Path(configured_path('data:model'));STUDY=ROOT/'potential-avalanche-20260913'
 REPO=Path(__file__).resolve().parents[1]
 
 def main():

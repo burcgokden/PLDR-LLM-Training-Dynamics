@@ -229,7 +229,7 @@ def test_external_paths_derive_only_from_explicit_binding_root(
     paths = default_paths(binding_root)
     assert all(path.is_relative_to(binding_root) for path in paths.values())
     assert paths["output"].name == "finite-increment-observable-balance"
-    assert paths["input_bundle"].parent.name == "rev47"
+    assert paths["input_bundle"].parent.name == "mixed-collapse"
     assert paths["tokens"].parent.name == "refinedweb-538m-prefix-locked"
 
 

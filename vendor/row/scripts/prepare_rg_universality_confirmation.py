@@ -25,7 +25,7 @@ SOURCE = (
     ROOT / "experiments" / "protocols" / "rg_universality_confirmation"
 )
 DEFAULT_OUTPUT = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev31"
+    ROOT.parent / "experiment-data" / "campaigns" / "rg-universality"
     / "rg-universality-program"
 )
 
@@ -74,8 +74,8 @@ architecture-seed trajectory artifacts are present.
 WRAPPER = """#!/bin/sh
 set -eu
 
-repo_root=/pldr-work/row-code
-data_root=/pldr-data/row/rev31/rg-universality-program
+repo_root="${PLDR_ROW_CODE_ROOT:?Set PLDR_ROW_CODE_ROOT to the public vendor/row directory}"
+data_root="${PLDR_ROW_RUN_ROOT:?Set PLDR_ROW_RUN_ROOT to the campaign directory}"
 launch_dir=__(pwd)
 command=__{1-}
 

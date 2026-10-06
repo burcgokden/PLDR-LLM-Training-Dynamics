@@ -4,12 +4,12 @@
 Raised floors below are postprocessing of an unchanged native trajectory, not
 retrained architectures or evidence about counterfactual training outcomes.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import json
 from pathlib import Path
 import numpy as np
 from model_rg.provenance import write_json,sha256
-ROOT=Path(legacy_path('/pldr-data/model/potential-avalanche-20260913'))
+ROOT=Path(configured_path('data:model/potential-avalanche-20260913'))
 
 def main():
     records=[]

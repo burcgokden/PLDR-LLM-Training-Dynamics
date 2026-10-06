@@ -4,7 +4,7 @@ Acquisition snapshots are immutable. The one retained v1 protocol is read-only;
 new acquisitions use v2 implementation metadata with the same scientific design.
 This module checks identities and geometry, never predictive target success.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 from acquisition_paths import logical_root, resolve_recorded
 import hashlib
 import json
@@ -16,7 +16,7 @@ import numpy as np
 from model_rg.provenance import sha256
 
 REPO = Path(__file__).resolve().parents[1]
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 PARENT = ROOT/'critical-onepass-refinement-20260914'
 PROBES = ROOT/'controlled-study-20260905/data/short'
 CORPUS = ROOT/'data/refinedweb-onepass-524288'

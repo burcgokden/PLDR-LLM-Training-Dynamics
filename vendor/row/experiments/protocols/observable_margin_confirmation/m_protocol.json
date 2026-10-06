@@ -1,8 +1,8 @@
 {
   "analyzer": "experiments/analysis/analyze_observable_margin.py",
-  "campaign_id": "observable-margin-confirmation-rev37",
+  "campaign_id": "observable-margin-confirmation",
   "evidence": "compact-npz-no-raw-parameter-nodes",
-  "executor": "scripts/execute_observable_margin_plan.py",
+  "executor": "urn:pldr:unavailable:4760e88189d8163c866d60ff6ec5ba5e8f56f8a29b8806edb4c2341410733491",
   "native_producer": "experiments/confirm/observable_margin_live.py",
   "planner": "experiments/confirm/run_observable_margin_confirmation.py",
   "robustness_scientific_gate": null,

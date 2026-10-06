@@ -5,12 +5,12 @@ The broad package policy is deliberate: every src/model_rg Python file belongs
 to the primary inventory. A package change requires actual requalification.
 """
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,json,os,subprocess,sys,time
 from pathlib import Path
 from model_rg.provenance import sha256,write_json
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 DEFAULT=ROOT/'execution-current-20260913'
 
 

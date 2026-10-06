@@ -7,7 +7,7 @@ Incidental analysis/build scripts are not execution dependencies; each route
 keeps the inventory policy enforced by its native qualification contract.
 """
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,json,os,subprocess,sys
 from pathlib import Path
 REPO=Path(__file__).resolve().parents[1]
@@ -69,7 +69,7 @@ def verify(routes_file):
             study=arg('--study')
             if v['protocol_sha256']!=sha256(study/'protocol.json') or v['profile_sha256']!=sha256(study/'profile/reference1/manifest.json'):raise ValueError('Changed factorial admission baseline')
             for name in NAMES:
-                checked=preflight(study,name,False,REPO,Path(legacy_path('/pldr-data/model')))
+                checked=preflight(study,name,False,REPO,Path(configured_path('data:model')))
                 bound.update(checked[-1]);del checked
             qualifications.append(str(study/'profile/reference1/manifest.json'))
         else:

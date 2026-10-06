@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Paired native state pulses on unconsumed single-pass suffixes."""
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import copy
 from concurrent.futures import ThreadPoolExecutor
@@ -19,7 +19,7 @@ from model_rg.criticality import generator_parameter, optimizer_for, parameter_d
 from model_rg.provenance import sha256,write_json
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 NATIVE=ROOT/'assets/PLDR-LLM-v51-SOC-110M-1'
 CORPUS=ROOT/'data/refinedweb-onepass-524288'
 SOURCES=['scripts/run_critical_pulses.py','src/model_rg/training.py','src/model_rg/native.py',

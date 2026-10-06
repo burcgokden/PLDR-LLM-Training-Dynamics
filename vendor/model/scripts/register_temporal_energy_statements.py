@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Register selected finite temporal-energy types without altering any existing theorem type."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import hashlib
 import json
 import os
@@ -20,7 +20,7 @@ for name,coverage in [
  ('normalized_lower_bound','Normalized lower bound with explicit positive energy.')]:
  full='ModelRG.TemporalEnergy.'+name
  if full not in known:r['exports'].append(dict(name=full,module='ModelRG/TemporalEnergy.lean',paper_labels=['prop:temporal-energy'],coverage=coverage))
-env=dict(os.environ,ELAN_HOME=legacy_path('/pldr-tools/elan'),PATH=legacy_path('/pldr-tools/elan/bin')+os.pathsep+os.environ['PATH'])
+env=dict(os.environ,ELAN_HOME=configured_path('tools:elan'),PATH=configured_path('tools:elan/bin')+os.pathsep+os.environ['PATH'])
 with tempfile.TemporaryDirectory(prefix='population-types-',dir='/tmp') as tmp:
  p=Path(tmp)/'Export.lean';p.write_text((ROOT/'scripts/formal/ExportStatements.lean').read_text()+'\n'+'\n'.join('#export_modelrg '+x['name'] for x in r['exports'])+'\n')
  result=subprocess.run(['lake','env','lean',str(p)],cwd=ROOT,env=env,capture_output=True,text=True,check=True)

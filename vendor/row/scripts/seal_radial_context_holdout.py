@@ -2,6 +2,7 @@
 """Seal or verify the fresh-context radial-predictor holdout."""
 
 from __future__ import annotations
+from companion_paths import acquisition_identity
 
 import argparse
 import hashlib
@@ -17,7 +18,7 @@ from bundle_hygiene import (
 )
 
 CAMPAIGN_ID = "pldr-radial-context-holdout-v1"
-RELEASE_ID = "rev53"
+RELEASE_ID = acquisition_identity('radial-context-acquisition-release')
 SEAL_SCHEMA = "pldr-radial-context-holdout-seal-v1"
 RESOURCE_SCHEMA = "pldr-radial-context-holdout-resource-v1"
 ROOT_SEAL_FILES = (

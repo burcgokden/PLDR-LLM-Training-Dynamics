@@ -2,7 +2,7 @@
 """Stage the prospective causal row-map confirmation and dependency graph."""
 
 from __future__ import annotations
-from companion_paths import legacy_path, data_root, resolve_row_arguments
+from companion_paths import configured_path, data_root, resolve_row_arguments
 
 import argparse
 import hashlib
@@ -46,7 +46,7 @@ from confirm.confirmation_artifacts import (  # noqa: E402
 
 
 DEFAULT_OUTPUT = Path(
-    legacy_path('/pldr-data/row/rev40/causal-row-map-confirmation')
+    configured_path('data:row/causal-row-map/causal-row-map-confirmation')
 )
 DEFAULT_TOKENS = data_root('row') / 'inputs/refinedweb_tokens.npy'
 DEFAULT_TOKENIZER = ROOT / "experiments" / "data" / "tokenizer.model"

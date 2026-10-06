@@ -229,13 +229,13 @@
     "State-specific operator calibration is tested at all four ages; initial-cache transport is retained as a separate policy."
   ],
   "input_sha256": {
-    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/configuration_pldrllm.py": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e",
-    "/pldr-data/model/assets/PLDR-LLM-v51-SOC-110M-1/modeling_pldrllm.py": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0",
-    "/pldr-data/model/controlled-study-20260905/data/short/records.json": "b45abc493309b3fb80d891d255de857bc5fff7f61c226192b39398d98cce4a60",
-    "/pldr-data/model/controlled-study-20260905/data/short/tokens.npy": "2e7e2c751e90b7c8d3aab4af86e9d9f5e554b908a1942ea8d30d5f54c766a472",
-    "/pldr-data/model/data/refinedweb-onepass-524288/manifest.json": "ec5445c6f08d183e5453330259b75b78cb86af3696e5e6b09c9275b3d636a9d2",
-    "/pldr-data/model/data/refinedweb-onepass-524288/records.json": "eaac0616a2025727b0b73fc7f8b7d9211f531b59d3a17c062bbc9bd04c8170ed",
-    "/pldr-data/model/data/refinedweb-onepass-524288/tokens.npy": "63eee605320cd77f8e4d1cc34ecf5ee02131f94727a6083ea7150f12894f37ef"
+    "urn:pldr:unavailable:8d917ef9aa8ff1b9c239e533686646aea56981952ae76e4ec41c8bf6b3bd164e": "8dd802d7bf00e024446f15eaea03abfb2e4834065858a28a898a201b2019cc2e",
+    "urn:pldr:unavailable:d5b1b5c7a3c7fd8542cb524e69758cce7e615acbd46b3c3d35a556a0a67a290d": "e5cbaa6c5433364ee15051e644925b0f74c3968159d663ce1aab4fb985ac26f0",
+    "pldr-data:model/research/controlled-study-20260905/data/short/records.json": "b45abc493309b3fb80d891d255de857bc5fff7f61c226192b39398d98cce4a60",
+    "urn:pldr:unavailable:53bf3edf7f4b3cd48689d77ba5648e448c09e2841096f97216edc6ff236073b8": "2e7e2c751e90b7c8d3aab4af86e9d9f5e554b908a1942ea8d30d5f54c766a472",
+    "pldr-data:model/research/data/refinedweb-onepass-524288/manifest.json": "ec5445c6f08d183e5453330259b75b78cb86af3696e5e6b09c9275b3d636a9d2",
+    "pldr-data:model/research/data/refinedweb-onepass-524288/records.json": "eaac0616a2025727b0b73fc7f8b7d9211f531b59d3a17c062bbc9bd04c8170ed",
+    "urn:pldr:unavailable:b9ed8f49f32d9786845fe67b6758a74138c959475df0d8e9e095742b05dd455d": "63eee605320cd77f8e4d1cc34ecf5ee02131f94727a6083ea7150f12894f37ef"
   },
   "interpretation": "Three new wide initialization identities conditional on fixed corpus/order and shared generator; controls, ages and contexts are paired, not extra independent training replicas. No critical exponent or stationarity assumption.",
   "jobs": [

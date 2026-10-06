@@ -7,7 +7,7 @@
     "python3",
     "scripts/execute_observable_cocycle_plan.py",
     "--bundle",
-    "/pldr-data/row/rev49/observable-full-state-cocycle-confirmation",
+    "pldr-data:row/research/observable-full-state-cocycle-confirmation/",
     "--all"
   ],
   "heldout_signed_responses_opened_before_authorization": false,

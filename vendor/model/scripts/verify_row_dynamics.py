@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Independent array-level checks for metric transport and full-graph row reductions."""
+from companion_paths import required_input
 import argparse
 import json
 from pathlib import Path
@@ -25,7 +26,7 @@ def verify_rows(study, bound):
     maximum_covariance_error=0.;maximum_kl_error=0.;exact_logit_cases=0;maximum_implementation_kl=0.
     for protocol_name in ['row-transport','row-transport-transfer','row-projection']:
         path=study/'protocols'/(protocol_name+'.json');spec=json.loads(path.read_text());ledger=json.loads((study/(protocol_name+'.json')).read_text())
-        bound(repo/'internal/dynamics-protocols'/(protocol_name+'.json'),sha256(path))
+        bound(Path(required_input('dynamics-protocols'))/(protocol_name+'.json'),sha256(path))
         if ledger['status']!='complete' or len(ledger['records'])!=len(spec['cases']) or any(r['returncode'] for r in ledger['records']):raise AssertionError('Row diagnostic inventory incomplete')
         if ledger.get('protocol_sha256'):bound(path,ledger['protocol_sha256'])
         for case in spec['cases']:

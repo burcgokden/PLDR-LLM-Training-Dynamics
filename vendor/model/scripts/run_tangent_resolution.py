@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Refine unresolved local windows using a recorded outcome-dependent rule."""
+from companion_paths import required_input
 import argparse
 import json
 from pathlib import Path
@@ -30,7 +31,7 @@ def main():
         if any(max(a,b)<=spec['relative_threshold'] for a,b in zip(scores,scores[1:])):continue
         cases.append(dict(**case,output_name=case['name']+'-resolution'))
     selected=dict(schema='tangent-resolution-selection-v1',rule_sha256=sha256(rule),input_results=inputs,cases=cases)
-    for path in [study/'protocols/tangent-resolution-selected.json',repo/'internal/dynamics-protocols/tangent-resolution-selected.json']:
+    for path in [study/'protocols/tangent-resolution-selected.json',Path(required_input('dynamics-protocols')) / 'tangent-resolution-selected.json']:
         if path.exists():raise FileExistsError(path)
         write_json(path,selected)
     records=[]

@@ -7,7 +7,7 @@ Producer/dependency faults use a real separate source-tree copy. Scientific
 prepare paths run normally; launch/worker smoke fixtures stop before an update.
 """
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import copy
 import json
@@ -64,7 +64,7 @@ def probe(args):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--qualification-root');p.add_argument('--output')
     p.add_argument('--repo',default=str(Path(__file__).resolve().parents[1]))
-    p.add_argument('--root',default=legacy_path('/pldr-data/model'))
+    p.add_argument('--root',default=configured_path('data:model'))
     p.add_argument('--probe',action='store_true');p.add_argument('--stage');p.add_argument('--action')
     p.add_argument('--study');p.add_argument('--fault');p.add_argument('--smoke',action='store_true')
     a=p.parse_args()

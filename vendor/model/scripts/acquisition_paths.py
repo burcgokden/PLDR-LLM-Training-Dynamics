@@ -9,7 +9,9 @@ import json
 import os
 from pathlib import Path
 
-HISTORICAL_ROOT = Path('/pldr-data/model')
+from companion_paths import data_root
+
+HISTORICAL_ROOT = Path(os.environ.get('PLDR_ACQUISITION_ROOT', data_root('model')))
 
 
 def sha(path):

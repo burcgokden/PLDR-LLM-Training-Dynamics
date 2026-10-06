@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Bind immutable scientific evidence, current design qualification and projection checks."""
+from companion_paths import required_input
 import argparse
 import json
 from pathlib import Path
@@ -30,7 +31,7 @@ def verify(retained,experiment,qualification,admission,output):
     if actual!=inventory:raise ValueError('Retained publication inventory differs')
     old=read(retained/'evidence-index.json')
     if old['status']!='passed' or old['schema']!='onepass-finetuning-complete-evidence-v1':raise ValueError('Wrong retained publication')
-    generated=REPO/'manuscript/generated';preserved={}
+    generated=Path(required_input('generated-evidence'));preserved={}
     for p in (retained/'arxiv-source/generated').rglob('*'):
         if p.is_file() and p.name not in ['qualification-current.json','qualification-current.tex']:
             name=str(p.relative_to(retained/'arxiv-source/generated'))
@@ -79,9 +80,9 @@ def verify(retained,experiment,qualification,admission,output):
     check(analysis['source'],analysis['source_sha256'])
     for p,digest in raw['input_sha256'].items():check(p,digest)
     from verify_projection_compact import verify as compact_verify
-    compact=compact_verify(REPO/'manuscript')
+    compact=compact_verify(Path(required_input('publication-source')))
     from verify_finetuning_compact import verify as source_verify
-    source_compact=source_verify(REPO/'manuscript')
+    source_compact=source_verify(Path(required_input('publication-source')))
     rendered=read(generated/'projection-render-manifest.json')
     check(REPO/'scripts/render_projection_transport.py',rendered['renderer_sha256'])
     for p,digest in rendered['generated'].items():check(generated/p,digest)

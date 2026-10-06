@@ -3,7 +3,7 @@
 Scientific schema names remain stable for CPU reduction. The explicit execution
 contract distinguishes new acquisitions from immutable read-only observations.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 from pathlib import Path
 import numpy as np
 from model_rg.provenance import sha256, write_json
@@ -11,7 +11,7 @@ from cache_state_contract import read, same, keys, hash_value, sources
 from context_reservations import validate_receipt, document_hashes
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 PARENT=ROOT/'critical-onepass-refinement-20260914'
 PROBES=ROOT/'controlled-study-20260905/data/short'
 CORPUS=ROOT/'data/refinedweb-onepass-524288'

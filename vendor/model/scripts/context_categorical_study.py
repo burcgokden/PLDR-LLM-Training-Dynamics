@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Frozen predictive resolutions on disjoint proper-prefix RefinedWeb contexts."""
 from companion_paths import child_pythonpath, dispatch_worker, validate_worker_cli
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import json
@@ -21,7 +21,7 @@ from context_reservations import reserve
 from context_execution_contract import attach, admit as shared_admit
 
 REPO = Path(__file__).resolve().parents[1]
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 NATIVE = ROOT/'assets/PLDR-LLM-v51-SOC-110M-1'
 PARENT = ROOT/'critical-onepass-refinement-20260914'
 DICTIONARY = ROOT/'categorical-visibility-20260915'

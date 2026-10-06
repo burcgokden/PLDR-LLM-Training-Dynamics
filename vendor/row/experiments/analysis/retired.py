@@ -1,4 +1,4 @@
-"""RETIRED Revision 10 forms, kept ONLY as counterexample
+"""RETIRED independent-stress forms, kept ONLY as counterexample
 regressions.  Nothing in the live analysis, protocol generation, or
 power simulation imports this module; the tests do, to pin the
 witnesses that retired each form:
@@ -29,7 +29,7 @@ witnesses that retired each form:
   interval from the event clock instead,
   theory.reset_interval_licensed).
 
-Revision 11 forms, retired because the LINEAR BURST NORMAL FORM is
+Linear-burst forms, retired because the LINEAR BURST NORMAL FORM is
 not the recurrence induced by the factor-derived event (the
 event-clock witness: at the gated planning state b = 0.1005,
 a = g = kappa = 1, J = 0.69965, c = 0.3, eta = 0.05,
@@ -79,7 +79,7 @@ from theory import drive_law, source_velocity
 
 
 def loading_step(x, eta, d0, kappa, u, v, p_i, lam_wd, h_euler=0.0):
-    """RETIRED Revision 10 loading law (double-counted decay): the
+    """RETIRED independent-stress loading law (double-counted decay): the
     factor velocity v carries the decay shares AND the reversion
     2 p lam_wd x is subtracted again.  Kept as the decay-ledger
     necessity witness."""
@@ -119,7 +119,7 @@ def reset_interval_strict_firstcrossing(z0, eps0, h, a, c, z_min,
 
 def closed_model_step(state, params, c_t, eta_t, rng=None,
                       z_seed=0.0, validate=True):
-    """RETIRED Revision 10 closed map on the factored state WITH an
+    """RETIRED independent-stress closed map on the factored state WITH an
     independent stress ledger.  Kept verbatim as the target of the
     constraint-violation, period-two, and convergence regressions.
 
@@ -179,7 +179,7 @@ def closed_model_step(state, params, c_t, eta_t, rng=None,
     return new, topple
 
 
-# ------------------------------------------- Revision 11 normal form
+# ------------------------------------------- Retired linear-burst normal form
 
 
 def burst_step(z, eps, h, a, b):

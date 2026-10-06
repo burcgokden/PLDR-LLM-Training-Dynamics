@@ -1,7 +1,7 @@
 """Explicit path configuration for the bundled scientific source collections.
 
-Historical paths are acquisition identifiers. Runtime use is redirected to
-this checkout and to a caller-supplied data root, never to a source project.
+Runtime roles resolve to this checkout and caller-supplied data roots.
+Unavailable acquisition inputs require explicit configuration.
 """
 from pathlib import Path
 import os
@@ -19,24 +19,19 @@ def data_root(family):
     return base.expanduser().resolve() / family / 'research'
 
 
-def legacy_path(value):
-    """Resolve one historical runtime path without changing evidence bytes."""
+def configured_path(value):
+    """Resolve a documented code, data, asset or tool role in this checkout."""
     maps = {
-        '/pldr-data/row': data_root('row'),
-        '/pldr-data/rg': data_root('rg'),
-        '/pldr-data/model': data_root('model'),
-        '/pldr-code/row': CODE_ROOT / 'vendor/row',
-        '/pldr-code/rg': CODE_ROOT / 'vendor/rg',
-        '/pldr-code/model': CODE_ROOT / 'vendor/model',
-        '/pldr-code/row': CODE_ROOT / 'vendor/row',
-        '/pldr-code': CODE_ROOT / 'vendor',
-        '/pldr-assets/refinedweb': Path(os.environ.get('PLDR_REFINEDWEB_ROOT', CODE_ROOT / 'build/refinedweb')),
-        '/pldr-tools/elan': Path(os.environ.get('ELAN_HOME', Path.home() / '.elan')),
+        'data:row': data_root('row'), 'data:rg': data_root('rg'), 'data:model': data_root('model'),
+        'code:row': CODE_ROOT / 'vendor/row', 'code:rg': CODE_ROOT / 'vendor/rg',
+        'code:model': CODE_ROOT / 'vendor/model',
+        'assets:refinedweb': Path(os.environ.get('PLDR_REFINEDWEB_ROOT', CODE_ROOT / 'build/refinedweb')),
+        'tools:elan': Path(os.environ.get('ELAN_HOME', Path.home() / '.elan')),
     }
-    for old, new in maps.items():
-        if value == old or value.startswith(old + '/'):
-            return str(new) + value[len(old):]
-    raise ValueError('Unmapped source-workspace path: ' + value)
+    for name, path in maps.items():
+        if value == name or value.startswith(name + '/'):
+            return str(path) + value[len(name):]
+    raise ValueError('Unknown configured input role: ' + value)
 
 
 def child_environment(family, **overrides):
@@ -124,3 +119,30 @@ def resolve_row_arguments(args, parser, *, defaults, identities=None):
     if args.output == CODE_ROOT or args.output.is_relative_to(CODE_ROOT / 'vendor'):
         parser.error('Output must be outside the bundled source collections')
     return True
+
+
+def acquisition_identity(name):
+    """Resolve the descriptive current acquisition identity."""
+    import json
+    catalogue = json.loads((CODE_ROOT / 'provenance/acquisition-identities.json').read_text())
+    if catalogue.get('schema') != 'pldr-acquisition-identities-v1':
+        raise ValueError('Unsupported acquisition identity catalogue')
+    return catalogue['identities'][name]
+
+
+def required_input(name):
+    """Require an explicit existing input instead of guessing an internal path."""
+    import json
+    location = os.environ.get('PLDR_NAMED_INPUTS')
+    if not location:
+        raise FileNotFoundError('This workflow requires external acquisition input ' + name +
+                                '; supply its location through PLDR_NAMED_INPUTS (a JSON object).')
+    mapping = json.loads(Path(location).read_text())
+    if not isinstance(mapping, dict) or any(not isinstance(v, str) for v in mapping.values()):
+        raise ValueError('Named inputs must be a JSON object of path strings')
+    if name not in mapping:
+        raise FileNotFoundError('Missing named acquisition input: ' + name)
+    path = Path(mapping[name]).expanduser()
+    if not path.is_absolute() or not path.exists():
+        raise ValueError('Named input must be an existing absolute path: ' + name)
+    return str(path.resolve())

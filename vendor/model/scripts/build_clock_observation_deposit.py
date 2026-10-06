@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Versioned, CPU-reconstructible observation deposit without copying large payloads."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 import os
@@ -13,7 +13,7 @@ from model_rg.provenance import sha256,write_json
 from matched_clock_coverage import read,validate_certificate
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def build(clock,panel,records,output):

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Wait for the declared final analyses, then run the full evidence gate."""
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import hashlib
 import json
 import os
@@ -11,8 +11,8 @@ import sys
 import time
 
 
-REPO = Path(legacy_path('/pldr-code/model'))
-ROOT = Path(legacy_path('/pldr-data/model'))
+REPO = Path(configured_path('code:model'))
+ROOT = Path(configured_path('data:model'))
 STUDY = ROOT / 'criticality-dynamics-20260906'
 ANALYSES = [
     'pilot', 'replication', 'long', 'controls', 'row-transport-summary',

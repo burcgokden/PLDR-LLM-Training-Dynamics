@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Bind completed native evidence, current proofs and the publication sources."""
+from companion_paths import required_input
 import argparse
 import hashlib
 import json
@@ -39,7 +40,7 @@ def verify(retained,study,output):
     for p in (retained/'arxiv-source/generated').rglob('*'):
         if p.is_file():
             n=p.relative_to(retained/'arxiv-source/generated').as_posix()
-            preserved[n]=check(REPO/'manuscript/generated'/n,sha(p))
+            preserved[n]=check(Path(required_input('generated-evidence'))/n,sha(p))
     native=read(study/'verification.json');analysis=read(study/'analysis.json');spec=read(study/'protocol.json')
     require(native['status']=='passed' and native['stage']=='assessment','Unpassed native assessment')
     require((native['native_updates'],native['arithmetic_updates'],native['replay_updates'],native['raw_archives'])==(288,288,32,76),'Incomplete native inventory')
@@ -53,11 +54,11 @@ def verify(retained,study,output):
     from analyze_optimizer_transport import analyze
     require(analyze(study)==analysis,'Stored analysis differs from complete raw reduction')
     from verify_optimizer_compact import verify as compact
-    compact_result=compact(REPO/'manuscript')
-    rendered=read(REPO/'manuscript/generated/optimizer-transport-render-manifest.json')
+    compact_result=compact(Path(required_input('publication-source')))
+    rendered=read(Path(required_input('generated-evidence')) / 'optimizer-transport-render-manifest.json')
     require(rendered['renderer_sha256']==sha(REPO/'scripts/render_optimizer_transport.py'),'Renderer changed')
-    for n,h in rendered['generated'].items():check(REPO/'manuscript/generated'/n,h)
-    counts=read(REPO/'manuscript/generated/qualification-current.json')
+    for n,h in rendered['generated'].items():check(Path(required_input('generated-evidence'))/n,h)
+    counts=read(Path(required_input('generated-evidence')) / 'qualification-current.json')
     for name,recorded in counts['records'].items():
         data=read(recorded['path']);check(recorded['path'],recorded['sha256'])
         require(data['status']=='passed','Current qualification incomplete')
@@ -71,7 +72,7 @@ def verify(retained,study,output):
     for row in admission['checks']:
         require((row['returncode']==0)==row['expected_pass'],'Admission expectation failed')
         check(REPO/'docs/optimizer-transport-admission'/(row['name']+'.log'),row['log_sha256'])
-    ledger=read(REPO/'manuscript/generated/execution-ledger.json')
+    ledger=read(Path(required_input('generated-evidence')) / 'execution-ledger.json')
     require(sum(r['updates'] for r in ledger['rows'] if r['role']=='native_scientific')==2799008,'Scientific ledger does not reconcile')
     require(sum(r['updates'] for r in ledger['rows'] if r['role']=='arithmetic_control')==864,'Arithmetic-control ledger does not reconcile')
     sources={}

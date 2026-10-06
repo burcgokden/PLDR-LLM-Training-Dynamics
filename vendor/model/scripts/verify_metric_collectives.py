@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Check common-row covariance by pair differences and native-array reconstruction."""
+from companion_paths import required_input
 import argparse
 import json
 from pathlib import Path
@@ -11,7 +12,7 @@ from model_rg.provenance import sha256, write_json
 def verify_metric_collectives(study,folder,bound):
     study=Path(study);folder=Path(folder);repo=Path(__file__).resolve().parents[1]
     protocol=study/'protocols/metric-collectives.json';spec=json.loads(protocol.read_text())
-    bound(repo/'internal/dynamics-protocols/metric-collectives.json',sha256(protocol))
+    bound(Path(required_input('dynamics-protocols')) / 'metric-collectives.json',sha256(protocol))
     bound(study/'protocols/row-gradient-projection.json',spec['source_protocol_sha256'])
     meta=json.loads((folder/'manifest.json').read_text());result=json.loads((folder/'results.json').read_text());binding=json.loads((folder/'binding.json').read_text())
     if meta['status']!='complete':raise AssertionError('Incomplete metric collective analysis')

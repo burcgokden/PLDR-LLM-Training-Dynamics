@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Frozen, single-pass physical-corpus fine-tuning of native PLDR models."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from datetime import datetime, timezone
 import gc
@@ -21,7 +21,7 @@ from model_rg.physical_native import context_tokens, spin_tokens, prefix_batch, 
 from model_rg.lattice import summarize
 from model_rg.provenance import sha256, write_json
 
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 from physical_design import (sources, stage_design, OPTIMIZER, SCHEDULE, runtime,
     assets, validate_spec, admit, schedule_factor)
 

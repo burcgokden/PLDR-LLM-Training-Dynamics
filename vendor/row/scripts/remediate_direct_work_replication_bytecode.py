@@ -246,7 +246,7 @@ def main() -> None:
         arguments.incident_root.resolve(strict=False)
         if arguments.incident_root is not None
         else binding_root
-        / "experiment-data/manuscript-revisions/rev52/incidents"
+        / "experiment-data/campaigns/direct-work-evidence/incidents"
         / INCIDENT_ID
     )
     if not incident_root.is_relative_to(binding_root):

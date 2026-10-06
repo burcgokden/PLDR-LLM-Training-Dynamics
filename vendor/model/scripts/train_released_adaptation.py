@@ -3,7 +3,7 @@
 Selection uses validation only. Test evaluation is a separate executable.
 Every epoch and repeated example identity is retained in the frozen draws.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,gc,json,math,sys,time
 from pathlib import Path
 import numpy as np
@@ -14,7 +14,7 @@ from model_rg.native import NativeModel
 from model_rg.physical_native import selected_forward,prefix_batch,context_tokens,spin_tokens
 from model_rg.provenance import sha256,write_json
 from qualify_released_base import physical
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 TASKS=['technical','narrative','mixture','general','physical']
 
 def sources():

@@ -6,7 +6,7 @@
     "python3",
     "scripts/execute_observable_balance_plan.py",
     "--bundle",
-    "/pldr-data/row/rev50/finite-increment-observable-balance",
+    "pldr-data:row/research/finite-increment-observable-balance/",
     "--all"
   ],
   "gate_control_qualification_sha256": "cccf5e53a68207abc4774d2e3132868c48e814de4cd13435e998a19931582e95",

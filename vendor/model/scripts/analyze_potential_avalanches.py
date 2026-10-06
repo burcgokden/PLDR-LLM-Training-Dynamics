@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Reconstruct finite potential activity, threshold excursions, and matched nulls."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 from pathlib import Path
@@ -9,7 +9,7 @@ from scipy.stats import spearmanr
 from model_rg.provenance import sha256,write_json
 from model_rg.potential_avalanches import (excursions,complete_events,pareto_fit,tail_diagnostics,
                                            surrogate_diagnostics,event_summary)
-ROOT=Path(legacy_path('/pldr-data/model/potential-avalanche-20260913'))
+ROOT=Path(configured_path('data:model/potential-avalanche-20260913'))
 REPO=Path(__file__).resolve().parents[1]
 PHASES={'whole':(0,2048),'warmup':(0,256),'early':(256,768),
         'middle':(768,1280),'late':(1280,2048),'postwarm':(256,2048)}

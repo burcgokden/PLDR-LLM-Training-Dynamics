@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Construct outcome-independent lexical strata of the unused RefinedWeb resource."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from datetime import datetime, timezone
 import hashlib
@@ -29,7 +29,7 @@ NARRATIVE = ('i me my mine we our us she he her him his mother father friend fri
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--root', default=legacy_path('/pldr-data/model'))
+    ap.add_argument('--root', default=configured_path('data:model'))
     ap.add_argument('--study', required=True)
     args = ap.parse_args()
     root = Path(args.root).resolve(); study = Path(args.study).resolve()

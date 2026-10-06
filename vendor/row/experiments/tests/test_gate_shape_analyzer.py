@@ -39,7 +39,7 @@ def _request(tmp_path, protocol, mutate=False):
         mutated["row_output"][0, 0] += 0.25
         write_npz_atomic(q1, **mutated)
     request = seal_request(
-        "Q", "rev35-test", tmp_path,
+        "Q", "gate-shape-test", tmp_path,
         [
             "fixture=fixture.npz",
             "qualification_cuda0=q0.npz",
@@ -100,7 +100,7 @@ def test_complete_checkpoint_accepts_signed_gate_shape_registry():
         raise AssertionError("unsorted gate-shape anchors were accepted")
 
 
-def test_rev35_decisions_are_not_producer_or_placeholder_verdicts():
+def test_decisions_are_not_producer_or_placeholder_verdicts():
     root = Path(__file__).resolve().parents[2]
     analyzer = (
         root / "experiments/analysis/analyze_gate_shape_confirmation.py"

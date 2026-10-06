@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Verify the executed criticality evidence graph and independent numerical identities."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 import os
@@ -37,8 +37,8 @@ def main():
         if not check['expectation_met']:raise AssertionError('Formal gate failed')
     current_formal=Path(args.output).with_suffix('').with_name(Path(args.output).stem+'-formal')
     current_formal.mkdir(parents=True,exist_ok=False)
-    env=dict(os.environ,ELAN_HOME=legacy_path('/pldr-tools/elan'),
-             PATH=legacy_path('/pldr-tools/elan/bin')+os.pathsep+os.environ['PATH'])
+    env=dict(os.environ,ELAN_HOME=configured_path('tools:elan'),
+             PATH=configured_path('tools:elan/bin')+os.pathsep+os.environ['PATH'])
     for label,command in [('build',['lake','build']),('gate',['lake','env','lean','scripts/formal/Gate.lean'])]:
         with (current_formal/(label+'.log')).open('w') as log:
             subprocess.run(command,cwd=repo,env=env,stdout=log,stderr=subprocess.STDOUT,check=True)

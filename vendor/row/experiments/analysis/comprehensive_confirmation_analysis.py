@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent evidence-recomputing analyzer for the rev34 program."""
+"""Independent evidence-recomputing analyzer for the comprehensive confirmation program."""
 
 from __future__ import annotations
 

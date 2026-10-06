@@ -1,4 +1,4 @@
-"""Frozen design for the rev37 observable-margin confirmation.
+"""Frozen design for the observable-margin confirmation.
 
 This module contains data, statistical, arithmetic, and resource constants
 only.  Generators serialize the values without consulting experiment
@@ -10,7 +10,7 @@ from __future__ import annotations
 
 
 SCHEMA_VERSION = "pldr-observable-margin-protocol-v1"
-CAMPAIGN_ID = "observable-margin-confirmation-rev37"
+CAMPAIGN_ID = "observable-margin-confirmation"
 STATUS = "WAITING_FOR_FRESH_CHECKPOINTS"
 
 ARCHITECTURE = {

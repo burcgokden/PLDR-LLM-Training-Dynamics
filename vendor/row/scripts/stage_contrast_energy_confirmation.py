@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Stage the prospective Rev41 contrast-energy confirmation campaign."""
+"""Stage the prospective contrast-energy contrast-energy confirmation campaign."""
 
 from __future__ import annotations
-from companion_paths import legacy_path, data_root, resolve_row_arguments
+from companion_paths import configured_path, data_root, resolve_row_arguments
 
 import argparse
 import json
@@ -44,7 +44,7 @@ from confirm.contrast_energy_specs import (  # noqa: E402
 
 
 DEFAULT_OUTPUT = Path(
-    legacy_path('/pldr-data/row/rev41/contrast-energy-cocycle-confirmation')
+    configured_path('data:row/contrast-energy/contrast-energy-cocycle-confirmation')
 )
 DEFAULT_TOKENS = data_root('row') / 'inputs/refinedweb_tokens.npy'
 DEFAULT_TOKENIZER = ROOT / "experiments" / "data" / "tokenizer.model"

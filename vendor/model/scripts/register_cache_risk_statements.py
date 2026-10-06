@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Admit the three cache-risk extension types while preserving every retained type."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import hashlib
 import json
 import os
@@ -30,8 +30,8 @@ new = [
   'Inductive finite geometric-sum bound for a real error sequence with nonnegative stability and zero initial error. No coupling, native stability estimate or little-o theorem is formalized.')]
 known = {x['name'] for x in r['exports']}
 items = r['exports']+[dict(name=n,module=m,paper_labels=l,coverage=c) for n,m,l,c in new if n not in known]
-env = dict(os.environ, ELAN_HOME=legacy_path('/pldr-tools/elan'),
-           PATH=legacy_path('/pldr-tools/elan/bin')+os.pathsep+os.environ['PATH'])
+env = dict(os.environ, ELAN_HOME=configured_path('tools:elan'),
+           PATH=configured_path('tools:elan/bin')+os.pathsep+os.environ['PATH'])
 with tempfile.TemporaryDirectory(prefix='cache-risk-types-', dir='/tmp') as tmp:
     p = Path(tmp)/'Exports.lean'
     p.write_text((ROOT/'scripts/formal/ExportStatements.lean').read_text()+'\n'+

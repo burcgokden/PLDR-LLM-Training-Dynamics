@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run the fixed avalanche assay on two GPU workers, one native job per GPU."""
 from companion_paths import child_pythonpath, dispatch_worker, validate_worker_cli
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import json
 import os
 from pathlib import Path
@@ -9,7 +9,7 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from model_rg.provenance import write_json
-ROOT=Path(legacy_path('/pldr-data/model/potential-avalanche-20260913'))
+ROOT=Path(configured_path('data:model/potential-avalanche-20260913'))
 REPO=Path(__file__).resolve().parents[1]
 
 def worker(device,jobs):

@@ -2,7 +2,7 @@
 """Relocate and independently replay a staged predictive-closure record."""
 
 from __future__ import annotations
-from companion_paths import legacy_path
+from companion_paths import configured_path
 
 import argparse
 from datetime import datetime, timezone
@@ -33,7 +33,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-root", required=True)
     parser.add_argument("--run-path", required=True)
-    parser.add_argument("--refinedweb-root", default=legacy_path('/pldr-assets/refinedweb'))
+    parser.add_argument("--refinedweb-root", default=configured_path('assets:refinedweb'))
     parser.add_argument("--output", required=True)
     arguments = parser.parse_args()
     data_root = Path(arguments.data_root).resolve()

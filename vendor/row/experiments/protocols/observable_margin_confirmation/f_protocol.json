@@ -1,8 +1,8 @@
 {
   "analyzer": "experiments/analysis/analyze_observable_margin.py",
-  "campaign_id": "observable-margin-confirmation-rev37",
+  "campaign_id": "observable-margin-confirmation",
   "evidence": "compact-npz-no-raw-parameter-nodes",
-  "executor": "scripts/execute_observable_margin_plan.py",
+  "executor": "urn:pldr:unavailable:4760e88189d8163c866d60ff6ec5ba5e8f56f8a29b8806edb4c2341410733491",
   "final_release_provenance": {
     "canonical_command": [
       "make",
@@ -41,7 +41,7 @@
         "target_aggregate_sha256",
         "error"
       ],
-      "revision": "rev37",
+      "revision": "observable-margin",
       "rule": "Require exactly 18 regular files and the 17-entry nonself MANIFEST, reject missing, extra, symbolic-link, and nonregular nodes, and require the staged export seal to equal the live manifest byte for byte.",
       "strict_file_count": 18
     },

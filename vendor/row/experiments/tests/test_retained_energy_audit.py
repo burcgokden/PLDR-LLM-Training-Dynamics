@@ -1,3 +1,4 @@
+from companion_paths import acquisition_identity
 import json
 from pathlib import Path
 import sys
@@ -39,7 +40,7 @@ def test_retained_audit_reports_exact_scope_and_missing_arrays():
     dense = report["dense_scalar_energy_archive"]
     endpoint = report["successive_physical_map_archive"]
     assert report["schema_version"] == "pldr-retained-energy-audit-v1"
-    assert report["release_id"] == "rev55"
+    assert report["release_id"] == acquisition_identity('observer-energy-acquisition-release')
     assert report["analysis_role"] == "cpu-only-retained-record-audit"
     assert dense["captured_update_edges"] == 1056
     assert dense["map_increments"] == 304128

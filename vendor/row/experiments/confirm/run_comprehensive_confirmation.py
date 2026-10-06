@@ -106,7 +106,7 @@ def training_commands(arguments):
     commands = []
     for index, (seed, device) in enumerate(zip(
             ARCHITECTURE["trajectory_seeds"], devices)):
-        name = f"rev34-seed-{seed}"
+        name = f"comprehensive-confirmation-seed-{seed}"
         commands.append({
             "role": "primary" if index == 0 else "matched_replication",
             "run_id": name,
@@ -115,7 +115,7 @@ def training_commands(arguments):
                 tokens=arguments.tokens, tokenizer=arguments.tokenizer,
                 registry=arguments.registry, output_root=arguments.output_root),
         })
-    replay_name = f"rev34-seed-{ARCHITECTURE['trajectory_seeds'][0]}-replay"
+    replay_name = f"comprehensive-confirmation-seed-{ARCHITECTURE['trajectory_seeds'][0]}-replay"
     commands.append({
         "role": "same_device_from_scratch_replay",
         "run_id": replay_name,
@@ -246,7 +246,7 @@ def intervention_commands(arguments):
     commands = []
     for role, multiplier in zip(("low_rate", "high_rate"), multipliers):
         label = format(multiplier, ".6g").replace(".", "p")
-        name = f"rev34-{role}-s{source['step']}-x{label}"
+        name = f"comprehensive-confirmation-{role}-s{source['step']}-x{label}"
         branch_root = Path(arguments.output_root).resolve() / name
         checkpoint_steps = list(range(
             int(source["step"]) + 1, int(source["step"]) + 17))

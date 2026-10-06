@@ -1,0 +1,11 @@
+{
+  "identities": {
+    "direct-work-acquisition-release": "direct-work-replication",
+    "observable-balance-acquisition-release": "observable-balance",
+    "observable-margin-manuscript-identity": "observable-margin",
+    "observer-energy-acquisition-release": "observer-energy",
+    "radial-context-acquisition-release": "radial-context-holdout"
+  },
+  "schema": "pldr-acquisition-identities-v1",
+  "scope": "Descriptive identities used by the current scientific tools. Original acquisition records and their digests remain identified in repository history; normalized exports do not constitute new acquisition authorizations."
+}

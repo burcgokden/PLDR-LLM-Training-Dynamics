@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Refresh positive raw reconstructions under the maintained finite-value guards."""
+from companion_paths import required_input, acquisition_identity
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import json
@@ -13,7 +14,7 @@ import time
 from model_rg.provenance import sha256,write_json
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def run(output):
@@ -21,13 +22,13 @@ def run(output):
     jobs=[]
     for family in ['coarse','refinement']:
         root=ROOT/f'critical-onepass-{family}-20260914'
-        jobs.append((family+'-scalar',['verify_critical_onepass.py','--study',str(root),'--analysis',str(root/'analysis.json'),'--source-root',str(REPO/'internal/revision27/retained-sources'/family),'--observations-only']))
+        jobs.append((family+'-scalar',['verify_critical_onepass.py','--study',str(root),'--analysis',str(root/'analysis.json'),'--source-root',str(REPO/required_input('check-categorical-release-inputs-input-1')/family),'--observations-only']))
         collective=ROOT/f'critical-collective-{family}-20260914'
         jobs.append((family+'-collective',['verify_critical_collectives.py','--study',str(collective),'--analysis',str(ROOT/'singlepass-uncertainty-stable-20260915'/family/'collective-analysis.json'),'--observations-only']))
     jobs.append(('categorical',['verify_categorical_visibility.py','--study',str(ROOT/'categorical-visibility-20260915')]))
     jobs.append(('metric',['verify_metric_studies.py','--metric-root',str(ROOT/'finite-metric-20260914'),
         '--matched-analysis',str(ROOT/'matched-onepass-20260914/analysis.json'),
-        '--matched-refinement',str(ROOT/'matched-onepass-20260914/refinement.json'),'--source-root',str(REPO/'internal/revision27/retained-sources/metric')]))
+        '--matched-refinement',str(ROOT/'matched-onepass-20260914/refinement.json'),'--source-root',str(REPO/required_input('check-categorical-release-inputs-input-2'))]))
     def execute(item):
         label,args=item;command=[sys.executable,str(REPO/'scripts'/args[0]),*args[1:],'--output',str(output/(label+'.json'))]
         started=time.monotonic()

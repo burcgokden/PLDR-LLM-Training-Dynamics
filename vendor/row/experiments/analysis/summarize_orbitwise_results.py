@@ -28,8 +28,8 @@ from confirm.resource_executor import write_json_atomic  # noqa: E402
 DEFAULT_BUNDLE = (
     ROOT.parent
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev46"
+    / "campaigns"
+    / "orbitwise"
     / "orbitwise-row-map-confirmation"
 )
 DEFAULT_OUTPUT = DEFAULT_BUNDLE / "reports" / "manuscript-summary.json"

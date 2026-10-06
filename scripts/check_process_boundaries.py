@@ -13,7 +13,7 @@ def main():
         base=Path(tmp);code=base/'nested/code';outside=base/'unrelated';outside.mkdir()
         shutil.copytree(ROOT,code,ignore=shutil.ignore_patterns('.git','.lake','build','dist','__pycache__','.pytest_cache','monograph.pdf'))
         guard=base/'guard';guard.mkdir()
-        blocked=[str(ROOT),'/pldr-data','/pldr-assets/refinedweb']
+        blocked=[str(ROOT), str(ROOT/'build/evidence'), str(ROOT/'build/refinedweb')]
         (guard/'sitecustomize.py').write_text('import os,sys\nB='+repr(blocked)+'\n'
           'def audit(event,args):\n'
           ' if event in {"open","os.listdir","os.scandir","os.chdir"} and args and isinstance(args[0],(str,bytes,os.PathLike)):\n'

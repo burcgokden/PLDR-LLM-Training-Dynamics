@@ -46,12 +46,12 @@ def default_paths(binding_root: Path) -> dict[str, Path]:
     return {
         "input_bundle": (
             binding_root
-            / "experiment-data/manuscript-revisions/rev47"
+            / "experiment-data/campaigns/mixed-collapse"
             / "mixed-row-map-collapse-confirmation"
         ),
         "output": (
             binding_root
-            / "experiment-data/manuscript-revisions/rev48"
+            / "experiment-data/campaigns/layer-cocycle"
             / "layer-resolved-cocycle-confirmation"
         ),
         "tokens": (

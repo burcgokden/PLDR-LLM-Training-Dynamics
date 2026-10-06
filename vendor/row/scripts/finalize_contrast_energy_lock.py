@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Freeze the Rev41 construction policy after complete source coverage."""
+"""Freeze the contrast-energy construction policy after complete source coverage."""
 
 from __future__ import annotations
 

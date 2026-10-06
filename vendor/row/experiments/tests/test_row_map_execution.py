@@ -1,4 +1,4 @@
-"""Execution-graph tests for the rev36 row-map confirmation campaign."""
+"""Execution-graph tests for the row-map confirmation campaign."""
 
 from __future__ import annotations
 

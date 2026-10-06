@@ -1,12 +1,13 @@
 """Frozen design for the finite-increment observable-balance study."""
 
 from __future__ import annotations
+from companion_paths import acquisition_identity
 
 from typing import Any
 
 
 CAMPAIGN_ID = "pldr-finite-increment-observable-balance-v1"
-RELEASE_ID = "rev50"
+RELEASE_ID = acquisition_identity('observable-balance-acquisition-release')
 DESIGN_SCHEMA = "pldr-observable-balance-design-v1"
 QUALIFICATION_SCHEMA = "pldr-observable-balance-qualification-v1"
 CONSTRUCTION_SCHEMA = "pldr-observable-balance-construction-v1"

@@ -1,11 +1,12 @@
 """Frozen design for the temporal-context direct-work replication."""
 
 from __future__ import annotations
+from companion_paths import acquisition_identity
 
 from typing import Any
 
 
-RELEASE_ID = "rev52"
+RELEASE_ID = acquisition_identity('direct-work-acquisition-release')
 CAMPAIGN_ID = "pldr-direct-work-temporal-context-replication-v2"
 DESIGN_SCHEMA = "pldr-direct-work-replication-design-v1"
 RECORD_SCHEMA = "pldr-direct-work-replication-record-v1"

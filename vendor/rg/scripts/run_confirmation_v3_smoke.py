@@ -7,7 +7,7 @@ evidence, not evidence about long-time PLDR dynamics.
 """
 
 from __future__ import annotations
-from companion_paths import legacy_path
+from companion_paths import configured_path
 
 import argparse
 from datetime import datetime, timezone
@@ -187,16 +187,16 @@ def main() -> None:
     parser.add_argument(
         "--reference-root",
         default=(
-            legacy_path('/pldr-code/row/experiments')
+            configured_path('code:row/experiments')
         ),
     )
     parser.add_argument(
         "--dataset-shard",
         default=(
-            legacy_path('/pldr-assets/refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c/falcon-refinedweb-train-00000-of-05518.arrow')
+            configured_path('assets:refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c/falcon-refinedweb-train-00000-of-05518.arrow')
         ),
     )
-    parser.add_argument("--refinedweb-root", default=legacy_path('/pldr-assets/refinedweb'))
+    parser.add_argument("--refinedweb-root", default=configured_path('assets:refinedweb'))
     arguments = parser.parse_args()
     archive_root = Path(arguments.archive_root).resolve()
     if archive_root.exists():

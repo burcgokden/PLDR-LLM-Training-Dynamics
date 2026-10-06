@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Compare all deductive tensors, late single-pass branches, and passive relaxation."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,json
 from pathlib import Path
 import numpy as np
 from scipy.stats import spearmanr
 from model_rg.provenance import sha256,write_json
 from model_rg.potential_avalanches import excursions,complete_events,pareto_fit,tail_diagnostics,surrogate_diagnostics
-ROOT=Path(legacy_path('/pldr-data/model/potential-avalanche-20260913'))
+ROOT=Path(configured_path('data:model/potential-avalanche-20260913'))
 REPO=Path(__file__).resolve().parents[1]
 
 def corr(x,y):

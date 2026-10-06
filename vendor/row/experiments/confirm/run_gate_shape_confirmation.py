@@ -154,7 +154,7 @@ def training_commands(arguments):
         ("same_device_replay", 3401, devices[0]),
     )
     for role, seed, device in specifications:
-        name = f"rev35-gate-shape-{role}-s{seed}"
+        name = f"gate-shape-gate-shape-{role}-s{seed}"
         outdir = root / role
         rows.append({
             "role": role,
@@ -182,7 +182,7 @@ def _continuation_command(source, source_path, arm, device, tokens, tokenizer,
     start = int(source["step"])
     nodes = list(range(start + 1, start + 1 + ARCHITECTURE["intervention_updates"]))
     multiplier = {"rate_0.75": 0.75, "rate_1.25": 1.25}.get(arm, 1.0)
-    name = f"rev35-{arm}-s{start}"
+    name = f"gate-shape-{arm}-s{start}"
     values = [
         "python3", "experiments/train_run.py",
         "--name", name,

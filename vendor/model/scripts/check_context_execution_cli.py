@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Actual preparation and ordinary/optimized CLI regression matrix; no native work."""
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import copy
 import json
@@ -14,7 +14,7 @@ import sys
 from model_rg.provenance import sha256,write_json
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 ROUTES=[('context_categorical_study.py','context-risk-128-20260915'),
         ('run_operator_cache_study.py','operator-cache-confirmation-20260916'),
         ('run_cache_risk_study.py','cache-risk-transfer-20260916')]

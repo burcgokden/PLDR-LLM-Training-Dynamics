@@ -1,4 +1,4 @@
-"""Regression tests for the rev36 row-map confirmation analyzers."""
+"""Regression tests for the row-map confirmation analyzers."""
 
 from __future__ import annotations
 

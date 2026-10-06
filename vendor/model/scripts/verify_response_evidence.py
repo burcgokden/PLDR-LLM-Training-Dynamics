@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Compose preserved publication evidence, fresh raw reductions and current checks."""
+from companion_paths import required_input
 import argparse,json
 from pathlib import Path
 from model_rg.provenance import sha256,write_json
@@ -28,7 +29,7 @@ def main():
     preserved={}
     for path in (retained/'arxiv-source/generated').rglob('*'):
         if path.is_file():
-            rel=path.relative_to(retained/'arxiv-source/generated').as_posix();preserved[rel]=check(repo/'manuscript/generated'/rel,sha256(path))
+            rel=path.relative_to(retained/'arxiv-source/generated').as_posix();preserved[rel]=check(Path(required_input('generated-evidence'))/rel,sha256(path))
     fresh={}
     for name in ['assessment','invisible-sector']:
         path=study/name/'verification.json';data=read(path);require(data['status']=='passed','Incomplete fresh reduction')
@@ -43,7 +44,7 @@ def main():
     require((support['corpus_input_positions'],support['evaluation_input_positions'])==(33554432,2048),'Wrong support scope')
     check(repo/'scripts/verify_input_support.py',support['verifier_sha256'])
     for file,digest in support['checked_sha256'].items():check(file,digest)
-    check(repo/'manuscript/generated/invisible-sector-support.json',sha256(support_path))
+    check(Path(required_input('generated-evidence')) / 'invisible-sector-support.json',sha256(support_path))
     qualifications={}
     for stage,name in [('P1','refresh'),('P3','directional')]:
         item=validate_qualification(Path(a.qualifications)/name/'qualification/protocol.json',repo,stage)
@@ -80,8 +81,8 @@ def main():
     inputs=read(repo/'docs/response-input-verification.json');require(inputs['status']=='passed','Input mapping failed')
     check(repo/'docs/response-inputs.json',inputs['manifest_sha256'])
     check(repo/'scripts/verify_input_identities.py',inputs['verifier_sha256'])
-    compact=read(repo/'manuscript/generated/numerical-response-render-manifest.json')
-    for name,digest in compact['generated'].items():check(repo/'manuscript/generated'/name,digest)
+    compact=read(Path(required_input('generated-evidence')) / 'numerical-response-render-manifest.json')
+    for name,digest in compact['generated'].items():check(Path(required_input('generated-evidence'))/name,digest)
     check(repo/'scripts/render_numerical_response.py',compact['renderer_sha256'])
     sources={str(path.relative_to(repo)):check(path) for directory in ['scripts','src','tests','ModelRG','manuscript']
         for path in (repo/directory).rglob('*') if path.is_file() and path.suffix in ['.py','.sh','.lean','.tex','.bib']}

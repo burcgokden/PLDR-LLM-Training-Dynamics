@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Independent reconstruction and source checks for finite metric studies."""
-from companion_paths import legacy_path
+from companion_paths import required_input, acquisition_identity
+from companion_paths import configured_path
 import argparse
 import json
 from numerical_claims import finite_greater
@@ -11,7 +12,7 @@ from scipy.special import logsumexp
 from model_rg.provenance import sha256, write_json
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def verify(metric_root, matched_analysis, matched_refinement, output, source_root=None):
@@ -126,7 +127,7 @@ def verify(metric_root, matched_analysis, matched_refinement, output, source_roo
     if checked_spans!=28416 or resolved!=8: raise ValueError('Wrong complete metric inventory')
     # CLI checks have separate roles and are explicitly tested under -O as well.
     for name,optimized in [('ordinary',False),('optimized',True)]:
-        p=REPO/'internal/revision24'/('cli-'+name+'.json');r=load_json_strict(p.read_text())
+        p=REPO/required_input('verify-metric-studies-input-1')/('cli-'+name+'.json');r=load_json_strict(p.read_text())
         if r['status']!='passed' or r['checked_cases']!=12 or r['python_optimized']!=optimized or r['native_updates']!=0 or r['script_sha256']!=sha256(REPO/'scripts/run_potential_factorial.py'):
             raise ValueError('Missing current CLI role check')
         bound[str(p)]=sha256(p)

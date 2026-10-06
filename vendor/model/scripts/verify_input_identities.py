@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 """Verify logical input identities after explicit directory remapping."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,json
 from pathlib import Path
 from model_rg.provenance import sha256,write_json
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--manifest',default='docs/response-inputs.json')
-    p.add_argument('--data-root',required=True);p.add_argument('--refinedweb-root',default=legacy_path('/pldr-assets/refinedweb'))
+    p.add_argument('--data-root',required=True);p.add_argument('--refinedweb-root',default=configured_path('assets:refinedweb'))
     p.add_argument('--include-upstream-shards',action='store_true');p.add_argument('--output',required=True);a=p.parse_args()
     spec=json.loads(Path(a.manifest).read_text());roots={'data':Path(a.data_root),'refinedweb':Path(a.refinedweb_root)};checked={}
     for record in spec['artifacts']:

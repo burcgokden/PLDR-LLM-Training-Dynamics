@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Record access class and actual identities for the native factorial inputs."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import json
 from pathlib import Path
 from model_rg.provenance import sha256,write_json
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 def main():
     entries={}
@@ -33,7 +33,7 @@ def main():
         bundled=['Standalone LaTeX, figures, compact numerical evidence','Selected Lean modules, pinned dependency lockfiles and exact statement registry','Current native producers, analyzers, independent verifiers and executed producer snapshot','Formal, numerical, admission and reconstruction records'],
         public_upstream=[dict(url='https://huggingface.co/fromthesky/PLDR-LLM-v51-SOC-110M-1',role='Native architecture and released inference assets; not the incoming training/optimizer states'),dict(url='https://huggingface.co/datasets/tiiuae/falcon-refinedweb',role='Source corpus distribution; exact tokenization and selected local bytes remain separately identified')],
         access_limit='No durable public archive is claimed for complete incoming training states, local token arrays, source histories or native branch arrays. Complete scientific reruns require these identified local assets. The manuscript itself builds from the source bundle.',
-        restriction='Read-only source corpus at /pldr-assets/refinedweb. Exact historical pretraining streams of released checkpoints are not supplied by public inference weights.',
+        restriction='Read-only source corpus at assets:refinedweb. Exact historical pretraining streams of released checkpoints are not supplied by public inference weights.',
         inventory_sha256=sha256(__file__))
     write_json(REPO/'docs/ASSET_ACCESS.json',result)
     print(len(entries),'identified native inputs')

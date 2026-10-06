@@ -24,7 +24,7 @@ from comprehensive_protocol_specs import (  # noqa: E402
 PROTOCOL_ROOT = (
     ROOT / "experiments" / "protocols" / "comprehensive_collapse_confirmation")
 DEFAULT_OUTPUT = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev34"
+    ROOT.parent / "experiment-data" / "campaigns" / "comprehensive-confirmation"
     / "confirmation-program")
 MUTABLE = {Path("qualification"), Path("construction"), Path("campaigns")}
 
@@ -86,8 +86,8 @@ staging manifest are immutable.
 WRAPPER = """#!/bin/sh
 set -eu
 
-repo_root=/pldr-work/row-code
-data_root=/pldr-data/row/rev34/confirmation-program
+repo_root="${PLDR_ROW_CODE_ROOT:?Set PLDR_ROW_CODE_ROOT to the public vendor/row directory}"
+data_root="${PLDR_ROW_RUN_ROOT:?Set PLDR_ROW_RUN_ROOT to the campaign directory}"
 launch_dir=$(pwd)
 command=${1-}
 

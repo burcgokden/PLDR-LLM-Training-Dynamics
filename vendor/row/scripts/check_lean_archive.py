@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate and optionally axiom-audit the pre-revision-31 Lean archive."""
+"""Validate and optionally axiom-audit the historical Lean archive."""
 
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 ACTIVE_SOURCE = ROOT / "PldrLlmCurvatureSandpile"
 ACTIVE_ROOT = ROOT / "PldrLlmCurvatureSandpile.lean"
-ARCHIVE = ROOT / "archive" / "pre-rev31" / "lean-library"
+ARCHIVE = ROOT / "archive" / "historical" / "lean-library"
 ARCHIVE_SOURCE = ARCHIVE / "PldrLlmCurvatureSandpile"
 ARCHIVE_ROOT = ARCHIVE / "PldrLlmCurvatureSandpile.lean"
 ARCHIVE_MANIFEST = ARCHIVE / "ARCHIVE_MANIFEST.sha256"

@@ -1,4 +1,4 @@
-"""Permanent regression tests of the Revision 10 chain: the
+"""Permanent regression tests of the factorized-stress chain: the
 drive-equality structure, the closure step conditions (Q+) with the
 period-two necessity witness, the strict burst package, the honest
 certificate boundary, the derived carrier contraction, and the

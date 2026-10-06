@@ -3,7 +3,7 @@
 No project reducer or quadrature is imported. This is a new analysis of retained
 trajectories, not new training or independent model replication.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import hashlib
 import json
@@ -13,7 +13,7 @@ import time
 import numpy as np
 from scipy.special import logsumexp
 
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 def digest(path):
     h = hashlib.sha256()
     with Path(path).open('rb') as f:

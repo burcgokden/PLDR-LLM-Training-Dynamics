@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """Independently verify the selected potential study and bind publication inputs."""
-from companion_paths import legacy_path
+from companion_paths import required_input, acquisition_identity
+from companion_paths import configured_path
 from numerical_claims import finite_greater
 from numerical_validation import load_json_strict
 import argparse,json,hashlib
 from pathlib import Path
 import numpy as np
 from model_rg.provenance import sha256,write_json
-ROOT=Path(legacy_path('/pldr-data/model/potential-avalanche-20260913'))
+ROOT=Path(configured_path('data:model/potential-avalanche-20260913'))
 REPO=Path(__file__).resolve().parents[1]
-PREVIOUS=Path(legacy_path('/pldr-archive/model/paper-outputs/paper-outputs-rev23'))
+
 CURRENT=ROOT.parent/'potential-factorial-20260913'
 REPLICATION=ROOT.parent/'potential-factorial-disjoint-20260914'
 ANALYSIS=CURRENT/'retained-analysis'
@@ -33,7 +34,7 @@ def independent_events(x):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--routes',required=True);p.add_argument('--metric-verification',required=True);p.add_argument('--emission',required=True);p.add_argument('--factorial-reconstruction',required=True);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--routes',required=True);p.add_argument('--execution-output',required=True);p.add_argument('--metric-verification',required=True);p.add_argument('--emission',required=True);p.add_argument('--factorial-reconstruction',required=True);a=p.parse_args()
     spec=load_json_strict((ROOT/'protocols/training.json').read_text());summary=load_json_strict((ANALYSIS/'summary.json').read_text())
     follow=load_json_strict((ANALYSIS/'followups-summary.json').read_text())
     if summary['status']!='complete' or follow['status']!='complete':raise ValueError('All selected paths must be complete')
@@ -100,15 +101,15 @@ def main():
             if name=='frozen' and np.max(z['tensor_statistics'][1:,...,1])!=0:raise ValueError('Frozen tensors moved')
             if name!='frozen' and finite_greater(np.max(z['predicted_exponent_step_max_error']), 1e-6, 'scripts/verify_potential_study.py:98'):raise ValueError('Passive moment recurrence mismatch')
     for name in ['formal','clean','statement-mutations']:
-        v=load_json_strict((REPO/'internal/revision24'/name/'verification.json').read_text())
+        v=load_json_strict((REPO/required_input('verify-potential-study-input-2')/name/'verification.json').read_text())
         if v['status']!='passed':raise ValueError('Formal check failed '+name)
         for group in ['module_sources','modules','support_sources']:
             for f,h in v.get(group,{}).items():
                 if sha256(REPO/f)!=h:raise ValueError('Changed formal source '+f)
         if 'registry_sha256' in v and sha256(REPO/'scripts/formal/statement-registry.json')!=v['registry_sha256']:raise ValueError('Changed formal registry')
-    v=load_json_strict((REPO/'internal/revision24/statement-mutations/verification.json').read_text())
+    v=load_json_strict((REPO/required_input('verify-potential-study-input-3')).read_text())
     if v['exports']!=116 or len(v['mutations'])!=65:raise ValueError('Unexpected formal inventory')
-    numerical=load_json_strict((REPO/'internal/revision24/numerical/verification.json').read_text())
+    numerical=load_json_strict((REPO/required_input('verify-potential-study-input-4')).read_text())
     if numerical['status']!='passed' or numerical['tests_passed']<232:raise ValueError('Numerical suite not complete')
     for f,h in numerical['tested_sources'].items():
         if sha256(REPO/f)!=h:raise ValueError('Numerical test dependency changed '+f)
@@ -125,13 +126,13 @@ def main():
         additional.update(record['checked_sha256']);additional[str(path)]=sha256(path)
         if name=='verification-final.json' and (record['scientific_updates']!=2048 or record['reconstruction_mode']!='current-schema'):raise ValueError('Missing current-schema scientific positive path')
         if name=='area-verification-final.json' and record['scale_cells']!=326:raise ValueError('Incomplete signed-area family')
-    if sha256(a.factorial_reconstruction)!=sha256(REPO/'manuscript/generated/potential-replication-evidence/current-reconstruction.json'):raise ValueError('Stale executed-source reconstruction')
+    if sha256(a.factorial_reconstruction)!=sha256(Path(required_input('generated-evidence')) / 'potential-replication-evidence/current-reconstruction.json'):raise ValueError('Stale executed-source reconstruction')
     emission=load_json_strict(Path(a.emission).read_text())
     if emission['status']!='passed' or emission['comparisons']!=16 or emission['step_comparisons']!=2048 or emission['analyzer_sha256']!=sha256(REPO/'scripts/analyze_finite_emission_transport.py'):raise ValueError('Missing finite categorical transport')
     for f,h in emission['checked_sha256'].items():
         if sha256(f)!=h:raise ValueError('Changed finite-emission input')
     additional.update(emission['checked_sha256'])
-    if sha256(a.emission)!=sha256(REPO/'manuscript/generated/potential-replication-evidence/finite-emission-transport.json'):raise ValueError('Stale explicit finite-emission publication')
+    if sha256(a.emission)!=sha256(Path(required_input('generated-evidence')) / 'potential-replication-evidence/finite-emission-transport.json'):raise ValueError('Stale explicit finite-emission publication')
     additional[str(Path(a.emission).resolve())]=sha256(a.emission)
     replication=load_json_strict((REPLICATION/'analysis/replication-summary.json').read_text())
     if replication['status']!='passed' or replication['source_overlap_blocks']!=0 or not all(replication['confirmation'].values()):raise ValueError('Unsupported source-replication claim')
@@ -141,39 +142,39 @@ def main():
         if sha256(f)!=h:raise ValueError('Changed replication input')
     for path in (REPLICATION/'analysis').glob('*.json'):
         if path.name=='finite-emission-transport.json':continue
-        if sha256(path)!=sha256(REPO/'manuscript/generated/potential-replication-evidence'/path.name):raise ValueError('Stale compact replication evidence')
+        if sha256(path)!=sha256(Path(required_input('generated-evidence')) / 'potential-replication-evidence'/path.name):raise ValueError('Stale compact replication evidence')
     area=load_json_strict((CURRENT/'analysis/block-area.json').read_text())
     if area['status']!='passed' or area['scale_cells']!=198 or area['analysis_sha256']!=sha256(REPO/'scripts/analyze_potential_block_area.py'):raise ValueError('Missing signed-area reconstruction')
     from verify_execution_routes import verify as verify_routes
     execution=verify_routes(a.routes)
-    write_json(REPO/'internal/revision24/execution-publication.json',execution)
+    write_json(a.execution_output,execution)
 
-    verify_manifest(PREVIOUS)
+    verify_manifest(Path(required_input('verify-potential-study-input-1')))
     # Existing numerical evidence is retained byte-for-byte except the explicitly
     # regenerated current software-qualification table.
-    for p in (PREVIOUS/'arxiv-source/generated').rglob('*'):
+    for p in (Path(required_input('verify-potential-study-input-1'))/'arxiv-source/generated').rglob('*'):
         if p.is_file() and 'potential-evidence' not in p.parts and p.name not in ['finite-emission-transport.json','formal-correspondence.tex','formal-correspondence.json','qualification-current.tex','qualification-current.json','current-execution-routes.tex','current-execution-routes.json','execution-ledger.tex','execution-ledger.json','potential-early.tex','potential-relaxation.tex','deductive-predictive.tex','potential_activity.pdf','potential_excursions.pdf','potential_continuations.pdf','deductive_comparison.pdf']:
-            if sha256(p)!=sha256(REPO/'manuscript/generated'/p.relative_to(PREVIOUS/'arxiv-source/generated')):raise ValueError('Changed retained numerical evidence '+p.name)
+            if sha256(p)!=sha256(Path(required_input('generated-evidence'))/p.relative_to(Path(required_input('verify-potential-study-input-1'))/'arxiv-source/generated')):raise ValueError('Changed retained numerical evidence '+p.name)
     for name in ['summary.json','followups-summary.json','base-sensitivity.json','base-null.json']:
-        if sha256(ANALYSIS/name)!=sha256(REPO/'manuscript/generated/potential-evidence'/name):raise ValueError('Stale compact activity evidence '+name)
+        if sha256(ANALYSIS/name)!=sha256(Path(required_input('generated-evidence')) / 'potential-evidence'/name):raise ValueError('Stale compact activity evidence '+name)
     for name in ['factorial-summary.json','endpoint-panels.json','block-area.json']:
-        if sha256(CURRENT/'analysis'/name)!=sha256(REPO/'manuscript/generated/potential-factorial-evidence'/name):raise ValueError('Stale compact factorial evidence '+name)
-    baseline_ledger=load_json_strict((PREVIOUS/'arxiv-source/generated/execution-ledger.json').read_text())
-    current_ledger=load_json_strict((REPO/'manuscript/generated/execution-ledger.json').read_text())
+        if sha256(CURRENT/'analysis'/name)!=sha256(Path(required_input('generated-evidence')) / 'potential-factorial-evidence'/name):raise ValueError('Stale compact factorial evidence '+name)
+    baseline_ledger=load_json_strict((Path(required_input('verify-potential-study-input-1'))/'arxiv-source/generated/execution-ledger.json').read_text())
+    current_ledger=load_json_strict((Path(required_input('generated-evidence')) / 'execution-ledger.json').read_text())
     if current_ledger['rows'][:len(baseline_ledger['rows'])]!=baseline_ledger['rows']:raise ValueError('Changed retained execution rows')
     if current_ledger['native_scientific_updates']-baseline_ledger['native_scientific_updates']!=24576:raise ValueError('Wrong new training inventory')
     if current_ledger['optimizer_only_control_updates']!=512:raise ValueError('Wrong optimizer-only inventory')
-    qualification=load_json_strict((REPO/'manuscript/generated/qualification-current.json').read_text())
+    qualification=load_json_strict((Path(required_input('generated-evidence')) / 'qualification-current.json').read_text())
     if qualification['counts']!=dict(numerical_tests=numerical['tests_passed'],selected_statements=116,formal_modules=26,formal_fixtures=8,rejected_mutations=65):raise ValueError('Qualification table mismatch')
     metric_check=load_json_strict(Path(a.metric_verification).read_text())
     if metric_check['status']!='passed' or metric_check['verifier_sha256']!=sha256(REPO/'scripts/verify_metric_studies.py') or metric_check['endpoint_spans']!=28416 or metric_check['scientific_updates']!=24576 or metric_check['one_percent_refined_pairs']!=192:raise ValueError('Missing completed metric study verification')
     for f,h in metric_check['checked_sha256'].items():
         if sha256(f)!=h:raise ValueError('Changed metric study input '+f)
     for source,dest in [(Path(metric_check['metric_root'])/'metric-budget.json','finite-metric-budget.json'),(Path(metric_check['metric_root'])/'metric-refinement-final.json','finite-metric-refinement.json'),(Path(metric_check['matched_analysis']),'matched-onepass-analysis.json'),(Path(metric_check['matched_refinement']),'matched-onepass-refinement.json')]:
-        if sha256(source)!=sha256(REPO/'manuscript/generated'/dest):raise ValueError('Stale metric publication '+dest)
+        if sha256(source)!=sha256(Path(required_input('generated-evidence'))/dest):raise ValueError('Stale metric publication '+dest)
     bound=dict(execution['checked_sha256']);bound.update(factorial['checked_sha256']);bound.update(additional)
     bound.update(metric_check['checked_sha256']);bound[str(Path(a.metric_verification).resolve())]=sha256(a.metric_verification)
-    for folder in [REPO/'manuscript',REPO/'src',REPO/'scripts',REPO/'tests',REPO/'ModelRG',REPO/'internal/revision24',ROOT/'protocols',ANALYSIS,ROOT/'qualification',CURRENT/'analysis',REPLICATION/'analysis',REPO/'evidence/executed/potential-factorial']:
+    for folder in [Path(required_input('publication-source')),REPO/'src',REPO/'scripts',REPO/'tests',REPO/'ModelRG',REPO/required_input('verify-potential-study-input-2'),ROOT/'protocols',ANALYSIS,ROOT/'qualification',CURRENT/'analysis',REPLICATION/'analysis',REPO/'evidence/executed/potential-factorial']:
         for p in folder.rglob('*'):
             if p.is_file() and p.suffix in ['.py','.lean','.json','.tex','.bib','.pdf','.png','.npz','.md'] and '__pycache__' not in p.parts and 'preview' not in p.parts and 'release-build' not in p.parts:
                 if p.name in ['main.pdf'] or p.resolve()==Path(a.output).resolve():continue
@@ -182,14 +183,14 @@ def main():
         for p in (ROOT/folder).rglob('*'):
             if p.is_file() and (p.name in ['manifest.json','binding.json','activity.npz','final-state.pt'] or (folder=='relaxation' and p.suffix=='.npz')):
                 bound[str(p)]=sha256(p)
-    for name in ['docs/POTENTIAL_ACTIVITY_ASSESSMENT.md','docs/POTENTIAL_ACTIVITY_REPRODUCTION.md','README.md','docs/CURRENT_EXECUTION.md','docs/POTENTIAL_FACTORIAL_REPRODUCTION.md','docs/ASSET_ACCESS.md','docs/ASSET_ACCESS.json','docs/FINITE_METRIC_REPRODUCTION.md','docs/MATCHED_ONEPASS_REPRODUCTION.md','internal/revision24/numerical/verification.json']:
+    for name in ['docs/POTENTIAL_ACTIVITY_ASSESSMENT.md','docs/POTENTIAL_ACTIVITY_REPRODUCTION.md','README.md','docs/CURRENT_EXECUTION.md','docs/POTENTIAL_FACTORIAL_REPRODUCTION.md','docs/ASSET_ACCESS.md','docs/ASSET_ACCESS.json','docs/FINITE_METRIC_REPRODUCTION.md','docs/MATCHED_ONEPASS_REPRODUCTION.md',required_input('verify-potential-study-input-4')]:
         bound[str(REPO/name)]=sha256(REPO/name)
-    bound[str(PREVIOUS/'MANIFEST.sha256')]=sha256(PREVIOUS/'MANIFEST.sha256')
+    bound[str(Path(required_input('verify-potential-study-input-1'))/'MANIFEST.sha256')]=sha256(Path(required_input('verify-potential-study-input-1'))/'MANIFEST.sha256')
     write_json(a.output,dict(schema='potential-study-publication-v4',status='passed',verifier_sha256=sha256(__file__),
         early_paths=18,continuation_paths=4,zero_gradient_states=4,factorial_paths=32,total_new_training_updates=24576,new_scientific_paths=24,disjoint_source_replication=True,finite_emission_comparisons=16,
         execution_routes=execution['suite_counts'],current_positive_admission=True,factorial_verification_sha256=sha256(REPLICATION/'retained-verification-final.json'),current_factorial_verification_sha256=sha256(a.factorial_reconstruction),
         independent_event_and_tail_checks=checks,checked_sha256=bound,
-        retained_publication=str(PREVIOUS),retained_manifest_verified=True,
+        retained_publication=str(Path(required_input('verify-potential-study-input-1'))),retained_manifest_verified=True,
         scope='Finite conditional activity, signed-area blocking and native paired intervention evidence. Current positive/adverse admission, raw scientific reconstruction, formal/numerical correspondence and retained-source integrity have separate checked identities.'))
     print('Verified 18 initial paths, four continuations, four intervention states, and retained publication evidence',flush=True)
 if __name__=='__main__':main()

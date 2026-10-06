@@ -17,7 +17,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_BUNDLE = (
-    ROOT.parent / "experiment-data" / "manuscript-revisions" / "rev47"
+    ROOT.parent / "experiment-data" / "campaigns" / "mixed-collapse"
     / "mixed-row-map-collapse-confirmation"
 )
 DEFAULT_OUTPUT = (

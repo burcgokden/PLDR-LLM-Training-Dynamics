@@ -7,21 +7,21 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/check_consuming_bridge.py",
+          "urn:pldr:unavailable:6fc4ecdfb2c54ff26215fb1b410714072f12fc0620661c6619e3da6ce61895ce",
           "--output",
-          "{output}/consuming.json"
+          "urn:pldr:unavailable:f5ceffbd8e39e45b6a672bd482692db57d62aca5edf09cd7ea62abcaf9536067"
         ],
         [
           "{python}",
-          "{repo}/scripts/check_physical_clock.py",
+          "urn:pldr:unavailable:1bf9c38a3faaa5ae5514309618a7f19f97cccf319014eb3f3b8034a46176fa81",
           "--output",
-          "{output}/clock.json"
+          "urn:pldr:unavailable:54526639eb570c5e1b79cd5885a4e40201e5e60b311e4585f7f8d18cd282f7ef"
         ],
         [
           "{python}",
-          "{repo}/scripts/check_matched_memory_bound.py",
+          "urn:pldr:unavailable:f1224cfb5a50e3bb2c5294cd0ae3e0aa5969ddd1c7bd8078a3c4566155860597",
           "--output",
-          "{output}/memory.json"
+          "urn:pldr:unavailable:728df83b5086fdc262cb5dc78e1582c3bfd2373e25565c87ed9b05694db96d20"
         ]
       ],
       "protocols": [],
@@ -38,25 +38,25 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/analyze_matched_clock.py",
+          "urn:pldr:unavailable:d0b45461fdc7429a769775f0a9b0cd8a74ee1d6a242b9d44f8bb6df3acada086",
           "--study",
           "{data}/matched-clock-onepass-20260916",
           "--output",
-          "{output}/analysis.json"
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d"
         ],
         [
           "{python}",
-          "{repo}/scripts/verify_matched_clock.py",
+          "urn:pldr:unavailable:ae06e186657ce6572d46da59d99085cc3a569a1aac597b67557de55cac613336",
           "--study",
           "{data}/matched-clock-onepass-20260916",
           "--analysis",
-          "{output}/analysis.json",
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d",
           "--output",
-          "{output}/verification.json"
+          "urn:pldr:unavailable:6812669d8f99c4197c095fcc0aef308ebd667008d31f439b246c463084293653"
         ]
       ],
       "protocols": [
-        "matched-clock-onepass-20260916/protocol.json"
+        "urn:pldr:unavailable:f666d8c2ca993955bfe9f93c2d43f20f54fb398c98e71257b1b1bd61f86c222f"
       ],
       "documentation": [
         "MATCHED_CLOCK_REPRODUCTION.md"
@@ -71,35 +71,35 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/analyze_row_path_confirmation.py",
+          "urn:pldr:unavailable:880b1e17fca04e19f2f18497c8695819f51a75da3e6028950758dd63a45eae3e",
           "--study",
           "{data}/row-path-confirmation-20260917",
           "--output",
-          "{output}/analysis.json"
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d"
         ],
         [
           "{python}",
-          "{repo}/scripts/verify_row_path_confirmation.py",
+          "urn:pldr:unavailable:8cd08e8dab9ce24a066177b25f35772b36379e29fb0de68263382f33c6607bc7",
           "--study",
           "{data}/row-path-confirmation-20260917",
           "--analysis",
-          "{output}/analysis.json",
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d",
           "--output",
-          "{output}/verification.json"
+          "urn:pldr:unavailable:6812669d8f99c4197c095fcc0aef308ebd667008d31f439b246c463084293653"
         ],
         [
           "{python}",
-          "{repo}/scripts/render_row_path_confirmation.py",
+          "urn:pldr:unavailable:2408d5e223f9dbfbbb8cf4878dad8ed16c643f50f459c476968a001e7f329dda",
           "--analysis",
-          "{output}/analysis.json",
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d",
           "--verification",
-          "{output}/verification.json",
+          "urn:pldr:unavailable:6812669d8f99c4197c095fcc0aef308ebd667008d31f439b246c463084293653",
           "--output",
           "{output}/tables"
         ]
       ],
       "protocols": [
-        "row-path-confirmation-20260917/protocol.json"
+        "urn:pldr:unavailable:4fb748fb484c28c7fce6417eacc0b84026a4f4e7ba1314a68406c95ec5c2a995"
       ],
       "documentation": [
         "ROW_PATH_REPRODUCTION.md",
@@ -115,47 +115,47 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/analyze_equal_time_flux.py",
+          "urn:pldr:unavailable:57361811ad5c500b68eb9a877f5d402ec0051e76f7d4f07b44b63c8361559c1f",
           "--study",
           "{data}/equal-time-flux-20260917",
           "--output",
-          "{output}/analysis.json"
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d"
         ],
         [
           "{python}",
-          "{repo}/scripts/verify_equal_time_flux.py",
+          "urn:pldr:unavailable:309d7af63da1439284e9842f6f74649c5366deee03ba8eba045e649bfa7efd68",
           "--study",
           "{data}/equal-time-flux-20260917",
           "--analysis",
-          "{output}/analysis.json",
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d",
           "--output",
-          "{output}/verification.json"
+          "urn:pldr:unavailable:6812669d8f99c4197c095fcc0aef308ebd667008d31f439b246c463084293653"
         ],
         [
           "{python}",
-          "{repo}/scripts/render_equal_time_flux.py",
+          "urn:pldr:unavailable:c680c911e21737c9ffc0f055603d7f89fd257b3c93697195b4b60e71d3e068db",
           "--analysis",
-          "{output}/analysis.json",
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d",
           "--verification",
-          "{output}/verification.json",
+          "urn:pldr:unavailable:6812669d8f99c4197c095fcc0aef308ebd667008d31f439b246c463084293653",
           "--output",
           "{output}/tables"
         ],
         [
           "{python}",
-          "{repo}/scripts/check_equal_time_outcomes.py",
+          "urn:pldr:unavailable:1546604b8845f81143b261560a15d7419dce7fd97e79b166411698efdd9157a1",
           "--analysis",
-          "{output}/analysis.json",
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d",
           "--protocol",
-          "{data}/equal-time-flux-20260917/protocol.json",
+          "urn:pldr:unavailable:eebde191b5e41c8efcf662056c1168491e92cfef2867dcbe5dede0fb2bf22a11",
           "--rendered",
           "{output}/tables",
           "--output",
-          "{output}/outcome-completeness.json"
+          "urn:pldr:unavailable:1623ea1c5ab205c0b58d4f6fbb7db391e24671d73ed8bfd722e41d8a5c478e30"
         ]
       ],
       "protocols": [
-        "equal-time-flux-20260917/protocol.json"
+        "urn:pldr:unavailable:979430a940f9c0c78cd82b62d57de1862c73cfee4fd2287029230bdc53c261f8"
       ],
       "documentation": [
         "EQUAL_TIME_FLUX_REPRODUCTION.md"
@@ -170,36 +170,36 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/analyze_row_derivative_metrics.py",
+          "urn:pldr:unavailable:bbf0ebfff365d98ef94f5fdb93d265eca657b53101bf6669f618610e49b6dc00",
           "--study",
           "{data}/collective-row-clock-20260916",
           "--output",
-          "{output}/matrix-errors.json",
+          "urn:pldr:unavailable:6ae4ad4583082f5b74cbf732a83eb68bd569366654f85dd04ee95c9ac481d8e7",
           "--tables",
           "{output}/tables"
         ],
         [
           "{python}",
-          "{repo}/scripts/analyze_collective_row_quadrature.py",
+          "urn:pldr:unavailable:0855d3354e1df4dd91caf1eeb8a5286f5a3570bbfa9b87aa77250dff9ae15b93",
           "--study",
           "{data}/collective-row-quadrature-20260916",
           "--output",
-          "{output}/quadrature.json"
+          "urn:pldr:unavailable:242a92db9853cdbfa779e45106e903199ae19144251f0772f3eda2b7920da1b5"
         ],
         [
           "{python}",
-          "{repo}/scripts/verify_collective_row_quadrature.py",
+          "urn:pldr:unavailable:95eaa639fc74daa72200671d4815c88f4aa9ae73d19c5d264fa16ed8826f48b7",
           "--study",
           "{data}/collective-row-quadrature-20260916",
           "--analysis",
-          "{output}/quadrature.json",
+          "urn:pldr:unavailable:242a92db9853cdbfa779e45106e903199ae19144251f0772f3eda2b7920da1b5",
           "--output",
-          "{output}/verification.json"
+          "urn:pldr:unavailable:6812669d8f99c4197c095fcc0aef308ebd667008d31f439b246c463084293653"
         ]
       ],
       "protocols": [
-        "collective-row-clock-20260916/protocol.json",
-        "collective-row-quadrature-20260916/protocol.json"
+        "urn:pldr:unavailable:242108c03d6384bc77f63e0ae974c81a34ca4c2c79007ac670c9df1f38b7db88",
+        "urn:pldr:unavailable:895a529500e4a5da5a0f07d88b697b305c6b987efcdff72da8b519c82179efec"
       ],
       "documentation": [
         "FINITE_ROW_REPRODUCTION.md"
@@ -214,25 +214,25 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/analyze_cache_state_transfer.py",
+          "urn:pldr:unavailable:7eb52785dd730ab7c3ee09bfb08bb2e89960e3d56c098e2a481d91c950369646",
           "--study",
           "{data}/cache-state-confirmation-20260916",
           "--output",
-          "{output}/analysis.json"
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d"
         ],
         [
           "{python}",
-          "{repo}/scripts/verify_cache_state_transfer.py",
+          "urn:pldr:unavailable:38044b5e6fbfe45167205b865803ba8c13f115150b6163190e4805fde82fadbc",
           "--study",
           "{data}/cache-state-confirmation-20260916",
           "--analysis",
-          "{output}/analysis.json",
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d",
           "--output",
-          "{output}/verification.json"
+          "urn:pldr:unavailable:6812669d8f99c4197c095fcc0aef308ebd667008d31f439b246c463084293653"
         ]
       ],
       "protocols": [
-        "cache-state-confirmation-20260916/protocol.json"
+        "urn:pldr:unavailable:b56e9b50f168ca84d2d5176f5b467892facf04220d0b41d3cbcc80d4f641a31c"
       ],
       "documentation": [
         "STATE_CONFIRMATION.md",
@@ -249,19 +249,19 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/analyze_critical_onepass.py",
+          "urn:pldr:unavailable:3e4e1b3e95c97ed44f896c9dc82fc35285017ea3fef9096e7597d7bcbe1ad0c7",
           "--study",
           "{data}/critical-onepass-refinement-20260914",
           "--output",
-          "{output}/analysis.json"
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d"
         ],
         [
           "{python}",
-          "{repo}/scripts/prepare_observation_source_root.py",
+          "urn:pldr:unavailable:4cca8b20a02bfcf4ff8ff0adf39d2703bf9f89bbc6ffb80c5d8edb4cbbd11a26",
           "--protocol",
-          "{data}/critical-onepass-refinement-20260914/protocol.json",
+          "urn:pldr:unavailable:c127b351532058f4ee6511679ec2d84edad241acf8c33aab7eae6418ab9ba34a",
           "--analysis",
-          "{output}/analysis.json",
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d",
           "--snapshot",
           "{data}/critical-onepass-refinement-20260914/executed-source",
           "--output",
@@ -269,20 +269,20 @@
         ],
         [
           "{python}",
-          "{repo}/scripts/verify_critical_onepass.py",
+          "urn:pldr:unavailable:683e29c1a349f2bc72f75dd85cca7ca38aa2ce3f9ba7845116c9eb714ea1912c",
           "--study",
           "{data}/critical-onepass-refinement-20260914",
           "--analysis",
-          "{output}/analysis.json",
+          "urn:pldr:unavailable:97dbf0b76e16fca1a01d218942b26c5f319d873a37fb1f81845b0e38fc7cd51d",
           "--output",
-          "{output}/verification.json",
+          "urn:pldr:unavailable:6812669d8f99c4197c095fcc0aef308ebd667008d31f439b246c463084293653",
           "--source-root",
           "{output}/source",
           "--observations-only"
         ]
       ],
       "protocols": [
-        "critical-onepass-refinement-20260914/protocol.json"
+        "urn:pldr:unavailable:519a530d4c75446c5a3ccd55b5f758c8f92aae371cba2cd97c355bd7d8137f7e"
       ],
       "documentation": [
         "CRITICAL_ONEPASS_REPRODUCTION.md"
@@ -297,17 +297,17 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/verify_law_observations.py",
+          "urn:pldr:unavailable:f33f2e00399dd8ad48fb61589a87d17e83c7afbced8d689654db408a768d8943",
           "--root",
           "{data}",
           "--study",
           "{data}/law-closure-20260910",
           "--output",
-          "{output}/law-verification.json"
+          "urn:pldr:unavailable:ab21c927df3d6218bc53fbb984f0cc67b0c2495649fc9d7454f1de4fa489f35f"
         ]
       ],
       "protocols": [
-        "law-closure-20260910/protocol.json"
+        "urn:pldr:unavailable:3f9be931da3c6c5a78066fbcbf690a854b68e6bddf159612661915108a2c3568"
       ],
       "documentation": [
         "CURRENT_EXECUTION.md"
@@ -322,17 +322,17 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/verify_moment_transport.py",
+          "urn:pldr:unavailable:6b073d1dbf417722c0d761c7541b10c842e80c6747499b097c2d3127a01982c8",
           "--root",
           "{data}",
           "--study",
           "{data}/moment-transport-20260911",
           "--output",
-          "{output}/moment-verification.json"
+          "urn:pldr:unavailable:f000687416bb837a86cacc7d4a8b0830aeb35e20f6e7499abcfc130bb45b6b97"
         ]
       ],
       "protocols": [
-        "moment-transport-20260911/protocol.json"
+        "urn:pldr:unavailable:0bbace70e5ae04bffdcaae4d02556eb940d98de2bdd41c247f4dbd0ed8afb2ba"
       ],
       "documentation": [
         "CURRENT_EXECUTION.md"
@@ -347,9 +347,9 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/check_physical_clock.py",
+          "urn:pldr:unavailable:1bf9c38a3faaa5ae5514309618a7f19f97cccf319014eb3f3b8034a46176fa81",
           "--output",
-          "{output}/physical-clock.json"
+          "urn:pldr:unavailable:7fea03eac2cf5c97cbbba894ee81a0ba55090b422230e2bbe6a290b07f561ee4"
         ]
       ],
       "protocols": [],
@@ -366,7 +366,7 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/check_formal.py",
+          "urn:pldr:unavailable:c5eceb2884ad6ab535bf70c5f104bcbd0cfd763bf742432bf49dd5e2db2d5458",
           "--output",
           "{output}/formal"
         ]
@@ -411,19 +411,19 @@
       "commands": [
         [
           "{python}",
-          "{repo}/scripts/check_study_registry.py",
+          "urn:pldr:unavailable:8c6a337a33756d33e72ecef915b33315da10eed615579fb4e1683bdbe78ebd77",
           "--output",
-          "{output}/verification.json"
+          "urn:pldr:unavailable:6812669d8f99c4197c095fcc0aef308ebd667008d31f439b246c463084293653"
         ],
         [
           "{python}",
-          "{repo}/scripts/render_execution_ledger.py",
+          "urn:pldr:unavailable:bf5681ebd3f2c194a8bc117cb388add9aeded26aeb1e037ba7b3f459d3c8910c",
           "--output",
           "{output}/tables"
         ]
       ],
       "protocols": [
-        "equal-time-flux-20260917/protocol.json"
+        "urn:pldr:unavailable:979430a940f9c0c78cd82b62d57de1862c73cfee4fd2287029230bdc53c261f8"
       ],
       "documentation": [
         "STUDY_REGISTRY.md"

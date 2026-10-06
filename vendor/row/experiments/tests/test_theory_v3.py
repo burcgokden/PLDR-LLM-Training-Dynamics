@@ -1,4 +1,4 @@
-"""Regression tests of the Revision 11 chain: the single curvature
+"""Regression tests of the coupled-curvature chain: the single curvature
 state (no independent stress ledger; x = b + kappa u^2 definitional),
 the decay ledger (every decay term counted once), the derived event
 map with its exact drain identity and amplitude factor, the

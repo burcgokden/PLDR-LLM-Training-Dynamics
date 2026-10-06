@@ -5,7 +5,7 @@ One released model supplies four paired fine-tuning paths. A fresh AdamW
 origin is explicit because its pretraining optimizer state is unavailable.
 This is an invariant-regime reference, not an additional width replicate.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 import os
@@ -64,7 +64,7 @@ def prepare(study,parent,stage,qualification):
     study=Path(study).resolve();parent=Path(parent).resolve();p=json.loads((parent/'protocol.json').read_text());root=Path(p['root']);data=Path(p['data'])
     if study.exists():raise FileExistsError(study)
     if not study.is_relative_to(root):raise ValueError('Unauthorized destination')
-    info=Path(legacy_path('/pldr-assets/refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c/dataset_info.json'))
+    info=Path(configured_path('assets:refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c/dataset_info.json'))
     lengths=json.loads(info.read_text())['splits']['train']['shard_lengths'];offset=np.r_[0,np.cumsum(lengths)]
     records_path=root/'data/refinedweb-onepass-524288/records.json';records=json.loads(records_path.read_text())
     positions=np.array([offset[int(re.search(r'train-(\d+)-of-',r['shard']).group(1))]+r['row'] for r in records],np.int64)

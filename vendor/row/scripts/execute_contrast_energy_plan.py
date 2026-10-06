@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Execute the digest-sealed Rev41 plan with dependency and resource gates.
+"""Execute the digest-sealed contrast-energy plan with dependency and resource gates.
 
 Archival execution interface: no validated interruption-safe cumulative campaign
 budget guarantee. See the combined docs/RESOURCE_EXECUTION.md and

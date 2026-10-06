@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Predeclared native test of an input-support null sector and its decay law."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import copy
 import hashlib
@@ -18,7 +18,7 @@ from model_rg.provenance import sha256,write_json
 from finite_response_study import observe
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(os.environ.get('MODEL_RG_DATA_ROOT',legacy_path('/pldr-data/model'))).resolve()
+ROOT=Path(os.environ.get('MODEL_RG_DATA_ROOT',configured_path('data:model'))).resolve()
 OUT=ROOT/'finite-response-20260912/invisible-sector'
 
 

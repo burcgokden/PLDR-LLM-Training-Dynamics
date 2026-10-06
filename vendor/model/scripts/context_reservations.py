@@ -3,7 +3,7 @@
 Old protocols are imported read-only. Calibration and assessment are both reserved.
 Named-panel reproduction is explicit and does not constitute fresh acquisition.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 from acquisition_paths import logical_root, resolve_recorded, recorded_study
 import fcntl
 import json
@@ -13,7 +13,7 @@ import tempfile
 from model_rg.provenance import sha256
 from numerical_validation import load_json_strict
 
-ROOT = Path(legacy_path('/pldr-data/model'))
+ROOT = Path(configured_path('data:model'))
 PROBES = ROOT/'controlled-study-20260905/data/short'
 CORPUS = ROOT/'data/refinedweb-onepass-524288'
 SCHEMAS = {'context-categorical-v1', 'context-categorical-v2', 'operator-cache-v1',

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run analytic prequalification for the Rev41 contrast-energy pipeline."""
+"""Run analytic prequalification for the contrast-energy contrast-energy pipeline."""
 
 from __future__ import annotations
 

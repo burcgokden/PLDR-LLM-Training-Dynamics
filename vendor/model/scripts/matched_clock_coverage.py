@@ -1,7 +1,8 @@
 """Versioned, portable census for an explicitly admitted observed clock family.
 
-Admission is independent of submitted result rows. The bundled protocol is an
-immutable observation identity, not permission to rewrite an acquisition.
+Admission is independent of submitted result rows. The bundled protocol is a
+normalized census specification with its own byte digest. PROTOCOL_SHA256
+continues to bind the original acquisition bytes, without authorizing a rewrite.
 Large final states are native replay assets, outside the CPU reduction census.
 """
 import hashlib
@@ -15,7 +16,7 @@ from numerical_validation import load_json_strict
 
 ROOT = Path(__file__).resolve().parents[1]
 PROTOCOL = ROOT / 'scripts/contracts/matched-clock-observation-v1.json'
-BUNDLED_DESIGN_SHA256 = 'bff694f85f6fb394bf05e9eca12acd987f3670ca8194c61072af5cf4fc247f26'
+BUNDLED_DESIGN_SHA256 = '39f17ff5484b89138ca9a47e381cfd19972d49a40ff90cf82f3fb38d6d99bcdb'
 PROTOCOL_SHA256 = '71396258762b83c5a87727d9b5aea913bb3f6216b4eeafb4fc81b7d20a0c4788'
 
 

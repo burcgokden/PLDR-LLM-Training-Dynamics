@@ -1,5 +1,5 @@
 """Freeze disjoint language documents and physical chains for released-model adaptation."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -9,7 +9,7 @@ REPO=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(REPO/'src'),str(REPO/'scripts')]
 from model_rg.provenance import sha256,write_json
 from prepare_lattice_data import compile_sampler,generate
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 def prepare(study):
     study=Path(study).resolve()
@@ -18,7 +18,7 @@ def prepare(study):
     corpus=ROOT/'data/refinedweb-onepass-524288'
     prior=ROOT/'finetuning-sectors-20260912/data'
     records=json.loads((corpus/'records.json').read_text())
-    info=Path(legacy_path('/pldr-assets/refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c/dataset_info.json'))
+    info=Path(configured_path('assets:refinedweb/datasets/huggingface_datasets/tiiuae___falcon-refinedweb/default/0.0.0/c735840575b629292b41da8dde11dcd523d4f91c/dataset_info.json'))
     offsets=np.r_[0,np.cumsum(json.loads(info.read_text())['splits']['train']['shard_lengths'])]
     positions=np.array([offsets[int(re.search(r'train-(\d+)-of-',r['shard']).group(1))]+r['row'] for r in records],dtype=np.int64)
     with np.load(prior/'lexical-labels.npz') as z: labels=z['labels']

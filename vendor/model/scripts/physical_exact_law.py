@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Enumerate complete finite PLDR configuration laws and verify error bounds."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import itertools
 import json
@@ -14,7 +14,7 @@ from model_rg.training import TrainingModel
 from model_rg.physical_native import spin_tokens,context_tokens,prefix_batch,selected_forward
 from model_rg.lattice import observables,critical_temperature
 from model_rg.provenance import sha256,write_json
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def logsoftmax(x):

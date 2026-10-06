@@ -4,13 +4,13 @@ Uses no project analysis functions. Independent configurations are resampled
 within each checkpoint/temperature cell. Shared cells reuse bootstrap draws.
 This conditions on fitted checkpoints and does not estimate training-seed error.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import hashlib
 import json
 from pathlib import Path
 import numpy as np
 
-STUDY = Path(legacy_path('/pldr-data/model/released-adaptation-20260913'))
+STUDY = Path(configured_path('data:model/released-adaptation-20260913'))
 REPEATS = 16000
 SEED = 2026091303
 

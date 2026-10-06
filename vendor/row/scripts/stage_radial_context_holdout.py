@@ -49,7 +49,7 @@ GENERATED_RELEASE = {
     "manuscript_components": [],
     "artifact": {
         "name": f"pldr-curvature-sandpile-{RELEASE_ID}",
-        "export_directory": f"paper-outputs-{RELEASE_ID}",
+        "export_directory": f"exports/{RELEASE_ID}",
         "export_target": f"export-{RELEASE_ID}",
     },
 }
@@ -233,7 +233,7 @@ def staged_objects(
 ) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any], dict[str, Any]]:
     prior = bound_file(
         binding_root
-        / "experiment-data/manuscript-revisions/rev47"
+        / "experiment-data/campaigns/mixed-collapse"
         / "mixed-row-map-collapse-confirmation/protocol/registry.json",
         binding_root,
     ).parents[1]
@@ -241,14 +241,14 @@ def staged_objects(
     prior_registry = load_json(prior_registry_path)
     construction_incident = bound_file(
         binding_root
-        / "experiment-data/manuscript-revisions/rev52/incidents"
+        / "experiment-data/campaigns/direct-work-evidence/incidents"
         / "direct-work-replication-construction-rounding-bound-20260831T1818Z"
         / "incident.json",
         binding_root,
     )
     radial_source_seal = bound_file(
         binding_root
-        / "experiment-data/manuscript-revisions/rev53"
+        / "experiment-data/campaigns/radial-context"
         / "radial-tangential-retained-analysis-v2/provenance-seal.json",
         binding_root,
     )
@@ -527,7 +527,7 @@ def main() -> None:
         arguments.campaign_root.resolve(strict=False)
         if arguments.campaign_root is not None
         else binding_root
-        / "experiment-data/manuscript-revisions"
+        / "experiment-data/campaigns"
         / RELEASE_ID
         / "radial-context-holdout"
     )

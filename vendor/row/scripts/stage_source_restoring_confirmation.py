@@ -16,15 +16,15 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PARENT = (
     ROOT.parent
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev42"
+    / "campaigns"
+    / "finite-increment"
     / "finite-increment-collapse-confirmation"
 )
 DEFAULT_OUTPUT = (
     ROOT.parent
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev43"
+    / "campaigns"
+    / "source-restoring"
     / "source-restoring-collapse-confirmation"
 )
 sys.path.insert(0, str(ROOT / "experiments"))

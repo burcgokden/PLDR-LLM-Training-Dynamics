@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate every dependent uncertainty output without altering acquisitions."""
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import json
@@ -12,7 +12,7 @@ import sys
 import time
 from model_rg.provenance import sha256,write_json
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def run(output):

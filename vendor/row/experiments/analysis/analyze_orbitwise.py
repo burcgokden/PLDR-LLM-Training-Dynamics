@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Analyze bounded-gate shape collapse and renewal blocks for revision 46.
+"""Analyze bounded-gate shape collapse and renewal blocks for bounded-gate orbitwise reduction.
 
 This is a finite-record analyzer.  It verifies exact factorization consequences
 and reports orbitwise block gains, but it never promotes a finite timecourse to
@@ -38,7 +38,7 @@ def _positive_ratio(endpoint: np.ndarray, source: np.ndarray) -> np.ndarray:
     if endpoint.shape != source.shape:
         raise ValueError("ratio endpoints have different shapes")
     if np.any(endpoint <= 0.0) or np.any(source <= 0.0):
-        raise ValueError("rev46 log-ratio analysis requires positive values")
+        raise ValueError("Orbitwise log-ratio analysis requires positive values")
     return endpoint / source
 
 
@@ -223,7 +223,7 @@ def analyze_timecourse(
             shape, physical, gates, plga_ratio, plga_force
         ))
     ):
-        raise ValueError("timecourse arrays are invalid for rev46 analysis")
+        raise ValueError("timecourse arrays are invalid for orbitwise analysis")
 
     absolute_gates = np.abs(gates)
     layer_lower = np.min(absolute_gates, axis=2) ** 2
@@ -286,7 +286,7 @@ def analyze_timecourse(
         for span in (256, 512, 1024)
     ]
     result = {
-        "schema_version": "pldr-rev46-orbitwise-analysis-v1",
+        "schema_version": "pldr-orbitwise-analysis-v1",
         "input_path": str(input_path),
         "trajectory": str(value["trajectory"]),
         "seed": int(value["seed"]),
@@ -377,7 +377,7 @@ def main() -> None:
     arguments = parser.parse_args()
     reports = [analyze_timecourse(path) for path in arguments.timecourses]
     result = {
-        "schema_version": "pldr-rev46-orbitwise-campaign-analysis-v1",
+        "schema_version": "pldr-orbitwise-campaign-analysis-v1",
         "finite_horizon_only": True,
         "trajectory_count": len(reports),
         "trajectories": reports,

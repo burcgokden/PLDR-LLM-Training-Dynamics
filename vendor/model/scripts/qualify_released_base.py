@@ -1,5 +1,5 @@
 """Native validation and disposable update qualification of released checkpoints."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,gc,json,sys,time
 from pathlib import Path
 import numpy as np
@@ -9,7 +9,7 @@ REPO=Path(__file__).resolve().parents[1];sys.path.insert(0,str(REPO/'src'))
 from model_rg.native import NativeModel
 from model_rg.physical_native import selected_forward,prefix_batch,context_tokens,spin_tokens
 from model_rg.provenance import sha256,write_json
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 @torch.no_grad()
 def language(model,data,split='validation',max_documents=None):

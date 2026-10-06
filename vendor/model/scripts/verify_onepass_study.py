@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Require the executed single-pass evidence and its complete comparison scope."""
+from companion_paths import required_input
 import argparse
 from collections import Counter
 import json
@@ -456,7 +457,7 @@ def main():
                 raise AssertionError('Reference row projection changed')
     rendered={}
     for manifest,script in RENDERERS.items():
-        path=repo/'manuscript/generated'/manifest;value=files.load(path)
+        path=Path(required_input('generated-evidence'))/manifest;value=files.load(path)
         if value['status']!='complete' or value['renderer_sha256']!=files.check(repo/'scripts'/script):
             raise AssertionError('An interpreted result table predates its renderer')
         for name,digest in value['inputs'].items():files.check(name,digest)

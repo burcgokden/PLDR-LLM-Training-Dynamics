@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Build and qualify independent finite Ising/Potts Monte Carlo corpora."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
@@ -17,7 +17,7 @@ sys.path.insert(0,str(REPO/'src'))
 from model_rg.lattice import critical_temperature, exact_small, observables
 from model_rg.provenance import sha256, write_json
 
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def compile_sampler(study):

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Verify the signed-area completion of symmetric potential blocking."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse,json
 from pathlib import Path
 import numpy as np
 from model_rg.provenance import sha256,write_json
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def reduce_path(b,p,width):

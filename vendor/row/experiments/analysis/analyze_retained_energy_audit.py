@@ -2,6 +2,7 @@
 """Replay retained physical-energy increments without reconstructing missing arrays."""
 
 from __future__ import annotations
+from companion_paths import acquisition_identity
 
 import argparse
 import hashlib
@@ -27,14 +28,14 @@ SCHEMA = "pldr-retained-energy-audit-v1"
 DENSE_CAMPAIGN = "pldr-mixed-row-map-collapse-v1"
 ENDPOINT_CAMPAIGN = "pldr-finite-increment-observable-balance-v1"
 DENSE_RELATIVE = Path(
-    "experiment-data/manuscript-revisions/rev47/"
+    "experiment-data/campaigns/mixed-collapse/"
     "mixed-row-map-collapse-confirmation"
 )
 ENDPOINT_RELATIVE = Path(
-    "experiment-data/manuscript-revisions/rev50/"
+    "experiment-data/campaigns/observable-balance/"
     "finite-increment-observable-balance"
 )
-RELEASE_ID = 'rev55'  # retained acquisition identity
+RELEASE_ID = acquisition_identity('observer-energy-acquisition-release')  # retained acquisition identity
 OUTPUT = ROOT / "docs" / "figures"
 REPORT_PATH = OUTPUT / "retained_energy_audit.json"
 MACRO_PATH = OUTPUT / "retained_energy_macros.tex"

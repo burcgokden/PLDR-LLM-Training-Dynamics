@@ -8,7 +8,7 @@ float64 from the exact float32 S0 tensor.
 """
 
 from __future__ import annotations
-from companion_paths import legacy_path
+from companion_paths import configured_path
 
 import argparse
 from collections import Counter
@@ -725,7 +725,7 @@ def main() -> None:
     parser.add_argument("--completed-run-root", required=True)
     parser.add_argument("--devices", nargs="+", default=["cpu", "cuda:0", "cuda:1"])
     parser.add_argument("--precision-bits", type=int, default=192)
-    parser.add_argument("--refinedweb-root", default=legacy_path('/pldr-assets/refinedweb'))
+    parser.add_argument("--refinedweb-root", default=configured_path('assets:refinedweb'))
     parser.add_argument("--predecessor")
     parser.add_argument("--output", required=True)
     arguments = parser.parse_args()

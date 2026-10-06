@@ -4,7 +4,7 @@
 This is an offline observation reduction. It acquires full native logits and
 makes no saving claim for the forward pass or the optimizer successor law.
 """
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 from pathlib import Path
@@ -13,7 +13,7 @@ import numpy as np
 from scipy.special import logsumexp
 from model_rg.provenance import sha256,write_json
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 COARSE=ROOT/'critical-onepass-coarse-20260914'
 INDEPENDENT=ROOT/'critical-onepass-refinement-20260914'
 

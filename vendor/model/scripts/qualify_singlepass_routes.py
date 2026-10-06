@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Freeze fresh source inventories and qualify three native single-pass routes."""
+from companion_paths import required_input, acquisition_identity
 from companion_paths import child_pythonpath
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import json
@@ -13,7 +14,7 @@ import time
 from model_rg.provenance import sha256, write_json
 
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def run(output):
@@ -33,7 +34,7 @@ def run(output):
         print(label,'complete',flush=True)
     command('base-prepare','run_critical_onepass.py','prepare','--study',output/'base','--design',output/'design.json')
     command('shared-prepare','run_critical_shared_paths.py','prepare','--study',output/'shared','--design',output/'design.json',
-            '--selection',REPO/'internal/revision25/refinement-selection.json')
+            '--selection',REPO/required_input('qualify-singlepass-routes-input-1'))
     command('matched-prepare','run_matched_onepass.py','prepare','--study',output/'matched')
     def base_queue():
         command('base-qualify','run_critical_onepass.py','qualify','--study',output/'base','--device','cuda:0')

@@ -1,4 +1,4 @@
-"""Focused algebra regressions for the rev37 observable-margin theory."""
+"""Focused algebra regressions for the observable-margin theory."""
 
 from __future__ import annotations
 

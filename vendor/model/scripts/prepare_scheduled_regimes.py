@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Freeze the expanded near/subcritical comparison before scheduled GPU work."""
+from companion_paths import required_input
 import argparse
 from datetime import datetime,timezone
 import json
@@ -23,7 +24,7 @@ def main():
     qb=json.loads((qualification/'binding.json').read_text())
     for name in ['src/model_rg/schedules.py','src/model_rg/scheduled_regimes.py']:
         if qb['source_files'][name]!=sha256(repo/name):raise AssertionError('A qualified recipe implementation changed')
-    table=repo/'internal/reference-schedule/regime-table.json';ts=json.loads(table.read_text())
+    table=Path(required_input('reference-schedule')) / 'regime-table.json';ts=json.loads(table.read_text())
     profiles={name:{str(n):recipe(name,n) for n in [4,14]} for name in RECIPE_NAMES}
     reference_inputs=dict(old['reference_inputs'])
     for path in [original,old_qa,qualification/'manifest.json',qualification/'results.json',table,Path(ts['source'])]:

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Prepare the complete observed-data layer with relative paths and exact hashes."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import json
 from pathlib import Path
 import shutil
 from model_rg.provenance import sha256,write_json
 REPO=Path(__file__).resolve().parents[1]
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def package(output, nested_analysis=None, context_analyses=(), context_risk=()):

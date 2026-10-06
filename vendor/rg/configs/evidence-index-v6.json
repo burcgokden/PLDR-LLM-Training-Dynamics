@@ -5,182 +5,182 @@
       "id": "selected-analysis",
       "status": "current",
       "role": "registered analysis used by the manuscript",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0002/result.json"
+      "path": "urn:pldr:unavailable:a7f6656d45c8cacff2e8ce170d9cd5a6351356581b06119580df18b0b96f6384"
     },
     {
       "id": "selected-analysis-manifest",
       "status": "current",
       "role": "analysis manifest",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0002/manifest.json"
+      "path": "urn:pldr:unavailable:271478f012d08e32e14dfa898d466368ad66c761f536ab2ae23c56799bcc2b4d"
     },
     {
       "id": "selected-root-manifest",
       "status": "current",
       "role": "root manifest",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/manifests/manifest-0002.json"
+      "path": "urn:pldr:unavailable:d5ddfc86b0e85fbbcf16bc23548cbd2d0d999c7b2d537b40f5638a53cd0025ea"
     },
     {
       "id": "observer-record",
       "status": "current",
       "role": "source-bound full-trace observer analysis",
-      "path": "executed/observer-regime-v6-20260903/result.json"
+      "path": "urn:pldr:unavailable:d2ffdc83a7434debf5257d6047e5070c2c63d73f05c827271d56d2bd7d11c988"
     },
     {
       "id": "stage-record",
       "status": "current",
       "role": "source-bound stage-resolved replay with exact represented-array energy",
-      "path": "executed/stage-resolved-observer-v6-20260903/result.json"
+      "path": "urn:pldr:unavailable:b679ec77a9fe5da32440ac7a0f605310cf0ebe3f4fb9a1097ea26c4cd35b223e"
     },
     {
       "id": "stage-a-smoke-result",
       "status": "diagnostic",
       "role": "executed production-runner state-machine smoke result",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/analyses/analysis-0001/result.json"
+      "path": "urn:pldr:unavailable:f2e9dbfac270edc1930a00e61c62c5ebe4896c323f8d7431f17d5042c144604e"
     },
     {
       "id": "stage-a-smoke-manifest",
       "status": "diagnostic",
       "role": "executed production-runner state-machine smoke root manifest",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/run/manifests/manifest-0001.json"
+      "path": "urn:pldr:unavailable:98a4c24968e077eb1d4d74afdd4c5afada9c60bd79f1d16a1277fac62077e860"
     },
     {
       "id": "stage-a-smoke-protocol",
       "status": "diagnostic",
       "role": "executed production-runner smoke protocol with derived seeds",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/inputs/protocol.json"
+      "path": "urn:pldr:unavailable:03f52613e18c285a302c1c328dd7607d32754be2688622484f2e0538e26c5841"
     },
     {
       "id": "stage-a-smoke-qualification",
       "status": "diagnostic",
       "role": "source-bound production-runner smoke qualification",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/inputs/qualification.json"
+      "path": "urn:pldr:unavailable:61bad898e9c813a1c7bbe0e1d61852a4f06dd9319103b429b91e7fe8adc3d0ac"
     },
     {
       "id": "stage-a-smoke-observer",
       "status": "diagnostic",
       "role": "executed zero-safe observer analysis of the runner smoke",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/observer/result.json"
+      "path": "urn:pldr:unavailable:03fc76693284bc4768f48b2213a7a012d3d613b6491b27f725abb3790dcb4075"
     },
     {
       "id": "stage-a-smoke-stage",
       "status": "diagnostic",
       "role": "executed zero-safe three-device stage replay of the runner smoke",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/stage/result.json"
+      "path": "urn:pldr:unavailable:d802d8ccba8709ecd44b00798ecd7af61e86e17a91343c44ee9b43cdb27c5933"
     },
     {
       "id": "stage-a-smoke-verification",
       "status": "diagnostic",
       "role": "sealed independent verification report for the runner smoke archive",
-      "path": "executed/stage-a-runner-smoke-v6-20260903-r2/verification.json"
+      "path": "urn:pldr:unavailable:0c0e100b94f196000c4db0967c0e04a32af89fb7842bbb1c17a4deeb49198df5"
     },
     {
       "id": "excluded-disposition",
       "status": "current",
       "role": "source-bound excluded-run disposition",
-      "path": "executed/execution-disposition-v5-20260902/excluded-run.json"
+      "path": "urn:pldr:unavailable:8607658830479f0a21dd0c690baca6dbaeaa2a65c3fac1b91ca5bbd3fbb868c8"
     },
     {
       "id": "selected-qualification",
       "status": "current",
       "role": "qualification consumed by the evidence launch",
-      "path": "protocol-v3/qualification-v3-04.json"
+      "path": "urn:pldr:unavailable:4839477c6029829b1a3159e5dd4e152850ba1b2f3e054106058186a1aa8025cf"
     },
     {
       "id": "executed-protocol",
       "status": "current",
       "role": "byte-identical protocol archive",
-      "path": "protocol-v3/confirmation-protocol-v3-executed-166dc22c.json"
+      "path": "urn:pldr:unavailable:813fa1ade42858dde44af9bddbdd64ffc8bbab4e5bad8e65c004087b1b463ef1"
     },
     {
       "id": "retained-analysis",
       "status": "current",
       "role": "descriptive retained-trajectory reduction",
-      "path": "executed/retained-scale-flow-v3.json"
+      "path": "urn:pldr:unavailable:542996c21826779ce22e0b751d464c099c03610659aec48ddc52fe52bb9907ef"
     },
     {
       "id": "synthetic-analysis",
       "status": "current",
       "role": "synthetic algebra and law qualification",
-      "path": "executed/synthetic-rg-qualification.json"
+      "path": "urn:pldr:unavailable:f876d3a0940ca81aca9de6bb1be14c8a8fd652aeb50952894e2dcf59bd905aa0"
     },
     {
       "id": "selected-combined-energy",
       "status": "current",
       "role": "combined dense energy tensor",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/raw/combined-energies.npz"
+      "path": "urn:pldr:unavailable:92670344adc15db063eb830a0be560bd4df84d2dbbfd286b33b7aaef1ba63d1f"
     },
     {
       "id": "initial-analysis",
       "status": "retained",
       "role": "immutable initial analysis",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/analyses/analysis-0001/result.json"
+      "path": "urn:pldr:unavailable:d09f91001c33199c7cc8e1003e4c2336c3d6887ffee59a5cb7fbb065f865ccbc"
     },
     {
       "id": "initial-root-manifest",
       "status": "retained",
       "role": "immutable initial root manifest",
-      "path": "executed/pldr-refinedweb-byte-rgmap-v3-conditioned-20260902/manifests/manifest-0001.json"
+      "path": "urn:pldr:unavailable:70b4c47bc1babf002dba085cd2c1eb57dc79685c20f818b0ed5ad09bb9f296df"
     },
     {
       "id": "observer-predecessor",
       "status": "retained",
       "role": "prior source-bound observer analysis",
-      "path": "executed/observer-regime-v5-20260902/result.json"
+      "path": "urn:pldr:unavailable:44fcdc7704788d32cb147896ed0bc44879b77befbee39974572594408a333c9d"
     },
     {
       "id": "stage-predecessor",
       "status": "retained",
       "role": "stage replay before exact represented-array energy classification",
-      "path": "executed/stage-resolved-observer-v5b-20260902/result.json"
+      "path": "urn:pldr:unavailable:f20ddc67ece11e35c133db3f41e43c862e0ad468690b23d15b7a4ec3da877ae1"
     },
     {
       "id": "disposition-predecessor",
       "status": "retained",
       "role": "excluded-run disposition predecessor",
-      "path": "executed/execution-disposition-v4-20260902/first-campaign.json"
+      "path": "urn:pldr:unavailable:3934a7ff0538103afbb613b319a6ebbaa4cd53d9626c543592f39200ef697e2a"
     },
     {
       "id": "precision-predecessor",
       "status": "retained",
       "role": "checkpoint precision diagnostic replaced by the stage replay",
-      "path": "executed/observer-precision-v4-20260902/result.json"
+      "path": "urn:pldr:unavailable:6efbc6786645b1c5cfb3a5c250903f22a43c78f4263b65db2c969b96a79dee1b"
     },
     {
       "id": "qualification-01",
       "status": "retained",
       "role": "passing qualification not consumed by a launch",
-      "path": "protocol-v3/qualification-v3.json"
+      "path": "urn:pldr:unavailable:b3dc6cec69dd789c95166ea8d53f6e713102aa8c0a9f726f40039e23a087f1e8"
     },
     {
       "id": "qualification-02",
       "status": "retained",
       "role": "passing qualification consumed by the excluded launch",
-      "path": "protocol-v3/qualification-v3-02.json"
+      "path": "urn:pldr:unavailable:0900704cb8012ccaa32df7f3b225427d3c6c58861754c19a00afa55a596b6198"
     },
     {
       "id": "qualification-03",
       "status": "unavailable-dependency",
       "role": "passing qualification whose exact protocol copy is unavailable",
-      "path": "protocol-v3/qualification-v3-03.json",
+      "path": "urn:pldr:unavailable:da6d08a2379dfda67c5bf268ce250e30f36d46e86e9f595b241831db72a08776",
       "unavailable_dependency_sha256": "93d54a04fff21e2ec7bb1ba1a0184a83e2900f2356fe365a99d7a429c3a65212"
     },
     {
       "id": "pilot-result",
       "status": "diagnostic",
       "role": "descriptive 4096-update pilot",
-      "path": "executed/pldr-refinedweb-byte-4096/confirmation-result.json"
+      "path": "urn:pldr:unavailable:7dac3d2a5c610ca253b1ef4cdfb65cb78dff1966abcf070e85a8e2ed9f972eb6"
     },
     {
       "id": "planning-record-0",
       "status": "diagnostic",
       "role": "descriptive 16384-update planning record",
-      "path": "exploratory/rebuttal-rev2-16384/row_rg_rebuttal_rev2_16384_d0.json"
+      "path": "urn:pldr:unavailable:35d50898f23c8c63cedcb0392debf54b7ce22fbb7db895885d19df73a2e7a515"
     },
     {
       "id": "planning-record-1",
       "status": "diagnostic",
       "role": "descriptive 16384-update planning record",
-      "path": "exploratory/rebuttal-rev2-16384/row_rg_rebuttal_rev2_16384_d1.json"
+      "path": "urn:pldr:unavailable:1983965bb26e90cb8f790cd42fb821ca68d0a6afc890fc6c2a673c4b829dae0c"
     }
   ],
   "support_inputs": {

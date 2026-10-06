@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Independent reconstruction of 512 updates in every physical training arm."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import gc
 import json
@@ -15,7 +15,7 @@ REPO=Path(__file__).resolve().parents[1];sys.path.insert(0,str(REPO/'src'))
 from model_rg.training import TrainingModel
 from model_rg.physical_native import spin_tokens,context_tokens,prefix_batch,selected_forward
 from model_rg.provenance import sha256,write_json
-ROOT=Path(legacy_path('/pldr-data/model'))
+ROOT=Path(configured_path('data:model'))
 
 
 def compare(actual,expected,label):

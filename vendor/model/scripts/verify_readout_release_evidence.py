@@ -1,4 +1,5 @@
 """Publication gate separating scientific evidence and current executable admission."""
+from companion_paths import required_input
 from companion_paths import child_pythonpath
 import argparse
 import json
@@ -76,14 +77,14 @@ def main(study,retained,output):
         for field in ['tested_sources','module_sources','modules','support_sources']:
             for n,h in v.get(field,{}).items():check(REPO/n,h)
         records[name]=dict(path=str(p),sha256=check(p))
-    counts=read(REPO/'manuscript/generated/qualification-current.json')['counts']
+    counts=read(Path(required_input('generated-evidence')) / 'qualification-current.json')['counts']
     if counts!={'numerical_tests':141,'selected_statements':90,'formal_modules':21,'formal_fixtures':8,'rejected_mutations':42}:
         raise ValueError('Current completed counts')
-    rendered=read(REPO/'manuscript/generated/readout-render-manifest.json')
+    rendered=read(Path(required_input('generated-evidence')) / 'readout-render-manifest.json')
     check(REPO/'scripts/render_fresh_readout.py',rendered['renderer_sha256'])
-    for n,h in rendered['generated'].items():check(REPO/'manuscript/generated'/n,h)
+    for n,h in rendered['generated'].items():check(Path(required_input('generated-evidence'))/n,h)
     # Bind every generated source asset that will enter the standalone build.
-    for p in (REPO/'manuscript/generated').rglob('*'):
+    for p in (Path(required_input('generated-evidence'))).rglob('*'):
         if p.is_file():check(p)
     for name in ['README.md','docs/READOUT_REPRODUCTION.md','docs/PHYSICAL_REPRODUCTION.md',
                  'docs/FINETUNING_REPRODUCTION.md','docs/PROJECTION_REPRODUCTION.md']:

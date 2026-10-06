@@ -2,6 +2,7 @@
 """Seal or verify the temporal-context direct-work replication."""
 
 from __future__ import annotations
+from companion_paths import acquisition_identity
 
 import argparse
 import hashlib
@@ -17,7 +18,7 @@ from bundle_hygiene import (
 )
 
 CAMPAIGN_ID = "pldr-direct-work-temporal-context-replication-v2"
-RELEASE_ID = "rev52"
+RELEASE_ID = acquisition_identity('direct-work-acquisition-release')
 SEAL_SCHEMA = "pldr-direct-work-replication-seal-v1"
 RESOURCE_SCHEMA = "pldr-direct-work-replication-resource-v1"
 PACKAGING_INCIDENT_SCHEMA = "pldr-bytecode-hygiene-remediation-v1"

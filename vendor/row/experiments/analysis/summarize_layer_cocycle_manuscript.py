@@ -16,8 +16,8 @@ ROOT = Path(__file__).resolve().parents[2]
 BUNDLE = (
     ROOT.parent
     / "experiment-data"
-    / "manuscript-revisions"
-    / "rev48"
+    / "campaigns"
+    / "layer-cocycle"
     / "layer-resolved-cocycle-confirmation"
 )
 OUTPUT = ROOT / "docs" / "figures"

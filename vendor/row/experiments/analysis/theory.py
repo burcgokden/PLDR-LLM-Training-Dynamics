@@ -70,9 +70,9 @@ The structural conventions of the single-clock chain:
   and never replace x.
 
 Retired forms live in ``retired.py`` and are consumed only by
-counterexample regression tests: the Revision 10 independent stress
+counterexample regression tests: the retired independent stress
 ledger, double-counted decay, and first-crossing reset bound, and
-the Revision 11 linear burst normal form with its drain coefficient
+the retired linear burst normal form with its drain coefficient
 a_b, retired because the factor-derived event does not realize its
 margin recurrence (the event-clock witness pins the mismatch).
 

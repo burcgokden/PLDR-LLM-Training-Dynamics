@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Freeze paired scheduled trajectories and qualifications before their execution."""
+from companion_paths import required_input
 import argparse
 from datetime import datetime, timezone
 import json
@@ -31,7 +32,7 @@ def main():
         (study/name).mkdir(parents=True,exist_ok=True)
     outputs=[study/'protocols'/name for name in ['training-selection.json','qualification-selection.json','shared-update-observation.json']]
     if any(p.exists() for p in outputs):raise FileExistsError('An existing frozen scheduled selection must not be replaced')
-    reference=list((repo/'internal/reference-schedule').iterdir())
+    reference=list((Path(required_input('reference-schedule'))).iterdir())
     reference+=[qualification/'manifest.json',qualification/'results.json']
     profiles={name:{str(n):recipe(name,n) for n in [4,14]} for name in ['controlled','reference1','reference2']}
     common=dict(schema='scheduled-training-selection-v1',frozen_at=datetime.now(timezone.utc).isoformat(),

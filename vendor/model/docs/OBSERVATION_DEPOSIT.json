@@ -1,10 +1,10 @@
 {
-  "archive": "/pldr-data/model/categorical-observation-deposit-context-risk-20260915.tar",
+  "archive": "urn:pldr:unavailable:7f6abf91462e88b24682ab1194f128cd53418a6c60a6d91e197faad0c316d7d0",
   "archive_bytes": 5269411840,
   "archive_sha256": "d2faf21848e51774801ac243de4fd6cfe1371046b37b1e45822b7a1cb9211a1a",
   "checks": {
-    "portable-context-risk.json": "8fa40c07cae58b613f0da59d61b62944c9eba91b0c280fe0b98de828bce76ece",
-    "portable-verification.json": "9ef7cc0319836f4394ca4ca689ac2c6d4ae265280e2679a0df5f94150783c9fe"
+    "urn:pldr:unavailable:df4bf0468d0a203d3d5068cf9c8da3508e5dc47ed75e820486ad1fc88214685a": "8fa40c07cae58b613f0da59d61b62944c9eba91b0c280fe0b98de828bce76ece",
+    "urn:pldr:unavailable:4758488e9a143aa622f6d00574af2a506552c000c36c06cd9420933963945afc": "9ef7cc0319836f4394ca4ca689ac2c6d4ae265280e2679a0df5f94150783c9fe"
   },
   "clean_extraction_reproduced": true,
   "empty_pythonpath": true,

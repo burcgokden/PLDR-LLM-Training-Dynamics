@@ -1,3 +1,4 @@
+from companion_paths import acquisition_identity
 from pathlib import Path
 import subprocess
 import sys
@@ -131,7 +132,7 @@ def test_sign_summary_keeps_neutral_and_evaluability_separate():
 def test_design_has_no_unresolved_layer_pooling_and_uses_active_release_id():
     design = campaign_design()
     validate_design(design)
-    assert design["release_id"] == RELEASE_ID == "rev52"
+    assert design["release_id"] == RELEASE_ID == acquisition_identity('direct-work-acquisition-release')
     assert design["decision_policy"] == DECISION_POLICY
     assert design["decision_policy"]["unresolved_layers_have_no_pooled_fallback"]
     assert design["execution_policy"]["binding_root_is_required"]

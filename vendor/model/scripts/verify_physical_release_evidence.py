@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Bind the completed physical study, retained scientific evidence and current sources."""
+from companion_paths import required_input
 import argparse
 import json
 from pathlib import Path
@@ -29,7 +30,7 @@ def main():
     if actual!=inventory:raise ValueError('Retained release inventory changed')
     old=read(retained/'evidence-index.json')
     if old['status']!='passed' or old['schema']!='onepass-projection-complete-evidence-v1':raise ValueError('Wrong retained evidence')
-    generated=REPO/'manuscript/generated';preserved={}
+    generated=Path(required_input('generated-evidence'));preserved={}
     for p in (retained/'arxiv-source/generated').rglob('*'):
         if p.is_file() and p.name not in ['qualification-current.json','qualification-current.tex']:
             name=str(p.relative_to(retained/'arxiv-source/generated'));preserved[name]=check(generated/name,sha256(p))
@@ -66,7 +67,7 @@ def main():
     # fixed-Fisher projection outcomes as well as the new physical ones.
     from verify_finetuning_compact import verify as fine_verify
     from verify_projection_compact import verify as projection_verify
-    fine=fine_verify(REPO/'manuscript');projection=projection_verify(REPO/'manuscript')
+    fine=fine_verify(Path(required_input('publication-source')));projection=projection_verify(Path(required_input('publication-source')))
     sources={}
     for folder in ['scripts','src','tests','ModelRG','manuscript']:
         for p in (REPO/folder).rglob('*'):

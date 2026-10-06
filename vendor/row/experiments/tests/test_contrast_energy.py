@@ -42,7 +42,7 @@ def _load_script_module(filename, module_name):
 def _load_stage_module():
     return _load_script_module(
         "stage_contrast_energy_confirmation.py",
-        "stage_contrast_energy_confirmation_rev41_test",
+        "stage_contrast_energy_confirmation_test",
     )
 
 
@@ -200,7 +200,7 @@ def test_validated_jet_producer_binds_source_and_rejects_successor(tmp_path):
         produce(source, model)
 
 
-def test_rev41_registry_and_plan_have_all_layers_and_no_interventions(tmp_path):
+def test_registry_and_plan_have_all_layers_and_no_interventions(tmp_path):
     registry = {
         "schema_version": "pldr-contrast-energy-registry-v1",
         "context_length": 256,
@@ -298,7 +298,7 @@ def test_cocycle_aggregate_splits_nonconsecutive_anchor_edges(tmp_path):
 def test_stage_b_resource_lock_replays_logs_and_drives_executor_cap(tmp_path):
     resource_module = _load_script_module(
         "finalize_contrast_energy_resources.py",
-        "finalize_contrast_energy_resources_rev41_test",
+        "finalize_contrast_energy_resources_test",
     )
     log_dir = tmp_path / "logs"
     log_dir.mkdir()
@@ -347,7 +347,7 @@ def test_stage_b_resource_lock_replays_logs_and_drives_executor_cap(tmp_path):
         json.dumps(lock, sort_keys=True), encoding="utf-8")
     executor = _load_script_module(
         "execute_contrast_energy_plan.py",
-        "execute_contrast_energy_plan_rev41_test",
+        "execute_contrast_energy_plan_test",
     )
     lock_node = {"depends_on": []}
     node = {

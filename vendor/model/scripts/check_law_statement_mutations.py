@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Reject omitted and wrongly transported defects in the finite Lean recurrence."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import os
 from pathlib import Path
@@ -15,8 +15,8 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--output',required=True);a=p.parse_args()
     repo=Path(__file__).resolve().parents[1];out=Path(a.output).resolve();out.mkdir(parents=True,exist_ok=False)
     source=(repo/'ModelRG/Scaling.lean').read_text()
-    env=dict(os.environ,ELAN_HOME=legacy_path('/pldr-tools/elan'),
-             PATH='/pldr-tools/elan/bin:'+os.environ['PATH'])
+    env=dict(os.environ,ELAN_HOME=configured_path('tools:elan'),
+             PATH=configured_path('tools:elan/bin')+os.pathsep+os.environ['PATH'])
     records=[]
     with tempfile.TemporaryDirectory(prefix='law-bound-mutation-',dir='/tmp') as temp:
         temp=Path(temp);shutil.copytree(repo/'ModelRG',temp/'ModelRG')

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Fresh document cohorts, read-only corpus, explicit exclusion and crop laws."""
-from companion_paths import legacy_path
+from companion_paths import configured_path
 import argparse
 import hashlib
 import json
@@ -15,7 +15,7 @@ from model_rg.provenance import sha256, source_manifest, write_json
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--root', required=True)
-    ap.add_argument('--corpus', default=legacy_path('/pldr-assets/refinedweb'))
+    ap.add_argument('--corpus', default=configured_path('assets:refinedweb'))
     ap.add_argument('--kind', choices=['short', 'long'], required=True)
     a = ap.parse_args(); root = Path(a.root)
     out = root/'controlled-study-20260905'/'data'/a.kind

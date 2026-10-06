@@ -136,7 +136,7 @@ def test_layer_external_paths_derive_from_explicit_binding_root(
     paths = default_paths(binding_root)
     assert all(path.is_relative_to(binding_root) for path in paths.values())
     assert paths["output"].name == "layer-resolved-cocycle-confirmation"
-    assert paths["input_bundle"].parent.name == "rev47"
+    assert paths["input_bundle"].parent.name == "mixed-collapse"
     assert paths["tokens"].parent.name == "refinedweb-538m-prefix-locked"
 
 

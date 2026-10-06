@@ -1,11 +1,12 @@
 """Frozen design for the direct physical-work source intervention."""
 
 from __future__ import annotations
+from companion_paths import acquisition_identity
 
 from typing import Any
 
 
-RELEASE_ID = "rev52"
+RELEASE_ID = acquisition_identity('direct-work-acquisition-release')
 
 CAMPAIGN_ID = "pldr-direct-work-source-intervention-v1"
 DESIGN_SCHEMA = "pldr-direct-work-design-v1"
